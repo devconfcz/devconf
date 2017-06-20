@@ -1,0 +1,194 @@
+{% extends "base.html" %}
+
+{% block title %}
+    <title>DevConf.cz 2018</title>
+{% endblock %}
+
+{% block body %}
+
+    <!-- Home Section -->
+    <header id="intro" class="intro-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 intro-content">
+            <a href="../index.html">
+              <h1 class="logo"><img id="devconf-logo" src="../img/devconf-cz-webopt.svg" alt="DevConf.cz"></h1>
+            </a>
+
+            <div class="tagline">Main Event</div>
+            <div class="time-and-place">
+              <address>Brno, Czech Republic</address>
+              <div class="date">
+                <time datetime="COMING SOON"><b>January 2018</b></time>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-offset-2 col-sm-8 intro-content">
+            <h2 class='description'> A free annual community conference for developers, admins, and users of Open Source technologies.</h2>
+          </div>
+
+          <div class="col-sm-offset-2 col-sm-4 intro-content">
+            <i class="fa fa-sign-in" style='font-size: 4em; padding: .2em; margin-right: 0' aria-hidden="true"></i>
+            <div class = "alert alert-warning">
+              <b style="color: #999">Registration COMING SOON</b>
+            </div>
+            <h4><i>FREE registration. Limited capacity!</i></h4>
+          </div>
+
+          <div class="col-sm-4 intro-content">
+            <i class="fa fa-calendar-o" style='font-size: 4em; padding: .2em; margin-right: 0' aria-hidden="true"></i>
+            <div class = "alert alert-warning">
+              <b style="color: #999" >Schedule COMING SOON!</b>
+            </div>
+            <h4><i>Schedule COMING SOON!</i></h4>
+          </div>
+        </div>
+
+         <!-- this should just sit some 2em or something about the bottom of the screen -->
+         <div class="col-sm-12">
+           <a href="#about" onclick="scroll_to_section('#about')" style="color: #8786df;"><i class="fa fa-chevron-circle-down next-page" aria-hidden="true"></i></a>
+         </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <h2>About DevConf.cz</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <p><i>DevConf.cz 2018 is the 10th annual, free Red Hat sponsored community conference for developers, admins, DevOps engineers, testers, documentation writers and users of open source technologies such as Linux, Middleware, Virtualization, Storage, Cloud and mobile where FLOSS communities sync, share, and hack on upstream projects together in the beautiful city of Brno, Czech Republic.</i></p>
+            
+          </div>
+              <div class="col-sm-12">
+                  <p><b>When:</b> Winter of 2018</p>
+                  <p><b>Where:</b> Faculty of Information Technology (VUT FIT) Božetěchova 2 - Brno</p>
+              </div>
+          <div class="col-xs-12 col-s-6">
+            <p>You should consider attending DevConf.cz 2018 if you are:</p>
+            <ul>
+              <li>A developer</li>
+              <li>A technology architect</li>
+              <li>An IT consultant</li>
+              <li>An IT student or a teacher from an IT university/faculty</li>
+              <li>Or simply an IT enthusiast interested in the latest trends in open source and emerging digital technologies</li>
+            </ul>
+            <p>If you're curious about last year's event, check out our <a href="https://www.youtube.com/channel/UCIHsqY_4eWeInVQnxZ7WSjg">DevConf.cz YouTube Channel</a>.</p>
+            <p>DevConf.cz is a free conference and there is no admission or ticket charge. <b>Registration (FREE) required</b>.</p>
+            <p>Register here: COMING SOON!</p>
+            <p>Talks, presentations, and workshops will all be in <i>English</i>.</p>
+          </div>
+
+          <div class="col-xs-12 col-s-6">
+            <div data-id="_jW8lUyoFDw" class="youtube-player">
+              <div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; display:flex; align-items: center; justify-content: center; flex-direction: column;">
+                <div style="height: 30px"></div>
+                <div class="play"><i class="fa fa-youtube-play" aria-hidden="true"></i></div>
+                <div style="height: 30px; color:white;"><h3>DevConf 2016 Timelapse Video</h3></div>
+              </div>
+            </div>
+
+            <!-- <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/_jW8lUyoFDw" frameborder="0" allowfullscreen=""></iframe>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2>Get in touch</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h3>Need help?</h3>
+            <h4>Find us on Telegram or Email us:</h4>
+            <a href="https://telegram.me/joinchat/B1He_UEkuB4fBfY1cKCXRw"><img src="../img/telegram_logo-128x-128y.png" alt="Join DevConf chat on Telegram"></a>
+            <a href="mailto:info@devconf.cz"><img src="../img/mail_icon.png" alt="Email Chris Ward about DevConf"></a>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <h3>FAQ</h3>
+            <p>Answers to commonly asked questions will be added when questions are asked.</p>
+
+            <ul class="smaller">
+              <li>Q: Will it be possible to register off-line? A: Yes.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <form id="newsletter" method="post" action="https://tinyletter.com/devconf_cz">
+            <div class="col-xs-12">
+              <h3>Stay informed!</h3>
+              <p>Subscribe to our newsletter to receive all relevant event information.</p>
+            </div>
+            <div class="col-md-4 col-xs-6">
+              <div class="form-group">
+                <input name="email" type="email" class="form-control" id="email" placeholder="Enter your email address&hellip;" required>
+              </div>
+            </div>
+            <div class="col-md-2 col-xs-6">
+              <button type="submit" class="btn btn-success"
+                data-toggle="popover" data-trigger="hover" data-placement="top" title="Stay up to date with DevConf.cz"
+                data-content="We'll send you updates and announcements related to on-going and future DevConf.cz events.">
+                Subscribe&nbsp;&nbsp;<i class="fa fa-envelope" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="col-md-4 col-xs-12 xs-smaller">
+              <strong>No Spam! We promise!</strong><br>
+              This newsletter will only be used to share updates and announcements related to DevConf.cz.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sponsors -->
+    <section id="sponsors" class="sponsors-section">
+      <h2>Sponsors</h2>
+      <div class="container">
+        <h3>This event is sponsored by</h3>
+        <div class="row">
+          <div class="col-lg-12 sponsor">
+            <a href="https://www.redhat.com/en/global/czech-republic"><img alt="Red Hat, Czech" src="../img/logo_redhat_rgb_default.png">
+              <div class="sponsor-desc">
+                <p class="en">World's leading provider of open source, enterprise IT solutions.</p>
+                <p class="cs">World's leading provider of open source, enterprise IT solutions.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h4>And supported by our friends at</h4>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 sponsor">
+            <a href="https://mojefedora.cz">
+                <img alt="MojeFedora CZ" src="../img/cropped-mojefedora-250x-150y.png">
+              <div class="sponsor-desc">
+                <p class="en">Czech website about Fedora Linux distribution. Articles, guides, news and place for discussion at one place.</p>
+                <p class="cs">Český web o linuxové distribuci Fedora. Na jednom místě naleznete odborné články, návody, aktuální informace o dění kolem distribuce a místo pro diskuzi.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-lg-offset-4 sponsor">
+            <a href="http://www.fit.vutbr.cz/">
+                <img alt="FIT VUT Brno Faculty of Information Technology" src="../img/fit_vut_brno_logo-250x-150y.png">
+              <div class="sponsor-desc">
+                <p class="en">TODO:Description</p>
+                <p class="cs">TODO:Description</p>
+              </div>
+            </a>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+{% endblock %}

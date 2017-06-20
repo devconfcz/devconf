@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        {% block title %}
+        <title>DevConf.cz 2017 - Jan 27-29 - FIT VUT Brno, Czech Republic</title>
+        {% endblock %}
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta property="og:title" content="DevConf.cz, January 27-29 2017">
+        <meta property="og:site_name" content="DevConf.cz">
+        <meta property="og:description" content="DevConf.cz is a free and open, annual, 3-day open-source Fedora Linux and JBoss community conference for Red Hat and community developers, DevOps, testers, and documentation writers, organized to sync, share, and hack on upstream projects with the community in the beautiful city of Brno, Czech Republic.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://devconf.cz">
+        <meta property="og:image" content="https://devconf.cz/img/devconf_cz_landing_logo.png">
+
+        <!-- YouTube Channel Linking Verification - DO NOT REMOVE!! -->
+        <meta name="google-site-verification" content="IXOh3zMePCSVZkCqKQr8dZVFfpQgPG5Og-ZpULr8MJ4" />
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/png">
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-83802563-1', 'auto');
+          ga('send', 'pageview');
+        </script>
+
+        <!-- Font Awesome 4.6.3 -->
+        <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400%7COpen+Sans:400,400i,700%7CRoboto+Mono" rel="stylesheet">
+
+        <!-- Bootstrap Core CSS -->
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom DevConf stuff -->
+        <link href="/static/css/devconf.css" rel="stylesheet">
+
+        <!-- Scrolling Nav JavaScript -->
+        <link href="/static/css/scrolling-nav.css" rel="stylesheet">
+
+        <!-- Custom YT handler -->
+        <link href="/static/css/yt-js.css" rel="stylesheet">
+
+    </head>
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="50">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <a class="hidden-lg" href="#" onclick="scroll_to_section('#intro')">
+          <img src="{% static '/images/devconf-cz-webopt.svg' %}" class="navbar-brand logo-mobile" alt="Back to top"></a>
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+          <a class="top-branding hidden-md hidden-sm hidden-xs" href="#" onclick="scroll_to_section('#intro')">
+              <img src="{% static '/images/devconf-cz-webopt.svg' %}" class="navbar-brand" alt="Back to top">
+          </a>
+
+          <ul class="nav navbar-nav navbar-left">
+              <li><a href="{% url '/' %}" class="fa fa-home" title="DevConf.cz - Home">
+                <span class="hide">Home</span>
+            </a></li>
+
+            <!-- this is ugly... should just fit in... no extra styles in-inline... -->
+            <li>
+            <div class="dropdown" style="margin-top: 12px; color: #777777">
+              <i class="fa fa-history" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span class="caret"></span>
+              </i>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li class="dropdown-header">Main Events</li>
+                <li><a href="{% url '/2018/' %}"><b>2018 - DevConf.cz</b></a></li>
+                <li><a href="{% url '/2017/' %}" style="color: #ddd">2017 - January 27-29</a></li>
+                <li class="dropdown-header">Roadshow Events</li>
+                <li><a href="{% url '/2017/roadshow-bratislava.html' %}"><b>2017 - Containers Bratislava</b></a></li>
+                <li><a href="{% url '/2017/roadshow-prague.html' %}" style="color: #ddd"><b>2017 - Containers Prague</b></a></li>
+              </ul>
+            </div>
+            </li>
+
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right social">
+            <li><a href="https://telegram.me/joinchat/B1He_UEkuB4fBfY1cKCXRw" class="fa fa-send-o" title="Telegram - Attendees Channel">
+                <span class="hide">Telegram</span>
+            </a></li>
+
+            <li><a href="https://twitter.com/devconf_cz" class="fa fa-twitter" title="Twitter">
+                <span class="hide">Twitter</span>
+            </a></li>
+
+            <li><a href="https://www.facebook.com/DevConf.cz" class="fa fa-facebook-official" title="Facebook">
+                <span class="hide">Facebook</span>
+            </a></li>
+
+            <li><a
+                href="https://www.youtube.com/channel/UCmYAQDZIQGm_kPvemBc_qwg" class="fa fa-youtube-play" title="YouTube">
+                <span class="hide">YouTube</span>
+            </a></li>
+
+            <li><a href="https://plus.google.com/100374582019862201361" class="fa fa-google-plus" title="Google+">
+                <span class="hide">Google+</span>
+            </a></li>
+
+            <li><a href="https://github.com/kejbaly2/devconfcz" class="fa fa-github" title="Github">
+                <span class="hide">GitHub</span>
+            </a></li>
+
+            <li><a href="mailto:info@devconf.cz" class="fa fa-envelope" title="E-Mail">
+                <span class="hide">E-mail</span>
+            </a></li>
+          </ul>
+        </div>
+
+        <!-- /.navbar-collapse -->
+      </div>
+
+      <!-- /.container -->
+    </nav>
+
+
+    {% block body %}
+    {% endblock %}
+
+    <footer id="footer" class="footer-section">
+      <div class="container">
+          <!-- Participation Agreements Section -->
+          <div class="col-xs-12 text-center">
+              <a class="smaller" href="{% url '/speaker-agreement.html' %}"><i class="fa fa-check-square-o text-warning" aria-hidden="true"></i> Speaker Agreement</a>
+              <a class="smaller" href="{% url '/coc.html' %}"><i class="fa fa-external-link text-warning" aria-hidden="true"></i> Code of Conduct</a>
+              <a class="smaller" href="{% url '/media-policy.html' %}"><i class="fa fa-film text-warning" aria-hidden="true"></i> Media Policy</a>
+          </div>
+          <!-- END Participation Agreements Section -->
+      </div>
+    </footer>
+
+
+  </body>
+
+  <script src="{% static '/static/js/jquery.js' %}"></script>
+  <script src="{% static '/static/js/bootstrap.min.js' %}"></script>
+  <script src="{% static '/static/js/jquery.easing.min.js' %}"></script>
+  <script src="{% static '/static/js/scrolling-nav.js' %}"></script>
+  <script src="{% static '/static/js/yt-js.js' %}"></script>
+  <script src="{% static '/static/js/js.cookie.js' %}"></script>
+  <script src="{% static '/static/js/devconf.js' %}"></script>
+
+  <script>
+  (function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()
+  </script>
+
+  {% block scripts %}
+  {% endblock %}
+
+</html>

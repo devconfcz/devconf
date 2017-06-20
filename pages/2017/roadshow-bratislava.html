@@ -1,0 +1,482 @@
+{% extends "base.html" %}
+
+{% block title %}
+    <title>DevConf.cz Roadshow - Containers Bratislava 2017</title>
+{% endblock %}
+
+{% block body %}
+
+    <!-- Home Section -->
+    <header id="intro" class="intro-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 intro-content">
+            <div>
+               <a href="#">
+                  <img src="img/devconf-cz-roadshow-bratislava-landing.png" style="width: 30%;" />
+               </a>
+            </div>
+
+            <div class="tagline">Containers Roadshow</div>
+
+            <div class="time-and-place">
+              <address class="sk">Connect Olive</address>
+              <address class="sk">Stromovej 54/A, Bratislava [SK]</address>
+              <address class="en">Connect Olive</address>
+              <address class="en">Stromovej 54/A, Bratislava [SK]</address>
+              <div class="date">
+                <time datetime="2017-06-14" class="sk">Streda, 14. júna 2017</time>
+                <time datetime="2017-06-14" class="en">Wednesday June 14, 2017</time>
+              </div>
+            </div>
+
+            <p class="sk orange">Všetky prezentácie a dielne budú v slovenčine alebo češtine</p>
+            <p class="en orange">Presentations and workshops will be in Czech / Slovak.</p>
+          </div>
+
+          <div class="col-sm-offset-2 col-sm-8 intro-content">
+            <h2 class='description en'>
+              DevConf.cz is proud to bring you another free, one day containers focused community conference. This time, in Bratislava!
+            </h2>
+            <h2 class='description sk'>
+              Devconf.cz vám zadarmo prináša špeciálnu jednodennú komunitnú konferenciu v Bratislave, zameranú na technológie Linuxových kontajnerov.
+            </h2>
+          </div>
+
+          <!--<div class="col-sm-offset-2 col-sm-4 intro-content">-->
+          <div class="col-sm-offset-2 col-sm-4 intro-content">
+            <a href='http://bit.ly/devconfcz-17-roadshow-containers-bratislava-registration'>
+              <i class="fa fa-sign-in" style='font-size: 4em; padding: .2em; margin-right: 0' aria-hidden="true"></i>
+            <div class = "alert alert-success">
+              <b class="en">Registration</b>
+              <b class="sk">Registrácia</b>
+            </a>
+            </div>
+            <h4 class='en'><i>FREE registration. Limited capacity!</i></h4>
+            <h4 class='sk'><i>Registrácia je zadarmo. Obmedzená kapacita.</i></h4>
+          </div>
+
+          <div class="col-sm-4 intro-content">
+            <a href='#schedule'>
+              <i class="fa fa-calendar-o" style='font-size: 4em; padding: .2em; margin-right: 0' aria-hidden="true"></i>
+            <div class = "alert alert-success">
+              <b class="en">Program</b>
+              <b class="sk">Program</b>
+            </a>
+            </div>
+            <h4 class="en"><i>1 day, talks + workshops</i></h4>
+            <h4 class="sk"><i>1 deň, prezentácie + dielne</i></h4>
+          </div>
+        </div>
+
+         <!-- this should just sit some 2em or something about the bottom of the screen -->
+         <div class="col-sm-12" style="padding-top:2em">
+           <a href="#sponsors" onclick="scroll_to_section('#sponsors')" style="color: #8786df;"><i class="fa fa-chevron-circle-down next-page" aria-hidden="true"></i></a>
+         </div>
+    </header>
+
+    <!-- PROGRAM -->
+    <section id="schedule" class="schedule-section">
+          <h2 class="sk">Program</h2>
+          <h2 class="en">Program</h2>
+          <div class="col-sm-offset-2 col-sm-8">
+              <!--
+               agenda template bootstrap
+               source: http://bootsnipp.com/snippets/featured/agenda
+              -->
+              <h1 class="sk">Streda, 14. júna 2017</h1>
+              <h1 class="en">Wednesday June 14, 2017</h1>
+              <p class="sk red">Registrácia na mieste: 09:00 - 10:00</p>
+              <p class="en red">On-site registration: 09:00 - 10:00</p>
+              <br/>
+              <div class="agenda">
+                  <div class="table-responsive">
+                      <table class="table table-condensed table-white-bg larger" cellspacing="0" cellpadding="0">
+                          <tbody>
+                              <tr>
+                                  <td class="agenda-room" rowspan="8">
+                                      <p class="sk">Prednášková sála</p>
+                                      <p class="en">Lecture Hall</p>
+                                  </td>
+                                  <td class="agenda-time">
+                                      10:00 - 10:30
+                                  </td>
+                                  <td class="agenda-events">
+                                      <div class="agenda-event">
+                                         <p class="sk">
+        Automatizujte vývoj moderních aplikací pomocí kontejnerů a OpenShiftu - Jiří Kolář</p>
+                                         <p class="en">
+        Automate modern app development with containers and OpenShift - Jiří Kolář</p>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="agenda-time">
+                                      10:30 - 11:00
+                                  </td>
+                                  <td class="agenda-events">
+                                      <div class="agenda-event">
+                                         <p class="sk">
+        Containers: história a súčasný stav v Linuxe - Michal Sekletár</p>
+                                         <p class="en">
+        Containers: history and current state on Linux - Michal Sekletár</p>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="agenda-time">
+                                      11:00 - 11:30
+                                  </td>
+                                  <td class="agenda-events">
+                                      <div class="agenda-event">
+                                         <p class="sk">
+       Vývoj Containers v podnikovom svete - Honza Horák</p>
+                                         <p class="en">
+       How to develop containers for the enterprise - Honza Horák</p>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="agenda-time">
+                                      11:30 - 12:00
+                                  </td>
+                                  <td class="agenda-events">
+                                      <div class="agenda-event">
+                                          <p class="sk">
+      Docker kontejnery a černé díry - František Kluknavský + Matus Kocka</p>
+                                         <p class="en">
+      Docker containers and black holes - František Kluknavský + Matus Kocka</p>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="agenda-time">
+                                      12:00 - 13:30
+                                  </td>
+                                  <td class="agenda-events">
+                                      <div class="agenda-event">
+                                         <p class="sk">Prestávka na občerstvenie</p>
+                                         <p class="en"><i>Snack Break</i></p>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="agenda-time">
+                                      13:30 - 14:00
+                                  </td>
+                                  <td class="agenda-events">
+                                      <div class="agenda-event">
+                                         <p class="sk">
+       Správa kontejnerů s Ansible - Peter Schiffer </p>
+                                         <p class="en">
+       Managing containers with Ansible - Peter Schiffer </p>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="agenda-time">
+                                      14:00 - 14:30
+                                  </td>
+                                  <td class="agenda-events">
+                                      <div class="agenda-event">
+                                         <p class="sk">
+       Modularity and Docker Containers - Matus Kocka</p>
+                                         <p class="en">
+       Modularity and Docker Containers - Matus Kocka</p>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="agenda-time">
+                                      14:30 - 15:00
+                                  </td>
+                                  <td class="agenda-events">
+                                      <div class="agenda-event">
+                                        <p class="sk">
+       Čas na demo! - Vašek Pavlín + David Bečvařík</p>
+                                        <p class="en">
+       Demo time! - Vašek Pavlín + David Bečvařík</p>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="agenda-room" rowspan="3">
+                                    <p class="sk">Miestnosť pre workshopy</p>
+                                    <p class="en">Workshop Room</p>
+                                  </td>
+                                  <td class="agenda-time"></td>
+                                  <td class="agenda-events"></td>
+                              </tr>
+                              <tr>
+                                  <td class="agenda-time">
+                                      10:30 - 12:30
+                                  </td>
+				  <td class="agenda-events">
+                                      <div class="agenda-event">
+                                         <p class="sk">
+       Predstavenie kontajnerov na SmartOS-e - Daniel Kontsek + Ján Poctavek</p>
+                                         <p class="en">
+       Hands-on Introduction to Containers on SmartOS - Daniel Kontsek + Ján Poctavek</p>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="agenda-time">
+                                      13:00 - 14:30
+                                  </td>
+                                  <td class="agenda-events">
+                                      <div class="agenda-event">
+                                        <p class="sk">
+      Containers Quickstart - David Bečvařík</p>
+                                        <p class="en">
+      Containers Quickstart - David Bečvařík</p>
+                                      </div>
+                                  </td>
+                              </tr>
+
+                          </tbody>
+                      </table>
+                      <br/><br/>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPEAKERS -->
+    <section id="speakers" class="speakers-section">
+      <h2 class="sk">Prednášajúci</h2>
+      <h2 class="en">Speakers</h2>
+      <div class="container"><br><br>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="alert alert-panel-purple">
+            <div class="panel-body">
+                <img src="img/msekletar.jpg" class="pic_ina img-thumbnail"/>
+                <div class="con_ina">
+                <b> Michal Sekletár </b><br>
+                <p class="sk">Senior Software Engineer, Red Hat</p>
+                <p class="en">Senior Software Engineer, Red Hat</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="alert alert-panel-red">
+            <div class="panel-body">
+                <img src="img/dbecvarik.jpg" class="pic_ina img-thumbnail"/>
+                <div class="con_ina">
+                <b> David Bečvařík </b><br>
+                <p class="sk">Community Leader at Prague Containers Meet-up</p>
+                <p class="en">Community Leader at Prague Containers Meet-up</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="alert alert-panel-purple">
+            <div class="panel-body">
+                <img src="img/danielkontsek.jpg" class="pic_ina img-thumbnail"/>
+                <div class="con_ina">
+                <b>Daniel Kontsek</b><br>
+                <p class="sk">Spoluzakladateľ Erigones, systémový architekt, pythonista</p>
+                <p class="en">Co-founder of Erigones, System Architect, Pythonista</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="alert alert-panel-purple">
+            <div class="panel-body">
+                <img src="img/jan_poctavek.jpg" class="pic_ina img-thumbnail"/>
+                <div class="con_ina">
+                <b>Ján Poctavek </b><br>
+                <p class="sk">Danube Cloud - open source virtualization software</p>
+                <p class="en">Danube Cloud - open source virtualization software</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!--
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="alert alert-panel-purple">
+            <div class="panel-body">
+                <img src="img/matejnemcek.jpg" class="pic_ina img-thumbnail"/>
+                <div class="con_ina">
+                <b> Matej Nemček </b><br>
+                <p class="sk">Zakladateľ Aktiv.io a vývojár backendu v Saferpass</p>
+                <p class="en">Founder of Aktiv.io and backend developer at Saferpass</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        -->
+
+        <!--
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="alert alert-panel-purple">
+            <div class="panel-body">
+                <img src="img/spolasek.jpg" class="pic_ina img-thumbnail"/>
+                <div class="con_ina">
+                <b> </b><br>
+                <p class="sk"></p>
+                <p class="en"></p>
+                </div>
+            </div>
+            </div>
+        </div>
+        -->
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="alert alert-panel-red">
+                <div class="panel-body">
+                    <img src="img/hhorak.jpg" class="pic_ina img-thumbnail"/>
+                    <div class="con_ina">
+                    <b> Honza Horák </b><br>
+                    <p class="sk">Associate Manager, Software Engineering, Red Hat</p>
+                    <p class="en">Associate Manager, Software Engineering, Red Hat</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="alert alert-panel-red">
+                <div class="panel-body">
+                    <img src="img/jkolar.jpg" class="pic_ina img-thumbnail"/>
+                    <div class="con_ina">
+                    <b> Jiří Kolář </b><br>
+                    <p class="sk">Red Hat Middleware Solution Architect for CZ-SK and CEE region</p>
+                    <p class="en">Red Hat Middleware Solution Architect for CZ-SK and CEE region</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="alert alert-panel-red">
+                <div class="panel-body">
+                    <img src="img/pschiffe.jpg" class="pic_ina img-thumbnail"/>
+                    <div class="con_ina">
+                    <b> Peter Schiffer </b><br>
+                    <p class="sk">Senior Software Engineer, OpenShift, Red Hat</p>
+                    <p class="en">Senior Software Engineer, OpenShift, Red Hat</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="alert alert-panel-red">
+                <div class="panel-body">
+                    <img src="img/vpavlin.jpg" class="pic_ina img-thumbnail"/>
+                    <div class="con_ina">
+                    <b> Vašek Pavlín </b><br>
+                    <p class="sk">Senior Software Engineer, Red Hat</p>
+                    <p class="en">Senior Software Engineer, Red Hat</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="alert alert-panel-red">
+            <div class="panel-body">
+                <img src="img/mkocka.jpg" class="pic_ina img-thumbnail"/>
+                <div class="con_ina">
+                <b> Matus Kocka </b><br/>
+                <p class="sk">Software Engineer, Red Hat</p>
+                <p class="en">Software Engineer, Red Hat</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="alert alert-panel-red">
+            <div class="panel-body">
+                <img src="img/fkluknavsky.jpg" class="pic_ina img-thumbnail"/>
+                <div class="con_ina">
+                <b> František Kluknavský </b><br/>
+                <p class="sk">Associate Software Engineer, Red Hat</p>
+                <p class="en">Associate Software Engineer, Red Hat</p>
+                </div>
+            </div>
+            </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+    <!-- VENUE -->
+    <section id="venue" class="venue-section">
+        <h2 class="sk">Miesto konania <a href="https://osm.org/go/0LBIK5Tgf"><i class="fa fa-map-o" aria-hidden="true"></i></a> <br/> <small class="white">(Connect Olive - Stromovej 54/A)</small></h2>
+        <h2 class="en">Venue <a href="https://osm.org/go/0LBIK5Tgf"><i class="fa fa-map-o" aria-hidden="true"></i></a> <br/> <small class="white">(Connect Olive - Stromovej 54/A)</small></h2>
+      <iframe width="100%" height="500px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=17.09048062562943%2C48.16714268503942%2C17.094021141529087%2C48.16871870442653&amp;layer=mapnik&amp;marker=48.16793070078684%2C17.092250883579254" style="border: 1px solid black"></iframe>
+    </section>
+
+    <!-- Sponsors -->
+    <section id="sponsors" class="sponsors-section">
+      <h2 class="en">Sponsors</h2>
+      <h2 class="sk">Sponzori</h2>
+      <div class="container">
+        <h3 class="en">This event is brought to you by:</h3>
+        <h3 class="sk">Túto udalosť vám prináša:</h3>
+        <div class="row">
+          <div class="col-lg-12">
+            <a href="https://www.redhat.com/en/global/czech-republic"><img alt="Red Hat, Czech" src="img/logo_redhat_rgb_default.png">
+            <div class="sponsor-desc">
+                <p class="en">World's leading provider of open source, enterprise IT solutions.</p>
+                <p class="sk">Popredný svetový poskytovateľ open source softwarových riešení.</p>
+            </div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="en">And supported by our friends at:</h4>
+            <h4 class="sk">S podporou našich priateľov z:</h4>
+          </div>
+
+          <!--
+          <div class="col-lg-12 sponsor">
+            <a href="">
+                <img alt="" src="">
+                <div class="sponsor-desc">
+                    <p class="en"></p>
+                </div>
+            </a>
+          </div>
+          -->
+
+          <div class="col-lg-6 sponsor">
+            <a href="https://www.openshift.com">
+                <img alt="OpenShift" src="img/openshift_logo_cropped_250w.png">
+                <div class="sponsor-desc">
+                <p class="en">OpenShift is an open source PaaS by Red Hat based on top of Docker containers and the Kubernetes container cluster manager for enterprise app development and deployment.</p>
+                <p class="sk">OpenShift je open source PaaS (platforma ako služba) od Red Hatu postavená na technológiách Docker a Kubernetes.</p>
+                </div>
+                </a>
+          </div>
+
+          <div class="col-lg-6 sponsor">
+            <a href="https://mojefedora.cz">
+                <img alt="MojeFedora CZ" src="img/cropped-mojefedora-250x-150y.png">
+              <div class="sponsor-desc">
+                <p class="en">Czech website about Fedora Linux distribution. Articles, guides, news and place for discussion at one place.</p>
+                <p class="sk">Český web o distribúcii Fedora Linux. Články, návody, novinky a miesto na diskusiu na jednom mieste.</p>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+{% endblock %}
