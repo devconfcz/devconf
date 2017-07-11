@@ -1,0 +1,164 @@
+{% extends "base.html" %}
+
+{% block title %}
+    <title>DevConf - Free and Open Source Software Community Conferences for Developers</title>
+{% endblock %}
+
+{% block body %}
+    <!-- Home Section -->
+    <header id="intro" class="intro-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+
+            <a href="#">
+                <h1 class="logo"><img id="devconf-logo" src="images/devconf-cz-webopt.svg" alt="DevConf.cz"></h1>
+            </a>
+            <h2>#DEFINEfuture</h2>
+          </div>
+        </div>
+
+        <div class="row" style="padding-top: .5em">
+          <!-- MAKE EACH OF THESE BOXES CONSTANT HEIGHT -->
+          <div class="col-sm-6 intro-content">
+            <div> 
+            <a href="2017/roadshow/bratislava/index.html">
+                <img src="images/devconf-cz-roadshow-bratislava-landing-named.png" style="width: 45%;" /> 
+            </a>
+            </div>
+
+            <div class="time-and-place">
+              <address>Bratislava, Slovakia</address>
+              <div class="date">
+                <time datetime="2017-07-14"><b>June 14, 2017</b></time>
+              </div>
+            </div>
+
+            <div class="intro-text">
+               <p class="en">
+               We are happy to announce other special edition, free, one day containers focused community conference. This time in Bratislava!
+               <br/><br/><a href="2017/roadshow/bratislava/index.html">Learn more ...</a>
+               </p>
+            </div>
+
+          </div>
+
+          <div class="col-sm-6 intro-content">
+            <div> 
+            <a href="2018/index.html">
+                <img src="images/devconf-cz-event-landing-v1.png" style="width: 45%;" /> 
+            </a>
+            </div>
+
+            <h1 class="title">Main Event</h1>
+
+            <div class="time-and-place">
+              <address>Brno, Czech Republic</address>
+              <div class="date">
+                <time datetime=""><b>January 2018</b></time>
+              </div>
+            </div>
+
+            <div class="intro-text">
+               <p style="min-height: 6em;" class="en">
+               The 10th annual, free community conference in Brno for developers, admins, and users of free and open source Linux, JBoss technologies.
+
+               <br/><a href="2018/">Learn more ...</a>
+            </div>
+          </div>
+
+         <!-- this shouldn't overlap with anything... show be right above the header of the next section -->
+         <div class="col-sm-12">
+           <a href="#contact" style="color: #8786df;"><i class="fa fa-chevron-circle-down next-page" aria-hidden="true"></i></a>
+         </div>
+
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <h2>A walk down memory lane...</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-s-6">
+            <div data-id="YBj-dh9JDGc" class="youtube-player">
+              <div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; display:flex; align-items: center; justify-content: center; flex-direction: column;">
+                <div style="height: 30px"></div>
+                <!--<div class="play"><i class="fa fa-youtube-play" aria-hidden="true"></i></div>-->
+                <div style="height: 30px; color:white;"><h3>DevConf.cz 2017 Roadshow - Containers Prague</h3></div>
+              </div>
+            </div>
+          <!--
+          <div class="col-xs-6 col-s-6">
+            <div data-id="hv8lioGTkQY" class="youtube-player">
+              <div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; display:flex; align-items: center; justify-content: center; flex-direction: column;">
+                <div style="height: 30px"></div>
+                <div style="height: 30px; color:white;"><h3>DevConf.cz 2016 Flashback - Brno</h3></div>
+              </div>
+            </div>
+          -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2>Get in touch</h2>
+      <div class="container">
+        <div class="row">
+          <form action="https://devconf.us14.list-manage.com/subscribe/post?u=4405d7552dfc612aef814da21&amp;id=9dfaafef37" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div class="col-xs-12">
+              <h3>Stay informed!</h3>
+              <p>Subscribe to the DevConf newsletter to receive event updates.</p>
+            </div>
+
+            <!--
+                Stay up to date — subscribe to our newsletter or follow us on Facebook.
+            -->
+
+            <div class="col-md-4 col-xs-6">
+              <div class="form-group">
+                <input name="EMAIL" type="email" class="form-control" id="email" placeholder="Enter your email address&hellip;" required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4405d7552dfc612aef814da21_9dfaafef37" tabindex="-1" value=""></div>
+              </div>
+            </div>
+            <div class="col-md-2 col-xs-6">
+              <button type="submit" class="btn btn-success"
+                data-toggle="popover" data-trigger="hover" data-placement="top" title="Stay up to date with DevConf.cz"
+                data-content="We'll send you updates and announcements related to on-going and future DevConf.cz events.">
+                Subscribe&nbsp;&nbsp;<i class="fa fa-envelope" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="col-md-4 col-xs-12 xs-smaller">
+              <strong>No Spam! We promise!</strong><br>
+              This newsletter will only be used to share updates and announcements related to DevConf.cz.
+            </div>
+          </form>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h3>FAQ</h3>
+            <ul class="smaller">
+              <li>Q: Can I register at the door? <b>A: Yes.</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sponsors -->
+    <section id="sponsors" class="sponsors-section">
+      <h2>Sponsors</h2>
+      <div class="container">
+        <h3>DevConf.cz community events are sponsored by</h3>
+        <div class="row">
+          <div class="col-lg-12">
+              <a href="https://www.redhat.com/en/global/czech-republic">
+		  <img alt="Red Hat, Czech" src="images/logo_redhat_rgb_default.png"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}

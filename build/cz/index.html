@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+                <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta property="og:title" content="DevConf.cz, January 27-29 2017">
+        <meta property="og:site_name" content="DevConf.cz">
+        <meta property="og:description" content="
+        DevConf.cz is a free and open, annual, 3-day open-source Fedora Linux and JBoss community 
+        conference for Red Hat and community developers, DevOps, testers, and documentation writers, 
+        organized to sync, share, and hack on upstream projects with the community in the beautiful 
+        city of Brno, Czech Republic.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://devconf.cz">
+        <meta property="og:image" content="https://devconf.cz/img/devconf_cz_landing_logo.png">
+
+        <!-- FIXME: Use a  to trigger absolute or relative urls -->
+
+        <!-- YouTube Channel Linking Verification - DO NOT REMOVE!! -->
+        <meta name="google-site-verification" content="IXOh3zMePCSVZkCqKQr8dZVFfpQgPG5Og-ZpULr8MJ4" />
+
+        
+    <title>DevConf - Free and Open Source Software Community Conferences for Developers</title>
+
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+
+         <!-- BEING CSS -->
+
+        <!-- Font Awesome 4.6.3 -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400%7COpen+Sans:400,400i,700%7CRoboto+Mono" rel="stylesheet">
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom DevConf stuff -->
+        <link href="css/devconf.css" rel="stylesheet">
+
+        <!-- Scrolling Nav JavaScript -->
+        <link href="css/scrolling-nav.css" rel="stylesheet">
+
+        <!-- Custom YT handler -->
+        <link href="css/yt-js.css" rel="stylesheet">
+
+<!-- END CSS --> 
+
+    </head>
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="50">
+
+         <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <a class="hidden-lg" href="#" onclick="scroll_to_section('#intro')">
+          <img src="images/devconf-cz-webopt.svg" class="navbar-brand logo-mobile" alt="Back to top"></a>
+
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+          <a class="top-branding hidden-md hidden-sm hidden-xs" href="#" onclick="scroll_to_section('#intro')">
+              <img src="images/devconf-cz-webopt.svg" class="navbar-brand" alt="Back to top">
+          </a>
+
+          <ul class="nav navbar-nav navbar-left">
+              <li><a href="/" class="fa fa-home" title="DevConf.cz - Home">
+                <span class="hide">Home</span>
+            </a></li>
+
+            <!-- this is ugly... should just fit in... no extra styles in-inline... -->
+            <li>
+            <div class="dropdown" style="margin-top: 12px; color: #777777">
+              <i class="fa fa-history" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span class="caret"></span>
+              </i>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li class="dropdown-header">Main Events</li>
+                <li><a href="2018/"><b>2018 - DevConf.cz</b></a></li>
+                <li><a href="2017/" style="color: #ddd">2017 - January 27-29</a></li>
+                <li class="dropdown-header">Roadshow Events</li>
+                <li><a href="2017/roadshow-bratislava.html"><b>2017 - Containers Bratislava</b></a></li>
+                <li><a href="2017/roadshow-prague.html" style="color: #ddd"><b>2017 - Containers Prague</b></a></li>
+              </ul>
+            </div>
+            </li>
+
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right social">
+            <li><a href="https://telegram.me/joinchat/B1He_UEkuB4fBfY1cKCXRw" class="fa fa-send-o" title="Telegram - Attendees Channel">
+                <span class="hide">Telegram</span>
+            </a></li>
+
+            <li><a href="https://twitter.com/devconf_cz" class="fa fa-twitter" title="Twitter">
+                <span class="hide">Twitter</span>
+            </a></li>
+
+            <li><a href="https://www.facebook.com/DevConf.cz" class="fa fa-facebook-official" title="Facebook">
+                <span class="hide">Facebook</span>
+            </a></li>
+
+            <li><a
+                href="https://www.youtube.com/channel/UCmYAQDZIQGm_kPvemBc_qwg" class="fa fa-youtube-play" title="YouTube">
+                <span class="hide">YouTube</span>
+            </a></li>
+
+            <li><a href="https://plus.google.com/100374582019862201361" class="fa fa-google-plus" title="Google+">
+                <span class="hide">Google+</span>
+            </a></li>
+
+            <li><a href="https://github.com/kejbaly2/devconfcz" class="fa fa-github" title="Github">
+                <span class="hide">GitHub</span>
+            </a></li>
+
+            <li><a href="mailto:info@devconf.cz" class="fa fa-envelope" title="E-Mail">
+                <span class="hide">E-mail</span>
+            </a></li>
+          </ul>
+        </div>
+
+        <!-- /.navbar-collapse -->
+      </div>
+
+      <!-- /.container -->
+    </nav> 
+
+    
+    <!-- Home Section -->
+    <header id="intro" class="intro-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+
+            <a href="#">
+                <h1 class="logo"><img id="devconf-logo" src="images/devconf-cz-webopt.svg" alt="DevConf.cz"></h1>
+            </a>
+            <h2>#DEFINEfuture</h2>
+          </div>
+        </div>
+
+        <div class="row" style="padding-top: .5em">
+          <!-- MAKE EACH OF THESE BOXES CONSTANT HEIGHT -->
+          <div class="col-sm-6 intro-content">
+            <div> 
+            <a href="2017/roadshow/bratislava/index.html">
+                <img src="images/devconf-cz-roadshow-bratislava-landing-named.png" style="width: 45%;" /> 
+            </a>
+            </div>
+
+            <div class="time-and-place">
+              <address>Bratislava, Slovakia</address>
+              <div class="date">
+                <time datetime="2017-07-14"><b>June 14, 2017</b></time>
+              </div>
+            </div>
+
+            <div class="intro-text">
+               <p class="en">
+               We are happy to announce other special edition, free, one day containers focused community conference. This time in Bratislava!
+               <br/><br/><a href="2017/roadshow/bratislava/index.html">Learn more ...</a>
+               </p>
+            </div>
+
+          </div>
+
+          <div class="col-sm-6 intro-content">
+            <div> 
+            <a href="2018/index.html">
+                <img src="images/devconf-cz-event-landing-v1.png" style="width: 45%;" /> 
+            </a>
+            </div>
+
+            <h1 class="title">Main Event</h1>
+
+            <div class="time-and-place">
+              <address>Brno, Czech Republic</address>
+              <div class="date">
+                <time datetime=""><b>January 2018</b></time>
+              </div>
+            </div>
+
+            <div class="intro-text">
+               <p style="min-height: 6em;" class="en">
+               The 10th annual, free community conference in Brno for developers, admins, and users of free and open source Linux, JBoss technologies.
+
+               <br/><a href="2018/">Learn more ...</a>
+            </div>
+          </div>
+
+         <!-- this shouldn't overlap with anything... show be right above the header of the next section -->
+         <div class="col-sm-12">
+           <a href="#contact" style="color: #8786df;"><i class="fa fa-chevron-circle-down next-page" aria-hidden="true"></i></a>
+         </div>
+
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <h2>A walk down memory lane...</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-s-6">
+            <div data-id="YBj-dh9JDGc" class="youtube-player">
+              <div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; display:flex; align-items: center; justify-content: center; flex-direction: column;">
+                <div style="height: 30px"></div>
+                <!--<div class="play"><i class="fa fa-youtube-play" aria-hidden="true"></i></div>-->
+                <div style="height: 30px; color:white;"><h3>DevConf.cz 2017 Roadshow - Containers Prague</h3></div>
+              </div>
+            </div>
+          <!--
+          <div class="col-xs-6 col-s-6">
+            <div data-id="hv8lioGTkQY" class="youtube-player">
+              <div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; display:flex; align-items: center; justify-content: center; flex-direction: column;">
+                <div style="height: 30px"></div>
+                <div style="height: 30px; color:white;"><h3>DevConf.cz 2016 Flashback - Brno</h3></div>
+              </div>
+            </div>
+          -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2>Get in touch</h2>
+      <div class="container">
+        <div class="row">
+          <form action="https://devconf.us14.list-manage.com/subscribe/post?u=4405d7552dfc612aef814da21&amp;id=9dfaafef37" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div class="col-xs-12">
+              <h3>Stay informed!</h3>
+              <p>Subscribe to the DevConf newsletter to receive event updates.</p>
+            </div>
+
+            <!--
+                Stay up to date — subscribe to our newsletter or follow us on Facebook.
+            -->
+
+            <div class="col-md-4 col-xs-6">
+              <div class="form-group">
+                <input name="EMAIL" type="email" class="form-control" id="email" placeholder="Enter your email address&hellip;" required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4405d7552dfc612aef814da21_9dfaafef37" tabindex="-1" value=""></div>
+              </div>
+            </div>
+            <div class="col-md-2 col-xs-6">
+              <button type="submit" class="btn btn-success"
+                data-toggle="popover" data-trigger="hover" data-placement="top" title="Stay up to date with DevConf.cz"
+                data-content="We'll send you updates and announcements related to on-going and future DevConf.cz events.">
+                Subscribe&nbsp;&nbsp;<i class="fa fa-envelope" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="col-md-4 col-xs-12 xs-smaller">
+              <strong>No Spam! We promise!</strong><br>
+              This newsletter will only be used to share updates and announcements related to DevConf.cz.
+            </div>
+          </form>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h3>FAQ</h3>
+            <ul class="smaller">
+              <li>Q: Can I register at the door? <b>A: Yes.</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sponsors -->
+    <section id="sponsors" class="sponsors-section">
+      <h2>Sponsors</h2>
+      <div class="container">
+        <h3>DevConf.cz community events are sponsored by</h3>
+        <div class="row">
+          <div class="col-lg-12">
+              <a href="https://www.redhat.com/en/global/czech-republic">
+		  <img alt="Red Hat, Czech" src="images/logo_redhat_rgb_default.png"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+     <!-- BEGIN FOOTER SECTION -->
+    <footer id="footer" class="footer-section">
+      <div class="container">
+          <!-- Participation Agreements Section -->
+          <div class="col-xs-12 text-center">
+              <a class="smaller" href="speaker-agreement.html"><i class="fa fa-check-square-o text-warning" aria-hidden="true"></i> Speaker Agreement</a>
+              <a class="smaller" href="coc.html"><i class="fa fa-external-link text-warning" aria-hidden="true"></i> Code of Conduct</a>
+              <a class="smaller" href="media-policy.html"><i class="fa fa-film text-warning" aria-hidden="true"></i> Media Policy</a>
+          </div>
+          <!-- END Participation Agreements Section -->
+      </div>
+    </footer>
+<!-- END FOOTER SECTION --> 
+
+  </body>
+
+   <!-- BEGIN SCRIPTS SECTION -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    <script src="js/yt-js.js"></script>
+    <script src="js/js.cookie.js"></script>
+    <script src="js/devconf.js"></script>
+
+    <script>
+      (function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()
+    </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-83802563-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+<!-- END SCRIPTS SECTION --> 
+
+</html>

@@ -1,0 +1,466 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #333;
+}
+
+h1 {
+  color: #000000;
+}
+
+nav, .intro-content, h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  color: #7565A3;
+}
+
+a:link {
+  color: #7565A3;
+}
+
+a:visited {
+  color: #8786df;
+}
+
+a.meetup {
+  font-size: 3em; 
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+
+.padding-top-md {
+  padding-top: 3em;
+}
+
+.padding-top-lg {
+  padding-top: 5em;
+}
+
+.xs-smaller {
+  font-size: .6em;
+}
+
+.smaller {
+  font-size: .8em;
+}
+
+.larger {
+  font-size: 1.4em;
+}
+
+.btn {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  background-clip: padding-box;
+}
+
+.btn-purple {
+  transition: all 0.1s;
+  position: relative;
+  background-color: hsl(299, 29%, 29%) !important;
+  background-image: linear-gradient(#a096e8, #8e83e4 20%, #8f83e4 60%, #7a70ca 150%);
+  background-repeat: repeat-x;
+  border-color: #39345f;
+  box-shadow: 0 1px #6157b4, 0 6px 0 #5348a7, 2px 9px 12px #ddd, 0 1px #c1bbf0 inset;
+  color: #fff !important;
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0.75ex 2ex;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.4);
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn-purple:hover {
+  background-image: linear-gradient(#aba2eb, #998fe8 25%, #998fe8 60%, #867cd1 170%);
+  border-color: #413b6a;
+  box-shadow: 0 1px #675cbb, 0 6px 0 #5c51b2, 2px 9px 12px #ddd, 0 1px #c7c2f2 inset;
+}
+
+.btn-purple:active {
+  background-image: linear-gradient(#6258a7,#8e83e4 150%);
+  box-shadow: none;
+  margin-bottom: -9px;
+  margin-top: 9px;
+}
+
+.btn-orange {
+  background-color: hsl(36, 100%, 40%) !important;
+  background-repeat: repeat-x;
+  background-image: linear-gradient(#ffad32, #cc7a00);
+  border-color: #cc7a00 #cc7a00 hsl(36, 100%, 35%);
+  color: #eee !important;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.white {
+  color: #fff
+}
+
+.purple {
+  color: #8786df;
+}
+
+.red {
+  color: #820000;
+}
+
+.orange {
+  color: hsl(36, 100%, 40%);
+}
+
+.description {
+  color: #000;
+  font-size: 1em;
+  font-style: italic;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  font-size: 2em;
+}
+
+.tagline {
+  font-family: "Montserrat", sans-serif;
+  color: #820000;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-brand {
+  padding-top: 0;
+  display: none; /* jQuery cares about this */
+}
+
+.nav > li > a {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.navbar-flag{
+  height: 16.2px;
+  cursor: pointer;
+}
+
+.top-branding {
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  padding-top: 10px;
+}
+
+.social {
+  font-size: 0.90em;
+}
+
+section {
+  background: #fff;
+  line-height: 1.6;
+  clear: both;
+  display: block;
+  padding: 0 0 4em;
+  overflow: hidden;
+}
+
+section h2 {
+  text-align: center;
+  clear: both;
+  background-color: rgba(69, 50, 195, 0.7);
+  color: #fff;
+  padding: 0.8em;
+  margin: 0 0 1em;
+  text-shadow: 0 2px 4px rgba(69, 50, 195, 0.3);
+}
+
+section h2 a {
+  color: #fff !important;
+}
+
+h3, h4, h5, h6 {
+  padding: 2em 0 1em;
+  color: #000000;
+}
+
+h3.first {
+  padding-top: 0;
+}
+
+.coc-section {
+  padding-top: 100px;
+}
+
+.coc-section .logo {
+  text-align: center;
+}
+
+.intro-section {
+  overflow: hidden;
+  text-align: center;
+  /*background: #fff url("../img/petrov_brno-illustration2.png") no-repeat 80% 100%;*/
+  background-size: contain;
+  padding: 3em 0 3em;
+  font-size: 100%;
+  color: #999;
+  min-height: 100%;
+}
+
+.logo img {
+  max-width: 90%;
+  height: auto;
+}
+
+.logo-mobile {
+  padding-top: 15px;
+}
+
+.intro-content .logo {
+  /* Visually compensate for the .cz */
+  position: relative;
+  left: 20px;
+  overflow: hidden;
+}
+
+.intro-content > div {
+  padding: .4em 0;
+}
+
+.next-page {
+  padding-bottom: 2em;
+}
+
+.intro-text {
+  margin: 0 auto;
+  max-width: 25em;
+  /*margin-bottom: 15px;*/
+  color: #111111;
+  min-height: 6em;
+}
+
+.time-and-place address {
+  color: #888888;
+  margin: 0;
+  font-weight: bold;
+}
+
+.time-and-place time {
+  color: #000000;
+}
+
+.about-section {
+  padding-bottom: 3%;
+  background: #eee;
+}
+
+.venue-section {
+  padding-bottom: 0em;
+}
+
+.venue-section iframe{
+  margin-bottom: -8px; /*Gets rid of white space on the bottom, TODO fix and remove this ugly code */
+  pointer-events: none;
+}
+
+.registration-section,
+.testimonials-section,
+.brno-section,
+.faq-section,
+.faq-section,
+.sponsors-section {
+  background: #eee;
+}
+
+.venue-section h2 {
+  margin-bottom: 0;
+}
+
+.sponsors-section {
+  text-align: center;
+}
+
+.sponsor {
+  height: 160px;
+}
+
+.sponsor-desc {
+  display: none;
+}
+
+.schedule-section {
+  background: #eee;
+}
+.footer-section {
+  background: #000;
+  padding: 25px;
+}
+
+.fa {
+  margin-right: 0.5ex;
+}
+
+h2 .fa {
+  margin-right: 0;
+}
+
+#travel-text {
+  height: 400px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#more-text {
+  display: inherit;
+}
+
+#less-text {
+  display: none;
+}
+
+.schedule-section {
+    padding-bottom: 0;
+}
+
+.schedule-iframe {
+    /* FIXME */
+    border: 0;
+    height: 600px;
+    width: 100%;
+}
+
+/* Mobile device tweaks */
+@media screen and (max-width: 752px) {
+  .intro-section {
+    padding-top: 75px;
+    font-size: inherit;
+    padding-bottom: 0;
+  }
+
+  .intro-content {
+    /* Add a light screen over the background */
+    background-color: rgba(255,255,255,0.75);
+    padding-bottom: 4em;
+  }
+
+  .intro-content > div {
+    padding: 0.75em 0;
+  }
+
+
+  .intro-section .logo {
+    left: 10px;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .intro-text {
+    max-width: 15em;
+  }
+
+  .navbar {
+    display: block!important;
+  }
+}
+
+
+
+/* agenda template bootstrap
+ * source: http://bootsnipp.com/snippets/featured/agenda
+ */
+
+.table-grey-bg {
+  background: #eee;
+}
+
+.table-white-bg {
+  background: #fff;
+}
+
+.agenda {  
+  font-size: .8em;
+}
+
+/* Dates */
+.agenda .agenda-date { width: 170px; }
+.agenda .agenda-date .dayofmonth {
+  width: 40px;
+  font-size: 36px;
+  line-height: 36px;
+  float: left;
+  text-align: right;
+  margin-right: 10px; 
+}
+.agenda .agenda-date .shortdate {
+  font-size: 0.75em; 
+}
+
+
+/* Times */
+.agenda .agenda-time { 
+  font-size: .8em;
+  font-family: monospace;
+  width: 150px; 
+} 
+
+
+/* Events */
+.agenda .agenda-events {  } 
+.agenda .agenda-events .agenda-event {  
+/*  font-weight: bold; */
+} 
+
+@media (max-width: 767px) {
+    
+}
+
+/* Profile picture bootstrap
+ * src: http://bootsnipp.com/snippets/DV0xz
+ */
+
+.pic_ina
+{
+    max-height:90px;
+    max-width:30%;
+    float:left;
+}
+.con_ina
+{
+    height:100px;
+    width:67%;
+    margin-left:3%;
+    float:left;
+}
+.btn_inr
+{
+    float:right;
+    margin-top:25px;
+}
+
+.alert-panel-purple
+{
+  background-color: #fafaff;
+  border: 1px solid rgba(251, 100, 100, 0.48);
+}
+
+.alert-panel-red
+{
+  background-color: #fbfafa;
+  border: 1px solid rgba(251, 100, 100, 0.48);
+}
+
+/* Multilanguage support
+ * src: http://stackoverflow.com/a/24035422
+ */ 
+.en { display:none; } /* hide all elements with a language class */
