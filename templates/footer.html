@@ -1,11 +1,40 @@
+<!-- BEGIN NEWSLETTER SECTION -->
+    <section id="newsletter" class="newsletter-section">
+      <h2>Stay informed!</h2>
+      <div class="container padding-top-md">
+        <div class="row">
+          <div class="col-sm-offset-2 col-sm-8">
+              <form id="newsletter" method="post" action="https://tinyletter.com/devconf_cz">
+                <div class="col-xs-12">
+                    <p>{{ _('Subscribe to our newsletter to receive all updates and event information.') }}</p>
+                </div>
+                <div class="col-sm-8">
+                  <div class="form-group">
+                    <input name="email" type="email" class="form-control" id="email" placeholder="Enter your email address&hellip;" required>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <button type="submit" class="btn btn-success"
+                    data-toggle="popover" data-trigger="hover" data-placement="top" title="Stay up to date with DevConf.cz"
+                    data-content="Subscribe to our newsletter to receive updates and event information.">
+                    Subscribe&nbsp;&nbsp;<i class="fa fa-envelope" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </form>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- END NEWSLETTER SECTION-->
+
 <!-- BEGIN FOOTER SECTION -->
     <footer id="footer" class="footer-section">
       <div class="container">
           <!-- Participation Agreements Section -->
           <div class="col-xs-12 text-center">
-              <a class="smaller" href="speaker-agreement.html"><i class="fa fa-check-square-o text-warning" aria-hidden="true"></i> Speaker Agreement</a>
-              <a class="smaller" href="coc.html"><i class="fa fa-external-link text-warning" aria-hidden="true"></i> Code of Conduct</a>
-              <a class="smaller" href="media-policy.html"><i class="fa fa-film text-warning" aria-hidden="true"></i> Media Policy</a>
+              <a class="smaller" href="{{ '/speaker-agreement.html'|url }}"><i class="fa fa-check-square-o text-warning" aria-hidden="true"></i> {{ _('Speaker Agreement') }}</a>
+              <a class="smaller" href="{{ '/coc.html'|url }}"><i class="fa fa-external-link text-warning" aria-hidden="true"></i> {{ _('Code of Conduct') }}</a>
+              <a class="smaller" href="{{ '/media-policy.html'|url }}"><i class="fa fa-film text-warning" aria-hidden="true"></i> {{ _('Media Policy') }}</a>
           </div>
           <!-- END Participation Agreements Section -->
       </div>

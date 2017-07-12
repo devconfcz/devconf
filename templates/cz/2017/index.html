@@ -8,9 +8,13 @@
 
     <!-- Home Section -->
     <header id="intro" class="intro-section">
-      <div class="container">
+      <div class="container padding-top-md">
         <div class="row">
-          <div class="col-sm-8 intro-content">
+          <div class="col-sm-12 intro-content">
+            <div class = "alert alert-danger">
+              <b>Registration is CLOSED for this event!</b>
+            </div>
+
             <div class="time-and-place">
               <address>Brno, Czech Republic</address>
               <div class="date">
@@ -19,18 +23,12 @@
               </div>
             </div>
 
-            <a href="../index.html">
-                <h1 class="logo"><img id="devconf-logo" src="{% static '/images/devconf-cz-webopt.svg' %}" alt="DevConf.cz"></h1>
-            </a>
+	    <h1 class="logo"><img id="devconf-logo" src="{{ '/images/devconf-cz-webopt.svg'|url }}" alt="DevConf.cz"></h1>
 
             <div class="tagline">#DEFINEfuture</div>
 
             <div class="intro-text">
                A free annual community conference for developers, admins, and users of Open Source technologies.
-            </div>
-
-            <div class = "alert alert-danger xs-smaller">
-              <b>Registration is CLOSED. See you next year!</b>
             </div>
 
           </div>
@@ -66,17 +64,9 @@
           </div>
 
           <div class="col-xs-12 col-s-6">
-            <div data-id="_jW8lUyoFDw" class="youtube-player">
-              <div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; display:flex; align-items: center; justify-content: center; flex-direction: column;">
-                <div style="height: 30px"></div>
-                <div class="play"><i class="fa fa-youtube-play" aria-hidden="true"></i></div>
-                <div style="height: 30px; color:white;"><h3>DevConf 2016 Timelapse Video</h3></div>
-              </div>
-            </div>
-
-            <!-- <div class="embed-responsive embed-responsive-16by9">
+            <div class="embed-responsive embed-responsive-16by9">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/_jW8lUyoFDw" frameborder="0" allowfullscreen=""></iframe>
-            </div> -->
+            </div>
           </div>
         </div>
       </div>
@@ -93,7 +83,7 @@
                 "It is a great conference to meet awesome people from around the world with very good presentations and workshops about free and open source software. ... very well organized and Brno is also a nice city"
               </div>
               <div class="testimonial-desc">
-                  <img src="{% static '/images/till_mass_profile_testimonial_100x100.png' %}" alt="Till Maas DevConf.CZ 2016 Testimonial">
+		      <img src="{{ '/images/till_mass_profile_testimonial_100x100.png'|url }}" alt="Till Maas DevConf.CZ 2016 Testimonial">
                 <div class="testimonial-writer">
                   <div class="testimonial-writer-name">
                     Till Maas
@@ -117,7 +107,7 @@
                 "It's like FOSDEM, just not as big, but better organized and very centered to Red Hat because they organizing it"
               </div>
               <div class="testimonial-desc">
-                  <img src="{% static '/images/alex_juncu_profile_testimonial_100x100.png' %}" alt="Alex Juncu DevConf.CZ 2016 Testimonial">
+		      <img src="{{ '/images/alex_juncu_profile_testimonial_100x100.png'|url }}" alt="Alex Juncu DevConf.CZ 2016 Testimonial">
                 <div class="testimonial-writer">
                   <div class="testimonial-writer-name">
                     Alex Juncu
@@ -141,7 +131,7 @@
                 "Hands down the best FLOSS conference in the Czech Republic!"
               </div>
               <div class="testimonial-desc">
-                  <img src="{% static '/images/ondrej_skopek_profile_testimonial_100x100.png' %}" alt="Ondrej Skopek DevConf.CZ 2016 Testimonial">
+		      <img src="{{ '/images/ondrej_skopek_profile_testimonial_100x100.png'|url }}" alt="Ondrej Skopek DevConf.CZ 2016 Testimonial">
                 <div class="testimonial-writer">
                   <div class="testimonial-writer-name">
                     Ondrej Skopek
@@ -162,7 +152,7 @@
                 "Presentation of the hottest New Technologies as they are being made."
               </div>
               <div class="testimonial-desc">
-                  <img src="{% static '/images/jostein-toftebakk_profile_testimonial_100x100.png' %}" alt="Jostein Toftebakk DevConf.CZ 2016 Testimonial">
+		      <img src="{{ '/images/jostein-toftebakk_profile_testimonial_100x100.png'|url }}" alt="Jostein Toftebakk DevConf.CZ 2016 Testimonial">
                 <div class="testimonial-writer">
                   <div class="testimonial-writer-name">
                     Jostein Toftebakk
@@ -177,19 +167,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- VENUE -->
-    <section id="venue" class="venue-section">
-      <h2>Venue (<a href='https://www.google.cz/maps/place/Faculty+of+Information+Technology+Brno+University+of+Technology,+Bo%C5%BEet%C4%9Bchova+1%2F2,+612+66+Brno-Kr%C3%A1lovo+Pole/@49.226851,16.5945971,17z/data=!3m1!4b1!4m5!3m4!1s0x471294099f6249fb:0x46a6dce891d1b33d!8m2!3d49.226851!4d16.5967858' target='_blank'><i class='fa fa-map-o' aria-hidden='true'></i></a>)</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.626003854735!2d16.59445131593849!3d49.22661948266199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471294099dc06bbb%3A0xbfcf161b01a48b0d!2sFaculty+of+Information+Technology%2C+Brno+University+of+Technology!5e0!3m2!1sen!2sus!4v1489975948611" style="width: 100%; height: 400px; z-index: 0; border:0" frameborder=0></iframe>
-    </section>
-
-    <section id="venue" class="venue-section">
-      <h2>Faculty of Information Technology (VUT) - Božetěchova 1/2</h2>
-      <div style="width: 100%; height: 100%">
-          <object type="image/svg+xml" data="{% static '/images/devconf_17_map_v03.1.svg' %}" style="width: 100%; height: 100%">Your browser does not support SVG</object>
       </div>
     </section>
 
@@ -277,8 +254,6 @@
                   <h3>Travelling From the Main Bus Station to the Venue</h3>
                   <p>From the main bus station (Zvonařka) take bus No. 44 or 67. Get off at the stop "Semilasso". Follow the street for 100 m and then take the street on the right, Božetěchova. After approximately 400 meters you will arrive to the building of the university.</p>
 
-                  <p><a href="{% static '/images/map-venue.jpg' %}" rel="lightbox"><img style="display: block; margin-left: auto; margin-right: auto;" title="DevConf Venue" src="{% static '/images/map-venue.jpg' %}" alt="" width="312" height="250" /></a></p>
-
                   <h3>Travelling From the Main Railway Station to the Red Hat office</h3>
                   <p>From the main train station take tram No.12 (towards Technologický park). Get off at the stop Červinkova (buildings FBC I and II) or Technologický park (building TPB). This is approximately a 17 minute ride.</p>
 
@@ -290,8 +265,6 @@
 
                   <h3>Travelling From Venue to the Red Hat office</h3>
                   <p>From the Semilasso bus stop take bus No. 30 or 44. Get off at the stop Skácelova. Take tram No. 12 towards Technologický park and get off at Červinkova (first stop, buildings FBC I and II) or Technologický park (third stop, TPB building). When you exit the bus, if you faced in the direction the bus was travelling, the tram stop is across the street to your right.</p>
-
-                  <p style="text-align: center;"><a href="{% static '/images/map-redhat-office.jpg' %}" rel="lightbox"><img title="Red Hat Brno office" src="{% static '/images/map-redhat-office.jpg' %}" alt="" width="191" height="250" /></a></p>
 
                   <h3>Travelling From the Main Train Station to the Hotels</h3>
                   <ul>
@@ -314,14 +287,14 @@
 
           <div class="col-lg-4">
             <a href="http://www.hotelavanti.cz/en/">
-                <img alt="Hotel Avanti" src="{% static '/images/logo-hotel-avanti.png' %}"></a>
+		    <img alt="Hotel Avanti" src="{{ '/images/logo-hotel-avanti.png'|url }}"></a>
           </div>
 
           <div class="col-lg-4 hidden-xs hidden-sm"></div>
 
           <div class="col-lg-4">
             <a href="http://www.vista-hotel.cz/homepage/">
-                <img alt="Hotel Vista" src="{% static '/images/hotel-vista-logo.png' %}"></a>
+		    <img alt="Hotel Vista" src="{{ '/images/hotel-vista-logo.png'|url }}"></a>
           </div>
       </div>
 
@@ -336,54 +309,6 @@
 	  </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-      <h2>Get in touch</h2>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6">
-            <h3>Need help?</h3>
-            <h4>Find us on Telegram or Email us:</h4>
-            <a href="https://telegram.me/joinchat/B1He_UEkuB4fBfY1cKCXRw"><img src="{% static '/images/telegram_logo-128x-128y.png' %}" alt="Join DevConf chat on Telegram"></a>
-            <a href="mailto:info@devconf.cz"><img src="{% static '/images/mail_icon.png' %}" alt="Email Chris Ward about DevConf"></a>
-          </div>
-          <div class="col-sm-12 col-md-6">
-            <h3>FAQ</h3>
-            <p>Answers to commonly asked questions will be added when questions are asked.</p>
-
-            <ul class="smaller">
-              <li>Q: Will it be possible to register off-line? A: Yes.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row">
-          <form id="newsletter" method="post" action="https://tinyletter.com/devconf_cz">
-            <div class="col-xs-12">
-              <h3>Stay informed!</h3>
-              <p>Subscribe to our newsletter to receive all relevant event information.</p>
-            </div>
-            <div class="col-md-4 col-xs-6">
-              <div class="form-group">
-                <input name="email" type="email" class="form-control" id="email" placeholder="Enter your email address&hellip;" required>
-              </div>
-            </div>
-            <div class="col-md-2 col-xs-6">
-              <button type="submit" class="btn btn-success"
-                data-toggle="popover" data-trigger="hover" data-placement="top" title="Stay up to date with DevConf.cz"
-                data-content="We'll send you updates and announcements related to on-going and future DevConf.cz events.">
-                Subscribe&nbsp;&nbsp;<i class="fa fa-envelope" aria-hidden="true"></i>
-              </button>
-            </div>
-            <div class="col-md-4 col-xs-12 xs-smaller">
-              <strong>No Spam! We promise!</strong><br>
-              This newsletter will only be used to share updates and announcements related to DevConf.cz.
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
-
     <!-- Sponsors -->
     <section id="sponsors" class="sponsors-section">
       <h2>Sponsors</h2>
@@ -391,7 +316,7 @@
         <h3>This event is sponsored by</h3>
         <div class="row">
           <div class="col-lg-12">
-              <a href="https://www.redhat.com/en/global/czech-republic"><img alt="Red Hat, Czech" src="{% static '/images/logo_redhat_rgb_default.png' %}"></a>
+		  <a href="https://www.redhat.com/en/global/czech-republic"><img alt="Red Hat, Czech" src="{{ '/images/logo_redhat_rgb_default.png'|url }}"></a>
           </div>
         </div>
         <div class="row">
@@ -401,26 +326,26 @@
 
           <div class="col-lg-12">
             <a href="https://www.openshift.com">
-                <img alt="OpenShift" src="{% static '/images/openshift_logo_cropped_250w.png' %}"></a>
+		    <img alt="OpenShift" src="{{ '/images/openshift_logo_cropped_250w.png'|url }}"></a>
           </div>
 
           <div class="col-lg-4">
             <a href="https://mojefedora.cz">
-                <img alt="Moje Fedora CZ" src="{% static '/images/cropped-mojefedora-250x-150y.png' %}"></a>
+		    <img alt="Moje Fedora CZ" src="{{ '/images/cropped-mojefedora-250x-150y.png'|url }}"></a>
           </div>
 
           <div class="col-lg-4 hidden-xs hidden-sm"></div>
 
           <div class="col-lg-4">
             <a href="http://www.fit.vutbr.cz/">
-                <img alt="FIT VUT Brno Faculty of Information Technology" src="{% static '/images/fit_vut_brno_logo-250x-150y.png' %}"></a>
+		    <img alt="FIT VUT Brno Faculty of Information Technology" src="{{ '/images/fit_vut_brno_logo-250x-150y.png'|url }}"></a>
           </div>
 
           <div class="col-md-12">
             <h3>In collaboration with</h3>
           </div>
           <div class="col-lg-12">
-              <a href=""><img alt="JUDCon 2017: Brno" src="{% static '/images/judcon2017brno.png' %}"></a>
+		  <a href=""><img alt="JUDCon 2017: Brno" src="{{ '/images/judcon2017brno.png'|url }}"></a>
           </div>
 
         </div>
@@ -428,7 +353,3 @@
     </section>
 
 {% endblock %}
-
-{% block scripts %}
-{% endblock %}
-

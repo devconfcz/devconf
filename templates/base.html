@@ -8,13 +8,13 @@
         {% endblock %}
 
         <!-- Favicon -->
-        <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+	<link rel="shortcut icon" href="{{ '/images/favicon.png'|url }}" type="image/png">
 
         {% block css %} {% include 'css.html' %} {% endblock %}
 
     </head>
 
-  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="50">
+  <body id="page-top">
 
     {% block nav %} {% include 'cz/nav.html' %} {% endblock %}
 

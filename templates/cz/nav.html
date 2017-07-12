@@ -1,49 +1,36 @@
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
-      <a class="hidden-lg" href="#" onclick="scroll_to_section('#intro')">
-          <img src="images/devconf-cz-webopt.svg" class="navbar-brand logo-mobile" alt="Back to top"></a>
-
       <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-          <a class="top-branding hidden-md hidden-sm hidden-xs" href="#" onclick="scroll_to_section('#intro')">
-              <img src="images/devconf-cz-webopt.svg" class="navbar-brand" alt="Back to top">
-          </a>
+        <div class="navbar-collapse">
 
           <ul class="nav navbar-nav navbar-left">
-              <li><a href="/" class="fa fa-home" title="DevConf.cz - Home">
-                <span class="hide">Home</span>
-            </a></li>
 
-            <!-- this is ugly... should just fit in... no extra styles in-inline... -->
+              <li>
+                <a href="{{ '/index.html'|url }}" class="fa fa-home" title="Home">
+                <span class="hide">Home</span>
+                </a>
+              </li>
+
             <li>
-            <div class="dropdown" style="margin-top: 12px; color: #777777">
-              <i class="fa fa-history" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                <span class="caret"></span>
-              </i>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li class="dropdown-header">Main Events</li>
-                <li><a href="2018/"><b>2018 - DevConf.cz</b></a></li>
-                <li><a href="2017/" style="color: #ddd">2017 - January 27-29</a></li>
-                <li class="dropdown-header">Roadshow Events</li>
-                <li><a href="2017/roadshow-bratislava.html"><b>2017 - Containers Bratislava</b></a></li>
-                <li><a href="2017/roadshow-prague.html" style="color: #ddd"><b>2017 - Containers Prague</b></a></li>
-              </ul>
-            </div>
+                <div class="dropdown" style="margin-top: 12px; color: #777777">
+                  <i class="fa fa-history" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span class="caret"></span>
+                  </i>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li class="dropdown-header">Main Events</li>
+                    <li><a href="{{ '/2018/index.html'|url }}"><b>2018 - DevConf.cz</b></a></li>
+                    <li><a href="{{ '/2017/index.html'|url }}" class="faded">2017 - January 27-29</a></li>
+                    <li class="dropdown-header">Roadshow Events</li>
+                    <li><a href="{{ '/2017/roadshow-bratislava.html'|url }}" class="faded">2017 - Containers Bratislava</a></li>
+                    <li><a href="{{ '/2017/roadshow-prague.html'|url }}" class="faded">2017 - Containers Prague</a></li>
+                  </ul>
+                </div>
             </li>
 
           </ul>
+
+          <img src="{{ '/images/devconf-cz-webopt.svg'|url }}" class="navbar-brand top-branding" alt="Back to top">
 
           <ul class="nav navbar-nav navbar-right social">
             <li><a href="https://telegram.me/joinchat/B1He_UEkuB4fBfY1cKCXRw" class="fa fa-send-o" title="Telegram - Attendees Channel">
