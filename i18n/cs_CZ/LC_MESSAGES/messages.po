@@ -1,17 +1,17 @@
-# English (United States) translations for PROJECT.
-# Copyright (C) 2017 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+# Czech (Czech Republic) translations for .
+# Copyright (C) 2017 Red Hat
+# This file is distributed under the same license as the DevConf project.
+# Chris Ward <kejbaly2@gmail.com>, 2017.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"Project-Id-Version: DevConf (cs_CZ)\n"
+"Report-Msgid-Bugs-To: kejbaly2@gmail.com\n"
 "POT-Creation-Date: 2017-07-13 11:12+0200\n"
 "PO-Revision-Date: 2017-07-13 11:13+0200\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: en_US\n"
-"Language-Team: en_US <LL@li.org>\n"
+"Last-Translator: Chris Ward <kejbaly2@gmail.com>\n"
+"Language: cs_CZ\n"
+"Language-Team: Chris Ward (en_US) <kejbaly2@gmail.com>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -20,27 +20,27 @@ msgstr ""
 
 #: templates/footer.html:9
 msgid "Subscribe to our newsletter to receive all updates and event information."
-msgstr ""
+msgstr "WOWOWOWOWOWO Bla Bla"
 
 #: templates/footer.html:35
 msgid "Speaker Agreement"
-msgstr ""
+msgstr "Bla Bla"
 
 #: templates/footer.html:36
 msgid "Code of Conduct"
-msgstr ""
+msgstr "Bla Bla"
 
 #: templates/footer.html:37
 msgid "Media Policy"
-msgstr ""
+msgstr "Bla Bla"
 
 #: templates/index.html:4
 msgid "Free and Open Source Software Community Conferences for Developers"
-msgstr ""
+msgstr "Bla Bla"
 
 #: templates/cz/index.html:17 templates/index.html:17
 msgid "Main Event"
-msgstr ""
+msgstr "WOOT"
 
 #: templates/cz/index.html:20 templates/index.html:20
 msgid "Brno, Czech Republic"
@@ -48,7 +48,7 @@ msgstr ""
 
 #: templates/cz/index.html:22 templates/index.html:22
 msgid "January 2018"
-msgstr ""
+msgstr "YIPEEE"
 
 #: templates/cz/2018/index.html:19 templates/cz/index.html:28
 #: templates/index.html:28

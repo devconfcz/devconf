@@ -165,9 +165,17 @@ a.faded {
   padding-left: 10px;
 }
 
-.navbar-flag{
+.navbar-flag {
   height: 16.2px;
   cursor: pointer;
+}
+
+.navbar-flag-padded {
+  padding-right: 1em;
+}
+
+.dropdown-menu-flag {
+  min-width: 0;
 }
 
 .top-branding {
@@ -467,11 +475,6 @@ h2 .fa {
   background-color: #fbfafa;
   border: 1px solid rgba(251, 100, 100, 0.48);
 }
-
-/* Multilanguage support
- * src: http://stackoverflow.com/a/24035422
- */ 
-.en { display:none; } /* hide all elements with a language class */
 
 .width-sm {
   width: 40%;

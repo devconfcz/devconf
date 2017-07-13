@@ -1,18 +1,18 @@
-# Slovak (Slovakia) translations for PROJECT.
-# Copyright (C) 2017 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+# Slovak (Slovakia) translations for DevConf.
+# Copyright (C) 2017 Red Hat
+# This file is distributed under the same license as the DevConf project.
+# Chris Ward <kejbaly2@gmail.com>, 2017.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"Project-Id-Version: DevConf (sk_SK)\n"
+"Report-Msgid-Bugs-To: kejbaly2@gmail.com\n"
 "POT-Creation-Date: 2017-07-13 11:12+0200\n"
 "PO-Revision-Date: 2017-07-13 11:13+0200\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Chris Ward <kejbaly2@gmail.com>\n"
 "Language: sk_SK\n"
-"Language-Team: sk_SK <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2)\n"
+"Language-Team: Chris Ward (en_US) <kejbaly2@gmail.com>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"

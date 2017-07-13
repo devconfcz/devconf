@@ -27,10 +27,24 @@
                   </ul>
                 </div>
             </li>
+            <li>
+                <div class="dropdown" style="margin-top: 12px">
+                    <div type="button" id="dropdownMenu2" data-toggle="dropdown">
+                    <img src="{{ flags_path[lang]|static }}" class="navbar-flag"  />
+                    <span class="caret"></span>
+                  </div>
+                  <ul class="dropdown-menu dropdown-menu-flag" aria-labelledby="dropdownMenu2">
+                    <li class="dropdown-header">Site language</li>
+                    <li><a href="{{ ['en', path]|join('/')|static }}"><img src="{{ flags_path['en']|static }}" class="navbar-flag navbar-flag-padded"/> (en)</a></li>
+                    <li><a href="{{ ['cs', path]|join('/')|static }}"><img src="{{ flags_path['cs']|static }}" class="navbar-flag navbar-flag-padded"/> (cs)</a></li>
+                    <li><a href="{{ ['sk', path]|join('/')|static }}"><img src="{{ flags_path['sk']|static }}" class="navbar-flag navbar-flag-padded"/> (sk)</a></li>
+                  </ul>
+                </div>
+            </li>
 
           </ul>
 
-          <img src="{{ '/images/devconf-cz-webopt.svg'|url }}" class="navbar-brand top-branding" alt="Back to top">
+          <img src="{{ '/images/devconf-cz-webopt.svg'|static }}" class="navbar-brand top-branding" alt="Back to top">
 
           <ul class="nav navbar-nav navbar-right social">
             <li><a href="https://telegram.me/joinchat/B1He_UEkuB4fBfY1cKCXRw" class="fa fa-send-o" title="Telegram - Attendees Channel">

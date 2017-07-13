@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html lang="{{ lang }}" class="no-js">
     <head>
         {% include 'meta.html' %}
 
         {% block title %}
-        <title>DevConf - Free and Open Source Software Community Conferences for Developers</title>
+        <title>{{ _('DevConf - Free and Open Source Software Community Conferences for Developers') }}</title>
         {% endblock %}
 
         <!-- Favicon -->
-	<link rel="shortcut icon" href="{{ '/images/favicon.png'|url }}" type="image/png">
+        <link rel="shortcut icon" href="{{ '/images/favicon.png'|static }}" type="image/png">
 
         {% block css %} {% include 'css.html' %} {% endblock %}
 

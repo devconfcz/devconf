@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block title %}
-    <title>DevConf Speaker Agreement</title>
+  <title>DevConf - {{ _('Speaker Agreement') }}</title>
 {% endblock %}
 
 {% block body %}
@@ -11,52 +11,52 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
-            <h1 class="purple">Speaker Agreement</h1>
+		  <h1 class="purple">{{ _('Speaker Agreement') }}</h1>
           </div>
           <div class="col-sm-12">
-            <h3>Compensation</h3>
-            <p>I understand that DevConf.cz does not directly financially compensate speakers in any way!</p>
-            <p>That said, as an accepted speaker <b>if I stay in one of DevConf.cz partner hotels</b> I have the option to get my accomodation covered for up to 3 nights (<i>Thursday January 26, Friday January 27, Saturday January 28</i>).</p>
-            <p><i>NOTE: This applies to primary speakers only if a single room is required! Secondary speakers will not be covered in addition unless both primary speaker and up to one secondary speaker agree to share a double room. Details for how to reserve at one of our partner hotels will be sent to all accepted speakers in December after selection has completed.</i></p>
+		  <h3>{{ _('Compensation') }}</h3>
+		  <p>{{ _('I understand that DevConf.cz does not directly financially compensate speakers in any way!') }}</p>
+		  <p>{{ _('That said, as an accepted speaker <b>if I stay in one of DevConf.cz partner hotels</b> I have the option to get my accomodation covered for up to 3 nights (<i>Thursday January 26, Friday January 27, Saturday January 28</i>).') }}</p>
+		  <p><i>{{ _('NOTE: This applies to primary speakers only if a single room is required! Secondary speakers will not be covered in addition unless both primary speaker and up to one secondary speaker agree to share a double room. Details for how to reserve at one of our partner hotels will be sent to all accepted speakers in December after selection has completed.') }}</i></p>
 
-            <h3>Speaker Profiles</h3>
-            <p>I will fill out my user profile, including full name, contact details and photo, with the understanding that my information might be populated for me if not provided in time for the schedule.</p>
-            <p><i>NOTE: If a Twitter handle is provided, it will be shared publicly. Email nor any other demographic information provided outside of the background / bio text submitted will not.</i></p>
+		  <h3>{{ _('Speaker Profiles') }}</h3>
+		  <p>{{ _('I will fill out my user profile, including full name, contact details and photo, with the understanding that my information might be populated for me if not provided in time for the schedule.') }}</p>
+		  <p><i>{{ _('NOTE: If a Twitter handle is provided, it will be shared publicly. Email nor any other demographic information provided outside of the background / bio text submitted will not.') }}</i></p>
 
 
-            <h3>Session Preparation</h3>
-            <p>If I am unable to devote the time and energy to this effort, I will notify the DevConf.cz planning team immediately and DevConf.CZ will replace my session.</p>
-            <p>I understand that if I am participating on a tutorial with others that I am expected to communicate with the other speakers on my session before the event. I understand that if I am delivering a group or solo presentation, I am expected to spend a significant amount of time preparing for my session before the event.</p>
-            <p>To aid in schedule planning, I will also communicate any of the following with the DevConf.cz presentation committee:</p>
+		  <h3>{{ _('Session Preparation') }}</h3>
+		  <p>{{ _('If I am unable to devote the time and energy to this effort, I will notify the DevConf.cz planning team immediately and DevConf.CZ will replace my session.') }}</p>
+		  <p>{{ _('I understand that if I am participating on a tutorial with others that I am expected to communicate with the other speakers on my session before the event. I understand that if I am delivering a group or solo presentation, I am expected to spend a significant amount of time preparing for my session before the event.') }}</p>
+		  <p>{{ _('To aid in schedule planning, I will also communicate any of the following with the DevConf.cz presentation committee:') }}</p>
             <ul>
-              <li>Schedule conflicts</li>
-              <li>Session format</li>
-              <li>Technical requirements/requests</li>
-              <li>Changes to your speaker lineup</li>
+		    <li>{{ _('Schedule conflicts') }}</li>
+		    <li>{{ _('Session format') }}</li>
+		    <li>{{ _('Technical requirements/requests') }}</li>
+		    <li>{{ _('Changes to your speaker lineup') }}</li>
             </ul>
 
-            <h3>Obtaining Consent</h3>
-            <p>I understand that I am responsible for obtaining any required consents, permissions, and clearances to display or otherwise use any materials (both visual and audio) that I incorporate in my session.</p>
+	    <h3>{{ _('Obtaining Consent') }}</h3>
+	    <p>{{ _('I understand that I am responsible for obtaining any required consents, permissions, and clearances to display or otherwise use any materials (both visual and audio) that I incorporate in my session.') }}</p>
 
-            <h3>Promoted Content</h3>
-            <p>I understand that DevConf.cz is primarily an educational event, not a sales platform. </p>
-            <p>I understand that if my session content is geared primarily towards marketing or sales of a particular product, that it will be clearly stated in the title and opening description of the session and set the <i>Session Type</i> to <i>Sales / Marketing</i> in my CfP submission.</p>
+	    <h3>{{ _('Promoted Content') }}</h3>
+	    <p>{{ _('I understand that DevConf.cz is primarily an educational event, not a sales platform.') }} </p>
+	    <p>{{ _('I understand that if my session content is geared primarily towards marketing or sales of a particular product, that it will be clearly stated in the title and opening description of the session and set the <i>Session Type</i> to <i>Sales / Marketing</i> in my CfP submission.') }}</p>
 
-            <h3>Staying on Topic and on time</h3>
-            <p>I understand that staying focused on the topic outlined in the title and description of my session is extremely important.</p>
-            <p>During my session, I pledge to stay focused on the topic at hand and make sure that the information presented adheres to the difficulty level (beginner, intermediate, or advanced) designated for my session.</p>
+	    <h3>{{ _('Staying on Topic and on time') }}</h3>
+	    <p>{{ _('I understand that staying focused on the topic outlined in the title and description of my session is extremely important.') }}</p>
+	    <p>{{ _('During my session, I pledge to stay focused on the topic at hand and make sure that the information presented adheres to the difficulty level (beginner, intermediate, or advanced) designated for my session.') }}</p>
 
-            <h3>Code of Conduct</h3>
-            <p>I understand that my slides and on-stage remarks must abide by the <a href="coc.html">Code of Conduct</a> which will be adhered during this conference. </p>
-            <p>I understand that my slides may be reviewed ahead of time, and that I may need to modify my presentation if it does not adhere with the <a href="coc.html">Code of Conduct</a>.</p>
-            <p>I also understand that if, while I am presenting, I fail to abide by the spirit of the <a href="coc.html">Code of Conduct</a>, my session recording might not be published.</p>
+	    <h3>{{ _('Code of Conduct') }}</h3>
+	    <p>{{ _('I understand that my slides and on-stage remarks must abide by the <a href="coc.html">Code of Conduct</a> which will be adhered during this conference.') }} </p>
+	    <p>{{ _('I understand that my slides may be reviewed ahead of time, and that I may need to modify my presentation if it does not adhere with the <a href="coc.html">Code of Conduct</a>.') }}</p>
+	    <p>{{ _('I also understand that if, while I am presenting, I fail to abide by the spirit of the <a href="coc.html">Code of Conduct</a>, my session recording might not be published.') }}</p>
 
-            <h3>Session Recording</h3>
-            <p>I have read the <a href="media-policy.html">Media Policy</a> and understand that my session will be recorded and made publicly available following the conference unless otherwise agreed to with the <a href="mailto:info@devconf.cz">event organizer</a> in advance.</p>
+	    <h3>{{ _('Session Recording') }}</h3>
+	    <p>{{ _('I have read the <a href="media-policy.html">Media Policy</a> and understand that my session will be recorded and made publicly available following the conference unless otherwise agreed to with the <a href="mailto:info@devconf.cz">event organizer</a> in advance.') }}</p>
 
             <p>&nbsp;</p>
 
-            <p class="smaller pull-right"><i>Thank you to Linux Fest NorthWest, Open Source Bridge and DrupalCon, from whom this media policy was heavily influenced.</i></p>
+	    <p class="smaller pull-right"><i>{{ _('Thank you to Linux Fest NorthWest, Open Source Bridge and DrupalCon, from whom this media policy was heavily influenced.') }}</i></p>
           </div>
         </div>
       </div>
