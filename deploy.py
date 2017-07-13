@@ -66,17 +66,21 @@ extensions = ['jinja2.ext.i18n', 'jinja2.ext.with_']
 '''
 Create the folder structure (no whitespace after the commas!!!)
 > mkdir -pv ./il8n/{en_US,cs_CZ,sk_SK}/LC_MESSAGES/
-> pybabel -v extract -F babel.config -o ./il8n/messages.pot ./
+> pybabel -v extract -F babel.cfg -o ./il8n/messages.pot ./
 
 Init/Update
 3.1 Init
-> pybabel init -l zh_CN -d ./lang -i ./lang/messages.pot
+> pybabel init -l en_US -d ./il8n -i ./il8n/messages.pot
+> pybabel init -l cs_CZ -d ./il8n -i ./il8n/messages.pot
+> pybabel init -l sk_SK -d ./il8n -i ./il8n/messages.pot
 
 3.2 Update
-> pybabel update -l zh_CN -d ./lang -i ./lang/messages.pot
+> pybabel update -l en_US -d ./il8n -i ./il8n/messages.pot
+> pybabel update -l cs_CZ -d ./il8n -i ./il8n/messages.pot
+> pybabel update -l sk_SK -d ./il8n -i ./il8n/messages.pot
 
 Compile
-> pybabel compile -f -d ./lang
+> pybabel compile -f -d ./il8n
 '''
 
 translations = Translations.load(locale_dir, list_of_desired_locales)

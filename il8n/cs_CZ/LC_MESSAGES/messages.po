@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-07-12 14:23+0200\n"
-"PO-Revision-Date: 2017-07-12 14:24+0200\n"
+"Project-Id-Version: 0.1\n"
+"Report-Msgid-Bugs-To: kejbaly2@gmail.com\n"
+"POT-Creation-Date: 2017-07-13 11:12+0200\n"
+"PO-Revision-Date: 2017-07-13 11:13+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: cs_CZ\n"
 "Language-Team: cs_CZ <LL@li.org>\n"
@@ -18,46 +18,56 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.4.0\n"
 
+
 #: templates/footer.html:9
 msgid "Subscribe to our newsletter to receive all updates and event information."
-msgstr ""
+msgstr "Bla Bla"
 
 #: templates/footer.html:35
 msgid "Speaker Agreement"
-msgstr ""
+msgstr "Bla Bla"
 
 #: templates/footer.html:36
 msgid "Code of Conduct"
-msgstr ""
+msgstr "Bla Bla"
 
 #: templates/footer.html:37
 msgid "Media Policy"
-msgstr ""
+msgstr "Bla Bla"
 
-#: templates/cz/index.html:4
+#: templates/index.html:4
 msgid "Free and Open Source Software Community Conferences for Developers"
-msgstr ""
+msgstr "Bla Bla"
 
-#: templates/cz/index.html:17
+#: templates/cz/index.html:17 templates/index.html:17
 msgid "Main Event"
 msgstr ""
 
-#: templates/cz/index.html:20
+#: templates/cz/index.html:20 templates/index.html:20
 msgid "Brno, Czech Republic"
 msgstr ""
 
-#: templates/cz/index.html:22
+#: templates/cz/index.html:22 templates/index.html:22
 msgid "January 2018"
 msgstr ""
 
 #: templates/cz/2018/index.html:19 templates/cz/index.html:28
+#: templates/index.html:28
 msgid ""
 "The 10th annual, free community conference in Brno for developers, "
-"admins, and users of free and open source Linux, JBoss technologies."
+"admins, and users of free and open source Linux, JBoss technologies"
 msgstr ""
 
-#: templates/cz/index.html:28
+#: templates/cz/index.html:28 templates/index.html:28
 msgid "Learn more"
+msgstr ""
+
+#: templates/cz/2017/roadshow-bratislava.html:4
+msgid "DevConf.cz Roadshow - Containers Bratislava 2017"
+msgstr ""
+
+#: templates/cz/2017/roadshow-bratislava.html:15
+msgid "Registration is CLOSED for this event!"
 msgstr ""
 
 #: templates/cz/2018/index.html:23

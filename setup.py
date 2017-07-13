@@ -21,6 +21,7 @@ setup_info = dict(
         'click',
         'jinja2',
         'ipdb',
+        'babel',
     ],
 )
 
