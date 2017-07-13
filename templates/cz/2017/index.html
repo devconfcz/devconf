@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block title %}
-    <title>DevConf.cz 2017 - Jan 27-29 - FIT VUT Brno, Czech Republic</title>
+  <title>DevConf.cz 2017 - {{ _('Jan 27-29 - FIT VUT Brno, Czech Republic') }}</title>
 {% endblock %}
 
 {% block body %}
@@ -12,14 +12,13 @@
         <div class="row">
           <div class="col-sm-12 intro-content">
             <div class = "alert alert-danger">
-              <b>Registration is CLOSED for this event!</b>
+		    <b>{{ _('Registration is CLOSED for this event!') }}</b>
             </div>
 
             <div class="time-and-place">
-              <address>Brno, Czech Republic</address>
+		    <address>{{ _('Brno, Czech Republic') }}</address>
               <div class="date">
-                <time datetime="2017-01-27">January 27</time> - <time
-                  datetime="2017-01-29">29</time>, 2017
+		      <time>{{ _('January 27-29, 2017') }}</time>
               </div>
             </div>
 
@@ -28,7 +27,7 @@
             <div class="tagline">#DEFINEfuture</div>
 
             <div class="intro-text">
-               A free annual community conference for developers, admins, and users of Open Source technologies.
+		    {{ _('A free annual community conference for developers, admins, and users of Open Source technologies.') }}
             </div>
 
           </div>
@@ -41,26 +40,26 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
-            <p><i>DevConf.cz 2017 is the 9th annual, free Red Hat sponsored community conference for developers, admins, DevOps engineers, testers, documentation writers and users of open source technologies such as Linux, Middleware, Virtualization, Storage, Cloud and mobile where FLOSS communities sync, share, and hack on upstream projects together in the beautiful city of Brno, Czech Republic.</i></p>
+		  <p><i>{{ _('DevConf.cz 2017 is the 9th annual, free Red Hat sponsored community conference for developers, admins, DevOps engineers, testers, documentation writers and users of open source technologies such as Linux, Middleware, Virtualization, Storage, Cloud and mobile where FLOSS communities sync, share, and hack on upstream projects together in the beautiful city of Brno, Czech Republic.') }}</i></p>
             
           </div>
               <div class="col-sm-12">
-                  <p><b>When:</b> January 27-29, 2017</p>
-                  <p><b>Venue:</b> Faculty of Information Technology (VUT FIT) Božetěchova 2 - Brno</p>
+		      <p><b>{{ _('When:') }}</b> {{ _('January 27-29, 2017') }}</p>
+		      <p><b>{{ _('Venue:') }}</b> {{ _('Faculty of Information Technology (VUT FIT) Božetěchova 2 - Brno') }}</p>
               </div>
           <div class="col-xs-12 col-s-6">
-            <p>You should consider attending DevConf.cz 2017 if you are:</p>
+		  <p>{{ _('You should consider attending DevConf.cz 2017 if you are:') }}</p>
             <ul>
-              <li>A developer</li>
-              <li>A technology architect</li>
-              <li>An IT consultant</li>
-              <li>An IT student or a teacher from an IT university/faculty</li>
-              <li>Or simply an IT enthusiast interested in the latest trends in open source and emerging digital technologies</li>
+		    <li>{{ _('A developer') }}</li>
+		    <li>{{ _('A technology architect') }}</li>
+		    <li>{{ _('An IT consultant') }}</li>
+		    <li>{{ _('An IT student or a teacher from an IT university/faculty') }}</li>
+		    <li>{{ _('Or simply an IT enthusiast interested in the latest trends in open source and emerging digital technologies') }}</li>
             </ul>
-            <p>If you're curious about last year's event, you can check out <a href="https://devconfcz2016.sched.org/">DevConf.cz 2016 schedule</a> and videos on our <a href="https://www.youtube.com/channel/UCIHsqY_4eWeInVQnxZ7WSjg">DevConf.cz YouTube Channel</a>.</p>
-            <p>DevConf.cz is a free conference and there is no admission or ticket charge. This year we will require that you <b>register for free</b>.</p>
-            <p>Register here: On site Registration only! </p>
-            <p>Talks, presentations, and workshops will all be in <i>English</i>.</p>
+	    <p>{{ _('If you are curious about last year\'s event, you can check out <a href="https://devconfcz2016.sched.org/">DevConf.cz 2016 schedule</a> and videos on our <a href="https://www.youtube.com/channel/UCIHsqY_4eWeInVQnxZ7WSjg">DevConf.cz YouTube Channel</a>.') }}</p>
+	    <p>{{ _('DevConf.cz is a free conference and there is no admission or ticket charge. This year we will require that you <b>register for free</b>.') }}</p>
+	    <p>{{ _('Register here: On site Registration only!') }}</p>
+	    <p>{{ _('Talks, presentations, and workshops will all be in <i>English</i>.') }}</p>
           </div>
 
           <div class="col-xs-12 col-s-6">
@@ -80,7 +79,7 @@
           <div class="col-sm-6">
             <div id="testimonial-1" class="testimonial testimonial-default">
               <div class="testimonial-section">
-                "It is a great conference to meet awesome people from around the world with very good presentations and workshops about free and open source software. ... very well organized and Brno is also a nice city"
+		      {{ _('"It is a great conference to meet awesome people from around the world with very good presentations and workshops about free and open source software. ... very well organized and Brno is also a nice city"') }}
               </div>
               <div class="testimonial-desc">
 		      <img src="{{ '/images/till_mass_profile_testimonial_100x100.png'|static }}" alt="Till Maas DevConf.CZ 2016 Testimonial">
@@ -90,7 +89,6 @@
                   </div>
                   <div class="testimonial-writer-designation">
                       Penetration Tester @ <a href="https://www.redteam-pentesting.de/">RedTeam Pentesting</a>
-                      and <a href="https://fedoraproject.org/wiki/User:Till">Fedora Contributor</a>
                   </div>
                   <a href="https://github.com/tyll" class="testimonial-writer-company"><i class="fa fa-github" aria-hidden="true"></i></a>
                   <a href="https://twitter.com/@TillMaas" class="testimonial-writer-company"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -104,7 +102,7 @@
           <div class="col-sm-6">
             <div id="testimonial-2" class="testimonial testimonial-default">
               <div class="testimonial-section">
-                "It's like FOSDEM, just not as big, but better organized and very centered to Red Hat because they organizing it"
+		      {{ _('"It\'s like FOSDEM, just not as big, but better organized and very centered to Red Hat because they organizing it"') }}
               </div>
               <div class="testimonial-desc">
 		      <img src="{{ '/images/alex_juncu_profile_testimonial_100x100.png'|static }}" alt="Alex Juncu DevConf.CZ 2016 Testimonial">
@@ -128,7 +126,7 @@
           <div class="col-sm-6">
             <div id="testimonial-3" class="testimonial testimonial-default">
               <div class="testimonial-section">
-                "Hands down the best FLOSS conference in the Czech Republic!"
+		      {{ _('"Hands down the best FLOSS conference in the Czech Republic!"') }}
               </div>
               <div class="testimonial-desc">
 		      <img src="{{ '/images/ondrej_skopek_profile_testimonial_100x100.png'|static }}" alt="Ondrej Skopek DevConf.CZ 2016 Testimonial">
@@ -149,7 +147,7 @@
           <div class="col-sm-6">
             <div id="testimonial-4" class="testimonial testimonial-default">
               <div class="testimonial-section">
-                "Presentation of the hottest New Technologies as they are being made."
+		      {{ _('"Presentation of the hottest New Technologies as they are being made."') }}
               </div>
               <div class="testimonial-desc">
 		      <img src="{{ '/images/jostein-toftebakk_profile_testimonial_100x100.png'|static }}" alt="Jostein Toftebakk DevConf.CZ 2016 Testimonial">
@@ -171,119 +169,119 @@
     </section>
 
     <section id="travel" class="travel-section">
-      <h2>Travel Information</h2>
+	    <h2>{{ _('Travel Information') }}</h2>
 	  <div class="container">
       <div class="row" id="travel-text">
         <div class="col-md-12">
-    		<p>Brno is located two hours or less by car from three European capitals (Prague, Vienna, and Bratislava).</p>
+		<p>{{ _('Brno is located two hours or less by car from three European capitals (Prague, Vienna, and Bratislava).') }}</p>
 
-    		<h3>By Plane</h3>
-    		<p><strong><a href="http://www.brno-airport.cz/en/" target="_blank">Brno Airport</a></strong> (BRQ, 0.6 million passengers a year)</p>
+		<h3>{{ _('By Plane') }}</h3>
+		<p>{{ _('<strong><a href="http://www.brno-airport.cz/en/" target="_blank">Brno Airport</a></strong> (BRQ, 0.6 million passengers a year)') }}</p>
     		<ul>
-                  <li>Brno airport is a small international airport near Brno. This airport is a good option if you're coming from London (Stansted - Ryanair, Luton - Wizzair), Munich (Lufthansa), Eindhoven (Wizzair).</li>
-                  <li><strong>The newly opened flight from Munich (Lufthansa) operates daily except Sunday and dramatically improves the flight connection directly to Brno.</strong></li>
-                  <li>From the airport, city bus #76 will take you to the city centre (30 minutes) and drop you off next to the main train station and Student Agency bus stop. You can also take a taxi: approx. 300 CZK/€11.</li>
+			<li>{{ _('Brno airport is a small international airport near Brno. This airport is a good option if you are coming from London (Stansted - Ryanair, Luton - Wizzair), Munich (Lufthansa), Eindhoven (Wizzair).') }}</li>
+			<li><strong>{{ _('The newly opened flight from Munich (Lufthansa) operates daily except Sunday and dramatically improves the flight connection directly to Brno.</strong>') }}</li>
+			<li>{{ _('From the airport, city bus #76 will take you to the city centre (30 minutes) and drop you off next to the main train station and Student Agency bus stop. You can also take a taxi: approx. 300 CZK/€11.') }}</li>
     		</ul>
 
-    		<p><strong><a href="http://www.viennaairport.com/">Vienna International Airport</a></strong> (VIE, 22 million)</p>
+		<p>{{ _('<strong><a href="http://www.viennaairport.com/">Vienna International Airport</a></strong> (VIE, 22 million)') }}</p>
     		<ul>
-                  <li>The biggest airline hub in Central Europe, flights to many destinations all over the world.</li>
-                  <li>The easiest way to get from the airport to Brno are the <a href="http://jizdenky.studentagency.cz/">Student Agency buses</a> (online booking possible; use stop Vienna Schwechat Airport as your starting place). The direct bus takes 2 hours.</li>
-                  <li>Alternately, you can take a train from the airport to the city centre of Vienna and then take an EC train to Brno from there.</li>
+			<li>{{ _('The biggest airline hub in Central Europe, flights to many destinations all over the world.') }}</li>
+			<li>{{ _('The easiest way to get from the airport to Brno are the <a href="http://jizdenky.studentagency.cz/">Student Agency buses</a> (online booking possible; use stop Vienna Schwechat Airport as your starting place). The direct bus takes 2 hours.') }}</li>
+			<li>{{ _('Alternately, you can take a train from the airport to the city centre of Vienna and then take an EC train to Brno from there.') }}</li>
     		</ul>
 
-    		<p><a href="http://www.prg.aero/en/"><strong>Václav Havel Airport Prague</strong></a> (PRG, 11 million)</p>
+		<p><a href="http://www.prg.aero/en/">{{ _('<strong>Václav Havel Airport Prague</strong></a> (PRG, 11 million)') }}</p>
     		<ul>
-                  <li>This is the second busiest airport in the region.</li>
-                  <li>It is possible to book the journey as one ticket with <a href="http://jizdenky.studentagency.cz/">Student Agency</a> with a connection at the Prague main bus station (Florenc). Czech Railways provides shuttle buses between the airport and the Prague main train station.</li>
-                  <li>To get from the Prague airport to Brno takes at least 3.5 hours by public transport. Note, it is faster to get to Brno from Vienna.</li>
+			<li>{{ _('This is the second busiest airport in the region.') }}</li>
+			<li>{{ _('It is possible to book the journey as one ticket with <a href="http://jizdenky.studentagency.cz/">Student Agency</a> with a connection at the Prague main bus station (Florenc). Czech Railways provides shuttle buses between the airport and the Prague main train station.') }}</li>
+			<li>{{ _('To get from the Prague airport to Brno takes at least 3.5 hours by public transport. Note, it is faster to get to Brno from Vienna.') }}</li>
     		</ul>
-    		<p><a href="https://www.bts.aero/en/home/"><strong>Bratislava Airport</strong></a> (BTS, 1.4 million)</p>
+		<p><a href="https://www.bts.aero/en/home/">{{ _('<strong>Bratislava Airport</strong></a> (BTS, 1.4 million)') }}</p>
     		<ul>
-                  <li>This airport is a good option for cheap flights within Europe. If you are flying to Brno from outside of Europe, this airport is not recommended.</li>
-                  <li>Bratislava Airport is a hub of Ryanair.</li>
-                  <li>There is no direct transport connection between the Bratislava airport and Brno. You have to take a city bus to the centre and take a coach or train to Brno from there. It takes at least three hours.</li>
+			<li>{{ _('This airport is a good option for cheap flights within Europe. If you are flying to Brno from outside of Europe, this airport is not recommended.') }}</li>
+			<li>{{ _('Bratislava Airport is a hub of Ryanair.') }}</li>
+			<li>{{ _('There is no direct transport connection between the Bratislava airport and Brno. You have to take a city bus to the centre and take a coach or train to Brno from there. It takes at least three hours.') }}</li>
     		</ul>
 
-    		<p>There are also small international airports in <a href="http://www.airport-ostrava.cz/en/">Ostrava</a> (flights to Paris and London) and <a href="http://www.airport-pardubice.cz/en">Pardubice</a> (flights to Saint Petersburg and Moscow). Both have good train and bus connections to Brno.</p>
+		<p>{{ _('There are also small international airports in <a href="http://www.airport-ostrava.cz/en/">Ostrava</a> (flights to Paris and London) and <a href="http://www.airport-pardubice.cz/en">Pardubice</a> (flights to Saint Petersburg and Moscow). Both have good train and bus connections to Brno.') }}</p>
     		<p><a href="https://upload.wikimedia.org/wikipedia/commons/9/91/LKTB_04.png"><img style="height: 435px; width: 600px;" src="https://upload.wikimedia.org/wikipedia/commons/9/91/LKTB_04.png" alt=""/></a></p>
 
-    		<h3>By Train</h3>
-    		<p>Brno has good train connections to several European cities and train is the fastest and most convenient means of transportation between big cities in the region. All intercity trains arrive and depart at the main station <a href="http://en.wikipedia.org/wiki/Brno_hlavn%C3%AD_n%C3%A1dra%C5%BE%C3%AD" target="_blank">Brno hlavní nádraží ("Brno Main Station")</a>, which is a hub of public transport in the city.</p>
+		<h3>{{ _('By Train') }}</h3>
+		<p>{{ _("Brno has good train connections to several European cities and train is the fastest and most convenient means of transportation between big cities in the region. All intercity trains arrive and depart at the main station <a href='%s' target='_blank'>Brno hlavní nádraží ('Brno Main Station')</a>, which is a hub of public transport in the city."|format('http://en.wikipedia.org/wiki/Brno_hlavn%%C3%%AD_n%%C3%%A1dra%%C5%%BE%%C3%%AD')) }}</p>
 
-    		<p><br /><strong>Train Timetables:</strong></p>
+		<p><br /><strong>{{ _('Train Timetables:') }}</strong></p>
     		<ul>
-                  <li>Prague - trains between Prague and Brno go hourly, 2.5 hours</li>
-                  <li>Vienna - trains between Wien Hbf and Brno go every hour, 1.5 hour</li>
-                  <li>Bratislava - from Bratislava Hlavna Stanica hourly, 1.5 hour</li>
-                  <li>Budapest - from Budapest-Keleti pu several trains every day, 5 hours</li>
-                  <li>Warsaw - from Warszawa Centralna several times every day (usually one connection), 7 hours</li>
-                  <li>Berlin - from Berlin Hauptbahnhof several trains every day, 7.5 hours</li>
+			<li>{{ _('Prague - trains between Prague and Brno go hourly, 2.5 hours') }}</li>
+			<li>{{ _('Vienna - trains between Wien Hbf and Brno go every hour, 1.5 hour') }}</li>
+			<li>{{ _('Bratislava - from Bratislava Hlavna Stanica hourly, 1.5 hour') }}</li>
+			<li>{{ _('Budapest - from Budapest-Keleti pu several trains every day, 5 hours') }}</li>
+			<li>{{ _('Warsaw - from Warszawa Centralna several times every day (usually one connection), 7 hours') }}</li>
+			<li>{{ _('Berlin - from Berlin Hauptbahnhof several trains every day, 7.5 hours') }}</li>
     		</ul>
 
-    		<h3>By Bus</h3>
-    		<p>Brno is part of the European bus network and all connections and their prices are similar to trains. 
-                   <a href="http://www.studentagency.eu/" target="_blank">Student Agency</a> and <a href="http://www.eurolines.com/" target="_blank">Eurolines</a> provide buses to many european cities. Most Eurolines buses arrive at Brno-Zvonarka, Brno's main bus station. Student Agency buses arrive at a station opposite the Grand Hotel which next to the main train station.</p>
+		<h3>{{ _('By Bus') }}</h3>
+		<p>{{ _('Brno is part of the European bus network and all connections and their prices are similar to trains.') }} 
+		{{ _("<a href='%s' target='_blank'>Student Agency</a> and <a href='http://www.eurolines.com/' target='_blank'>Eurolines</a> provide buses to many european cities. Most Eurolines buses arrive at Brno-Zvonarka, Brno's main bus station. Student Agency buses arrive at a station opposite the Grand Hotel which next to the main train station."|format("http://www.studentagency.eu/")) }}</p>
 
-    		<h3>By Car</h3>
-    		<p>Brno is well-connected to other cities by highway. You can get easily to neighbouring countries by car. For using the Czech highways you have to purchase a highway sticker. The 10 day sticker costs 350 CZK/13 € and can be purchased at every gas station. Travel time examples:</p>
+		<h3>{{ _('By Car') }}</h3>
+		<p>{{ _('Brno is well-connected to other cities by highway. You can get easily to neighbouring countries by car. For using the Czech highways you have to purchase a highway sticker. The 10 day sticker costs 350 CZK/13 € and can be purchased at every gas station. Travel time examples:') }}</p>
     		<ul>
-                  <li>Prague - 210 km, 2 hours</li>
-                  <li>Bratislava - 130 km, 1.3 hours</li>
-                  <li>Vienna - 143 km, 1.8 hours</li>
-                  <li>Budapest - 326 km, 3 hours</li>
-                  <li>Munich - 587 km, 5.3 hours</li>
-                  <li>Berlin - 555 km, 5.2 hours</li>
+			<li>{{ _('Prague - 210 km, 2 hours') }}</li>
+			<li>{{ _('Bratislava - 130 km, 1.3 hours') }}</li>
+			<li>{{ _('Vienna - 143 km, 1.8 hours') }}</li>
+			<li>{{ _('Budapest - 326 km, 3 hours') }}</li>
+			<li>{{ _('Munich - 587 km, 5.3 hours') }}</li>
+			<li>{{ _('Berlin - 555 km, 5.2 hours') }}</li>
     		</ul>
 
-    		<p>Note: The Avanti Hotel offers free parking for their guests.</p>
+		<p>{{ _('Note: The Avanti Hotel offers free parking for their guests.') }}</p>
 
-    		<h3>Local Transport</h3>
-                  <p>Public transportation in Brno is provided by <a href="http://www.dpmb.cz/default.aspx" target="_blank">DPMB</a> which maintains 12 tram lines, 13 trolley-bus lines and 37 bus lines. At night all public transportation is provided by 11 night bus lines. If you want to use public transportation, you must buy a ticket before you board the bus, tram or trolleybus. You need to purchase a two-zone ticket for zones 100+101 for any stop in the city of Brno. Single journey tickets can be bought from machines (coins only) at many stops, or in Tabak stores. You need to validate the single journey ticket in the Yellow validation machine when you enter the bus, tram or trolleybus. Instructions how to pay for transportation in Brno can be found <a href="http://www.dpmb.cz/Default.aspx">here</a>.</p>
+		<h3>{{ _('Local Transport') }}</h3>
+		<p>{{ _('Public transportation in Brno is provided by <a href="http://www.dpmb.cz/default.aspx" target="_blank">DPMB</a> which maintains 12 tram lines, 13 trolley-bus lines and 37 bus lines. At night all public transportation is provided by 11 night bus lines. If you want to use public transportation, you must buy a ticket before you board the bus, tram or trolleybus. You need to purchase a two-zone ticket for zones 100+101 for any stop in the city of Brno. Single journey tickets can be bought from machines (coins only) at many stops, or in Tabak stores. You need to validate the single journey ticket in the Yellow validation machine when you enter the bus, tram or trolleybus. Instructions how to pay for transportation in Brno can be found <a href="http://www.dpmb.cz/Default.aspx">here</a>.') }}</p>
 
-                  <p><strong>SMS tickets:</strong> The DPMB also offers <a href="http://www.dpmb.cz/Default.aspx?seo=sms-jizdenky">sms tickets</a>. This service is only available for Czech SIM cards. To use the service, send a message with a code to 90206. The code for a 75-minute ticket (CZK 29) is BRNO. The code, BRNOD, is for an all-day ticket (CZK 99). After sending the message, you'll receive a ticket via sms within a few minutes. If you don't have a Czech SIM card, you can use the mobile app, Sejf which is available in the <a href="https://itunes.apple.com/sk/app/sejf/id301404273?mt=8">Apple App Store</a> and <a href="https://play.google.com/store/apps/details?id=cz.edhouse.mc.android&hl=cs">Google Play</a>.</p>
-                  <p>If you're staying in Brno for several days, consider buying a 5-day ticket which costs 250 CZK. There are several places where you can buy this ticket, but the easiest one for you is probably the main railway station. You can buy it at any counter (look for the international counters because they are more likely to speak English). When you first use your ticket, be sure to validate it. You only have to validate your ticket one time.</p>
+		<p>{{ _('<strong>SMS tickets:</strong> The DPMB also offers <a href="http://www.dpmb.cz/Default.aspx?seo=sms-jizdenky">sms tickets</a>. This service is only available for Czech SIM cards. To use the service, send a message with a code to 90206. The code for a 75-minute ticket (CZK 29) is BRNO. The code, BRNOD, is for an all-day ticket (CZK 99). After sending the message, you will receive a ticket via sms within a few minutes. If you do not have a Czech SIM card, you can use the mobile app, Sejf which is available in the <a href="https://itunes.apple.com/sk/app/sejf/id301404273?mt=8">Apple App Store</a> and <a href="https://play.google.com/store/apps/details?id=cz.edhouse.mc.android&hl=cs">Google Play</a>.') }}</p>
+		<p>{{ _('If you are staying in Brno for several days, consider buying a 5-day ticket which costs 250 CZK. There are several places where you can buy this ticket, but the easiest one for you is probably the main railway station. You can buy it at any counter (look for the international counters because they are more likely to speak English). When you first use your ticket, be sure to validate it. You only have to validate your ticket one time.') }}</p>
                   <ul>
-                  <li><a href="http://jizdnirady.idnes.cz/brno/spojeni/?lng=E">Brno Local Transport Timetable</a></li>
-                  <li>Download the app "Jízdní řády" with all local timetables from the <a href="https://itunes.apple.com/cz/app/jizdni-rady-idos/id473503749?mt=8">Apple App Store</a> or <a href="https://play.google.com/store/apps/details?id=cz.mafra.jizdnirady&hl=cs">Google Play</a>.</li>
+			  <li><a href="http://jizdnirady.idnes.cz/brno/spojeni/?lng=E">{{ _('Brno Local Transport Timetable') }}</a></li>
+			  <li>{{ _('Download the app "Jízdní řády" with all local timetables from the <a href="https://itunes.apple.com/cz/app/jizdni-rady-idos/id473503749?mt=8">Apple App Store</a> or <a href="https://play.google.com/store/apps/details?id=cz.mafra.jizdnirady&hl=cs">Google Play</a>.') }}</li>
                   </ul>
 
-                  <h3>Travelling From the Main Railway Station to the Venue</h3>
-                  <p>From the main train station take tram No.1 (towards Řečkovice). Get off at the stop Semilasso (after approximately 15 minutes). Take the street on the right, Metodějova. After approximately 200 meters take the first street on the right, Božetěchova. Continue straight approximately 100 m. The building on your left hand side is the university.</p>
+		  <h3>{{ _('Travelling From the Main Railway Station to the Venue') }}</h3>
+		  <p>{{ _('From the main train station take tram No.1 (towards Řečkovice). Get off at the stop Semilasso (after approximately 15 minutes). Take the street on the right, Metodějova. After approximately 200 meters take the first street on the right, Božetěchova. Continue straight approximately 100 m. The building on your left hand side is the university.') }}</p>
 
-                  <h3>Travelling From the Main Bus Station to the Venue</h3>
-                  <p>From the main bus station (Zvonařka) take bus No. 44 or 67. Get off at the stop "Semilasso". Follow the street for 100 m and then take the street on the right, Božetěchova. After approximately 400 meters you will arrive to the building of the university.</p>
+		  <h3>{{ _('Travelling From the Main Bus Station to the Venue') }}</h3>
+		  <p>{{ _('From the main bus station (Zvonařka) take bus No. 44 or 67. Get off at the stop "Semilasso". Follow the street for 100 m and then take the street on the right, Božetěchova. After approximately 400 meters you will arrive to the building of the university.') }}</p>
 
-                  <h3>Travelling From the Main Railway Station to the Red Hat office</h3>
-                  <p>From the main train station take tram No.12 (towards Technologický park). Get off at the stop Červinkova (buildings FBC I and II) or Technologický park (building TPB). This is approximately a 17 minute ride.</p>
+		  <h3>{{ _('Travelling From the Main Railway Station to the Red Hat office') }}</h3>
+		  <p>{{ _('From the main train station take tram No.12 (towards Technologický park). Get off at the stop Červinkova (buildings FBC I and II) or Technologický park (building TPB). This is approximately a 17 minute ride.') }}</p>
 
-                  <h3>Travelling From the Main Bus Station to the Red Hat office</h3>
-                  <p>Take tram No. 12 towards Technologický park and get off at Červinkova (first stop, buildings FBC I and II) or Technologický park (third stop, TPB building). When you exit the bus, if you faced in the direction the bus was traveling, the tram stop is across the street to your right. Also, take bus No. 44 or 67. Get off at the stop Skácelova and then take the tram No. 12 and then follow the same instructions as above.</p>
+		  <h3>{{ _('Travelling From the Main Bus Station to the Red Hat office') }}</h3>
+		  <p>{{ _('Take tram No. 12 towards Technologický park and get off at Červinkova (first stop, buildings FBC I and II) or Technologický park (third stop, TPB building). When you exit the bus, if you faced in the direction the bus was traveling, the tram stop is across the street to your right. Also, take bus No. 44 or 67. Get off at the stop Skácelova and then take the tram No. 12 and then follow the same instructions as above.') }}</p>
 
-                  <h3>Travelling From the Red Hat office to the Venue</h3>
-                  <p>From Červinkova tram station (or Technologický park for TPB building) take tram No. 12 towards Komárov. Get off at the stop Skácelova (first stop from Červinkova, third from Technologický park). Take bus No. 30 or 84 or 53 from the bus stop at the corner diagonally opposite the tram stop you exited at. From both buses, get off at the Semilasso stop.</p>
+		  <h3>{{ _('Travelling From the Red Hat office to the Venue') }}</h3>
+		  <p>{{ _('From Červinkova tram station (or Technologický park for TPB building) take tram No. 12 towards Komárov. Get off at the stop Skácelova (first stop from Červinkova, third from Technologický park). Take bus No. 30 or 84 or 53 from the bus stop at the corner diagonally opposite the tram stop you exited at. From both buses, get off at the Semilasso stop.') }}</p>
 
-                  <h3>Travelling From Venue to the Red Hat office</h3>
-                  <p>From the Semilasso bus stop take bus No. 30 or 44. Get off at the stop Skácelova. Take tram No. 12 towards Technologický park and get off at Červinkova (first stop, buildings FBC I and II) or Technologický park (third stop, TPB building). When you exit the bus, if you faced in the direction the bus was travelling, the tram stop is across the street to your right.</p>
+		  <h3>{{ _('Travelling From Venue to the Red Hat office') }}</h3>
+		  <p>{{ _('From the Semilasso bus stop take bus No. 30 or 44. Get off at the stop Skácelova. Take tram No. 12 towards Technologický park and get off at Červinkova (first stop, buildings FBC I and II) or Technologický park (third stop, TPB building). When you exit the bus, if you faced in the direction the bus was travelling, the tram stop is across the street to your right.') }}</p>
 
-                  <h3>Travelling From the Main Train Station to the Hotels</h3>
+		  <h3>{{ _('Travelling From the Main Train Station to the Hotels') }}</h3>
                   <ul>
-                    <li><strong>Hotel Avanti:</strong> From the main train station take tram No.1 (towards Řečkovice). Get off at the stop Hrnčířská (after apx 10 minutes).</li>
-                    <li><strong>Hotel Vista:</strong> From the main train station take tram No.1 (towards Řečkovice). Get off at the stop Hudcova (after apx 20 minutes).</li>
-                    <li><strong>Hotel Continental:</strong> From the main train station take tram No.1 (towards Řečkovice). Get off at the stop Antonínská (after apx 5 minutes).</li>
+			  <li>{{ _('<strong>Hotel Avanti:</strong> From the main train station take tram No.1 (towards Řečkovice). Get off at the stop Hrnčířská (after apx 10 minutes).') }}</li>
+			  <li>{{ _('<strong>Hotel Vista:</strong> From the main train station take tram No.1 (towards Řečkovice). Get off at the stop Hudcova (after apx 20 minutes).') }}</li>
+			  <li>{{ _('<strong>Hotel Continental:</strong> From the main train station take tram No.1 (towards Řečkovice). Get off at the stop Antonínská (after apx 5 minutes).') }}</li>
                   </ul>
 
-                  <h3>Travelling From the Hotels to the Venue</h3>
+		  <h3>{{ _('Travelling From the Hotels to the Venue') }}</h3>
                   <ul>
-                    <li><strong>Hotel Vista:</strong> The nearest tram stop is Hudcova. Take tram No. 1 towards Ečerova and get off at Semilasso stop (second stop).</li>
-                    <li><strong>Hotel Avanti: </strong>The nearest tram stop is Hrnčířská. Take tram No. 1 (towards Řečkovice) or tram No. 6 (towards Královo Pole nádraží) and get off at the Semilasso stop (apx. 5 minutes).</li>
-                    <li><strong>Hotel Continental: </strong>The nearest tram stop is Antonínská. Take tram No. 1 (towards Řečkovice) or tram No. 6 (towards Královo Pole nádraží) and get off at the Semilasso stop (apx. 10 minutes).</li>
+			  <li><strong>{{ _('Hotel Vista:</strong> The nearest tram stop is Hudcova. Take tram No. 1 towards Ečerova and get off at Semilasso stop (second stop).') }}</li>
+			  <li>{{ _('<strong>Hotel Avanti: </strong>The nearest tram stop is Hrnčířská. Take tram No. 1 (towards Řečkovice) or tram No. 6 (towards Královo Pole nádraží) and get off at the Semilasso stop (apx. 5 minutes).') }}</li>
+			  <li>{{ _('<strong>Hotel Continental: </strong>The nearest tram stop is Antonínská. Take tram No. 1 (towards Řečkovice) or tram No. 6 (towards Královo Pole nádraží) and get off at the Semilasso stop (apx. 10 minutes).') }}</li>
                   </ul>
                   <p>&nbsp;</p>
                   <p>&nbsp;</p>
 
         </div>
-          <h4>Recommended Hotels</h4>
+	<h4>{{ _('Recommended Hotels') }}</h4>
 
           <div class="col-lg-4">
             <a href="http://www.hotelavanti.cz/en/">
@@ -301,8 +299,8 @@
       <div class="row">
         <div class="col-md-12">
         <p>&nbsp;</p>
-        <a id="more-text">Show more...</a>
-        <a id="less-text">Show less...</a>
+	<a id="more-text">{{ _('Show more...') }}</a>
+	<a id="less-text">{{ _('Show less...') }}</a>
         </div>
       
       </div>
@@ -311,9 +309,9 @@
 
     <!-- Sponsors -->
     <section id="sponsors" class="sponsors-section">
-      <h2>Sponsors</h2>
+	    <h2>{{ _('Sponsors') }}</h2>
       <div class="container">
-        <h3>This event is sponsored by</h3>
+	      <h3>{{ _('This event is sponsored by') }}</h3>
         <div class="row">
           <div class="col-lg-12">
 		  <a href="https://www.redhat.com/en/global/czech-republic"><img alt="Red Hat, Czech" src="{{ '/images/logo_redhat_rgb_default.png'|static }}"></a>
@@ -321,7 +319,7 @@
         </div>
         <div class="row">
           <div class="col-md-12">
-            <h4>And supported by our friends at</h4>
+		  <h4>{{ _('And supported by our friends at') }}</h4>
           </div>
 
           <div class="col-lg-12">
@@ -342,7 +340,7 @@
           </div>
 
           <div class="col-md-12">
-            <h3>In collaboration with</h3>
+		  <h3>{{ _('In collaboration with') }}</h3>
           </div>
           <div class="col-lg-12">
 		  <a href=""><img alt="JUDCon 2017: Brno" src="{{ '/images/judcon2017brno.png'|static }}"></a>

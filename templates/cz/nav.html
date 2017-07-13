@@ -7,9 +7,9 @@
           <ul class="nav navbar-nav navbar-left">
 
               <li>
-                <a href="{{ '/index.html'|url }}" class="fa fa-home" title="Home">
-                <span class="hide">Home</span>
-                </a>
+                  <a href="{{ [lang, 'index.html']|join('/')|static }}" class="fa fa-home" title="Home">
+                      <span class="hide">{{ _('Home') }}</span>
+                  </a>
               </li>
 
             <li>
@@ -19,11 +19,11 @@
                   </i>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                     <li class="dropdown-header">Main Events</li>
-                    <li><a href="{{ '/cz/2018/index.html'|url }}"><b>2018 - DevConf.cz</b></a></li>
-                    <li><a href="{{ '/cz/2017/index.html'|url }}" class="faded">2017 - January 27-29</a></li>
+                    <li><a href="{{ '/cz/2018/index.html'|url(lang=lang) }}"><b>2018 - DevConf.cz</b></a></li>
+                    <li><a href="{{ '/cz/2017/index.html'|url(lang=lang) }}" class="faded">2017 - January 27-29</a></li>
                     <li class="dropdown-header">Roadshow Events</li>
-                    <li><a href="{{ '/cz/2017/roadshow-bratislava.html'|url }}" class="faded">2017 - Containers Bratislava</a></li>
-                    <li><a href="{{ '/cz/2017/roadshow-prague.html'|url }}" class="faded">2017 - Containers Prague</a></li>
+                    <li><a href="{{ '/cz/2017/roadshow-bratislava.html'|url(lang=lang) }}" class="faded">2017 - Containers Bratislava</a></li>
+                    <li><a href="{{ '/cz/2017/roadshow-prague.html'|url(lang=lang) }}" class="faded">2017 - Containers Prague</a></li>
                   </ul>
                 </div>
             </li>

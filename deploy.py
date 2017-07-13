@@ -32,10 +32,10 @@ def mkdirs(path):
         os.makedirs(path)
 
 
-def ext_url(path, static=False):
+def ext_url(path, static=False, lang=None):
     path_build = os.path.abspath(os.environ['PATH_BUILD'])
     locale = os.environ['LOCALE']
-    lang = locale.split('_')[0]
+    lang = lang or locale.split('_')[0]
     path = path.strip()
     if path[0] == '/':
         path = path.lstrip('/')
@@ -55,9 +55,6 @@ def ext_url(path, static=False):
 os.environ['DEVCONFDIR'] = './'
 config = confuse.Configuration('devconf')
 
-# Define the supported sites available
-# SITES = tuple(list(config['sites'].get()) + ['all'])
-
 # BUILD
 PATH_BUILD = './build'
 
@@ -72,7 +69,10 @@ locale_dir = './i18n'
 extensions = ['jinja2.ext.i18n', 'jinja2.ext.with_']
 
 jinja2_env = jinja2.Environment(loader=_loader,
-                                autoescape=True,
+                                autoescape=jinja2.select_autoescape(
+                                    disabled_extensions=('txt',),
+                                    default_for_string=True,
+                                    default=True),
                                 extensions=extensions)
 # add the ext to the jinja environment
 jinja2_env.filters['url'] = ext_url
@@ -201,6 +201,10 @@ def i18n(action):
     '''
 
     languages = ['en_US', 'cs_CZ', 'sk_SK']
+    if 'extract' in action:
+        cmd = 'pybabel -v extract -F babel.cfg -o ./i18n/messages.pot ./'
+        subprocess.run(cmd, shell=True)
+
     if 'init' in action:
         cmd = 'pybabel init -l {} -d ./i18n -i ./i18n/messages.pot'
         for lang in languages:

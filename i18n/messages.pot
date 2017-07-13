@@ -1,35 +1,179 @@
-# Translations template for DevConf.
-# Copyright (C) 2017 Red Hat
-# This file is distributed under the same license as the DevConf project.
-# Chris Ward <kejbaly2@gmail.com>, 2017.
+# Translations template for PROJECT.
+# Copyright (C) 2017 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: DevConf (master)\n"
-"Report-Msgid-Bugs-To: kejbaly@gmail.com\n"
-"POT-Creation-Date: 2017-07-13 11:12+0200\n"
-"PO-Revision-Date: 2017-07-13 11:12+0200\n"
-"Last-Translator: Chris Ward <kejbal2@gmail.com>\n"
-"Language-Team: Chris Ward <kejbaly2@gmail.com>\n"
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2017-07-13 20:15+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.4.0\n"
 
+#: templates/base.html:7
+msgid ""
+"DevConf - Free and Open Source Software Community Conferences for "
+"Developers"
+msgstr ""
+
+#: templates/coc.html:4 templates/footer.html:36
+#: templates/speaker-agreement.html:49
+msgid "Code of Conduct"
+msgstr ""
+
+#: templates/coc.html:16
+msgid "Our Pledge"
+msgstr ""
+
+#: templates/coc.html:17
+msgid ""
+"In the interest of fostering an open and welcoming environment, we as "
+"speakers, attendees and organizers at DevConf.cz pledge to making "
+"participation in our event and community a harassment-free experience for"
+" everyone, regardless of age, body size, disability, ethnicity, gender "
+"identity and expression, level of experience, nationality, personal "
+"appearance, race, religion, or sexual identity and orientation."
+msgstr ""
+
+#: templates/coc.html:19
+msgid "Our Standards"
+msgstr ""
+
+#: templates/coc.html:20
+msgid ""
+"Examples of behavior that contributes to creating a positive environment "
+"include:"
+msgstr ""
+
+#: templates/coc.html:22
+msgid "Using welcoming and inclusive language"
+msgstr ""
+
+#: templates/coc.html:23
+msgid "Being respectful of differing viewpoints and experiences"
+msgstr ""
+
+#: templates/coc.html:24
+msgid "Gracefully accepting constructive criticism"
+msgstr ""
+
+#: templates/coc.html:25
+msgid "Focusing on what is best for the community"
+msgstr ""
+
+#: templates/coc.html:26
+msgid "Showing empathy towards other community members"
+msgstr ""
+
+#: templates/coc.html:29
+msgid "Examples of unacceptable behavior by participants include:"
+msgstr ""
+
+#: templates/coc.html:31
+msgid ""
+"The use of sexualized language or imagery and unwelcome sexual attention "
+"or advances"
+msgstr ""
+
+#: templates/coc.html:32
+msgid "Trolling, insulting/derogatory comments, and personal or political attacks"
+msgstr ""
+
+#: templates/coc.html:33
+msgid "Public or private harassment"
+msgstr ""
+
+#: templates/coc.html:34
+msgid ""
+"Publishing others private information, such as a physical or electronic "
+"address, without explicit permission"
+msgstr ""
+
+#: templates/coc.html:35
+msgid ""
+"Other conduct which could reasonably be considered inappropriate in a "
+"professional setting"
+msgstr ""
+
+#: templates/coc.html:38
+msgid "Our Responsibilities"
+msgstr ""
+
+#: templates/coc.html:39
+msgid ""
+"Event organizers have the right and responsibility to remove, edit, or "
+"reject content, posts, examples and other event contributions that are "
+"not aligned to this Code of Conduct, or to ban temporarily or permanently"
+" any contributor for other behaviors that they deem inappropriate, "
+"threatening, offensive, or harmful."
+msgstr ""
+
+#: templates/coc.html:41
+msgid "Scope"
+msgstr ""
+
+#: templates/coc.html:42
+msgid ""
+"This Code of Conduct applies both within event spaces and in public "
+"spaces (physical and virtual) when an individual is representing the "
+"project or its community. Examples of representing a project or community"
+" include using an official project e-mail address, posting to, sharing or"
+" referencing official social media channels."
+msgstr ""
+
+#: templates/coc.html:44
+msgid "Enforcement"
+msgstr ""
+
+#: templates/coc.html:45
+msgid ""
+"Instances of abusive, harassing, or otherwise unacceptable behavior may "
+"be reported by contacting the project team lead at info@devconf.cz. All "
+"complaints will be reviewed and investigated and will result in a "
+"response that is deemed necessary and appropriate to the circumstances. "
+"The project team is obligated to maintain confidentiality with regard to "
+"the reporter of an incident. Further details of specific enforcement "
+"policies may be posted separately."
+msgstr ""
+
+#: templates/coc.html:47
+msgid ""
+"Event participants who do not follow or enforce the Code of Conduct in "
+"good faith may face temporary or permanent repercussions as determined by"
+" other members of the project leadership."
+msgstr ""
+
+#: templates/coc.html:49
+msgid "Contact Information"
+msgstr ""
+
+#: templates/coc.html:50
+msgid "Event Organizer"
+msgstr ""
+
+#: templates/coc.html:54
+msgid ""
+"This Code of Conduct is adapted from the <a href=\"http://contributor-"
+"covenant.org/version/1/4\">Contributor Covenant, version 1.4"
+msgstr ""
+
 #: templates/footer.html:9
 msgid "Subscribe to our newsletter to receive all updates and event information."
 msgstr ""
 
-#: templates/footer.html:35
+#: templates/footer.html:35 templates/speaker-agreement.html:4
+#: templates/speaker-agreement.html:14
 msgid "Speaker Agreement"
 msgstr ""
 
-#: templates/footer.html:36
-msgid "Code of Conduct"
-msgstr ""
-
-#: templates/footer.html:37
+#: templates/footer.html:37 templates/media-policy.html:4
 msgid "Media Policy"
 msgstr ""
 
@@ -41,7 +185,8 @@ msgstr ""
 msgid "Main Event"
 msgstr ""
 
-#: templates/cz/index.html:20 templates/index.html:20
+#: templates/cz/2017/index.html:19 templates/cz/index.html:20
+#: templates/index.html:20
 msgid "Brno, Czech Republic"
 msgstr ""
 
@@ -60,14 +205,1018 @@ msgstr ""
 msgid "Learn more"
 msgstr ""
 
+#: templates/media-policy.html:16
+msgid "Vision"
+msgstr ""
+
+#: templates/media-policy.html:17
+msgid ""
+"DevConf.cz organizers strive to create a positive environment that "
+"adheres to our <a href=\"coc.html\">Code of Conduct</a> and respects "
+"privacy of individuals while educating attendees."
+msgstr ""
+
+#: templates/media-policy.html:19
+msgid "Speakers and session recording"
+msgstr ""
+
+#: templates/media-policy.html:20
+msgid ""
+"When you agree to speak at DevConf.cz, you consent for your talk to be "
+"recorded in audio and possibly video format. DevConf.cz uses screen "
+"capturing hardware along with audio recording equipment to broadcast "
+"presentations."
+msgstr ""
+
+#: templates/media-policy.html:22
+msgid ""
+"We reserve the right to publicly distribute and publish these recordings "
+"under the Creative Commons Attribution 3.0 license."
+msgstr ""
+
+#: templates/media-policy.html:24
+msgid ""
+"Your session material, including content and recordings may be used in "
+"various promotions or for other related endeavors. This material may also"
+" appear on the DevConf.cz web site, social media channels or other "
+"digital mediums controlled by the DevConf.cz organizing committee."
+msgstr ""
+
+#: templates/media-policy.html:26
+msgid ""
+"As conference organizers, we cannot be all places at once and it is "
+"important for us to be able to review all material presented at the "
+"conference.  For this reason, you may not opt out of having your talk "
+"recorded.  However, if you wish, you may request that the session video "
+"not be published to the public."
+msgstr ""
+
+#: templates/media-policy.html:28
+msgid ""
+"Visit the <a "
+"href=\"https://www.youtube.com/channel/UCmYAQDZIQGm_kPvemBc_qwg\"><i "
+"class=\"fa fa-youtube-play\"></i>DevConf.cz YouTube channel</a>."
+msgstr ""
+
+#: templates/media-policy.html:30
+msgid "Recording by Attendees"
+msgstr ""
+
+#: templates/media-policy.html:31
+msgid ""
+"All sessions are recorded by official DevConf.cz or venue A/V staff. If "
+"you are not the speaker and wish to audio/video record, you must obtain "
+"written consent from the speaker first."
+msgstr ""
+
+#: templates/media-policy.html:33
+msgid "Staff and attendee photography"
+msgstr ""
+
+#: templates/media-policy.html:34
+msgid ""
+"When you register for DevConf.cz, you consent to be photographed by our "
+"official conference photographer, and to have those photographs published"
+" under a Creative Commons license and possibly used in various "
+"promotional material."
+msgstr ""
+
+#: templates/media-policy.html:36
+msgid ""
+"We encourage attendees to take and share their own photographs, as long "
+"as the rules below are followed."
+msgstr ""
+
+#: templates/media-policy.html:38
+msgid ""
+"Any photography/recording that is legally allowed in public spaces is "
+"allowed at DevConf.cz."
+msgstr ""
+
+#: templates/media-policy.html:39
+msgid ""
+"Photography/recording should be treated like other potentially harassing "
+"interpersonal interaction. That is, when one person in the interaction "
+"says “stop” or “leave me alone” (etc), the interaction must end. In this "
+"case, attendees should not attempt to photograph that individual again."
+msgstr ""
+
+#: templates/media-policy.html:40
+msgid ""
+"Photography/recording shouldn’t be done in such a way as to hide from the"
+" subject that it’s happening."
+msgstr ""
+
+#: templates/media-policy.html:41
+msgid ""
+"The subject may inspect the photo/recording at any time and, if "
+"requested, the photo/footage/etc must be deleted immediately."
+msgstr ""
+
+#: templates/media-policy.html:42
+msgid ""
+"Those who are taking photographs and/or recording must also follow our "
+"general <a href=\"coc.html\">Code of Conduct</a>."
+msgstr ""
+
+#: templates/media-policy.html:45
+msgid "How to opt-out"
+msgstr ""
+
+#: templates/media-policy.html:46
+msgid ""
+"If you do not wish images of yourself to be published, you may opt out by"
+" <a href=\"mailto:info@devconf.cz\">contacting us</a> and reasonable "
+"efforts will be done to accommodate your request."
+msgstr ""
+
+#: templates/media-policy.html:48
+msgid ""
+"If you are a speaker, you may opt out of having your talk being "
+"publically distributed by <a href=\"mailto:info@devconf.cz\">contacting "
+"us</a>."
+msgstr ""
+
+#: templates/media-policy.html:50
+msgid "How to Report Violations or Issues"
+msgstr ""
+
+#: templates/media-policy.html:51
+msgid ""
+"Please report an violations or issues with recording or photography "
+"directly to the front desk at registration, or by contacting us."
+msgstr ""
+
+#: templates/media-policy.html:55 templates/speaker-agreement.html:59
+msgid ""
+"Thank you to Linux Fest NorthWest, Open Source Bridge and DrupalCon, from"
+" whom this media policy was heavily influenced."
+msgstr ""
+
+#: templates/meta.html:12
+msgid ""
+"\n"
+"        DevConf.cz is a free and open, annual, 3-day open-source Fedora "
+"Linux and JBoss community \n"
+"        conference for Red Hat and community developers, DevOps, testers,"
+" and documentation writers, \n"
+"        organized to sync, share, and hack on upstream projects with the "
+"community in the beautiful \n"
+"        city of Brno, Czech Republic.\n"
+"        "
+msgstr ""
+
+#: templates/speaker-agreement.html:17
+msgid "Compensation"
+msgstr ""
+
+#: templates/speaker-agreement.html:18
+msgid ""
+"I understand that DevConf.cz does not directly financially compensate "
+"speakers in any way!"
+msgstr ""
+
+#: templates/speaker-agreement.html:19
+msgid ""
+"That said, as an accepted speaker <b>if I stay in one of DevConf.cz "
+"partner hotels</b> I have the option to get my accomodation covered for "
+"up to 3 nights (<i>Thursday January 26, Friday January 27, Saturday "
+"January 28</i>)."
+msgstr ""
+
+#: templates/speaker-agreement.html:20
+msgid ""
+"NOTE: This applies to primary speakers only if a single room is required!"
+" Secondary speakers will not be covered in addition unless both primary "
+"speaker and up to one secondary speaker agree to share a double room. "
+"Details for how to reserve at one of our partner hotels will be sent to "
+"all accepted speakers in December after selection has completed."
+msgstr ""
+
+#: templates/speaker-agreement.html:22
+msgid "Speaker Profiles"
+msgstr ""
+
+#: templates/speaker-agreement.html:23
+msgid ""
+"I will fill out my user profile, including full name, contact details and"
+" photo, with the understanding that my information might be populated for"
+" me if not provided in time for the schedule."
+msgstr ""
+
+#: templates/speaker-agreement.html:24
+msgid ""
+"NOTE: If a Twitter handle is provided, it will be shared publicly. Email "
+"nor any other demographic information provided outside of the background "
+"/ bio text submitted will not."
+msgstr ""
+
+#: templates/speaker-agreement.html:27
+msgid "Session Preparation"
+msgstr ""
+
+#: templates/speaker-agreement.html:28
+msgid ""
+"If I am unable to devote the time and energy to this effort, I will "
+"notify the DevConf.cz planning team immediately and DevConf.CZ will "
+"replace my session."
+msgstr ""
+
+#: templates/speaker-agreement.html:29
+msgid ""
+"I understand that if I am participating on a tutorial with others that I "
+"am expected to communicate with the other speakers on my session before "
+"the event. I understand that if I am delivering a group or solo "
+"presentation, I am expected to spend a significant amount of time "
+"preparing for my session before the event."
+msgstr ""
+
+#: templates/speaker-agreement.html:30
+msgid ""
+"To aid in schedule planning, I will also communicate any of the following"
+" with the DevConf.cz presentation committee:"
+msgstr ""
+
+#: templates/speaker-agreement.html:32
+msgid "Schedule conflicts"
+msgstr ""
+
+#: templates/speaker-agreement.html:33
+msgid "Session format"
+msgstr ""
+
+#: templates/speaker-agreement.html:34
+msgid "Technical requirements/requests"
+msgstr ""
+
+#: templates/speaker-agreement.html:35
+msgid "Changes to your speaker lineup"
+msgstr ""
+
+#: templates/speaker-agreement.html:38
+msgid "Obtaining Consent"
+msgstr ""
+
+#: templates/speaker-agreement.html:39
+msgid ""
+"I understand that I am responsible for obtaining any required consents, "
+"permissions, and clearances to display or otherwise use any materials "
+"(both visual and audio) that I incorporate in my session."
+msgstr ""
+
+#: templates/speaker-agreement.html:41
+msgid "Promoted Content"
+msgstr ""
+
+#: templates/speaker-agreement.html:42
+msgid ""
+"I understand that DevConf.cz is primarily an educational event, not a "
+"sales platform."
+msgstr ""
+
+#: templates/speaker-agreement.html:43
+msgid ""
+"I understand that if my session content is geared primarily towards "
+"marketing or sales of a particular product, that it will be clearly "
+"stated in the title and opening description of the session and set the "
+"<i>Session Type</i> to <i>Sales / Marketing</i> in my CfP submission."
+msgstr ""
+
+#: templates/speaker-agreement.html:45
+msgid "Staying on Topic and on time"
+msgstr ""
+
+#: templates/speaker-agreement.html:46
+msgid ""
+"I understand that staying focused on the topic outlined in the title and "
+"description of my session is extremely important."
+msgstr ""
+
+#: templates/speaker-agreement.html:47
+msgid ""
+"During my session, I pledge to stay focused on the topic at hand and make"
+" sure that the information presented adheres to the difficulty level "
+"(beginner, intermediate, or advanced) designated for my session."
+msgstr ""
+
+#: templates/speaker-agreement.html:50
+msgid ""
+"I understand that my slides and on-stage remarks must abide by the <a "
+"href=\"coc.html\">Code of Conduct</a> which will be adhered during this "
+"conference."
+msgstr ""
+
+#: templates/speaker-agreement.html:51
+msgid ""
+"I understand that my slides may be reviewed ahead of time, and that I may"
+" need to modify my presentation if it does not adhere with the <a "
+"href=\"coc.html\">Code of Conduct</a>."
+msgstr ""
+
+#: templates/speaker-agreement.html:52
+msgid ""
+"I also understand that if, while I am presenting, I fail to abide by the "
+"spirit of the <a href=\"coc.html\">Code of Conduct</a>, my session "
+"recording might not be published."
+msgstr ""
+
+#: templates/speaker-agreement.html:54
+msgid "Session Recording"
+msgstr ""
+
+#: templates/speaker-agreement.html:55
+msgid ""
+"I have read the <a href=\"media-policy.html\">Media Policy</a> and "
+"understand that my session will be recorded and made publicly available "
+"following the conference unless otherwise agreed to with the <a "
+"href=\"mailto:info@devconf.cz\">event organizer</a> in advance."
+msgstr ""
+
+#: templates/cz/nav.html:11
+msgid "Home"
+msgstr ""
+
+#: templates/cz/2017/index.html:4
+msgid "Jan 27-29 - FIT VUT Brno, Czech Republic"
+msgstr ""
+
+#: templates/cz/2017/index.html:15
+#: templates/cz/2017/roadshow-bratislava.html:15
+#: templates/cz/2017/roadshow-prague.html:15
+msgid "Registration is CLOSED for this event!"
+msgstr ""
+
+#: templates/cz/2017/index.html:21 templates/cz/2017/index.html:47
+msgid "January 27-29, 2017"
+msgstr ""
+
+#: templates/cz/2017/index.html:30
+msgid ""
+"A free annual community conference for developers, admins, and users of "
+"Open Source technologies."
+msgstr ""
+
+#: templates/cz/2017/index.html:43
+msgid ""
+"DevConf.cz 2017 is the 9th annual, free Red Hat sponsored community "
+"conference for developers, admins, DevOps engineers, testers, "
+"documentation writers and users of open source technologies such as "
+"Linux, Middleware, Virtualization, Storage, Cloud and mobile where FLOSS "
+"communities sync, share, and hack on upstream projects together in the "
+"beautiful city of Brno, Czech Republic."
+msgstr ""
+
+#: templates/cz/2017/index.html:47
+msgid "When:"
+msgstr ""
+
+#: templates/cz/2017/index.html:48
+msgid "Venue:"
+msgstr ""
+
+#: templates/cz/2017/index.html:48
+msgid "Faculty of Information Technology (VUT FIT) Božetěchova 2 - Brno"
+msgstr ""
+
+#: templates/cz/2017/index.html:51
+msgid "You should consider attending DevConf.cz 2017 if you are:"
+msgstr ""
+
+#: templates/cz/2017/index.html:53
+msgid "A developer"
+msgstr ""
+
+#: templates/cz/2017/index.html:54
+msgid "A technology architect"
+msgstr ""
+
+#: templates/cz/2017/index.html:55
+msgid "An IT consultant"
+msgstr ""
+
+#: templates/cz/2017/index.html:56
+msgid "An IT student or a teacher from an IT university/faculty"
+msgstr ""
+
+#: templates/cz/2017/index.html:57
+msgid ""
+"Or simply an IT enthusiast interested in the latest trends in open source"
+" and emerging digital technologies"
+msgstr ""
+
+#: templates/cz/2017/index.html:59
+msgid ""
+"If you are curious about last year's event, you can check out <a "
+"href=\"https://devconfcz2016.sched.org/\">DevConf.cz 2016 schedule</a> "
+"and videos on our <a "
+"href=\"https://www.youtube.com/channel/UCIHsqY_4eWeInVQnxZ7WSjg\">DevConf.cz"
+" YouTube Channel</a>."
+msgstr ""
+
+#: templates/cz/2017/index.html:60
+msgid ""
+"DevConf.cz is a free conference and there is no admission or ticket "
+"charge. This year we will require that you <b>register for free</b>."
+msgstr ""
+
+#: templates/cz/2017/index.html:61
+msgid "Register here: On site Registration only!"
+msgstr ""
+
+#: templates/cz/2017/index.html:62
+msgid "Talks, presentations, and workshops will all be in <i>English</i>."
+msgstr ""
+
+#: templates/cz/2017/index.html:82
+msgid ""
+"\"It is a great conference to meet awesome people from around the world "
+"with very good presentations and workshops about free and open source "
+"software. ... very well organized and Brno is also a nice city\""
+msgstr ""
+
+#: templates/cz/2017/index.html:105
+msgid ""
+"\"It's like FOSDEM, just not as big, but better organized and very "
+"centered to Red Hat because they organizing it\""
+msgstr ""
+
+#: templates/cz/2017/index.html:129
+msgid "\"Hands down the best FLOSS conference in the Czech Republic!\""
+msgstr ""
+
+#: templates/cz/2017/index.html:150
+msgid "\"Presentation of the hottest New Technologies as they are being made.\""
+msgstr ""
+
+#: templates/cz/2017/index.html:172
+msgid "Travel Information"
+msgstr ""
+
+#: templates/cz/2017/index.html:176
+msgid ""
+"Brno is located two hours or less by car from three European capitals "
+"(Prague, Vienna, and Bratislava)."
+msgstr ""
+
+#: templates/cz/2017/index.html:178
+msgid "By Plane"
+msgstr ""
+
+#: templates/cz/2017/index.html:179
+msgid ""
+"<strong><a href=\"http://www.brno-airport.cz/en/\" target=\"_blank\">Brno"
+" Airport</a></strong> (BRQ, 0.6 million passengers a year)"
+msgstr ""
+
+#: templates/cz/2017/index.html:181
+msgid ""
+"Brno airport is a small international airport near Brno. This airport is "
+"a good option if you are coming from London (Stansted - Ryanair, Luton - "
+"Wizzair), Munich (Lufthansa), Eindhoven (Wizzair)."
+msgstr ""
+
+#: templates/cz/2017/index.html:182
+msgid ""
+"The newly opened flight from Munich (Lufthansa) operates daily except "
+"Sunday and dramatically improves the flight connection directly to "
+"Brno.</strong>"
+msgstr ""
+
+#: templates/cz/2017/index.html:183
+msgid ""
+"From the airport, city bus #76 will take you to the city centre (30 "
+"minutes) and drop you off next to the main train station and Student "
+"Agency bus stop. You can also take a taxi: approx. 300 CZK/€11."
+msgstr ""
+
+#: templates/cz/2017/index.html:186
+msgid ""
+"<strong><a href=\"http://www.viennaairport.com/\">Vienna International "
+"Airport</a></strong> (VIE, 22 million)"
+msgstr ""
+
+#: templates/cz/2017/index.html:188
+msgid ""
+"The biggest airline hub in Central Europe, flights to many destinations "
+"all over the world."
+msgstr ""
+
+#: templates/cz/2017/index.html:189
+msgid ""
+"The easiest way to get from the airport to Brno are the <a "
+"href=\"http://jizdenky.studentagency.cz/\">Student Agency buses</a> "
+"(online booking possible; use stop Vienna Schwechat Airport as your "
+"starting place). The direct bus takes 2 hours."
+msgstr ""
+
+#: templates/cz/2017/index.html:190
+msgid ""
+"Alternately, you can take a train from the airport to the city centre of "
+"Vienna and then take an EC train to Brno from there."
+msgstr ""
+
+#: templates/cz/2017/index.html:193
+msgid "<strong>Václav Havel Airport Prague</strong></a> (PRG, 11 million)"
+msgstr ""
+
+#: templates/cz/2017/index.html:195
+msgid "This is the second busiest airport in the region."
+msgstr ""
+
+#: templates/cz/2017/index.html:196
+msgid ""
+"It is possible to book the journey as one ticket with <a "
+"href=\"http://jizdenky.studentagency.cz/\">Student Agency</a> with a "
+"connection at the Prague main bus station (Florenc). Czech Railways "
+"provides shuttle buses between the airport and the Prague main train "
+"station."
+msgstr ""
+
+#: templates/cz/2017/index.html:197
+msgid ""
+"To get from the Prague airport to Brno takes at least 3.5 hours by public"
+" transport. Note, it is faster to get to Brno from Vienna."
+msgstr ""
+
+#: templates/cz/2017/index.html:199
+msgid "<strong>Bratislava Airport</strong></a> (BTS, 1.4 million)"
+msgstr ""
+
+#: templates/cz/2017/index.html:201
+msgid ""
+"This airport is a good option for cheap flights within Europe. If you are"
+" flying to Brno from outside of Europe, this airport is not recommended."
+msgstr ""
+
+#: templates/cz/2017/index.html:202
+msgid "Bratislava Airport is a hub of Ryanair."
+msgstr ""
+
+#: templates/cz/2017/index.html:203
+msgid ""
+"There is no direct transport connection between the Bratislava airport "
+"and Brno. You have to take a city bus to the centre and take a coach or "
+"train to Brno from there. It takes at least three hours."
+msgstr ""
+
+#: templates/cz/2017/index.html:206
+msgid ""
+"There are also small international airports in <a href=\"http://www"
+".airport-ostrava.cz/en/\">Ostrava</a> (flights to Paris and London) and "
+"<a href=\"http://www.airport-pardubice.cz/en\">Pardubice</a> (flights to "
+"Saint Petersburg and Moscow). Both have good train and bus connections to"
+" Brno."
+msgstr ""
+
+#: templates/cz/2017/index.html:209
+msgid "By Train"
+msgstr ""
+
+#: templates/cz/2017/index.html:212
+msgid "Train Timetables:"
+msgstr ""
+
+#: templates/cz/2017/index.html:214
+msgid "Prague - trains between Prague and Brno go hourly, 2.5 hours"
+msgstr ""
+
+#: templates/cz/2017/index.html:215
+msgid "Vienna - trains between Wien Hbf and Brno go every hour, 1.5 hour"
+msgstr ""
+
+#: templates/cz/2017/index.html:216
+msgid "Bratislava - from Bratislava Hlavna Stanica hourly, 1.5 hour"
+msgstr ""
+
+#: templates/cz/2017/index.html:217
+msgid "Budapest - from Budapest-Keleti pu several trains every day, 5 hours"
+msgstr ""
+
+#: templates/cz/2017/index.html:218
+msgid ""
+"Warsaw - from Warszawa Centralna several times every day (usually one "
+"connection), 7 hours"
+msgstr ""
+
+#: templates/cz/2017/index.html:219
+msgid "Berlin - from Berlin Hauptbahnhof several trains every day, 7.5 hours"
+msgstr ""
+
+#: templates/cz/2017/index.html:222
+msgid "By Bus"
+msgstr ""
+
+#: templates/cz/2017/index.html:223
+msgid ""
+"Brno is part of the European bus network and all connections and their "
+"prices are similar to trains."
+msgstr ""
+
+#: templates/cz/2017/index.html:226
+msgid "By Car"
+msgstr ""
+
+#: templates/cz/2017/index.html:227
+msgid ""
+"Brno is well-connected to other cities by highway. You can get easily to "
+"neighbouring countries by car. For using the Czech highways you have to "
+"purchase a highway sticker. The 10 day sticker costs 350 CZK/13 € and can"
+" be purchased at every gas station. Travel time examples:"
+msgstr ""
+
+#: templates/cz/2017/index.html:229
+msgid "Prague - 210 km, 2 hours"
+msgstr ""
+
+#: templates/cz/2017/index.html:230
+msgid "Bratislava - 130 km, 1.3 hours"
+msgstr ""
+
+#: templates/cz/2017/index.html:231
+msgid "Vienna - 143 km, 1.8 hours"
+msgstr ""
+
+#: templates/cz/2017/index.html:232
+msgid "Budapest - 326 km, 3 hours"
+msgstr ""
+
+#: templates/cz/2017/index.html:233
+msgid "Munich - 587 km, 5.3 hours"
+msgstr ""
+
+#: templates/cz/2017/index.html:234
+msgid "Berlin - 555 km, 5.2 hours"
+msgstr ""
+
+#: templates/cz/2017/index.html:237
+msgid "Note: The Avanti Hotel offers free parking for their guests."
+msgstr ""
+
+#: templates/cz/2017/index.html:239
+msgid "Local Transport"
+msgstr ""
+
+#: templates/cz/2017/index.html:240
+msgid ""
+"Public transportation in Brno is provided by <a "
+"href=\"http://www.dpmb.cz/default.aspx\" target=\"_blank\">DPMB</a> which"
+" maintains 12 tram lines, 13 trolley-bus lines and 37 bus lines. At night"
+" all public transportation is provided by 11 night bus lines. If you want"
+" to use public transportation, you must buy a ticket before you board the"
+" bus, tram or trolleybus. You need to purchase a two-zone ticket for "
+"zones 100+101 for any stop in the city of Brno. Single journey tickets "
+"can be bought from machines (coins only) at many stops, or in Tabak "
+"stores. You need to validate the single journey ticket in the Yellow "
+"validation machine when you enter the bus, tram or trolleybus. "
+"Instructions how to pay for transportation in Brno can be found <a "
+"href=\"http://www.dpmb.cz/Default.aspx\">here</a>."
+msgstr ""
+
+#: templates/cz/2017/index.html:242
+msgid ""
+"<strong>SMS tickets:</strong> The DPMB also offers <a "
+"href=\"http://www.dpmb.cz/Default.aspx?seo=sms-jizdenky\">sms "
+"tickets</a>. This service is only available for Czech SIM cards. To use "
+"the service, send a message with a code to 90206. The code for a "
+"75-minute ticket (CZK 29) is BRNO. The code, BRNOD, is for an all-day "
+"ticket (CZK 99). After sending the message, you will receive a ticket via"
+" sms within a few minutes. If you do not have a Czech SIM card, you can "
+"use the mobile app, Sejf which is available in the <a "
+"href=\"https://itunes.apple.com/sk/app/sejf/id301404273?mt=8\">Apple App "
+"Store</a> and <a "
+"href=\"https://play.google.com/store/apps/details?id=cz.edhouse.mc.android&hl=cs\">Google"
+" Play</a>."
+msgstr ""
+
+#: templates/cz/2017/index.html:243
+msgid ""
+"If you are staying in Brno for several days, consider buying a 5-day "
+"ticket which costs 250 CZK. There are several places where you can buy "
+"this ticket, but the easiest one for you is probably the main railway "
+"station. You can buy it at any counter (look for the international "
+"counters because they are more likely to speak English). When you first "
+"use your ticket, be sure to validate it. You only have to validate your "
+"ticket one time."
+msgstr ""
+
+#: templates/cz/2017/index.html:245
+msgid "Brno Local Transport Timetable"
+msgstr ""
+
+#: templates/cz/2017/index.html:246
+msgid ""
+"Download the app \"Jízdní řády\" with all local timetables from the <a "
+"href=\"https://itunes.apple.com/cz/app/jizdni-rady-"
+"idos/id473503749?mt=8\">Apple App Store</a> or <a "
+"href=\"https://play.google.com/store/apps/details?id=cz.mafra.jizdnirady&hl=cs\">Google"
+" Play</a>."
+msgstr ""
+
+#: templates/cz/2017/index.html:249
+msgid "Travelling From the Main Railway Station to the Venue"
+msgstr ""
+
+#: templates/cz/2017/index.html:250
+msgid ""
+"From the main train station take tram No.1 (towards Řečkovice). Get off "
+"at the stop Semilasso (after approximately 15 minutes). Take the street "
+"on the right, Metodějova. After approximately 200 meters take the first "
+"street on the right, Božetěchova. Continue straight approximately 100 m. "
+"The building on your left hand side is the university."
+msgstr ""
+
+#: templates/cz/2017/index.html:252
+msgid "Travelling From the Main Bus Station to the Venue"
+msgstr ""
+
+#: templates/cz/2017/index.html:253
+msgid ""
+"From the main bus station (Zvonařka) take bus No. 44 or 67. Get off at "
+"the stop \"Semilasso\". Follow the street for 100 m and then take the "
+"street on the right, Božetěchova. After approximately 400 meters you will"
+" arrive to the building of the university."
+msgstr ""
+
+#: templates/cz/2017/index.html:255
+msgid "Travelling From the Main Railway Station to the Red Hat office"
+msgstr ""
+
+#: templates/cz/2017/index.html:256
+msgid ""
+"From the main train station take tram No.12 (towards Technologický park)."
+" Get off at the stop Červinkova (buildings FBC I and II) or Technologický"
+" park (building TPB). This is approximately a 17 minute ride."
+msgstr ""
+
+#: templates/cz/2017/index.html:258
+msgid "Travelling From the Main Bus Station to the Red Hat office"
+msgstr ""
+
+#: templates/cz/2017/index.html:259
+msgid ""
+"Take tram No. 12 towards Technologický park and get off at Červinkova "
+"(first stop, buildings FBC I and II) or Technologický park (third stop, "
+"TPB building). When you exit the bus, if you faced in the direction the "
+"bus was traveling, the tram stop is across the street to your right. "
+"Also, take bus No. 44 or 67. Get off at the stop Skácelova and then take "
+"the tram No. 12 and then follow the same instructions as above."
+msgstr ""
+
+#: templates/cz/2017/index.html:261
+msgid "Travelling From the Red Hat office to the Venue"
+msgstr ""
+
+#: templates/cz/2017/index.html:262
+msgid ""
+"From Červinkova tram station (or Technologický park for TPB building) "
+"take tram No. 12 towards Komárov. Get off at the stop Skácelova (first "
+"stop from Červinkova, third from Technologický park). Take bus No. 30 or "
+"84 or 53 from the bus stop at the corner diagonally opposite the tram "
+"stop you exited at. From both buses, get off at the Semilasso stop."
+msgstr ""
+
+#: templates/cz/2017/index.html:264
+msgid "Travelling From Venue to the Red Hat office"
+msgstr ""
+
+#: templates/cz/2017/index.html:265
+msgid ""
+"From the Semilasso bus stop take bus No. 30 or 44. Get off at the stop "
+"Skácelova. Take tram No. 12 towards Technologický park and get off at "
+"Červinkova (first stop, buildings FBC I and II) or Technologický park "
+"(third stop, TPB building). When you exit the bus, if you faced in the "
+"direction the bus was travelling, the tram stop is across the street to "
+"your right."
+msgstr ""
+
+#: templates/cz/2017/index.html:267
+msgid "Travelling From the Main Train Station to the Hotels"
+msgstr ""
+
+#: templates/cz/2017/index.html:269
+msgid ""
+"<strong>Hotel Avanti:</strong> From the main train station take tram No.1"
+" (towards Řečkovice). Get off at the stop Hrnčířská (after apx 10 "
+"minutes)."
+msgstr ""
+
+#: templates/cz/2017/index.html:270
+msgid ""
+"<strong>Hotel Vista:</strong> From the main train station take tram No.1 "
+"(towards Řečkovice). Get off at the stop Hudcova (after apx 20 minutes)."
+msgstr ""
+
+#: templates/cz/2017/index.html:271
+msgid ""
+"<strong>Hotel Continental:</strong> From the main train station take tram"
+" No.1 (towards Řečkovice). Get off at the stop Antonínská (after apx 5 "
+"minutes)."
+msgstr ""
+
+#: templates/cz/2017/index.html:274
+msgid "Travelling From the Hotels to the Venue"
+msgstr ""
+
+#: templates/cz/2017/index.html:276
+msgid ""
+"Hotel Vista:</strong> The nearest tram stop is Hudcova. Take tram No. 1 "
+"towards Ečerova and get off at Semilasso stop (second stop)."
+msgstr ""
+
+#: templates/cz/2017/index.html:277
+msgid ""
+"<strong>Hotel Avanti: </strong>The nearest tram stop is Hrnčířská. Take "
+"tram No. 1 (towards Řečkovice) or tram No. 6 (towards Královo Pole "
+"nádraží) and get off at the Semilasso stop (apx. 5 minutes)."
+msgstr ""
+
+#: templates/cz/2017/index.html:278
+msgid ""
+"<strong>Hotel Continental: </strong>The nearest tram stop is Antonínská. "
+"Take tram No. 1 (towards Řečkovice) or tram No. 6 (towards Královo Pole "
+"nádraží) and get off at the Semilasso stop (apx. 10 minutes)."
+msgstr ""
+
+#: templates/cz/2017/index.html:284
+msgid "Recommended Hotels"
+msgstr ""
+
+#: templates/cz/2017/index.html:302
+msgid "Show more..."
+msgstr ""
+
+#: templates/cz/2017/index.html:303
+msgid "Show less..."
+msgstr ""
+
+#: templates/cz/2017/index.html:312 templates/cz/2017/roadshow-prague.html:351
+msgid "Sponsors"
+msgstr ""
+
+#: templates/cz/2017/index.html:314
+msgid "This event is sponsored by"
+msgstr ""
+
+#: templates/cz/2017/index.html:322
+msgid "And supported by our friends at"
+msgstr ""
+
+#: templates/cz/2017/index.html:343
+msgid "In collaboration with"
+msgstr ""
+
 #: templates/cz/2017/roadshow-bratislava.html:4
 msgid "DevConf.cz Roadshow - Containers Bratislava 2017"
 msgstr ""
 
-#: templates/cz/2017/roadshow-bratislava.html:15
-msgid "Registration is CLOSED for this event!"
+#: templates/cz/2017/roadshow-prague.html:21
+msgid "Containers Roadshow"
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:24
+msgid "Czech National Library of Technology"
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:25
+msgid "Prague 6, Czech Republic"
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:27
+msgid "April 19th, 2017"
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:31
+msgid "Presentations and workshops will be in Czech."
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:39
+msgid ""
+"DevConf.cz in collaboration with the Prague Containers community bring "
+"you the first annual, free, one day containers focused community "
+"conference in Prague."
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:54
+msgid "Wednesday April 19, 2017<"
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:56
+msgid "On-site registration: 09:00 - 10:00"
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:64
+msgid "Lecture Hall"
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:72
+msgid ""
+"Automate modern app development with containers and OpenShift - Radek "
+"Vokál + Jiří Kolář"
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:83
+msgid "Linux Containers - the DIY way - Vilibald Wanča"
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:94
+msgid "How to develop containers for the enterprise - Honza Horák"
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:105
+msgid "Docker containers and black holes - Matúš Kocka + František Kluknavský"
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:115
+msgid "Lunch Break"
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:126
+msgid "Managing containers with Ansible - Peter Schiffer"
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:137
+msgid ""
+"Containers in Production - Stanislav Polášek (Elos Technologies, Red Hat "
+"Premier Business partner)"
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:148
+msgid "OpenShift pipelines - Vašek Pavlín"
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:159
+msgid "Demo time! - Vašek Pavlín + David Bečvařík"
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:165
+msgid "Workshop Room"
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:177
+msgid "Advanced container deep-dive - Tomáš Tomeček, Peter Schiffer"
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:188
+msgid "Learn OpenShift basics - Jiří Kolář"
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:205
+msgid "Speakers"
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:345
+msgid "Venue"
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:353
+msgid "This event is brought to you by:"
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:358
+msgid "World's leading provider of open source, enterprise IT solutions."
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:365
+msgid "And supported by our friends at:"
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:372
+msgid ""
+"Community with a mission to connect people interested in containers, "
+"cloud and devops topics."
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:381
+msgid ""
+"OpenShift is an open source PaaS by Red Hat based on top of Docker "
+"containers and the Kubernetes container cluster manager for enterprise "
+"app development and deployment."
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:390
+msgid ""
+"Czech website about Fedora Linux distribution. Articles, guides, news and"
+" place for discussion at one place."
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:399
+msgid ""
+"Národní technická knihovna (NTK) is the biggest and the oldes technical "
+"library in Czech Republic with capacity over 1.5 million books."
+msgstr ""
+
+#: templates/cz/2017/roadshow-prague.html:408
+msgid ""
+"ELOS Technologies is a company operating in the Czech and Slovak market "
+"as a supplier of products and services for corporate solutions in the "
+"area of information technology.  Our corporate strategy is based on the "
+"adoption of new models of development, support, promotion and "
+"distribution of software, known as the \"open source\". We are convinced "
+"that the open source model provides our customers with significant "
+"financial and technological benefits."
 msgstr ""
 
 #: templates/cz/2018/index.html:23
 msgid "More information coming soon!"
 msgstr ""
+

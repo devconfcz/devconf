@@ -12,31 +12,27 @@
         <div class="row">
           <div class="col-sm-12 intro-content">
             <div class = "alert alert-danger">
-              <b>Registration is CLOSED for this event!</b>
+		    <b>{{ _('Registration is CLOSED for this event!') }}</b>
             </div>
             <div> 
-	      <img src="{{ '/images/devconf-cz-prgcont-cz-basic.png'|url }}" style="width: 45%;" /> 
+	      <img src="{{ '/images/devconf-cz-prgcont-cz-basic.png'|static }}" style="width: 45%;" /> 
             </div>
 
-            <div class="tagline">Containers Roadshow</div>
+	    <div class="tagline">{{ _('Containers Roadshow') }}</div>
 
             <div class="time-and-place">
-              <address>Czech National Library of Technology</address>
-              <address>Prague 6, Czech Republic</address>
+		    <address>{{ _('Czech National Library of Technology') }}</address>
+		    <address>{{ _('Prague 6, Czech Republic') }}</address>
               <div class="date">
-                <time datetime="2017-04-19">April 19th, 2017</time>
+		      <time datetime="2017-04-19">{{ _('April 19th, 2017') }}</time>
               </div>
             </div>
-            <p class="cs orange">Přednášky, prezentace i workshopy budou v češtině.</p>
-            <p class="en orange">Presentations and workshops will be in Czech.</p>
+	    <p class="orange">{{ _('Presentations and workshops will be in Czech.') }}</p>
           </div>
 
           <div class="col-sm-offset-2 col-sm-8 intro-content">
-            <h2 class='description cs'>
-              DevConf.cz ve spolupráci s komunitou <a href="http://prgcont.cz/">Prague Containers</a> Vám přináší první každoročně pořádanou komunitní konferenci zaměřenou na kontejnery. Konference je jednodenní, zcela zdarma a koná se v Praze.
-            </h2>
-            <h2 class='description en'>
-              DevConf.cz in collaboration with the Prague Containers community bring you the first annual, free, one day containers focused community conference in Prague.
+            <h2 class='description'>
+		    {{ _('DevConf.cz in collaboration with the Prague Containers community bring you the first annual, free, one day containers focused community conference in Prague.') }}
             </h2>
           </div>
 
@@ -51,9 +47,8 @@
                agenda template bootstrap
                source: http://bootsnipp.com/snippets/featured/agenda
               -->
-              <h1>Wednesday April 19, 2017</h1>
-              <p class="cs red">Registrace na místě: 09:00 - 10:00</p>
-              <p class="en red">On-site registration: 09:00 - 10:00</p>
+	      <h1>{{ _('Wednesday April 19, 2017<') }}/h1>
+	      <p class="red">{{ _('On-site registration: 09:00 - 10:00') }}</p>
               <br/>
               <div class="agenda">
                   <div class="table-responsive">
@@ -61,7 +56,7 @@
                           <tbody>
                               <tr>
                                   <td class="agenda-room" rowspan="9">
-                                      <p>Lecture Hall</p>
+					  <p>{{ _('Lecture Hall') }}</p>
                                   </td>
                                   <td class="agenda-time">
                                       10:00 - 10:45
@@ -69,7 +64,7 @@
                                   <td class="agenda-events">
                                       <div class="agenda-event">
                                          <p>
-        Automate modern app development with containers and OpenShift - Radek Vokál + Jiří Kolář</p>
+					 {{ _('Automate modern app development with containers and OpenShift - Radek Vokál + Jiří Kolář') }}</p>
                                       </div>
                                   </td>
                               </tr>
@@ -80,7 +75,7 @@
                                   <td class="agenda-events">
                                       <div class="agenda-event">
                                          <p> 
-        Linux Containers - the DIY way - Vilibald Wanča</p>
+					 {{ _('Linux Containers - the DIY way - Vilibald Wanča') }}</p>
                                       </div>
                                   </td>
                               </tr>
@@ -91,7 +86,7 @@
                                   <td class="agenda-events">
                                       <div class="agenda-event">
                                          <p>
-       How to develop containers for the enterprise - Honza Horák</p>
+					 {{ _('How to develop containers for the enterprise - Honza Horák') }}</p>
                                       </div>
                                   </td>
                               </tr>
@@ -102,7 +97,7 @@
                                   <td class="agenda-events">
                                       <div class="agenda-event">
                                          <p>
-      Docker containers and black holes - Matúš Kocka + František Kluknavský</p>
+					 {{ _('Docker containers and black holes - Matúš Kocka + František Kluknavský') }}</p>
                                       </div>
                                   </td>
                               </tr>
@@ -112,7 +107,7 @@
                                   </td>
                                   <td class="agenda-events">
                                       <div class="agenda-event">
-                                         <p><i>Lunch Break</i></p>
+					      <p><i>{{ _('Lunch Break') }}</i></p>
                                       </div>
                                   </td>
                               </tr>
@@ -123,7 +118,7 @@
                                   <td class="agenda-events">
                                       <div class="agenda-event">
                                          <p>
-       Managing containers with Ansible - Peter Schiffer </p>
+					 {{ _('Managing containers with Ansible - Peter Schiffer') }} </p>
                                       </div>
                                   </td>
                               </tr>
@@ -134,7 +129,7 @@
                                   <td class="agenda-events">
                                       <div class="agenda-event">
                                          <p>
-       Containers in Production - Stanislav Polášek (Elos Technologies, Red Hat Premier Business partner)</p>
+					 {{ _('Containers in Production - Stanislav Polášek (Elos Technologies, Red Hat Premier Business partner)') }}</p>
                                       </div>
                                   </td>
                               </tr>
@@ -145,7 +140,7 @@
                                   <td class="agenda-events">
                                       <div class="agenda-event">
                                          <p>
-       OpenShift pipelines - Vašek Pavlín</p>
+					 {{ _('OpenShift pipelines - Vašek Pavlín') }}</p>
                                       </div>
                                   </td>
                               </tr>
@@ -156,13 +151,13 @@
                                   <td class="agenda-events">
                                       <div class="agenda-event">
                                         <p>
-       Demo time! - Vašek Pavlín + David Bečvařík</p>
+					{{ _('Demo time! - Vašek Pavlín + David Bečvařík') }}</p>
                                       </div>
                                   </td>
                               </tr>
                               <tr>
                                   <td class="agenda-room" rowspan="3">
-                                    <p>Workshop Room</p>
+					  <p>{{ _('Workshop Room') }}</p>
                                   </td>
                                   <td class="agenda-time"></td>
                                   <td class="agenda-events"></td>
@@ -174,7 +169,7 @@
                                   <td class="agenda-events">
                                       <div class="agenda-event">
                                         <p>
-      Advanced container deep-dive - Tomáš Tomeček, Peter Schiffer</p>
+					{{ _('Advanced container deep-dive - Tomáš Tomeček, Peter Schiffer') }}</p>
                                       </div>
                                   </td>
                               </tr>
@@ -185,7 +180,7 @@
 				  <td class="agenda-events">
                                       <div class="agenda-event">
                                          <p>
-       Learn OpenShift basics - Jiří Kolář
+					 {{ _('Learn OpenShift basics - Jiří Kolář') }}
                                       </div>
                                   </td>
                               </tr>
@@ -202,13 +197,13 @@
 
     <!-- SPEAKERS -->
     <section id="speakers" class="speakers-section">
-      <h2>Speakers</h2>
+	    <h2>{{ _('Speakers') }}</h2>
       <div class="container"><br><br>
       <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="alert alert-panel-purple">
             <div class="panel-body">
-		    <img src="{{ '/images/vwanca.jpg'|url }}" class="pic_ina img-thumbnail"/>
+		    <img src="{{ '/images/vwanca.jpg'|static }}" class="pic_ina img-thumbnail"/>
                 <div class="con_ina">
                 <b> Vilibald Wanča </b><br>
                 <p>Senior Software Engineer, Apiary</p>
@@ -220,7 +215,7 @@
         <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="alert alert-panel-red">
             <div class="panel-body">
-		    <img src="{{ '/images/dbecvarik.jpg'|url }}" class="pic_ina img-thumbnail"/>
+		    <img src="{{ '/images/dbecvarik.jpg'|static }}" class="pic_ina img-thumbnail"/>
                 <div class="con_ina">
                 <b> David Bečvařík </b><br>
                 <p>Community Leader at Prague Containers Meet-up</p>
@@ -232,7 +227,7 @@
         <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="alert alert-panel-purple">
             <div class="panel-body">
-		    <img src="{{ '/images/spolasek.jpg'|url }}" class="pic_ina img-thumbnail"/>
+		    <img src="{{ '/images/spolasek.jpg'|static }}" class="pic_ina img-thumbnail"/>
                 <div class="con_ina">
                 <b> Stanislav Polášek </b><br>
                 <p>Managing Director, ELOS Technologies s.r.o.</p>
@@ -244,7 +239,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="alert alert-panel-red">
                 <div class="panel-body">
-			<img src="{{ '/images/hhorak.jpg'|url }}" class="pic_ina img-thumbnail"/>
+			<img src="{{ '/images/hhorak.jpg'|static }}" class="pic_ina img-thumbnail"/>
                     <div class="con_ina">
                     <b> Honza Horák </b><br>
                     <p>Associate Manager, Software Engineering, Red Hat</p>
@@ -256,7 +251,7 @@
         <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="alert alert-panel-red">
                 <div class="panel-body">
-			<img src="{{ '/images/jkolar.jpg'|url }}" class="pic_ina img-thumbnail"/>
+			<img src="{{ '/images/jkolar.jpg'|static }}" class="pic_ina img-thumbnail"/>
                     <div class="con_ina">
                     <b> Jiří Kolář </b><br>
                     <p>Red Hat Middleware Solution Architect for CZ-SK and CEE region</p>
@@ -268,7 +263,7 @@
         <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="alert alert-panel-red">
                 <div class="panel-body">
-			<img src="{{ '/images/pschiffe.jpg'|url }}" class="pic_ina img-thumbnail"/>
+			<img src="{{ '/images/pschiffe.jpg'|static }}" class="pic_ina img-thumbnail"/>
                     <div class="con_ina">
                     <b> Peter Schiffer </b><br>
                     <p>Senior Software Engineer, OpenShift, Red Hat</p>
@@ -280,7 +275,7 @@
         <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="alert alert-panel-red">
                 <div class="panel-body">
-			<img src="{{ '/images/vpavlin.jpg'|url }}" class="pic_ina img-thumbnail"/>
+			<img src="{{ '/images/vpavlin.jpg'|static }}" class="pic_ina img-thumbnail"/>
                     <div class="con_ina">
                     <b> Vašek Pavlín </b><br>
                     <p>Senior Software Engineer, Red Hat</p>
@@ -292,7 +287,7 @@
         <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="alert alert-panel-red">
             <div class="panel-body">
-		    <img src="{{ '/images/rvokal.jpg'|url }}" class="pic_ina img-thumbnail"/>
+		    <img src="{{ '/images/rvokal.jpg'|static }}" class="pic_ina img-thumbnail"/>
                 <div class="con_ina">
                 <b> Radek Vokál </b><br/>
                 <p>Senior Engineering Manager, Red Hat</p>
@@ -304,7 +299,7 @@
         <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="alert alert-panel-red">
             <div class="panel-body">
-		    <img src="{{ '/images/ttomacek.jpg'|url }}" class="pic_ina img-thumbnail"/>
+		    <img src="{{ '/images/ttomacek.jpg'|static }}" class="pic_ina img-thumbnail"/>
                 <div class="con_ina">
                 <b> Tomáš Tomeček </b><br/>
                 <p>Senior Software Engineer, Red Hat</p>
@@ -316,7 +311,7 @@
         <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="alert alert-panel-red">
             <div class="panel-body">
-		    <img src="{{ '/images/mkocka.jpg'|url }}" class="pic_ina img-thumbnail"/>
+		    <img src="{{ '/images/mkocka.jpg'|static }}" class="pic_ina img-thumbnail"/>
                 <div class="con_ina">
                 <b> Matus Kocka </b><br/>
                 <p>Software Engineer, Red Hat</p>
@@ -328,7 +323,7 @@
         <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="alert alert-panel-red">
             <div class="panel-body">
-		    <img src="{{ '/images/fkluknavsky.jpg'|url }}" class="pic_ina img-thumbnail"/>
+		    <img src="{{ '/images/fkluknavsky.jpg'|static }}" class="pic_ina img-thumbnail"/>
                 <div class="con_ina">
                 <b> František Kluknavský </b><br/>
                 <p>Associate Software Engineer, Red Hat</p>
@@ -342,71 +337,70 @@
 
     <!-- VENUE -->
     <section id="venue" class="venue-section">
-      <h2>Venue</h2>
+	    <h2>{{ _('Venue') }}</h2>
       <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=14.38714385032654%2C50.10242083916527%2C14.393951296806337%2C50.10534545545261&amp;layer=mapnik&amp;marker=50.10388316962982%2C14.390547573566437" style="border: 0px solid black"></iframe>
     </section>
 
     <!-- Sponsors -->
     <section id="sponsors" class="sponsors-section">
-      <h2>Sponsors</h2>
+	    <h2>{{ _('Sponsors') }}</h2>
       <div class="container">
-        <h3>This event is brought to you by:</h3>
+	      <h3>{{ _('This event is brought to you by:') }}</h3>
         <div class="row">
           <div class="col-lg-12">
-		  <a href="https://www.redhat.com/en/global/czech-republic"><img alt="Red Hat, Czech" src="{{ '/images/logo_redhat_rgb_default.png'|url }}">
+		  <a href="https://www.redhat.com/en/global/czech-republic"><img alt="Red Hat, Czech" src="{{ '/images/logo_redhat_rgb_default.png'|static }}">
             <div class="sponsor-desc">
-                <p>World's leading provider of open source, enterprise IT solutions.</p>
+		    <p>{{ _('World\'s leading provider of open source, enterprise IT solutions.') }}</p>
             </div>
             </a>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
-            <h4>And supported by our friends at:</h4>
+		  <h4>{{ _('And supported by our friends at:') }}</h4>
           </div>
 
           <div class="col-lg-12 sponsor">
             <a href="https://www.meetup.com/Prague-Containers-Meetup/">
-		    <img alt="Prague Containers Meetup" src="{{ '/images/containers.png'|url }}">
+		    <img alt="Prague Containers Meetup" src="{{ '/images/containers.png'|static }}">
                 <div class="sponsor-desc">
-                    <p>Community with a mission to connect people interested in containers, cloud and devops topics.</p>
+			<p>{{ _('Community with a mission to connect people interested in containers, cloud and devops topics.') }}</p>
                 </div>
             </a>
           </div>
 
           <div class="col-lg-6 sponsor">
             <a href="https://www.openshift.com">
-		    <img alt="OpenShift" src="{{ '/images/openshift_logo_cropped_250w.png'|url }}">
+		    <img alt="OpenShift" src="{{ '/images/openshift_logo_cropped_250w.png'|static }}">
                 <div class="sponsor-desc">
-                <p>OpenShift is an open source PaaS by Red Hat based on top of Docker containers and the Kubernetes container cluster manager for enterprise app development and deployment.</p>
+			<p>{{ _('OpenShift is an open source PaaS by Red Hat based on top of Docker containers and the Kubernetes container cluster manager for enterprise app development and deployment.') }}</p>
                 </div>
                 </a>
           </div>
 
           <div class="col-lg-6 sponsor">
             <a href="https://mojefedora.cz">
-		    <img alt="MojeFedora CZ" src="{{ '/images/cropped-mojefedora-250x-150y.png'|url }}">
+		    <img alt="MojeFedora CZ" src="{{ '/images/cropped-mojefedora-250x-150y.png'|static }}">
               <div class="sponsor-desc">
-                <p>Czech website about Fedora Linux distribution. Articles, guides, news and place for discussion at one place.</p>
+		      <p>{{ _('Czech website about Fedora Linux distribution. Articles, guides, news and place for discussion at one place.') }}</p>
               </div>
             </a>
           </div>
 
           <div class="col-lg-12 sponsor">
             <a href="https://www.knihovna.cvut.cz/">
-		    <img alt="Ústřední knihovna ČVUT" src="{{ '/images/uk_cvut_header.png'|url }}">
+		    <img alt="Ústřední knihovna ČVUT" src="{{ '/images/uk_cvut_header.png'|static }}">
                 <div class="sponsor-desc">
-                <p>Národní technická knihovna (NTK) is the biggest and the oldes technical library in Czech Republic with capacity over 1.5 million books.</p>
+			<p>{{ _('Národní technická knihovna (NTK) is the biggest and the oldes technical library in Czech Republic with capacity over 1.5 million books.') }}</p>
                 </div>
                 </a>
           </div>
 
           <div class="col-lg-12 sponsor">
             <a href="http://www.elostech.cz/" alt="ELOS Technologies">
-		    <img alt="ELOS Technologies" src="{{ '/images/logo-elos-technologies-small.png'|url }}" class="padding-top-md">
+		    <img alt="ELOS Technologies" src="{{ '/images/logo-elos-technologies-small.png'|static }}" class="padding-top-md">
                 <div class="sponsor-desc">
-                <p>ELOS Technologies is a company operating in the Czech and Slovak market as a supplier of products and services for corporate solutions in the area of information technology.
-Our corporate strategy is based on the adoption of new models of development, support, promotion and distribution of software, known as the "open source". We are convinced that the open source model provides our customers with significant financial and technological benefits.</p>
+			<p>{{ _('ELOS Technologies is a company operating in the Czech and Slovak market as a supplier of products and services for corporate solutions in the area of information technology.  Our corporate strategy is based on the adoption of new models of development, support, promotion and distribution of software, known as the "open source". We are convinced that the open source model provides our customers with significant financial and technological benefits.') }}</p>
                 </div>
             </a>
           </div>
