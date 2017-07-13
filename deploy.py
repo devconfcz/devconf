@@ -14,6 +14,28 @@ import ipdb  # NOQA
 import jinja2
 
 
+def dumps(content, path):
+    log.info('Exporting to {}'.format(path))
+    with open(path, 'w') as out:
+        out.writelines(content)
+
+
+def mkdirs(path):
+    if not os.path.exists(path):
+        log.debug('Creating path: {}'.format(path))
+        os.makedirs(path)
+
+
+def ext_url(path):
+    path_build = os.environ['PATH_BUILD']
+    path = path.strip()
+    if path[0] == '/':
+        path = path.lstrip('/')
+        path = os.path.join(path_build, path)
+        path = 'file://{}'.format(path)
+    return path
+
+
 # CONFIG
 # overide default location of the config.yaml file
 os.environ['DEVCONFDIR'] = './'
@@ -29,7 +51,13 @@ PATH_BUILD = './build'
 # Set-up Template loading
 PATH_TEMPLATES = './templates'
 _loader = jinja2.FileSystemLoader(PATH_TEMPLATES)
+
+# FIXME: move this to 'init' command or something...
 locale_dir = './i18n'
+# prepare the build
+if not os.path.exists(locale_dir):
+    mkdirs(locale_dir)
+
 msgdomain = 'html'
 default_locale = 'en_US'
 list_of_desired_locales = ['en', 'cs', 'sk']
@@ -65,28 +93,6 @@ log = logging.getLogger('devconf')
 logging.basicConfig(format='%(message)s')
 
 
-def dumps(content, path):
-    log.info('Exporting to {}'.format(path))
-    with open(path, 'w') as out:
-        out.writelines(content)
-
-
-def mkdirs(path):
-    if not os.path.exists(path):
-        log.debug('Creating path: {}'.format(path))
-        os.makedirs(path)
-
-
-def ext_url(path):
-    base_url = os.path.abspath(os.environ['BASE_URL'])
-    path = path.strip()
-    if path[0] == '/':
-        path = path.lstrip('/')
-        path = os.path.join(base_url, path)
-        path = 'file://{}'.format(path)
-    return path
-
-
 # add the ext to the jinja environment
 jinja2_env.filters['url'] = ext_url
 
@@ -110,73 +116,65 @@ def _clean(build=True):
 
 
 @cli.command('build')
+@click.option('--branch', '-b', type=str, default='devel')
 @click.option('--clean', '-c', is_flag=True, default=False)
-def build(clean):
-    # FIXME this should be configurable to '' or 'https://basesite.tld/'
-    sites = ['cz']
+def build(branch, clean):
+    # Clean up the previous build
+    _clean(build=True)
 
-    for site in sites:
-        log.info('Building site: {}'.format(site))
-
-        if site == 'cz':
-            _clean(build=True)
-            _build_cz()
-
+    static_path = PATH_STATIC
+    # Copy out all the static files to root of output directory
+    for _path in os.listdir(static_path):
+        from_path = os.path.join(static_path, _path)
+        to_path = os.path.join(PATH_BUILD, _path)
+        if os.path.exists(to_path):
+            log.warning('"static" path already exists: {}'.format(to_path))
         else:
-            log.warn('Unknown site: {}'.format(site))
+            log.debug(
+                'Copying "static" to build dir: {}'.format(to_path))
+            shutil.copytree(from_path, to_path)
 
+    templates = (
+        'index.html',
+        'media-policy.html',
+        'coc.html',
+        'speaker-agreement.html',
+        'cz/index.html',
+        'cz/2017/index.html',
+        'cz/2017/roadshow-bratislava.html',
+        'cz/2017/roadshow-prague.html',
+        'cz/2018/index.html',
+        )
 
-def _build_cz():
-    dest_basedir = 'cz'
+    os.environ['PATH_BUILD'] = os.path.abspath(PATH_BUILD)
 
-    templates = ('cz/index.html',
-                 'media-policy.html',
-                 'coc.html',
-                 'speaker-agreement.html',
-                 'cz/2017/index.html',
-                 'cz/2017/roadshow-bratislava.html',
-                 'cz/2017/roadshow-prague.html',
-                 'cz/2018/index.html',
-                 )
+    # Now build all the pages for the site
+    for path in templates:
+        # [/]{{site}}/template.html
+        site = path.split('/')[0] if '/' in path else ''
 
-    # prepare the build
-    path_build = os.path.join(PATH_BUILD, dest_basedir)
-    mkdirs(path_build)
-
-    # FIXME: move this to 'init' command or something...
-    if not os.path.exists(locale_dir):
-        mkdirs(locale_dir)
-
-    params = {
-        'site': 'DevConf.cz',
-        'logo_svg': 'images/devconf-cz-webopt.svg',
-    }
-
-    for _template in templates:
-        # Copy out all the static files for that page
-        for _path in os.listdir(PATH_STATIC):
-            from_path = os.path.join(PATH_STATIC, _path)
-            to_path = os.path.join(path_build, _path)
-            if not os.path.exists(to_path):
-                log.debug('Copying "static" to build dir: {}'.format(to_path))
-                shutil.copytree(from_path, to_path)
-
-        os.environ['BASE_URL'] = os.path.join(path_build)
+        params = {
+            # FIXME: only if DEBUG on, otherwise don't include private keys
+            '__site': site,
+            '__branch': branch,
+            '__template': path,
+        }
 
         # Render the template
-        template = jinja2_env.get_template(_template)
+        template = jinja2_env.get_template(path)
         content = template.render(**params)
 
         # Save the rendered page to disk
-        _t = _template
-        _t = _t.replace('cz/', '') if 'cz/' in _t else _t
-        dest_file = os.path.join(path_build, _t)
-
+        dest_file = os.path.join(PATH_BUILD, path)
         # create the directory struct where the file will live
         mkdirs(os.path.dirname(dest_file))
-
         # dump the rendered file
         dumps(content, dest_file)
+
+        assert os.path.exists(dest_file)
+
+
+
 
 
 if __name__ == '__main__':
