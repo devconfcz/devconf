@@ -18,12 +18,13 @@
                     <span class="caret"></span>
                   </i>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li class="dropdown-header">Main Events</li>
-                    <li><a href="{{ '/cz/2018/index.html'|url(lang=lang) }}"><b>2018 - DevConf.cz</b></a></li>
-                    <li><a href="{{ '/cz/2017/index.html'|url(lang=lang) }}" class="faded">2017 - January 27-29</a></li>
-                    <li class="dropdown-header">Roadshow Events</li>
-                    <li><a href="{{ '/cz/2017/roadshow-bratislava.html'|url(lang=lang) }}" class="faded">2017 - Containers Bratislava</a></li>
-                    <li><a href="{{ '/cz/2017/roadshow-prague.html'|url(lang=lang) }}" class="faded">2017 - Containers Prague</a></li>
+                      <li class="dropdown-header dropdown-header-title"><strong>DevConf.cz</strong></li>
+                      <li class="dropdown-header">{{ _('Main Events') }}</li>
+                      <li><a href="{{ '/cz/2018/index.html'|url(lang=lang) }}"><b>2018 - {{ _('January') }}</b></a></li>
+                      <li><a href="{{ '/cz/2017/index.html'|url(lang=lang) }}" class="faded">2017 - {{ _('January 27-29') }}</a></li>
+                      <li class="dropdown-header">{{ _('Roadshow Events') }}</li>
+                      <li><a href="{{ '/cz/2017/roadshow-bratislava.html'|url(lang=lang) }}" class="faded">{{ _('2017 - Containers Bratislava') }}</a></li>
+                      <li><a href="{{ '/cz/2017/roadshow-prague.html'|url(lang=lang) }}" class="faded">2017 - {{ _('Containers Prague') }}</a></li>
                   </ul>
                 </div>
             </li>

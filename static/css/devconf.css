@@ -178,6 +178,10 @@ a.faded {
   min-width: 0;
 }
 
+.dropdown-header-title {
+  font-size: 1.5em;
+}
+
 .top-branding {
   transform: translateX(-50%);
   left: 50%;

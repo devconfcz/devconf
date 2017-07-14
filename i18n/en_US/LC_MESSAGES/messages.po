@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DevConf (master)\n"
 "Report-Msgid-Bugs-To: kejbaly@gmail.com\n"
-"POT-Creation-Date: 2017-07-13 20:15+0200\n"
+"POT-Creation-Date: 2017-07-13 20:25+0200\n"
 "PO-Revision-Date: 2017-07-13 20:09+0200\n"
 "Last-Translator: Chris Ward <kejbal2@gmail.com>\n"
 "Language: en_US\n"
@@ -1050,7 +1050,7 @@ msgstr ""
 msgid "Show less..."
 msgstr ""
 
-#: templates/cz/2017/index.html:312 templates/cz/2017/roadshow-prague.html:351
+#: templates/cz/2017/index.html:312 templates/cz/2017/roadshow-prague.html:346
 msgid "Sponsors"
 msgstr ""
 
@@ -1086,127 +1086,127 @@ msgstr ""
 msgid "April 19th, 2017"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:31
+#: templates/cz/2017/roadshow-prague.html:30
 msgid "Presentations and workshops will be in Czech."
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:39
+#: templates/cz/2017/roadshow-prague.html:35
 msgid ""
 "DevConf.cz in collaboration with the Prague Containers community bring "
 "you the first annual, free, one day containers focused community "
 "conference in Prague."
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:54
+#: templates/cz/2017/roadshow-prague.html:50
 msgid "Wednesday April 19, 2017<"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:56
+#: templates/cz/2017/roadshow-prague.html:51
 msgid "On-site registration: 09:00 - 10:00"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:64
+#: templates/cz/2017/roadshow-prague.html:59
 msgid "Lecture Hall"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:72
+#: templates/cz/2017/roadshow-prague.html:67
 msgid ""
 "Automate modern app development with containers and OpenShift - Radek "
 "Vokál + Jiří Kolář"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:83
+#: templates/cz/2017/roadshow-prague.html:78
 msgid "Linux Containers - the DIY way - Vilibald Wanča"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:94
+#: templates/cz/2017/roadshow-prague.html:89
 msgid "How to develop containers for the enterprise - Honza Horák"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:105
+#: templates/cz/2017/roadshow-prague.html:100
 msgid "Docker containers and black holes - Matúš Kocka + František Kluknavský"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:115
+#: templates/cz/2017/roadshow-prague.html:110
 msgid "Lunch Break"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:126
+#: templates/cz/2017/roadshow-prague.html:121
 msgid "Managing containers with Ansible - Peter Schiffer"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:137
+#: templates/cz/2017/roadshow-prague.html:132
 msgid ""
 "Containers in Production - Stanislav Polášek (Elos Technologies, Red Hat "
 "Premier Business partner)"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:148
+#: templates/cz/2017/roadshow-prague.html:143
 msgid "OpenShift pipelines - Vašek Pavlín"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:159
+#: templates/cz/2017/roadshow-prague.html:154
 msgid "Demo time! - Vašek Pavlín + David Bečvařík"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:165
+#: templates/cz/2017/roadshow-prague.html:160
 msgid "Workshop Room"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:177
+#: templates/cz/2017/roadshow-prague.html:172
 msgid "Advanced container deep-dive - Tomáš Tomeček, Peter Schiffer"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:188
+#: templates/cz/2017/roadshow-prague.html:183
 msgid "Learn OpenShift basics - Jiří Kolář"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:205
+#: templates/cz/2017/roadshow-prague.html:200
 msgid "Speakers"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:345
+#: templates/cz/2017/roadshow-prague.html:340
 msgid "Venue"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:353
+#: templates/cz/2017/roadshow-prague.html:348
 msgid "This event is brought to you by:"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:358
+#: templates/cz/2017/roadshow-prague.html:353
 msgid "World's leading provider of open source, enterprise IT solutions."
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:365
+#: templates/cz/2017/roadshow-prague.html:360
 msgid "And supported by our friends at:"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:372
+#: templates/cz/2017/roadshow-prague.html:367
 msgid ""
 "Community with a mission to connect people interested in containers, "
 "cloud and devops topics."
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:381
+#: templates/cz/2017/roadshow-prague.html:376
 msgid ""
 "OpenShift is an open source PaaS by Red Hat based on top of Docker "
 "containers and the Kubernetes container cluster manager for enterprise "
 "app development and deployment."
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:390
+#: templates/cz/2017/roadshow-prague.html:385
 msgid ""
 "Czech website about Fedora Linux distribution. Articles, guides, news and"
 " place for discussion at one place."
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:399
+#: templates/cz/2017/roadshow-prague.html:394
 msgid ""
 "Národní technická knihovna (NTK) is the biggest and the oldes technical "
 "library in Czech Republic with capacity over 1.5 million books."
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:408
+#: templates/cz/2017/roadshow-prague.html:403
 msgid ""
 "ELOS Technologies is a company operating in the Czech and Slovak market "
 "as a supplier of products and services for corporate solutions in the "
