@@ -128,6 +128,8 @@ def build(branch, clean):
         'cz/2017/roadshow-bratislava.html',
         'cz/2017/roadshow-prague.html',
         'cz/2018/index.html',
+        'in/index.html',
+        'us/index.html',
         )
 
     os.environ['PATH_BUILD'] = os.path.abspath(PATH_BUILD)
