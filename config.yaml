@@ -1,0 +1,14 @@
+templates: [
+    'index.html',                                                            
+    'media-policy.html', 
+    'coc.html',
+    'speaker-agreement.html',
+    'cz/index.html',
+    'cz/2017/index.html',
+    'cz/2017/roadshow-bratislava.html',
+    'cz/2017/roadshow-prague.html',
+    'cz/2018/index.html',
+    'in/index.html',
+    'us/index.html',
+]
+locales: ['en_US', 'cs_CZ', 'sk_SK']

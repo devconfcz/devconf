@@ -1,29 +1,19 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-
-import functools
 import logging
 import os
 import shutil
 import subprocess
 
-from babel.support import Translations
-import click
 import confuse
+import click
 import ipdb  # NOQA
-import jinja2
 
-# LOGGING
+from devconf.flask_app import render_template
+
 # Setup console logging
 log = logging.getLogger('devconf')
-logging.basicConfig(format='%(message)s')
-
-
-def dumps(content, path):
-    log.info('Exporting to {}'.format(path))
-    with open(path, 'w') as out:
-        out.writelines(content)
 
 
 def mkdirs(path):
@@ -32,53 +22,42 @@ def mkdirs(path):
         os.makedirs(path)
 
 
-def ext_url(path, static=False, lang=None):
-    path_build = os.path.abspath(os.environ['PATH_BUILD'])
-    locale = os.environ['LOCALE']
-    lang = lang or locale.split('_')[0]
-    path = path.strip()
-    if path[0] == '/':
-        path = path.lstrip('/')
-        if static:
-            path = os.path.join(path_build, path)
+def _clean_build():
+    path_build = os.environ['PATH_BUILD']
+    if os.path.exists(path_build):
+        log.debug('Cleaning up old builds in {}'.format(path_build))
+        shutil.rmtree(path_build)
+
+
+def _copy_static():
+    path_static = os.environ['PATH_STATIC']
+    path_build = os.environ['PATH_BUILD']
+    # Copy out all the static files to root of output directory
+    for _path in os.listdir(path_static):
+        from_path = os.path.join(path_static, _path)
+        to_path = os.path.join(path_build, _path)
+        if os.path.exists(to_path):
+            log.warning('"static" path already exists: {}'.format(to_path))
         else:
-            path = os.path.join(path_build, lang, path)
-        path = 'file://{}'.format(path)
-    else:
-        path = os.path.join(path_build, path)
-        path = 'file://{}'.format(path)
-    return path
+            log.debug('Copying "static" to build dir: {}'.format(to_path))
+            shutil.copytree(from_path, to_path)
 
 
-# CONFIG
-# overide default location of the config.yaml file
-os.environ['DEVCONFDIR'] = './'
-config = confuse.Configuration('devconf')
+def _get_config(config_path):
+    config = os.path.expanduser(os.path.abspath(config_path))
+    # CONFIG - overide default location of the config.yaml file
+    os.environ['APPDIR'] = config
+    config = confuse.Configuration('app')
+    return config
 
-# BUILD
-PATH_BUILD = './build'
 
-# TEMPLATES
-# Set-up Template loading
-PATH_TEMPLATES = './templates'
-_loader = jinja2.FileSystemLoader(PATH_TEMPLATES)
+# BUILD path
+PATH_BUILD = os.path.abspath('./build')
+os.environ['PATH_BUILD'] = PATH_BUILD
 
-# FIXME: move this to 'init' command or something...
-locale_dir = './i18n'
-
-extensions = ['jinja2.ext.i18n', 'jinja2.ext.with_']
-
-jinja2_env = jinja2.Environment(loader=_loader,
-                                autoescape=jinja2.select_autoescape(
-                                    disabled_extensions=('txt',),
-                                    default_for_string=True,
-                                    default=True),
-                                extensions=extensions)
-# add the ext to the jinja environment
-jinja2_env.filters['url'] = ext_url
-jinja2_env.filters['static'] = functools.partial(ext_url, static=True)
-
-PATH_STATIC = './static'
+# STATIC files path
+PATH_STATIC = os.path.abspath('./static')
+os.environ['PATH_STATIC'] = PATH_STATIC
 
 
 @click.group()
@@ -93,87 +72,28 @@ def cli(quiet, debug):
         log.setLevel(logging.INFO)
 
 
-def _clean(build=True):
-    if build and os.path.exists(PATH_BUILD):
-        log.debug('Cleaning up old builds in {}'.format(PATH_BUILD))
-        shutil.rmtree(PATH_BUILD)
-
-
 @cli.command('build')
+@click.argument('config', type=str, default='./')
 @click.option('--branch', '-b', type=str, default='devel')
-@click.option('--clean', '-c', is_flag=True, default=False)
-def build(branch, clean):
+def build(config, branch):
+
+    # FIXME: not using branch!
+
     # Clean up the previous build
-    _clean(build=True)
+    _clean_build()
+    _copy_static()
 
-    static_path = PATH_STATIC
-    # Copy out all the static files to root of output directory
-    for _path in os.listdir(static_path):
-        from_path = os.path.join(static_path, _path)
-        to_path = os.path.join(PATH_BUILD, _path)
-        if os.path.exists(to_path):
-            log.warning('"static" path already exists: {}'.format(to_path))
-        else:
-            log.debug(
-                'Copying "static" to build dir: {}'.format(to_path))
-            shutil.copytree(from_path, to_path)
+    config = _get_config(config)
+    templates = config['templates'].get()
+    locales = config['locales'].get()
 
-    templates = (
-        'index.html',
-        'media-policy.html',
-        'coc.html',
-        'speaker-agreement.html',
-        'cz/index.html',
-        'cz/2017/index.html',
-        'cz/2017/roadshow-bratislava.html',
-        'cz/2017/roadshow-prague.html',
-        'cz/2018/index.html',
-        'in/index.html',
-        'us/index.html',
-        )
-
-    os.environ['PATH_BUILD'] = os.path.abspath(PATH_BUILD)
-
-    # Now build all the pages for the site
+    # Build all the pages for the site
+    pages = []
     for path in templates:
-        # [/]{{site}}/template.html
-        site = path.split('/')[0] if '/' in path else ''
-
-        params = {
-            # FIXME: only if DEBUG on, otherwise don't include private keys
-            '__site': site,
-            '__branch': branch,
-            'path': path,
-            'flags_path': {
-                'en': '/images/lang_flag_en.svg',
-                'cs': '/images/lang_flag_cs.svg',
-                'sk': '/images/lang_flag_sk.svg',
-            },
-        }
-
-        locales = ['en_US', 'cs_CZ', 'sk_SK']
         for locale in locales:
-            params['locale'] = locale
-            os.environ['LOCALE'] = locale
-            lang = locale.split('_')[0]
-            params['lang'] = lang
-            translations = Translations.load(locale_dir, [locale])
-            jinja2_env.install_gettext_translations(translations, newstyle=True)
+            pages.append(render_template(path, locales, save=True))
 
-            # Render the template
-            template = jinja2_env.get_template(path)
-            content = template.render(**params)
-
-            # FIXME: WHY NOT USING BRANCH?
-
-            # Save the rendered page to disk
-            dest_file = os.path.join(PATH_BUILD, lang, path)
-            # create the directory struct where the file will live
-            mkdirs(os.path.dirname(dest_file))
-            # dump the rendered file
-            dumps(content, dest_file)
-
-            assert os.path.exists(dest_file)
+    return pages
 
 
 @cli.command('i18n')
@@ -220,6 +140,17 @@ def i18n(action):
     if 'compile' in action:
         cmd = 'pybabel compile -f -d ./i18n'
         subprocess.run(cmd, shell=True)
+
+
+@cli.command('serve')
+def serve():
+    '''
+    Launch flask application to serve up the pages dynamically
+    '''
+
+    from devconf.flask_app import app
+    # FIXME: why doesn't debug info log when running this way?
+    app.run(debug=True)
 
 
 if __name__ == '__main__':

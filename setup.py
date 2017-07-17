@@ -22,6 +22,7 @@ setup_info = dict(
         'jinja2',
         'ipdb',
         'babel',
+        'flask',
     ],
 )
 

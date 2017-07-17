@@ -114,12 +114,12 @@
             <li>
                 <div class="dropdown" style="margin-top: 13px;">
                     <div type="button" id="dropdownMenu2" data-toggle="dropdown">
-                      <img src="{{ flags_path[lang]|static }}" class="navbar-flag"  />
+		      <img src="{{ '/images/lang_flag_%s.svg'|format(lang)|static }}" class="navbar-flag"  />
                     </div>
                   <ul class="dropdown-menu dropdown-menu-flag" aria-labelledby="dropdownMenu2">
-                    <li><a href="{{ ['en', path]|join('/')|static }}"><img src="{{ flags_path['en']|static }}" class="navbar-flag navbar-flag-padded"/> (en)</a></li>
-                    <li><a href="{{ ['cs', path]|join('/')|static }}"><img src="{{ flags_path['cs']|static }}" class="navbar-flag navbar-flag-padded"/> (cs)</a></li>
-                    <li><a href="{{ ['sk', path]|join('/')|static }}"><img src="{{ flags_path['sk']|static }}" class="navbar-flag navbar-flag-padded"/> (sk)</a></li>
+                    <li><a href="{{ ['en', path]|join('/')|static }}"><img src="{{ '/images/lang_flag_%s.svg'|format('en')|static }}" class="navbar-flag navbar-flag-padded"/> (en)</a></li>
+                    <li><a href="{{ ['cs', path]|join('/')|static }}"><img src="{{ '/images/lang_flag_%s.svg'|format('cs')|static }}" class="navbar-flag navbar-flag-padded"/> (cs)</a></li>
+                    <li><a href="{{ ['sk', path]|join('/')|static }}"><img src="{{ '/images/lang_flag_%s.svg'|format('sk')|static }}" class="navbar-flag navbar-flag-padded"/> (sk)</a></li>
                     <li class="dropdown-header">Site language</li>
                   </ul>
                 </div>
