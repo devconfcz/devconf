@@ -1,17 +1,17 @@
-# Slovak (Slovakia) translations for DevConf.
-# Copyright (C) 2017 Red Hat
-# This file is distributed under the same license as the DevConf project.
-# Chris Ward <kejbaly2@gmail.com>, 2017.
+# Slovak (Slovakia) translations for .
+# Copyright (C) 2017 ORGANIZATION
+# This file is distributed under the same license as the  project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: DevConf (master)\n"
-"Report-Msgid-Bugs-To: kejbaly@gmail.com\n"
-"POT-Creation-Date: 2017-07-13 20:25+0200\n"
-"PO-Revision-Date: 2017-07-13 20:09+0200\n"
-"Last-Translator: Chris Ward <kejbal2@gmail.com>\n"
+"Project-Id-Version:  0.1\n"
+"Report-Msgid-Bugs-To: cward@redhat.com\n"
+"POT-Creation-Date: 2017-07-31 12:16+0200\n"
+"PO-Revision-Date: 2017-07-31 12:19+0200\n"
+"Last-Translator: Chris Ward <cward@redhat.com>\n"
 "Language: sk_SK\n"
-"Language-Team: Chris Ward <kejbaly2@gmail.com>\n"
+"Language-Team: Chris Ward <cward@redhat.com>\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -20,11 +20,47 @@ msgstr ""
 
 #: templates/base.html:7
 msgid ""
-"DevConf - Free and Open Source Software Community Conferences for "
-"Developers"
+"DevConf - free and Open Source Software community conferences for "
+"developers"
 msgstr ""
 
-#: templates/coc.html:4 templates/footer.html:36
+#: templates/base.html:38
+msgid "Home"
+msgstr ""
+
+#: templates/base.html:48
+msgid "Upcoming events"
+msgstr ""
+
+#: templates/base.html:51
+msgid "> 2018 - Main Event - January"
+msgstr ""
+
+#: templates/base.html:54
+msgid "> 2018 - India"
+msgstr ""
+
+#: templates/base.html:57
+msgid "> 2018 - Boston"
+msgstr ""
+
+#: templates/base.html:62
+msgid "Past events"
+msgstr ""
+
+#: templates/base.html:63
+msgid "> 2017 - Main Event - January 27-29"
+msgstr ""
+
+#: templates/base.html:64
+msgid "> 2017 - Containers Roadshow Bratislava"
+msgstr ""
+
+#: templates/base.html:65
+msgid "> 2017 - Containers Roadshow Prague"
+msgstr ""
+
+#: templates/coc.html:4 templates/footer.html:7
 #: templates/speaker-agreement.html:49
 msgid "Code of Conduct"
 msgstr ""
@@ -165,16 +201,12 @@ msgid ""
 "covenant.org/version/1/4\">Contributor Covenant, version 1.4"
 msgstr ""
 
-#: templates/footer.html:9
-msgid "Subscribe to our newsletter to receive all updates and event information."
-msgstr ""
-
-#: templates/footer.html:35 templates/speaker-agreement.html:4
+#: templates/footer.html:6 templates/speaker-agreement.html:4
 #: templates/speaker-agreement.html:14
 msgid "Speaker Agreement"
 msgstr ""
 
-#: templates/footer.html:37 templates/media-policy.html:4
+#: templates/footer.html:8 templates/media-policy.html:4
 msgid "Media Policy"
 msgstr ""
 
@@ -182,11 +214,12 @@ msgstr ""
 msgid "Free and Open Source Software Community Conferences for Developers"
 msgstr ""
 
-#: templates/cz/index.html:17 templates/index.html:17
+#: templates/cz/index.html:17 templates/in/index.html:13
+#: templates/index.html:17 templates/us/index.html:13
 msgid "Main Event"
 msgstr ""
 
-#: templates/cz/2017/index.html:19 templates/cz/index.html:20
+#: templates/cz/2017/index.html:21 templates/cz/index.html:20
 #: templates/index.html:20
 msgid "Brno, Czech Republic"
 msgstr ""
@@ -367,6 +400,10 @@ msgid ""
 "        "
 msgstr ""
 
+#: templates/section-newsletter.html:10
+msgid "Subscribe to DevConf newsletter"
+msgstr ""
+
 #: templates/speaker-agreement.html:17
 msgid "Compensation"
 msgstr ""
@@ -533,31 +570,27 @@ msgid ""
 "href=\"mailto:info@devconf.cz\">event organizer</a> in advance."
 msgstr ""
 
-#: templates/cz/nav.html:11
-msgid "Home"
-msgstr ""
-
 #: templates/cz/2017/index.html:4
 msgid "Jan 27-29 - FIT VUT Brno, Czech Republic"
 msgstr ""
 
-#: templates/cz/2017/index.html:15
-#: templates/cz/2017/roadshow-bratislava.html:15
-#: templates/cz/2017/roadshow-prague.html:15
+#: templates/cz/2017/index.html:17
+#: templates/cz/2017/roadshow-bratislava.html:17
+#: templates/cz/2017/roadshow-prague.html:17
 msgid "Registration is CLOSED for this event!"
 msgstr ""
 
-#: templates/cz/2017/index.html:21 templates/cz/2017/index.html:47
+#: templates/cz/2017/index.html:23 templates/cz/2017/index.html:49
 msgid "January 27-29, 2017"
 msgstr ""
 
-#: templates/cz/2017/index.html:30
+#: templates/cz/2017/index.html:32
 msgid ""
 "A free annual community conference for developers, admins, and users of "
 "Open Source technologies."
 msgstr ""
 
-#: templates/cz/2017/index.html:43
+#: templates/cz/2017/index.html:45
 msgid ""
 "DevConf.cz 2017 is the 9th annual, free Red Hat sponsored community "
 "conference for developers, admins, DevOps engineers, testers, "
@@ -567,45 +600,45 @@ msgid ""
 "beautiful city of Brno, Czech Republic."
 msgstr ""
 
-#: templates/cz/2017/index.html:47
+#: templates/cz/2017/index.html:49
 msgid "When:"
 msgstr ""
 
-#: templates/cz/2017/index.html:48
+#: templates/cz/2017/index.html:50
 msgid "Venue:"
 msgstr ""
 
-#: templates/cz/2017/index.html:48
+#: templates/cz/2017/index.html:50
 msgid "Faculty of Information Technology (VUT FIT) Božetěchova 2 - Brno"
 msgstr ""
 
-#: templates/cz/2017/index.html:51
+#: templates/cz/2017/index.html:53
 msgid "You should consider attending DevConf.cz 2017 if you are:"
 msgstr ""
 
-#: templates/cz/2017/index.html:53
+#: templates/cz/2017/index.html:55
 msgid "A developer"
 msgstr ""
 
-#: templates/cz/2017/index.html:54
+#: templates/cz/2017/index.html:56
 msgid "A technology architect"
 msgstr ""
 
-#: templates/cz/2017/index.html:55
+#: templates/cz/2017/index.html:57
 msgid "An IT consultant"
 msgstr ""
 
-#: templates/cz/2017/index.html:56
+#: templates/cz/2017/index.html:58
 msgid "An IT student or a teacher from an IT university/faculty"
 msgstr ""
 
-#: templates/cz/2017/index.html:57
+#: templates/cz/2017/index.html:59
 msgid ""
 "Or simply an IT enthusiast interested in the latest trends in open source"
 " and emerging digital technologies"
 msgstr ""
 
-#: templates/cz/2017/index.html:59
+#: templates/cz/2017/index.html:61
 msgid ""
 "If you are curious about last year's event, you can check out <a "
 "href=\"https://devconfcz2016.sched.org/\">DevConf.cz 2016 schedule</a> "
@@ -614,95 +647,95 @@ msgid ""
 " YouTube Channel</a>."
 msgstr ""
 
-#: templates/cz/2017/index.html:60
+#: templates/cz/2017/index.html:62
 msgid ""
 "DevConf.cz is a free conference and there is no admission or ticket "
 "charge. This year we will require that you <b>register for free</b>."
 msgstr ""
 
-#: templates/cz/2017/index.html:61
+#: templates/cz/2017/index.html:63
 msgid "Register here: On site Registration only!"
 msgstr ""
 
-#: templates/cz/2017/index.html:62
+#: templates/cz/2017/index.html:64
 msgid "Talks, presentations, and workshops will all be in <i>English</i>."
 msgstr ""
 
-#: templates/cz/2017/index.html:82
+#: templates/cz/2017/index.html:84
 msgid ""
 "\"It is a great conference to meet awesome people from around the world "
 "with very good presentations and workshops about free and open source "
 "software. ... very well organized and Brno is also a nice city\""
 msgstr ""
 
-#: templates/cz/2017/index.html:105
+#: templates/cz/2017/index.html:107
 msgid ""
 "\"It's like FOSDEM, just not as big, but better organized and very "
 "centered to Red Hat because they organizing it\""
 msgstr ""
 
-#: templates/cz/2017/index.html:129
+#: templates/cz/2017/index.html:131
 msgid "\"Hands down the best FLOSS conference in the Czech Republic!\""
 msgstr ""
 
-#: templates/cz/2017/index.html:150
+#: templates/cz/2017/index.html:152
 msgid "\"Presentation of the hottest New Technologies as they are being made.\""
 msgstr ""
 
-#: templates/cz/2017/index.html:172
+#: templates/cz/2017/index.html:174
 msgid "Travel Information"
 msgstr ""
 
-#: templates/cz/2017/index.html:176
+#: templates/cz/2017/index.html:178
 msgid ""
 "Brno is located two hours or less by car from three European capitals "
 "(Prague, Vienna, and Bratislava)."
 msgstr ""
 
-#: templates/cz/2017/index.html:178
+#: templates/cz/2017/index.html:180
 msgid "By Plane"
 msgstr ""
 
-#: templates/cz/2017/index.html:179
+#: templates/cz/2017/index.html:181
 msgid ""
 "<strong><a href=\"http://www.brno-airport.cz/en/\" target=\"_blank\">Brno"
 " Airport</a></strong> (BRQ, 0.6 million passengers a year)"
 msgstr ""
 
-#: templates/cz/2017/index.html:181
+#: templates/cz/2017/index.html:183
 msgid ""
 "Brno airport is a small international airport near Brno. This airport is "
 "a good option if you are coming from London (Stansted - Ryanair, Luton - "
 "Wizzair), Munich (Lufthansa), Eindhoven (Wizzair)."
 msgstr ""
 
-#: templates/cz/2017/index.html:182
+#: templates/cz/2017/index.html:184
 msgid ""
 "The newly opened flight from Munich (Lufthansa) operates daily except "
 "Sunday and dramatically improves the flight connection directly to "
 "Brno.</strong>"
 msgstr ""
 
-#: templates/cz/2017/index.html:183
+#: templates/cz/2017/index.html:185
 msgid ""
 "From the airport, city bus #76 will take you to the city centre (30 "
 "minutes) and drop you off next to the main train station and Student "
 "Agency bus stop. You can also take a taxi: approx. 300 CZK/€11."
 msgstr ""
 
-#: templates/cz/2017/index.html:186
+#: templates/cz/2017/index.html:188
 msgid ""
 "<strong><a href=\"http://www.viennaairport.com/\">Vienna International "
 "Airport</a></strong> (VIE, 22 million)"
 msgstr ""
 
-#: templates/cz/2017/index.html:188
+#: templates/cz/2017/index.html:190
 msgid ""
 "The biggest airline hub in Central Europe, flights to many destinations "
 "all over the world."
 msgstr ""
 
-#: templates/cz/2017/index.html:189
+#: templates/cz/2017/index.html:191
 msgid ""
 "The easiest way to get from the airport to Brno are the <a "
 "href=\"http://jizdenky.studentagency.cz/\">Student Agency buses</a> "
@@ -710,21 +743,21 @@ msgid ""
 "starting place). The direct bus takes 2 hours."
 msgstr ""
 
-#: templates/cz/2017/index.html:190
+#: templates/cz/2017/index.html:192
 msgid ""
 "Alternately, you can take a train from the airport to the city centre of "
 "Vienna and then take an EC train to Brno from there."
 msgstr ""
 
-#: templates/cz/2017/index.html:193
+#: templates/cz/2017/index.html:195
 msgid "<strong>Václav Havel Airport Prague</strong></a> (PRG, 11 million)"
 msgstr ""
 
-#: templates/cz/2017/index.html:195
+#: templates/cz/2017/index.html:197
 msgid "This is the second busiest airport in the region."
 msgstr ""
 
-#: templates/cz/2017/index.html:196
+#: templates/cz/2017/index.html:198
 msgid ""
 "It is possible to book the journey as one ticket with <a "
 "href=\"http://jizdenky.studentagency.cz/\">Student Agency</a> with a "
@@ -733,34 +766,34 @@ msgid ""
 "station."
 msgstr ""
 
-#: templates/cz/2017/index.html:197
+#: templates/cz/2017/index.html:199
 msgid ""
 "To get from the Prague airport to Brno takes at least 3.5 hours by public"
 " transport. Note, it is faster to get to Brno from Vienna."
 msgstr ""
 
-#: templates/cz/2017/index.html:199
+#: templates/cz/2017/index.html:201
 msgid "<strong>Bratislava Airport</strong></a> (BTS, 1.4 million)"
 msgstr ""
 
-#: templates/cz/2017/index.html:201
+#: templates/cz/2017/index.html:203
 msgid ""
 "This airport is a good option for cheap flights within Europe. If you are"
 " flying to Brno from outside of Europe, this airport is not recommended."
 msgstr ""
 
-#: templates/cz/2017/index.html:202
+#: templates/cz/2017/index.html:204
 msgid "Bratislava Airport is a hub of Ryanair."
 msgstr ""
 
-#: templates/cz/2017/index.html:203
+#: templates/cz/2017/index.html:205
 msgid ""
 "There is no direct transport connection between the Bratislava airport "
 "and Brno. You have to take a city bus to the centre and take a coach or "
 "train to Brno from there. It takes at least three hours."
 msgstr ""
 
-#: templates/cz/2017/index.html:206
+#: templates/cz/2017/index.html:208
 msgid ""
 "There are also small international airports in <a href=\"http://www"
 ".airport-ostrava.cz/en/\">Ostrava</a> (flights to Paris and London) and "
@@ -769,55 +802,55 @@ msgid ""
 " Brno."
 msgstr ""
 
-#: templates/cz/2017/index.html:209
+#: templates/cz/2017/index.html:211
 msgid "By Train"
 msgstr ""
 
-#: templates/cz/2017/index.html:212
+#: templates/cz/2017/index.html:214
 msgid "Train Timetables:"
 msgstr ""
 
-#: templates/cz/2017/index.html:214
+#: templates/cz/2017/index.html:216
 msgid "Prague - trains between Prague and Brno go hourly, 2.5 hours"
 msgstr ""
 
-#: templates/cz/2017/index.html:215
+#: templates/cz/2017/index.html:217
 msgid "Vienna - trains between Wien Hbf and Brno go every hour, 1.5 hour"
 msgstr ""
 
-#: templates/cz/2017/index.html:216
+#: templates/cz/2017/index.html:218
 msgid "Bratislava - from Bratislava Hlavna Stanica hourly, 1.5 hour"
 msgstr ""
 
-#: templates/cz/2017/index.html:217
+#: templates/cz/2017/index.html:219
 msgid "Budapest - from Budapest-Keleti pu several trains every day, 5 hours"
 msgstr ""
 
-#: templates/cz/2017/index.html:218
+#: templates/cz/2017/index.html:220
 msgid ""
 "Warsaw - from Warszawa Centralna several times every day (usually one "
 "connection), 7 hours"
 msgstr ""
 
-#: templates/cz/2017/index.html:219
+#: templates/cz/2017/index.html:221
 msgid "Berlin - from Berlin Hauptbahnhof several trains every day, 7.5 hours"
 msgstr ""
 
-#: templates/cz/2017/index.html:222
+#: templates/cz/2017/index.html:224
 msgid "By Bus"
 msgstr ""
 
-#: templates/cz/2017/index.html:223
+#: templates/cz/2017/index.html:225
 msgid ""
 "Brno is part of the European bus network and all connections and their "
 "prices are similar to trains."
 msgstr ""
 
-#: templates/cz/2017/index.html:226
+#: templates/cz/2017/index.html:228
 msgid "By Car"
 msgstr ""
 
-#: templates/cz/2017/index.html:227
+#: templates/cz/2017/index.html:229
 msgid ""
 "Brno is well-connected to other cities by highway. You can get easily to "
 "neighbouring countries by car. For using the Czech highways you have to "
@@ -825,39 +858,39 @@ msgid ""
 " be purchased at every gas station. Travel time examples:"
 msgstr ""
 
-#: templates/cz/2017/index.html:229
+#: templates/cz/2017/index.html:231
 msgid "Prague - 210 km, 2 hours"
 msgstr ""
 
-#: templates/cz/2017/index.html:230
+#: templates/cz/2017/index.html:232
 msgid "Bratislava - 130 km, 1.3 hours"
 msgstr ""
 
-#: templates/cz/2017/index.html:231
+#: templates/cz/2017/index.html:233
 msgid "Vienna - 143 km, 1.8 hours"
 msgstr ""
 
-#: templates/cz/2017/index.html:232
+#: templates/cz/2017/index.html:234
 msgid "Budapest - 326 km, 3 hours"
 msgstr ""
 
-#: templates/cz/2017/index.html:233
+#: templates/cz/2017/index.html:235
 msgid "Munich - 587 km, 5.3 hours"
 msgstr ""
 
-#: templates/cz/2017/index.html:234
+#: templates/cz/2017/index.html:236
 msgid "Berlin - 555 km, 5.2 hours"
 msgstr ""
 
-#: templates/cz/2017/index.html:237
+#: templates/cz/2017/index.html:239
 msgid "Note: The Avanti Hotel offers free parking for their guests."
 msgstr ""
 
-#: templates/cz/2017/index.html:239
+#: templates/cz/2017/index.html:241
 msgid "Local Transport"
 msgstr ""
 
-#: templates/cz/2017/index.html:240
+#: templates/cz/2017/index.html:242
 msgid ""
 "Public transportation in Brno is provided by <a "
 "href=\"http://www.dpmb.cz/default.aspx\" target=\"_blank\">DPMB</a> which"
@@ -873,7 +906,7 @@ msgid ""
 "href=\"http://www.dpmb.cz/Default.aspx\">here</a>."
 msgstr ""
 
-#: templates/cz/2017/index.html:242
+#: templates/cz/2017/index.html:244
 msgid ""
 "<strong>SMS tickets:</strong> The DPMB also offers <a "
 "href=\"http://www.dpmb.cz/Default.aspx?seo=sms-jizdenky\">sms "
@@ -889,7 +922,7 @@ msgid ""
 " Play</a>."
 msgstr ""
 
-#: templates/cz/2017/index.html:243
+#: templates/cz/2017/index.html:245
 msgid ""
 "If you are staying in Brno for several days, consider buying a 5-day "
 "ticket which costs 250 CZK. There are several places where you can buy "
@@ -900,11 +933,11 @@ msgid ""
 "ticket one time."
 msgstr ""
 
-#: templates/cz/2017/index.html:245
+#: templates/cz/2017/index.html:247
 msgid "Brno Local Transport Timetable"
 msgstr ""
 
-#: templates/cz/2017/index.html:246
+#: templates/cz/2017/index.html:248
 msgid ""
 "Download the app \"Jízdní řády\" with all local timetables from the <a "
 "href=\"https://itunes.apple.com/cz/app/jizdni-rady-"
@@ -913,11 +946,11 @@ msgid ""
 " Play</a>."
 msgstr ""
 
-#: templates/cz/2017/index.html:249
+#: templates/cz/2017/index.html:251
 msgid "Travelling From the Main Railway Station to the Venue"
 msgstr ""
 
-#: templates/cz/2017/index.html:250
+#: templates/cz/2017/index.html:252
 msgid ""
 "From the main train station take tram No.1 (towards Řečkovice). Get off "
 "at the stop Semilasso (after approximately 15 minutes). Take the street "
@@ -926,11 +959,11 @@ msgid ""
 "The building on your left hand side is the university."
 msgstr ""
 
-#: templates/cz/2017/index.html:252
+#: templates/cz/2017/index.html:254
 msgid "Travelling From the Main Bus Station to the Venue"
 msgstr ""
 
-#: templates/cz/2017/index.html:253
+#: templates/cz/2017/index.html:255
 msgid ""
 "From the main bus station (Zvonařka) take bus No. 44 or 67. Get off at "
 "the stop \"Semilasso\". Follow the street for 100 m and then take the "
@@ -938,22 +971,22 @@ msgid ""
 " arrive to the building of the university."
 msgstr ""
 
-#: templates/cz/2017/index.html:255
+#: templates/cz/2017/index.html:257
 msgid "Travelling From the Main Railway Station to the Red Hat office"
 msgstr ""
 
-#: templates/cz/2017/index.html:256
+#: templates/cz/2017/index.html:258
 msgid ""
 "From the main train station take tram No.12 (towards Technologický park)."
 " Get off at the stop Červinkova (buildings FBC I and II) or Technologický"
 " park (building TPB). This is approximately a 17 minute ride."
 msgstr ""
 
-#: templates/cz/2017/index.html:258
+#: templates/cz/2017/index.html:260
 msgid "Travelling From the Main Bus Station to the Red Hat office"
 msgstr ""
 
-#: templates/cz/2017/index.html:259
+#: templates/cz/2017/index.html:261
 msgid ""
 "Take tram No. 12 towards Technologický park and get off at Červinkova "
 "(first stop, buildings FBC I and II) or Technologický park (third stop, "
@@ -963,11 +996,11 @@ msgid ""
 "the tram No. 12 and then follow the same instructions as above."
 msgstr ""
 
-#: templates/cz/2017/index.html:261
+#: templates/cz/2017/index.html:263
 msgid "Travelling From the Red Hat office to the Venue"
 msgstr ""
 
-#: templates/cz/2017/index.html:262
+#: templates/cz/2017/index.html:264
 msgid ""
 "From Červinkova tram station (or Technologický park for TPB building) "
 "take tram No. 12 towards Komárov. Get off at the stop Skácelova (first "
@@ -976,11 +1009,11 @@ msgid ""
 "stop you exited at. From both buses, get off at the Semilasso stop."
 msgstr ""
 
-#: templates/cz/2017/index.html:264
+#: templates/cz/2017/index.html:266
 msgid "Travelling From Venue to the Red Hat office"
 msgstr ""
 
-#: templates/cz/2017/index.html:265
+#: templates/cz/2017/index.html:267
 msgid ""
 "From the Semilasso bus stop take bus No. 30 or 44. Get off at the stop "
 "Skácelova. Take tram No. 12 towards Technologický park and get off at "
@@ -990,79 +1023,79 @@ msgid ""
 "your right."
 msgstr ""
 
-#: templates/cz/2017/index.html:267
+#: templates/cz/2017/index.html:269
 msgid "Travelling From the Main Train Station to the Hotels"
 msgstr ""
 
-#: templates/cz/2017/index.html:269
+#: templates/cz/2017/index.html:271
 msgid ""
 "<strong>Hotel Avanti:</strong> From the main train station take tram No.1"
 " (towards Řečkovice). Get off at the stop Hrnčířská (after apx 10 "
 "minutes)."
 msgstr ""
 
-#: templates/cz/2017/index.html:270
+#: templates/cz/2017/index.html:272
 msgid ""
 "<strong>Hotel Vista:</strong> From the main train station take tram No.1 "
 "(towards Řečkovice). Get off at the stop Hudcova (after apx 20 minutes)."
 msgstr ""
 
-#: templates/cz/2017/index.html:271
+#: templates/cz/2017/index.html:273
 msgid ""
 "<strong>Hotel Continental:</strong> From the main train station take tram"
 " No.1 (towards Řečkovice). Get off at the stop Antonínská (after apx 5 "
 "minutes)."
 msgstr ""
 
-#: templates/cz/2017/index.html:274
+#: templates/cz/2017/index.html:276
 msgid "Travelling From the Hotels to the Venue"
 msgstr ""
 
-#: templates/cz/2017/index.html:276
+#: templates/cz/2017/index.html:278
 msgid ""
 "Hotel Vista:</strong> The nearest tram stop is Hudcova. Take tram No. 1 "
 "towards Ečerova and get off at Semilasso stop (second stop)."
 msgstr ""
 
-#: templates/cz/2017/index.html:277
+#: templates/cz/2017/index.html:279
 msgid ""
 "<strong>Hotel Avanti: </strong>The nearest tram stop is Hrnčířská. Take "
 "tram No. 1 (towards Řečkovice) or tram No. 6 (towards Královo Pole "
 "nádraží) and get off at the Semilasso stop (apx. 5 minutes)."
 msgstr ""
 
-#: templates/cz/2017/index.html:278
+#: templates/cz/2017/index.html:280
 msgid ""
 "<strong>Hotel Continental: </strong>The nearest tram stop is Antonínská. "
 "Take tram No. 1 (towards Řečkovice) or tram No. 6 (towards Královo Pole "
 "nádraží) and get off at the Semilasso stop (apx. 10 minutes)."
 msgstr ""
 
-#: templates/cz/2017/index.html:284
+#: templates/cz/2017/index.html:286
 msgid "Recommended Hotels"
 msgstr ""
 
-#: templates/cz/2017/index.html:302
+#: templates/cz/2017/index.html:304
 msgid "Show more..."
 msgstr ""
 
-#: templates/cz/2017/index.html:303
+#: templates/cz/2017/index.html:305
 msgid "Show less..."
 msgstr ""
 
-#: templates/cz/2017/index.html:312 templates/cz/2017/roadshow-prague.html:346
+#: templates/cz/2017/index.html:314 templates/cz/2017/roadshow-prague.html:348
 msgid "Sponsors"
 msgstr ""
 
-#: templates/cz/2017/index.html:314
+#: templates/cz/2017/index.html:316
 msgid "This event is sponsored by"
 msgstr ""
 
-#: templates/cz/2017/index.html:322
+#: templates/cz/2017/index.html:324
 msgid "And supported by our friends at"
 msgstr ""
 
-#: templates/cz/2017/index.html:343
+#: templates/cz/2017/index.html:345
 msgid "In collaboration with"
 msgstr ""
 
@@ -1070,143 +1103,143 @@ msgstr ""
 msgid "DevConf.cz Roadshow - Containers Bratislava 2017"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:21
+#: templates/cz/2017/roadshow-prague.html:23
 msgid "Containers Roadshow"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:24
+#: templates/cz/2017/roadshow-prague.html:26
 msgid "Czech National Library of Technology"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:25
+#: templates/cz/2017/roadshow-prague.html:27
 msgid "Prague 6, Czech Republic"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:27
+#: templates/cz/2017/roadshow-prague.html:29
 msgid "April 19th, 2017"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:30
+#: templates/cz/2017/roadshow-prague.html:32
 msgid "Presentations and workshops will be in Czech."
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:35
+#: templates/cz/2017/roadshow-prague.html:37
 msgid ""
 "DevConf.cz in collaboration with the Prague Containers community bring "
 "you the first annual, free, one day containers focused community "
 "conference in Prague."
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:50
+#: templates/cz/2017/roadshow-prague.html:52
 msgid "Wednesday April 19, 2017<"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:51
+#: templates/cz/2017/roadshow-prague.html:53
 msgid "On-site registration: 09:00 - 10:00"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:59
+#: templates/cz/2017/roadshow-prague.html:61
 msgid "Lecture Hall"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:67
+#: templates/cz/2017/roadshow-prague.html:69
 msgid ""
 "Automate modern app development with containers and OpenShift - Radek "
 "Vokál + Jiří Kolář"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:78
+#: templates/cz/2017/roadshow-prague.html:80
 msgid "Linux Containers - the DIY way - Vilibald Wanča"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:89
+#: templates/cz/2017/roadshow-prague.html:91
 msgid "How to develop containers for the enterprise - Honza Horák"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:100
+#: templates/cz/2017/roadshow-prague.html:102
 msgid "Docker containers and black holes - Matúš Kocka + František Kluknavský"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:110
+#: templates/cz/2017/roadshow-prague.html:112
 msgid "Lunch Break"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:121
+#: templates/cz/2017/roadshow-prague.html:123
 msgid "Managing containers with Ansible - Peter Schiffer"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:132
+#: templates/cz/2017/roadshow-prague.html:134
 msgid ""
 "Containers in Production - Stanislav Polášek (Elos Technologies, Red Hat "
 "Premier Business partner)"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:143
+#: templates/cz/2017/roadshow-prague.html:145
 msgid "OpenShift pipelines - Vašek Pavlín"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:154
+#: templates/cz/2017/roadshow-prague.html:156
 msgid "Demo time! - Vašek Pavlín + David Bečvařík"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:160
+#: templates/cz/2017/roadshow-prague.html:162
 msgid "Workshop Room"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:172
+#: templates/cz/2017/roadshow-prague.html:174
 msgid "Advanced container deep-dive - Tomáš Tomeček, Peter Schiffer"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:183
+#: templates/cz/2017/roadshow-prague.html:185
 msgid "Learn OpenShift basics - Jiří Kolář"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:200
+#: templates/cz/2017/roadshow-prague.html:202
 msgid "Speakers"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:340
+#: templates/cz/2017/roadshow-prague.html:342
 msgid "Venue"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:348
+#: templates/cz/2017/roadshow-prague.html:350
 msgid "This event is brought to you by:"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:353
+#: templates/cz/2017/roadshow-prague.html:355
 msgid "World's leading provider of open source, enterprise IT solutions."
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:360
+#: templates/cz/2017/roadshow-prague.html:362
 msgid "And supported by our friends at:"
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:367
+#: templates/cz/2017/roadshow-prague.html:369
 msgid ""
 "Community with a mission to connect people interested in containers, "
 "cloud and devops topics."
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:376
+#: templates/cz/2017/roadshow-prague.html:378
 msgid ""
 "OpenShift is an open source PaaS by Red Hat based on top of Docker "
 "containers and the Kubernetes container cluster manager for enterprise "
 "app development and deployment."
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:385
+#: templates/cz/2017/roadshow-prague.html:387
 msgid ""
 "Czech website about Fedora Linux distribution. Articles, guides, news and"
 " place for discussion at one place."
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:394
+#: templates/cz/2017/roadshow-prague.html:396
 msgid ""
 "Národní technická knihovna (NTK) is the biggest and the oldes technical "
 "library in Czech Republic with capacity over 1.5 million books."
 msgstr ""
 
-#: templates/cz/2017/roadshow-prague.html:403
+#: templates/cz/2017/roadshow-prague.html:405
 msgid ""
 "ELOS Technologies is a company operating in the Czech and Slovak market "
 "as a supplier of products and services for corporate solutions in the "
@@ -1217,7 +1250,11 @@ msgid ""
 "financial and technological benefits."
 msgstr ""
 
-#: templates/cz/2018/index.html:23
+#: templates/cz/2018/index.html:21
 msgid "More information coming soon!"
+msgstr ""
+
+#: templates/in/index.html:15 templates/us/index.html:15
+msgid "COMING SOON"
 msgstr ""
 

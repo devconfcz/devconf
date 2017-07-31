@@ -3,3 +3,7 @@
 *build
 
 *.sw[op]
+
+*.egg-info*
+
+*__pycache__*

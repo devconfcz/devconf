@@ -23,6 +23,7 @@ setup_info = dict(
         'ipdb',
         'babel',
         'flask',
+        'confuse',
     ],
 )
 

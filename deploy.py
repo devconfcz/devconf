@@ -91,7 +91,7 @@ def build(config, branch):
     pages = []
     for path in templates:
         for locale in locales:
-            pages.append(render_template(path, locales, save=True))
+            pages.append(render_template(path, locale, save=True))
 
     return pages
 
@@ -100,7 +100,11 @@ def build(config, branch):
 @click.argument('action', nargs=-1)
 def i18n(action):
     '''
-    Create the folder structure (no whitespace after the commas!!!)
+    Initialize, update and compile gettext i18n strings
+    '''
+
+    '''
+    Create the folder structure (no whitespace after the commas!)
     > mkdir -pv ./i18n/{en_US,cs_CZ,sk_SK}/LC_MESSAGES/
     > pybabel -v extract -F babel.cfg -o ./i18n/messages.pot ./
 
@@ -118,11 +122,13 @@ def i18n(action):
     Compile
     > pybabel compile -f -d ./i18n
 
-    What if the strings change? Create a new messages.pot and merge the changes:
+    What if the strings change? Create a new messages.pot and merge the changes
     > pybabel update -d ./i18n -i ./i18n/messages.pot
     '''
 
+    # These are the languages we want to build for
     languages = ['en_US', 'cs_CZ', 'sk_SK']
+
     if 'extract' in action:
         cmd = 'pybabel -v extract -F babel.cfg -o ./i18n/messages.pot ./'
         subprocess.run(cmd, shell=True)
