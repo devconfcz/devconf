@@ -126,7 +126,7 @@ msgstr ""
 
 #: templates/coc.html:33
 msgid "Public or private harassment"
-msgstr ""
+msgstr "Veřejné nebo osobní obtěžování"
 
 #: templates/coc.html:34
 msgid ""
