@@ -22,43 +22,44 @@ msgstr ""
 msgid ""
 "DevConf - free and Open Source Software community conferences for "
 "developers"
-msgstr ""
+msgstr "DevConf - Open Source komunitní konference pro "
+"vývojáře"
 
 #: templates/base.html:38
 msgid "Home"
-msgstr ""
+msgstr "Domů"
 
 #: templates/base.html:48
 msgid "Upcoming events"
-msgstr ""
+msgstr "Nadcházející události"
 
 #: templates/base.html:51
 msgid "> 2018 - Main Event - January"
-msgstr ""
+msgstr "Hlavn událost - Leden"
 
 #: templates/base.html:54
 msgid "> 2018 - India"
-msgstr ""
+msgstr "> 2018 - Indie"
 
 #: templates/base.html:57
 msgid "> 2018 - Boston"
-msgstr ""
+msgstr "> 2018 - Boston"
 
 #: templates/base.html:62
 msgid "Past events"
-msgstr ""
+msgstr "Minulé události"
 
 #: templates/base.html:63
 msgid "> 2017 - Main Event - January 27-29"
-msgstr ""
+msgstr "> 2017 - Hlavní událost - 27. - 29. ledna"
 
 #: templates/base.html:64
 msgid "> 2017 - Containers Roadshow Bratislava"
-msgstr ""
+msgstr "> 2017 - Containers Roadshow Bratislava "
 
 #: templates/base.html:65
 msgid "> 2017 - Containers Roadshow Prague"
-msgstr ""
+msgstr "> 2017 - Containers Roadshow Praha"
 
 #: templates/coc.html:4 templates/footer.html:7
 #: templates/speaker-agreement.html:49
