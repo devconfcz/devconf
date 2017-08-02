@@ -1,3 +1,9 @@
+paths: 
+    templates: './templates'
+    static: './static'
+    build: './build'
+    locale: './i18n'
+
 templates: [
     'index.html',                                                            
     'media-policy.html', 
@@ -11,4 +17,5 @@ templates: [
     'in/index.html',
     'us/index.html',
 ]
+
 locales: ['en_US', 'cs_CZ', 'sk_SK']
