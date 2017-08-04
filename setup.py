@@ -18,12 +18,7 @@ setup_info = dict(
     # Package info
     packages=['devconf', ],
     install_requires=[
-        'click',
-        'jinja2',
-        'ipdb',
-        'babel',
-        'flask',
-        'confuse',
+        'comdev',
     ],
 )
 
