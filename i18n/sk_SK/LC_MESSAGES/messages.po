@@ -26,7 +26,7 @@ msgstr ""
 
 #: templates/base.html:38
 msgid "Home"
-msgstr ""
+msgstr "Domov"
 
 #: templates/base.html:48
 msgid "Upcoming events"
