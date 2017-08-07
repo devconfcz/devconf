@@ -22,7 +22,7 @@ msgstr ""
 msgid ""
 "DevConf - free and Open Source Software community conferences for "
 "developers"
-msgstr ""
+msgstr "Devconf - voľne sprístupnená konferencia Open Source Software komunity pre vývojárov"
 
 #: templates/base.html:38
 msgid "Home"
@@ -30,44 +30,44 @@ msgstr "Domov"
 
 #: templates/base.html:48
 msgid "Upcoming events"
-msgstr ""
+msgstr "Nadchádzajúce akcie"
 
 #: templates/base.html:51
 msgid "> 2018 - Main Event - January"
-msgstr ""
+msgstr "2018 - Hlavná akcia - Január"
 
 #: templates/base.html:54
 msgid "> 2018 - India"
-msgstr ""
+msgstr "2018 - India"
 
 #: templates/base.html:57
 msgid "> 2018 - Boston"
-msgstr ""
+msgstr "2018 - Boston"
 
 #: templates/base.html:62
 msgid "Past events"
-msgstr ""
+msgstr "Minulé akcie"
 
 #: templates/base.html:63
 msgid "> 2017 - Main Event - January 27-29"
-msgstr ""
+msgstr "2017 - Hlavná akcia - 27.-29. január"
 
 #: templates/base.html:64
 msgid "> 2017 - Containers Roadshow Bratislava"
-msgstr ""
+msgstr "Containers Roadshow Bratislava"
 
 #: templates/base.html:65
 msgid "> 2017 - Containers Roadshow Prague"
-msgstr ""
+msgstr "Containers Roadshow Praha"
 
 #: templates/coc.html:4 templates/footer.html:7
 #: templates/speaker-agreement.html:49
 msgid "Code of Conduct"
-msgstr ""
+msgstr "Kódex správania"
 
 #: templates/coc.html:16
 msgid "Our Pledge"
-msgstr ""
+msgstr "Náš záväzok"
 
 #: templates/coc.html:17
 msgid ""
@@ -77,71 +77,78 @@ msgid ""
 " everyone, regardless of age, body size, disability, ethnicity, gender "
 "identity and expression, level of experience, nationality, personal "
 "appearance, race, religion, or sexual identity and orientation."
-msgstr ""
+msgstr "V záujme podpory otvoreného a priaznivého prostredia sa my, "
+"rečnící, účastníci a organizátori akcie Devconf.cz zaväzujeme, "
+"že účasť na konferencii a v komunite bude pre každého bezpečnou skúsenosťou "
+"bez ohľadu na vek, telesné proporcie, hendikep, etnickú príslušnosť, genderovú "
+"identitu a rolu, úroveň skuseností, národnosť, vzhľad, rasu, vierovyznanie alebo "
+"sexuálnu orientáciu a identitu."
 
 #: templates/coc.html:19
 msgid "Our Standards"
-msgstr ""
+msgstr "Naše zásady"
 
 #: templates/coc.html:20
 msgid ""
 "Examples of behavior that contributes to creating a positive environment "
 "include:"
-msgstr ""
+msgstr "Príklady správania, ktoré majú priaznivý vplyv na prostredie"
 
 #: templates/coc.html:22
 msgid "Using welcoming and inclusive language"
-msgstr ""
+msgstr "Používanie otvoreného a inkluzívneho jazyka"
 
 #: templates/coc.html:23
 msgid "Being respectful of differing viewpoints and experiences"
-msgstr ""
+msgstr "Rešpektovanie iných názorov a skúseností"
 
 #: templates/coc.html:24
 msgid "Gracefully accepting constructive criticism"
-msgstr ""
+msgstr "Kultivované akceptovanie kritiky"
 
 #: templates/coc.html:25
 msgid "Focusing on what is best for the community"
-msgstr ""
+msgstr "Zameranie na vyššie ciele pre dobro komunity"
 
 #: templates/coc.html:26
 msgid "Showing empathy towards other community members"
-msgstr ""
+msgstr "Mať pochopenie pre ostatných členov komunity"
 
 #: templates/coc.html:29
 msgid "Examples of unacceptable behavior by participants include:"
-msgstr ""
+msgstr "Príklady neakceptovateľného správania účastníkov zahŕňajú:"
 
 #: templates/coc.html:31
 msgid ""
 "The use of sexualized language or imagery and unwelcome sexual attention "
 "or advances"
-msgstr ""
+msgstr "Používanie hanlivého jazyku alebo obraznosti a nechcená sexuálna pozornosť alebo "
+"návrhy "
 
 #: templates/coc.html:32
 msgid "Trolling, insulting/derogatory comments, and personal or political attacks"
-msgstr ""
+msgstr "Trollovanie, urážlivé/hanlivé komentáre a osobné alebo politické útoky"
 
 #: templates/coc.html:33
 msgid "Public or private harassment"
-msgstr ""
+msgstr "Verejná alebo súkromné šikana"
 
 #: templates/coc.html:34
 msgid ""
 "Publishing others private information, such as a physical or electronic "
 "address, without explicit permission"
-msgstr ""
+msgstr "Zverejňovanie cudzích osobných údajov, ako napríklad fyzické alebo elektronické adresy, "
+"bez explicitného povolenia"
 
 #: templates/coc.html:35
 msgid ""
 "Other conduct which could reasonably be considered inappropriate in a "
 "professional setting"
-msgstr ""
+msgstr "Iný typ správania, ktorý móže byť v pracovnej sfére oprávnene považovaný za neprijateľný"
 
 #: templates/coc.html:38
 msgid "Our Responsibilities"
-msgstr ""
+msgstr "Naše povinnosti"
 
 #: templates/coc.html:39
 msgid ""
@@ -150,11 +157,14 @@ msgid ""
 "not aligned to this Code of Conduct, or to ban temporarily or permanently"
 " any contributor for other behaviors that they deem inappropriate, "
 "threatening, offensive, or harmful."
-msgstr ""
+msgstr "Organizátori akcie majú právo a povinnosť odstrániť, upraviť alebo odmietnuť obsah, "
+"príspevky, príklady a akékoľvek iné kontribúcie, ktoré nie su v súlade s Kódexom správania "
+"alebo uvaliť dočasný alebo trvalý zákaz za iné správanie, ktoré je považované za nevhodné, "
+"ohrozujúce, urážlivé alebo škodlivé."
 
 #: templates/coc.html:41
 msgid "Scope"
-msgstr ""
+msgstr "Rámec"
 
 #: templates/coc.html:42
 msgid ""
@@ -163,11 +173,15 @@ msgid ""
 "project or its community. Examples of representing a project or community"
 " include using an official project e-mail address, posting to, sharing or"
 " referencing official social media channels."
-msgstr ""
+msgstr "Tento Kódex správania je platný v rámci priestorov konania akcie a "
+"vo verejných priestoroch (fyzických a virtuálnych) ak jedinec reprezentuje "
+"projekt alebo samotnú komunitu. Príklady reprezentácie projektu alebo komunity zahŕňajú "
+"použitie oficiálnej projektovej e-mailovej adresy, prispievanie, zdieľanie alebo "
+"odkazovanie na oficiálnych kanáloch sociálnych médií." 
 
 #: templates/coc.html:44
 msgid "Enforcement"
-msgstr ""
+msgstr "Presadzovanie"
 
 #: templates/coc.html:45
 msgid ""
@@ -178,28 +192,34 @@ msgid ""
 "The project team is obligated to maintain confidentiality with regard to "
 "the reporter of an incident. Further details of specific enforcement "
 "policies may be posted separately."
-msgstr ""
+msgstr "Prípady násilia, obťažovania alebo inak neakceptovateľného správania je "
+"možné nahlásiť vedeniu projekta na info@devconf.cz. Všetky sťažnosti budú posúdené "
+"a vyšetrené a vzhľadom na okolnosti budú primerane zodpovedané. Vedenie projekta je "
+"povinné uchovávať osobu, ktorá sťažnosť podala v tajnosti. Ďalšie detaily týkajúce sa "
+"špecificky politiky presadzovania môžu byť zverejnené samostatne."
 
 #: templates/coc.html:47
 msgid ""
 "Event participants who do not follow or enforce the Code of Conduct in "
 "good faith may face temporary or permanent repercussions as determined by"
 " other members of the project leadership."
-msgstr ""
+msgstr "Účastnici akcie, ktorí nedodržiavajú alebo nepresadzujú v dobrej viere "
+"Kódex správania môžu čeliť dočasným alebo trvalým následkom, určenými ostatnými členmi "
+"vedenia projektu."
 
 #: templates/coc.html:49
 msgid "Contact Information"
-msgstr ""
+msgstr "Kontaktné informácie"
 
 #: templates/coc.html:50
 msgid "Event Organizer"
-msgstr ""
+msgstr "Organizátor akcie"
 
 #: templates/coc.html:54
 msgid ""
 "This Code of Conduct is adapted from the <a href=\"http://contributor-"
 "covenant.org/version/1/4\">Contributor Covenant, version 1.4"
-msgstr ""
+msgstr "Tento Kódex správanie je "
 
 #: templates/footer.html:6 templates/speaker-agreement.html:4
 #: templates/speaker-agreement.html:14
