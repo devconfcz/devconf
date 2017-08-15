@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: cward@redhat.com\n"
 "POT-Creation-Date: 2017-07-31 12:16+0200\n"
-"PO-Revision-Date: 2017-08-14 12:31+0200\n"
+"PO-Revision-Date: 2017-08-15 14:15+0200\n"
 "Last-Translator: Chris Ward <cward@redhat.com>\n"
 "Language: cs_CZ\n"
 "Language-Team: Chris Ward <cward@redhat.com>\n"
@@ -79,11 +79,11 @@ msgid ""
 "experience, nationality, personal appearance, race, religion, or sexual "
 "identity and orientation."
 msgstr ""
-"V zájmu podpory otevřeného a příznivého prostředí se my, řečníci, účastníci a "
-"organizátoři konference DevConf.cz, zavazujeme, že účast na konferenci a v "
-"komunitě bude pro každého bezpečnou zkušeností bez ohledu na věk, tělesné "
-"proporce, handicap, etnickou příslušnost, genderovou identitu, úroveň "
-"zkušeností, národnost, vzhled, rasu, náboženské vyznání anebo sexuální "
+"V zájmu podpory otevřeného a příznivého prostředí se my, přednášející, "
+"účastníci a organizátoři konference DevConf.cz, zavazujeme, že účast na "
+"konferenci a v komunitě bude pro každého bezpečnou zkušeností bez ohledu na "
+"věk, tělesné proporce, handicap, etnickou příslušnost, genderovou identitu, "
+"úroveň zkušeností, národnost, vzhled, rasu, náboženské vyznání anebo sexuální "
 "orientaci a identitu. "
 
 #: templates/coc.html:19
@@ -125,13 +125,12 @@ msgid ""
 "The use of sexualized language or imagery and unwelcome sexual attention or "
 "advances"
 msgstr ""
-"Používání hanlivého nebo sexistického jazyka a nechtěné sexuální pozornost či "
-"návrhy"
+"Používání hanlivého nebo sexistického jazyka a nechtěná pozornost či návrhy"
 
 #: templates/coc.html:32
 msgid "Trolling, insulting/derogatory comments, and personal or political attacks"
 msgstr ""
-"Trolování, urážlivé nebo ponižující komentáře a osobní nebo politické útoky."
+"Trolování, urážlivé nebo ponižující komentáře a osobní nebo politické útoky"
 
 #: templates/coc.html:33
 msgid "Public or private harassment"
@@ -155,7 +154,7 @@ msgstr ""
 
 #: templates/coc.html:38
 msgid "Our Responsibilities"
-msgstr "Naše Povinnosti"
+msgstr "Naše povinnosti"
 
 #: templates/coc.html:39
 msgid ""
@@ -171,7 +170,6 @@ msgstr ""
 "chování které je nevhodné, ohrožující, urážlivé nebo škodlivé. "
 
 #: templates/coc.html:41
-#, fuzzy
 msgid "Scope"
 msgstr "Zaměření"
 
@@ -185,8 +183,8 @@ msgid ""
 msgstr ""
 "Tento Kodex chování je platný jak v rámci prostorů konání akce a ve veřejných "
 "prostostech (fyzických i virtuálních) kdy jedinec reprezentuje projekt nebo "
-"komunitu samotnou. Příklady reprezentování projektu nebo komunikty zahrnují "
-"používání oficiální projektové e-mailové adresy, přispívání, sdílení nebo "
+"komunitu samotnou. Příklady reprezentování projektu nebo komunity zahrnují "
+"používání oficiální projektové mailové adresy, přispívání, sdílení nebo "
 "odkazování na oficiálních kanálech sociálních médií.  "
 
 #: templates/coc.html:44
@@ -237,7 +235,7 @@ msgstr ""
 #: templates/footer.html:6 templates/speaker-agreement.html:4
 #: templates/speaker-agreement.html:14
 msgid "Speaker Agreement"
-msgstr "Dohoda mluvčích"
+msgstr "Dohoda s přednášejícími"
 
 #: templates/footer.html:8 templates/media-policy.html:4
 msgid "Media Policy"
@@ -290,16 +288,15 @@ msgstr ""
 
 #: templates/media-policy.html:19
 msgid "Speakers and session recording"
-msgstr "Mluvčí a nahrávání přednášek"
+msgstr "Nahrávání přednášek "
 
 #: templates/media-policy.html:20
-#, fuzzy
 msgid ""
 "When you agree to speak at DevConf.cz, you consent for your talk to be recorded "
 "in audio and possibly video format. DevConf.cz uses screen capturing hardware "
 "along with audio recording equipment to broadcast presentations."
 msgstr ""
-"Souhlasem s přednášením na DevConf.cz, zároveň souhlasíte s tím, že Vaše "
+"Souhlasem s přednášením na DevConf.cz zároveň souhlasíte s tím, že Vaše "
 "přednáška bude nahrávána v audio i video formátu. DevConf.cz využívá screen "
 "capturingového hadrwaru spolu s vybavením na audio nahrávání k vysílání "
 "nahrávek. "
@@ -331,10 +328,9 @@ msgid ""
 "reason, you may not opt out of having your talk recorded.  However, if you "
 "wish, you may request that the session video not be published to the public."
 msgstr ""
-"Jako organizátoři konference není možné abychom byli na všech místech současně "
-"a proto je pro nás velmi důležité abychom byli schopni shlédnout všechen obsah "
-"konference. Z těchto důvodů tedy není možné, aby vaše přednáška nebyla "
-"nahrávána, avšak můžete požádat o to, aby nebyla publikována pro veřejnost.  "
+"Pro organizátory konference je velmi důležité vyhodnotit všechny nahrávky a "
+"materiály související s konferencí. Z těchto důvodů je tedy nahrávání přednášek "
+"povinné, avšak můžete požádat o to, aby nebylo publikováno pro veřejnost. "
 
 #: templates/media-policy.html:28
 msgid ""
@@ -346,7 +342,7 @@ msgstr ""
 
 #: templates/media-policy.html:30
 msgid "Recording by Attendees"
-msgstr "Nahrávky pořízené účastníky"
+msgstr "Nahrávky pořizované účastníky"
 
 #: templates/media-policy.html:31
 msgid ""
@@ -355,13 +351,13 @@ msgid ""
 "from the speaker first."
 msgstr ""
 "Všechny přednášky i workshopy jsou nahrávány oficiálním personálem prostor, či "
-"organizátory konference. Pokud nejste mluvčí a přejete si pořídit audio/video "
-"nahrávku, je nutné nejdříve získat písemný souhlas mluvčího. "
+"organizátory konference. Pokud nejste přednášejícím a přejete si pořídit "
+"vlastní audio/video nahrávku, je nutné nejdříve získat písemný souhlas "
+"přednášejícího. "
 
 #: templates/media-policy.html:33
-#, fuzzy
 msgid "Staff and attendee photography"
-msgstr "Fotografie"
+msgstr "Fotografování účastníků a personálu"
 
 #: templates/media-policy.html:34
 msgid ""
@@ -371,15 +367,15 @@ msgid ""
 msgstr ""
 "Registrací na DevConf.cz souhlasíte s tím, že budou pořizovány vaše fotografie "
 "oficiálním fotografem konference a tyto fotografie budou publikovány s licencí "
-"Creative Commons a případně použity v různých propagačních materiálech. "
+"Creative Commons a případně použity v různých propagačních materiálech."
 
 #: templates/media-policy.html:36
 msgid ""
 "We encourage attendees to take and share their own photographs, as long as the "
 "rules below are followed."
 msgstr ""
-"Podporujeme účastníky v pořizování a sdílení vlastních fotografií pokud jsou "
-"dodrženy výše uvedené zásady. "
+"Pořizování a sdílení vlastních fotografií je vítáno pokud jsou dodrženy uvedené "
+"pravidla."
 
 #: templates/media-policy.html:38
 msgid ""
@@ -390,7 +386,6 @@ msgstr ""
 "prostorách je povoleno na konferenci DevConf.cz."
 
 #: templates/media-policy.html:39
-#, fuzzy
 msgid ""
 "Photography/recording should be treated like other potentially harassing "
 "interpersonal interaction. That is, when one person in the interaction says "
@@ -398,27 +393,23 @@ msgid ""
 "attendees should not attempt to photograph that individual again."
 msgstr ""
 "Fotografie či nahrávka by měla být posuzována jako jedna z možných potenciálně "
-"obtěžujících interakcí. Proto musí taková interakce skončit, ve chvíli kdy "
-"jedna osoba, která se jí účastní řekne \"dost\". V takovém případě by účastníci "
-"neměli znova pořizovat nahrávky nebo fotografie takové osoby. "
+"obtěžujících interakcí. Proto musí taková interakce skončit ve chvíli, kdy "
+"jakákoli zúčastněná strana řekne \"dost\". V takovém případě by účastníci "
+"neměli znovu pořizovat nahrávky nebo fotografie této osoby."
 
 #: templates/media-policy.html:40
-#, fuzzy
 msgid ""
 "Photography/recording shouldn’t be done in such a way as to hide from the "
 "subject that it’s happening."
-msgstr ""
-"Fotografie nebo nahrávky by neměly být pořizovány způsobem, který by skrývat, "
-"že jsou pořizovány. "
+msgstr "Pořizování fotografií nebo nahrávek by nemělo být utajováno."
 
 #: templates/media-policy.html:41
-#, fuzzy
 msgid ""
 "The subject may inspect the photo/recording at any time and, if requested, the "
 "photo/footage/etc must be deleted immediately."
 msgstr ""
-"Subjekt fotografie nebo nahrávky je oprávněn kdykoliv prohlédnout obsah a na "
-"jeho žádost musí být nahrávka či fotografie smazána."
+"Subjekt fotografie nebo nahrávky je oprávněn kdykoliv požádat o shlédnutí "
+"obsahu a na jeho žádost musí být nahrávka či fotografie okamžitě smazána."
 
 #: templates/media-policy.html:42
 msgid ""
@@ -429,9 +420,8 @@ msgstr ""
 "<a href=\"coc.html\">Kodexem chování</a>."
 
 #: templates/media-policy.html:45
-#, fuzzy
 msgid "How to opt-out"
-msgstr "Jak požádat o vynechání z účasti"
+msgstr "Jak požádat o vynechání z fotografií a nahrávek"
 
 #: templates/media-policy.html:46
 msgid ""
@@ -439,28 +429,37 @@ msgid ""
 "href=\"mailto:info@devconf.cz\">contacting us</a> and reasonable efforts will "
 "be done to accommodate your request."
 msgstr ""
+"Pokud si nepřejete, aby byly zveřejňovány fotografie a nahrávky s vaší osobou, "
+"můžete vyjádřit nesouhlas tím, že  <a href=\"mailto:info@devconf.cz\">nás "
+"kontaktujete, </a> pokusíme se vaší žádosti vyhovět. "
 
 #: templates/media-policy.html:48
 msgid ""
 "If you are a speaker, you may opt out of having your talk being publically "
 "distributed by <a href=\"mailto:info@devconf.cz\">contacting us</a>."
 msgstr ""
+"Pokud jste přednášející, můžete vyjádřit nesouhlas se zveřejněním vaší "
+"přednášky tím, že <a href=\"mailto:info@devconf.cz\">nás kontaktujete</a>."
 
 #: templates/media-policy.html:50
 msgid "How to Report Violations or Issues"
-msgstr ""
+msgstr "Jak nahlásit porušení pravidel nebo jiné problémy"
 
 #: templates/media-policy.html:51
 msgid ""
 "Please report an violations or issues with recording or photography directly to "
 "the front desk at registration, or by contacting us."
 msgstr ""
+"Prosíme, nahlašujte porušení pravidel nebo problémy s nahráváním či "
+"fotografováním přímo na recepci konference nebo kontaktujte organizační tým. "
 
 #: templates/media-policy.html:55 templates/speaker-agreement.html:59
 msgid ""
 "Thank you to Linux Fest NorthWest, Open Source Bridge and DrupalCon, from whom "
 "this media policy was heavily influenced."
 msgstr ""
+"Děkujeme Linux Fest NorthWest, Open Source Bridge a DrupalConu, ze kterých byla "
+"výše uvedená mediální politika z velké části převzata."
 
 #: templates/meta.html:12
 msgid ""
@@ -474,20 +473,29 @@ msgid ""
 "        city of Brno, Czech Republic.\n"
 "        "
 msgstr ""
+"\n"
+"\tDevconf.cz je volně přístupná a otevřená každoroční 3-denní open-source "
+"konference zaměřená na Fedora, Linux a  JBoss komunity\n"
+"\tpro vývojáře, DevOps, testery a technické dokumentátory,\n"
+"\torganizovaná za účelem synchronizace, sdílení a hackování upstreamových "
+"projektů s komunitou v krásném\n"
+"\tBrně v České republice. "
 
 #: templates/section-newsletter.html:10
 msgid "Subscribe to DevConf newsletter"
-msgstr ""
+msgstr "Zapiště se k odebírání DevConf newsletteru"
 
 #: templates/speaker-agreement.html:17
 msgid "Compensation"
-msgstr ""
+msgstr "Kompenzace"
 
 #: templates/speaker-agreement.html:18
 msgid ""
 "I understand that DevConf.cz does not directly financially compensate speakers "
 "in any way!"
 msgstr ""
+"Beru na vědomí, že DevConf.cz neposkytuje žádné přímé finanční kompenzace pro "
+"přednášející konference. "
 
 #: templates/speaker-agreement.html:19
 msgid ""
@@ -495,6 +503,9 @@ msgid ""
 "hotels</b> I have the option to get my accomodation covered for up to 3 nights "
 "(<i>Thursday January 26, Friday January 27, Saturday January 28</i>)."
 msgstr ""
+"Současně ale jako akceptovaný přednášející a v případě že budu ubytován v "
+"partnerském hotelu, mám možnost získat proplacené ubytování až na 3 noci (<i> "
+"čtvrtek 25. ledna, pátek 26. ledna a sobota 27. ledna</i>)."
 
 #: templates/speaker-agreement.html:20
 msgid ""
@@ -504,10 +515,16 @@ msgid ""
 "to reserve at one of our partner hotels will be sent to all accepted speakers "
 "in December after selection has completed."
 msgstr ""
+"Poznámka: Toto je platné pouze pro primární přednášející pokud jsou ubytováni v "
+"jednolůžkovém pokoji. Sekundární přednášející nemají možnost požádat o "
+"proplacení jednolůžkového pokoje, výjimku tvoří případ, kdy oba přednášející "
+"souhlasí se sdílením dvojlůžkového pokoje. Detailní pokyny k rezervování pokoje "
+"v jednom z našich partnerských hotelů budou zaslány všem akceptovaným "
+"přednášejícím v prosinci. "
 
 #: templates/speaker-agreement.html:22
 msgid "Speaker Profiles"
-msgstr ""
+msgstr "Profily přednášejících"
 
 #: templates/speaker-agreement.html:23
 msgid ""
@@ -515,6 +532,9 @@ msgid ""
 "photo, with the understanding that my information might be populated for me if "
 "not provided in time for the schedule."
 msgstr ""
+"Vyplním svůj uživatelský profil, včetně plného jména, kontaktních informací a "
+"fotografie, s vědomím toho, že tyto informace mohou být vyplněny za mě, pokud "
+"je neposkytnu v termínu. "
 
 #: templates/speaker-agreement.html:24
 msgid ""
@@ -522,6 +542,9 @@ msgid ""
 "any other demographic information provided outside of the background / bio text "
 "submitted will not."
 msgstr ""
+"Poznámka: Pokud je vyplněno uživatelské jméno pro Twitter, bude zveřejněno. "
+"Mail ani jiné demografické informace vyplněné v profilu mimo text biografie "
+"zveřejněny nebudou."
 
 #: templates/speaker-agreement.html:27
 msgid "Session Preparation"
