@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: cward@redhat.com\n"
 "POT-Creation-Date: 2017-07-31 12:16+0200\n"
-"PO-Revision-Date: 2017-08-15 14:15+0200\n"
+"PO-Revision-Date: 2017-08-15 17:03+0200\n"
 "Last-Translator: Chris Ward <cward@redhat.com>\n"
 "Language: cs_CZ\n"
 "Language-Team: Chris Ward <cward@redhat.com>\n"
@@ -548,7 +548,7 @@ msgstr ""
 
 #: templates/speaker-agreement.html:27
 msgid "Session Preparation"
-msgstr ""
+msgstr "Příprava přednášek a workshopů"
 
 #: templates/speaker-agreement.html:28
 msgid ""
@@ -573,23 +573,23 @@ msgstr ""
 
 #: templates/speaker-agreement.html:32
 msgid "Schedule conflicts"
-msgstr ""
+msgstr "Konflikty programu"
 
 #: templates/speaker-agreement.html:33
 msgid "Session format"
-msgstr ""
+msgstr "Formát přednášek"
 
 #: templates/speaker-agreement.html:34
 msgid "Technical requirements/requests"
-msgstr ""
+msgstr "Technické specifikace / požadavky"
 
 #: templates/speaker-agreement.html:35
 msgid "Changes to your speaker lineup"
-msgstr ""
+msgstr "Změny v seznamu přednášejících"
 
 #: templates/speaker-agreement.html:38
 msgid "Obtaining Consent"
-msgstr ""
+msgstr "Získání svolení"
 
 #: templates/speaker-agreement.html:39
 msgid ""
@@ -655,7 +655,7 @@ msgstr ""
 
 #: templates/speaker-agreement.html:54
 msgid "Session Recording"
-msgstr ""
+msgstr "Nahrávání přednášek a workshopů"
 
 #: templates/speaker-agreement.html:55
 msgid ""
@@ -667,7 +667,7 @@ msgstr ""
 
 #: templates/cz/2017/index.html:4
 msgid "Jan 27-29 - FIT VUT Brno, Czech Republic"
-msgstr ""
+msgstr "26.-28. ledna 2017 -  FIT VUT Brno, Czech Republic"
 
 #: templates/cz/2017/index.html:17 templates/cz/2017/roadshow-bratislava.html:17
 #: templates/cz/2017/roadshow-prague.html:17
@@ -676,13 +676,15 @@ msgstr ""
 
 #: templates/cz/2017/index.html:23 templates/cz/2017/index.html:49
 msgid "January 27-29, 2017"
-msgstr ""
+msgstr "26.-28. ledna 2017"
 
 #: templates/cz/2017/index.html:32
 msgid ""
 "A free annual community conference for developers, admins, and users of Open "
 "Source technologies."
 msgstr ""
+"Volně přístupná každoroční konference pro vývojáře, administrátory a uživatele "
+"open-source technologií."
 
 #: templates/cz/2017/index.html:45
 msgid ""
@@ -695,41 +697,44 @@ msgstr ""
 
 #: templates/cz/2017/index.html:49
 msgid "When:"
-msgstr ""
+msgstr "Kdy:"
 
 #: templates/cz/2017/index.html:50
 msgid "Venue:"
-msgstr ""
+msgstr "Místo konání:"
 
 #: templates/cz/2017/index.html:50
 msgid "Faculty of Information Technology (VUT FIT) Božetěchova 2 - Brno"
-msgstr ""
+msgstr "Fakulta informačních technologií (VUT FIT) Božetěchova 2 - Brno"
 
 #: templates/cz/2017/index.html:53
+#, fuzzy
 msgid "You should consider attending DevConf.cz 2017 if you are:"
-msgstr ""
+msgstr "Účast na DevConf.cz zvažujte především pokud jste:"
 
 #: templates/cz/2017/index.html:55
 msgid "A developer"
-msgstr ""
+msgstr "Vývojář"
 
 #: templates/cz/2017/index.html:56
 msgid "A technology architect"
-msgstr ""
+msgstr "Návrhář technologií"
 
 #: templates/cz/2017/index.html:57
 msgid "An IT consultant"
-msgstr ""
+msgstr "IT konzultant"
 
 #: templates/cz/2017/index.html:58
 msgid "An IT student or a teacher from an IT university/faculty"
-msgstr ""
+msgstr "IT student nebo učitel na IT univerzitě či fakultě"
 
 #: templates/cz/2017/index.html:59
 msgid ""
 "Or simply an IT enthusiast interested in the latest trends in open source and "
 "emerging digital technologies"
 msgstr ""
+"Nebo jednoduše nadšenec do IT, zajímající se o nejnovější trendy v open-source "
+"a nově vznikajících digitálních technologií"
 
 #: templates/cz/2017/index.html:61
 msgid ""
@@ -744,14 +749,17 @@ msgid ""
 "DevConf.cz is a free conference and there is no admission or ticket charge. "
 "This year we will require that you <b>register for free</b>."
 msgstr ""
+"DevConf.cz je volně přístupná konference a nejsou zde žádné poplatky za lístek "
+"či vstup. Tento rok je však nutné se  <b>zdarma zaregistrovat</b>. "
 
 #: templates/cz/2017/index.html:63
+#, fuzzy
 msgid "Register here: On site Registration only!"
-msgstr ""
+msgstr "Registrace zde: Registrace pouze na místě konání!"
 
 #: templates/cz/2017/index.html:64
 msgid "Talks, presentations, and workshops will all be in <i>English</i>."
-msgstr ""
+msgstr "Všechny přednášky a workshopy budou v <i> angličtině </i>."
 
 #: templates/cz/2017/index.html:84
 msgid ""
@@ -776,23 +784,27 @@ msgstr ""
 
 #: templates/cz/2017/index.html:174
 msgid "Travel Information"
-msgstr ""
+msgstr "Informace o cestování"
 
 #: templates/cz/2017/index.html:178
 msgid ""
 "Brno is located two hours or less by car from three European capitals (Prague, "
 "Vienna, and Bratislava)."
 msgstr ""
+"Brno je vzdáleno přibližně dvě hodiny autem od tří evropských hlavních měst "
+"(Prahy, Vídně a Bratislavy)."
 
 #: templates/cz/2017/index.html:180
 msgid "By Plane"
-msgstr ""
+msgstr "Letadlem"
 
 #: templates/cz/2017/index.html:181
 msgid ""
 "<strong><a href=\"http://www.brno-airport.cz/en/\" target=\"_blank\">Brno "
 "Airport</a></strong> (BRQ, 0.6 million passengers a year)"
 msgstr ""
+"<strong><a href=\"http://www.brno-airport.cz/en/\" target=\"_blank\">Letiště "
+"Brno </a></strong> (BRQ, 0.6 milionu cestujících ročně)"
 
 #: templates/cz/2017/index.html:183
 msgid ""
@@ -800,12 +812,17 @@ msgid ""
 "option if you are coming from London (Stansted - Ryanair, Luton - Wizzair), "
 "Munich (Lufthansa), Eindhoven (Wizzair)."
 msgstr ""
+"Letiště Brno je malé mezinárodní letiště blízko Brna, je dobrou volbou "
+"především pokud cestujete z Londýna (Stansted - Ryanair, Luton - Wizzair), "
+"Mnichova (Lufthansa), Eindhovenu (Wizzair)."
 
 #: templates/cz/2017/index.html:184
 msgid ""
 "The newly opened flight from Munich (Lufthansa) operates daily except Sunday "
 "and dramatically improves the flight connection directly to Brno.</strong>"
 msgstr ""
+"Nově vzniklá linka do Mnichova (Lufthansa) obsluhuje lety téměř denně s "
+"výjimkou neděle a dramaticky tak zlepšuje návaznost letů přímo do Brna."
 
 #: templates/cz/2017/index.html:185
 msgid ""
@@ -1169,7 +1186,7 @@ msgstr ""
 
 #: templates/cz/2017/index.html:286
 msgid "Recommended Hotels"
-msgstr ""
+msgstr "Doporučené hotely"
 
 #: templates/cz/2017/index.html:304
 msgid "Show more..."
@@ -1315,7 +1332,7 @@ msgstr ""
 
 #: templates/cz/2017/roadshow-prague.html:362
 msgid "And supported by our friends at:"
-msgstr ""
+msgstr "A podporována našimi přáteli v:"
 
 #: templates/cz/2017/roadshow-prague.html:369
 msgid ""
@@ -1341,6 +1358,8 @@ msgid ""
 "Národní technická knihovna (NTK) is the biggest and the oldes technical library "
 "in Czech Republic with capacity over 1.5 million books."
 msgstr ""
+"Národní technická knihovna (NTK) je největší a nejstarší technickou knihovnou v "
+"České republice s kapacitou více než 1.5 milionu knih."
 
 #: templates/cz/2017/roadshow-prague.html:405
 msgid ""
