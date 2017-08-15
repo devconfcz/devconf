@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: cward@redhat.com\n"
 "POT-Creation-Date: 2017-07-31 12:16+0200\n"
-"PO-Revision-Date: 2017-08-14 16:07+0200\n"
+"PO-Revision-Date: 2017-08-15 16:51+0200\n"
 "Last-Translator: Chris Ward <cward@redhat.com>\n"
 "Language: sk_SK\n"
 "Language-Team: Chris Ward <cward@redhat.com>\n"
@@ -210,7 +210,7 @@ msgstr ""
 
 #: templates/footer.html:6 templates/speaker-agreement.html:4 templates/speaker-agreement.html:14
 msgid "Speaker Agreement"
-msgstr ""
+msgstr "Dohoda s prednášajúcimi"
 
 #: templates/footer.html:8 templates/media-policy.html:4
 msgid "Media Policy"
@@ -267,9 +267,9 @@ msgid ""
 "video format. DevConf.cz uses screen capturing hardware along with audio recording equipment to "
 "broadcast presentations."
 msgstr ""
-"So súhlasom prednášať na konferencii DevConf.cz povoluejete nahrávanie v audio a vo väčšine prípadov aj "
-"vo video formáte. Na vysielanie prezentácií Devconf.cz využíva screen capturing hardware zároveň s audio "
-"nahrávaním."
+"So súhlasom prednášať na konferencii DevConf.cz zároveň povoľujete nahrávanie v audio a vo väčšine "
+"prípadov aj vo video formáte. Na vysielanie prezentácií Devconf.cz sa využíva screen capturing hardware "
+"zároveň s audio nahrávaním."
 
 #: templates/media-policy.html:22
 msgid ""
@@ -296,9 +296,9 @@ msgid ""
 "talk recorded.  However, if you wish, you may request that the session video not be published to the "
 "public."
 msgstr ""
-"Pre organizátorov konferencie je dôležité vyhodnotiť všetky materiály prezentované na konferencii. Z "
-"tohto dôvodu je nahrávanie vašej prezentácie povinné, avšak, na základe vašej žiadosti nemusí byť "
-"nahrávanie verejne publikované."
+"Pre organizátorov konferencie je veľmi dôležité vyhodnotiť všetky materiály prezentované na konferencii. "
+"Z tohto dôvodu je nahrávanie vašej prezentácie povinné, avšak, na základe vašej žiadosti nemusí byť "
+"nahrávanie publikované pre verejnosť."
 
 #: templates/media-policy.html:28
 msgid ""
@@ -317,9 +317,9 @@ msgid ""
 "All sessions are recorded by official DevConf.cz or venue A/V staff. If you are not the speaker and wish "
 "to audio/video record, you must obtain written consent from the speaker first."
 msgstr ""
-"Všetky prezentácie sú nahrávané personálom DevConf.cz alebo personálom priestorov kde konferencia "
-"prebieha. Ak nie ste jedným z rečníkov a prajete si robiť vlastný audio/video záznam, musíte najprv "
-"obdržať písomné povolenie od rečníka."
+"Všetky prednášky a workshopy sú nahrávané organizačným tímom DevConf.cz alebo personálom priestorov kde "
+"konferencia prebieha. Ak nie ste jedným z prednášajúcich a prajete si robiť vlastný audio/video záznam, "
+"musíte najprv obdržať písomné povolenie od prednášajúceho."
 
 #: templates/media-policy.html:33
 msgid "Staff and attendee photography"
@@ -331,8 +331,8 @@ msgid ""
 "photographer, and to have those photographs published under a Creative Commons license and possibly used "
 "in various promotional material."
 msgstr ""
-"S registráciou na DevConf.cz súhlasite so snímaním fotografií oficálnym fotografom konferencie, ktoré "
-"budú neskôr publikované pod Creative Commons licenciou a môžu byť použité v rámci rôznych propagačných "
+"S registráciou na DevConf.cz súhlasite so snímaním fotografií oficiálnym fotografom konferencie, ktoré "
+"budú neskôr publikované s licenciou Creative Commons a môžu byť použité v rámci rôznych propagačných "
 "materiálov."
 
 #: templates/media-policy.html:36
@@ -354,65 +354,69 @@ msgid ""
 msgstr ""
 "Fotografovanie alebo nahrávanie môže byť považované za situáciu, kde môže potenciálne dôjsť k "
 "obťažovaniu. Ak jedna z osôb v danej situácii použije slová ako “prestaň” alebo “daj mi pokoj” a pod., "
-"interakcia musí skončiť. V tomto prípade by sa účastníci nemali opäť pokúšať fotografovať túto ososbu."
+"interakcia musí skončiť. V tomto prípade by sa účastníci nemali opäť pokúšať fotografovať túto osobu."
 
 #: templates/media-policy.html:40
 msgid ""
 "Photography/recording shouldn’t be done in such a way as to hide from the subject that it’s happening."
-msgstr ""
-"Fotografovanie alebo nahrávanie by nemali byť uskutočňované bez vedomiafotografovanej/nahrávanej osoby."
+msgstr "Fotografovanie alebo nahrávanie by nemali byť utajované."
 
 #: templates/media-policy.html:41
 msgid ""
 "The subject may inspect the photo/recording at any time and, if requested, the photo/footage/etc must be "
 "deleted immediately."
 msgstr ""
-"Fotografovaná/nahrávaná ososba si môže nahrávku kedykoľvekprezrieť a ak požiada o jej vymazanie musí tak "
-"byť okamžite učinené."
+"Subjekt fotografie alebo nahrávky si môže nahrávku kedykoľvek prezrieť a ak požiada o jej vymazanie, "
+"musí tak byť okamžite učinené."
 
 #: templates/media-policy.html:42
 msgid ""
 "Those who are taking photographs and/or recording must also follow our general <a href=\"coc.html\">Code "
 "of Conduct</a>."
 msgstr ""
-"Tí, ktorí snímajú fotografie a/alebo nahrávajú videá sa taktiež musia riadiť naším všeobecným <a href="
+"Tí, ktorí snímajú fotografie alebo nahrávajú videá sa taktiež musia riadiť naším všeobecným <a href="
 "\"coc.html\">Kódexom správania</a>."
 
 #: templates/media-policy.html:45
 msgid "How to opt-out"
-msgstr "Ako vyjadriť nesúhlas"
+msgstr "Ako požiadať o vynechanie z fotografií a nhrávok"
 
 #: templates/media-policy.html:46
 msgid ""
 "If you do not wish images of yourself to be published, you may opt out by <a href=\"mailto:info@devconf."
 "cz\">contacting us</a> and reasonable efforts will be done to accommodate your request."
 msgstr ""
-"Ak si neprajete aby boli vaše fotografie zverejnené, môžete vyjadriť nesúhlas prostredníctvom <a href="
-"\"mailto:info@devconf.cz\">kontaktujte nás</a> kde sa budeme snažiť vašej žiadosti vyhovieť."
+"Ak si neprajete aby boli zverejňované fotografie či nahrávky s vašou osobou, môžete vyjadriť nesúhlas "
+"tým, že <a href=\"mailto:info@devconf.cz\">nás kontaktujete</a> , a my sa budeme snažiť vašej žiadosti "
+"vyhovieť."
 
 #: templates/media-policy.html:48
 msgid ""
 "If you are a speaker, you may opt out of having your talk being publically distributed by <a href="
 "\"mailto:info@devconf.cz\">contacting us</a>."
 msgstr ""
-"Ak ste jedným z prednášajúcich, zverejnenie vašej prezentácie nie je prostredníctvom <a href=\"mailto:"
-"info@devconf.cz\">kontaktujte nás</a> možné odmietnuť."
+"Ak ste jedným z prednášajúcich, môžete vyjadriť nesúhlas so zverejnením vašej prednášky tým, že <a href="
+"\"mailto:info@devconf.cz\">nás kontaktujete</a>."
 
 #: templates/media-policy.html:50
 msgid "How to Report Violations or Issues"
-msgstr ""
+msgstr "Ako nahlásiť porušenie pravidiel a iné problémy"
 
 #: templates/media-policy.html:51
 msgid ""
 "Please report an violations or issues with recording or photography directly to the front desk at "
 "registration, or by contacting us."
 msgstr ""
+"Prosíme, porušovanie pravidiel týkajúcich sa fotografovania alebo nahrávania nahlasujte priamo na "
+"recepcii konferencie alebo kontaktujte organizačný tím konferencie."
 
 #: templates/media-policy.html:55 templates/speaker-agreement.html:59
 msgid ""
 "Thank you to Linux Fest NorthWest, Open Source Bridge and DrupalCon, from whom this media policy was "
 "heavily influenced."
 msgstr ""
+"Ďakujeme Linux Fest NorthWest, Open Source Bridge a DrupalConu, z ktorých bola vyššie uvedená mediálna "
+"politika prevzatá."
 
 #: templates/meta.html:12
 msgid ""
@@ -423,18 +427,27 @@ msgid ""
 "        city of Brno, Czech Republic.\n"
 "        "
 msgstr ""
+"\n"
+"\tDevConf.cz je každoročná voľne sprístupnená a otvorená 3-denná open-source konferencia zameraná na "
+"Fedora, Linux a JBoss komunity \n"
+"\tpre vývojárov, DevOps, testerov a technických dokumentátorov, \n"
+"\torganizovaná za účelom synchronizácie, zdieľania a hackovania upstreamových projektov s komunitou v "
+"krásnom \n"
+"\tBrne v Českej republike."
 
 #: templates/section-newsletter.html:10
 msgid "Subscribe to DevConf newsletter"
-msgstr ""
+msgstr "Zapíšte sa k odoberaniu DevConf newsletteru"
 
 #: templates/speaker-agreement.html:17
 msgid "Compensation"
-msgstr ""
+msgstr "Kompenzácia"
 
 #: templates/speaker-agreement.html:18
 msgid "I understand that DevConf.cz does not directly financially compensate speakers in any way!"
 msgstr ""
+"Beriem na vedomie, že DevConf.cz neposkytuje žiadne priame finančné kompenzácie pre prednášajúcich na "
+"konferencii."
 
 #: templates/speaker-agreement.html:19
 msgid ""
@@ -442,6 +455,9 @@ msgid ""
 "to get my accomodation covered for up to 3 nights (<i>Thursday January 26, Friday January 27, Saturday "
 "January 28</i>)."
 msgstr ""
+"Súčasne ale majú akceptovaní prednášajúci možnosť získať preplatené ubytovanie počas troch nocí v rámci "
+"trvania konferencie (<i>štvrtok 25.1.2018, piatok 26.1.2018, sobota 27.1.2017</i>) v jednom z "
+"<b>partnerských hotelov konferencie</b>."
 
 #: templates/speaker-agreement.html:20
 msgid ""
@@ -450,32 +466,40 @@ msgid ""
 "room. Details for how to reserve at one of our partner hotels will be sent to all accepted speakers in "
 "December after selection has completed."
 msgstr ""
+"Poznámka: Platí len pre primárnych prednášajúcich ubytovaných v jednolôžkovej izbe. Ubytovanie pre "
+"sekundárnych prednášajúcich nebude uhradené, jedine ak by obaja, primárny aj sekundárny prednášajúci, "
+"súhlasili so zdieľaním dvojlôžkovej izby. Detaily týkajúce sa rezervácie v jednom z našich partnerských "
+"hotelov budú zaslané akceptovaným prednášajúcim v decembri po skončení procesu výberu prednášajúcich."
 
 #: templates/speaker-agreement.html:22
 msgid "Speaker Profiles"
-msgstr ""
+msgstr "Profily prednášajúcich"
 
 #: templates/speaker-agreement.html:23
 msgid ""
 "I will fill out my user profile, including full name, contact details and photo, with the understanding "
 "that my information might be populated for me if not provided in time for the schedule."
 msgstr ""
+"Vyplním svoj užívateľský profil, vrátane svojho plného mena, kontaktných informácií a fotografie, s "
+"vedomím, že tieto informácie môžu byť vyplnené za mňa, ak ich neposkytnem v dobe na to určenej."
 
 #: templates/speaker-agreement.html:24
 msgid ""
 "NOTE: If a Twitter handle is provided, it will be shared publicly. Email nor any other demographic "
 "information provided outside of the background / bio text submitted will not."
-msgstr ""
+msgstr "Poznámka: "
 
 #: templates/speaker-agreement.html:27
 msgid "Session Preparation"
-msgstr ""
+msgstr "Príprava na prednášky a workshopy"
 
 #: templates/speaker-agreement.html:28
 msgid ""
 "If I am unable to devote the time and energy to this effort, I will notify the DevConf.cz planning team "
 "immediately and DevConf.CZ will replace my session."
 msgstr ""
+"V prípade, že nie som schopný/á vynaložiť čas a energiu potrebné na prípravu prednášky, okamžite o tom "
+"oboznámim organizačný tím DevConf.cz, ten moju prednášku nahradí inou."
 
 #: templates/speaker-agreement.html:29
 msgid ""
@@ -484,38 +508,46 @@ msgid ""
 "presentation, I am expected to spend a significant amount of time preparing for my session before the "
 "event."
 msgstr ""
+"Beriem na vedomie, že ak sa zúčastňujem spoločného tutoriálu s inými prednášajúcimi, tak sa predpokladá, "
+"že komunikujem a spolupracujem na prednáške s ostatnými prednášajúcimi pred samotnou akciou. Takisto "
+"beriem na vedomie, že ak prednášam samostatne či skupinovo, predpokladá sa, že strávim značný čas "
+"prípravou na prednášku, prezentáciu alebo workshop"
 
 #: templates/speaker-agreement.html:30
 msgid ""
 "To aid in schedule planning, I will also communicate any of the following with the DevConf.cz "
 "presentation committee:"
 msgstr ""
+"Pre jednoduchšie plánovanie budem taktiež komunikovať nasledujúce s komisiou na prezentácie DevConf.cz:"
 
 #: templates/speaker-agreement.html:32
 msgid "Schedule conflicts"
-msgstr ""
+msgstr "Konflikty v programe"
 
 #: templates/speaker-agreement.html:33
 msgid "Session format"
-msgstr ""
+msgstr "Formát prednášky"
 
 #: templates/speaker-agreement.html:34
 msgid "Technical requirements/requests"
-msgstr ""
+msgstr "Technické požiadavky"
 
 #: templates/speaker-agreement.html:35
 msgid "Changes to your speaker lineup"
-msgstr ""
+msgstr "Zmeny v zozname prednášajúcich"
 
 #: templates/speaker-agreement.html:38
 msgid "Obtaining Consent"
-msgstr ""
+msgstr "Získanie povolenia"
 
 #: templates/speaker-agreement.html:39
 msgid ""
 "I understand that I am responsible for obtaining any required consents, permissions, and clearances to "
 "display or otherwise use any materials (both visual and audio) that I incorporate in my session."
 msgstr ""
+"Beriem na vedomie, že som zodpovedný/á za získanie všetkých potrebných povolení a oprávnení na "
+"vystavenie alebo akékoľvek iné využitie materiálov (ako vizuálnych, tak aj zvukových), ktoré budú "
+"súčasťou mojej prednášky."
 
 #: templates/speaker-agreement.html:41
 msgid "Promoted Content"
@@ -1034,163 +1066,173 @@ msgstr ""
 
 #: templates/cz/2017/index.html:286
 msgid "Recommended Hotels"
-msgstr ""
+msgstr "Odporúčané hotely"
 
 #: templates/cz/2017/index.html:304
 msgid "Show more..."
-msgstr ""
+msgstr "Ukázať viac"
 
 #: templates/cz/2017/index.html:305
 msgid "Show less..."
-msgstr ""
+msgstr "Ukázať menej"
 
 #: templates/cz/2017/index.html:314 templates/cz/2017/roadshow-prague.html:348
 msgid "Sponsors"
-msgstr ""
+msgstr "Sponzori"
 
 #: templates/cz/2017/index.html:316
 msgid "This event is sponsored by"
-msgstr ""
+msgstr "Táto akcia je sponzorovaná"
 
 #: templates/cz/2017/index.html:324
 msgid "And supported by our friends at"
-msgstr ""
+msgstr "A podporovaná našimi priateľmi v"
 
 #: templates/cz/2017/index.html:345
 msgid "In collaboration with"
-msgstr ""
+msgstr "V spolupráci s"
 
 #: templates/cz/2017/roadshow-bratislava.html:4
 msgid "DevConf.cz Roadshow - Containers Bratislava 2017"
-msgstr ""
+msgstr "DevConf.cz Roadshow - Containers Bratislava 2017"
 
 #: templates/cz/2017/roadshow-prague.html:23
 msgid "Containers Roadshow"
-msgstr ""
+msgstr "Containers Roadshow"
 
 #: templates/cz/2017/roadshow-prague.html:26
 msgid "Czech National Library of Technology"
-msgstr ""
+msgstr "Narodní technická knihovna"
 
 #: templates/cz/2017/roadshow-prague.html:27
 msgid "Prague 6, Czech Republic"
-msgstr ""
+msgstr "Praha 6, Česká republika"
 
 #: templates/cz/2017/roadshow-prague.html:29
 msgid "April 19th, 2017"
-msgstr ""
+msgstr "19. apríla 2017"
 
 #: templates/cz/2017/roadshow-prague.html:32
 msgid "Presentations and workshops will be in Czech."
-msgstr ""
+msgstr "Prednášky a workshopy budú prednášané v českom jazyku."
 
 #: templates/cz/2017/roadshow-prague.html:37
 msgid ""
 "DevConf.cz in collaboration with the Prague Containers community bring you the first annual, free, one "
 "day containers focused community conference in Prague."
 msgstr ""
+"DevConf.cz Vám v spolupráci s Prague Containers komunitou prináša prvú každoročnú, voľne sprístupnenú "
+"jednodňovú konferenciu zameranú na kontajnery, ktorá sa uskutoční v Prahe."
 
 #: templates/cz/2017/roadshow-prague.html:52
 msgid "Wednesday April 19, 2017<"
-msgstr ""
+msgstr "Streda, 19. apríla 2017<"
 
 #: templates/cz/2017/roadshow-prague.html:53
 msgid "On-site registration: 09:00 - 10:00"
-msgstr ""
+msgstr "Registrácia na mieste: 9:00 - 10:00"
 
 #: templates/cz/2017/roadshow-prague.html:61
 msgid "Lecture Hall"
-msgstr ""
+msgstr "Prednášková sála"
 
 #: templates/cz/2017/roadshow-prague.html:69
 msgid "Automate modern app development with containers and OpenShift - Radek Vokál + Jiří Kolář"
-msgstr ""
+msgstr "Automate modern app development with containers and OpenShift - Radek Vokál + Jiří Kolář"
 
 #: templates/cz/2017/roadshow-prague.html:80
 msgid "Linux Containers - the DIY way - Vilibald Wanča"
-msgstr ""
+msgstr "Linux Containers - the DIY way - Vilibald Wanča"
 
 #: templates/cz/2017/roadshow-prague.html:91
 msgid "How to develop containers for the enterprise - Honza Horák"
-msgstr ""
+msgstr "How to develop containers for the enterprise - Honza Horák"
 
 #: templates/cz/2017/roadshow-prague.html:102
 msgid "Docker containers and black holes - Matúš Kocka + František Kluknavský"
-msgstr ""
+msgstr "Docker containers and black holes - Matúš Kocka, František Kluknavský"
 
 #: templates/cz/2017/roadshow-prague.html:112
 msgid "Lunch Break"
-msgstr ""
+msgstr "Obedňajšia prestávka"
 
 #: templates/cz/2017/roadshow-prague.html:123
 msgid "Managing containers with Ansible - Peter Schiffer"
-msgstr ""
+msgstr "Managing containers with Ansible - Peter Schiffer"
 
 #: templates/cz/2017/roadshow-prague.html:134
 msgid "Containers in Production - Stanislav Polášek (Elos Technologies, Red Hat Premier Business partner)"
-msgstr ""
+msgstr "Containers in Production - Stanislav Polášek (Elos Technologies, Red Hat Premier Business partner)"
 
 #: templates/cz/2017/roadshow-prague.html:145
 msgid "OpenShift pipelines - Vašek Pavlín"
-msgstr ""
+msgstr "OpenShift pipelines - Vašek Pavlín"
 
 #: templates/cz/2017/roadshow-prague.html:156
 msgid "Demo time! - Vašek Pavlín + David Bečvařík"
-msgstr ""
+msgstr "Demo time! - Vašek Pavlín, David Bečvařík"
 
 #: templates/cz/2017/roadshow-prague.html:162
 msgid "Workshop Room"
-msgstr ""
+msgstr "Miestnosť na workshopy"
 
 #: templates/cz/2017/roadshow-prague.html:174
 msgid "Advanced container deep-dive - Tomáš Tomeček, Peter Schiffer"
-msgstr ""
+msgstr "Advanced container deep-dive - Tomáš Tomeček, Peter Schiffer"
 
 #: templates/cz/2017/roadshow-prague.html:185
 msgid "Learn OpenShift basics - Jiří Kolář"
-msgstr ""
+msgstr "Learn OpenShift basics - Jiří Kolář"
 
 #: templates/cz/2017/roadshow-prague.html:202
 msgid "Speakers"
-msgstr ""
+msgstr "Prednášajúci"
 
 #: templates/cz/2017/roadshow-prague.html:342
 msgid "Venue"
-msgstr ""
+msgstr "Miesto konania"
 
 #: templates/cz/2017/roadshow-prague.html:350
 msgid "This event is brought to you by:"
-msgstr ""
+msgstr "Túto akciu Vám prináša:"
 
 #: templates/cz/2017/roadshow-prague.html:355
 msgid "World's leading provider of open source, enterprise IT solutions."
-msgstr ""
+msgstr "Vedúci svetový poskytovateľ open source a podnikových IT riešení."
 
 #: templates/cz/2017/roadshow-prague.html:362
 msgid "And supported by our friends at:"
-msgstr ""
+msgstr "A podporovaná našimi priateľmi v:"
 
 #: templates/cz/2017/roadshow-prague.html:369
 msgid "Community with a mission to connect people interested in containers, cloud and devops topics."
 msgstr ""
+"Komunita zameraná na nadväzovanie vzťahov medzi ľuďmi, ktorí sa zaujímajú o témy týkajúce sa "
+"kontajnerov, cloudu a devops."
 
 #: templates/cz/2017/roadshow-prague.html:378
 msgid ""
 "OpenShift is an open source PaaS by Red Hat based on top of Docker containers and the Kubernetes "
 "container cluster manager for enterprise app development and deployment."
 msgstr ""
+"OpenShigt je open source platforma ako služba od spoločnosti Red Hat založená na Docker kontajneroch a "
+"správcovi skupín kontajnerov Kubernetes pre vývoj a nasadenie podnikových aplikácií."
 
 #: templates/cz/2017/roadshow-prague.html:387
 msgid ""
 "Czech website about Fedora Linux distribution. Articles, guides, news and place for discussion at one "
 "place."
 msgstr ""
+"Česká stránka týkajúca sa linuxovej distribúcie Fedora. Články, návody, novinky a priestor pre spoločnú "
+"diskusiu - všetko na jednom mieste."
 
 #: templates/cz/2017/roadshow-prague.html:396
 msgid ""
 "Národní technická knihovna (NTK) is the biggest and the oldes technical library in Czech Republic with "
 "capacity over 1.5 million books."
 msgstr ""
+"Národní technická knihovna (NTK) je najväčšia a najstaršia technická knižnica v Českej republike s "
+"kapacitou viac ako 1,5 milióna kníh."
 
 #: templates/cz/2017/roadshow-prague.html:405
 msgid ""
@@ -1200,11 +1242,16 @@ msgid ""
 "the \"open source\". We are convinced that the open source model provides our customers with significant "
 "financial and technological benefits."
 msgstr ""
+"ELOS Technologies je spoločnosť, ktorá operuje na českom a slovenskom trhu ako poskytovateľ produktov a "
+"služieb pre podnikové riešenia v oblasti informačných technológií. Naša firemná stratégia je založená na "
+"adopcii nových modelov vývoja, podpory, propagácie a distribúcie softwaru, známa ako \"open source\". "
+"Sme presvedčení, že open source model poskytuje našim zákazníkom podstatné finančné a technologické "
+"výhody."
 
 #: templates/cz/2018/index.html:21
 msgid "More information coming soon!"
-msgstr ""
+msgstr "Čoskoro viac informácií."
 
 #: templates/in/index.html:15 templates/us/index.html:15
 msgid "COMING SOON"
-msgstr ""
+msgstr "Čoskoro"
