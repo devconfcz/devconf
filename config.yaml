@@ -1,5 +1,5 @@
 paths: 
-    templates: './templates'
+    templates: './templates/www'
     static: './static'
     build: './build'
     locale: './i18n'

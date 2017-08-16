@@ -208,7 +208,7 @@ a.faded {
   transform: translateX(-50%);
   left: 50%;
   position: absolute;
-  padding: 1px;
+  padding: 3px;
 }
 
 .social {

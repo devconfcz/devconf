@@ -7,7 +7,7 @@
         {% block title %} <title>{{ _('DevConf - free and Open Source Software community conferences for developers') }}</title> {% endblock %}
 
         <!-- Favicon -->
-        <link rel="shortcut icon" href="{{ '/images/favicon.png'|static }}" type="image/png">
+        <link rel="shortcut icon" href="{{ '/images/favicon.png'|url }}" type="image/png">
 
         {% block css %} {% include 'css.html' %} {% endblock %}
 
@@ -23,7 +23,7 @@
         <div class="row">
           <div class="col-sm-12">
           {% block nav_logo %}
-	  <img src="{{ 'images/devconf-webopt.svg'|static }}" class="navbar-brand top-branding" />
+	  <img src="{{ 'images/devconf-webopt.svg' }}" class="navbar-brand top-branding" />
 	  {% endblock %}
 	  </div>
         </div>
@@ -34,7 +34,7 @@
         <div class="navbar-collapse">
           <ul class="nav navbar-nav navbar-left">
               <li>
-                  <a href="{{ [lang, 'index.html']|join('/')|static }}" class="fa fa-home" title="Home">
+                  <a href="{{ '/index.html'|url(lang=lang) }}" class="fa fa-home" title="Home">
                       <span class="hide">{{ _('Home') }}</span>
                   </a>
               </li>
@@ -48,21 +48,21 @@
                       <li class="dropdown-header dropdown-header-title">{{ _('Upcoming events') }}</li>
 		      <!-- devconf.CZ -->
 		      <li class="dropdown-header dropdown-header-subtitle"><b>devconf.CZ</b></li>
-		      <li><a href="{{ '/cz/2018/index.html'|url(lang=lang) }}">{{ _('> 2018 - Main Event - January') }}</a></li>
+              <li><a href="{{ '/cz/2018/index.html'|url(lang=lang) }}">{{ _('> 2018 - Main Event - January') }}</a></li>
 		      <!-- devconf.IN -->
 		      <li class="dropdown-header dropdown-header-subtitle"><b>devconf.IN</b></li>
-		      <li><a href="{{ '/in/index.html'|url(lang=lang) }}">{{ _('> 2018 - India') }}</a></li>
+              <li><a href="{{ '/in/index.html'|url(lang=lang) }}">{{ _('> 2018 - India') }}</a></li>
 		      <!-- devconf.US -->
 		      <li class="dropdown-header dropdown-header-subtitle"><b>devconf.US</b></li>
-		      <li><a href="{{ '/us/index.html'|url(lang=lang) }}">{{ _('> 2018 - Boston') }}</a></li>
+              <li><a href="{{ '/us/index.html'|url(lang=lang) }}">{{ _('> 2018 - Boston') }}</a></li>
 		      <!-- ROADSHOW EVENTS -->
 		      <!-- None coming -->
 
 		      <!-- PAST EVENTS -->
                       <li class="dropdown-header dropdown-header-title">{{ _('Past events') }}</li>
-		      <li><a href="{{ '/cz/2017/index.html'|url(lang=lang) }}" class="faded">{{ _('> 2017 - Main Event - January 27-29') }}</a></li>
-		      <li><a href="{{ '/cz/2017/roadshow-bratislava.html'|url(lang=lang) }}" class="faded">{{ _('> 2017 - Containers Roadshow Bratislava') }}</a></li>
-		      <li><a href="{{ '/cz/2017/roadshow-prague.html'|url(lang=lang) }}" class="faded">{{ _('> 2017 - Containers Roadshow Prague') }}</a></li>
+                      <li><a href="{{ '/cz/2017/index.html'|url(lang=lang) }}" class="faded">{{ _('> 2017 - Main Event - January 27-29') }}</a></li>
+                      <li><a href="{{ '/cz/2017/roadshow-bratislava.html'|url(lang=lang) }}" class="faded">{{ _('> 2017 - Containers Roadshow Bratislava') }}</a></li>
+                      <li><a href="{{ '/cz/2017/roadshow-prague.html'|url(lang=lang) }}" class="faded">{{ _('> 2017 - Containers Roadshow Prague') }}</a></li>
 
                   </ul>
 
@@ -114,12 +114,12 @@
             <li>
                 <div class="dropdown" style="margin-top: 13px;">
                     <div type="button" id="dropdownMenu2" data-toggle="dropdown">
-		      <img src="{{ '/images/lang_flag_%s.svg'|format(lang)|static }}" class="navbar-flag"  />
+		      <img src="{{ '/images/lang_flag_%s.svg'|format(lang)|url }}" class="navbar-flag"  />
                     </div>
                   <ul class="dropdown-menu dropdown-menu-flag" aria-labelledby="dropdownMenu2">
-                    <li><a href="{{ ['en', path]|join('/')|static }}"><img src="{{ '/images/lang_flag_%s.svg'|format('en')|static }}" class="navbar-flag navbar-flag-padded"/> (en)</a></li>
-                    <li><a href="{{ ['cs', path]|join('/')|static }}"><img src="{{ '/images/lang_flag_%s.svg'|format('cs')|static }}" class="navbar-flag navbar-flag-padded"/> (cs)</a></li>
-                    <li><a href="{{ ['sk', path]|join('/')|static }}"><img src="{{ '/images/lang_flag_%s.svg'|format('sk')|static }}" class="navbar-flag navbar-flag-padded"/> (sk)</a></li>
+                      <li><a href="{{ '{}'.format(_page)|url(lang='en') }}"><img src="{{ '/images/lang_flag_%s.svg'|format('en')|url }}" class="navbar-flag navbar-flag-padded"/> (en)</a></li>
+                      <li><a href="{{ '{}'.format(_page)|url(lang='cs') }}"><img src="{{ '/images/lang_flag_%s.svg'|format('cs')|url }}" class="navbar-flag navbar-flag-padded"/> (cs)</a></li>
+                      <li><a href="{{ '{}'.format(_page)|url(lang='sk') }}"><img src="{{ '/images/lang_flag_%s.svg'|format('sk')|url }}" class="navbar-flag navbar-flag-padded"/> (sk)</a></li>
                     <li class="dropdown-header">Site language</li>
                   </ul>
                 </div>
