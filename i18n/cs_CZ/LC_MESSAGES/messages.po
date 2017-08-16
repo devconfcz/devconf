@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: cward@redhat.com\n"
 "POT-Creation-Date: 2017-07-31 12:16+0200\n"
-"PO-Revision-Date: 2017-08-16 14:29+0200\n"
+"PO-Revision-Date: 2017-08-16 17:22+0200\n"
 "Last-Translator: Chris Ward <cward@redhat.com>\n"
 "Language: cs_CZ\n"
 "Language-Team: Chris Ward <cward@redhat.com>\n"
@@ -699,7 +699,7 @@ msgstr ""
 
 #: templates/cz/2017/index.html:4
 msgid "Jan 27-29 - FIT VUT Brno, Czech Republic"
-msgstr "26.-28. ledna 2017 -  FIT VUT Brno, Czech Republic"
+msgstr "27.-29. ledna 2017 -  FIT VUT Brno, Czech Republic"
 
 #: templates/cz/2017/index.html:17 templates/cz/2017/roadshow-bratislava.html:17
 #: templates/cz/2017/roadshow-prague.html:17
@@ -708,7 +708,7 @@ msgstr "Registrace pro tuto událost je UZAVŘENA!"
 
 #: templates/cz/2017/index.html:23 templates/cz/2017/index.html:49
 msgid "January 27-29, 2017"
-msgstr "26.-28. ledna 2017"
+msgstr "27.-29. ledna 2017"
 
 #: templates/cz/2017/index.html:32
 msgid ""
@@ -726,11 +726,11 @@ msgid ""
 "Storage, Cloud and mobile where FLOSS communities sync, share, and hack on "
 "upstream projects together in the beautiful city of Brno, Czech Republic."
 msgstr ""
-"DevConf.cz 2018 je 10. každoroční, volně přístupná komunitní konference "
+"DevConf.cz 2017 je 9. každoroční volně přístupná komunitní konference "
 "sponzorovaná Red Hatem, určená pro vývojáře, administrátory, DevOps inženýry, "
 "testery, dokumentátory a uživatele open-source technologií jako například "
-"Linux, Middleware, Virtualizace, Storage, Cloudových a mobilních řešení kde se "
-"setkávají FLOSS komunity v krásném Brně v České republice.  "
+"Linux, Middleware, Virtualizace, Storage, Cloudových a mobilních řešení, kde se "
+"setkávají FLOSS komunity v krásném městě Brně v České republice."
 
 #: templates/cz/2017/index.html:49
 msgid "When:"
