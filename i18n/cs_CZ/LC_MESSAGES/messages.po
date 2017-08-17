@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: cward@redhat.com\n"
 "POT-Creation-Date: 2017-07-31 12:16+0200\n"
-"PO-Revision-Date: 2017-08-16 17:22+0200\n"
+"PO-Revision-Date: 2017-08-17 16:51+0200\n"
 "Last-Translator: Chris Ward <cward@redhat.com>\n"
 "Language: cs_CZ\n"
 "Language-Team: Chris Ward <cward@redhat.com>\n"
@@ -23,7 +23,7 @@ msgstr ""
 msgid ""
 "DevConf - free and Open Source Software community conferences for developers"
 msgstr ""
-"DevConf - volně přístupná Open Source Software komunitní konference pro vývojáře"
+"DevConf - volně přístupná open source software komunitní konference pro vývojáře"
 
 #: templates/base.html:38
 msgid "Home"
@@ -35,7 +35,7 @@ msgstr "Nadcházející události"
 
 #: templates/base.html:51
 msgid "> 2018 - Main Event - January"
-msgstr "> 2018 - Main Event - January"
+msgstr "> 2018 - Hlavní událost - Leden "
 
 #: templates/base.html:54
 msgid "> 2018 - India"
@@ -171,7 +171,7 @@ msgstr ""
 
 #: templates/coc.html:41
 msgid "Scope"
-msgstr "Zaměření"
+msgstr "Vymezení"
 
 #: templates/coc.html:42
 msgid ""
@@ -181,8 +181,8 @@ msgid ""
 "official project e-mail address, posting to, sharing or referencing official "
 "social media channels."
 msgstr ""
-"Tento Kodex chování je platný jak v rámci prostorů konání akce a ve veřejných "
-"prostostech (fyzických i virtuálních) kdy jedinec reprezentuje projekt nebo "
+"Tento Kodex chování je platný v rámci prostorů konání akce a na veřejných "
+"místech (fyzických i virtuálních) kdy jedinec reprezentuje projekt nebo "
 "komunitu samotnou. Příklady reprezentování projektu nebo komunity zahrnují "
 "používání oficiální projektové mailové adresy, přispívání, sdílení nebo "
 "odkazování na oficiálních kanálech sociálních médií.  "
@@ -201,11 +201,11 @@ msgid ""
 "details of specific enforcement policies may be posted separately."
 msgstr ""
 "Případy násilného, obtěžujícího nebo jinak nepřijatelného chování mohou být "
-"nahlášeny kontaktování vedoucímu projektu na info@devconf.cz. Všechny stížnosti "
-"budou posouzeny a vyšetřeny a s přihlédnutím na okolnosti budou přiměřeně "
-"řešeny.  Vedení projektu je povinno uchovat osobu podávající stížnost v "
-"anonymitě. Bližší informace o specifických postupech při prosazování Kodexu "
-"chování mohou být zveřejněny samostatně. "
+"nahlášeny vedoucímu projektu na info@devconf.cz. Všechny stížnosti budou "
+"posouzeny a vyšetřeny a s přihlédnutím na okolnosti budou přiměřeně řešeny.  "
+"Vedení projektu je povinno uchovat osobu podávající stížnost v anonymitě. "
+"Bližší informace o specifických postupech při prosazování Kodexu chování mohou "
+"být zveřejněny samostatně. "
 
 #: templates/coc.html:47
 msgid ""
@@ -214,7 +214,7 @@ msgid ""
 "members of the project leadership."
 msgstr ""
 "Účastníci události, kteří nerespektující a neprosazují Kodex chování mohou "
-"čelit dočasným či trvalým následkům, které určití vedení projektu."
+"čelit dočasným či trvalým následkům, které určí vedení projektu."
 
 #: templates/coc.html:49
 msgid "Contact Information"
@@ -243,7 +243,7 @@ msgstr "Mediální politika"
 
 #: templates/index.html:4
 msgid "Free and Open Source Software Community Conferences for Developers"
-msgstr "Volně přístupná Open Source Software komunitní konference pro vývojáře"
+msgstr "Volně přístupná open source software komunitní konference pro vývojáře"
 
 #: templates/cz/index.html:17 templates/in/index.html:13 templates/index.html:17
 #: templates/us/index.html:13
@@ -265,8 +265,8 @@ msgid ""
 "The 10th annual, free community conference in Brno for developers, admins, and "
 "users of free and open source Linux, JBoss technologies"
 msgstr ""
-"Desátá každoroční, volně přístupná komunitní konference v Brně pro vývojáře, "
-"administrátory a uživatele Open Source Linuxu, JBoss technologií"
+"Desátá každoroční volně přístupná komunitní konference v Brně pro vývojáře, "
+"administrátory a uživatele open source, Linuxu, JBoss technologií"
 
 #: templates/cz/index.html:28 templates/index.html:28
 msgid "Learn more"
@@ -296,7 +296,7 @@ msgid ""
 "in audio and possibly video format. DevConf.cz uses screen capturing hardware "
 "along with audio recording equipment to broadcast presentations."
 msgstr ""
-"Souhlasem s přednášením na DevConf.cz zároveň souhlasíte s tím, že Vaše "
+"Souhlasem s přednášením na DevConf.cz zároveň souhlasíte s tím, že vaše "
 "přednáška bude nahrávána v audio i video formátu. DevConf.cz využívá screen "
 "capturingového hadrwaru spolu s vybavením na audio nahrávání k vysílání "
 "nahrávek. "
@@ -374,16 +374,16 @@ msgid ""
 "We encourage attendees to take and share their own photographs, as long as the "
 "rules below are followed."
 msgstr ""
-"Pořizování a sdílení vlastních fotografií je vítáno pokud jsou dodrženy uvedené "
-"pravidla."
+"Pořizování a sdílení vlastních fotografií je vítáno, pokud jsou dodrženy "
+"uvedené pravidla."
 
 #: templates/media-policy.html:38
 msgid ""
 "Any photography/recording that is legally allowed in public spaces is allowed "
 "at DevConf.cz."
 msgstr ""
-"Veškeré pořizování fotografií a nahrávek které je legálně povoleno ve veřejných "
-"prostorách je povoleno na konferenci DevConf.cz."
+"Veškeré pořizování fotografií a nahrávek, které je legálně povoleno ve "
+"veřejných prostorách je také povoleno na konferenci DevConf.cz."
 
 #: templates/media-policy.html:39
 msgid ""
@@ -443,7 +443,7 @@ msgstr ""
 
 #: templates/media-policy.html:50
 msgid "How to Report Violations or Issues"
-msgstr "Jak nahlásit porušení pravidel nebo jiné problémy"
+msgstr "Jak nahlásit porušení pravidel a jiné problémy"
 
 #: templates/media-policy.html:51
 msgid ""
@@ -451,7 +451,8 @@ msgid ""
 "the front desk at registration, or by contacting us."
 msgstr ""
 "Prosíme, nahlašujte porušení pravidel nebo problémy s nahráváním či "
-"fotografováním přímo na recepci konference nebo kontaktujte organizační tým. "
+"fotografováním přímo na recepci konference nebo kontaktujte organizační tým "
+"konference. "
 
 #: templates/media-policy.html:55 templates/speaker-agreement.html:59
 msgid ""
@@ -474,16 +475,16 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"\tDevconf.cz je volně přístupná a otevřená každoroční 3-denní open-source "
-"konference zaměřená na Fedora, Linux a  JBoss komunity\n"
+"\tDevconf.cz je každoroční volně přístupná 3-denní open source konference "
+"zaměřená na Fedoru, Linux a JBoss komunity\n"
 "\tpro vývojáře, DevOps, testery a technické dokumentátory,\n"
 "\torganizovaná za účelem synchronizace, sdílení a hackování upstreamových "
 "projektů s komunitou v krásném\n"
-"\tBrně v České republice. "
+"\tměstě Brně v České republice. "
 
 #: templates/section-newsletter.html:10
 msgid "Subscribe to DevConf newsletter"
-msgstr "Zapiště se k odebírání DevConf newsletteru"
+msgstr "Zaregistrujte se k odebírání DevConf newsletteru"
 
 #: templates/speaker-agreement.html:17
 msgid "Compensation"
@@ -495,7 +496,7 @@ msgid ""
 "in any way!"
 msgstr ""
 "Beru na vědomí, že DevConf.cz neposkytuje žádné přímé finanční kompenzace pro "
-"přednášející konference. "
+"přednášející konference."
 
 #: templates/speaker-agreement.html:19
 msgid ""
@@ -505,7 +506,7 @@ msgid ""
 msgstr ""
 "Současně ale jako akceptovaný přednášející a v případě že budu ubytován v "
 "partnerském hotelu, mám možnost získat proplacené ubytování až na 3 noci (<i> "
-"čtvrtek 25. ledna, pátek 26. ledna a sobota 27. ledna</i>)."
+"čtvrtek 26. ledna, pátek 27. ledna a sobota 28. ledna</i>)."
 
 #: templates/speaker-agreement.html:20
 msgid ""
@@ -515,7 +516,7 @@ msgid ""
 "to reserve at one of our partner hotels will be sent to all accepted speakers "
 "in December after selection has completed."
 msgstr ""
-"Poznámka: Toto je platné pouze pro primární přednášející pokud jsou ubytováni v "
+"Poznámka: Toto je platné pouze pro primární přednášející ubytovaných v "
 "jednolůžkovém pokoji. Sekundární přednášející nemají možnost požádat o "
 "proplacení jednolůžkového pokoje, výjimku tvoří případ, kdy oba přednášející "
 "souhlasí se sdílením dvojlůžkového pokoje. Detailní pokyny k rezervování pokoje "
@@ -534,7 +535,7 @@ msgid ""
 msgstr ""
 "Vyplním svůj uživatelský profil, včetně plného jména, kontaktních informací a "
 "fotografie, s vědomím toho, že tyto informace mohou být vyplněny za mě, pokud "
-"je neposkytnu v termínu. "
+"je neposkytnu v termínu."
 
 #: templates/speaker-agreement.html:24
 msgid ""
@@ -542,9 +543,9 @@ msgid ""
 "any other demographic information provided outside of the background / bio text "
 "submitted will not."
 msgstr ""
-"Poznámka: Pokud je vyplněno uživatelské jméno pro Twitter, bude zveřejněno. "
-"Mail ani jiné demografické informace vyplněné v profilu mimo text biografie "
-"zveřejněny nebudou."
+"Poznámka: Pokud je vyplněn Twitter handle, bude zveřejněn. Mail ani jiné "
+"demografické informace vyplněné v profilu, mimo text, biografie zveřejněny "
+"nebudou."
 
 #: templates/speaker-agreement.html:27
 msgid "Session Preparation"
@@ -556,10 +557,9 @@ msgid ""
 "DevConf.cz planning team immediately and DevConf.CZ will replace my session."
 msgstr ""
 "Pokud nebudu schopen vynaložit potřebný čas a energii, uvědomím o tom "
-"organizátory konference neprodleně a DevConf.cz mou přednášku nahradí. "
+"organizátory konference neprodleně a DevConf.cz mou přednášku nahradí."
 
 #: templates/speaker-agreement.html:29
-#, fuzzy
 msgid ""
 "I understand that if I am participating on a tutorial with others that I am "
 "expected to communicate with the other speakers on my session before the event. "
@@ -567,8 +567,10 @@ msgid ""
 "expected to spend a significant amount of time preparing for my session before "
 "the event."
 msgstr ""
-"Jsem srozumněn s tím, že účastněním se na tutoriálu s ostatními je očekávána "
-"moje komunikace s dalšími přednášejícími před samotnou akcí. "
+"Rozumím tomu, že účastněním se společného tutoriálu s ostatními je očekávána "
+"moje komunikace s dalšími přednášejícími před samotnou akcí. Současně rozumím "
+"tomu, že ve chvíli, kdy přednáším, skupinově nebo jako jednotlivec, očekává se, "
+"že vynaložím značný čas přípravou na tuto přednášku v době před konferencí. "
 
 #: templates/speaker-agreement.html:30
 msgid ""
@@ -584,7 +586,7 @@ msgstr "Konflikty programu"
 
 #: templates/speaker-agreement.html:33
 msgid "Session format"
-msgstr "Formát přednášek"
+msgstr "Formát přednášky"
 
 #: templates/speaker-agreement.html:34
 msgid "Technical requirements/requests"
@@ -596,7 +598,7 @@ msgstr "Změny v seznamu přednášejících"
 
 #: templates/speaker-agreement.html:38
 msgid "Obtaining Consent"
-msgstr "Získání svolení"
+msgstr "Získání povolení"
 
 #: templates/speaker-agreement.html:39
 msgid ""
@@ -610,13 +612,15 @@ msgstr ""
 
 #: templates/speaker-agreement.html:41
 msgid "Promoted Content"
-msgstr "Propagovaný obsah"
+msgstr "Obsah přednášky"
 
 #: templates/speaker-agreement.html:42
 msgid ""
 "I understand that DevConf.cz is primarily an educational event, not a sales "
 "platform."
-msgstr "Rozumím, že DevConf.cz je primárně vzdělávací akcí, nikoliv "
+msgstr ""
+"Rozumím, že DevConf.cz je primárně vzdělávací akcí, nejedná se o obchodní "
+"platformu."
 
 #: templates/speaker-agreement.html:43
 msgid ""
@@ -627,7 +631,7 @@ msgid ""
 msgstr ""
 "Rozumím tomu, že pokud je obsah mojí prezentace mířen primárně na marketing a "
 "prodej konkrétního produktu, bude to jasně zřetelné z názvu přednášky a jejího "
-"popisu a nastavenu v <i> Typu prezentace </i> jako <i> Prodej/Marketing</i> v "
+"popisu a nastaveno v <i> Typu prezentace </i> jako <i> Prodej/Marketing</i> v "
 "mé CFP přihlášce. "
 
 #: templates/speaker-agreement.html:45
@@ -639,26 +643,25 @@ msgid ""
 "I understand that staying focused on the topic outlined in the title and "
 "description of my session is extremely important."
 msgstr ""
-"Rozumím tomu, že držet je tématu popsaného v názvu a popisu mojí přednášky je "
-"extrémně důležité. "
+"Rozumím tomu, že držet se tématu popsaného v názvu a popisu mojí přednášky je "
+"extrémně důležité."
 
 #: templates/speaker-agreement.html:47
-#, fuzzy
 msgid ""
 "During my session, I pledge to stay focused on the topic at hand and make sure "
 "that the information presented adheres to the difficulty level (beginner, "
 "intermediate, or advanced) designated for my session."
 msgstr ""
-"V průběhu mojí přednášky se zavazuji k tomu, že se budu držet tématu a ujistím, "
+"Zavazuji k tomu, že v průběhu mojí přednášky se budu držet tématu a ujistím se, "
 "že prezentované informace jsou v souladu s úrovní obtížnosti (začátečník, "
-"středně pokročilý a pokročilý) označenou pro moji přednášku."
+"středně pokročilý a pokročilý) mé přednášky."
 
 #: templates/speaker-agreement.html:50
 msgid ""
 "I understand that my slides and on-stage remarks must abide by the <a href="
 "\"coc.html\">Code of Conduct</a> which will be adhered during this conference."
 msgstr ""
-"Rozumím tomu, že moje prezentace i poznámky na pódiu se musí držet našeho <a "
+"Rozumím tomu, že moje prezentace i vystupování na pódiu se musí držet našeho <a "
 "href=\"coc.html\">Kodexu Chování</a>, který bude dodržován v průběhu celé "
 "konference. "
 
@@ -668,7 +671,7 @@ msgid ""
 "to modify my presentation if it does not adhere with the <a href=\"coc.html"
 "\">Code of Conduct</a>."
 msgstr ""
-"Rozumím tomu, že moje prezentace může být shlédnuta před samotnu prezentací a "
+"Rozumím tomu, že moje prezentace může projít revizí před samotnu konferencí a "
 "že mohu být požádán o změny, pokud prezentace není v souladu s  <a href=\"coc."
 "html\">Kodexem chování</a>."
 
@@ -692,14 +695,14 @@ msgid ""
 "conference unless otherwise agreed to with the <a href=\"mailto:info@devconf.cz"
 "\">event organizer</a> in advance."
 msgstr ""
-"Přečetl jsem <a href=\"media-policy.html\">Mediální politiku</a> a rozumímtou, "
-"že moje prezentace bude nahrávána a publikována pokud předem výslovně "
-"nevyjádřím nesouhlas <a href=\"mailto:info@devconf.cz\">organizátorovi "
-"konference</a>."
+"Pozorně jsem přečetl sekci <a href=\"media-policy.html\">Mediální politika</a> "
+"a rozumím tomu, že moje prezentace bude nahrávána a publikována pokud s tím "
+"předem výslovně nevyjádřím nesouhlas <a href=\"mailto:info@devconf.cz"
+"\">organizátorovi konference</a>."
 
 #: templates/cz/2017/index.html:4
 msgid "Jan 27-29 - FIT VUT Brno, Czech Republic"
-msgstr "27.-29. ledna 2017 -  FIT VUT Brno, Czech Republic"
+msgstr "27.-29. ledna 2017 -  FIT VUT Brno, Česká republika"
 
 #: templates/cz/2017/index.html:17 templates/cz/2017/roadshow-bratislava.html:17
 #: templates/cz/2017/roadshow-prague.html:17
@@ -716,7 +719,7 @@ msgid ""
 "Source technologies."
 msgstr ""
 "Volně přístupná každoroční konference pro vývojáře, administrátory a uživatele "
-"open-source technologií."
+"open source technologií."
 
 #: templates/cz/2017/index.html:45
 msgid ""
@@ -726,9 +729,9 @@ msgid ""
 "Storage, Cloud and mobile where FLOSS communities sync, share, and hack on "
 "upstream projects together in the beautiful city of Brno, Czech Republic."
 msgstr ""
-"DevConf.cz 2017 je 9. každoroční volně přístupná komunitní konference "
-"sponzorovaná Red Hatem, určená pro vývojáře, administrátory, DevOps inženýry, "
-"testery, dokumentátory a uživatele open-source technologií jako například "
+"DevConf.cz 2017 je 9. ročník každoroční volně přístupné komunitní konference "
+"sponzorované Red Hatem, určené pro vývojáře, administrátory, DevOps inženýry, "
+"testery, dokumentátory a uživatele open source technologií jako například "
 "Linux, Middleware, Virtualizace, Storage, Cloudových a mobilních řešení, kde se "
 "setkávají FLOSS komunity v krásném městě Brně v České republice."
 
@@ -745,7 +748,6 @@ msgid "Faculty of Information Technology (VUT FIT) Božetěchova 2 - Brno"
 msgstr "Fakulta informačních technologií (VUT FIT) Božetěchova 2 - Brno"
 
 #: templates/cz/2017/index.html:53
-#, fuzzy
 msgid "You should consider attending DevConf.cz 2017 if you are:"
 msgstr "Účast na DevConf.cz zvažujte především pokud jste:"
 
@@ -755,7 +757,7 @@ msgstr "Vývojář"
 
 #: templates/cz/2017/index.html:56
 msgid "A technology architect"
-msgstr "Návrhář technologií"
+msgstr "Technology architect"
 
 #: templates/cz/2017/index.html:57
 msgid "An IT consultant"
@@ -763,14 +765,14 @@ msgstr "IT konzultant"
 
 #: templates/cz/2017/index.html:58
 msgid "An IT student or a teacher from an IT university/faculty"
-msgstr "IT student nebo učitel na IT univerzitě či fakultě"
+msgstr "IT student nebo vyučující na IT univerzitě či fakultě"
 
 #: templates/cz/2017/index.html:59
 msgid ""
 "Or simply an IT enthusiast interested in the latest trends in open source and "
 "emerging digital technologies"
 msgstr ""
-"Nebo jednoduše nadšenec do IT, zajímající se o nejnovější trendy v open-source "
+"Nebo jednoduše nadšenec do IT, zajímající se o nejnovější trendy v open source "
 "a nově vznikajících digitálních technologií"
 
 #: templates/cz/2017/index.html:61
@@ -780,7 +782,7 @@ msgid ""
 "href=\"https://www.youtube.com/channel/UCIHsqY_4eWeInVQnxZ7WSjg\">DevConf.cz "
 "YouTube Channel</a>."
 msgstr ""
-"Pokud vás zajímaví akce z minulých let, navštivte <a href=\"https://"
+"Pokud vás zajímají akce z minulých let, navštivte <a href=\"https://"
 "devconfcz2016.sched.org/\">Program DevConf.cz 2016 </a> a videa <a href="
 "\"https://www.youtube.com/channel/UCIHsqY_4eWeInVQnxZ7WSjg\">DevConf.cz na "
 "našem YouTube kanálu</a>."
@@ -790,13 +792,12 @@ msgid ""
 "DevConf.cz is a free conference and there is no admission or ticket charge. "
 "This year we will require that you <b>register for free</b>."
 msgstr ""
-"DevConf.cz je volně přístupná konference a nejsou zde žádné poplatky za lístek "
-"či vstup. Tento rok je však nutné se  <b>zdarma zaregistrovat</b>. "
+"DevConf.cz je volně přístupná konference a bez jakýchkoli vstupních poplatků. "
+"Tento rok je však nutné se  <b>zdarma zaregistrovat</b>. "
 
 #: templates/cz/2017/index.html:63
-#, fuzzy
 msgid "Register here: On site Registration only!"
-msgstr "Registrace zde: Registrace pouze na místě konání!"
+msgstr "Registrace: Registrace pouze na místě konání!"
 
 #: templates/cz/2017/index.html:64
 msgid "Talks, presentations, and workshops will all be in <i>English</i>."
@@ -809,8 +810,8 @@ msgid ""
 "very well organized and Brno is also a nice city\""
 msgstr ""
 "\"Je to skvělá konference na poznání úžasných lidí z celého světa s dobrými "
-"prezentacemi a workshopy o open-source softwaru  ... dobře organizovaná a Brno "
-"krásné město.\""
+"prezentacemi a workshopy o open source softwaru  ... dobře organizovaná a Brno "
+"je krásné město.\""
 
 #: templates/cz/2017/index.html:107
 msgid ""
@@ -832,7 +833,7 @@ msgstr ""
 
 #: templates/cz/2017/index.html:174
 msgid "Travel Information"
-msgstr "Informace o cestování"
+msgstr "Informace o dopravě"
 
 #: templates/cz/2017/index.html:178
 msgid ""
@@ -862,14 +863,14 @@ msgid ""
 msgstr ""
 "Letiště Brno je malé mezinárodní letiště blízko Brna, je dobrou volbou "
 "především pokud cestujete z Londýna (Stansted - Ryanair, Luton - Wizzair), "
-"Mnichova (Lufthansa), Eindhovenu (Wizzair)."
+"Mnichova (Lufthansa) nebo Eindhovenu (Wizzair)."
 
 #: templates/cz/2017/index.html:184
 msgid ""
 "The newly opened flight from Munich (Lufthansa) operates daily except Sunday "
 "and dramatically improves the flight connection directly to Brno.</strong>"
 msgstr ""
-"Nově vzniklá linka do Mnichova (Lufthansa) obsluhuje lety téměř denně s "
+"Nově zavedená linka do Mnichova (Lufthansa) obsluhuje lety téměř denně s "
 "výjimkou neděle a dramaticky tak zlepšuje návaznost letů přímo do Brna."
 
 #: templates/cz/2017/index.html:185
@@ -878,7 +879,7 @@ msgid ""
 "and drop you off next to the main train station and Student Agency bus stop. "
 "You can also take a taxi: approx. 300 CZK/€11."
 msgstr ""
-"Z letiště využijtě autobusové linky veřejné dopravy č. 76, která končí svou "
+"Z letiště využijte autobusové linky veřejné dopravy č. 76, která končí svou "
 "jízdu na hlavním nádraží blízko centru města a také blízko zastávky autobusů "
 "Student Agency. Rovněž je možné využít taxi služby, přibližně 300 Kč (11 EUR)."
 
@@ -887,8 +888,8 @@ msgid ""
 "<strong><a href=\"http://www.viennaairport.com/\">Vienna International Airport</"
 "a></strong> (VIE, 22 million)"
 msgstr ""
-"<strong><a href=\"http://www.viennaairport.com/\">Mezinárodní letiště Víděň</"
-"a></strong> (VIE, 22 million)"
+"<strong><a href=\"http://www.viennaairport.com/\">Mezinárodní letiště Vídeň</"
+"a></strong> (VIE, 22 milionů cestujících ročně)"
 
 #: templates/cz/2017/index.html:190
 msgid ""
@@ -905,22 +906,24 @@ msgid ""
 "use stop Vienna Schwechat Airport as your starting place). The direct bus takes "
 "2 hours."
 msgstr ""
-"Nejjednodušší způsobit přepravy z letiště do Brna jsou <a href=\"http://"
-"jizdenky.studentagency.cz/\">autobusy Student Agency</a> (je možná online "
-"rezervace; ze zastávky Vienna Schwechat Airport). Jedná se o přímé autobusové "
-"spojení a cesta trvá 2 hodiny."
+"Nejjednodušší způsob přepravy z letiště do Brna jsou <a href=\"http://jizdenky."
+"studentagency.cz/\">autobusy Student Agency</a> (je možná online rezervace; ze "
+"zastávky Vienna Schwechat Airport). Jedná se o přímé autobusové spojení a cesta "
+"trvá 2 hodiny."
 
 #: templates/cz/2017/index.html:192
 msgid ""
 "Alternately, you can take a train from the airport to the city centre of Vienna "
 "and then take an EC train to Brno from there."
 msgstr ""
-"Alternativně je možné využít vlakového spojení z centra Vídně a poté přestoupit "
-"na vlak EC do Brna. "
+"Alternativně je možné využít vlakového spojení z letiště do centra Vídně a poté "
+"přestoupit na vlak EC do Brna. "
 
 #: templates/cz/2017/index.html:195
 msgid "<strong>Václav Havel Airport Prague</strong></a> (PRG, 11 million)"
-msgstr "<strong>Letiště Václava Havla v Praze</strong></a> (PRG)"
+msgstr ""
+"<strong>Letiště Václava Havla Praha</strong></a> (PRG, 11  milionů cestujících "
+"ročně)"
 
 #: templates/cz/2017/index.html:197
 msgid "This is the second busiest airport in the region."
@@ -933,34 +936,35 @@ msgid ""
 "station (Florenc). Czech Railways provides shuttle buses between the airport "
 "and the Prague main train station."
 msgstr ""
-"Je možné rezervovat si cestu jako se společností <a href=\"http://jizdenky."
-"studentagency.cz/\">Student Agency </a>, která odjíždí z hlavního autobusového "
-"nádraží v Praze - Florenc. České dráhy provozují kyvadlovou dopravu mezi "
-"letištěm a hlavním autobusovým nádražím v Praze."
+"Je možné rezervovat si jízdenku se společností <a href=\"http://jizdenky."
+"studentagency.cz/\">Student Agency </a>, směr hlavní autobusové nádraží v Praze "
+"- Florenc. České dráhy provozují kyvadlovou dopravu mezi letištěm a hlavním "
+"vlakovým nádražím v Praze."
 
 #: templates/cz/2017/index.html:199
 msgid ""
 "To get from the Prague airport to Brno takes at least 3.5 hours by public "
 "transport. Note, it is faster to get to Brno from Vienna."
 msgstr ""
-"Cesta z Prahy do Brna trvá asi 3.5 hodiny při využití veřejné dopravy. Cesta do "
-"Brna je rychlejší z Vídně. "
+"Cesta veřejnou dopravou z Prahy do Brna trvá asi 3.5 hodiny. Cesta do Brna je "
+"rychlejší z Vídně. "
 
 #: templates/cz/2017/index.html:201
 msgid "<strong>Bratislava Airport</strong></a> (BTS, 1.4 million)"
-msgstr "<strong>Letiště Bratislava</strong></a> (BTS)"
+msgstr ""
+"<strong>Letiště Bratislava</strong></a> (BTS, 1.4  milionu cestujících ročně)"
 
 #: templates/cz/2017/index.html:203
 msgid ""
 "This airport is a good option for cheap flights within Europe. If you are "
 "flying to Brno from outside of Europe, this airport is not recommended."
 msgstr ""
-"Toto letiště je dobrou volbou pro levné lety v rámci Evropy. Pokud letíte z "
-"Brna mimo Evropu, není toto letiště doporučeno. "
+"Toto letiště je dobrou volbou pro levné lety v rámci Evropy. Pokud letíte do "
+"Brna z letiště mimo Evropu, není toto letiště doporučeno."
 
 #: templates/cz/2017/index.html:204
 msgid "Bratislava Airport is a hub of Ryanair."
-msgstr "Letiště v Bratislavě je uzlem Ryanairu. "
+msgstr "Letiště v Bratislavě je dopravním uzlem Ryanairu. "
 
 #: templates/cz/2017/index.html:205
 msgid ""
@@ -968,7 +972,7 @@ msgid ""
 "Brno. You have to take a city bus to the centre and take a coach or train to "
 "Brno from there. It takes at least three hours."
 msgstr ""
-"Neexistuje přímé spojení mezi letištěm v Bratislavě a Brnem. Je nutné využít "
+"Mezi letištěm v Bratislavě a Brnem neexistuje přímé spojení. Je nutné využít "
 "autobusového spojení do centra a dále pak vlaku nebo autobusu do Brna. Cesta "
 "trvá nejméně tři hodiny."
 
@@ -982,7 +986,7 @@ msgstr ""
 "Další malé letiště se nacházejí také v <a href=\"http://www.airport-ostrava.cz/"
 "en/\">Ostravě</a> (lety do Paříže a Londýna) a v <a href=\"http://www.airport-"
 "pardubice.cz/en\">Pardubicích</a> (lety do Petrohradu a Moskvy). Obě letiště "
-"mají dobré vlakové a autobusové spojení do Brna. "
+"mají dobré vlakové a autobusové spojení do Brna."
 
 #: templates/cz/2017/index.html:211
 msgid "By Train"
@@ -994,46 +998,49 @@ msgstr "Jízdní řády vlaků:"
 
 #: templates/cz/2017/index.html:216
 msgid "Prague - trains between Prague and Brno go hourly, 2.5 hours"
-msgstr "Praha - vlaky z Prahy do Brna každou hodinu, jízda trvá 2.5 hodiny"
+msgstr "Praha - vlaky z Prahy do Brna jezdí každou hodinu, cesta trvá 2.5 hodiny"
 
 #: templates/cz/2017/index.html:217
 msgid "Vienna - trains between Wien Hbf and Brno go every hour, 1.5 hour"
 msgstr ""
-"Vídeň - vlaky z Vídňě (Hauptbahnhof) jezdí každou hodinu, jízda trvá 1.5 hodiny "
+"Vídeň - vlaky z Vídně (Hauptbahnhof) jezdí každou hodinu, cesta trvá 1.5 hodiny "
 
 #: templates/cz/2017/index.html:218
 msgid "Bratislava - from Bratislava Hlavna Stanica hourly, 1.5 hour"
 msgstr ""
-"Bratislava - z Bratislavi (Hlavná Stanica) každou hodinu, jízda trvá 1.5 hodiny"
+"Bratislava - vlaky z Bratislavy (Hlavná Stanica) jezdí každou hodinu, cesta "
+"trvá 1.5 hodiny"
 
 #: templates/cz/2017/index.html:219
 msgid "Budapest - from Budapest-Keleti pu several trains every day, 5 hours"
-msgstr "Budapešť - Z Budapeště (Keleti) několikrát denně, jízda trvá 5 hodin"
+msgstr ""
+"Budapešť - vlaky z Budapeště (Keleti) jezdí několikrát denně, cesta trvá 5 hodin"
 
 #: templates/cz/2017/index.html:220
 msgid ""
 "Warsaw - from Warszawa Centralna several times every day (usually one "
 "connection), 7 hours"
 msgstr ""
-"Varšava - z Varšavy (Centralna) několikrát denně (obvykle přímý spoj), jízda "
-"trvá 7 hodin"
+"Varšava - vlaky z Varšavy (Centralna) jezdí několikrát denně (obvykle přímý "
+"spoj), cesta trvá 7 hodin"
 
 #: templates/cz/2017/index.html:221
 msgid "Berlin - from Berlin Hauptbahnhof several trains every day, 7.5 hours"
-msgstr "Berlín - z Berlína (Hauptbahnhof) několikrát denně, jízda trvá 7.5 hodiny"
+msgstr ""
+"Berlín - vlaky z Berlína (Hauptbahnhof) jezdí několikrát denně, cesta trvá 7.5 "
+"hodiny"
 
 #: templates/cz/2017/index.html:224
 msgid "By Bus"
 msgstr "Autobusem"
 
 #: templates/cz/2017/index.html:225
-#, fuzzy
 msgid ""
 "Brno is part of the European bus network and all connections and their prices "
 "are similar to trains."
 msgstr ""
 "Brno je součástí evropské autobusové sítě a všechna spojení a jejich ceny jsou "
-"podobné vlakovým. "
+"srovnatelné s těmi vlakovými."
 
 #: templates/cz/2017/index.html:228
 msgid "By Car"
@@ -1046,10 +1053,10 @@ msgid ""
 "purchase a highway sticker. The 10 day sticker costs 350 CZK/13 € and can be "
 "purchased at every gas station. Travel time examples:"
 msgstr ""
-"Brno je dobře propojené s ostatními městy dálnicí. Do blízkých měst je možné se "
-"dostat autem. Na českých dálnicích je nutné koupit dálniční známku. Známka na "
-"10 dní stojí 350 CZK / 13 EUR a je možné ji koupit na každé benzínové stanici. "
-"Příklady délky cesty:"
+"Brno je dobře propojené s ostatními městy dálnicí. Do sousedním zemí je možné "
+"se dostat autem. Na českých dálnicích je nutné zakoupit dálniční známku. Známka "
+"na 10 dní stojí 350 CZK / 13 EUR a je možné ji koupit na každé benzínové "
+"stanici. Příklady vzdáleností a délek cest:"
 
 #: templates/cz/2017/index.html:231
 msgid "Prague - 210 km, 2 hours"
@@ -1077,11 +1084,11 @@ msgstr "Berlín - 555 km, 5.2 hours"
 
 #: templates/cz/2017/index.html:239
 msgid "Note: The Avanti Hotel offers free parking for their guests."
-msgstr "Poznámka: Hotel Avanti nabízí svým hostům parkování zdarma "
+msgstr "Poznámka: Hotel Avanti poskytuje svým hostům parkování zdarma. "
 
 #: templates/cz/2017/index.html:241
 msgid "Local Transport"
-msgstr "Místní přeprava"
+msgstr "Místní doprava"
 
 #: templates/cz/2017/index.html:242
 msgid ""
@@ -1098,15 +1105,15 @@ msgid ""
 "\"http://www.dpmb.cz/Default.aspx\">here</a>."
 msgstr ""
 "Veřejná doprava v Brně je zajišťována <a href=\"http://www.dpmb.cz/default.aspx"
-"\" target=\"_blank\">DPMB</a>,  který provoze 12 tramvajových linek, 13 "
-"trolejbusových linek a 37 autobusových. V noci je veškerá přeprava zajišťována "
-"11ti autobusovými linkami. Pokud chcete využít veřejné dopravy je nutné pořídit "
-"lístek přes nástupem do linky. Pro jakoukoli zastávku v Brně je nutné koupit "
-"dvou-zónové lístek pro zóny 100 a 101. Jízdenky platní pro jednu cestu je možné "
-"zakoupit v automatech (přijímají pouze mince) na mnoha zastávkách nebo v "
-"trafikách. Lístek je nutné označit ihned po nastoupení do vozu.  Více informací "
-"k platbě v brněnských linkách veřejné dopravy můžete najít <a href=\"http://www."
-"dpmb.cz/Default.aspx\">zde</a>."
+"\" target=\"_blank\">DPMB</a>, který provozuje 12 tramvajových linek, 13 "
+"trolejbusových linek a 37 autobusových linek. V noci je veškerá přeprava "
+"zajišťována 11ti autobusovými linkami. Pokud chcete využít veřejné dopravy, je "
+"nutné pořídit lístek před nástupem do vozu. Pro cestování kdekoli v Brně je "
+"nutné koupit dvou-zónový lístek pro zóny 100 a 101. Jízdenky je možné zakoupit "
+"v automatech (přijímají pouze mince) na mnoha zastávkách nebo v trafikách. "
+"Lístek je nutné označit ihned po nastoupení do vozu. Více informací k platbě v "
+"brněnských linkách veřejné dopravy můžete najít <a href=\"http://www.dpmb.cz/"
+"Default.aspx\">zde</a>."
 
 #: templates/cz/2017/index.html:244
 msgid ""
@@ -1124,7 +1131,7 @@ msgstr ""
 "<strong>SMS jízdenky:</strong> The DPMB také nabízí <a href=\"http://www.dpmb."
 "cz/Default.aspx?seo=sms-jizdenky\">sms jízdenky</a>. Služba je dostupná pouze "
 "pro české SIM karty. Pro objednání jízdenky zašlete SMS zprávu s příslušným "
-"kódem na číslo 90206. Kód pro jízdenku platnou 75 minut je (29 Kč) je BRNO. Pro "
+"kódem na číslo 90206. Kód pro jízdenku platnou 75 minut je BRNO (29 Kč). Pro "
 "objednání celodenní jízdenky je kód BRNOD (99 Kč). Po zaslání SMS zprávy "
 "obdržíte do několika minut zprávu s platnou jízdenkou. Pokud nemáte českou SIM "
 "kartu, můžete využít mobilní aplikaci Sejf dostupnou na <a href=\"https://"
@@ -1141,14 +1148,14 @@ msgid ""
 "likely to speak English). When you first use your ticket, be sure to validate "
 "it. You only have to validate your ticket one time."
 msgstr ""
-"Pokud v brně zůstáváte na více dní, zvažte nákup 5ti denního lístku, který "
-"stojí 250 Kč. Tento lístek je možné pořídit na více místech, například na "
-"hlavním nádraží u jakékoli přepážky. Při prvním použití jízdenky je nutné ji "
-"označit, není třeba ji označovat vícekrát. "
+"Pokud v Brně zůstáváte na více dní, zvažte nákup 5ti denního lístku (250 Kč). "
+"Tento lístek je možné pořídit na několika místech, například na Hlavním nádraží "
+"u jakékoli přepážky. Při prvním použití jízdenky je nutné ji označit, není "
+"třeba ji označovat vícekrát."
 
 #: templates/cz/2017/index.html:247
 msgid "Brno Local Transport Timetable"
-msgstr "Jízdní řády Brněnské městské dopravy"
+msgstr "Brněnské městská doprava - Jízdní řády "
 
 #: templates/cz/2017/index.html:248
 msgid ""
@@ -1157,10 +1164,10 @@ msgid ""
 "Store</a> or <a href=\"https://play.google.com/store/apps/details?id=cz.mafra."
 "jizdnirady&hl=cs\">Google Play</a>."
 msgstr ""
-"Stáhněte si aplikaci  \"Jízdní řády\"  se všemi místními jízdními řády z  <a "
-"href=\"https://itunes.apple.com/cz/app/jizdni-rady-idos/id473503749?"
-"mt=8\">Apple App Store</a> or <a href=\"https://play.google.com/store/apps/"
-"details?id=cz.mafra.jizdnirady&hl=cs\">Google Play</a>."
+"Stáhněte si aplikaci  \"Jízdní řády\" s místními jízdními řády z  <a href="
+"\"https://itunes.apple.com/cz/app/jizdni-rady-idos/id473503749?mt=8\">Apple App "
+"Store</a> nebo na <a href=\"https://play.google.com/store/apps/details?id=cz."
+"mafra.jizdnirady&hl=cs\">Google Play</a>."
 
 #: templates/cz/2017/index.html:251
 msgid "Travelling From the Main Railway Station to the Venue"
@@ -1174,11 +1181,11 @@ msgid ""
 "Božetěchova. Continue straight approximately 100 m. The building on your left "
 "hand side is the university."
 msgstr ""
-"Z hlavního nádraží vužijte tramvaje č. 1 (směr Řečkovice).Vystupte na zastávce "
-"Semilasso (přibližně po 15ti minutách). Přejděte na ulici po pravé straně, "
-"Metodějova. Po přibližně 200 metrech zabočte na první ulici v pravo, "
+"Z Hlavního nádraží využijte tramvaje č. 1 (směr Řečkovice). Vystupte na "
+"zastávce Semilasso (přibližně po 15ti minutách). Přejděte na ulici po pravé "
+"straně, Metodějova. Po přibližně 200 metrech zabočte na první ulici vpravo, "
 "Božetěchova. Pokračujte přímo přibližně 100 metrů, po vaší levé straně uvidíte "
-"budovu univerzity.  "
+"budovu univerzity."
 
 #: templates/cz/2017/index.html:254
 msgid "Travelling From the Main Bus Station to the Venue"
@@ -1193,8 +1200,8 @@ msgid ""
 msgstr ""
 "Z hlavního autobusového nádraží (Zvonařka) využijte autobusové linky 44 nebo "
 "67. Vystupte na zastávce \"Semilasso\". Pokračujte 100 metrů ve směru jízdy "
-"autobusu a zabočte na první ulici v pravo. Po přibližně 400 metrech dorazíte k "
-"budově univerzity. "
+"autobusu a zabočte na první ulici vpravo. Po přibližně 400 metrech dorazíte k "
+"budově univerzity."
 
 #: templates/cz/2017/index.html:257
 msgid "Travelling From the Main Railway Station to the Red Hat office"
@@ -1208,7 +1215,7 @@ msgid ""
 msgstr ""
 "Z hlavní vlakové stanice využijte tramvajové linky č. 12 (směr Technologický "
 "park). Vystupte na zastávce Červinkova (budovy FBCI a FBCII) nebo Technologický "
-"park (budovy TPB-B a TPB-C). Cesta trvá přibližně 17 minut."
+"park (budova TPB-B). Cesta trvá přibližně 17 minut."
 
 #: templates/cz/2017/index.html:260
 msgid "Travelling From the Main Bus Station to the Red Hat office"
@@ -1224,15 +1231,14 @@ msgid ""
 "same instructions as above."
 msgstr ""
 "Využijte tramvajové linky č. 12 (směr Technologický park). Vystupte na zastávce "
-"Červinkova (budovy FBCI a FBCII) nebo Technologický park (budovy TPB-B a TPB-"
-"C). Cesta trvá přibližně 17 minut.\n"
+"Červinkova (budovy FBCI a FBCII) nebo Technologický park (budova TPB-B). Cesta "
+"trvá přibližně 17 minut.\n"
 "Rovněž můžete využít autobusových linek 44 nebo 67 a vystoupit na zastávce "
-"Skácela, kde přestoupíte na tramvaj č. 12 a dále bude pokračovat dle instrukcí "
-"výše. "
+"Skácela, kde přestoupíte na tramvaj č. 12 a dále pokračujte dle instrukcí výše. "
 
 #: templates/cz/2017/index.html:263
 msgid "Travelling From the Red Hat office to the Venue"
-msgstr "Cesta kanceláří Red Hatu na konferenci"
+msgstr "Cesta z kanceláří Red Hatu na konferenci"
 
 #: templates/cz/2017/index.html:264
 msgid ""
@@ -1242,11 +1248,11 @@ msgid ""
 "the bus stop at the corner diagonally opposite the tram stop you exited at. "
 "From both buses, get off at the Semilasso stop."
 msgstr ""
-"Ze zastávky Červinkova (nebo Technologický park z budov TPB) využijte tramvaje "
-"č. 12 směr Komárov. Vystupte na zastávce Skácelova (první zastávka ze zastávky "
+"Ze zastávky Červinkova (nebo Technologický park z budovy TPB) využijte tramvaje "
+"č. 12, směr Komárov. Vystupte na zastávce Skácelova (první zastávka ze zastávky "
 "Červinkova a třetí z Technologického parku). Využijte autobusové linky 30, 84 "
-"nebo 53 z autobusé zastávky diagonálně oproti tramvajové zastávce, vystupte na "
-"zastávce Semilasso."
+"nebo 53 z autobusové zastávky diagonálně oproti tramvajové zastávce, vystupte "
+"na zastávce Semilasso."
 
 #: templates/cz/2017/index.html:266
 msgid "Travelling From Venue to the Red Hat office"
@@ -1262,9 +1268,8 @@ msgid ""
 msgstr ""
 "Ze zastávky Semilasso využijte autobusu 30 nebo 44, a na zastávce Skácelova "
 "přestupte na tramvaj č. 12 směr Technologický park a vystupte na první zastávce "
-"Červinkova (FBCI a FBCII) nebo na třetí zastávce Technologický park (TPB-B a "
-"TPB-C). Po výstupu z autobusu je tramvajová zastávce přes cestu po pravé "
-"straně.  "
+"Červinkova (FBCI a FBCII) nebo na třetí zastávce Technologický park (TPB-B). Po "
+"výstupu z autobusu je tramvajová zastávka přes cestu po pravé straně."
 
 #: templates/cz/2017/index.html:269
 msgid "Travelling From the Main Train Station to the Hotels"
@@ -1404,8 +1409,8 @@ msgid ""
 "Automate modern app development with containers and OpenShift - Radek Vokál + "
 "Jiří Kolář"
 msgstr ""
-"Automatizace moderního vývoje aplikací s kontejnery  a OpenShiftem - Radek "
-"Vokál + Jiří Kolář"
+"Automatizace moderního vývoje aplikací s kontejnery a OpenShiftem - Radek Vokál "
+"+ Jiří Kolář"
 
 #: templates/cz/2017/roadshow-prague.html:80
 msgid "Linux Containers - the DIY way - Vilibald Wanča"
@@ -1457,7 +1462,7 @@ msgstr "Nauč se základy OpenShift - Jiří Kolář"
 
 #: templates/cz/2017/roadshow-prague.html:202
 msgid "Speakers"
-msgstr "Mluvčí"
+msgstr "Přednášející"
 
 #: templates/cz/2017/roadshow-prague.html:342
 msgid "Venue"
@@ -1469,7 +1474,7 @@ msgstr "Tuto událost vám přináší:"
 
 #: templates/cz/2017/roadshow-prague.html:355
 msgid "World's leading provider of open source, enterprise IT solutions."
-msgstr "Světový lídr v poskytování open-source podnikových IT řešení. "
+msgstr "Světový lídr v poskytování open source podnikových IT řešení. "
 
 #: templates/cz/2017/roadshow-prague.html:362
 msgid "And supported by our friends at:"
@@ -1484,22 +1489,22 @@ msgstr ""
 "témata."
 
 #: templates/cz/2017/roadshow-prague.html:378
-#, fuzzy
 msgid ""
 "OpenShift is an open source PaaS by Red Hat based on top of Docker containers "
 "and the Kubernetes container cluster manager for enterprise app development and "
 "deployment."
 msgstr ""
-"OpenShift je open-source PaaS poskutována Red Hatem postavená na Docker "
-"kontejnerech a Kubernetes kontejnerech "
+"OpenShift je open source PaaS poskytovaná společností Red Hat, postavená na "
+"Docker kontejnerech a Kubernetes kontejnerech pro vývoj a nasazení podnikový "
+"aplikací."
 
 #: templates/cz/2017/roadshow-prague.html:387
 msgid ""
 "Czech website about Fedora Linux distribution. Articles, guides, news and place "
 "for discussion at one place."
 msgstr ""
-"Česká webová stránka Fedora Linux distribuce. Články, průvodce, novinky a místo "
-"k diskuzi na jednom místě. "
+"Česká webová stránka Linuxové distribuce Fedora. Články, průvodce, novinky a "
+"místo k diskuzi na jednom místě. "
 
 #: templates/cz/2017/roadshow-prague.html:396
 msgid ""
@@ -1521,7 +1526,7 @@ msgstr ""
 "ELOS Technologie je společnost působící na českém a slovenském trhu jako "
 "poskytovatel produktů a služeb pro podniková řešení v oblasti informačních "
 "technologií. Naše podniková strategie je založena na adoptování nových modelů "
-"vývoje, podpory, propagace a distribuce softwaru známého jako open-source. Jste "
+"vývoje, podpory, propagace a distribuce softwaru známého jako open source. Jsme "
 "přesvědčeni, že model open-source poskytuje našim zákazníkům významné finanční "
 "a technologické výhody. "
 
