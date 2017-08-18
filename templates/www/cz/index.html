@@ -2,7 +2,7 @@
 
 {% block title %} <title>DevConf.cz; for developers</title> {% endblock %}
 
-{% block nav_logo %}<img src="{{ '/images/devconf-cz-webopt.svg'|static }}" class="navbar-brand top-branding" />{% endblock %}
+{% block nav_logo %}<img src="{{ '/images/devconf-cz-webopt.svg'|url }}" class="navbar-brand top-branding" />{% endblock %}
 
 {% block body %}
     <!-- Home Section -->
@@ -11,7 +11,7 @@
         <div class="row">
           <div class="col-sm-12 intro-content padding-top-md">
 	    <a href="{{ '2018/index.html'|url }}">
-	      <img src="{{ 'images/devconf-cz-event-landing-v1.png'|static }}" class="width-sm border"/> 
+	      <img src="{{ '/images/devconf-cz-event-landing.png'|url }}" class="width-sm border"/> 
             </a>
 
 	    <h1 class="title">{{ _('Main Event') }}</h1>
