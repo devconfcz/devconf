@@ -345,10 +345,6 @@ h3.first {
   display: none;
 }
 
-.schedule-section {
-  background: #eee;
-}
-
 .footer-section {
   background: #000;
   padding: 2px;
@@ -377,13 +373,17 @@ h2 .fa {
 }
 
 .schedule-section {
-    padding-bottom: 0;
+  background: #eee;
+  padding-bottom: 0;
+  border: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .schedule-iframe {
     /* FIXME */
     border: 0;
-    height: 600px;
+    height: 100%;
     width: 100%;
 }
 
