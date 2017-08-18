@@ -17,6 +17,9 @@ setup_info = dict(
     long_description=long_description,
     # Package info
     packages=['devconf', ],
+    scripts=[
+        'bin/devconf-mail',
+    ],
     install_requires=[
         'comdev',
     ],

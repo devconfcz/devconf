@@ -1,0 +1,11 @@
+{% block content %}{% endblock %}
+
+Regards,
+
+-- Chris and the rest of the DevConf.cz team --
+
+------------------------------------------------
+ * Web:   https://devconf.cz
+ * CfP:   https://cfp.devconf.cz
+ * Email: info@devconf.cz
+------------------------------------------------
