@@ -1,37 +1,21 @@
 {% extends "base.html" %}
 
-{% block title %} 
-<title>DevConf - {{ _('Free and Open Source Software Community Conferences for developers') }}</title>
-{% endblock %}
-
-{% block nav_logo %}<img src="{{ '/images/devconf-cz-webopt.svg'|url }}" class="navbar-brand top-branding" />{% endblock %}
+{% block title %}{{ _('DevConf.cz | January 26-28 2018 - Brno, Czechia') }}{% endblock %}
 
 {% block body %}
-    <!-- Home Section -->
-    <header id="intro" class="intro-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 intro-content padding-top-md">
-	    <a href="{{ '2018/index.html'|url }}">
-	      <img src="{{ '/images/devconf-cz-event-landing.png'|url }}" class="width-sm border"/> 
-            </a>
+<!-- BEGIN body -->
 
-	    <h1 class="title">{{ _('Main Event') }}</h1>
+<div id="page-content" class="header-clear-full">
+  <div id="page-content-scroll">
+              
+    {% include 'devconf-news-ticker.html' %}
 
-            <div class="time-and-place">
-	      <address>{{ _('Brno, Czech Republic') }}</address>
-              <div class="date">
-		      <time datetime=""><b>{{ _('January 2018') }}</b></time>
-              </div>
-            </div>
+    {% include 'devconfcz-2018-eventpage.html' %}
 
-            <div class="intro-text">
-               <p>
-	       {{ _('The 10th annual, free community conference in Brno for developers, admins, and users of free and open source Linux, JBoss technologies') }}. <a href="{{ '/2018/index.html'|url }}">{{ _('Learn more') }}</a>
-	       </p>
-            </div>
-          </div>
+    {% include 'devconf-footer.html' %}
 
-        </div>
-    </header>
+  </div>  
+</div>
+
+<!-- END body -->
 {% endblock %}

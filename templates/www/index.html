@@ -1,35 +1,15 @@
 {% extends "base.html" %}
 
-{% block title %}
-<title>DevConf - {{ _('Czech Republic') }}</title>
-{% endblock %}
-
 {% block body %}
-    <!-- Home Section -->
-    <header id="intro" class="intro-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 intro-content padding-top-md">
-	    <a href="{{ '/cz/2018/index.html'|url(lang=lang) }}">
-	      <img src="{{ '/images/devconf-cz-event-landing.png'|url }}" class="width-sm border"/> 
-            </a>
+<!-- BEGIN body -->
 
-	    <h1 class="title">{{ _('Main Event') }}</h1>
+  <div id="page-content">
+      <div id="page-content-scroll">
 
-            <div class="time-and-place">
-	      <address>{{ _('Brno, Czech Republic') }}</address>
-              <div class="date">
-		      <time datetime=""><b>{{ _('January 2018') }}</b></time>
-              </div>
-            </div>
+      {% include 'devconfcz-2018-coverpage.html' %}
 
-            <div class="intro-text">
-               <p>
-	       {{ _('The 10th annual, free community conference in Brno for developers, admins, and users of free and open source Linux, JBoss technologies') }}. <a href="{{ '/cz/2018/index.html'|url(lang=lang) }}">{{ _('Learn more') }}</a>
-	       </p>
-            </div>
-          </div>
+      </div>  
+  </div>
 
-        </div>
-    </header>
+<!-- END body -->
 {% endblock %}

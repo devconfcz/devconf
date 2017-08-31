@@ -1,67 +1,21 @@
 {% extends "base.html" %}
 
-{% block title %}
-<title>DevConf.cz 2018 - {{ _('January 26-28, 2018') }}</title>
-{% endblock %}
-
-{% block nav_logo %}<img src="{{ '/images/devconf-cz-webopt.svg'|url }}" class="navbar-brand top-branding" />{% endblock %}
+{% block title %}{{ _('DevConf.cz | January 26-28 2018 - Brno, Czechia') }}{% endblock %}
 
 {% block body %}
-    <!-- Home Section -->
-    <header id="intro" class="intro-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 intro-content padding-top-lg">
-	    <img src="{{ '/images/devconf-cz-event-landing.png'|url }}" class="width-sm border"/> 
-            <h1 class="title">Main Event</h1>
+<!-- BEGIN body -->
 
-            <div class="intro-text">
-                <p>{{ _('The 10th annual, free community conference in Brno for developers, admins, and users of free and open source Linux, JBoss technologies') }}</p>
-            </div>
-            <h1 class="title"><i>{{ _('CfP opens September 15th, 2017!') }}</i></h1>
-          </div>
-        </div>
-    </header>
+<div id="page-content" class="header-clear-full">
+  <div id="page-content-scroll">
+              
+    {% include 'devconf-news-ticker.html' %}
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-      <h2>About DevConf.cz</h2>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-		  <p><i>{{ _('DevConf.cz 2017 is the 10th annual, free Red Hat sponsored community conference for developers, admins, DevOps engineers, testers, documentation writers and other contibuters to open source technologies such as Linux, Middleware, Virtualization, Storage, Cloud and mobile where FLOSS communities sync, share, and hack on upstream projects together in the beautiful city of Brno, Czech Republic.') }}</i></p>
-            
-          </div>
-              <div class="col-sm-12">
-		      <p><b>{{ _('When:') }}</b> {{ _('January 26-28, 2018') }}</p>
-		      <p><b>{{ _('Venue:') }}</b> {{ _('Faculty of Information Technology (VUT FIT - Božetěchova 2, Brno)') }}</p>
-              </div>
-          <div class="col-xs-12 col-s-6">
-		  <p>{{ _('You should consider attending this DevConf.cz event if you are:') }}</p>
-            <ul>
-		    <li>{{ _('A developer') }}</li>
-		    <li>{{ _('A technology architect') }}</li>
-		    <li>{{ _('An IT consultant') }}</li>
-		    <li>{{ _('An IT student or a teacher from an IT university/faculty') }}</li>
-		    <li>{{ _('Or simply an IT enthusiast interested in the latest trends in open source and emerging digital technologies') }}</li>
-            </ul>
-	    <p>{{ _('If you are curious about last year\'s event, you can check out last years schedule and our YouTube channel') }}</p>
-	    <ul>
-		    <li><a href="https://devconf-cz-2017.firebaseapp.com/sessions.html">{{ _('DevConf.cz 2017 schedule') }}</a>
-		    <li><a href="https://www.youtube.com/channel/UCmYAQDZIQGm_kPvemBc_qwg">{{ _('DevConf.cz YouTube Channel') }}</a>
-	    </ul>
-	    <p>{{ _('DevConf.cz is a free conference and there is no admission or ticket charge. This year we will require that you <b>register for free</b>.') }}</p>
-	    <p>{{ _('Register here: On site Registration only!') }}</p>
-	    <p>{{ _('Talks, presentations, and workshops will all be in <i>English</i>.') }}</p>
-          </div>
+    {% include 'devconfcz-2018-eventpage.html' %}
 
-          <div class="col-xs-12 col-s-6">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/hv8lioGTkQY" frameborder="0" allowfullscreen=""></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    {% include 'devconf-footer.html' %}
 
+  </div>  
+</div>
+
+<!-- END body -->
 {% endblock %}

@@ -1,0 +1,27 @@
+<!-- BEING language selection -->
+
+  <div class="page-menu light-footer-menu">
+      <div class="footer-menu-wrapper remove-menu">
+          <div class="footer-menu-scroll">
+              <div class="footer-menu">
+                <a href="{{ '{}'.format(_page)|url(lang='en') }}" class="footer-menu-item active-menu">
+                    <em>English</em><img data-original="{{ '/images/flags/flag_en.svg'|url }}" class="preload-image" alt="img">
+                  </a>
+                  <a href="{{ '{}'.format(_page)|url(lang='cs') }}" class="footer-menu-item">
+                    <em>Czech</em><img data-original="{{ '/images/flags/flag_cs.svg'|url }}" class="preload-image" alt="img">
+                  </a>
+                  <a href="{{ '{}'.format(_page)|url(lang='sk') }}" class="footer-menu-item">
+                    <em>Slovak</em><img data-original="{{ '/images/flags/flag_sk.svg'|url }}" class="preload-image" alt="img">
+                  </a>
+              </div>            
+          </div>
+      </div>
+  </div>   
+  <div class="footer-menu-controls light-footer-menu">
+      <a href="#" class="footer-menu-open"><i class="fa fa-language bg-black"></i></a>
+      <a href="#" class="footer-menu-close remove-menu"><i class="fa fa-times bg-red-light"></i><em>Close</em></a>
+  </div>
+  <div class="footer-menu-tap-close remove-menu"></div>
+  <div class="footer-menu-background light-footer-background remove-menu"></div>
+
+<!-- END language selection -->
