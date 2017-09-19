@@ -1,61 +1,74 @@
 {% extends "base.html" %}
 
-{% block title %}
-<title>DevConf - {{ _('Media Policy') }}</title>
-{% endblock %}
+{% block title %}DevConf | {{ _('Media Policy') }}{% endblock %}
 
 {% block body %}
-    <!-- Code of Conduct Section -->
-    <section id="coc" class="coc-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 logo">
-            <h1 class="purple">Media Policy</h1>
+<!-- BEGIN body -->
+
+  <div id="page-content" class="header-clear-full">
+    <div id="page-content-scroll">
+
+      <div class="content no-material full-page">
+
+        <div class="centered-page">
+
+          <div class="center-text">
+            <h1 class="uppercase">{{ _('Media Policy') }}</h1>
           </div>
-          <div class="col-sm-12">
-		  <h3>{{ _('Vision') }}</h3>
-		  <p>{{ _('DevConf.cz organizers strive to create a positive environment that adheres to our <a href="coc.html">Code of Conduct</a> and respects privacy of individuals while educating attendees.') }}</p>
 
-		  <h3>{{ _('Speakers and session recording') }}</h3>
-		  <p>{{ _('When you agree to speak at DevConf.cz, you consent for your talk to be recorded in audio and possibly video format. DevConf.cz uses screen capturing hardware along with audio recording equipment to broadcast presentations.') }}</p>
+          <div class="decoration-line-fade decoration-margins"></div>
 
-		  <p>{{ _('We reserve the right to publicly distribute and publish these recordings under the Creative Commons Attribution 3.0 license.') }}</p>
+            <p><strong>{{ _('tldr;') }}</strong> {{ _('DevConf.cz organizers strive to create a positive environment that adheres to our <a href="coc.html">Code of Conduct</a> and respects privacy of individuals. That said, this is a public event and DevConf event organizers do not wish to discourage folks from taking and sharing photos and video during the event. Also, all sessions to be recorded and posted on our YouTube channel for archival purposes, unless otherwise explicitly requested.') }}</p>
 
-		  <p>{{ _('Your session material, including content and recordings may be used in various promotions or for other related endeavors. This material may also appear on the DevConf.cz web site, social media channels or other digital mediums controlled by the DevConf.cz organizing committee.') }}</p>
+            <h3>{{ _('Speakers and session recording') }}</h3>
+            <p>{{ _('When you agree to speak at a DevConf event, you consent for your presentation and slides to be recorded in audio and video format and broadcasted on on-line.') }}</p>
 
-		  <p>{{ _('As conference organizers, we cannot be all places at once and it is important for us to be able to review all material presented at the conference.  For this reason, you may not opt out of having your talk recorded.  However, if you wish, you may request that the session video not be published to the public.') }}</p>
+            <p>{{ _('We reserve the right to publicly distribute and publish these recordings under the Creative Commons Attribution 3.0 license.') }}</p>
 
-		  <p>{{ _('Visit the <a href="https://www.youtube.com/channel/UCmYAQDZIQGm_kPvemBc_qwg"><i class="fa fa-youtube-play"></i>DevConf.cz YouTube channel</a>.') }}</p>
+            <p>{{ _('Your session material, including content and recordings may be used in promotional activities and other related endeavors. This material may also appear on our DevConf web site, social media channels or other digital mediums controlled by the DevConf organizers or supporting partners.') }}</p>
 
-		  <h3>{{ _('Recording by Attendees') }}</h3>
-		  <p>{{ _('All sessions are recorded by official DevConf.cz or venue A/V staff. If you are not the speaker and wish to audio/video record, you must obtain written consent from the speaker first.') }}</p>
+            <p>{{ _('As conference organizers, we cannot be all places at once and it is important for us to be able to review all material presented at the conference.  For this reason, you may not opt out of having your talk recorded.  However, if you wish, you may request that the session video not be published to the public or taken down (hidden) if otherwise already published. The organizers will, to the best of their ability, respect and honors all such requests.') }}</p>
 
-		  <h3>{{ _('Staff and attendee photography') }}</h3>
-		  <p>{{ _('When you register for DevConf.cz, you consent to be photographed by our official conference photographer, and to have those photographs published under a Creative Commons license and possibly used in various promotional material.') }}</p>
+            <p>{{ _('Sessions will be streamed live and archived for future playback on our <a href="https://www.youtube.com/channel/UCmYAQDZIQGm_kPvemBc_qwg"><i class="fa fa-youtube-play"></i>DevConf YouTube channel</a>.') }}</p>
 
-		  <p>{{ _('We encourage attendees to take and share their own photographs, as long as the rules below are followed.') }}</p>
-            <ul>
-		    <li>{{ _('Any photography/recording that is legally allowed in public spaces is allowed at DevConf.cz.') }}</li>
-		    <li>{{ _('Photography/recording should be treated like other potentially harassing interpersonal interaction. That is, when one person in the interaction says “stop” or “leave me alone” (etc), the interaction must end. In this case, attendees should not attempt to photograph that individual again.') }}</li>
-		    <li>{{ _('Photography/recording shouldn’t be done in such a way as to hide from the subject that it’s happening.') }}</li>
-		    <li>{{ _('The subject may inspect the photo/recording at any time and, if requested, the photo/footage/etc must be deleted immediately.') }}</li>
-		    <li>{{ _('Those who are taking photographs and/or recording must also follow our general <a href="coc.html">Code of Conduct</a>.') }}</li>
-            </ul>
+            <h3>{{ _('Recording by Attendees') }}</h3>
+            <p>{{ _('All sessions are recorded by official DevConf or venue A/V staff. Additionally, you agree to permitting the recording and sharing of sessions by attendees of the event at large. If you do not wish for the audience to audio/video record, you are responsible for politely asking them before you start recording to please not do so.') }}</p>
 
-	    <h3>{{ _('How to opt-out') }}</h3>
-	    <p>{{ _('If you do not wish images of yourself to be published, you may opt out by <a href="mailto:info@devconf.cz">contacting us</a> and reasonable efforts will be done to accommodate your request.') }}</p>
+            <h3>{{ _('Staff and attendee photography') }}</h3>
+            <p>{{ _('When you register to participate in DevConf events, you consent to be photographed by our official conference photographer, and to have those photographs published under a Creative Commons license and possibly used in various promotional material.') }}</p>
 
-	    <p>{{ _('If you are a speaker, you may opt out of having your talk being publically distributed by <a href="mailto:info@devconf.cz">contacting us</a>.') }}</p>
+            <p>{{ _('Additionally, you consent to allow attendees to take and share their own photographs, as long as the rules below are followed.') }}</p>
+              <ul>
+                <li>{{ _('Any photography/recording that is legally allowed in public spaces is allowed at DevConf events.') }}</li>
+                <li>{{ _('Photography/recording should be treated like other potentially harassing interpersonal interaction. That is, when one person in the interaction says “stop” or “leave me alone” (etc), the interaction must end. In this case, attendees should not attempt to photograph that individual again.') }}</li>
+                <li>{{ _('Photography/recording shouldn’t be done in such a way as to hide from the subject that it’s happening.') }}</li>
+                <li>{{ _('The subject may inspect the photo/recording at any time and, if requested, the photo/footage/etc must be deleted immediately, upon request.') }}</li>
+                <li>{{ _('Those who are taking photographs and/or recording must also follow our general Code of Conduct.') }}</li>
+              </ul>
 
-	    <h3>{{ _('How to Report Violations or Issues') }}</h3>
-	    <p>{{ _('Please report an violations or issues with recording or photography directly to the front desk at registration, or by contacting us.') }}</p>
+            <p>{{ _('We will do our best to not make or share photos, videos or audio recordings public which could cause harm to the individuals shown/heard on them. If you do find such pictures/videos/audio recordings on one of our sites or accounts, please write to our info@devconf.cz to ask for review.') }}</p>
+
+            <h3>{{ _('How to opt-out') }}</h3>
+            <p>{{ _('If you do not wish images of yourself to be published, you may opt out by <a href="mailto:info@devconf.cz">contacting us</a> and reasonable efforts will be done to accommodate your request.') }}</p>
+
+            <p>{{ _('If you are a speaker, you may opt out of having your talk being publically distributed by <a href="mailto:info@devconf.cz">contacting us</a>.') }}</p>
+
+            <h3>{{ _('How to Report Violations or Issues') }}</h3>
+            <p>{{ _('Please report an violations or issues with recording or photography directly to the front desk at registration, or by contacting us at info@devconf.cz.') }}</p>
 
             <p>&nbsp;</p>
 
-	    <p class="smaller pull-right"><i>{{ _('Thank you to Linux Fest NorthWest, Open Source Bridge and DrupalCon, from whom this media policy was heavily influenced.') }}</i></p>
-          </div>
+            <p class="smaller-text right-text"><i>{{ _('Thank you to Linux Fest NorthWest, Open Source Bridge and DrupalCon, from whom this policy was heavily influenced.') }}</a>.</i></p>
+
+            <p class="smaller-text right-text"><i>Last Updated: September 1, 2017</i></p>
+
         </div>
       </div>
-    </section>
 
+      {% include 'devconf-footer.html' %}
+
+    </div>
+  </div>
+
+<!-- END body -->
 {% endblock %}

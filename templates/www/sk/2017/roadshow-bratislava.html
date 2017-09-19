@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}DevConf.cz Roadshow - Containers | {{ _('June 14, 2017 - Bratislava, Slovakia') }}{% endblock %}
+
+{% block body %}
+<!-- BEGIN body -->
+
+<div id="page-content" class="header-clear-full">
+  <div id="page-content-scroll">
+              
+    {% include 'devconf-news-ticker.html' %}
+
+    <!-- BEGIN devconfcz-2017-roadshow-bratislava eventpage -->
+
+      <div class="content">
+        <div class="container"> 
+
+          <div class="material-full-bottom">
+
+            <img data-original="{{ '/images/canva/devconf-cz-2017-roadshow-containers-bratislava-event-header.jpg'|url }} " class="preload-image full-bottom responsive-image" alt="img" />
+
+            <div class="center-text">
+              <h1 class="color-black uppercase">{{ _('Roadshow: Containers Bratislava') }}</h1>
+            </div>
+
+            <div class="left-text">
+
+              <div class="decoration-line-fade decoration-margins"></div>
+
+            <div class="center-text color-red-dark ultrabold">
+              <h2><strong>{{ _('This event is over! But you can always check out the sessions on our <a href="https://www.youtube.com/watch?v=hv8lioGTkQY">YouTube channel</a>!') }}</strong></h2>
+            </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    <!-- END devconfcz-2017-roadshow-bratislava eventpage -->
+
+    {% include 'devconf-footer.html' %}
+
+  </div>  
+</div>
+
+<!-- END body -->
+{% endblock %}

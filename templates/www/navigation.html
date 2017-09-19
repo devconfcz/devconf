@@ -16,7 +16,7 @@
                   <a href="https://www.youtube.com/channel/UCmYAQDZIQGm_kPvemBc_qwg"><i class="fa fa-youtube"></i></a>
                   <a href="https://www.facebook.com/DevConf.cz"><i class="fa fa-facebook"></i></a>
                   <a href="https://twitter.com/devconf_cz"><i class="fa fa-twitter"></i></a>
-                  <a href="https://telegram.me/joinchat/B1He_UEkuB4fBfY1cKCXRw"><i class="fa fa-send-o"></i></a>
+                  <a href="https://telegram.me/joinchat/B1He_UEkuB4fBfY1cKCXRw"><i class="fa fa-telegram"></i></a>
                   <a href="mailto:info@devconf.cz"><i class="fa fa-envelope"></i></a>
               </div>
           </div>        
@@ -52,13 +52,13 @@
                     <i class="bg-gray-dark fa fa-history"></i>{{ _('Main Events') }}<em class="menu-number">0</em>
                   </a>
                   <div class="submenu">
-                      <a class="menu-item color-gray-dark" href="/cz/2017/index.html">
+                    <a class="menu-item color-gray-dark" href="{{ '/cz/2017/index.html'|url(lang=lang) }}">
                         <i class="fa fa-calendar-check-o"></i>{{ _('Brno 2017') }}<i class="fa fa-circle"></i>  
                       </a>
                       <a class="menu-item color-gray-dark" href="https://rootconf.talkfunnel.com/devconf-2017/">
                         <i class="fa fa-calendar-check-o"></i>{{ _('Bangalore 2017') }}<i class="fa fa-circle"></i>  
                       </a>
-                      <a class="menu-item color-gray-dark" href="https://2016.devconf.cz/">
+                      <a class="menu-item color-gray-dark" href="https://devconfcz2016.sched.com/">
                         <i class="fa fa-calendar-check-o"></i>{{ _('Brno 2016') }}<i class="fa fa-circle"></i>  
                       </a>
                   </div>
@@ -68,10 +68,10 @@
                     <i class="bg-gray-dark fa fa-history"></i>{{ _('Roadshows') }}<em class="menu-number">0</em>
                   </a>
                   <div class="submenu"><!--active-submenu-->
-                      <a class="menu-item color-gray-dark" href="/cz/2017/roadshow-prague.html">
+                    <a class="menu-item color-gray-dark" href="{{ '/cz/2017/roadshow-prague.html'|url(lang=lang) }}">
                         <i class="fa fa-calendar-check-o"></i>{{ _('Prague 2017') }}<i class="fa fa-circle"></i>  
                       </a>
-                      <a class="menu-item color-gray-dark" href="/sk/2017/roadshow-bratislava.html">
+                      <a class="menu-item color-gray-dark" href="{{ '/sk/2017/roadshow-bratislava.html'|url(lang=lang) }}">
                         <i class="fa fa-calendar-check-o"></i>{{ _('Bratislava 2017') }}<i class="fa fa-circle"></i>  
                       </a>
                   </div>
@@ -90,7 +90,7 @@
                   <a href="https://www.youtube.com/channel/UCmYAQDZIQGm_kPvemBc_qwg"><i class="fa fa-youtube"></i></a>
                   <a href="https://www.facebook.com/DevConf.cz"><i class="fa fa-facebook"></i></a>
                   <a href="https://twitter.com/devconf_cz"><i class="fa fa-twitter"></i></a>
-                  <a href="https://telegram.me/joinchat/B1He_UEkuB4fBfY1cKCXRw"><i class="fa fa-send-o"></i></a>
+                  <a href="https://telegram.me/joinchat/B1He_UEkuB4fBfY1cKCXRw"><i class="fa fa-telegram"></i></a>
                   <a href="mailto:info@devconf.cz"><i class="fa fa-envelope"></i></a>
               </div>
           </div>   
@@ -113,10 +113,6 @@
                       </button>
                       </fieldset>
                   </form>       
-
-          <!--<div class="sidebar-divider">
-          </div>
-          -->
 
               </div>
           </div>

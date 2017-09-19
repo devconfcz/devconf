@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block title %}DevConf | {{ _('Privacy Policy') }}{% endblock %}
+
+{% block body %}
+<!-- BEGIN body -->
+
+  <div id="page-content" class="header-clear-full">
+    <div id="page-content-scroll">
+
+      <div class="content no-material full-page">
+
+        <div class="centered-page">
+
+          <div class="center-text">
+            <h1 class="uppercase">{{ _('Privacy Policy') }}</h1>
+          </div>
+
+          <div class="decoration-line-fade decoration-margins"></div>
+
+            <h3>{{ _('Personal Information') }}</h3>
+            <p>{{ _('DevConf organizers will not sell, rent or distribute your personal information (including your email address, phone number, or other demographic details) to third-parties entities. Only our system administrators and organizational support team have access to your data. You can update your profile information anytime from your profile page.') }}</p>
+
+            <p>{{ _('Speakers are requred to submit additional information, part of which will become public (eg: full bio, social media handles, avatar).') }}</p> 
+
+            <p>{{ _('Attendee registration information is not shared publically.') }}</p> 
+
+            <h3>{{ _('No Spam') }}</h3>
+            <p>{{ _('We will not sell or rent your email address to other entities. We respect your choices.') }}</p>
+            <p>{{ _('If you subscribe to our newsletter or mailing-list, your email address will be used only to deliver list messages, and will not otherwise be used or shared. You can unsubscribe at any time by following the link at the bottom of each email.') }}</p>
+            <p>{{ _('If you opt-in to receive offerings from our sponsors, only your name and email will be shared with those sponsors.') }}</p>
+
+            <h3>{{ _('Audio, video recordings and photography') }}</h3>
+            <p>{{ _('See our Media Policy document details.') }}<p>
+
+            <h3>{{ _('Third-party services') }}</h3>
+            <p>{{ _('A few third-party services help us running the website. We might share some information on our visitors with them, as part of their service, such as:') }}</p>
+            <ul>
+              <li>{{ _('Google Forms (<a href="https://www.google.com/policies/privacy/">privacy policy</a>). CfP submission details will be submitted using Google Forms. You must be authenticated to use this service. As a speaker, you can not opt-out from this service.') }}</li>
+              <li>{{ _('Google Analytics (<a href="https://www.google.com/policies/privacy/">privacy policy</a>). They track visitors through IP addresses and cookies, and show us nice graphs. You can opt-out from this service through a browser extension.') }}</li>
+              <li>{{ _('Eventbrite (<a href="https://www.eventbrite.com/support/articles/en_US/Troubleshooting/eventbrite-privacy-policy?lg=en_US">privacy policy</a>). They provide event registration and real-time check-in services. You can opt-out from this service by registering for the event on-site. Note though, due to limited venue capacity, it is possible that on-site registrations will be unavailable!') }}</li>
+            </ul>
+
+            <h3>{{ _('Removing your information') }}</h3>
+            <p>{{ _('If you want to delete your account, write us at info@devconf.cz requesting so. Information cannot be restored afterwards.') }}</p>
+
+            <p>{{ _('There may be some data that we can not remove however. We will do our best though to remove as much personally identifying information as possible.') }}</p>
+
+            <p>&nbsp;</p>
+
+            <p class="smaller-text right-text"><i>{{ _('Thank you to EuroPython, from whom this policy was heavily influenced.') }}</a>.</i></p>
+
+            <p class="smaller-text right-text"><i>Last Updated: September 1, 2017</i></p>
+
+        </div>
+      </div>
+
+      {% include 'devconf-footer.html' %}
+
+    </div>
+  </div>
+
+<!-- END body -->
+{% endblock %}
+

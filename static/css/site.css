@@ -23,15 +23,20 @@
 }
 
 .dark-overlay { 
+    background-color:rgba(0,0,0,0.45);
+}
+
+.darker-overlay { 
     background-color:rgba(0,0,0,0.85);
 }
 
 
 /* Typeface settings */
 
-body {
+body, p {
     font-family:'Montserrat', sans-serif;
 }
+
 
 
 /* Container settings */
@@ -71,6 +76,7 @@ body {
 }
 
 
+
 /* Material Settings */
 
 .text-slider {
@@ -87,6 +93,7 @@ body {
         font-size: 70%!important;
     }
 }
+
 
 
 /* Coverpage settings */
@@ -109,6 +116,7 @@ body {
 .coverpage-bottom p {
     opacity: 0.8;
 }
+
 
 
 /* Footer settings */
@@ -155,6 +163,8 @@ body {
 }
 
 
+
+
 /* Footer menu settings */
 
 .footer-menu-item img {
@@ -192,4 +202,49 @@ body {
 
 .decoration-margins {
     margin: 25px 20px 25px 20px;
+}
+
+/* Full-Page (text only) settings */
+
+.centered-page p, ul, li, h1, h3 {
+    color: #000000;
+    line-height: 1.5em;
+}
+
+.centered-page a {
+    display: inline;
+}
+
+.centered-page p {
+    margin-bottom: 1.5em;
+}
+
+@media(min-width:1000px) {
+    .centered-page {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(max-width:1000px) {
+    .centered-page p, ul, li, h1, h3 {
+        font-size: .9em!important;
+    }
+}
+
+/* FAQ settings */
+
+.faq p {
+    font-size: .9em!important;
+    padding-right: 4em;
+}
+
+@media(max-width:1000px){
+    .faq a, .faq p, .faq i, .faq em {
+        font-size: .7em!important;
+    }
+    .faq strong {
+        font-size: .9em!important;
+    }
 }
