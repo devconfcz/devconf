@@ -1,37 +1,41 @@
 {% extends "base.html" %}
 
-{% block title %} 
+{% block title %}
 <title>DevConf - {{ _('Free and Open Source Software Community Conferences for developers') }}</title>
 {% endblock %}
 
 {% block nav_logo %}<img src="{{ '/images/devconf-cz-webopt.svg'|url }}" class="navbar-brand top-branding" />{% endblock %}
 
 {% block body %}
-    <!-- Home Section -->
-    <header id="intro" class="intro-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 intro-content padding-top-md">
-	    <a href="{{ '2018/index.html'|url }}">
-	      <img src="{{ '/images/devconf-cz-event-landing.png'|url }}" class="width-sm border"/> 
-            </a>
+<!-- Home Section -->
+<header id="intro" class="intro-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 intro-content padding-top-md">
+  <a href="{{ '/cz/2018/index.html'|url(lang=lang) }}">
+    <img src="{{ '/images/devconf-cz-event-landing.jpg'|url }}" class="width-sm border"/>
+        </a>
 
-	    <h1 class="title">{{ _('Main Event') }}</h1>
+  <h1 class="title">{{ _('Main Event') }}</h1>
 
-            <div class="time-and-place">
-	      <address>{{ _('Brno, Czech Republic') }}</address>
-              <div class="date">
-		      <time datetime=""><b>{{ _('January 2018') }}</b></time>
-              </div>
-            </div>
-
-            <div class="intro-text">
-               <p>
-	       {{ _('The 10th annual, free community conference in Brno for developers, admins, and users of free and open source Linux, JBoss technologies') }}. <a href="{{ '/2018/index.html'|url }}">{{ _('Learn more') }}</a>
-	       </p>
-            </div>
+        <div class="time-and-place">
+    <address>{{ _('Brno, Czech Republic') }}</address>
+          <div class="date">
+      <time datetime=""><b>{{ _('January 2018') }}</b></time>
           </div>
-
         </div>
-    </header>
+        <h1 class="title">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdrsnvIAD03oRTDwV3G7tYs8OvZZl_eHSFw5tHcCAPLn5fwjw/viewform"
+          target="_blank" style="color: #000; text-decoration: none;">
+          {{ _('CfP is now OPEN!') }} <i class="fa fa-external-link" title="Launch CfP" style="color: #7565A3"></i></a>
+        </h1>
+        <div class="intro-text">
+           <p>
+     {{ _('The 10th annual, free community conference in Brno for developers, admins, and users of free and open source Linux, JBoss technologies') }}. <a href="{{ '/cz/2018/index.html'|url(lang=lang) }}">{{ _('Learn more') }}</a>
+     </p>
+        </div>
+      </div>
+
+    </div>
+</header>
 {% endblock %}

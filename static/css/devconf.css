@@ -34,7 +34,7 @@ a:visited {
 }
 
 a.meetup {
-  font-size: 3em; 
+  font-size: 3em;
   color: #000;
   font-family: "Montserrat", sans-serif;
 }
@@ -46,7 +46,7 @@ a.faded {
 }
 
 .padding-top-md {
-  padding-top: 3em;
+  padding-top: 1.5em;
 }
 
 .padding-top-lg {
@@ -436,7 +436,7 @@ h2 .fa {
   background: #fff;
 }
 
-.agenda {  
+.agenda {
   font-size: .8em;
 }
 
@@ -448,29 +448,29 @@ h2 .fa {
   line-height: 36px;
   float: left;
   text-align: right;
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 .agenda .agenda-date .shortdate {
-  font-size: 0.75em; 
+  font-size: 0.75em;
 }
 
 
 /* Times */
-.agenda .agenda-time { 
+.agenda .agenda-time {
   font-size: .8em;
   font-family: monospace;
-  width: 150px; 
-} 
+  width: 150px;
+}
 
 
 /* Events */
-.agenda .agenda-events {  } 
-.agenda .agenda-events .agenda-event {  
+.agenda .agenda-events {  }
+.agenda .agenda-events .agenda-event {
 /*  font-weight: bold; */
-} 
+}
 
 @media (max-width: 767px) {
-    
+
 }
 
 /* Profile picture bootstrap
