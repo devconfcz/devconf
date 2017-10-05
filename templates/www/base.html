@@ -117,9 +117,9 @@
 		      <img src="{{ '/images/lang_flag_%s.svg'|format(lang)|url }}" class="navbar-flag"  />
                     </div>
                   <ul class="dropdown-menu dropdown-menu-flag" aria-labelledby="dropdownMenu2">
-                      <li><a href="{{ '{}'.format(_page)|url(lang='en') }}"><img src="{{ '/images/lang_flag_%s.svg'|format('en')|url }}" class="navbar-flag navbar-flag-padded"/> (en)</a></li>
-                      <li><a href="{{ '{}'.format(_page)|url(lang='cs') }}"><img src="{{ '/images/lang_flag_%s.svg'|format('cs')|url }}" class="navbar-flag navbar-flag-padded"/> (cs)</a></li>
-                      <li><a href="{{ '{}'.format(_page)|url(lang='sk') }}"><img src="{{ '/images/lang_flag_%s.svg'|format('sk')|url }}" class="navbar-flag navbar-flag-padded"/> (sk)</a></li>
+                      <li><a href="{{ '/{}'.format(_page)|url(lang='en') }}"><img src="{{ '/images/lang_flag_%s.svg'|format('en')|url }}" class="navbar-flag navbar-flag-padded"/> (en)</a></li>
+                      <li><a href="{{ '/{}'.format(_page)|url(lang='cs') }}"><img src="{{ '/images/lang_flag_%s.svg'|format('cs')|url }}" class="navbar-flag navbar-flag-padded"/> (cs)</a></li>
+                      <li><a href="{{ '/{}'.format(_page)|url(lang='sk') }}"><img src="{{ '/images/lang_flag_%s.svg'|format('sk')|url }}" class="navbar-flag navbar-flag-padded"/> (sk)</a></li>
                     <li class="dropdown-header">Site language</li>
                   </ul>
                 </div>
