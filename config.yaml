@@ -8,7 +8,7 @@ templates: [
     'index.html',                                                            
     'media-policy.html', 
     'coc.html',
-    'speaker-agreement.html',
+    'participation-agreement.html',
     'cz/index.html',
     'cz/2017/index.html',
     'cz/2017/roadshow-bratislava.html',
