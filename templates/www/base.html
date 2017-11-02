@@ -8,7 +8,7 @@
 
   <title>
     {% block title %}{{ _('DevConf - Community Contributors Conference') }}{% endblock %}
-  </title> 
+  </title>
 
 </head>
 
@@ -19,12 +19,10 @@
     <div class="page-preloader page-preloader-dark">
         <div class="loader loader-frames"><i></i><i></i><i></i><i></i></div>
     </div>
-    
-    {% block navigation %} {% include 'navigation.html' %} {% endblock %}
+
+    {% block navigation %}{% include 'navigation.html' %}{% endblock %}
 
     {% block body %}{% endblock %}
-
-    {% include 'share-bottom.html' %}
 
     <div class="sidebar-tap-close"></div>
     <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to Top</a>

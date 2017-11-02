@@ -1,12 +1,17 @@
+
+/* accordion settings */
+
+.accordion-toggle {
+  font-size: .95em;
+}
+
 /* Sidebard settings */
 
-.sidebar-header-background{
+.sidebar-header-background {
     background-image:url(../images/bg/devconfcz-2017-audience-md.jpg);
     background-size:cover;
     height:150px;
 }
-
-
 
 /* Background and Color settings */
 
@@ -22,11 +27,11 @@
     background-image:url(../images/bg/devconfcz-2017-3dprint-fedora-md.jpg);
 }
 
-.dark-overlay { 
+.dark-overlay {
     background-color:rgba(0,0,0,0.45);
 }
 
-.darker-overlay { 
+.darker-overlay {
     background-color:rgba(0,0,0,0.85);
 }
 
@@ -34,10 +39,10 @@
 /* Typeface settings */
 
 body, p {
-    font-family:'Montserrat', sans-serif;
+    font-family: monospace;
+    font-size: .85em;
+    /* 'Montserrat',  */
 }
-
-
 
 /* Container settings */
 
@@ -52,7 +57,7 @@ body, p {
 }
 
 .container li {
-    list-style:none; 
+    list-style:none;
     line-height: 15px;
     margin-bottom: 3px;
     color: #000000;
@@ -168,14 +173,14 @@ body, p {
 /* Footer menu settings */
 
 .footer-menu-item img {
-    width:50px;                             
-    height:50px;                            
-    border-radius:50px;                     
-    line-height:50px;                       
-    text-align:center;                      
-    font-size:15px;                         
-    margin-left:20px;                       
-    float:right;                            
+    width:50px;
+    height:50px;
+    border-radius:50px;
+    line-height:50px;
+    text-align:center;
+    font-size:15px;
+    margin-left:20px;
+    float:right;
     box-shadow:0 1px 2px 2px rgba(0,0,0,0.10);
     -webkit-box-shadow:0 1px 2px 2px rgba(0,0,0,.10);
     background-color: rgba(255,255,255,100);
@@ -234,6 +239,11 @@ body, p {
 }
 
 /* FAQ settings */
+
+.faq {
+  margin-left: 0px;
+  margin-right: 0px;
+}
 
 .faq p {
     font-size: .9em!important;

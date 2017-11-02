@@ -1,27 +1,21 @@
 <!-- BEGIN devconfcz-2018-eventpage -->
-
   <div class="content">
-    <div class="container"> 
-
+    <div class="container">
       <div class="material-full-bottom">
 
-        <img data-original="{{ '/images/canva/devconf-cz-2018-header.jpg'|url }} " class="preload-image full-bottom responsive-image" alt="img" />
+        <img data-original="{{ '/images/canva/devconf-cz-2018-header.jpg'|url }}" class="preload-image full-bottom responsive-image" alt="img" />
 
         <div class="center-text">
-          <h1 class="color-black uppercase">{{ _('Main Event') }}</h1>
+          <h1 class="color-black uppercase">{{ _('Main Event - 2018') }}</h1>
         </div>
 
+        <div class="decoration-line-fade decoration-margins"></div>
+
         <div class="left-text">
-
-          <div class="decoration-line-fade decoration-margins"></div>
-
-          <p>{{ _('DevConf.cz 2017 is the 10th annual, free Red Hat sponsored community conference for developers, admins, DevOps engineers, testers, documentation writers and other contibuters to open source technologies such as Linux, Middleware, Virtualization, Storage, Cloud and mobile where FLOSS communities sync, share, and hack on upstream projects together in the beautiful city of Brno, Czech Republic.') }}</p>
-
+          <p>{{ _('DevConf.cz 2018 is the 10th annual, free, <a href="https://redhat.com">Red Hat</a> sponsored community conference for developers, admins, DevOps engineers, testers, documentation writers and other contibuters to open source technologies such as Linux, Middleware, Virtualization, Storage, Cloud and mobile where FLOSS communities sync, share, and hack on upstream projects together in the beautiful city of Brno, Czech Republic.') }}</p>
           <p><strong>{{ _('When') }}:</strong> {{ _('Friday January 26 to Sunday January 28, 2017') }}</p>
           <p><strong>{{ _('Venue') }}:</strong> {{ _('Faculty of Information Technology (VUT FIT - Božetěchova 2, Brno)') }}
-
           <p>{{ _('You should consider attending this DevConf.cz event if you are') }}:</p>
-
           <ul>
             <li>{{ _('A developer') }}</li>
             <li>{{ _('A technology architect') }}</li>
@@ -30,8 +24,15 @@
             <li>{{ _('Or simply an IT enthusiast interested in the latest trends in open source and emerging digital technologies') }}</li>
           </ul>
 
-          <p>{{ _('DevConf.cz is a free conference and there is no admission or ticket charge. Free registration is required though.') }}</p>
+          <div class="content no-material full-bottom">
+              <div class="">
+              <a href="https://devconf.cz/cfp"
+                target="_blank"
+                class="button button-icon button-blue button-round button-full button-xs"><i class="fa fa-plus-square-o"></i>Submit a proposal</a>
+              </div>
+          </div>
 
+          <p>{{ _('DevConf.cz is a free conference and there is no admission or ticket charge. Free registration is required though.') }}</p>
           <h3>{{ _('Registration') }}:</h3>
             <ul>
               <li>{{ _('On-line registration coming soon! Limited capacity!') }}</li>
@@ -42,21 +43,27 @@
 
           <h3>{{ ('Important dates') }}:</h3>
             <ul>
-              <li><strong>{{ _('CfP opens') }}:</strong> {{ _('September 15th , 2017') }}</li>
+              <li><del><strong>{{ _('CfP opens') }}:</strong> {{ _('September 15th , 2017') }}</del></li>
               <li><strong>{{ _('CfP closes') }}:</strong> {{ _('November 17th , 2017') }}</li>
               <li><strong>{{ _('Accepted speakers confirmation') }}:</strong> {{ _('December 1, 2017') }}</li>
               <li><strong>{{ _('Schedule published') }}:</strong> {{ _('December 22, 2017') }}</li>
               <li><strong>{{ _('Event dates') }}:</strong> {{ _('Friday January 26 to Sunday January 28, 2018') }}</li>
             </ul>
 
+          <div class="content-fullscreen">
+             <iframe class="responsive-image maps no-bottom" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.6261886026205!2d16.594451416588164!3d49.22661597932532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471294099dc06bbb%3A0xbfcf161b01a48b0d!2sFaculty+of+Information+Technology%2C+Brno+University+of+Technology!5e0!3m2!1sen!2scz!4v1509541747730"></iframe>
+              <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.6261886026205!2d16.594451416588164!3d49.22661597932532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471294099dc06bbb%3A0xbfcf161b01a48b0d!2sFaculty+of+Information+Technology%2C+Brno+University+of+Technology!5e0!3m2!1sen!2scz!4v1509541747730" target="_blank" class="button button-red button-s button-full uppercase bold">Open Map</a>
+          </div>
+
         </div>
       </div>
 
       {% include 'devconfcz-2018-faq.html' %}
 
+      {% include 'devconfcz-2018-travel.html' %}
+
       {% include 'devconfcz-2018-sponsors.html' %}
 
     </div>
   </div>
-
 <!-- END devconfcz-2018-eventpage -->

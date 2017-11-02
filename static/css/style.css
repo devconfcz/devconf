@@ -250,7 +250,7 @@
     height:100%;
     right: -19px; /* Decrease this value for cross-browser compatibility */
     overflow: auto;
-    -webkit-overflow-scrolling: touch;   
+    -webkit-overflow-scrolling: touch;
 }
 
 .footer-menu{
@@ -337,7 +337,7 @@
     border-radius:50px;
     line-height:46px;
     text-align:center;
-    margin-left:20px;    
+    margin-left:20px;
 }
 
 .footer-menu-item i{color:#FFFFFF!important; border:none!important;}
@@ -383,7 +383,7 @@
 }
 
 
-.footer-menu-close em{ 
+.footer-menu-close em{
     font-weight:500;
     top:17px;
     position:absolute;
@@ -400,7 +400,6 @@
     -webkit-box-shadow:0 1px 2px 2px rgba(0,0,0,0.10);*/
 }
 
-
 .sidebar-header-background{
     background-image:url(../images/pictures/bg.jpg);
     background-size:cover;
@@ -416,7 +415,7 @@
 }
 
 .sidebar-header h2{
-    font-size:13px;
+    font-size:10px;
     color:#bfbfbf;
     font-weight:400;
     margin-top:-13px;
@@ -448,4 +447,3 @@
     color:#FFFFFF;
     font-size:15px;
 }
-

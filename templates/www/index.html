@@ -1,15 +1,22 @@
 {% extends "base.html" %}
 
+{% block title %}DevConf.cz | {{ _('January 26-28, 2018 - Brno, Czechia') }}{% endblock %}
+
 {% block body %}
 <!-- BEGIN body -->
 
-  <div id="page-content">
-      <div id="page-content-scroll">
+<div id="page-content" class="header-clear-full">
+  <div id="page-content-scroll">
 
-      {% include 'devconfcz-2018-coverpage.html' %}
+    {% include 'devconf-news-ticker.html' %}
 
-      </div>  
+    {% include 'devconfcz-2018-eventpage.html' %}
+
   </div>
+
+  {% include 'devconf-footer.html' %}
+
+</div>
 
 <!-- END body -->
 {% endblock %}

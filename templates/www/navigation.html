@@ -3,7 +3,7 @@
   <div class="header header-dark">
       <a href="#" class="header-icon header-icon-1 open-left-sidebar"><i class="fa fa-navicon"></i></a>
       <a href="{{ '/index.html'|url(lang=lang) }}" class="header-logo scale-hover"></a>
-      <a href="#" class="header-icon header-icon-4 open-right-sidebar"><i class="fa fa-gears"></i></a>
+      <!--<a href="#" class="header-icon header-icon-4 open-right-sidebar"><i class="fa fa-gears"></i></a>-->
   </div>
 
   <div class="sidebar-left sidebar-light">
@@ -19,28 +19,28 @@
                   <a href="https://telegram.me/joinchat/B1He_UEkuB4fBfY1cKCXRw"><i class="fa fa-telegram"></i></a>
                   <a href="mailto:info@devconf.cz"><i class="fa fa-envelope"></i></a>
               </div>
-          </div>        
+          </div>
 
           <div class="sidebar-divider">{{ _('Upcoming Events') }}</div>
 
-          <div class="sidebar-menu"> 
+          <div class="sidebar-menu">
               <div class="has-submenu">
                   <a class="menu-item open-submenu active-item" href="#"><!-- active-item -->
                     <i class="bg-green-dark fa fa-home"></i>{{ _('Main Events') }}<em class="menu-number">0</em>
                   </a>
                   <div class="submenu active-submenu"><!--active-submenu-->
                     <a class="menu-item color-black" href="{{ '/cz/2018/index.html'|url(lang=lang) }}">
-                      <i class="fa fa-calendar-check-o"></i>{{ _('Brno 2018') }}<i class="fa fa-circle"></i>  
-                      </a> 
+                      <i class="fa fa-calendar-check-o"></i>{{ _('Brno 2018') }}<i class="fa fa-circle"></i>
+                      </a>
                       <!--
                       <a class="menu-item color-black" href="{{ '/in/2018/index.html'|url(lang=lang) }}">
-                        <i class="fa fa-calendar-o"></i>{{ _('Bangalore 2018') }}<i class="fa fa-circle"></i>  
-                      </a>                                            
+                        <i class="fa fa-calendar-o"></i>{{ _('Bangalore 2018') }}<i class="fa fa-circle"></i>
+                      </a>
                       -->
                       <!--
                       <a class="menu-item color-black" href="{{ '/us/2018/index.html'|url(lang=lang) }}">
-                        <i class="fa fa-calendar-o"></i>{{ _('Boston 2018') }}<i class="fa fa-circle"></i>  
-                      </a>       
+                        <i class="fa fa-calendar-o"></i>{{ _('Boston 2018') }}<i class="fa fa-circle"></i>
+                      </a>
                       -->
                   </div>
               </div>
@@ -53,13 +53,13 @@
                   </a>
                   <div class="submenu">
                     <a class="menu-item color-gray-dark" href="{{ '/cz/2017/index.html'|url(lang=lang) }}">
-                        <i class="fa fa-calendar-check-o"></i>{{ _('Brno 2017') }}<i class="fa fa-circle"></i>  
+                        <i class="fa fa-calendar-check-o"></i>{{ _('Brno 2017') }}<i class="fa fa-circle"></i>
                       </a>
                       <a class="menu-item color-gray-dark" href="https://rootconf.talkfunnel.com/devconf-2017/">
-                        <i class="fa fa-calendar-check-o"></i>{{ _('Bangalore 2017') }}<i class="fa fa-circle"></i>  
+                        <i class="fa fa-calendar-check-o"></i>{{ _('Bangalore 2017') }}<i class="fa fa-circle"></i>
                       </a>
                       <a class="menu-item color-gray-dark" href="https://devconfcz2016.sched.com/">
-                        <i class="fa fa-calendar-check-o"></i>{{ _('Brno 2016') }}<i class="fa fa-circle"></i>  
+                        <i class="fa fa-calendar-check-o"></i>{{ _('Brno 2016') }}<i class="fa fa-circle"></i>
                       </a>
                   </div>
               </div>
@@ -69,17 +69,40 @@
                   </a>
                   <div class="submenu"><!--active-submenu-->
                     <a class="menu-item color-gray-dark" href="{{ '/cz/2017/roadshow-prague.html'|url(lang=lang) }}">
-                        <i class="fa fa-calendar-check-o"></i>{{ _('Prague 2017') }}<i class="fa fa-circle"></i>  
+                        <i class="fa fa-calendar-check-o"></i>{{ _('Prague 2017') }}<i class="fa fa-circle"></i>
                       </a>
                       <a class="menu-item color-gray-dark" href="{{ '/sk/2017/roadshow-bratislava.html'|url(lang=lang) }}">
-                        <i class="fa fa-calendar-check-o"></i>{{ _('Bratislava 2017') }}<i class="fa fa-circle"></i>  
+                        <i class="fa fa-calendar-check-o"></i>{{ _('Bratislava 2017') }}<i class="fa fa-circle"></i>
                       </a>
                   </div>
               </div>
-          </div>    
+          </div>
+          <div class="sidebar-divider color-gray-dark"></div>
+          <div class="sidebar-contact border-menu-dark">
+              <div class="sidebar-form contact-form no-bottom">
+                  <p>
+                    {{ _('Want to recieve updates about current and future DevConf events?') }}
+                  </p>
+                  <form action="https://devconf.us14.list-manage.com/subscribe/post?u=4405d7552dfc612aef814da21&amp;id=9dfaafef37" method="post" target="_blank" class="subscribeForm" id="subscribeForm" novalidate>
+                      <fieldset>
+                          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4405d7552dfc612aef814da21_9dfaafef37" tabindex="-1" value=""></div>
+                          <button type="submit"
+                              class="button no-border button-green"
+                              title="{{ _('Stay up to date with DevConf.cz') }}"
+                              data-toggle="popover"
+                              data-trigger="hover"
+                              data-placement="top"
+                              data-content="{{ _('Updates and event information') }}">
+                            {{ _('Click to Subscribe') }} &nbsp;&nbsp; <i class="fa fa-envelope" aria-hidden="true"></i>
+                      </button>
+                      </fieldset>
+                  </form>
+              </div>
+          </div>
       </div>
   </div>
-        
+
+<!--
   <div class="sidebar-right sidebar-light">
       <div class="sidebar-scroll">
           <div class="sidebar-header sidebar-header-background">
@@ -93,33 +116,11 @@
                   <a href="https://telegram.me/joinchat/B1He_UEkuB4fBfY1cKCXRw"><i class="fa fa-telegram"></i></a>
                   <a href="mailto:info@devconf.cz"><i class="fa fa-envelope"></i></a>
               </div>
-          </div>   
-          <div class="sidebar-contact border-menu-dark">
-              <div class="sidebar-form contact-form no-bottom">
-                  <p>
-                    {{ _('Want to recieve updates about current and future DevConf events?') }}
-                  </p>
-                  <form action="https://devconf.us14.list-manage.com/subscribe/post?u=4405d7552dfc612aef814da21&amp;id=9dfaafef37" method="post" target="_blank" class="subscribeForm" id="subscribeForm" novalidate>
-                      <fieldset>
-                          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4405d7552dfc612aef814da21_9dfaafef37" tabindex="-1" value=""></div>
-                          <button type="submit" 
-                              class="button no-border button-green"
-                              title="{{ _('Stay up to date with DevConf.cz') }}"
-                              data-toggle="popover"
-                              data-trigger="hover"
-                              data-placement="top"
-                              data-content="{{ _('Updates and event information') }}">
-                            {{ _('Click to Subscribe') }} &nbsp;&nbsp; <i class="fa fa-envelope" aria-hidden="true"></i>
-                      </button>
-                      </fieldset>
-                  </form>       
-
-              </div>
           </div>
       </div>
-  </div>      
+  </div>
+-->
 
+<!-- {# include 'language-select.html' #} -->
 
-  {% include 'language-select.html' %} 
-    
 <!-- END navigation -->
