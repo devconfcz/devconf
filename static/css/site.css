@@ -1,0 +1,269 @@
+/* maps settings */
+.maps {
+  min-height: 600px;
+}
+
+/* accordion settings */
+
+.accordion-toggle {
+  font-size: .95em;
+}
+
+.accordion-content {
+  font-size: .8em;
+}
+
+/* Sidebard settings */
+
+.sidebar-header-background {
+    background-image:url(../images/bg/devconfcz-2017-audience-md.jpg);
+    background-size:cover;
+    height:150px;
+}
+
+/* Background and Color settings */
+
+.bg {
+    background-image:url(../images/bg/devconf-background.jpg);
+}
+
+.bg-md {
+    background-image:url(../images/bg/devconf-background-md.jpg);
+}
+
+.bg-heading-strip-1 {
+    background-image:url(../images/bg/devconfcz-2017-3dprint-fedora-md.jpg);
+}
+
+.dark-overlay {
+    background-color:rgba(0,0,0,0.45);
+}
+
+.darker-overlay {
+    background-color:rgba(0,0,0,0.85);
+}
+
+
+/* Typeface settings */
+
+body, p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: .85em;
+    /* ,  */
+}
+
+/* Container settings */
+
+.container h1 {
+    font-size: 3em;
+}
+
+.container p {
+    color: #000000;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.container li {
+    list-style:none;
+    line-height: 15px;
+    margin-bottom: 3px;
+    color: #000000;
+    font-weight: 300;
+}
+
+.container img {
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:10px
+}
+
+@media(min-width:1000px){
+    .container p{
+        font-size: 130%!important;
+    }
+
+    .container li{
+        font-size: 130%!important;
+    }
+}
+
+
+
+/* Material Settings */
+
+.text-slider {
+    background-color:#eeeeee!important;
+}
+
+.text-slider p{
+    text-align: center!important;
+    color: #000000!important;
+}
+
+@media(max-width:600px){
+    .text-slider p{
+        font-size: 70%!important;
+    }
+}
+
+
+
+/* Coverpage settings */
+
+.coverpage-bottom {
+    right: 7em;
+}
+
+.coverpage-bottom em {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.coverpage-bottom h3 {
+    color: #FFFFFF;
+    padding-bottom: 10px;
+    font-weight: 800;
+}
+
+.coverpage-bottom p {
+    opacity: 0.8;
+}
+
+
+
+/* Footer settings */
+
+.footer .footer-logo {
+    background-image: url(../images/icon/devconf-icon.svg);
+}
+
+.footer p{
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-socials{
+    width:300px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:30px;
+}
+
+.footer-dark .decoration{
+    background-color:rgba(192, 57, 43, 0.30);
+    max-width:290px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.menu-bottom-bar img {
+    padding-top: 10px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.menu-bottom-bar i {
+    padding-right: 5px;
+}
+
+
+
+
+/* Footer menu settings */
+
+.footer-menu-item img {
+    width:50px;
+    height:50px;
+    border-radius:50px;
+    line-height:50px;
+    text-align:center;
+    font-size:15px;
+    margin-left:20px;
+    float:right;
+    box-shadow:0 1px 2px 2px rgba(0,0,0,0.10);
+    -webkit-box-shadow:0 1px 2px 2px rgba(0,0,0,.10);
+    background-color: rgba(255,255,255,100);
+}
+
+/* Header settings */
+
+.header-dark {
+    background-color: #000000;
+}
+
+.header {
+    top: 0px!important;
+    left: 0px!important;
+    right: 0px!important;
+}
+
+.header-logo {
+    background-image: url(../images/icon/devconf-icon.svg);
+}
+
+
+/* Decorations settings */
+
+.decoration-margins {
+    margin: 25px 20px 25px 20px;
+}
+
+/* Full-Page (text only) settings */
+
+.centered-page p, ul, li, h1, h3 {
+    color: #000000;
+    line-height: 1.5em;
+}
+
+.centered-page a {
+    display: inline;
+}
+
+.centered-page p {
+    margin-bottom: 1.5em;
+}
+
+@media(min-width:1000px) {
+    .centered-page {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(max-width:1000px) {
+    .centered-page p, ul, li, h1, h3 {
+        font-size: .9em!important;
+    }
+}
+
+/* FAQ settings */
+
+.faq {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.faq p {
+    font-size: .9em!important;
+    padding-right: 4em;
+}
+
+@media(max-width:1000px){
+    .faq a, .faq p, .faq i, .faq em {
+        font-size: .7em!important;
+    }
+    .faq strong {
+        font-size: .9em!important;
+    }
+}

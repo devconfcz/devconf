@@ -1,18 +1,19 @@
-paths: 
+paths:
     templates: './templates/www'
     static: './static'
     build: './build'
     locale: './i18n'
 
 templates: [
-    'index.html',                                                            
-    'media-policy.html', 
+    'index.html',
+    'media-policy.html',
+    'privacy-policy.html',
     'coc.html',
     'participation-agreement.html',
     'cz/index.html',
     'cz/2017/index.html',
-    'cz/2017/roadshow-bratislava.html',
     'cz/2017/roadshow-prague.html',
+    'sk/2017/roadshow-bratislava.html',
     'cz/2018/index.html',
     'in/index.html',
     'us/index.html',

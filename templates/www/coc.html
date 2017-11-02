@@ -1,60 +1,72 @@
 {% extends "base.html" %}
 
-{% block title %}
-  <title>DevConf - {{ _('Code of Conduct') }}</title>
-{% endblock %}
+{% block title %}DevConf | {{ _('Code of Conduct') }}{% endblock %}
 
 {% block body %}
-    <!-- Code of Conduct Section -->
-    <section id="coc" class="coc-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <h1 class="purple">Code of Conduct</h1>
-	  </div>
-          <div class="col-sm-12">
-		  <h3>{{ _('Our Pledge') }}</h3>
-		  <p>{{ _('In the interest of fostering an open and welcoming environment, we as speakers, attendees and organizers at DevConf.cz pledge to making participation in our event and community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.') }}</p>
+<!-- BEGIN body -->
 
-		  <h3>{{ _('Our Standards') }}</h3>
-		  <p>{{ _('Examples of behavior that contributes to creating a positive environment include:') }}</p>
-			<ul>
-				<li>{{ _('Using welcoming and inclusive language') }}</li>
-				<li>{{ _('Being respectful of differing viewpoints and experiences') }}</li>
-				<li>{{ _('Gracefully accepting constructive criticism') }}</li>
-				<li>{{ _('Focusing on what is best for the community') }}</li>
-				<li>{{ _('Showing empathy towards other community members') }}</li>
-			</ul>
+  <div id="page-content" class="header-clear-full">
+    <div id="page-content-scroll">
 
-			<p>{{ _('Examples of unacceptable behavior by participants include:') }}</p>
-			<ul>
-				<li>{{ _('The use of sexualized language or imagery and unwelcome sexual attention or advances') }}</li>
-				<li>{{ _('Trolling, insulting/derogatory comments, and personal or political attacks') }}</li>
-				<li>{{ _('Public or private harassment') }}</li>
-				<li>{{ _('Publishing others private information, such as a physical or electronic address, without explicit permission') }}</li>
-				<li>{{ _('Other conduct which could reasonably be considered inappropriate in a professional setting') }}</li>
-			</ul>
+      <div class="content no-material full-page">
 
-			<h3>{{ _('Our Responsibilities') }}</h3>
-			<p>{{ _('Event organizers have the right and responsibility to remove, edit, or reject content, posts, examples and other event contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.') }}</p>
+        <div class="centered-page">
 
-			<h3>{{ _('Scope') }}</h3>
-			<p>{{ _('This Code of Conduct applies both within event spaces and in public spaces (physical and virtual) when an individual is representing the project or its community. Examples of representing a project or community include using an official project e-mail address, posting to, sharing or referencing official social media channels.') }}</p>
-
-			<h3>{{ _('Enforcement') }}</h3>
-			<p>{{ _('Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team lead at info@devconf.cz. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.') }}</p>
-
-			<p>{{ _('Event participants who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the project leadership.') }}</p>
-
-			<h3>{{ _('Contact Information') }}</h3>
-			<p>{{ _('Event Organizer') }}: <a href="mailto:info@devconf.cz">Chris Ward</a>
-
-		  <p>&nbsp;</p>
-
-		  <p class="smaller pull-right"><i>{{ _('This Code of Conduct is adapted from the <a href="http://contributor-covenant.org/version/1/4">Contributor Covenant, version 1.4') }}</a>.</i></p>
+          <div class="center-text">
+            <h1 class="uppercase">{{ _('Code of Conduct') }}</h1>
           </div>
+
+          <div class="decoration-line-fade decoration-margins"></div>
+
+            <h3>{{ _('Our Pledge') }}</h3>
+            <p>{{ _('In the interest of fostering an open and welcoming environment, we as speakers, attendees and organizers at DevConf.cz pledge to making participation in our event and community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.') }}</p>
+
+            <h3>{{ _('Our Standards') }}</h3>
+            <p>{{ _('Examples of behavior that contributes to creating a positive environment include:') }}</p>
+            <ul>
+              <li>{{ _('Using welcoming and inclusive language') }}</li>
+              <li>{{ _('Being respectful of differing viewpoints and experiences') }}</li>
+              <li>{{ _('Gracefully accepting constructive criticism') }}</li>
+              <li>{{ _('Focusing on what is best for the community') }}</li>
+              <li>{{ _('Showing empathy towards other community members') }}</li>
+            </ul>
+
+            <p>{{ _('Examples of unacceptable behavior by participants include:') }}</p>
+            <ul>
+              <li>{{ _('The use of sexualized language or imagery and unwelcome sexual attention or advances') }}</li>
+              <li>{{ _('Trolling, insulting/derogatory comments, and personal or political attacks') }}</li>
+              <li>{{ _('Public or private harassment') }}</li>
+              <li>{{ _('Publishing others private information, such as a physical or electronic address, without explicit permission') }}</li>
+              <li>{{ _('Other conduct which could reasonably be considered inappropriate in a professional setting') }}</li>
+            </ul>
+
+            <h3>{{ _('Our Responsibilities') }}</h3>
+            <p>{{ _('Event organizers have the right and responsibility to remove, edit, or reject content, posts, examples and other event contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.') }}</p>
+
+            <h3>{{ _('Scope') }}</h3>
+            <p>{{ _('This Code of Conduct applies both within event spaces and in public spaces (physical and virtual) when an individual is representing the project or its community. Examples of representing a project or community include using an official project e-mail address, posting to, sharing or referencing official social media channels.') }}</p>
+
+            <h3>{{ _('Enforcement') }}</h3>
+            <p>{{ _('Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team lead at info@devconf.cz. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.') }}</p>
+
+            <p>{{ _('Event participants who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the project leadership.') }}</p>
+
+            <h3>{{ _('Contact Information') }}</h3>
+            <p>{{ _('Event Organizer') }}: <a href="mailto:info@devconf.cz">Chris Ward</a>
+
+            <p>&nbsp;</p>
+
+            <p class="smaller-text right-text"><i>{{ _('This Code of Conduct is adapted from the <a href="http://contributor-covenant.org/version/1/4">Contributor Covenant, version 1.4') }}</a>.</i></p>
+
+            <p class="smaller-text right-text"><i>Last Updated: September 1, 2017</i></p>
+
         </div>
       </div>
-    </section>
 
+      {% include 'devconf-footer.html' %}
+
+    </div>
+  </div>
+
+<!-- END body -->
 {% endblock %}

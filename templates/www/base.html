@@ -1,146 +1,35 @@
 <!DOCTYPE html>
-<html lang="{{ lang }}" class="no-js">
-    <head>
+<html lang="{{ lang }}">
+<head>
 
-        {% include 'meta.html' %}
+  {% include 'meta.html' %}
 
-        {% block title %} <title>{{ _('DevConf - free and Open Source Software community conferences for developers') }}</title> {% endblock %}
+  {% block styles %} {% include 'styles.html' %} {% endblock %}
 
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="{{ '/images/favicon.png'|url }}" type="image/png">
+  <title>
+    {% block title %}{{ _('DevConf - Community Contributors Conference') }}{% endblock %}
+  </title>
 
-        {% block css %} {% include 'css.html' %} {% endblock %}
+</head>
 
-    </head>
+<body>
 
-  <body id="page-top">
+  <div id="page-transitions">
 
-    {% block nav %}
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="page-preloader page-preloader-dark">
+        <div class="loader loader-frames"><i></i><i></i><i></i><i></i></div>
+    </div>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-          {% block nav_logo %}
-	  <img src="{{ 'images/devconf-webopt.svg' }}" class="navbar-brand top-branding" />
-	  {% endblock %}
-	  </div>
-        </div>
-      </div>
+    {% block navigation %}{% include 'navigation.html' %}{% endblock %}
 
-      <div class="container">
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="navbar-collapse">
-          <ul class="nav navbar-nav navbar-left">
-              <li>
-                  <a href="{{ '/index.html'|url(lang=lang) }}" class="fa fa-home" title="Home">
-                      <span class="hide">{{ _('Home') }}</span>
-                  </a>
-              </li>
-              <li>
-                <div class="dropdown" style="margin-top: 12px; color: #777777">
-                  <i class="fa fa-bookmark" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    <span class="caret"></span>
-                  </i>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-		      <!-- MAIN EVENTS -->
-                      <li class="dropdown-header dropdown-header-title">{{ _('Upcoming events') }}</li>
-		      <!-- devconf.CZ -->
-		      <li class="dropdown-header dropdown-header-subtitle"><b>devconf.CZ</b></li>
-              <li><a href="{{ '/cz/2018/index.html'|url(lang=lang) }}">{{ _('> 2018 - Main Event - January') }}</a></li>
-		      <!-- devconf.IN -->
-		      <li class="dropdown-header dropdown-header-subtitle"><b>devconf.IN</b></li>
-              <li><a href="{{ '/in/index.html'|url(lang=lang) }}">{{ _('> 2018 - India') }}</a></li>
-		      <!-- devconf.US -->
-		      <li class="dropdown-header dropdown-header-subtitle"><b>devconf.US</b></li>
-              <li><a href="{{ '/us/index.html'|url(lang=lang) }}">{{ _('> 2018 - Boston') }}</a></li>
-		      <!-- ROADSHOW EVENTS -->
-		      <!-- None coming -->
+    {% block body %}{% endblock %}
 
-		      <!-- PAST EVENTS -->
-                      <li class="dropdown-header dropdown-header-title">{{ _('Past events') }}</li>
-                      <li><a href="{{ '/cz/2017/index.html'|url(lang=lang) }}" class="faded">{{ _('> 2017 - Main Event - January 27-29') }}</a></li>
-                      <li><a href="{{ '/cz/2017/roadshow-bratislava.html'|url(lang=lang) }}" class="faded">{{ _('> 2017 - Containers Roadshow Bratislava') }}</a></li>
-                      <li><a href="{{ '/cz/2017/roadshow-prague.html'|url(lang=lang) }}" class="faded">{{ _('> 2017 - Containers Roadshow Prague') }}</a></li>
+    <div class="sidebar-tap-close"></div>
+    <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to Top</a>
 
-                  </ul>
+  </div>
 
-                </div>
-            </li>
-            <li>
-                <div class="dropdown" style="margin-top: 12px; margin-left: 5px">
-                    <div type="button" id="dropdownMenu3" data-toggle="dropdown">
-		      <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                    </div>
-
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-		    <li>{% include 'section-newsletter.html' %}</li>
-                  </ul>
-
-                </div>
-            </li>
-          </ul>
-
-          <ul class="nav navbar-nav navbar-right social">
-            <li><a href="https://telegram.me/joinchat/B1He_UEkuB4fBfY1cKCXRw" class="fa fa-send-o" title="Telegram - Attendees Channel">
-                <span class="hide">Telegram</span>
-            </a></li>
-
-            <li><a href="https://twitter.com/devconf_cz" class="fa fa-twitter" title="Twitter">
-                <span class="hide">Twitter</span>
-            </a></li>
-
-            <li><a href="https://www.facebook.com/DevConf.cz" class="fa fa-facebook-official" title="Facebook">
-                <span class="hide">Facebook</span>
-            </a></li>
-
-            <li><a
-                href="https://www.youtube.com/channel/UCmYAQDZIQGm_kPvemBc_qwg" class="fa fa-youtube-play" title="YouTube">
-                <span class="hide">YouTube</span>
-            </a></li>
-
-            <li><a href="https://plus.google.com/100374582019862201361" class="fa fa-google-plus" title="Google+">
-                <span class="hide">Google+</span>
-            </a></li>
-
-            <li><a href="https://github.com/kejbaly2/devconfcz" class="fa fa-github" title="Github">
-                <span class="hide">GitHub</span>
-            </a></li>
-
-            <li><a href="mailto:info@devconf.cz" class="fa fa-envelope" title="E-Mail">
-                <span class="hide">E-mail</span>
-            </a></li>
-            <li>
-                <div class="dropdown" style="margin-top: 13px;">
-                    <div type="button" id="dropdownMenu2" data-toggle="dropdown">
-		      <img src="{{ '/images/lang_flag_%s.svg'|format(lang)|url }}" class="navbar-flag"  />
-                    </div>
-                  <ul class="dropdown-menu dropdown-menu-flag" aria-labelledby="dropdownMenu2">
-                      <li><a href="{{ '/{}'.format(_page)|url(lang='en') }}"><img src="{{ '/images/lang_flag_%s.svg'|format('en')|url }}" class="navbar-flag navbar-flag-padded"/> (en)</a></li>
-                      <li><a href="{{ '/{}'.format(_page)|url(lang='cs') }}"><img src="{{ '/images/lang_flag_%s.svg'|format('cs')|url }}" class="navbar-flag navbar-flag-padded"/> (cs)</a></li>
-                      <li><a href="{{ '/{}'.format(_page)|url(lang='sk') }}"><img src="{{ '/images/lang_flag_%s.svg'|format('sk')|url }}" class="navbar-flag navbar-flag-padded"/> (sk)</a></li>
-                    <li class="dropdown-header">Site language</li>
-                  </ul>
-                </div>
-            </li>
-
-          </ul>
-        </div>
-
-        <!-- /.navbar-collapse -->
-      </div>
-
-      <!-- /.container -->
-    </nav>
-
-    {% endblock %}
-
-    {% block body %} {% endblock %}
-
-    {% block footer %} {% include 'footer.html' %} {% endblock %}
-
-  </body>
+</body>
 
   {% block scripts %} {% include 'scripts.html' %} {% endblock %}
 
