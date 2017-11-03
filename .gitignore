@@ -1,5 +1,7 @@
 npm-debug.log
 
+firebase-debug.log
+
 *.ropeproject*
 
 *build

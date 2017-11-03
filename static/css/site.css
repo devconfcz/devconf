@@ -1,3 +1,8 @@
+/* toggles settings */
+.toggle .toggle-title {
+  line-height: unset;
+}
+
 /* colors */
 
 .devconf-bg{
@@ -250,8 +255,14 @@ body, p {
 
 .header-logo {
   background-image: url(../images/icon/crystalball-lowres-reserved.svg);
+  right: 1%;
 }
 
+@media(max-width:900px) {
+  .header-logo {
+    right: 3%;
+  }
+}
 
 /* Decorations settings */
 
