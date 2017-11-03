@@ -50,6 +50,10 @@ firebase deploy build
 
 See also the list of [contributors](https://github.com/devconf/contributors) who participated in this project.
 
+## Aknowledgements
+
+* ** Wikipedia ** - for multiple images and information
+
 ## License
 
 This project is licensed under the GPLv3 License - see the [LICENSE.md](LICENSE) file for details

@@ -122,7 +122,7 @@
 /*-----------------------------*/
 
 ::-webkit-scrollbar {
-    /* display: none; */
+    display: none;
 }
 
 * {
@@ -1967,10 +1967,10 @@ ol ol ol{list-style-type:disc;}
 
 /*Button Styles*/
 
-@media(max-width:560px){.demo-socials a{width:97%;}}
-@media(min-width:560px) and (max-width:760px){.demo-socials a{width:45%;}}
-@media(min-width:760px) and (max-width:1280px){.demo-socials a{width:31%;}}
-@media(min-width:1280px){.demo-socials a{width:18%;}}
+/*@media(max-width:560px){.demo-socials a{width:97%;}}*/
+/*@media(min-width:560px) and (max-width:760px){.demo-socials a{width:45%;}}*/
+/*@media(min-width:760px) and (max-width:1280px){.demo-socials a{width:31%;}}*/
+/*@media(min-width:1280px){.demo-socials a{width:18%;}}*/
 
 .button{
     color:#FFFFFF;
@@ -7218,7 +7218,7 @@ calendar*{display:block; overflow:hidden;}
 /*We've placed them here because the sidebar is VERY sensitive*/
 /*EDIT ONLY if you have the required skill!!!*/
 
-/* *::-webkit-scrollbar{display: none; } */
+*::-webkit-scrollbar{display: none; }
 
 html, body {overflow-x:hidden;}
 .sidebar-left, .sidebar-right{

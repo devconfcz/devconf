@@ -39,7 +39,8 @@
               <li>{{ _('There is no direct transport connection between the Bratislava airport and Brno. You have to take a city bus to the centre and take a coach or train to Brno from there. It takes at least three hours.') }}</li>
             </ul>
             <p>{{ _('There are also small international airports in <strong><a href="http://www.airport-ostrava.cz/en/">Ostrava</a></strong> (flights to Paris and London) and <strong><a href="http://www.airport-pardubice.cz/en">Pardubice</a></strong> (flights to Saint Petersburg and Moscow). Both have good train and bus connections to Brno.') }}</p>
-            <p><img data-original="https://upload.wikimedia.org/wikipedia/commons/9/91/LKTB_04.png" class="preload-image full-bottom responsive-image" alt="" />
+            <p><img data-original="{{ '/images/maps/map-travel-air-cz.jpg'|url }}"
+                    class="preload-image full-bottom responsive-image" alt="" />
           </div>
       </div>
 
@@ -154,45 +155,53 @@
   </div>
 
   <div class="clear"></div>
+    <div class="one-third-responsive">
+      &nbsp
+    </div>
 
-    <h2 class="full-top">{{ _('Recommended Hotels') }}</h2>
-    <p>{{ _('When booking your hotel, mention that you are speaking or attending DevConf.cz 2018 and you should receive a discounted offer from the following DevConf.cz partner hotels in Brno.') }}</p>
-    <p class="full-bottom">{{ _('Speakers will receive additional details after submissions are selected, when sending out acceptance confirmation requests in December.') }}</p>
 
-    <div class="portfolio-wide full-bottom">
-      <div class="portfolio-wide-item portfolio-wide-card">
-          <a href="mailto: hotel@hotelavanti.cz" class="portfolio-wide-caption">
-            <img class="preload-image responsive-image" data-original="{{ '/images/sponsors/hotel-avanti-header.jpg'|url }}">
-            <h3>Hotel Avanti</h3>
-            <em>hotel@hotelavanti.cz</em>
-            <div class="overlay"></div>
-          </a>
-      </div>
-      <div class="portfolio-wide-item portfolio-wide-card">
-          <a href="mailto: hotel@vista-hotel.cz" class="portfolio-wide-caption">
-            <img class="preload-image responsive-image" data-original="{{ '/images/sponsors/hotel-vista-header.jpg'|url }}">
-            <h3>Hotel Vista</h3>
-            <em>hotel@vista-hotel.cz</em>
-            <div class="overlay"></div>
-          </a>
-      </div>
-      <div class="clear"></div>
-      <div class="portfolio-wide-item portfolio-wide-card">
-          <a href="#" class="portfolio-wide-caption">
-            <img class="preload-image responsive-image" data-original="{{ '/images/sponsors/hotel-grand-header.jpg'|url }}">
-            <h3>Hotel Grand</h3>
-            <em>reservation@grandhotelbrno.cz</em>
-            <div class="overlay"></div>
-          </a>
-      </div>
-      <div class="portfolio-wide-item portfolio-wide-card">
-          <a href="#" class="portfolio-wide-caption">
-            <img class="preload-image responsive-image" data-original="{{ '/images/sponsors/hotel-continental-header.jpg'|url }}">
-            <h3>Hotel Continental</h3>
-            <em>info@continentalbrno.cz</em>
-            <div class="overlay"></div>
-          </a>
+    <div class="one-third-responsive">
+      <h2 class="full-top">{{ _('Recommended Hotels') }}</h2>
+      <p>{{ _('When booking your hotel, mention that you are speaking or attending DevConf.cz 2018 and you should receive a discounted offer from the following DevConf.cz partner hotels in Brno.') }}</p>
+      <p class="full-bottom">{{ _('Speakers will receive additional details after submissions are selected, when sending out acceptance confirmation requests in December.') }}</p>
+      <div class="portfolio-wide full-bottom">
+        <div class="portfolio-wide-item portfolio-wide-card">
+            <a href="mailto: hotel@hotelavanti.cz" class="portfolio-wide-caption">
+              <img class="preload-image responsive-image" data-original="{{ '/images/sponsors/hotel-avanti-header.jpg'|url }}">
+              <h3>Hotel Avanti</h3>
+              <em>hotel@hotelavanti.cz</em>
+              <div class="overlay"></div>
+            </a>
+        </div>
+        <div class="portfolio-wide-item portfolio-wide-card">
+            <a href="mailto: hotel@vista-hotel.cz" class="portfolio-wide-caption">
+              <img class="preload-image responsive-image" data-original="{{ '/images/sponsors/hotel-vista-header.jpg'|url }}">
+              <h3>Hotel Vista</h3>
+              <em>hotel@vista-hotel.cz</em>
+              <div class="overlay"></div>
+            </a>
+        </div>
+        <div class="clear"></div>
+        <div class="portfolio-wide-item portfolio-wide-card">
+            <a href="#" class="portfolio-wide-caption">
+              <img class="preload-image responsive-image" data-original="{{ '/images/sponsors/hotel-grand-header.jpg'|url }}">
+              <h3>Hotel Grand</h3>
+              <em>reservation@grandhotelbrno.cz</em>
+              <div class="overlay"></div>
+            </a>
+        </div>
+        <div class="portfolio-wide-item portfolio-wide-card">
+            <a href="#" class="portfolio-wide-caption">
+              <img class="preload-image responsive-image" data-original="{{ '/images/sponsors/hotel-continental-header.jpg'|url }}">
+              <h3>Hotel Continental</h3>
+              <em>info@continentalbrno.cz</em>
+              <div class="overlay"></div>
+            </a>
+        </div>
       </div>
     </div>
+
+
+    <div class="one-third-responsive last-column">&nbsp</div>
 
 </div>

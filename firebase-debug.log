@@ -1,0 +1,24 @@
+[debug] [2017-11-03T13:24:02.123Z] ----------------------------------------------------------------------
+[debug] [2017-11-03T13:24:02.127Z] Command:       /usr/bin/node /usr/bin/firebase deploy
+[debug] [2017-11-03T13:24:02.128Z] CLI Version:   3.13.1
+[debug] [2017-11-03T13:24:02.128Z] Platform:      linux
+[debug] [2017-11-03T13:24:02.128Z] Node Version:  v6.11.2
+[debug] [2017-11-03T13:24:02.128Z] Time:          Fri Nov 03 2017 14:24:02 GMT+0100 (CET)
+[debug] [2017-11-03T13:24:02.128Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-11-03T13:24:02.146Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-11-03T13:24:02.146Z] > authorizing via signed-in user
+[debug] [2017-11-03T13:24:02.150Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/devconf-fa870  
+ Fri Nov 03 2017 14:24:02 GMT+0100 (CET)
+[debug] [2017-11-03T13:24:03.365Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-03T13:24:03.367Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/devconf-fa870/tokens  
+ Fri Nov 03 2017 14:24:03 GMT+0100 (CET)
+[debug] [2017-11-03T13:24:04.256Z] <<< HTTP RESPONSE 200
+[info] 1
+[info] 
+[info] === Deploying to 'devconf-fa870'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing build directory for upload...
+[debug] [2017-11-03T13:24:06.601Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/devconf-fa870/uploads/-Ky12NR4OYmlkAMxYVmu?fileCount=200&message=  
+ Fri Nov 03 2017 14:24:06 GMT+0100 (CET)

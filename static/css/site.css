@@ -1,6 +1,33 @@
-/* maps settings */
-.maps {
-  min-height: 600px;
+/* colors */
+
+.devconf-bg{
+  background-color: #8e83e3;
+  color: #FFFFFF;
+  border:solid 1px #8e83e3;
+
+}
+
+.devconf-bg: hover {
+  background-color: #4469b7;
+  color: #FFFFFF;
+  border:solid 1px #3b5998;
+}
+
+/* container settings */
+.event-container {
+  min-width: 250px;
+}
+
+/* divider settings */
+.decoration-line-fade {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(142, 131, 227, 0.75), rgba(0, 0, 0, 0));
+}
+
+@media(min-width:1000px){
+  /* maps settings */
+  .maps {
+    min-height: 600px;
+  }
 }
 
 /* accordion settings */
@@ -16,7 +43,7 @@
 /* Sidebard settings */
 
 .sidebar-header-background {
-    background-image:url(../images/bg/devconfcz-2017-audience-md.jpg);
+    background-image:url(../images/bg/devconfcz-2017-audience-small.jpg);
     background-size:cover;
     height:150px;
 }
@@ -100,15 +127,20 @@ body, p {
 .text-slider p{
     text-align: center!important;
     color: #000000!important;
+    font-weight: 800;
 }
 
-@media(max-width:600px){
-    .text-slider p{
-        font-size: 70%!important;
+@media(min-width: 400px){
+    .text-slider p {
+        font-size: 100%!important;
     }
 }
 
-
+@media(max-width: 400px){
+    .text-slider p {
+        font-size: 75%!important;
+    }
+}
 
 /* Coverpage settings */
 
@@ -176,8 +208,17 @@ body, p {
     padding-right: 5px;
 }
 
+@media(max-width:600px){
+  .menu-bottom-bar-text em {
+    font-size: .7em!important;
+  }
+}
 
-
+@media(max-width:400px){
+  .menu-bottom-bar-text em {
+    font-size: .5em!important;
+  }
+}
 
 /* Footer menu settings */
 
@@ -208,7 +249,7 @@ body, p {
 }
 
 .header-logo {
-    background-image: url(../images/icon/crystalball-lowres-reserved.svg);
+  background-image: url(../images/icon/crystalball-lowres-reserved.svg);
 }
 
 
