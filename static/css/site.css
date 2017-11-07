@@ -61,7 +61,7 @@
 }
 
 .toggle .toggle-title {
-  line-height: 30px;
+  line-height: 1.5em;
   padding-top: .25em;
 }
 
@@ -101,8 +101,11 @@
 body, p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    font-size: .80em;
-    /* ,  */
+    /* font-size: .80em; */
+}
+
+p strong {
+  font-size: 1em;
 }
 
 /* Container settings */
@@ -113,13 +116,13 @@ body, p {
 
 .container p {
     color: #000000;
-    line-height: 20px;
+    line-height: 1.2em;
     margin-bottom: 10px;
 }
 
 .container li {
     list-style:none;
-    line-height: 15px;
+    line-height: 1em;
     margin-bottom: 3px;
     color: #000000;
     font-weight: 300;
@@ -133,11 +136,11 @@ body, p {
 
 @media(min-width:1000px){
     .container p{
-        font-size: 130%!important;
+        font-size: 1.3em!important;
     }
 
     .container li{
-        font-size: 130%!important;
+        font-size: 1.3em!important;
     }
 }
 
@@ -157,13 +160,13 @@ body, p {
 
 @media(min-width: 400px){
     .text-slider p {
-        font-size: 100%!important;
+        font-size: 1em!important;
     }
 }
 
 @media(max-width: 400px){
     .text-slider p {
-        font-size: 75%!important;
+        font-size: .75em!important;
     }
 }
 
@@ -174,14 +177,14 @@ body, p {
 }
 
 .coverpage-bottom em {
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: underline;
 }
 
 .coverpage-bottom h3 {
     color: #FFFFFF;
     padding-bottom: 10px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .coverpage-bottom p {
@@ -203,7 +206,7 @@ body, p {
     text-align: center;
     padding-left: 1em;
     padding-right: 1em;
-    line-height: 20px;
+    line-height: 1.1em;
     margin-bottom: 10px;
 }
 
@@ -253,7 +256,7 @@ body, p {
     border-radius:50px;
     line-height:50px;
     text-align:center;
-    font-size:15px;
+    font-size:.7em;
     margin-left:20px;
     float:right;
     box-shadow:0 1px 2px 2px rgba(0,0,0,0.10);
