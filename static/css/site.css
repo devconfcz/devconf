@@ -1,3 +1,13 @@
+/* content settings */
+
+@media(min-width: 1000px) {
+  .content, .content-material {
+    /*padding-top: 0;*/
+    /*margin: 0;*/
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+}
 /* toggles settings */
 .toggle .toggle-title {
   line-height: unset;
@@ -91,7 +101,7 @@
 body, p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    font-size: .85em;
+    font-size: .80em;
     /* ,  */
 }
 
