@@ -35,14 +35,24 @@
   }
 }
 
+.maps {
+  min-height: 250px;
+}
+
 /* accordion settings */
 
 .accordion-toggle {
   font-size: .95em;
+  font-weight: 400;
 }
 
 .accordion-content {
   font-size: .8em;
+}
+
+.toggle .toggle-title {
+  line-height: 30px;
+  padding-top: .25em;
 }
 
 /* Sidebard settings */
