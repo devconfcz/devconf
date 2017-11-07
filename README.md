@@ -48,7 +48,7 @@ firebase deploy build
 
 * **Chris Ward** - [kejbaly2](https://github.com/kejbaly2)
 
-See also the list of [contributors](https://github.com/devconf/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/devconfcz/devconf/contributors) who participated in this project.
 
 ## Aknowledgements
 
