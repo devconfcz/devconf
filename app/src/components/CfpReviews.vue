@@ -86,7 +86,6 @@
 </template>
 
 <script>
-// import CfpReview from '@/components/CfpReview'
 import CfpReviewTabComments from '@/components/CfpReviewTabComments'
 import CfpReviewTabSpeakers from '@/components/CfpReviewTabSpeakers'
 import CfpReviewTabSubmissionDetail from '@/components/CfpReviewTabSubmissionDetail'
