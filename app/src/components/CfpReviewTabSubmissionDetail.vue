@@ -2,10 +2,10 @@
   <v-tabs-content key="details" id="details">
     <div class="mt-3">
       <span>
-        <ul style="list-style: none; padding: 0">
+        <ul class="blocked">
           <li><em>Type</em>: {{ submission.type }}</li>
           <li><em>Difficulty:</em> {{ submission.difficulty.split(' ').slice(0,1).join('') }}</li>
-          <li><em>Duration:</em> {{ submission.duration }}</li>
+          <li><em>Duration:</em> {{ submission.duration }} minutes</li>
           <li><em>Themes:</em> {{ submission.themes.join(', ') }}</li>
           <li><em>Abstract:</em></li>
         </ul>
@@ -29,4 +29,13 @@ export default {
 </script>
 
 <style scoped>
+.blocked {
+  list-style: none;
+  padding: 0;
+  display: grid;
+}
+
+em {
+  font-weight: 600;
+}
 </style>

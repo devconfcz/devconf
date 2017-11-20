@@ -36,14 +36,14 @@ export default {
   },
   computed: {
     comments: function () {
-      console.log('CfpReviewTabComments.computed.comments: ', this.submissionId)
+      // console.log('CfpReviewTabComments.computed.comments: ', this.submissionId)
       let comments = Object.values(this.$store.getters.getSubmissionComments(this.submissionId))
       return comments
     }
   },
   methods: {
     newSubmissionComment: function (event) {
-      console.log('CfpReviewTabComments.methods.newSubmissionComment: ', this.submissionId)
+      // console.log('CfpReviewTabComments.methods.newSubmissionComment: ', this.submissionId)
       let payload = {
         text: this.newComment,
         submitter: this.$store.getters.currentUser
@@ -55,7 +55,7 @@ export default {
   props: ['submissionId'],
   components: {},
   created: function () {
-    console.log('CfpReviewTabComments.created: ', this.submissionId)
+    // console.log('CfpReviewTabComments.created: ', this.submissionId)
     this.$store.dispatch('getFirebaseDatabaseSubmissionComments', this.submissionId)
   }
 

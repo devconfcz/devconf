@@ -3,12 +3,12 @@
     <v-tabs-content key="speakers" id="speakers">
       <div class="mt-3">
       <v-flex xs12>
-        <v-card v-for="speaker in speakers" :key="speaker.id">
+        <v-card v-for="speaker in submissionSpeakers" :key="speaker.id">
           <v-container fluid grid-list-lg>
             <v-layout row>
               <v-flex xs12>
                 <v-card-media
-                  :src="speaker.avatar"
+                  :src="speaker.photo_url"
                   height="125px"
                   contain
                 ></v-card-media>
@@ -21,7 +21,7 @@
                     <li><em>Name</em>: {{ speaker.full_name }}</li>
                     <li><em>Organization</em>: {{ speaker.organization }}</li>
                     <li><em>Description</em>: {{ speaker.short_description }}</li>
-                    <li><em>About</em>: {{ speaker.bio }}</li>
+                    <li><em>About</em>: {{ speaker.description }}</li>
                   </ul>
                 </div>
               </v-flex>
@@ -43,10 +43,6 @@ export default {
     }
   },
   computed: {
-    speakers: function () {
-      // console.log('computed.getSubmissionSpeakers: ', this.submission)
-      return this.$store.getters.getSpeakers(this.submissionSpeakers)
-    }
   },
   methods: {
   },

@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Cfp Dashboard</h1>
-    <cfp-reviews cfp-id='cfpId'></cfp-reviews>
+    <cfp-reviews></cfp-reviews>
   </div>
 </template>
 
@@ -10,16 +10,36 @@ import CfpReviews from '@/components/CfpReviews'
 
 export default {
   name: 'cfp-dashboard',
-  data () {
-    return {
-      'cfpId': '1v7r4ZgaJl97t751UnCKPPuk2SDRugsIjesBedmtSYhA'  // FIXME: NOT BEING USED!?
-    }
-  },
   components: {
     'cfp-reviews': CfpReviews
   }
 }
 </script>
 
-<style scoped>
+<style>
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+a {
+  color: #42b983;
+}
 </style>
