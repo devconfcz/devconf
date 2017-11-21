@@ -33,37 +33,48 @@ export default {
   },
   computed: {
     hasVotedPlus () {
-      return (this.voted[this.submissionId] === 1) // FIXME: pull from $STORE
+      return (this.voted[this.submission.id] === 1) // FIXME: pull from $STORE
     },
     hasVotedMinus () {
-      return (this.voted[this.submissionId] === -1)
+      return (this.voted[this.submission.id] === -1)
     },
     voteCountPlus () {
       // console.log('CfpReviewNavbarVoting.computed.voteCountPlus: ', this.submissionId)
-      return this.$store.getters.getVoteCountPlus(this.submissionId)
+      return this.$store.getters.getVoteCountPlus(this.submission.id)
     },
-    voteCountMinus: function () {
+    voteCountMinus () {
       // console.log('CfpReviewNavbarVoting.computed.voteCountMinus: ', this.submissionId)
-      return this.$store.getters.getSubmissionVoteCountMinus(this.submissionId)
+      return this.$store.getters.getVoteCountMinus(this.submission.id)
     },
-    voteTotal: function () {
+    voteTotal () {
       // console.log('CfpReviewNavbarVoting.computed.votes: ', this.submissionId)
-      return this.$store.getters.getSubmissionVoteTotal(this.submissionId)
+      return this.$store.getters.getVoteTotal(this.submission.id)
     }
   },
   methods: {
-    incrementVoteCount: function (incrementValue) {
+    incrementVoteCount (incrementValue) {
       // console.log('CfpReviewNavbarVoting.methods.submissionVotePlus: ', this.submissionId)
       const payload = {
-        submissionId: this.submissionId,
+        submissionId: this.submission.id,
         incrementValue: incrementValue
       }
       this.$store.dispatch('incrementVoteCount', payload).then(() => {
-        this.$set(this.voted, this.submissionId, incrementValue)
+        // console.log(`${this.submission.id} -> ${incrementValue}`)
+        this.$set(this.voted, this.submission.id, incrementValue)
+        // this.$store.dispatch('refreshSubmissionStatus')
+        let payload = {
+          incrementValue: incrementValue,
+          bucketName: this.bucketName,
+          submissionId: this.submission.id
+        }
+        this.$store.dispatch('updateSubmissionBucket', payload)
+      })
+      .catch((e) => {
+        console.log(`ERROR: ${e}`)
       })
     }
   },
-  props: ['submissionId']
+  props: ['submission', 'bucketName']
 }
 </script>
 

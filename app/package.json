@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "firebase": "^4.6.0",
+    "firebaseui": "^2.4.1",
     "google-spreadsheet": "^2.0.4",
     "googleapis": "^22.2.0",
     "vue": "^2.4.2",

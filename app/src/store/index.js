@@ -17,324 +17,282 @@ var db = firebaseApp.database()
 
 export const store = new Vuex.Store({
   state: {
+    formId: '1xrtWTn6mA-1zHvM6q8kRlPjoy0yLIAwOfjsv-nGhWPM', // FIXME: Shouldn't be hardcoded
     _isLoading: true,
-    _currentUser: { // FIXME: enable authentication ///////////////
-      id: '3',
-      email: 'cward@redhat.com'
-    },
-    formId: '1xrtWTn6mA-1zHvM6q8kRlPjoy0yLIAwOfjsv-nGhWPM',
-    _submissions: {},
+    _currentUser: null,
     _speakers: {},
-    _comments: {},
-    _voting: {},
-    _unreviewed: {},
-    _approved: {},
-    _rejected: {}
+    _submissions: [],
+    _unreviewed: [],
+    _approved: [],
+    _rejected: [],
+    _votes: {},
+    _themes: [],
+    _themesFilter: []
   },
   getters: {
+    themes: (state) => {
+      return state._themes.sort()
+    },
+    themesFilter: (state) => {
+      return state._themesFilter.sort()
+    },
+    isLoggedIn: (state) => {
+      if (state._currentUser === undefined || state._currentUser === null) {
+        return false
+      }
+      return true
+    },
     isLoading (state) {
       return state._isLoading
     },
     currentUser: (state) => {
       return state._currentUser
     },
-    submissions: (state) => {
-      return Object.values(state._submissions)
-    },
     unreviewed: (state) => {
       console.log('Loading data: unreviewed')
-      return Object.values(state._unreviewed)
+      let submissions = state._submissions
+      let themesFilter = new Set(state._themesFilter)
+      return submissions.filter(val =>
+          (val.themes.filter(theme =>
+            themesFilter.has(theme)
+          ).length > 0) &&
+          (state._unreviewed.indexOf(val.id) > -1)
+        )
     },
     approved: (state) => {
       console.log('Loading data: approved')
-      return Object.values(state._approved)
+      return Object.values(state._submissions).filter(
+        val => state._approved.indexOf(val.id) > -1)
     },
     rejected: (state) => {
       console.log('Loading data: rejected')
-      return Object.values(state._rejected)
-    },
-    submissionIds: (state) => {
-      return Object.keys(state._submissions)
-    },
-    getSubmission: (state) => (submissionId) => {
-      // console.log('getters.Getting Submission: ', submissionId)
-      let submission = state._submissions[submissionId]
-      return submission
+      return Object.values(state._submissions).filter(
+        val => state._rejected.indexOf(val.id) > -1)
     },
     getVoteCountPlus: (state) => (submissionId) => {
       try {
-        return state._submissions[submissionId].meta.votes.results.vote_count_plus
+        return state._votes[submissionId].vote_count_plus
       } catch (e) {
         return '-'
       }
     },
     getVoteCountMinus: (state) => (submissionId) => {
       try {
-        return state._submissions[submissionId].meta.votes.results.vote_minus
+        return state._votes[submissionId].vote_count_minus
       } catch (e) {
         return '-'
       }
     },
     getVoteTotal: (state) => (submissionId) => {
       try {
-        return state._submissions[submissionId].meta.votes.results.vote_total
+        return state._votes[submissionId].vote_total
       } catch (e) {
         return '-'
       }
-    },
-    getSubmissionVoteCountPlus: (state) => (submissionId) => {
-      // console.log('store.getters.getSubmissionVoteCountPlus: ', submissionId)
-      return state._voting[submissionId].vote_count_plus
-    },
-    getSubmissionVoteCountMinus: (state) => (submissionId) => {
-      // console.log('store.getters.getSubmissionVoteCountMinus: ', submissionId)
-      return state._voting[submissionId].vote_count_minus
-    },
-    getSubmissionVoteTotal: (state) => (submissionId) => {
-      // console.log('store.getters.getSubmissionVoteTotal: ', submissionId)
-      return state._voting[submissionId].vote_total
-    },
-    getSubmissionSpeakers: (state) => (submissionId) => {
-      // console.log('getters.getSubmissionSpeakers: ', submissionId)
-      let speakersIds = state._submissions[submissionId]['speakers']
-      let speakers = []
-      for (var speakerId in speakersIds) {
-        speakers.push(state._speakers[speakerId])
-      }
-      return speakers
-    },
-    getSpeaker: (state, getters) => (speakerId) => {
-      // console.log('getters.getSpeaker: ', speakerId)
-      let speaker = state._speakers[speakerId]
-      return speaker
-    },
-    getSpeakers: (state, getters) => (speakersIds) => {
-      let speakers = {}
-      for (var speakerIdIndex in speakersIds) {
-        let speakerId = speakersIds[speakerIdIndex]
-        let speaker = state._speakers[speakerId]
-        if (!speaker) {
-          // console.warn('Empty speaker: ', speaker)
-          continue
-        }
-        speakers[speaker.id] = speaker
-      }
-      return speakers
     },
     db: (state, getters) => {
       return db
     }
   },
-  mutations: {  // triggered with "commit"
+  mutations: {  // triggered with "commit" and MUST BE SYNCHRONOUS
+    logOutCurrentUser (state) {
+      console.log('Logged out user!')
+      state._currentUser = null
+    },
+    updateCurrentUser (state, user) {
+      state._currentUser = user // FIXME: this brings in a lot of unwanted properties from firebase auth
+    },
     toggleLoading (state) {
       state._isLoading = !state._isLoading
     },
-    loadSpeaker (state, speaker) {
-      state._speakers[speaker.id] = speaker
+    loadQueue (state, submissions) {
+      let themes = {}
+      for (let submission of submissions) {
+        for (let theme of submission.themes) {
+          themes[theme] = true
+        }
+      }
+      themes = Object.keys(themes)
+      state._themes = themes
+      state._themesFilter = themes.slice() // get a copy
+      state._submissions = submissions
     },
     loadSubmission (state, submission) {
       console.log(`Loading submission (${submission.id})`)
-      const uid = state._currentUser.id
       const sid = submission.id
-      const votes = submission.meta.votes
-      if (votes === undefined || votes.results === undefined) {
-        console.log('No votes structure found ... using default')
-        submission.meta.votes = {results: {uid: 0}}
-        Vue.set(state._unreviewed, sid, submission)
-      } else {
-        const myVote = votes.results[uid]
-        if (myVote === 1) {
-          Vue.set(state._approved, sid, submission)
-        } else if (myVote === 0) {
-          Vue.set(state._unreviewed, sid, submission)
-        } else if (myVote === -1) {
-          Vue.set(state._rejected, sid, submission)
-        } else {
-          throw new Error(`Invalid vote value for currentUser (${uid})! Must be 1, 0 or -1 data (${myVote})`)
-        }
-      }
+      Vue.set(state._submissions, sid, submission)
       console.log(`... loading submission (${submission.id}) complete.`)
     },
-    updateSubmissions (state, submissions) {
-      // console.log('mutations.updateSubmissions: ', submissions)
-      state._submissions = submissions
-    },
-    updateSubmission (state, submission) {
-      state._submissions[submission.id] = submission
-    },
-    updateSpeaker (state, speaker) {
-      // console.log('mutations.updateSpeaker: ', speaker)
-      Vue.set(state._speakers, speaker.id, speaker)
-    },
-    updateVoting (state, payload) {
-      console.log('mutations.updateVoting: ', payload)
-      Vue.set(state._voting, payload.submissionId, payload.voting)
-    },
-    incrementVoteCount (state, payload) {
-      // console.log('store.mutations.incrementVoteCountPlus: ', submissionId)
-      var submissionId = payload.submissionId
-      var incrementValue = payload.incrementValue
-      let path = '/voting/' + state.formId + '/' + submissionId
-      console.log(submissionId)
-      db.ref(path)
-        .transaction(function (voting) {
-          const uid = state._currentUser.id
-          var previousVote = 0
-          if (voting) {
-            let newVote
-            const previousVoteIx = voting.votes.findIndex(val => val.uid === uid)
-            if (previousVoteIx >= 0) {
-              previousVote = voting.votes[previousVoteIx].value
-            } // else previousVote = 0 (default above)
-            console.log(previousVote, '******')
-            console.log(submissionId)
-            if (incrementValue === 1 && previousVote !== 1) {
-              newVote = {uid: uid, value: 1}
-            } else if (incrementValue === -1 && previousVote !== -1) {
-              newVote = {uid: uid, value: -1}
-            } else {
-              console.log('Nothing changed!')
-              return voting
-            }
-            if (previousVoteIx === -1) {
-              voting.votes.push(newVote)
-            } else {
-              voting.votes[previousVoteIx] = newVote
-            }
-            voting.vote_total = Object.values(voting.votes).reduce((a, b) => {
-              return {value: a.value + b.value}
-            }).value
-            voting.vote_count_total = voting.votes.length
-            voting.vote_count_plus = Object.values(voting.votes).filter(val => val.value === 1).length
-            voting.vote_count_minus = Object.values(voting.votes).filter(val => val.value === -1).length
-            console.log('((((', voting)
-            Vue.set(state._voting, submissionId, voting)
-            return voting
-          } else {
-            console.log('*********************************')
-            if (incrementValue === 1) {
-              return {
-                vote_total: 1,
-                vote_count_total: 1,
-                vote_count_plus: 1,
-                vote_count_minus: 0,
-                votes: [{uid: uid, value: 1}]
-              }
-            } else {
-              return {
-                vote_total: -1,
-                vote_count_total: 1,
-                vote_count_plus: 0,
-                vote_count_minus: 1,
-                votes: [{uid: uid, value: -1}]
-              }
-            }
-          }
-        })
-    }
-  },
-  actions: {
-    toggleLoading ({ state, commit }) {
-      commit('toggleLoading')
-    },
-    loadSubmissions ({ commit, state }, payload) {
-      console.log(`Loading firebase submissions...(limit: ${payload.limit}, skip: ${payload.skip})`)
-      if (!payload.limit) {
-        payload.limit = 10
+    refreshSubmissionStatus (state) {
+      console.log('refreshSubmissionStatus')
+      state._isLoading = true
+      if (!state._currentUser) {
+        console.log('not logged in!')
+        state._unreviewed = []
+        state._approved = []
+        state._rejected = []
+        state._isLoading = false
+        return
       }
-      var promises = []
-      db.ref('programs/' + state.formId + '/submissions/')
-      .limitToFirst(payload.limit)
-      .once('value', (snapshot) => {
-        for (const submission of Object.values(snapshot.val())) {
-          let speakers = Object.values(submission.meta.contacts)
-          if (!speakers.length) {
-            throw new Error(`... submission has no known speakers (${submission.id})`)
-          }
-          promises.push(commit('loadSubmission', submission))
-        }
-      })
-
-      Promise.all(promises).then(() => {
-        console.log('All submissions loaded!')
-      })
-    },
-    tailFirebaseDatabaseSubmissions ({ commit, state }, payload) {
-      return new Promise((resolve, reject) => {
-        console.log('Tailing firebase submissions...')
-        if (!payload.limit) {
-          payload.limit = 10
-        }
-        db.ref('programs/' + state.formId + '/submissions/')
-        .limitToFirst(payload.limit)
-        .on('value', (snapshot) => {   // FIXME: /programs/.../submissions SHOULD NOT CHANGE; use ONCE?
-          let promises = []
-          let submissions = snapshot.val()
-          // console.log('... Updating submissions: ', submissions)
-          promises.push(commit('updateSubmissions', submissions))
-          // console.log('... Getting Speaker data ...', submissions)
-          // Get the speaker data
-          for (let submission of Object.values(submissions)) {
-            let speakers = Object.values(submission.meta.contacts)
-            if (!speakers) {
-              console.warn('... submission has no known speakers')
-              continue
-            }
-            for (let speaker of speakers) {
-              // console.log('... Speaker Id: ', speaker.id)
-              db.ref('programs/' + state.formId + '/speakers/' + speaker.id).on('value', (snapshot) => {
-                let speaker = snapshot.val()
-                // console.log('... ... Speaker: ', speaker)
-                promises.push(commit('updateSpeaker', speaker))
-              })
-            }
-            // cache submission voting
-            promises.push(db.ref('voting/' + state.formId + '/' + submission.id).on('value', (snapshot) => {
-              let voting = snapshot.val()
-              if (voting === null) {
-                voting = {
-                  vote_total: 0,
-                  vote_count_total: 0,
-                  vote_count_plus: 0,
-                  vote_count_minus: 0,
-                  votes: []
-                }
-              }
-              return commit('updateVoting', {submissionId: submission.id, voting: voting})
-            }))
-          }
-          Promise.all(promises).then(() => {
-            console.log('All Firebase data initialization promises resolved')
-            resolve()
-          })
-        })
-      })
-    },
-    incrementVoteCount ({ commit }, payload) {
-      commit('incrementVoteCount', payload)
-    },
-    submissionVote ({ commit, state }, payload) {
-      // console.log('store.actions.submissionVotePlus: ', submissionId)
-      commit('incrementVoteCount', payload)
-    },
-    getFirebaseDatabaseVoting ({ commit, state }, submissionId) {
-      return new Promise((resolve, reject) => {
-        db.ref('/voting/' + state.formId + '/' + submissionId).on('value', (snapshot) => {
-          console.log(`store.actions.getFirebaseDatabaseVoting (${submissionId})`)
-          const blankVote = {
+      let uid = state._currentUser.id
+      let unreviewed = []
+      let approved = []
+      let rejected = []
+      for (let submission of state._submissions) {
+        let sid = submission.id
+        let votes = submission.meta.votes
+        if (votes === undefined) {
+          console.log('No votes structure found ... using default')
+          votes = {
             vote_total: 0,
             vote_count_total: 0,
             vote_count_plus: 0,
             vote_count_minus: 0,
-            votes: []
+            results: {[uid]: 0}
           }
-          let votes = snapshot.val() || blankVote
-          // FIXME: this updates the entire _voting tree, which triggers ALL submissions to recalculate
-          Vue.set(state._voting, submissionId, votes)
-          console.log(`... getFirebaseDatabaseVoting (${submissionId}):  DONE.`)
-          resolve(votes)
+          Vue.set(state._votes, sid, votes)
+          unreviewed.push(sid)
+        } else {
+          Vue.set(state._votes, sid, votes)
+          const myVote = votes.results[uid] || 0
+          if (myVote === 1) {
+            approved.push(sid)
+          } else if (myVote === 0) {
+            unreviewed.push(sid)
+          } else if (myVote === -1) {
+            rejected.push(sid)
+          } else {
+            throw new Error(`Invalid vote value for currentUser (${uid})! Must be 1, 0 or -1 data (${myVote})`)
+          }
+        }
+        state._unreviewed = unreviewed
+        state._approved = approved
+        state._rejected = rejected
+        state._isLoading = false
+      }
+    },
+    incrementVoteCount (state, payload) {
+      return new Promise((resolve, reject) => {
+        // console.log('store.mutations.incrementVoteCountPlus: ', submissionId)
+        var submissionId = payload.submissionId
+        var incrementValue = payload.incrementValue
+        let path = '/programs/' + state.formId + '/submissions/' + submissionId + '/meta/votes'
+        return db.ref(path)
+          .transaction(function (votes) {
+            const uid = state._currentUser.id
+            if (votes !== undefined && votes !== null) {
+              votes.results[uid] = incrementValue
+              votes.vote_total = Object.values(votes.results).reduce((a, b) => {
+                return a + b
+              })
+              votes.vote_count_total = Object.keys(votes.results).length
+              votes.vote_count_plus = Object.values(votes.results).filter(val => val === 1).length
+              votes.vote_count_minus = Object.values(votes.results).filter(val => val === -1).length
+            } else {
+              console.log('No voting data found, creating it now.')
+              if (incrementValue === 1) {
+                votes = {
+                  vote_total: 1,
+                  vote_count_total: 1,
+                  vote_count_plus: 1,
+                  vote_count_minus: 0,
+                  results: {[uid]: 1}
+                }
+              } else {
+                votes = {
+                  vote_total: -1,
+                  vote_count_total: 1,
+                  vote_count_plus: 0,
+                  vote_count_minus: 1,
+                  results: {[uid]: -1}
+                }
+              }
+            }
+            Vue.set(state._votes, submissionId, votes)
+            resolve()
+            return votes // transaction requires a return value!
+          })
+      })
+    },
+    updateThemesFilter (state, value) {
+      state._themesFilter = value
+    },
+    updateSubmissionBucket (state, payload) {
+      let submissionId = payload.submissionId
+      let bucketName = payload.bucketName
+      let incrementValue = payload.incrementValue
+      let ix = state['_' + bucketName].indexOf(submissionId)
+      // remove from existing bucket
+      state['_' + bucketName].splice(ix, 1)
+      // add to new bucket
+      if (incrementValue === 1) {
+        state['_approved'].push(submissionId)
+      } else if (incrementValue === -1) {
+        state['_rejected'].push(submissionId)
+      } else {
+        throw new Error(`Unexpected increment value (${incrementValue})!`)
+      }
+    }
+  },
+  actions: {
+    updateThemesFilter ({ commit }, value) {
+      commit('updateThemesFilter', value)
+    },
+    logInPopup ({ state, commit }) {
+      var provider = new firebase.auth.GoogleAuthProvider()
+      firebase.auth().signInWithPopup(provider)
+    },
+    logOut ({ state, commit }) {
+      firebase.auth().signOut()
+    },
+    initAuth ({ state, commit, dispatch }) {
+      firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+          // User is signed in.
+          user.id = user.uid
+          console.log(`User logged in: ${user.email}`)
+          commit('updateCurrentUser', user)
+          let payload = {
+            skip: 0,
+            limit: 50
+          }
+          dispatch('loadSubmissions', payload).then(() => {
+            // console.log('Done loading submissions. Refreshing submission status.')
+            // dispatch('refreshSubmissionStatus')
+          })
+        } else {
+          commit('logOutCurrentUser')
+        }
+      }, function (error) {
+        console.log(error)
+      })
+    },
+    toggleLoading ({ state, commit }) {
+      commit('toggleLoading')
+    },
+    loadSubmissions ({ commit, state }, payload) {
+      return new Promise((resolve, reject) => {
+        db.ref('programs/' + state.formId + '/submissions/')
+        .orderByChild('id')
+        .limitToFirst(80)  // ///////////////////////////////////////////////////?REMOVE ME
+        .once('value', (snapshot) => {
+          let submissions = Object.values(snapshot.val())
+          commit('loadQueue', submissions)
+          commit('refreshSubmissionStatus')
         })
       })
+    },
+    incrementVoteCount ({ commit }, payload) {
+      return new Promise((resolve, reject) => {
+        commit('incrementVoteCount', payload)
+        resolve()
+      })
+    },
+    refreshSubmissionStatus ({ commit }) {
+      commit('refreshSubmissionStatus')
+    },
+    updateSubmissionBucket ({ commit }, submissionId) {
+      commit('updateSubmissionBucket', submissionId)
     }
   }
 })

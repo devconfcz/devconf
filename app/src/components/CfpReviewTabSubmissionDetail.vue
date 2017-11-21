@@ -18,13 +18,7 @@
 <script>
 export default {
   name: 'cfp-review-tab-submission-detail',
-  computed: {
-  },
-  methods: {
-  },
-  props: ['submission'],
-  components: {
-  }
+  props: ['submission']
 }
 </script>
 

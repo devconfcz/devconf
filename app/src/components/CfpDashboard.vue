@@ -1,8 +1,5 @@
 <template>
-  <div>
-    <h1>Cfp Dashboard</h1>
-    <cfp-reviews></cfp-reviews>
-  </div>
+  <cfp-reviews :buckets="buckets"></cfp-reviews>
 </template>
 
 <script>
@@ -10,6 +7,16 @@ import CfpReviews from '@/components/CfpReviews'
 
 export default {
   name: 'cfp-dashboard',
+  computed: {
+    buckets () {
+      let buckets = [
+        {id: 'unreviewed', text: 'Unreviewed', badgeColor: 'black', submissions: this.$store.getters.unreviewed},
+        {id: 'approved', text: 'Approved', badgeColor: 'green', submissions: this.$store.getters.approved},
+        {id: 'rejected', text: 'Rejected', badgeColor: 'red', submissions: this.$store.getters.rejected}
+      ]
+      return buckets
+    }
+  },
   components: {
     'cfp-reviews': CfpReviews
   }
@@ -17,18 +24,6 @@ export default {
 </script>
 
 <style>
-h1 {
-  font-size: 1.5em;
-}
-
-h2 {
-  font-size: 1.2em;
-}
-
-h3 {
-  font-size: 1.1em;
-}
-
 ul {
   list-style-type: none;
   padding: 0;

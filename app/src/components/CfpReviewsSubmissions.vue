@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid style="min-height: 0;" grid-list-lg>
+  <v-container fluid grid-list-lg>
     <v-layout row wrap>
       <v-flex xs12 sm8 md6 lg5 xl4 v-for='submission in submissions' :key='submission.id'>
         <v-card color="white">
@@ -28,7 +28,7 @@
               </v-tabs-items>
             </v-tabs>
           </v-card-text>
-          <cfp-reviews-navbar-voting :submission-id="submission.id"></cfp-reviews-navbar-voting>
+          <cfp-reviews-navbar-voting :submission="submission" :bucketName="bucketName"></cfp-reviews-navbar-voting>
         </v-card>
       </v-flex>
     </v-layout>
@@ -43,7 +43,7 @@ import CfpReviewNavbarVoting from '@/components/CfpReviewNavbarVoting'
 
 export default {
   name: 'cfp-reviews-unreviewed',
-  props: ['submissions'],
+  props: ['submissions', 'bucketName'],
   components: {
     'cfp-reviews-navbar-voting': CfpReviewNavbarVoting,
     'cfp-comments': CfpReviewTabComments,

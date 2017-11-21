@@ -38,17 +38,7 @@
 
 export default {
   name: 'cfp-review-tab-speakers',
-  data () {
-    return {
-    }
-  },
-  computed: {
-  },
-  methods: {
-  },
-  props: ['submission-speakers'],
-  components: {
-  }
+  props: ['submission-speakers']
 }
 </script>
 
