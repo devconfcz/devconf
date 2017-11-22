@@ -43,6 +43,12 @@ import CfpReviewNavbarVoting from '@/components/CfpReviewNavbarVoting'
 
 export default {
   name: 'cfp-reviews-unreviewed',
+  data () {
+    return {
+    }
+  },
+  methods: {
+  },
   props: ['submissions', 'bucketName'],
   components: {
     'cfp-reviews-navbar-voting': CfpReviewNavbarVoting,

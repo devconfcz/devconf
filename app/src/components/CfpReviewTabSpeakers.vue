@@ -17,12 +17,13 @@
             <v-layout row>
               <v-flex xs12>
                 <div>
-                  <ul style="list-style: none; padding: 0">
-                    <li><em>Name</em>: {{ speaker.full_name }}</li>
+                  <ul class="blocked">
+                    <li><em>Name</em>: {{ speaker.display_name }}</li>
                     <li><em>Organization</em>: {{ speaker.organization }}</li>
                     <li><em>Description</em>: {{ speaker.short_description }}</li>
-                    <li><em>About</em>: {{ speaker.description }}</li>
+                    <li><em>About</em>: </li>
                   </ul>
+                  <p v-html="speaker.description.replace(/\n/g, '<br/>')" class="mt-1 ml-2"></p>
                 </div>
               </v-flex>
               </v-layout>
@@ -38,9 +39,25 @@
 
 export default {
   name: 'cfp-review-tab-speakers',
+  methods: {
+    speakerImage (email) {
+      console.log(email)
+      // console.log(this.$store.getters.storage.ref('users').getDownloadURL().then((url) => {
+      // }))
+    }
+  },
   props: ['submission-speakers']
 }
 </script>
 
 <style scoped>
+.blocked {
+  list-style: none;
+  padding: 0;
+  display: grid;
+}
+
+em {
+  font-weight: 600;
+}
 </style>

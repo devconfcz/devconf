@@ -11,6 +11,8 @@
             :value="theme"
           ></v-checkbox>
       </v-flex>
+    </v-layout>
+    <v-layout row wrap>
       <v-flex xs2 offset-xs4>
         <div class="text-xs-center ma-3">
           <v-btn right @click="selectAllThemes">Select all</v-btn>
@@ -47,12 +49,15 @@
             <v-tabs-slider color="black"></v-tabs-slider>
           </v-tabs-bar>
           <v-tabs-items>
-            <v-tabs-content v-for="(bucket, i) in buckets" :key="bucket.id" :id="bucket.id">
+            <v-tabs-content class="white" v-for="(bucket, i) in buckets" :key="bucket.id" :id="bucket.id">
               <cfp-submissions
-                :submissions="bucket.submissions.slice(startIx, sliceCount)"
+                :submissions="bucket.submissions.slice(startIx, 20)"
                 :bucketName="bucket.id"
               ></cfp-submissions>
-              <p v-if="!isLoading" class="text-xs-right display-1 ma-4">... with {{ calcRemaining(i) }} submissions in the queue (autoload: enabled)</p>
+              <div v-if="bucket.id === 'unreviewed'">
+                <p v-if="bucket.submissions.length > 0" :display="!isLoading" class="text-xs-right display-1 ma-4">... with {{ bucket.submissions.length }} submissions in the queue (autoload: enabled)</p>
+                <p v-else class="text-xs-right display-1 ma-4">... That's it!</p>
+              </div>
             </v-tabs-content>
           </v-tabs-items>
         </v-tabs>
@@ -92,10 +97,6 @@ export default {
     },
     startIx () {
       return 0
-    },
-    sliceCount () {
-      const len = this.$store.state._unreviewed.length
-      return (len >= 20) ? 20 : len
     }
   },
   methods: {

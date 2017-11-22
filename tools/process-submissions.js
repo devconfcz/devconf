@@ -6,9 +6,13 @@
 //  databaseURL: process.env.CFP_FB_DB
 //})
 var fs = require('fs')
+var path = require('path')
+var gm = require('gm').subClass({imageMagick: true})
+var request = require('request')
 
 var google = require('googleapis')
 var firebase = require('firebase')
+var gcloud = require('google-cloud')
 
 var lib = require('./cfp-lib')
 
@@ -16,13 +20,6 @@ const debug = require('debug')('on')
 
 // Load client secrets from a local file.
 var _secretsPath = process.env.CFP_SECRETS
-fs.readFile(_secretsPath, function processClientSecrets(err, content) {
-  if (err) {
-    console.log('Error loading client secret file: ' + err)
-    return
-  }
-  lib.authorize(JSON.parse(content), processSubmissions)
-})
 
 const formId = '1xrtWTn6mA-1zHvM6q8kRlPjoy0yLIAwOfjsv-nGhWPM'
 const submissionsPath = 'submissions/' + formId
@@ -93,21 +90,131 @@ let sheetColumnMap = {
   'Third Profile GitHub URL': 'github',
   'Third Profile Website URL': 'website'}
 
+var config = {
+  apiKey: process.env.CFP_FB_APIKEY,
+  authDomain: process.env.CFP_FB_PROJECT,
+  databaseURL: process.env.CFP_FB_DB,
+  storageBucket: process.env.CFP_FB_BUCKET
+}
 
-function getDb () {
-  var config = {
-    apiKey: process.env.CFP_FB_APIKEY,
-    authDomain: process.env.CFP_FB_PROJECT,
-    databaseURL: process.env.CFP_FB_DB,
-    storageBucket: process.env.CFP_FB_BUCKET
+let firebaseApp = firebase.initializeApp(config)
+let db = firebaseApp.database()
+
+const storage = gcloud.storage({
+    projectId: 'cward-cfpoint-devel',
+    keyFilename: '/home/cward/.config/devconf/certs/devconfcz-602406ad8f7e.json'
+})
+const bucket = storage.bucket('cward-cfpoint-devel.appspot.com')
+
+function download (url, dest, cb) {
+    var file = fs.createWriteStream(dest)
+    var sendReq = request.get(url)
+    // verify response code
+    sendReq.on('response', function(response) {
+        if (response.statusCode !== 200) {
+            return cb('Response status was ' + response.statusCode)
+        }
+    })
+    // check for request errors
+    sendReq.on('error', function (err) {
+        fs.unlink(dest)
+        return cb(err.message)
+    })
+    sendReq.pipe(file)
+    file.on('finish', function() {
+        file.close(cb)  // close() is async, call cb after close completes.
+    })
+    file.on('error', function(err) { // Handle errors
+        fs.unlink(dest) // Delete the file async. (But we don't check the result)
+        return cb(err.message)
+    })
+}
+
+fs.readFile(_secretsPath, function processClientSecrets(err, content) {
+  if (err) {
+    console.log('Error loading client secret file: ' + err)
+    return
   }
-  firebase.initializeApp(config)
-  return firebase.database()
+  // lib.authorize(JSON.parse(content), processSubmissions)
+  lib.authorize(JSON.parse(content), processPhotos)
+})
+
+function processPhotos(auth) {
+  bucket.getFiles().then(results => {
+    const files = results[0]
+    debug('Files:')
+    files.forEach(file => {
+      debug(file.name)
+    })
+  }).then(() => {
+    throw new Error()
+  })
+
+  debug('Processing Speaker Photos ...')
+  const sheets = google.sheets('v4')
+  debug('Getting Spreadsheet data...')
+  sheets.spreadsheets.values.get({
+    auth: auth,
+    spreadsheetId: '180zx7rd0ocHHZnNgr_HiQltPSu8PvFM_wfHzN8iWHXI',
+    range: 'Form Responses 1!A:BE',
+  }, function(err, response) {
+    if (err) {
+      debug('The API returned an error: ' + err)
+      return
+    } else {
+      debug('... done.')
+    }
+    const rows = response.values.slice(1)  // drop the columns header row
+    if (rows.length == 0) {
+      debug('No data found.')
+      return
+    }
+    debug(`Found ${rows.length} responses.`)
+    let savedFiles = {}
+    blankProfile = '/tmp/photos/profile-blank.jpg'
+    for (const row of rows) {
+      let url = row[23]
+      let email = row[1]
+      let prefix = email.replace(/@/, '__at__').replace(/\./g, '__dot__')
+      filename = path.basename(url).split('?')[0].toLowerCase()
+      filename = filename.replace(/jpeg/, 'jpg')
+      let saveAs = '/tmp/photos/original/' + prefix + '___' + filename
+      if (!fs.existsSync(saveAs)) {
+        download(url, saveAs, function (error) {
+          if (error) {
+            savedFiles[email] = blankProfile
+            debug(`Error: ${saveAs} (${error}) \n ---> ${url}`)
+          } else {
+            debug(`Success: ${saveAs}`)
+            savedFiles[email] = saveAs
+            let _fileSplit = filename.split(".")
+            let saveAsModified
+            if (_fileSplit.length === 1 || (_fileSplit[0] === "" && _fileSplit.length === 2)) {
+              // we have a file without extension
+              saveAsModified = 'mod-' + saveAs + '.jpg'
+            } else {
+              saveAsModified = 'mod-' + _fileSplit.slice(0, -1) + '.jpg'
+            }
+            saveAsModified = saveAsModified.replace(/original/, 'modified')
+            gm(saveAs)
+            .autoOrient()
+            .resize(240, 240)
+            .noProfile()
+            .write(saveAsModified, function (err) {
+              if (err) debug(`Failed to manipulate: ${saveAsModified}`)
+            })
+          }
+        })
+      } else {
+        debug(`Skipping: ${saveAs}`)
+      }
+    }
+    debug(savedFiles)
+  })
 }
 
 function processSubmissions(auth) {
   debug('Processing submissions ...')
-  const db = getDb()
   const sheets = google.sheets('v4')
   debug('Getting Spreadsheet data...')
   sheets.spreadsheets.values.get({
@@ -155,7 +262,14 @@ function processSubmissions(auth) {
         session: {
           meta: {
             last_updated: NOW,
-            contacts: {}
+            contacts: {},
+            votes: {
+              vote_total: 0,
+              vote_count_total: 0,
+              vote_count_plus: 0,
+              vote_count_minus: 0,
+              results: {}
+            }
           },
           id: lib.generatePushID()
         }

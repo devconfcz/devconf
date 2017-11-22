@@ -14,13 +14,13 @@ var firebaseApp = firebase.initializeApp({
   messagingSenderId: '505843562851'
 })
 var db = firebaseApp.database()
+var storage = firebase.storage()
 
 export const store = new Vuex.Store({
   state: {
     formId: '1xrtWTn6mA-1zHvM6q8kRlPjoy0yLIAwOfjsv-nGhWPM', // FIXME: Shouldn't be hardcoded
     _isLoading: true,
     _currentUser: null,
-    _speakers: {},
     _submissions: [],
     _unreviewed: [],
     _approved: [],
@@ -30,13 +30,13 @@ export const store = new Vuex.Store({
     _themesFilter: []
   },
   getters: {
-    themes: (state) => {
+    themes (state) {
       return state._themes.sort()
     },
-    themesFilter: (state) => {
+    themesFilter (state) {
       return state._themesFilter.sort()
     },
-    isLoggedIn: (state) => {
+    isLoggedIn (state) {
       if (state._currentUser === undefined || state._currentUser === null) {
         return false
       }
@@ -45,10 +45,10 @@ export const store = new Vuex.Store({
     isLoading (state) {
       return state._isLoading
     },
-    currentUser: (state) => {
+    currentUser (state) {
       return state._currentUser
     },
-    unreviewed: (state) => {
+    unreviewed (state) {
       console.log('Loading data: unreviewed')
       let submissions = state._submissions
       let themesFilter = new Set(state._themesFilter)
@@ -59,12 +59,12 @@ export const store = new Vuex.Store({
           (state._unreviewed.indexOf(val.id) > -1)
         )
     },
-    approved: (state) => {
+    approved (state) {
       console.log('Loading data: approved')
       return Object.values(state._submissions).filter(
         val => state._approved.indexOf(val.id) > -1)
     },
-    rejected: (state) => {
+    rejected (state) {
       console.log('Loading data: rejected')
       return Object.values(state._submissions).filter(
         val => state._rejected.indexOf(val.id) > -1)
@@ -90,20 +90,25 @@ export const store = new Vuex.Store({
         return '-'
       }
     },
-    db: (state, getters) => {
+    db (state) {
       return db
+    },
+    storage (state) {
+      return storage
     }
   },
   mutations: {  // triggered with "commit" and MUST BE SYNCHRONOUS
     logOutCurrentUser (state) {
       console.log('Logged out user!')
       state._currentUser = null
+      state._isLoading = false
     },
     updateCurrentUser (state, user) {
       state._currentUser = user // FIXME: this brings in a lot of unwanted properties from firebase auth
     },
-    toggleLoading (state) {
-      state._isLoading = !state._isLoading
+    toggleLoading (state, bool) {
+      console.log(`${state._isLoading} => ${!state._isLoading}`)
+      state._isLoading = bool
     },
     loadQueue (state, submissions) {
       let themes = {}
@@ -124,14 +129,13 @@ export const store = new Vuex.Store({
       console.log(`... loading submission (${submission.id}) complete.`)
     },
     refreshSubmissionStatus (state) {
-      console.log('refreshSubmissionStatus')
-      state._isLoading = true
+      // state._isLoading = true
       if (!state._currentUser) {
         console.log('not logged in!')
         state._unreviewed = []
         state._approved = []
         state._rejected = []
-        state._isLoading = false
+        // state._isLoading = false
         return
       }
       let uid = state._currentUser.id
@@ -168,7 +172,7 @@ export const store = new Vuex.Store({
         state._unreviewed = unreviewed
         state._approved = approved
         state._rejected = rejected
-        state._isLoading = false
+        // state._isLoading = false
       }
     },
     incrementVoteCount (state, payload) {
@@ -240,6 +244,9 @@ export const store = new Vuex.Store({
     },
     logInPopup ({ state, commit }) {
       var provider = new firebase.auth.GoogleAuthProvider()
+      provider.setCustomParameters({
+        prompt: 'select_account'
+      })
       firebase.auth().signInWithPopup(provider)
     },
     logOut ({ state, commit }) {
@@ -267,18 +274,21 @@ export const store = new Vuex.Store({
         console.log(error)
       })
     },
-    toggleLoading ({ state, commit }) {
-      commit('toggleLoading')
+    toggleLoading ({ state, commit }, bool) {
+      commit('toggleLoading', bool)
     },
     loadSubmissions ({ commit, state }, payload) {
       return new Promise((resolve, reject) => {
         db.ref('programs/' + state.formId + '/submissions/')
         .orderByChild('id')
-        .limitToFirst(80)  // ///////////////////////////////////////////////////?REMOVE ME
+        // .limitToFirst(20)  // ///////////////////////////////////////////////////?REMOVE ME
         .once('value', (snapshot) => {
           let submissions = Object.values(snapshot.val())
           commit('loadQueue', submissions)
           commit('refreshSubmissionStatus')
+        }).then(() => {
+          console.log('*****************************************88')
+          commit('toggleLoading', false)
         })
       })
     },

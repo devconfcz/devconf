@@ -13,8 +13,10 @@
     "debug": "^3.1.0",
     "firebase": "^4.6.2",
     "firebase-admin": "^5.5.0",
+    "google-cloud": "^0.57.0",
     "google-spreadsheet": "^2.0.4",
-    "googleapis": "^22.2.0"
+    "googleapis": "^22.2.0",
+    "request": "^2.83.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

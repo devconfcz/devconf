@@ -58,7 +58,8 @@ export default {
         submissionId: this.submission.id,
         incrementValue: incrementValue
       }
-      this.$store.dispatch('incrementVoteCount', payload).then(() => {
+      this.$store.dispatch('incrementVoteCount', payload)
+      .then(() => {
         // console.log(`${this.submission.id} -> ${incrementValue}`)
         this.$set(this.voted, this.submission.id, incrementValue)
         // this.$store.dispatch('refreshSubmissionStatus')
