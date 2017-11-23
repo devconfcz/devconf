@@ -14,13 +14,14 @@ var google = require('googleapis')
 var firebase = require('firebase')
 var gcloud = require('google-cloud')
 
+var json2csv = require('json2csv');
+
 var lib = require('./cfp-lib')
 
 const debug = require('debug')('on')
 
 // Load client secrets from a local file.
 var _secretsPath = process.env.CFP_SECRETS
-
 const formId = '1xrtWTn6mA-1zHvM6q8kRlPjoy0yLIAwOfjsv-nGhWPM'
 const submissionsPath = 'submissions/' + formId
 const programsPath = 'programs/' + formId
@@ -34,62 +35,6 @@ const programsHistoryPath = programsPath + '/__history'
 const speakersPath = 'speakers/'  // no formId is intentional; pool speakers
 const votesPath = 'votes/' + formId
 
-let sheetColumnMap = {
-  'Timestamp': 'timestamp',
-  'Email Address': 'email',
-  'Submission Type': 'type',
-  'Booth Title': 'booth_title',
-  'Booth Description': 'booth_description',
-  'Booth Reservation Dates': 'booth_reservation_dates',
-  'Booth Requirements': 'booth_requirements',
-  'Meet-up Title': 'meetup_title',
-  'Meet-up Description': 'meetup_description',
-  'Meet-up Date': 'meetup_date',
-  'Meet-up Duration': 'meetup_duration',
-  'Meet-up Capacity': 'meetup_capacity',
-  'Meet-up projector / screen is required?': 'meetup_projector_required',
-  'Meet-up private room is required?': 'meetup_private_room_required',
-  'Meet-up Requirements': 'meetup_requirements',
-  'Session Title': 'session_title',
-  'Session Type': 'session_type',
-  'Session Duration': 'session_duration',
-  'Session Themes': 'session_themes',
-  'Session Difficulty': 'session_difficulty',
-  'Session Abstract': 'session_abstract',
-  'Session Summary': 'session_short_description',
-  'Primary Profile Name': 'display_name',
-  'Primary Profile Picture': 'photo_url',
-  'Primary Profile Short Description': 'short_description',
-  'Primary Profile Biography': 'description',
-  'Primary Profile Organization': 'organization',
-  'Primary Profile Community': 'communities',
-  'Primary Profile Wearable Size Preference': 'wearable_size',
-  'Primary Profile Twitter URL': 'twitter',
-  'Primary Profile GitHub URL': 'github',
-  'Primary Profile Website URL': 'website',
-  'Second Profile Name': 'display_name',
-  'Second Profile Email': 'email',
-  'Second Profile Picture': 'photo_url',
-  'Second Profile Short Description': 'short_description',
-  'Second Profile Biography': 'description',
-  'Second Profile Organization': 'organization',
-  'Secondary Profile Community': 'communities',
-  'Second Profile Wearable Size Preference': 'wearable_size',
-  'Second Profile Twitter URL': 'twitter',
-  'Second Profile GitHub URL': 'github',
-  'Second Profile Website URL': 'website',
-  'Third Profile Name': 'display_name',
-  'Third Profile Email': 'email',
-  'Third Profile Picture': 'photo_url',
-  'Third Profile Short Description': 'short_description',
-  'Third Profile Biography': 'description',
-  'Third Profile Organization': 'organization',
-  'Third Profile Community': 'communities',
-  'Third Profile Wearable Size Preference': 'wearable_size',
-  'Third Profile Twitter URL': 'twitter',
-  'Third Profile GitHub URL': 'github',
-  'Third Profile Website URL': 'website'}
-
 var config = {
   apiKey: process.env.CFP_FB_APIKEY,
   authDomain: process.env.CFP_FB_PROJECT,
@@ -97,14 +42,16 @@ var config = {
   storageBucket: process.env.CFP_FB_BUCKET
 }
 
+/*
 let firebaseApp = firebase.initializeApp(config)
 let db = firebaseApp.database()
 
 const storage = gcloud.storage({
     projectId: 'cward-cfpoint-devel',
-    keyFilename: '/home/cward/.config/devconf/certs/devconfcz-602406ad8f7e.json'
+    keyFilename: process.env.CFP_FB_STORAGE_CERT
 })
-const bucket = storage.bucket('cward-cfpoint-devel.appspot.com')
+const bucket = storage.bucket(process.env.CFP_FB_STORAGE_BUCKET)
+*/
 
 function download (url, dest, cb) {
     var file = fs.createWriteStream(dest)
@@ -132,11 +79,13 @@ function download (url, dest, cb) {
 
 fs.readFile(_secretsPath, function processClientSecrets(err, content) {
   if (err) {
-    console.log('Error loading client secret file: ' + err)
+    debug('Error loading client secret file: ' + err)
     return
   }
   // lib.authorize(JSON.parse(content), processSubmissions)
-  lib.authorize(JSON.parse(content), processPhotos)
+  // lib.authorize(JSON.parse(content), processPhotos)
+  // lib.authorize(JSON.parse(content), getEmails)
+  lib.authorize(JSON.parse(content), buildCommitteeSheets)
 })
 
 function processPhotos(auth) {
@@ -187,9 +136,9 @@ function processPhotos(auth) {
           } else {
             debug(`Success: ${saveAs}`)
             savedFiles[email] = saveAs
-            let _fileSplit = filename.split(".")
+            let _fileSplit = filename.split('.')
             let saveAsModified
-            if (_fileSplit.length === 1 || (_fileSplit[0] === "" && _fileSplit.length === 2)) {
+            if (_fileSplit.length === 1 || (_fileSplit[0] === '' && _fileSplit.length === 2)) {
               // we have a file without extension
               saveAsModified = 'mod-' + saveAs + '.jpg'
             } else {
@@ -211,6 +160,158 @@ function processPhotos(auth) {
     }
     debug(savedFiles)
   })
+}
+
+function getEmails(auth) {
+  const sheets = google.sheets('v4')
+  debug('Getting Spreadsheet data...')
+  sheets.spreadsheets.values.get({
+    auth: auth,
+    spreadsheetId: '180zx7rd0ocHHZnNgr_HiQltPSu8PvFM_wfHzN8iWHXI',
+    range: 'Form Responses 1!A:BE',
+  }, function(err, response) {
+    if (err) {
+      debug('The API returned an error: ' + err)
+      return
+    } else {
+      debug('... done.')
+    }
+    const rows = response.values
+    if (rows.length == 0) {
+      debug('No data found.')
+      return
+    }
+    debug(`Found ${rows.length} responses.`)
+    let emails = new Set()
+    for (let i=0, len=rows.length; i < len; i++) {
+      for (let ix=0, len=rows[i].length; ix < len; ix++) {
+          if (rows[i][ix].match(/@/) && !rows[i][ix].match(/[\n, ]/)) emails.add(rows[i][ix])
+      }
+    }
+    debug (Array.from(emails).sort().join(', '))
+  })
+}
+
+function buildCommitteeSheets(auth) {
+  const sheets = google.sheets('v4')
+  debug('Getting Spreadsheet data...')
+  sheets.spreadsheets.values.get({
+    auth: auth,
+    spreadsheetId: '180zx7rd0ocHHZnNgr_HiQltPSu8PvFM_wfHzN8iWHXI',
+    range: 'Form Responses 1!A:BE',
+  }, (err, response) => {
+    if (err) { throw new Error ('The API returned an error: ' + err) }
+    else { debug('... done.') }
+
+    const rows = response.values
+    if (rows.length == 0) { throw new Error ('No data found.') }
+    debug(`Found ${rows.length} responses.`)
+
+    let payload = rowsToDict(rows)
+    let submissions = payload.submissions
+    let columns = payload.columns
+    let buckets = splitIntoBuckets(submissions)
+    let panelMembers = getPanelMemberThemes()
+    let panelMemberSubmissions = getPanelMemberSubmissions(buckets, panelMembers)
+    let panelMemberDocs = getPanelMemberDocs(panelMemberSubmissions, columns)
+
+    // prepare one document per panel member with
+    // - one sheet with their track / theme talks
+    // - one sheet with all 'other'
+
+    /*
+    let promises = []
+    Object.keys(panelMemberDocs).forEach(panelMember => {
+      Object.keys(panelMemberDocs[panelMember]).forEach(sheet => {
+        let path = `/tmp/out/${panelMember.split(' <')[0]}_${sheet}.csv`.replace(/[- ]/g, '_')
+        promises.push(writeCsv(path, panelMemberDocs[panelMember][sheet]))
+      })
+    })
+    Promise.all(promises)
+    .then(() => {
+      debugger
+    })
+    .catch(error => {
+      debug(`ERROR: ${error}`)
+    })
+    */
+
+    Object.keys(panelMemberDocs).forEach(panelMember => {
+      let title = `DevConf.cz 2018 - ${panelMember.split(' <')[0]}`
+      sheets.spreadsheets.create({
+        auth: auth,
+        resource: {
+          properties: {
+            'title': `devconf/${title}`
+          }
+        }
+      }, (err, newDoc) => {
+        if (err) { throw new Error ('The API returned an error: ' + err) }
+        else { debug('... done.') }
+
+        let spreadsheetId = newDoc.spreadsheetId
+        let spreadsheetUrl = newDoc.spreadsheetUrl
+        let spreadsheetSheets = newDoc.sheets
+        debug(`${panelMember}: ${spreadsheetUrl}`)
+
+        new Promise ((resolve, reject) => {
+          Object.keys(panelMemberDocs[panelMember]).sort().forEach(sheet => {
+            sheets.spreadsheets.batchUpdate({
+              spreadsheetId: spreadsheetId,
+              auth: auth,
+              resource: {
+                requests: [
+                  {
+                    "addSheet": {
+                      "properties": {
+                        "title": sheet,
+                        "gridProperties": {
+                          "rowCount": 500,
+                          "columnCount": 80
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }, (error, response) => {
+              sheets.spreadsheets.values.append({
+                spreadsheetId: spreadsheetId,
+                valueInputOption: 'RAW',
+                insertDataOption: 'INSERT_ROWS',
+                range: sheet,
+                resource: {
+                  values: panelMemberDocs[panelMember][sheet]
+                },
+                auth: auth
+              }, (error, response) => {
+                debug('DONE')
+                resolve()
+              })
+            })
+          })
+        }).then(() => {
+          sheets.spreadsheets.batchUpdate({
+            spreadsheetId: spreadsheetId,
+            auth: auth,
+            resource: {
+              requests: [
+                {
+                  "deleteSheet": {
+                    "sheetId": '0'
+                  }
+                }
+              ]
+            }
+          })
+        })
+      })
+    })
+  })
+}
+
+function writeJson(filePath, data) {
+  fs.writeFileSync(filePath, JSON.stringify(data, null, 2))
 }
 
 function processSubmissions(auth) {
@@ -428,5 +529,357 @@ function processSubmissions(auth) {
     db.ref(programsSpeakersPath).set(speakers).then(() => {debug('... Speakers Saved')})
     db.ref(programsMetaPath + '/update_complete').set(new Date().toISOString())
 
+  })
+}
+
+var themes = {
+  'Development': {
+    tracks: ['CI/CD', 'DevTools', 'Java / Middleware', '.NET']
+  },
+  'Testing': {
+    tracks: ['CI/CD', 'Testing']
+  },
+  'Containers': {
+    tracks: ['Atomic', 'Containers', 'OpenShift']
+  },
+  'Automation': {
+    tracks: ['Ansible', 'DevTools', 'OpenShift', 'OpenStack']
+  },
+  'Documentation': {
+    tracks: []
+  },
+  'Workload Management': {
+    tracks: ['DevTools', 'OpenStack']
+  },
+  'Security': {
+    tracks: ['Enterprise Security', 'Identity Management']
+  },
+  'DevOps': {
+    tracks: ['DevOps']
+  },
+  'Platform / OS': {
+    tracks: ['Atomic', 'CentOS', 'Containers', 'Fedora', 'Platform / OS']
+  },
+  'Cloud': {
+    tracks: ['Atomic', 'Cloud', 'OpenShift', 'OpenStack']
+  },
+  'Community': {
+    tracks: ['Community', 'Fedora']
+  },
+  'Virtualization': {
+    tracks: ['Atomic', 'Containers', 'OpenShift', 'OpenStack', 'Virtualization']
+  },
+  'Configuration Management': {
+    tracks: ['Ansible', 'DevTools']
+  },
+  'Middleware': {
+    tracks: ['Java / Middleware']
+  },
+  'Kernel': {
+    tracks: ['Kernel', 'Virtualization']
+  },
+  'Networking': {
+    tracks: ['Networking', 'OpenStack', 'Virtualization']
+  },
+  'Identity Management': {
+    tracks: ['Enterprise Security', 'Identity Management']
+  },
+  'Desktop': {
+    tracks: ['Desktop']
+  },
+  'Storage': {
+    tracks: ['Storage, Ceph, Gluster']
+  },
+  'Database': {
+    tracks: ['DevTools']
+  },
+  'Web': {
+    tracks: []
+  },
+  'AI / Machine Learning': {
+    tracks: []
+  },
+  'Research': {
+    tracks: []
+  },
+  'Hardware': {
+    tracks: ['Kernel', 'IoT']
+  },
+  'Mobile': {
+    tracks: ['IoT']
+  },
+  'Debugging / Tracing': {
+    tracks: ['CI/CD', 'DevTools']
+  },
+  'Agile': {
+    tracks: ['Agile', 'CI/CD', 'DevOps']
+  },
+  'IoT': {
+    tracks: ['IoT']
+  },
+  'Design / UX': {
+    tracks: ['Desktop']
+  }
+}
+
+/*
+var tracks = {
+  'Agile': ['Jen Krieger <jkrieger@redhat.com>']
+}
+*/
+
+var tracks = {
+  'Agile': ['Jen Krieger <jkrieger@redhat.com>'],
+  'Ansible': ['Rashid Khan <rkhan@redhat.com>', 'Ondrej Vasik <ovasik@redhat.com>', 'Bill Nottingham <notting@redhat.com>', 'Josh Berkus <jberkus@redhat.com>'],
+  'Atomic': ['Joe Brockmeier <jzb@redhat.com>', 'Eliska Slobodova <eliska@redhat.com>', 'Josh Berkus <jberkus@redhat.com>'],
+  'CentOS': ['Brian Exelbierd <bexelbie@redhat.com>', 'Rashid Khan <rkhan@redhat.com>', 'Ondrej Vasik <ovasik@redhat.com>', 'Jim Perrin <jperrin@redhat.com>'],
+  'Cloud': ['Tomas Tomecek <ttomecek@redhat.com>'],
+  'CI/CD': ['Ari LiVigni <alivigni@redhat.com>', 'Jeffrey Burke <jburke@redhat.com>'],
+  'Community': ['Brian Exelbierd <bexelbie@redhat.com>', 'Leslie Hawthorn <lhawthor@redhat.com>', 'Brian Proffitt <bproffit@redhat.com>', 'Milan Broz <mbroz@redhat.com>'],
+  'Containers': ['Josh Berkus <jberkus@redhat.com>', 'Joe Brockmeier <jzb@redhat.com>', 'Eliska Slobodova <eliska@redhat.com>', 'Jan Pazdziora <jpazdziora@redhat.com>', 'Honza Horak <hhorak@redhat.com>', 'Tomas Tomecek <ttomecek@redhat.com>'],
+  'Desktop': ['Tomas Popela <tpopela@redhat.com>'],
+  'DevOps': ['Jen Krieger <jkrieger@redhat.com>', 'Josh Berkus <jberkus@redhat.com>'],
+  'DevTools': ['Patrick Macdonald <patrickm@redhat.com>', 'Adi Sakala <asakala@redhat.com>', 'Vaclav Pavlin <vpavlin@redhat.com>'],
+  'Enterprise Security': ['Alexander Bokovoy <abokovoy@redhat.com>', 'Martin Kosek <mkosek@redhat.com>', 'Peter Vrabec <pvrabec@redhat.com>', 'Jan Pazdziora <jpazdziora@redhat.com>'],
+  'Fedora': ['Jiri Eischmann <jeischma@redhat.com>', 'Matthew Miller <mattdm@redhat.com>', 'Brian Exelbierd <bexelbie@redhat.com>'],
+  'Identity Management': ['Jan, Pazdziora <jpazdziora@redhat.com>', 'Martin Kosek <mkosek@redhat.com>', 'Peter Vrabec <pvrabec@redhat.com>'],
+  'Kernel': ['Stanislav Kozina <skozina@redhat.com>'],
+  'Java / Middleware': ['Vaclav Tunka <vtunka@redhat.com>', 'Mark Little <mlittle@redhat.com>', 'Steven Pousty <spousty@redhat.com>'],
+  'Networking': ['Rashid Khan <rkhan@redhat.com>'],
+  'OpenShift': ['Joe Brockmeier <jzb@redhat.com>', 'Eliska Slobodova <eliska@redhat.com>', 'Jan Pazdziora <jpazdziora@redhat.com>', 'Tomas Tomecek <ttomecek@redhat.com>', 'Radek Vokál <rvokal@redhat.com>', 'Josh Berkus <jberkus@redhat.com>'],
+  'OpenStack': ['Rashid Khan <rkhan@redhat.com>'],
+  'Platform / OS': ['Brian Exelbierd <bexelbie@redhat.com>', 'Rashid Khan <rkhan@redhat.com>', 'Ondrej Vasik <ovasik@redhat.com>'],
+  'Storage, Ceph, Gluster': ['Milan Broz <mbroz@redhat.com>'],
+  'Testing': ['Ondrej Hudlicky <ohudlick@redhat.com>', 'Suprith Gangawar <sgangawa@redhat.com>', 'Ilya Etingof <ietingof@redhat.com>', 'Lisa Reed <lireed@redhat.com>'],
+  'Virtualization': ['Karen Noel <knoel@redhat.com>'],
+  '.NET': ['Deepak Bhole <dbhole@redhat.com>', 'Patrick Macdonald <patrickm@redhat.com>'],
+  'IoT': ['Peter Robinson <pbrobinson@redhat.com>']
+}
+
+let sheetColumnMap = {
+  'Timestamp': 'timestamp',
+  'Email Address': 'email',
+  'Submission Type': 'type',
+  'Booth Title': 'booth_title',
+  'Booth Description': 'booth_description',
+  'Booth Reservation Dates': 'booth_reservation_dates',
+  'Booth Requirements': 'booth_requirements',
+  'Meet-up Title': 'meetup_title',
+  'Meet-up Description': 'meetup_description',
+  'Meet-up Date': 'meetup_date',
+  'Meet-up Duration': 'meetup_duration',
+  'Meet-up Capacity': 'meetup_capacity',
+  'Meet-up projector / screen is required?': 'meetup_projector_required',
+  'Meet-up private room is required?': 'meetup_private_room_required',
+  'Meet-up Requirements': 'meetup_requirements',
+  'Session Title': 'session_title',
+  'Session Type': 'session_type',
+  'Session Duration': 'session_duration',
+  'Session Themes': 'session_themes',
+  'Session Difficulty': 'session_difficulty',
+  'Session Abstract': 'session_abstract',
+  'Session Summary': 'session_short_description',
+  'Primary Profile Name': 'display_name',
+  'Primary Profile Picture': 'photo_url',
+  'Primary Profile Short Description': 'short_description',
+  'Primary Profile Biography': 'description',
+  'Primary Profile Organization': 'organization',
+  'Primary Profile Community': 'communities',
+  'Primary Profile Wearable Size Preference': 'wearable_size',
+  'Primary Profile Twitter URL': 'twitter',
+  'Primary Profile GitHub URL': 'github',
+  'Primary Profile Website URL': 'website',
+  'Second Profile Name': 'display_name',
+  'Second Profile Email': 'email',
+  'Second Profile Picture': 'photo_url',
+  'Second Profile Short Description': 'short_description',
+  'Second Profile Biography': 'description',
+  'Second Profile Organization': 'organization',
+  'Secondary Profile Community': 'communities',
+  'Second Profile Wearable Size Preference': 'wearable_size',
+  'Second Profile Twitter URL': 'twitter',
+  'Second Profile GitHub URL': 'github',
+  'Second Profile Website URL': 'website',
+  'Third Profile Name': 'display_name',
+  'Third Profile Email': 'email',
+  'Third Profile Picture': 'photo_url',
+  'Third Profile Short Description': 'short_description',
+  'Third Profile Biography': 'description',
+  'Third Profile Organization': 'organization',
+  'Third Profile Community': 'communities',
+  'Third Profile Wearable Size Preference': 'wearable_size',
+  'Third Profile Twitter URL': 'twitter',
+  'Third Profile GitHub URL': 'github',
+  'Third Profile Website URL': 'website'}
+
+function rowsToDict(rows) {
+  let columns = rows.shift(0)
+  submissions = {}
+  let _id = 0
+  rows.forEach(row => {
+    let submission = {id: _id}
+    for (let i=0, len=row.length; i < len; i++) {
+      // debug(columns[i], row[i])
+      submission[columns[i]] = row[i]
+    }
+    submissions[_id] = submission
+    _id++
+  })
+  columns.unshift('id')
+  return {submissions: submissions, columns: columns}
+}
+
+function getPanels() {
+  // themes are arbitrary; each theme is linked to a track; each track has panel.
+  let panels = {}
+  Object.keys(themes).forEach((theme) => {
+    let themeTracks = themes[theme]['tracks']
+    let themePanel = {}
+    themeTracks.forEach((themeTrack) => {
+      themePanel[themeTrack] = tracks[themeTrack]
+      // themePanel.push.apply(themePanel, tracks[themeTrack])
+    })
+    panels[theme] = themePanel
+  })
+  return panels
+}
+
+function getPanelMemberThemes() {
+  let panelMembers = {}
+  // themes = {'THEME': ['track 1', 'track 2']}
+  // tracks = {'track 1': ['person 1', 'person 2']}
+  Object.keys(tracks).forEach((track) => {
+    let panel = tracks[track]
+    panel.forEach((panelMember) => {
+      if (!panelMembers[panelMember]) panelMembers[panelMember] = []
+      Object.keys(themes).forEach((theme) => {
+        if (themes[theme]['tracks'].indexOf(track) > -1) panelMembers[panelMember].push(theme)
+      })
+    })
+  })
+  return panelMembers
+}
+
+function splitIntoBuckets(submissions) {
+  let buckets = {
+    meetups: {},
+    booths: {},
+    talks: {},
+    workshops: {},
+    discussions: {}
+  }
+  Object.keys(submissions).forEach((submissionId) => {
+    let submission = submissions[submissionId]
+    switch (submission['Submission Type']) {
+      case 'Community Meetup':
+        buckets['meetups'][submissionId] = submission
+        break
+      case 'Booth table request':
+        buckets['booths'][submissionId] = submission
+        break
+      default:  // Session proposal
+        if (submission['Session Type'] === 'Presentation') {
+          buckets['talks'][submissionId] = submission
+        } else if (submission['Session Type'] === 'Workshop') {
+          buckets['workshops'][submissionId] = submission
+        } else if (submission['Session Type'] === 'Discussion') {
+          buckets['discussions'][submissionId] = submission
+        } else {
+          throw new Error(`UNKNOWN session type: ${submission['Session Type']}`)
+        }
+    }
+  })
+  return buckets
+}
+
+function getPanelMemberSubmissions(buckets, panelMembers) {
+  let panelMemberSubmissions = {}
+  Object.keys(panelMembers).forEach(panelMember => {
+    panelMemberSubmissions[panelMember] = {'My themes': {}, 'Other': {}}
+    // debug(`${panelMember}: ${panelMembers[panelMember]}`)
+    let panelMemberThemes = panelMembers[panelMember]
+    Object.keys(buckets['talks']).forEach(submissionId => {
+      let submission = submissions[submissionId]
+      panelMemberThemes.forEach(theme => {
+        if (submission['Session Themes'].indexOf(theme) > -1) {
+          panelMemberSubmissions[panelMember]['My themes'][submissionId] = submission
+        } else {
+          panelMemberSubmissions[panelMember]["Other"][submissionId] = submission
+        }
+      })
+    })
+  })
+  return panelMemberSubmissions
+}
+
+function getPanelMemberDocs(panelMemberSubmissions, columns) {
+  docs = {}
+  Object.keys(panelMemberSubmissions).forEach(panelMember => {
+    docs[panelMember] = {}
+    let myThemeSubmissions = panelMemberSubmissions[panelMember]['My themes']
+    let myThemeRows = [columns]
+    Object.values(myThemeSubmissions).forEach(submission => {
+      myThemeRows.push(Object.values(submission))
+    })
+    docs[panelMember]['My themes'] = removeEmptyColumns(myThemeRows)
+    let otherThemeSubmissions = panelMemberSubmissions[panelMember]['Other']
+    let otherThemeRows = [columns]
+    Object.values(otherThemeSubmissions).forEach(submission => {
+      otherThemeRows.push(Object.values(submission))
+    })
+    docs[panelMember]['Other'] = removeEmptyColumns(otherThemeRows)
+  })
+  return docs
+}
+
+function removeEmptyColumns(rows) {
+  let columns = rows.shift()
+  let r = 0
+  let columnCheck = []
+  rows.forEach(row => {
+    let c = 0
+    row.forEach(cellValue => {
+      if (typeof cellValue === 'string') cellValue = cellValue.trim()
+      if (cellValue === '') {
+        columnCheck[c] = 0
+      } else {
+        columnCheck[c] = 1
+      }
+      c++
+    })
+  })
+  let updatedRows = []
+  rows.forEach(row => {
+    let updatedRow = []
+    for (let c=0, len=columnCheck.length; c < len; c++) {
+      if (columnCheck[c] === 1) {
+        updatedRow.push(row[c])
+      }
+    }
+    updatedRows.push(updatedRow)
+  })
+  let updatedColumns = []
+  for (let c=0, len=columnCheck.length; c < len; c++) {
+    if (columnCheck[c] === 1) {
+      updatedColumns.push(columns[c])
+    }
+  }
+  updatedRows.unshift(updatedColumns)
+  return updatedRows
+}
+
+function writeCsv(path, rows) {
+  console.log(`writecsv: ${path}`)
+  return new Promise ((resolve, reject) => {
+    csvString = ''
+    rows.forEach(row => {
+      for (let i=0, len=row.length; i<len; i++) {
+        row[i] = `"${row[i]}"`
+      }
+      rowString = row.join(';')
+      csvString += rowString + '\n'
+    })
+    fs.writeFileSync(path.replace(/[- ]/g, '_'), csvString)
+    return resolve()
   })
 }

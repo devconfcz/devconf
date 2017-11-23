@@ -1,3 +1,9 @@
+/* notiications */
+
+.notification-small p {
+  text-align: center!important;
+  line-height: 50px!important;
+}
 /* content settings */
 
 @media(min-width: 1000px) {
@@ -40,7 +46,7 @@
 
 /* container settings */
 .event-container {
-  min-width: 250px;
+  min-width: 400px;
 }
 
 /* divider settings */
