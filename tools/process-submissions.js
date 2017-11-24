@@ -649,10 +649,9 @@ const themes = {
 var tracks
 if (DEBUG) {
   tracks = {
-    'Identity Management': ['Jan Pazdziora <jpazdziora@redhat.com>'],
-    'Enterprise Security': ['Jan Pazdziora <jpazdziora@redhat.com>'],
-    'OpenShift': ['Jan Pazdziora <jpazdziora@redhat.com>'],
-    'Containers': ['Jan Pazdziora <jpazdziora@redhat.com>']
+    'IoT': ['Ilya Etingof <ietingof@redhat.com>'],
+    'OpenShift': ['Ilya Etingof <ietingof@redhat.com>'],
+    'Testing': ['Ilya Etingof <ietingof@redhat.com>']
   }
 } else {
   tracks = {
@@ -674,13 +673,13 @@ if (DEBUG) {
     'Java / Middleware': ['Vaclav Tunka <vtunka@redhat.com>', 'Mark Little <mlittle@redhat.com>', 'Steven Pousty <spousty@redhat.com>'],
     'Networking': ['Rashid Khan <rkhan@redhat.com>'],
     'OpenShift': ['Joe Brockmeier <jzb@redhat.com>', 'Eliska Slobodova <eliska@redhat.com>', 'Jan Pazdziora <jpazdziora@redhat.com>', 'Tomas Tomecek <ttomecek@redhat.com>', 'Radek Vokál <rvokal@redhat.com>', 'Josh Berkus <jberkus@redhat.com>'],
-    'OpenStack': ['Rashid Khan <rkhan@redhat.com>'],
+    'OpenStack': ['Rashid Khan <rkhan@redhat.com>', 'Ilya Etingof <ietingof@redhat.com>'],
     'Platform / OS': ['Brian Exelbierd <bexelbie@redhat.com>', 'Rashid Khan <rkhan@redhat.com>', 'Ondrej Vasik <ovasik@redhat.com>'],
     'Storage, Ceph, Gluster': ['Milan Broz <mbroz@redhat.com>'],
     'Testing': ['Ondrej Hudlicky <ohudlick@redhat.com>', 'Suprith Gangawar <sgangawa@redhat.com>', 'Ilya Etingof <ietingof@redhat.com>', 'Lisa Reed <lireed@redhat.com>'],
     'Virtualization': ['Karen Noel <knoel@redhat.com>'],
     '.NET': ['Deepak Bhole <dbhole@redhat.com>', 'Patrick Macdonald <patrickm@redhat.com>'],
-    'IoT': ['Peter Robinson <pbrobinson@redhat.com>']
+    'IoT': ['Peter Robinson <pbrobinson@redhat.com>', 'Ilya Etingof <ietingof@redhat.com>']
   }
 }
 
