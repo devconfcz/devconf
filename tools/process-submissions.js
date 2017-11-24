@@ -1,27 +1,22 @@
 // Tools for processing CfP submissions and creating final program, etc.
 
-//var admin = require('firebase-admin')
-//admin.initializeApp({
-//  credential: admin.credential.cert(serviceAccount),
-//  databaseURL: process.env.CFP_FB_DB
-//})
-var fs = require('fs')
-var path = require('path')
-var gm = require('gm').subClass({imageMagick: true})
-var request = require('request')
+let DEBUG = true
+const debug = require('debug')('on')  // eg, call with DEBUG=on node cfp.js
 
-var google = require('googleapis')
-var firebase = require('firebase')
-var gcloud = require('google-cloud')
+const fs = require('fs')
+const path = require('path')
+const gm = require('gm').subClass({imageMagick: true})
+const request = require('request')
 
-var json2csv = require('json2csv');
+const json2csv = require('json2csv');
 
-var lib = require('./cfp-lib')
+const lib = require('./cfp-lib')
+const fb = require('./firebase-lib')
+const google = require('./google-lib')
+const mailgun = require('./mailgun-lib')
 
-const debug = require('debug')('on')
+// ////////////////////////////////////////////////////////////////////////////
 
-// Load client secrets from a local file.
-var _secretsPath = process.env.CFP_SECRETS
 const formId = '1xrtWTn6mA-1zHvM6q8kRlPjoy0yLIAwOfjsv-nGhWPM'
 const submissionsPath = 'submissions/' + formId
 const programsPath = 'programs/' + formId
@@ -35,59 +30,9 @@ const programsHistoryPath = programsPath + '/__history'
 const speakersPath = 'speakers/'  // no formId is intentional; pool speakers
 const votesPath = 'votes/' + formId
 
-var config = {
-  apiKey: process.env.CFP_FB_APIKEY,
-  authDomain: process.env.CFP_FB_PROJECT,
-  databaseURL: process.env.CFP_FB_DB,
-  storageBucket: process.env.CFP_FB_BUCKET
-}
+google.callWithAuth(buildCommitteeSheets)
 
 /*
-let firebaseApp = firebase.initializeApp(config)
-let db = firebaseApp.database()
-
-const storage = gcloud.storage({
-    projectId: 'cward-cfpoint-devel',
-    keyFilename: process.env.CFP_FB_STORAGE_CERT
-})
-const bucket = storage.bucket(process.env.CFP_FB_STORAGE_BUCKET)
-*/
-
-function download (url, dest, cb) {
-    var file = fs.createWriteStream(dest)
-    var sendReq = request.get(url)
-    // verify response code
-    sendReq.on('response', function(response) {
-        if (response.statusCode !== 200) {
-            return cb('Response status was ' + response.statusCode)
-        }
-    })
-    // check for request errors
-    sendReq.on('error', function (err) {
-        fs.unlink(dest)
-        return cb(err.message)
-    })
-    sendReq.pipe(file)
-    file.on('finish', function() {
-        file.close(cb)  // close() is async, call cb after close completes.
-    })
-    file.on('error', function(err) { // Handle errors
-        fs.unlink(dest) // Delete the file async. (But we don't check the result)
-        return cb(err.message)
-    })
-}
-
-fs.readFile(_secretsPath, function processClientSecrets(err, content) {
-  if (err) {
-    debug('Error loading client secret file: ' + err)
-    return
-  }
-  // lib.authorize(JSON.parse(content), processSubmissions)
-  // lib.authorize(JSON.parse(content), processPhotos)
-  // lib.authorize(JSON.parse(content), getEmails)
-  lib.authorize(JSON.parse(content), buildCommitteeSheets)
-})
-
 function processPhotos(auth) {
   bucket.getFiles().then(results => {
     const files = results[0]
@@ -100,9 +45,9 @@ function processPhotos(auth) {
   })
 
   debug('Processing Speaker Photos ...')
-  const sheets = google.sheets('v4')
+
   debug('Getting Spreadsheet data...')
-  sheets.spreadsheets.values.get({
+  google.sheets.spreadsheets.values.get({
     auth: auth,
     spreadsheetId: '180zx7rd0ocHHZnNgr_HiQltPSu8PvFM_wfHzN8iWHXI',
     range: 'Form Responses 1!A:BE',
@@ -165,7 +110,7 @@ function processPhotos(auth) {
 function getEmails(auth) {
   const sheets = google.sheets('v4')
   debug('Getting Spreadsheet data...')
-  sheets.spreadsheets.values.get({
+  google.sheets.spreadsheets.values.get({
     auth: auth,
     spreadsheetId: '180zx7rd0ocHHZnNgr_HiQltPSu8PvFM_wfHzN8iWHXI',
     range: 'Form Responses 1!A:BE',
@@ -192,133 +137,10 @@ function getEmails(auth) {
   })
 }
 
-function buildCommitteeSheets(auth) {
-  const sheets = google.sheets('v4')
-  debug('Getting Spreadsheet data...')
-  sheets.spreadsheets.values.get({
-    auth: auth,
-    spreadsheetId: '180zx7rd0ocHHZnNgr_HiQltPSu8PvFM_wfHzN8iWHXI',
-    range: 'Form Responses 1!A:BE',
-  }, (err, response) => {
-    if (err) { throw new Error ('The API returned an error: ' + err) }
-    else { debug('... done.') }
-
-    const rows = response.values
-    if (rows.length == 0) { throw new Error ('No data found.') }
-    debug(`Found ${rows.length} responses.`)
-
-    let payload = rowsToDict(rows)
-    let submissions = payload.submissions
-    let columns = payload.columns
-    let buckets = splitIntoBuckets(submissions)
-    let panelMembers = getPanelMemberThemes()
-    let panelMemberSubmissions = getPanelMemberSubmissions(buckets, panelMembers)
-    let panelMemberDocs = getPanelMemberDocs(panelMemberSubmissions, columns)
-
-    // prepare one document per panel member with
-    // - one sheet with their track / theme talks
-    // - one sheet with all 'other'
-
-    /*
-    let promises = []
-    Object.keys(panelMemberDocs).forEach(panelMember => {
-      Object.keys(panelMemberDocs[panelMember]).forEach(sheet => {
-        let path = `/tmp/out/${panelMember.split(' <')[0]}_${sheet}.csv`.replace(/[- ]/g, '_')
-        promises.push(writeCsv(path, panelMemberDocs[panelMember][sheet]))
-      })
-    })
-    Promise.all(promises)
-    .then(() => {
-      debugger
-    })
-    .catch(error => {
-      debug(`ERROR: ${error}`)
-    })
-    */
-
-    Object.keys(panelMemberDocs).forEach(panelMember => {
-      let title = `DevConf.cz 2018 - ${panelMember.split(' <')[0]}`
-      sheets.spreadsheets.create({
-        auth: auth,
-        resource: {
-          properties: {
-            'title': `devconf/${title}`
-          }
-        }
-      }, (err, newDoc) => {
-        if (err) { throw new Error ('The API returned an error: ' + err) }
-        else { debug('... done.') }
-
-        let spreadsheetId = newDoc.spreadsheetId
-        let spreadsheetUrl = newDoc.spreadsheetUrl
-        let spreadsheetSheets = newDoc.sheets
-        debug(`${panelMember}: ${spreadsheetUrl}`)
-
-        new Promise ((resolve, reject) => {
-          Object.keys(panelMemberDocs[panelMember]).sort().forEach(sheet => {
-            sheets.spreadsheets.batchUpdate({
-              spreadsheetId: spreadsheetId,
-              auth: auth,
-              resource: {
-                requests: [
-                  {
-                    "addSheet": {
-                      "properties": {
-                        "title": sheet,
-                        "gridProperties": {
-                          "rowCount": 500,
-                          "columnCount": 80
-                        }
-                      }
-                    }
-                  }
-                ]
-              }
-            }, (error, response) => {
-              sheets.spreadsheets.values.append({
-                spreadsheetId: spreadsheetId,
-                valueInputOption: 'RAW',
-                insertDataOption: 'INSERT_ROWS',
-                range: sheet,
-                resource: {
-                  values: panelMemberDocs[panelMember][sheet]
-                },
-                auth: auth
-              }, (error, response) => {
-                debug('DONE')
-                resolve()
-              })
-            })
-          })
-        }).then(() => {
-          sheets.spreadsheets.batchUpdate({
-            spreadsheetId: spreadsheetId,
-            auth: auth,
-            resource: {
-              requests: [
-                {
-                  "deleteSheet": {
-                    "sheetId": '0'
-                  }
-                }
-              ]
-            }
-          })
-        })
-      })
-    })
-  })
-}
-
-function writeJson(filePath, data) {
-  fs.writeFileSync(filePath, JSON.stringify(data, null, 2))
-}
-
 function processSubmissions(auth) {
   debug('Processing submissions ...')
-  const sheets = google.sheets('v4')
   debug('Getting Spreadsheet data...')
-  sheets.spreadsheets.values.get({
+  google.sheets.spreadsheets.values.get({
     auth: auth,
     spreadsheetId: '180zx7rd0ocHHZnNgr_HiQltPSu8PvFM_wfHzN8iWHXI',
     range: 'Form Responses 1!A:BE',
@@ -422,10 +244,10 @@ function processSubmissions(auth) {
             submissionTypes['meta']['type'] = submissionType
             switch (newField) {
               case 'reservation_dates':
-                var _dates = []
-                var dates = row[k].split(',')
+                let _dates = []
+                let dates = row[k].split(',')
                 for (let i = 0, len = dates.length; i < len; i += 2) {
-                  var date = new Date(dates.slice(i, i+1).join(', '))
+                  let date = new Date(dates.slice(i, i+1).join(', '))
                   _dates.push(date)
                 }
                 submissionTypes[submissionType][newField] = _dates
@@ -531,8 +353,210 @@ function processSubmissions(auth) {
 
   })
 }
+*/
 
-var themes = {
+function buildCommitteeSheets (auth) {
+  debug('Getting Spreadsheet data...')
+  google.sheets.spreadsheets.values.get({
+    auth: auth,
+    spreadsheetId: '180zx7rd0ocHHZnNgr_HiQltPSu8PvFM_wfHzN8iWHXI',
+    range: 'Form Responses 1!A:BE',
+  }, (err, response) => {
+    if (err) { throw new Error ('The API returned an error: ' + err) }
+    else { debug('... done.') }
+
+    const rows = response.values
+    if (rows.length == 0) { throw new Error ('No data found.') }
+    debug(`Found ${rows.length} responses.`)
+
+    let payload = rowsToDict(rows)
+    let submissions = payload.submissions
+    let columns = payload.columns
+    let buckets = splitIntoBuckets(submissions)
+    let panelMembers = getPanelMemberThemes()
+    let panelMemberSubmissions = getPanelMemberSubmissions(buckets, panelMembers)
+    let panelMemberDocs = getPanelMemberDocs(panelMemberSubmissions, columns)
+
+    // prepare one document per panel member with
+    // - one sheet with their track / theme talks
+    // - one sheet with all 'other'
+
+    let counter = -1
+    Object.keys(panelMemberDocs).forEach(async (panelMember) => {
+      let t = ++counter * 30000
+      debug(`SLEEPING ${t/1000/60} MINUTES before creating a new sheet for ${panelMember}...`)
+      await lib.sleep(t)
+      let title = `DevConf.cz 2018 - ${panelMember.split(' <')[0]}`
+      google.sheets.spreadsheets.create({
+        auth: auth,
+        resource: {
+          properties: {
+            'title': `[IN_PROGRESS] ${title}`.trim()
+          }
+        }
+      }, async (err, newDoc) => {
+        if (err) { throw new Error ('The API returned an error: ' + err) }
+        else { debug('... done.') }
+
+        let spreadsheetId = newDoc.spreadsheetId
+        let spreadsheetUrl = newDoc.spreadsheetUrl
+        let spreadsheetSheets = newDoc.sheets
+        debug(`${panelMember}: ${spreadsheetUrl}`)
+
+        new Promise ((resolve, reject) => {
+          Object.keys(panelMemberDocs[panelMember]).reverse().forEach(async sheet => {
+              debug(`... creating sheet: ${sheet} for ${panelMember}`)
+              google.sheets.spreadsheets.batchUpdate({
+                spreadsheetId: spreadsheetId,
+                auth: auth,
+                resource: {
+                  requests: [
+                    {
+                      "addSheet": {
+                        "properties": {
+                          "title": sheet,
+                          "gridProperties": {
+                            "rowCount": 500,
+                            "columnCount": 80
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }, (error, response) => {
+                debug(`... updating sheet: ${sheet} for ${panelMember}`)
+                google.sheets.spreadsheets.values.append({
+                  spreadsheetId: spreadsheetId,
+                  valueInputOption: 'RAW',
+                  insertDataOption: 'INSERT_ROWS',
+                  range: sheet,
+                  resource: {
+                    values: panelMemberDocs[panelMember][sheet]
+                  },
+                  auth: auth
+                }, (error, response) => {
+                  return resolve(panelMember)
+              })
+            })
+          })
+        }).then((panelMember) => {
+          debug(`... deleting default sheet for ${panelMember}`)
+          google.sheets.spreadsheets.batchUpdate({
+            spreadsheetId: spreadsheetId,
+            auth: auth,
+            resource: {
+              requests: [
+                {
+                  "deleteSheet": {
+                    "sheetId": '0'
+                  }
+                }
+              ]
+            }
+          })
+          return panelMember
+        }).then((panelMember) => {
+          debug(`... setting up permissions for ${panelMember}`)
+          let firstName = panelMember.split(' ')[0]
+          let email = panelMember.split('<')[1].replace('>', '')
+          const permission = {
+              'type': 'user',
+              'role': 'writer',
+              'emailAddress': email
+          }
+          google.drive.permissions.create({
+            resource: permission,
+            fileId: spreadsheetId,
+            fields: 'id',
+            auth: auth
+          }, function (error, res) {
+            if (error) {
+              throw new Error (error)
+            } else {
+              console.log('Permission ID: ', res.id)
+            }
+          })
+          debug(`... sending notification email to ${panelMember}`)
+          let yourThemes = Array.from(new Set(getPanelMemberThemes(panelMember)[panelMember])).join(', ')
+          let yourTracks = getPanelMemberTracks(panelMember).join(', ')
+          const templateCommitteeNotification = `
+Hi ${firstName},
+
+Link: ${spreadsheetUrl}
+
+In order to maintain my sanity trying to merge back all your feedback, I have
+autogenerated a custom spreadsheet just for you that has two sheets "My Themes"
+and "Other".
+
+"My Themes" containers (errr... contains :) all submissions tagged with a
+'theme' by the submitter that maps back to one of the following tracks
+you have indicated you would like to review submissions for ...
+
+Your tracks: ${yourTracks}
+Related themes: ${yourThemes}
+
+"Other" contains everything else, in case you might find something which was
+incorrectly tagged or if I have misclassified themes related to your tracks.
+
+Instructions:
+DO NOT ...
+... REMOVE the id column, as this will enable me to merge back all
+    committee votes later
+... EXPECT any changes to the sheets to be propogated automatically back to
+    the original submission source. All changes to submissions must be made by
+    the original submitter. A link (should have been) sent to everyone after
+    submitting their proposals. As them to update, if any changes are needed.
+DO ...
+... REMOVE all submission (rows) from both sheets that you do not feel are
+    worthy of consideration for the themes / tracks you are interested in.
+... LEAVE as many submissions (rows) in both sheets that you believe
+    should be included in the program (with ID column untouched, of course...).
+... RANK SORT the approved submissions (rows) in the sheet such that the
+    'must have' talks are at the top and 'good, but meh' are at the bottom.
+... CHANGE your gdoc filename prefix to [DONE] to indicate your "votes" are
+    final.
+... Send me to let me know you're done, too.
+
+After all votes are counted, I will prepare a first draft of a strawman
+proposal, which considers the overall ranking of all submissions that receive
+at least one vote by committee members in your reviews. I expect tracks will
+have approximately proportional number of sessions in each as the overall
+count of submissions for the related topics.
+
+Once prepared, I will share this with everyone for comment. It will be during
+this second phase that you will be asked to comment on talks alignment across
+tracks and conference days, etc.
+
+Finally, a second (or fifth) draft will be shared and once there are no further
+comments, I will consider the schedule "frozen" and ship the first round of
+acceptance notifications.
+
+Deadline for voting is **Dec 5**, but sooner the better, of course!
+By **Dec 7** I hope to have the strawman program shared with committee members
+and notify speakers by **Dec 15**.
+
+Let me know if there are any questions.
+
+-Chris
+`.trim()
+          email = {
+            from: 'Chris Ward <info@devconf.cz>',
+            to: panelMember.split('<')[1].replace('>', ''),
+            subject: 'DevConf.cz 2018 - Program Committee Voting Instructions',
+            text: templateCommitteeNotification
+          }
+          mailgun.sendMail(email)
+        })
+        .catch(error => {
+          throw new Error(error)
+        })
+      })
+    })
+  })
+}
+
+const themes = {
   'Development': {
     tracks: ['CI/CD', 'DevTools', 'Java / Middleware', '.NET']
   },
@@ -622,38 +646,42 @@ var themes = {
   }
 }
 
-/*
-var tracks = {
-  'Agile': ['Jen Krieger <jkrieger@redhat.com>']
-}
-*/
-
-var tracks = {
-  'Agile': ['Jen Krieger <jkrieger@redhat.com>'],
-  'Ansible': ['Rashid Khan <rkhan@redhat.com>', 'Ondrej Vasik <ovasik@redhat.com>', 'Bill Nottingham <notting@redhat.com>', 'Josh Berkus <jberkus@redhat.com>'],
-  'Atomic': ['Joe Brockmeier <jzb@redhat.com>', 'Eliska Slobodova <eliska@redhat.com>', 'Josh Berkus <jberkus@redhat.com>'],
-  'CentOS': ['Brian Exelbierd <bexelbie@redhat.com>', 'Rashid Khan <rkhan@redhat.com>', 'Ondrej Vasik <ovasik@redhat.com>', 'Jim Perrin <jperrin@redhat.com>'],
-  'Cloud': ['Tomas Tomecek <ttomecek@redhat.com>'],
-  'CI/CD': ['Ari LiVigni <alivigni@redhat.com>', 'Jeffrey Burke <jburke@redhat.com>'],
-  'Community': ['Brian Exelbierd <bexelbie@redhat.com>', 'Leslie Hawthorn <lhawthor@redhat.com>', 'Brian Proffitt <bproffit@redhat.com>', 'Milan Broz <mbroz@redhat.com>'],
-  'Containers': ['Josh Berkus <jberkus@redhat.com>', 'Joe Brockmeier <jzb@redhat.com>', 'Eliska Slobodova <eliska@redhat.com>', 'Jan Pazdziora <jpazdziora@redhat.com>', 'Honza Horak <hhorak@redhat.com>', 'Tomas Tomecek <ttomecek@redhat.com>'],
-  'Desktop': ['Tomas Popela <tpopela@redhat.com>'],
-  'DevOps': ['Jen Krieger <jkrieger@redhat.com>', 'Josh Berkus <jberkus@redhat.com>'],
-  'DevTools': ['Patrick Macdonald <patrickm@redhat.com>', 'Adi Sakala <asakala@redhat.com>', 'Vaclav Pavlin <vpavlin@redhat.com>'],
-  'Enterprise Security': ['Alexander Bokovoy <abokovoy@redhat.com>', 'Martin Kosek <mkosek@redhat.com>', 'Peter Vrabec <pvrabec@redhat.com>', 'Jan Pazdziora <jpazdziora@redhat.com>'],
-  'Fedora': ['Jiri Eischmann <jeischma@redhat.com>', 'Matthew Miller <mattdm@redhat.com>', 'Brian Exelbierd <bexelbie@redhat.com>'],
-  'Identity Management': ['Jan, Pazdziora <jpazdziora@redhat.com>', 'Martin Kosek <mkosek@redhat.com>', 'Peter Vrabec <pvrabec@redhat.com>'],
-  'Kernel': ['Stanislav Kozina <skozina@redhat.com>'],
-  'Java / Middleware': ['Vaclav Tunka <vtunka@redhat.com>', 'Mark Little <mlittle@redhat.com>', 'Steven Pousty <spousty@redhat.com>'],
-  'Networking': ['Rashid Khan <rkhan@redhat.com>'],
-  'OpenShift': ['Joe Brockmeier <jzb@redhat.com>', 'Eliska Slobodova <eliska@redhat.com>', 'Jan Pazdziora <jpazdziora@redhat.com>', 'Tomas Tomecek <ttomecek@redhat.com>', 'Radek Vokál <rvokal@redhat.com>', 'Josh Berkus <jberkus@redhat.com>'],
-  'OpenStack': ['Rashid Khan <rkhan@redhat.com>'],
-  'Platform / OS': ['Brian Exelbierd <bexelbie@redhat.com>', 'Rashid Khan <rkhan@redhat.com>', 'Ondrej Vasik <ovasik@redhat.com>'],
-  'Storage, Ceph, Gluster': ['Milan Broz <mbroz@redhat.com>'],
-  'Testing': ['Ondrej Hudlicky <ohudlick@redhat.com>', 'Suprith Gangawar <sgangawa@redhat.com>', 'Ilya Etingof <ietingof@redhat.com>', 'Lisa Reed <lireed@redhat.com>'],
-  'Virtualization': ['Karen Noel <knoel@redhat.com>'],
-  '.NET': ['Deepak Bhole <dbhole@redhat.com>', 'Patrick Macdonald <patrickm@redhat.com>'],
-  'IoT': ['Peter Robinson <pbrobinson@redhat.com>']
+var tracks
+if (DEBUG) {
+  tracks = {
+    'Identity Management': ['Jan Pazdziora <jpazdziora@redhat.com>'],
+    'Enterprise Security': ['Jan Pazdziora <jpazdziora@redhat.com>'],
+    'OpenShift': ['Jan Pazdziora <jpazdziora@redhat.com>'],
+    'Containers': ['Jan Pazdziora <jpazdziora@redhat.com>']
+  }
+} else {
+  tracks = {
+    'Agile': ['Jen Krieger <jkrieger@redhat.com>'],
+    'Ansible': ['Rashid Khan <rkhan@redhat.com>', 'Ondrej Vasik <ovasik@redhat.com>', 'Bill Nottingham <notting@redhat.com>', 'Josh Berkus <jberkus@redhat.com>'],
+    'Atomic': ['Joe Brockmeier <jzb@redhat.com>', 'Eliska Slobodova <eliska@redhat.com>', 'Josh Berkus <jberkus@redhat.com>'],
+    'CentOS': ['Brian Exelbierd <bexelbie@redhat.com>', 'Rashid Khan <rkhan@redhat.com>', 'Ondrej Vasik <ovasik@redhat.com>', 'Jim Perrin <jperrin@redhat.com>'],
+    'Cloud': ['Tomas Tomecek <ttomecek@redhat.com>'],
+    'CI/CD': ['Ari LiVigni <alivigni@redhat.com>', 'Jeffrey Burke <jburke@redhat.com>'],
+    'Community': ['Brian Exelbierd <bexelbie@redhat.com>', 'Leslie Hawthorn <lhawthor@redhat.com>', 'Brian Proffitt <bproffit@redhat.com>', 'Milan Broz <mbroz@redhat.com>'],
+    'Containers': ['Radek Vokál <rvokal@redhat.com>', 'Josh Berkus <jberkus@redhat.com>', 'Joe Brockmeier <jzb@redhat.com>', 'Eliska Slobodova <eliska@redhat.com>', 'Jan Pazdziora <jpazdziora@redhat.com>', 'Honza Horak <hhorak@redhat.com>', 'Tomas Tomecek <ttomecek@redhat.com>'],
+    'Desktop': ['Tomas Popela <tpopela@redhat.com>'],
+    'DevOps': ['Jen Krieger <jkrieger@redhat.com>', 'Josh Berkus <jberkus@redhat.com>'],
+    'DevTools': ['Patrick Macdonald <patrickm@redhat.com>', 'Adi Sakala <asakala@redhat.com>', 'Vaclav Pavlin <vpavlin@redhat.com>'],
+    'Enterprise Security': ['Alexander Bokovoy <abokovoy@redhat.com>', 'Martin Kosek <mkosek@redhat.com>', 'Peter Vrabec <pvrabec@redhat.com>', 'Jan Pazdziora <jpazdziora@redhat.com>'],
+    'Fedora': ['Jiri Eischmann <jeischma@redhat.com>', 'Matthew Miller <mattdm@redhat.com>', 'Brian Exelbierd <bexelbie@redhat.com>'],
+    'Identity Management': ['Jan Pazdziora <jpazdziora@redhat.com>', 'Martin Kosek <mkosek@redhat.com>', 'Peter Vrabec <pvrabec@redhat.com>'],
+    'Kernel': ['Stanislav Kozina <skozina@redhat.com>'],
+    'Java / Middleware': ['Vaclav Tunka <vtunka@redhat.com>', 'Mark Little <mlittle@redhat.com>', 'Steven Pousty <spousty@redhat.com>'],
+    'Networking': ['Rashid Khan <rkhan@redhat.com>'],
+    'OpenShift': ['Joe Brockmeier <jzb@redhat.com>', 'Eliska Slobodova <eliska@redhat.com>', 'Jan Pazdziora <jpazdziora@redhat.com>', 'Tomas Tomecek <ttomecek@redhat.com>', 'Radek Vokál <rvokal@redhat.com>', 'Josh Berkus <jberkus@redhat.com>'],
+    'OpenStack': ['Rashid Khan <rkhan@redhat.com>'],
+    'Platform / OS': ['Brian Exelbierd <bexelbie@redhat.com>', 'Rashid Khan <rkhan@redhat.com>', 'Ondrej Vasik <ovasik@redhat.com>'],
+    'Storage, Ceph, Gluster': ['Milan Broz <mbroz@redhat.com>'],
+    'Testing': ['Ondrej Hudlicky <ohudlick@redhat.com>', 'Suprith Gangawar <sgangawa@redhat.com>', 'Ilya Etingof <ietingof@redhat.com>', 'Lisa Reed <lireed@redhat.com>'],
+    'Virtualization': ['Karen Noel <knoel@redhat.com>'],
+    '.NET': ['Deepak Bhole <dbhole@redhat.com>', 'Patrick Macdonald <patrickm@redhat.com>'],
+    'IoT': ['Peter Robinson <pbrobinson@redhat.com>']
+  }
 }
 
 let sheetColumnMap = {
@@ -712,6 +740,14 @@ let sheetColumnMap = {
   'Third Profile GitHub URL': 'github',
   'Third Profile Website URL': 'website'}
 
+function getPanelMemberEmails() {
+  let emails = []
+  Object.values(tracks).forEach(arr => {
+    emails.push.apply(emails, arr)
+  })
+  return Array.from(new Set(emails)).sort()
+}
+
 function rowsToDict(rows) {
   let columns = rows.shift(0)
   submissions = {}
@@ -744,13 +780,20 @@ function getPanels() {
   return panels
 }
 
-function getPanelMemberThemes() {
+function getPanelMemberTracks(filterBy) {
+  return Object.keys(tracks).filter(key => tracks[key].indexOf(filterBy) > -1)
+}
+
+function getPanelMemberThemes(filterBy) {
   let panelMembers = {}
   // themes = {'THEME': ['track 1', 'track 2']}
   // tracks = {'track 1': ['person 1', 'person 2']}
   Object.keys(tracks).forEach((track) => {
     let panel = tracks[track]
     panel.forEach((panelMember) => {
+      if (filterBy && filterBy !== panelMember) {
+        return
+      }
       if (!panelMembers[panelMember]) panelMembers[panelMember] = []
       Object.keys(themes).forEach((theme) => {
         if (themes[theme]['tracks'].indexOf(track) > -1) panelMembers[panelMember].push(theme)

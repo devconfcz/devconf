@@ -19,6 +19,7 @@
     "google-spreadsheet": "^2.0.4",
     "googleapis": "^22.2.0",
     "json2csv": "^3.11.5",
+    "mailgun-js": "^0.13.1",
     "request": "^2.83.0"
   },
   "devDependencies": {
