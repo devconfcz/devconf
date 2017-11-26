@@ -22,23 +22,23 @@ function generatePushID() {
   // Modeled after base64 web-safe chars, but ordered by ASCII.
   const PUSH_CHARS = '-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz'
   // Timestamp of last push, used to prevent local collisions if you push twice in one ms.
-  const lastPushTime = 0
+  let lastPushTime = 0
   // We generate 72-bits of randomness which get turned into 12 characters and appended to the
   // timestamp to prevent collisions with other clients.  We store the last characters we
   // generated because in the event of a collision, we'll use those same characters except
   // "incremented" by one.
   const lastRandChars = []
-  const now = new Date().getTime()
+  let now = new Date().getTime()
   const duplicateTime = (now === lastPushTime)
   lastPushTime = now
   const timeStampChars = new Array(8)
-  for (const i = 7; i >= 0; i--) {
+  for (let i = 7; i >= 0; i--) {
     timeStampChars[i] = PUSH_CHARS.charAt(now % 64)
     // NOTE: Can't use << here because javascript will convert to int and lose the upper bits.
     now = Math.floor(now / 64)
   }
   if (now !== 0) throw new Error('We should have converted the entire timestamp.')
-  const id = timeStampChars.join('')
+  let id = timeStampChars.join('')
   if (!duplicateTime) {
     for (i = 0; i < 12; i++) {
       lastRandChars[i] = Math.floor(Math.random() * 64)

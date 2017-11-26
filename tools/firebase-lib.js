@@ -2,6 +2,7 @@ const debug = require('debug')('on')  // eg, call with DEBUG=on node cfp.js
 
 const google = require('googleapis')
 const firebase = require('firebase')
+const admin = require('firebase-admin')
 const gcloud = require('google-cloud')
 
 const config = {
@@ -11,7 +12,15 @@ const config = {
   storageBucket: process.env.CFP_FB_BUCKET
 }
 
-const app = firebase.initializeApp(config)
+// const app = firebase.initializeApp(config)
+// ???? ************************ ((((((((((((((((((((((((((( FIX ME FIXME FIXME FIXME FIXME )))))))))))))))))))))))))))
+var serviceAccount = require("/home/cward/.config/devconf/certs/cward-cfpoint-devel-firebase-adminsdk-vmrs0-473adc3e38.json")
+
+const app = admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: process.env.CFP_FB_DB
+})
+
 const database = app.database()
 
 const storage = gcloud.storage({
@@ -20,14 +29,6 @@ const storage = gcloud.storage({
   })
 
 const bucket = storage.bucket(process.env.CFP_FB_BUCKET)
-
-/* Firebase ADMIN sdk
-const admin = require('firebase-admin')
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-  databaseURL: process.env.CFP_FB_DB
-})
-*/
 
 exports.app = app
 exports.database = database

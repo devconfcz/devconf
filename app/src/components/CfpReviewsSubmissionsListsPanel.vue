@@ -11,13 +11,13 @@
               <v-icon color="type.iconColor" class="type.iconClass">{{ type.icon }}</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>
-              <v-list-tile-title>{{ type.label }} ({{ filterSubmissions(drawer.submissions, type.id).length }})</v-list-tile-title>
+              <v-list-tile-title>{{ type.label }} ({{ filterSubmissions(type.id).length }})</v-list-tile-title>
             </v-list-tile-content>
             <v-list-tile-action>
               <v-icon>keyboard_arrow_down</v-icon>
             </v-list-tile-action>
           </v-list-tile>
-          <v-list-tile v-for="submission in filterSubmissions(drawer.submissions, type.id)" :key="submission.id"
+          <v-list-tile v-for="submission in filterSubmissions(type.id)" :key="submission.id"
             avatar
             @click="showDetails(submission.id)"
           >
@@ -139,13 +139,13 @@ export default {
       // // console.log('CfpReviewNavbarVoting.computed.votes: ', this.submissionId)
       return this.$store.getters.getVoteTotal(submissionId)
     },
-    filterSubmissions (submissions, type) {
+    filterSubmissions (type) {
       // console.log(`filterSubmissions in lists: ${submissions}`)
-      if (!(submissions)) {
+      if (!(this.submissions)) {
         // console.log('... empty submissions. Nothing to filter.')
         return []
       }
-      return submissions.filter(s => s.type === type)
+      return this.submissions.filter(s => s.type === type)
     }
   },
   props: ['drawer', 'types'],
