@@ -6,51 +6,93 @@
     :right="drawer.right === true"
     :width="drawer.width"
   >
-  <v-toolbar :color="drawer.toolbarColor" :dark="drawer.toolbarIsDark">
-    <v-btn v-if="drawer.right === false" @click="closeDrawer()" icon>
-      <v-icon >chevron_left</v-icon>
-    </v-btn>
-    <v-toolbar-title>{{ drawer.label }}</v-toolbar-title>
-    <v-spacer></v-spacer>
-    <v-btn v-if="drawer.right === true" @click="closeDrawer()" icon>
-      <v-icon >chevron_right</v-icon>
-    </v-btn>
-  </v-toolbar>
-  <v-list two-line>
-    <v-list-group v-for="type in types" :key="type.id" :value="type.active">
-      <v-list-tile slot="item" @click="">
-        <v-list-tile-action>
-          <v-icon @click.stop="closeDrawer()"></v-icon>
-        </v-list-tile-action>
-        <v-list-tile-action>
-          <v-icon large :color="type.iconColor" :class="type.iconClass">{{ type.icon }}</v-icon>
-        </v-list-tile-action>
-        <v-list-tile-content>
-          <v-list-tile-title>{{ type.label }} ({{ filterSubmissions(drawer.submissions, type.id).length }})</v-list-tile-title>
-        </v-list-tile-content>
-        <v-list-tile-action>
-          <v-icon>keyboard_arrow_down</v-icon>
-        </v-list-tile-action>
-      </v-list-tile>
-      <v-list-tile avatar v-for="submission in filterSubmissions(drawer.submissions, type.id)" :key="submission.id" @click="loadDetails(submission.id)">
-        <v-list-tile-action>
-          <v-icon v-if="hasVoted(submission.id)" color="red darken-3" @click="setVoteCount(submission.id, 1)">whatshot</v-icon>
-          <v-icon v-else color="grey lighten-4" @click="setVoteCount(submission.id, 0)">whatshot</v-icon>
-        </v-list-tile-action>
-        <v-list-tile-content>
-          <v-list-tile-title>{{ submission.title }}</v-list-tile-title>
-          <v-list-tile-sub-title>{{ submission.themes.join(', ') }}</v-list-tile-sub-title>
-        </v-list-tile-content>
-      </v-list-tile>
-    </v-list-group>
-  </v-list>
+    <v-toolbar :color="drawer.toolbarColor" :dark="drawer.toolbarIsDark">
+      <v-toolbar-title>{{ drawer.label }} ({{ drawer.submissions.length }})</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-icon dark @click='drawer.active = false' class="pointer">clear</v-icon>
+    </v-toolbar>
+    <v-list three-line>
+      <v-list-group v-for="type in types" :key="type.id" :value="type.active">
+        <v-list-tile slot="item" @click="">
+          <v-list-tile-action>
+            <v-icon color="type.iconColor" class="type.iconClass">{{ type.icon }}</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>{{ type.label }} ({{ filterSubmissions(drawer.submissions, type.id).length }})</v-list-tile-title>
+          </v-list-tile-content>
+          <v-list-tile-action>
+            <v-icon>keyboard_arrow_down</v-icon>
+          </v-list-tile-action>
+        </v-list-tile>
+        <v-list-tile v-for="submission in filterSubmissions(drawer.submissions, type.id)" :key="submission.id"
+          avatar
+          @click="loadDetails(submission.id, drawer.submissions)"
+        >
+          <v-list-tile-action>
+            <v-icon v-if="hasFavorited(submission.id)"
+              class=""
+              color="amber darken-4"
+              @click.stop.prevent="setFavorited(submission.id, 0)"
+            >
+              star_border
+            </v-icon>
+            <v-icon v-else
+              class=""
+              color="grey lighten-1"
+              @click.stop.prevent="setFavorited(submission.id, 1)"
+            >
+              star_border
+            </v-icon>
+          </v-list-tile-action>
+
+          <v-list-tile-action>
+            <v-icon v-if="hasVoted(submission.id) > 0"
+                color="grey lighten-1"
+                disable
+                @click.stop="setVoted(submission.id, 0)"
+            >
+              exposure_plus_1
+            </v-icon>
+            <v-icon v-else
+              color="green darken-4"
+              class=""
+              @click.stop="setVoted(submission.id, 1)"
+            >
+              exposure_plus_1
+            </v-icon>
+          </v-list-tile-action>
+
+          <v-list-tile-action>
+            <v-icon v-if="hasVoted(submission.id) < 0"
+                color="grey lighten-1"
+                @click.stop="setVoted(submission.id, 0)"
+            >
+              exposure_minus_1
+            </v-icon>
+            <v-icon v-else
+              color="red darken-4"
+              class=""
+              @click.stop="setVoted(submission.id, -1)"
+            >
+              exposure_minus_1
+            </v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title><b>{{ submission.title }}</b></v-list-tile-title>
+            <v-list-tile-sub-title class="grey--text text--darken-2">{{ submission.abstract }}</v-list-tile-sub-title>
+            <v-list-tile-sub-title class="deep-purple--text text--darken-4"><em>[ {{ submission.themes.join(', ') }} ]</em></v-list-tile-sub-title>
+          </v-list-tile-content>
+        </v-list-tile>
+      </v-list-group>
+    </v-list>
   </v-navigation-drawer>
 </template>
 
 <script>
+import CfpReviewsSubmissionsListsPanel from '@/components/CfpReviewsSubmissionsListsPanel'
 
 export default {
-  name: 'cfp-reviews-submissions-lists-drawers',
+  name: 'cfp-reviews-submissions-lists-drawer',
   data () {
     return {
     }
@@ -58,12 +100,30 @@ export default {
   computed: {
   },
   methods: {
+    setFavorited (submissionId, value) {
+      // console.log(`methods.setFavorited`)
+      this.$store.dispatch('setFavorited', {
+        submissionId: submissionId,
+        value: value
+      })
+    },
+    hasFavorited (submissionId) {
+      // console.log(`methods.hasFavorited`) // : ${submissionId}`)
+      // console.log(this.$store.getters.getFavorited(submissionId))
+      return this.$store.getters.getFavorited(submissionId)
+    },
     closeDrawer () {
       this.drawer.active = false
     },
     hasVoted (submissionId) {
       // console.log(`methods.hasVoted`)
       return this.$store.getters.getVoted(submissionId)
+    },
+    setVoted (submissionId, value) {
+      this.$store.dispatch('setVoted', {
+        submissionId: submissionId,
+        value: value
+      })
     },
     voteCount (submissionId) {
       // console.log('methods.voteCount: ', this.submissionId)
@@ -74,15 +134,21 @@ export default {
       return this.$store.getters.getVoteTotal(submissionId)
     },
     filterSubmissions (submissions, type) {
-      // // console.log(`filterSubmissions: ${type}`, submissions)
-      return submissions.filter(s => s.type === type)
+      // console.log(`filterSubmissions: ${type}`, submissions)
+      if (submissions) {
+        return submissions.filter(s => s.type === type)
+      } else {
+        return []
+      }
     },
     loadDetails (submissionId) {
+      console.log('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@')
       return this.$store.getters.getSubmission(submissionId)
     }
   },
-  props: ['drawer', 'submissions', 'types'],
+  props: ['drawer', 'types'],
   components: {
+    'cfp-reviews-submissions-lists-panel': CfpReviewsSubmissionsListsPanel
   }
 }
 </script>

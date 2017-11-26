@@ -20,10 +20,13 @@ export const store = new Vuex.Store({
   state: {
     formId: '1xrtWTn6mA-1zHvM6q8kRlPjoy0yLIAwOfjsv-nGhWPM', // FIXME: Shouldn't be hardcoded
     _debug: {
-      'limitToFirst': 170
+      limitToFirst: 500
     },
+    _bus: new Vue(),
     _isLoading: true,
+    _isLoginError: false,
     _currentUser: null,
+    _domainRestriction: 'redhat.com',
     _submissions: [],
     _unreviewed: [],
     _approved: [],
@@ -32,13 +35,28 @@ export const store = new Vuex.Store({
     _voted: {},
     _themes: [],
     _themesFilter: [],
-    _favorited: {}
+    _favorited: {},
+    _favoritedFilter: [],
+    _details: {},
+    _detailsActive: false
   },
   getters: {
+    getBus: (state) => {
+      return state._bus
+    },
+    getDetails: (state) => (submissionId) => {
+      return state._details
+    },
+    getDetailsActive: (state) => {
+      return state._detailsActive
+    },
     getFavorited: (state) => (submissionId) => {
       // console.log(`getters.getFavorited:`) // ${submissionId}`)
       if (!(state._favorited[submissionId])) return
       return state._favorited[submissionId].results[state._currentUser.id] || 0
+    },
+    getFavoritedFilter: (state) => {
+      return state._favoritedFilter
     },
     getVoted: (state) => (submissionId) => {
       return state._voted[submissionId] || 0
@@ -60,6 +78,9 @@ export const store = new Vuex.Store({
     },
     isLoading (state) {
       return state._isLoading
+    },
+    isLoginError (state) {
+      return state._isLoginError
     },
     currentUser (state) {
       return state._currentUser
@@ -164,19 +185,31 @@ export const store = new Vuex.Store({
     }
   },
   mutations: {  // triggered with "commit" and MUST BE SYNCHRONOUS
+    setDetails (state, submissionId) {
+      console.log('mutation.setDetails')
+      let submissions = state._submissions.filter(s => s.id === submissionId)
+      if (submissions.length > 0) {
+        let submission = submissions[0]
+        state._details = submission
+      }
+    },
+    showDetails (state) {
+      state._detailsActive = true
+    },
+    closeDetails (state) {
+      state._detailsActive = false
+    },
     setFavorited (state, payload) {
-      console.log(payload)
       Vue.set(state._favorited, payload.submissionId, payload.value)
     },
     incrementFavoriteCount (state, payload) {
-      console.log(`mutations.incrementFavoriteCount: ${Object.values(payload)}`)
+      // console.log(`mutations.incrementFavoriteCount: ${Object.values(payload)}`)
       let path = '/programs/' + state.formId + '/submissions/' + payload.submissionId + '/meta/favorited'
       return db.ref(path)
         .transaction(function (favorited) {
-          console.log(favorited, '******)))))))')
           const uid = state._currentUser.id
           if (favorited === undefined || favorited === null) {
-            console.log('No voting data found, creating it now.')
+            // console.log('No voting data found, creating it now.')
             if (payload.value === 0) {
               favorited = {
                 total: 0,
@@ -191,9 +224,8 @@ export const store = new Vuex.Store({
                 results: {[uid]: payload.value}
               }
             }
-            console.log(favorited)
           } else {
-            console.log('Voting data found. Updating.')
+            // console.log('Voting data found. Updating.')
             favorited.results[uid] = payload.value
             favorited.total = Object.values(favorited.results).reduce((a, b) => {
               return a + b
@@ -259,6 +291,9 @@ export const store = new Vuex.Store({
           return result // transaction requires a return value!
         })
     },
+    loginFailed (state) {
+      state._isLoginError = true
+    },
     logOutCurrentUser (state) {
       // console.log('Logged out user!')
       state._currentUser = null
@@ -266,6 +301,7 @@ export const store = new Vuex.Store({
     },
     updateCurrentUser (state, user) {
       state._currentUser = user // FIXME: this brings in a lot of unwanted properties from firebase auth
+      state._isLoginError = false
     },
     toggleLoading (state, bool) {
       state._isLoading = bool
@@ -383,6 +419,9 @@ export const store = new Vuex.Store({
         }
       })
     },
+    updateFavoritedFilter (state, value) {
+      state._favoritedFilter = value
+    },
     updateThemesFilter (state, value) {
       state._themesFilter = value
     },
@@ -404,6 +443,18 @@ export const store = new Vuex.Store({
     }
   },
   actions: {
+    setDetails ({ commit }, submissionId) {
+      // console.log('actions.showDetails')
+      commit('setDetails', submissionId)
+    },
+    showDetails ({ commit }, submissionId) {
+      // console.log('actions.showDetails')
+      commit('showDetails')
+    },
+    closeDetails ({ commit }) {
+      // console.log('actions.closeDetails')
+      commit('closeDetails')
+    },
     setFavorited ({ commit }, payload) {
       commit('setFavorited', payload)
       commit('incrementFavoriteCount', payload)
@@ -424,6 +475,9 @@ export const store = new Vuex.Store({
       // console.log('actions.updateThemesFilter')
       commit('updateThemesFilter', value)
     },
+    updateFavoritedFilter ({ commit }, value) {
+      commit('updateFavoritedFilter', value)
+    },
     logInPopup ({ state, commit }) {
       // console.log('actions.logInPopup')
       var provider = new firebase.auth.GoogleAuthProvider()
@@ -443,13 +497,22 @@ export const store = new Vuex.Store({
           // User is signed in.
           user.id = user.uid
           // console.(`User logged in: ${user.email}`)
+          user.domain = user.email.split('@')[1]
+          if (state._domainRestriction && state._domainRestriction !== user.domain) {
+            commit('loginFailed')
+            dispatch('logOut')
+            commit('toggleLoading', false)
+            throw new Error('Sorry, you are not able to access this site right now')
+          }
           commit('updateCurrentUser', user)
           dispatch('loadSubmissions')
         } else {
           commit('logOutCurrentUser')
         }
-      }, function (error) {
+      }, (error) => {
         console.log(`ERROR: ${error}`)
+        commit('loginFailed')
+        throw new Error(error)
       })
     },
     toggleLoading ({ state, commit }, bool) {

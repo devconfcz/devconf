@@ -13,16 +13,19 @@
       </v-toolbar-items>
     </v-toolbar>
     <v-content>
+      <v-alert :value="isLoginError" color="red text-darken-4" class="text-xs-center display-1">
+        <b>403: Permission denied</b>
+      </v-alert>
       <div v-if="isLoading" class="text-xs-center">
-        <p class="display-5 mt-5">Loading... </p>
+        <p class="display-1 mt-5">Loading... </p>
         <v-progress-circular indeterminate color="primary"></v-progress-circular>
       </div>
       <div v-else-if="isLoggedIn">
         <cfp-dashboard></cfp-dashboard>
       </div>
       <div v-else class="text-xs-center">
-        <p class="display-5 mt-5">You must log-in to continue... </p>
-        <v-btn :loading="isLoggingIn" color="red" large flat @click="logIn">
+        <p class="display-1 mt-5">You must log-in to continue... </p>
+        <v-btn :loading="isLoading" color="red" large flat @click="logIn">
           Click here to login-in
           <v-icon class="ml-3">account_circle</v-icon>
         </v-btn>
@@ -38,10 +41,12 @@ export default {
   name: 'app-cfp',
   data () {
     return {
-      isLoggingIn: false
     }
   },
   computed: {
+    isLoginError () {
+      return this.$store.getters.isLoginError
+    },
     isLoading () {
       return this.$store.getters.isLoading
     },
@@ -54,13 +59,7 @@ export default {
   },
   methods: {
     logIn () {
-      this.isLoggingIn = true
       this.$store.dispatch('logInPopup')
-      .catch((error) => {
-        if (error) {
-          this.isLoggingIn = false
-        }
-      })
     },
     logOut () {
       this.$store.dispatch('logOut')

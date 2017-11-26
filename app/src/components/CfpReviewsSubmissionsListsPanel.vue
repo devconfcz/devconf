@@ -11,23 +11,24 @@
               <v-icon color="type.iconColor" class="type.iconClass">{{ type.icon }}</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>
-              <v-list-tile-title>{{ type.label }} ({{ filterSubmissions(submissions, type.id).length }})</v-list-tile-title>
+              <v-list-tile-title>{{ type.label }} ({{ filterSubmissions(drawer.submissions, type.id).length }})</v-list-tile-title>
             </v-list-tile-content>
             <v-list-tile-action>
               <v-icon>keyboard_arrow_down</v-icon>
             </v-list-tile-action>
           </v-list-tile>
-          <v-list-tile v-for="submission in filterSubmissions(submissions, type.id)" :key="submission.id"
+          <v-list-tile v-for="submission in filterSubmissions(drawer.submissions, type.id)" :key="submission.id"
             avatar
-            @click="loadDetails(submission.id, submissions)"
+            @click="showDetails(submission.id)"
           >
+          <!--
             <v-list-tile-action>
               <v-icon v-if="hasFavorited(submission.id)"
                 class=""
                 color="amber darken-4"
                 @click.stop.prevent="setFavorited(submission.id, 0)"
               >
-                star_border
+                star
               </v-icon>
               <v-icon v-else
                 class=""
@@ -37,7 +38,7 @@
                 star_border
               </v-icon>
             </v-list-tile-action>
-
+          -->
             <v-list-tile-action>
               <v-icon v-if="hasVoted(submission.id) > 0"
                   color="grey lighten-1"
@@ -94,7 +95,7 @@ export default {
   },
   computed: {
     submissions () {
-      return this.$store.getters.unreviewed
+      return this.$store.getters[this.drawer.id]
     },
     themes () {
       return this.$store.getters.themes
@@ -104,8 +105,13 @@ export default {
     }
   },
   methods: {
+    showDetails (submissionId) {
+      // console.log('methods.showDetails... ' + submissionId)
+      this.$store.dispatch('showDetails', submissionId)
+      this.$store.getters.getBus.$emit('active', this.submissions.findIndex(s => s.id === submissionId))
+    },
     setFavorited (submissionId, value) {
-      console.log(`methods.setFavorited`)
+      // console.log(`methods.setFavorited`)
       this.$store.dispatch('setFavorited', {
         submissionId: submissionId,
         value: value
@@ -115,44 +121,6 @@ export default {
       // console.log(`methods.hasFavorited`) // : ${submissionId}`)
       // console.log(this.$store.getters.getFavorited(submissionId))
       return this.$store.getters.getFavorited(submissionId)
-    },
-    loadNextDetails (submissionId, bucket) {
-      // console.log((`methods.loadNextDetails: ${submissionId};`)
-      if (!(bucket)) {
-        // console.log((`... methods.loadNextDetails: Empty bucket... returning!`)
-        return
-      }
-      let ix = bucket.findIndex(s => s.id === submissionId)
-      let nix = ix
-      if (ix > -1) {
-        // we have a submissionId
-        if (ix < bucket.length) {
-          nix = ix + 1
-        } else {
-          // we're at the end of the list... start over...
-          nix = 0
-        }
-      } else {
-        // we didn't find the submission
-      }
-      this.$set(this.details, 'submission', bucket[nix])  // <--- this.details doesn't exist!?
-    },
-    loadPreviousDetails (submissionId, bucket) {
-      // // console.log(`methods.loadPreviousDetails: ${submissionId};`)
-      let ix = bucket.findIndex(s => s.id === submissionId)
-      let nix = ix
-      if (ix > -1) {
-        // we have a submissionId
-        if (ix > 0) {
-          nix = ix - 1
-        } else {
-          // we're at the start of the list... loop to the end...
-          nix = bucket.length
-        }
-      } else {
-        // we didn't find the submission
-      }
-      this.$set(this.details, 'submission', bucket[nix])
     },
     setVoted (submissionId, value) {
       this.$store.dispatch('setVoted', {
@@ -167,12 +135,6 @@ export default {
     voteCount (submissionId) {
       return this.$store.getters.getVoteCount(submissionId)
     },
-    loadDetails (submissionId, bucket) {
-      // console.log(`methods.loadDetails: ${submissionId}, ${bucket}`)
-      this.$set(this.details, 'active', true)
-      // console.log(this.$store.getters.getSubmission(submissionId))
-      this.$set(this.details, 'submission', this.$store.getters.getSubmission(submissionId))
-    },
     voteTotal (submissionId) {
       // // console.log('CfpReviewNavbarVoting.computed.votes: ', this.submissionId)
       return this.$store.getters.getVoteTotal(submissionId)
@@ -186,7 +148,7 @@ export default {
       return submissions.filter(s => s.type === type)
     }
   },
-  props: ['drawer', 'types', 'details'],
+  props: ['drawer', 'types'],
   components: {
     'cfp-reviews-submissions-lists-drawer': CfpReviewsSubmissionsListsDrawer,
     'cfp-reviews-tab-speakers': CfpReviewTabSpeakers
