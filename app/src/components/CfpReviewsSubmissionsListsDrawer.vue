@@ -28,6 +28,7 @@
           avatar
           @click="loadDetails(submission.id, drawer.submissions)"
         >
+          <!--
           <v-list-tile-action>
             <v-icon v-if="hasFavorited(submission.id)"
               class=""
@@ -44,6 +45,7 @@
               star_border
             </v-icon>
           </v-list-tile-action>
+          -->
 
           <v-list-tile-action>
             <v-icon v-if="hasVoted(submission.id) > 0"
