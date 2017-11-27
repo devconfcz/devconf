@@ -20,9 +20,6 @@
           <v-btn right @click="clearThemes">Clear</v-btn>
         </div>
       </v-flex>
-      <v-flex xs12>
-        <v-divider></v-divider>
-      </v-flex>
     </v-layout>
   </v-container>
 </template>

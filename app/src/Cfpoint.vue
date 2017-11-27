@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app :class="{ 'pointer-loading': isWorking }">
     <v-toolbar app>
       <v-toolbar-title>DevConf.cz 2018 - Main Event - Submission Review</v-toolbar-title>
       <v-spacer></v-spacer>
@@ -17,7 +17,7 @@
         <b>403: Permission denied</b>
       </v-alert>
       <div v-if="isLoading" class="text-xs-center">
-        <p class="display-1 mt-5">Loading... </p>
+        <p class="display-1 mt-5">Loading...</p>
         <v-progress-circular indeterminate color="primary"></v-progress-circular>
       </div>
       <div v-else-if="isLoggedIn">
@@ -39,11 +39,10 @@ import CfpDashboard from '@/components/CfpDashboard'
 
 export default {
   name: 'app-cfp',
-  data () {
-    return {
-    }
-  },
   computed: {
+    isWorking () {
+      return this.$store.getters.getIsWorking
+    },
     isLoginError () {
       return this.$store.getters.isLoginError
     },
@@ -72,4 +71,19 @@ export default {
 </script>
 
 <style>
+.pointer {
+   cursor: pointer;
+}
+
+.pointer-off {
+  cursor: not-allowed;
+}
+
+.pointer-loading {
+  cursor: wait;
+}
+
+.list--group .list__tile {
+  padding-left: 12px!important;
+}
 </style>

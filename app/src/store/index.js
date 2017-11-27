@@ -26,6 +26,7 @@ export const store = new Vuex.Store({
     _bus: new Vue(),
     _isLoading: true,
     _isLoginError: false,
+    _isWorking: false,
     _currentUser: null,
     _domainRestriction: 'redhat.com',
     _submissions: [],
@@ -42,6 +43,9 @@ export const store = new Vuex.Store({
     _detailsActive: false
   },
   getters: {
+    getIsWorking: (state) => {
+      return state._isWorking
+    },
     getBus: (state) => {
       return state._bus
     },
@@ -60,7 +64,12 @@ export const store = new Vuex.Store({
       return state._favoritedFilter
     },
     getVoted: (state) => (submissionId) => {
-      return state._voted[submissionId] || 0
+      let votes = state._votes[submissionId]
+      let uid = state._currentUser.id
+      if (votes !== undefined && votes !== null) {
+        return votes.results[uid] || 0
+      }
+      return 0
     },
     debug (state) {
       return (state._debug !== undefined)
@@ -88,7 +97,7 @@ export const store = new Vuex.Store({
     },
     submissions (state) {
       // console.log('Loading data: all submissions')
-      return state._submissions.sort((a, b) => a.type > b.type)
+      return state._submissions
     },
     workshops (state) {
       return state._submissions.filter(s => s.type === 'Workshop')
@@ -163,11 +172,15 @@ export const store = new Vuex.Store({
     getSubmission: (state) => (submissionId) => {
       // console.log(`getters.getSubmission: ${submissionId}`)
       let defaultSubmission = {
+        id: null,
         type: '',
         abstract: '',
         duration: '',
         difficulty: '',
-        themes: []
+        themes: [],
+        meta: {
+          contacts: {}
+        }
       }
       let submissions = state._submissions.filter(s => s.id === submissionId)
       let submission
@@ -186,8 +199,15 @@ export const store = new Vuex.Store({
     }
   },
   mutations: {  // triggered with "commit" and MUST BE SYNCHRONOUS
+    toggleIsWorking (state, value) {
+      // console.log(`... going to be loading something? => ${value}`)
+      state._isWorking = value
+    },
+    toggleLoading (state, bool) {
+      state._isLoading = bool
+    },
     setDetails (state, submissionId) {
-      console.log('mutation.setDetails')
+      // console.log('mutation.setDetails')
       let submissions = state._submissions.filter(s => s.id === submissionId)
       if (submissions.length > 0) {
         let submission = submissions[0]
@@ -304,9 +324,6 @@ export const store = new Vuex.Store({
       state._currentUser = user // FIXME: this brings in a lot of unwanted properties from firebase auth
       state._isLoginError = false
     },
-    toggleLoading (state, bool) {
-      state._isLoading = bool
-    },
     loadQueue (state, submissions) {
       // console.log('mutations.loadQueue')
       let themes = {}
@@ -327,7 +344,6 @@ export const store = new Vuex.Store({
       // console.log(`... loading submission (${submission.id}) complete.`)
     },
     refreshSubmissionStatus (state) {
-      // state._isLoading = true
       if (!state._currentUser) {
         // console.log('not logged in!')
         state._unreviewed = []
@@ -352,7 +368,7 @@ export const store = new Vuex.Store({
             vote_count_minus: 0,
             results: {[uid]: 0}
           }
-          Vue.set(state._votes, sid, votes)  // FIXME: can this be done more lazily?
+          Vue.set(state._votes, sid, votes)
           unreviewed.push(sid)
         } else {
           Vue.set(state._votes, sid, votes)
@@ -381,44 +397,7 @@ export const store = new Vuex.Store({
         state._unreviewed = unreviewed
         state._approved = approved
         state._rejected = rejected
-        // state._isLoading = false
       }
-    },
-    setVoteCount (state, payload) {  // FIXME: This is not used? Obsolete?
-      // console.log('store.mutations.setVoteCount: ', submissionId)
-      var submissionId = payload.submissionId
-      var newValue = payload.value
-      let path = '/programs/' + state.formId + '/submissions/' + submissionId + '/meta/votes'
-      return db.ref(path)
-      .transaction(function (votes) {
-        const uid = state._currentUser.id
-        if (votes !== undefined && votes !== null) {
-          votes.results[uid] = newValue
-          votes.vote_total = Object.values(votes.results).reduce((a, b) => {
-            return a + b
-          })
-          votes.vote_count_total = Object.keys(votes.results).length
-          votes.vote_count_plus = Object.values(votes.results).filter(val => val === 1).length
-          votes.vote_count_minus = Object.values(votes.results).filter(val => val === -1).length
-        } else {
-          // console.log('No voting data found, creating it now.')
-          votes = {
-            vote_total: newValue,
-            vote_count_total: newValue,
-            results: {[uid]: newValue}
-          }
-          if (newValue === 0) {
-            votes.vote_count_plus = 0
-            votes.vote_count_minus = 0
-          } else if (newValue > 0) {
-            votes.vote_count_plus = newValue
-            votes.vote_count_minus = 0
-          } else {
-            votes.vote_count_plus = 0
-            votes.vote_count_minus = -1 * newValue
-          }
-        }
-      })
     },
     updateFavoritedFilter (state, value) {
       state._favoritedFilter = value
@@ -444,6 +423,12 @@ export const store = new Vuex.Store({
     }
   },
   actions: {
+    toggleIsWorking ({ commit }, value) {
+      commit('toggleIsWorking', value)
+    },
+    toggleLoading ({ state, commit }, bool) {
+      commit('toggleLoading', bool)
+    },
     setDetails ({ commit }, submissionId) {
       // console.log('actions.showDetails')
       commit('setDetails', submissionId)
@@ -460,11 +445,12 @@ export const store = new Vuex.Store({
       commit('setFavorited', payload)
       commit('incrementFavoriteCount', payload)
     },
-    setVoted ({ state, commit }, payload) {
+    setVoted ({ state, commit, dispatch }, payload) {
       // console.log(`actions.setVoted: ${Object.values(payload)}`)
       commit('setVoted', payload)
       commit('incrementVoteCount', payload)
-      commit('refreshSubmissionStatus')
+      dispatch('loadSubmissions')
+      // commit('refreshSubmissionStatus')
       // console.log('... actions.setVoted: COMPLETE')
     },
     incrementVoteCount ({ commit }, payload) {
@@ -493,6 +479,8 @@ export const store = new Vuex.Store({
     },
     initAuth ({ state, commit, dispatch }) {
       // console.('actions.initAuth')
+      commit('toggleLoading', true)
+      commit('toggleIsWorking', true)
       firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
           // User is signed in.
@@ -503,26 +491,27 @@ export const store = new Vuex.Store({
             commit('loginFailed')
             dispatch('logOut')
             commit('toggleLoading', false)
+            commit('toggleIsWorking', false)
             throw new Error('Sorry, you are not able to access this site right now')
           }
           commit('updateCurrentUser', user)
           dispatch('loadSubmissions')
+          commit('toggleLoading', false)
         } else {
+          commit('toggleLoading', false)
+          commit('toggleIsWorking', false)
           commit('logOutCurrentUser')
         }
       }, (error) => {
         console.log(`ERROR: ${error}`)
+        commit('toggleLoading', false)
+        commit('toggleIsWorking', false)
         commit('loginFailed')
         throw new Error(error)
       })
     },
-    toggleLoading ({ state, commit }, bool) {
-      // console.('actions.toggleLoading')
-      commit('toggleLoading', bool)
-    },
-    loadSubmissions ({ commit, state }, payload) {
-      // console.('actions.loadSubmissions')
-      commit('toggleLoading', true)
+    loadSubmissions ({ commit, state }) {
+      // console.log('actions.loadSubmissions')
       return new Promise((resolve, reject) => {
         if (state._debug === undefined || state._debug === null) {
           db.ref('programs/' + state.formId + '/submissions/')
@@ -532,7 +521,7 @@ export const store = new Vuex.Store({
             commit('loadQueue', submissions)
             commit('refreshSubmissionStatus')
           }).then(() => {
-            commit('toggleLoading', false)
+            commit('toggleIsWorking', false)
           })
         } else {
           db.ref('programs/' + state.formId + '/submissions/')
@@ -544,18 +533,15 @@ export const store = new Vuex.Store({
             commit('loadQueue', submissions)
             commit('refreshSubmissionStatus')
           }).then(() => {
-            commit('toggleLoading', false)
+            commit('toggleIsWorking', false)
           })
         }
       })
     },
-    setVoteCount ({ commit }, payload) {
-      // console.log('actions.setVoteCount')
-      commit('setVoteCount', payload)
-    },
     refreshSubmissionStatus ({ commit }) {
       // console.log('actions.refreshSubmissionStatus')
       commit('refreshSubmissionStatus')
+      commit('toggleIsWorking', false)
     },
     updateSubmissionBucket ({ commit }, submissionId) {
       // console.log('action.updateSubmissionBucket')

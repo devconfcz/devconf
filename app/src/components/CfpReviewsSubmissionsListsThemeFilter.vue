@@ -1,8 +1,8 @@
 <template>
   <v-container fluid>
     <v-expansion-panel class="mb-3 grey lighten-5 text-xs-right" inset>
-      <v-expansion-panel-content>
-        <div slot="header"><b>Theme filter ({{ themesFilter.length }} of {{ themes.length }} selected)</b></div>
+      <v-expansion-panel-content class="mb-3 grey lighten-5 text-xs-right">
+        <div slot="header"><strong>Theme filter ({{ themesFilter.length }} of {{ themes.length }} selected)</strong></div>
 
         <v-container fluid>
           <v-layout row wrap>
@@ -24,9 +24,6 @@
               <div class="text-xs-center ma-3">
                 <v-btn right @click="clearThemes">Clear</v-btn>
               </div>
-            </v-flex>
-            <v-flex xs12>
-              <v-divider></v-divider>
             </v-flex>
           </v-layout>
         </v-container>

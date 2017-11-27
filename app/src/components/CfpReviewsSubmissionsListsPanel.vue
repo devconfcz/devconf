@@ -4,7 +4,7 @@
       <v-toolbar :color="drawer.toolbarColor" :dark="drawer.toolbarIsDark">
         <v-toolbar-title>{{ drawer.label }} ({{ submissions.length }})</v-toolbar-title>
       </v-toolbar>
-      <v-list three-line>
+      <v-list two-line>
         <v-list-group v-for="type in types" :key="type.id" :value="type.active">
           <v-list-tile slot="item" @click="">
             <v-list-tile-action>
@@ -43,13 +43,14 @@
               <v-icon v-if="hasVoted(submission.id) > 0"
                   color="grey lighten-1"
                   disable
+                  class="pointer-off"
                   @click.stop="setVoted(submission.id, 0)"
               >
                 exposure_plus_1
               </v-icon>
               <v-icon v-else
                 color="green darken-4"
-                class=""
+                class="pointer"
                 @click.stop="setVoted(submission.id, 1)"
               >
                 exposure_plus_1
@@ -59,13 +60,14 @@
             <v-list-tile-action>
               <v-icon v-if="hasVoted(submission.id) < 0"
                   color="grey lighten-1"
+                  class="pointer-off"
                   @click.stop="setVoted(submission.id, 0)"
               >
                 exposure_minus_1
               </v-icon>
               <v-icon v-else
                 color="red darken-4"
-                class=""
+                class="pointer"
                 @click.stop="setVoted(submission.id, -1)"
               >
                 exposure_minus_1
@@ -106,9 +108,8 @@ export default {
   },
   methods: {
     showDetails (submissionId) {
-      // console.log('methods.showDetails... ' + submissionId)
-      this.$store.dispatch('showDetails', submissionId)
-      this.$store.getters.getBus.$emit('active', this.submissions.findIndex(s => s.id === submissionId))
+      // console.log('methods.showDetails... ')
+      this.$store.getters.getBus.$emit('showDetails', submissionId)
     },
     setFavorited (submissionId, value) {
       // console.log(`methods.setFavorited`)
@@ -123,6 +124,7 @@ export default {
       return this.$store.getters.getFavorited(submissionId)
     },
     setVoted (submissionId, value) {
+      this.$store.dispatch('toggleIsWorking', true)
       this.$store.dispatch('setVoted', {
         submissionId: submissionId,
         value: value
@@ -156,12 +158,4 @@ export default {
 }
 </script>
 
-<style scoped>
-.list--group .list__tile {
-  padding-left: 12px!important;
-}
-
-.pointer {
-   cursor: pointer
-}
-</style>
+<style></style>

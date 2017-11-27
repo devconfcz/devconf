@@ -1,19 +1,21 @@
 <template>
   <v-layout row justify-center>
-    <v-dialog v-model="active" max-width="800">
+    <v-dialog v-if="isValid" v-model="active" max-width="800">
       <v-card>
-        <v-toolbar color="purple darken-3" class="pr-3 pl-5" dark>
-          <v-btn icon @click="loadPreviousDetails()">
+        <v-toolbar color="purple darken-3" class="" dark>
+          <!--
+          <v-btn flat @click="loadNextDetails(-1)">
             Previous
             <v-icon>chevron_left</v-icon>
           </v-btn>
-          <v-spacer></v-spacer>
-          <v-btn icon @click="loadNextDetails()">
+          <v-btn flat @click="loadNextDetails(1)">
             Next
             <v-icon>chevron_right</v-icon>
           </v-btn>
-          <v-btn icon @click="hideDetails" class="ml-4" color="" dark>
-              <v-icon>photo_size_select_small</v-icon>
+          -->
+          <v-spacer></v-spacer>
+          <v-btn icon small @click="closeDetails" class="mr-3" color="white darken-4" dark>
+              <v-icon color="red darken-4">clear</v-icon>
           </v-btn>
         </v-toolbar>
         <v-toolbar>
@@ -46,7 +48,6 @@
               color="black"
               @click.stop=""
             >
-
             </v-icon>
           </v-list-tile-action>
 
@@ -54,6 +55,7 @@
             <v-icon v-if="hasVoted() > 0"
                 color="grey lighten-1"
                 disable
+                class="pointer-off"
                 @click.stop="setVoted(0)"
             >
               exposure_plus_1
@@ -69,8 +71,9 @@
 
           <v-list-tile-action>
             <v-icon v-if="hasVoted() < 0"
-                disable
                 color="grey lighten-1"
+                disable
+                class="pointer-off"
                 @click.stop="setVoted(0)"
             >
               exposure_minus_1
@@ -107,7 +110,7 @@
         </v-card-title>
       </v-card>
       <v-card v-for="speaker in submission.meta.contacts" :key="speaker.id">
-        <v-container fluid grid-list-lg class="">
+        <v-container fluid grid-list-lg class="pt-4 pb-4">
           <v-layout row>
             <v-flex xs3 offset-xs1>
               <v-avatar
@@ -115,7 +118,9 @@
                 size="150px"
                 class="grey lighten-4 elevation-20"
               >
-                <img :src="speaker.photo_url" alt="avatar">
+                <img :src="speaker.photo_url"
+                  style="background-image: url('https://firebasestorage.googleapis.com/v0/b/cward-cfpoint-devel.appspot.com/o/profile-blank-150x150.jpg?alt=media&token=5a12132b-5011-4f59-a852-dba1aa2895de')"
+                >
               </v-avatar>
             </v-flex>
             <v-flex xs7>
@@ -142,16 +147,25 @@ export default {
   data () {
     return {
       active: false,
-      ix: 0
+      masterIndex: 0
     }
   },
   computed: {
+    isValid () {
+      let s = this.submission
+      return (s !== undefined && s !== null)
+    },
     submission () {
-      if (this.submissionId) {
-        return this.$store.getters.getSubmission(this.submissionId)
+      if (this.submissionId !== undefined && this.submissionId !== null) {
+        const submission = this.$store.getters.getSubmission(this.submissionId)
+        if (submission.id !== undefined && submission.id !== null) {
+          // console.log(`Found submission: ${submission.id}`)
+          return submission
+        }
       }
-      // console.log('No submission found')
+      // console.log(`No (or Invalid) submission found for ${this.submissionId}`)
       return {
+        id: null,
         type: '',
         abstract: '',
         duration: '',
@@ -163,13 +177,15 @@ export default {
       }
     },
     submissionId () {
-      if (this.$store.getters[this.bucket].length > 0) {
-        return this.$store.getters[this.bucket][this.ix].id
+      const submissions = this.$store.getters.submissions
+      if (submissions !== undefined && submissions !== null && submissions.length > 0) {
+        return submissions[this.masterIndex].id
       }
     }
   },
   methods: {
-    hideDetails () {
+    closeDetails () {
+      this.$store.dispatch('closeDetails')
       this.active = false
     },
     setFavorited (value) {
@@ -184,59 +200,37 @@ export default {
       // console.log(this.$store.getters.getFavorited(submissionId))
       return this.$store.getters.getFavorited(this.submissionId)
     },
-    loadNextDetails () {
+    loadNextDetails (indexIncrement) {
       // console.log(`methods.loadNextDetails`)
       let bucket = this.$store.getters[this.bucket]
-      if (!(bucket)) {
+      if (!(bucket) || bucket.length === 0) {
         // console.log(`... methods.loadNextDetails: Empty bucket... returning!`)
+        this.closeDetails()
         return
       }
-      let ix = bucket.findIndex(s => s.id === this.submissionId)
-      let nix = ix
-      if (ix > -1) {
-        // we have a submissionId
-        if (ix < bucket.length - 1) {
-          nix = ix + 1
-        } else {
-          // we're at the end of the list... start over...
-          nix = 0
-        }
-      } else {
-        // we didn't find the submission
+      let bucketIx = bucket.findIndex(s => s.id === this.submissionId)
+      let targetBucketIx = bucketIx + indexIncrement
+      if (targetBucketIx > bucket.length - 1) {
+        targetBucketIx = 0 // went past the end, start over
+      } else if (targetBucketIx < 0) {
+        targetBucketIx = bucket.length - 1 // we past beginning, start at end
       }
-      let submissionId = bucket[nix].id
-      this.ix = nix
-      this.$store.dispatch('showDetails', submissionId)
-    },
-    loadPreviousDetails () {
-      // // console.log(`methods.loadPreviousDetails: ${submissionId};`)
-      let bucket = this.$store.getters[this.bucket]
-      if (!(bucket)) {
-        // console.log(`... methods.loadPreviousDetails: Empty bucket... returning!`)
-        return
+      if (targetBucketIx > bucket.length - 1) {
+        targetBucketIx = 0 // went past the end, start over
+      } else if (targetBucketIx < 0) {
+        targetBucketIx = bucket.length - 1 // we past beginning, start at end
       }
-      let ix = bucket.findIndex(s => s.id === this.submissionId)
-      let nix = ix
-      if (ix > -1) {
-        // we have a submissionId
-        if (ix > 0) {
-          nix = ix - 1
-        } else {
-          // we're at the start of the list... loop to the end...
-          nix = bucket.length - 1
-        }
-      } else {
-        // we didn't find the submission
-      }
-      let submissionId = bucket[nix].id
-      this.ix = nix
-      this.$store.dispatch('showDetails', submissionId)
+      let targetSubmissionId = bucket[targetBucketIx].id
+      let targetSubmissionMasterIndex = this.$store.getters.submissions.findIndex(s => s.id === targetSubmissionId)
+      this.masterIndex = targetSubmissionMasterIndex
     },
     setVoted (value) {
+      this.$store.dispatch('toggleIsWorking', true)
       this.$store.dispatch('setVoted', {
         submissionId: this.submissionId,
         value: value
       })
+      this.active = false
     },
     hasVoted () {
       // // console.log('CfpReviewNavbarVoting.computed.voteCountPlus: ', this.submissionId)
@@ -250,11 +244,11 @@ export default {
   components: {
   },
   created () {
-    this.$store.getters.getBus.$on('active', (value) => {
-      if (this.ix !== undefined && this.ix !== null) {
-        this.ix = value
-        this.active = true
-      }
+    this.$store.getters.getBus.$on('showDetails', (submissionId) => {
+      // console.log(`getBus.on.showDetails: ${submissionId}`)
+      this.masterIndex = this.$store.getters.submissions.findIndex(s => s.id === submissionId)
+      this.active = true
+      // console.log(`New masterIndex -> ${this.masterIndex}`)
     })
   }
 }
@@ -262,6 +256,6 @@ export default {
 
 <style>
 .dialog {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 </style>

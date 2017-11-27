@@ -7,26 +7,26 @@
     :width="drawer.width"
   >
     <v-toolbar :color="drawer.toolbarColor" :dark="drawer.toolbarIsDark">
-      <v-toolbar-title>{{ drawer.label }} ({{ drawer.submissions.length }})</v-toolbar-title>
+      <v-toolbar-title>{{ drawer.label }} ({{ submissions.length }})</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-icon dark @click='drawer.active = false' class="pointer">clear</v-icon>
     </v-toolbar>
-    <v-list three-line>
+    <v-list two-line>
       <v-list-group v-for="type in types" :key="type.id" :value="type.active">
         <v-list-tile slot="item" @click="">
           <v-list-tile-action>
             <v-icon color="type.iconColor" class="type.iconClass">{{ type.icon }}</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>{{ type.label }} ({{ filterSubmissions(drawer.submissions, type.id).length }})</v-list-tile-title>
+            <v-list-tile-title>{{ type.label }} ({{ filterSubmissions(type.id).length }})</v-list-tile-title>
           </v-list-tile-content>
           <v-list-tile-action>
             <v-icon>keyboard_arrow_down</v-icon>
           </v-list-tile-action>
         </v-list-tile>
-        <v-list-tile v-for="submission in filterSubmissions(drawer.submissions, type.id)" :key="submission.id"
+        <v-list-tile v-for="submission in submissions" :key="submission.id"
           avatar
-          @click="loadDetails(submission.id, drawer.submissions)"
+          @click="showDetails(submission.id)"
         >
           <!--
           <v-list-tile-action>
@@ -51,6 +51,7 @@
             <v-icon v-if="hasVoted(submission.id) > 0"
                 color="grey lighten-1"
                 disable
+                class="pointer-off"
                 @click.stop="setVoted(submission.id, 0)"
             >
               exposure_plus_1
@@ -67,13 +68,15 @@
           <v-list-tile-action>
             <v-icon v-if="hasVoted(submission.id) < 0"
                 color="grey lighten-1"
+                disable
+                class="pointer-off"
                 @click.stop="setVoted(submission.id, 0)"
             >
               exposure_minus_1
             </v-icon>
             <v-icon v-else
               color="red darken-4"
-              class=""
+              class="pointer"
               @click.stop="setVoted(submission.id, -1)"
             >
               exposure_minus_1
@@ -95,11 +98,10 @@ import CfpReviewsSubmissionsListsPanel from '@/components/CfpReviewsSubmissionsL
 
 export default {
   name: 'cfp-reviews-submissions-lists-drawer',
-  data () {
-    return {
-    }
-  },
   computed: {
+    submissions () {
+      return this.$store.getters[this.drawer.id]
+    }
   },
   methods: {
     setFavorited (submissionId, value) {
@@ -135,17 +137,16 @@ export default {
       // console.log('methods.voteTotal: ', this.submissionId)
       return this.$store.getters.getVoteTotal(submissionId)
     },
-    filterSubmissions (submissions, type) {
-      // console.log(`filterSubmissions: ${type}`, submissions)
-      if (submissions) {
-        return submissions.filter(s => s.type === type)
-      } else {
+    filterSubmissions (type) {
+      if (!(this.submissions)) {
+        // console.log('... empty submissions. Nothing to filter.')
         return []
       }
+      return this.submissions.filter(s => s.type === type)
     },
-    loadDetails (submissionId) {
-      console.log('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@')
-      return this.$store.getters.getSubmission(submissionId)
+    showDetails (submissionId) {
+      // console.log('methods.showDetails... ')
+      this.$store.getters.getBus.$emit('showDetails', submissionId)
     }
   },
   props: ['drawer', 'types'],

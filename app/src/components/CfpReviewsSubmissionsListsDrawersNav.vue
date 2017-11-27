@@ -1,8 +1,7 @@
 <template>
   <div>
-    <v-footer class="pa-3">
-
-      <v-btn icon class="ml-5 green--text text--darken-3" @click="openDrawerApproved()">
+    <v-footer class="ma-0 pa-1 grey lighten-5">
+      <v-btn flat large class="green--text text--darken-3" @click="openDrawerApproved()">
         <v-icon class="black--text">chevron_right</v-icon>
         <v-icon class="mr-2">check</v-icon>
         Approved ({{ approved.length }})
@@ -10,13 +9,11 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn flat @click="reloadSubmissions()">
-          <v-icon>refresh</v-icon>
-      </v-btn>
+      <v-btn icon large :loading="isWorking"></v-btn>
 
       <v-spacer></v-spacer>
 
-      <v-btn icon class="mr-5 red--text text--darken-3" @click="openDrawerRejected()">
+      <v-btn flat large class="red--text text--darken-3" @click="openDrawerRejected()">
         ({{ rejected.length }})
         Rejected
         <v-icon class="ml-2">delete_sweep</v-icon>
@@ -29,11 +26,12 @@
       :drawer="drawers.approved"
       :types="types"
     ></cfp-reviews-submissions-lists-drawer>
-    
+
     <cfp-reviews-submissions-lists-drawer
       :drawer="drawers.rejected"
       :types="types"
     ></cfp-reviews-submissions-lists-drawer>
+
   </div>
 </template>
 
@@ -42,10 +40,10 @@ import CfpReviewsSubmissionsListsDrawer from '@/components/CfpReviewsSubmissions
 
 export default {
   name: 'cfp-reviews-submissions-lists-drawers-nav',
-  data () {
-    return {}
-  },
   computed: {
+    isWorking () {
+      return this.$store.getters.getIsWorking
+    },
     approved () {
       return this.$store.getters.approved
     },
@@ -54,9 +52,6 @@ export default {
     }
   },
   methods: {
-    reloadSubmissions () {
-      this.$store.dispatch('loadSubmissions')
-    },
     openDrawerApproved () {
       this.drawers.approved.active = true
     },

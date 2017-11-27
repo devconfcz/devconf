@@ -1,12 +1,11 @@
 <template>
-  <div>
+  <v-container fluid>
     <cfp-reviews-submissions-lists-drawers-nav
       :drawers="drawers"
       :types="types"
     ></cfp-reviews-submissions-lists-drawers-nav>
 
-    <cfp-reviews-submissions-lists-theme-filter
-    ></cfp-reviews-submissions-lists-theme-filter>
+    <cfp-reviews-submissions-lists-theme-filter></cfp-reviews-submissions-lists-theme-filter>
 
     <!--
     <cfp-reviews-submissions-favorited-filter
@@ -20,7 +19,7 @@
 
     <cfp-reviews-submissions-details bucket="unreviewed"></cfp-reviews-submissions-details>
 
-  </div>
+  </v-container>
 </template>
 
 <script>
@@ -104,6 +103,28 @@ export default {
           iconClass: '',
           iconColor: ''
         }
+        /*,
+        {
+          id: 'Booth',
+          label: 'Booths',
+          icon: 'child_care',
+          toolbarColor: 'purple',
+          toolbarIsDark: true,
+          submissions: this.$store.getters.discussions,
+          iconClass: '',
+          iconColor: ''
+        },
+        {
+          id: 'Meetup',
+          label: 'Meetups',
+          icon: 'hot_tub',
+          toolbarColor: 'purple',
+          toolbarIsDark: true,
+          submissions: this.$store.getters.discussions,
+          iconClass: '',
+          iconColor: ''
+        }
+        */
       ]
     }
   },
@@ -138,8 +159,5 @@ export default {
 }
 </script>
 
-<style scoped>
-.list--group .list__tile {
-  padding-left: 12px!important;
-}
+<style>
 </style>
