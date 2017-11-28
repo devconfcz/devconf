@@ -21,7 +21,7 @@ export const store = new Vuex.Store({
     // formId: '1xrtWTn6mA-1zHvM6q8kRlPjoy0yLIAwOfjsv-nGhWPM', // FIXME: Shouldn't be hardcoded
     formId: '1xrtWTn6mA-1zHvM6q8kRlPjoy0yLIAwOfjsv-nGhWPM__1',
     _debug: {
-      limitToFirst: 500
+      limitToFirst: 10
     },
     _bus: new Vue(),
     _isLoading: true,
@@ -34,35 +34,10 @@ export const store = new Vuex.Store({
     _approved: [],
     _rejected: [],
     _votes: {},
-    _voted: {},
     _themes: [],
-    _themesFilter: [],
-    _favorited: {},
-    _favoritedFilter: [],
-    _details: {},
-    _detailsActive: false
+    _themesFilter: []
   },
   getters: {
-    getIsWorking: (state) => {
-      return state._isWorking
-    },
-    getBus: (state) => {
-      return state._bus
-    },
-    getDetails: (state) => (submissionId) => {
-      return state._details
-    },
-    getDetailsActive: (state) => {
-      return state._detailsActive
-    },
-    getFavorited: (state) => (submissionId) => {
-      // console.log(`getters.getFavorited:`) // ${submissionId}`)
-      if (!(state._favorited[submissionId])) return
-      return state._favorited[submissionId].results[state._currentUser.id] || 0
-    },
-    getFavoritedFilter: (state) => {
-      return state._favoritedFilter
-    },
     getVoted: (state) => (submissionId) => {
       let votes = state._votes[submissionId]
       let uid = state._currentUser.id
@@ -71,42 +46,15 @@ export const store = new Vuex.Store({
       }
       return 0
     },
-    debug (state) {
-      return (state._debug !== undefined)
-    },
     themes (state) {
       return state._themes.sort()
     },
     themesFilter (state) {
       return state._themesFilter.sort()
     },
-    isLoggedIn (state) {
-      if (state._currentUser === undefined || state._currentUser === null) {
-        return false
-      }
-      return true
-    },
-    isLoading (state) {
-      return state._isLoading
-    },
-    isLoginError (state) {
-      return state._isLoginError
-    },
-    currentUser (state) {
-      return state._currentUser
-    },
     submissions (state) {
       // console.log('Loading data: all submissions')
       return state._submissions
-    },
-    workshops (state) {
-      return state._submissions.filter(s => s.type === 'Workshop')
-    },
-    presentations (state) {
-      return state._submissions.filter(s => s.type === 'Presentation')
-    },
-    discussions (state) {
-      return state._submissions.filter(s => s.type === 'Discussion')
     },
     unreviewed (state) {
       // console.log('Loading data: unreviewed')
@@ -191,76 +139,108 @@ export const store = new Vuex.Store({
       }
       return submission
     },
+    getIsWorking: (state) => {
+      return state._isWorking
+    },
+    getBus: (state) => {
+      return state._bus
+    },
+    isLoggedIn (state) {
+      if (state._currentUser === undefined || state._currentUser === null) {
+        return false
+      }
+      return true
+    },
+    isLoading (state) {
+      return state._isLoading
+    },
+    isLoginError (state) {
+      return state._isLoginError
+    },
+    currentUser (state) {
+      return state._currentUser
+    },
     db (state) {
       return db
     },
     storage (state) {
       return storage
+    },
+    debug (state) {
+      return (state._debug !== undefined)
     }
   },
   mutations: {  // triggered with "commit" and MUST BE SYNCHRONOUS
-    toggleIsWorking (state, value) {
-      // console.log(`... going to be loading something? => ${value}`)
-      state._isWorking = value
+    updateThemesFilter (state, value) {
+      state._themesFilter = value
     },
-    toggleLoading (state, bool) {
-      state._isLoading = bool
-    },
-    setDetails (state, submissionId) {
-      // console.log('mutation.setDetails')
-      let submissions = state._submissions.filter(s => s.id === submissionId)
-      if (submissions.length > 0) {
-        let submission = submissions[0]
-        state._details = submission
+    loadQueue (state, submissions) {
+      // console.log('mutations.loadQueue')
+      let themes = {}
+      for (let submission of submissions) {
+        for (let theme of submission.themes) {
+          themes[theme] = true
+        }
       }
+      themes = Object.keys(themes)
+      state._themes = themes
+      if (state._themesFilter.length === 0) {
+        // set one once
+        state._themesFilter = themes.slice() // get a copy
+      }
+      state._submissions = submissions
     },
-    showDetails (state) {
-      state._detailsActive = true
+    loadSubmission (state, submission) {
+      // console.log(`Loading submission (${submission.id})`)
+      const sid = submission.id
+      Vue.set(state._submissions, sid, submission)
+      // console.log(`... loading submission (${submission.id}) complete.`)
     },
-    closeDetails (state) {
-      state._detailsActive = false
-    },
-    setFavorited (state, payload) {
-      Vue.set(state._favorited, payload.submissionId, payload.value)
-    },
-    incrementFavoriteCount (state, payload) {
-      // console.log(`mutations.incrementFavoriteCount: ${Object.values(payload)}`)
-      let path = '/programs/' + state.formId + '/submissions/' + payload.submissionId + '/meta/favorited'
-      return db.ref(path)
-        .transaction(function (favorited) {
-          const uid = state._currentUser.id
-          if (favorited === undefined || favorited === null) {
-            // console.log('No voting data found, creating it now.')
-            if (payload.value === 0) {
-              favorited = {
-                total: 0,
-                count_total: 0,
-                results: {[uid]: 0
-                }
-              }
-            } else {
-              favorited = {
-                total: payload.value,
-                count_total: payload.value,
-                results: {[uid]: payload.value}
-              }
-            }
-          } else {
-            // console.log('Voting data found. Updating.')
-            favorited.results[uid] = payload.value
-            favorited.total = Object.values(favorited.results).reduce((a, b) => {
-              return a + b
-            })
-            favorited.count_total = Object.keys(favorited.results).length
+    refreshSubmissionStatus (state) {
+      if (!state._currentUser) {
+        // console.log('not logged in!')
+        state._unreviewed = []
+        state._approved = []
+        state._rejected = []
+        // state._isLoading = false
+        return
+      }
+      let uid = state._currentUser.id
+      let unreviewed = []
+      let approved = []
+      let rejected = []
+      for (let submission of state._submissions) {
+        let sid = submission.id
+        let votes = submission.meta.votes
+        if (votes === undefined) {
+          // console.log('No votes structure found ... using default')
+          votes = {
+            vote_total: 0,
+            vote_count_total: 0,
+            vote_count_plus: 0,
+            vote_count_minus: 0,
+            results: {[uid]: 0}
           }
-          Vue.set(state._favorited, payload.submissionId, favorited)
-          let result = favorited
-          return result // transaction requires a return value!
-        })
-    },
-    setVoted (state, payload) {
-      // console.log(`mutations.setVoted`)
-      Vue.set(state._voted, payload.submissionId, payload.value)
+          Vue.set(state._votes, sid, votes)
+          unreviewed.push(sid)
+        } else {
+          Vue.set(state._votes, sid, votes)
+          const myVote = votes.results[uid] || 0
+          if (myVote === 1) {
+            approved.push(sid)
+          } else if (myVote === 0) {
+            unreviewed.push(sid)
+          } else if (myVote === -1) {
+            rejected.push(sid)
+          } else {
+            throw new Error(`Invalid vote value for currentUser (${uid})! Must be 1, 0 or -1 data (${myVote})`)
+          }
+        }
+
+        state._unreviewed = unreviewed
+        state._approved = approved
+        state._rejected = rejected
+      }
     },
     incrementVoteCount (state, payload) {
       // console.log(`store.mutations.incrementVoteCountPlus: ${payload.submissionId}' ${payload.incrementValue}'`)
@@ -312,6 +292,13 @@ export const store = new Vuex.Store({
           return result // transaction requires a return value!
         })
     },
+    toggleIsWorking (state, value) {
+      // console.log(`... going to be loading something? => ${value}`)
+      state._isWorking = value
+    },
+    toggleLoading (state, bool) {
+      state._isLoading = bool
+    },
     loginFailed (state) {
       state._isLoginError = true
     },
@@ -323,147 +310,62 @@ export const store = new Vuex.Store({
     updateCurrentUser (state, user) {
       state._currentUser = user // FIXME: this brings in a lot of unwanted properties from firebase auth
       state._isLoginError = false
-    },
-    loadQueue (state, submissions) {
-      // console.log('mutations.loadQueue')
-      let themes = {}
-      for (let submission of submissions) {
-        for (let theme of submission.themes) {
-          themes[theme] = true
-        }
-      }
-      themes = Object.keys(themes)
-      state._themes = themes
-      state._themesFilter = themes.slice() // get a copy
-      state._submissions = submissions
-    },
-    loadSubmission (state, submission) {
-      // console.log(`Loading submission (${submission.id})`)
-      const sid = submission.id
-      Vue.set(state._submissions, sid, submission)
-      // console.log(`... loading submission (${submission.id}) complete.`)
-    },
-    refreshSubmissionStatus (state) {
-      if (!state._currentUser) {
-        // console.log('not logged in!')
-        state._unreviewed = []
-        state._approved = []
-        state._rejected = []
-        // state._isLoading = false
-        return
-      }
-      let uid = state._currentUser.id
-      let unreviewed = []
-      let approved = []
-      let rejected = []
-      for (let submission of state._submissions) {
-        let sid = submission.id
-        let votes = submission.meta.votes
-        if (votes === undefined) {
-          // console.log('No votes structure found ... using default')
-          votes = {
-            vote_total: 0,
-            vote_count_total: 0,
-            vote_count_plus: 0,
-            vote_count_minus: 0,
-            results: {[uid]: 0}
-          }
-          Vue.set(state._votes, sid, votes)
-          unreviewed.push(sid)
-        } else {
-          Vue.set(state._votes, sid, votes)
-          const myVote = votes.results[uid] || 0
-          if (myVote === 1) {
-            approved.push(sid)
-          } else if (myVote === 0) {
-            unreviewed.push(sid)
-          } else if (myVote === -1) {
-            rejected.push(sid)
-          } else {
-            throw new Error(`Invalid vote value for currentUser (${uid})! Must be 1, 0 or -1 data (${myVote})`)
-          }
-        }
-
-        let favorited = submission.meta.favorited
-        if (favorited === undefined) {
-          favorited = {
-            total: 0,
-            count_total: 0,
-            results: {[uid]: 0}
-          }
-          Vue.set(state._favorited, sid, favorited)
-        }
-
-        state._unreviewed = unreviewed
-        state._approved = approved
-        state._rejected = rejected
-      }
-    },
-    updateFavoritedFilter (state, value) {
-      state._favoritedFilter = value
-    },
-    updateThemesFilter (state, value) {
-      state._themesFilter = value
-    },
-    updateSubmissionBucket (state, payload) {
-      let submissionId = payload.submissionId
-      let bucketName = payload.bucketName
-      let incrementValue = payload.incrementValue
-      let ix = state['_' + bucketName].indexOf(submissionId)
-      // remove from existing bucket
-      state['_' + bucketName].splice(ix, 1)
-      // add to new bucket
-      if (incrementValue === 1) {
-        state['_approved'].push(submissionId)
-      } else if (incrementValue === -1) {
-        state['_rejected'].push(submissionId)
-      } else {
-        throw new Error(`Unexpected increment value (${incrementValue})!`)
-      }
     }
   },
   actions: {
-    toggleIsWorking ({ commit }, value) {
-      commit('toggleIsWorking', value)
-    },
-    toggleLoading ({ state, commit }, bool) {
-      commit('toggleLoading', bool)
-    },
-    setDetails ({ commit }, submissionId) {
-      // console.log('actions.showDetails')
-      commit('setDetails', submissionId)
-    },
-    showDetails ({ commit }, submissionId) {
-      // console.log('actions.showDetails')
-      commit('showDetails')
-    },
-    closeDetails ({ commit }) {
-      // console.log('actions.closeDetails')
-      commit('closeDetails')
-    },
-    setFavorited ({ commit }, payload) {
-      commit('setFavorited', payload)
-      commit('incrementFavoriteCount', payload)
-    },
     setVoted ({ state, commit, dispatch }, payload) {
-      // console.log(`actions.setVoted: ${Object.values(payload)}`)
-      commit('setVoted', payload)
+      // console.log(`actions.setVoted`)
       commit('incrementVoteCount', payload)
       dispatch('loadSubmissions')
-      // commit('refreshSubmissionStatus')
       // console.log('... actions.setVoted: COMPLETE')
     },
     incrementVoteCount ({ commit }, payload) {
       // console.log(`actions.incrementVoteCount`)
-      commit('incrementVoteCount', payload) // IS IT TRUE? That commit() returns only ever undefined?
+      commit('incrementVoteCount', payload)
       // console.log('... Done')
     },
     updateThemesFilter ({ commit }, value) {
       // console.log('actions.updateThemesFilter')
       commit('updateThemesFilter', value)
     },
-    updateFavoritedFilter ({ commit }, value) {
-      commit('updateFavoritedFilter', value)
+    loadSubmissions ({ commit, state }) {
+      // console.log('actions.loadSubmissions')
+      return new Promise((resolve, reject) => {
+        if (state._debug === undefined || state._debug === null) {
+          db.ref('programs/' + state.formId + '/submissions/')
+          .orderByChild('id')
+          .once('value', (snapshot) => {
+            let submissions = Object.values(snapshot.val())
+            commit('loadQueue', submissions)
+            commit('refreshSubmissionStatus')
+          }).then(() => {
+            commit('toggleIsWorking', false)
+          })
+        } else {
+          db.ref('programs/' + state.formId + '/submissions/')
+          .orderByChild('id')
+          .limitToFirst(state._debug.limitToFirst)
+          .once('value', (snapshot) => {
+            // console.('... submissions loaded')
+            let submissions = Object.values(snapshot.val())
+            commit('loadQueue', submissions)
+            commit('refreshSubmissionStatus')
+          }).then(() => {
+            commit('toggleIsWorking', false)
+          })
+        }
+      })
+    },
+    refreshSubmissionStatus ({ commit }) {
+      // console.log('actions.refreshSubmissionStatus')
+      commit('refreshSubmissionStatus')
+      commit('toggleIsWorking', false)
+    },
+    toggleIsWorking ({ commit }, value) {
+      commit('toggleIsWorking', value)
+    },
+    toggleLoading ({ state, commit }, bool) {
+      commit('toggleLoading', bool)
     },
     logInPopup ({ state, commit }) {
       // console.log('actions.logInPopup')
@@ -509,43 +411,6 @@ export const store = new Vuex.Store({
         commit('loginFailed')
         throw new Error(error)
       })
-    },
-    loadSubmissions ({ commit, state }) {
-      // console.log('actions.loadSubmissions')
-      return new Promise((resolve, reject) => {
-        if (state._debug === undefined || state._debug === null) {
-          db.ref('programs/' + state.formId + '/submissions/')
-          .orderByChild('id')
-          .once('value', (snapshot) => {
-            let submissions = Object.values(snapshot.val())
-            commit('loadQueue', submissions)
-            commit('refreshSubmissionStatus')
-          }).then(() => {
-            commit('toggleIsWorking', false)
-          })
-        } else {
-          db.ref('programs/' + state.formId + '/submissions/')
-          .orderByChild('id')
-          .limitToFirst(state._debug.limitToFirst)
-          .once('value', (snapshot) => {
-            // console.('... submissions loaded')
-            let submissions = Object.values(snapshot.val())
-            commit('loadQueue', submissions)
-            commit('refreshSubmissionStatus')
-          }).then(() => {
-            commit('toggleIsWorking', false)
-          })
-        }
-      })
-    },
-    refreshSubmissionStatus ({ commit }) {
-      // console.log('actions.refreshSubmissionStatus')
-      commit('refreshSubmissionStatus')
-      commit('toggleIsWorking', false)
-    },
-    updateSubmissionBucket ({ commit }, submissionId) {
-      // console.log('action.updateSubmissionBucket')
-      commit('updateSubmissionBucket', submissionId)
     }
   }
 })

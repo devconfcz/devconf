@@ -185,7 +185,6 @@ export default {
   },
   methods: {
     closeDetails () {
-      this.$store.dispatch('closeDetails')
       this.active = false
     },
     setFavorited (value) {
@@ -204,7 +203,7 @@ export default {
       // console.log(`methods.loadNextDetails`)
       let bucket = this.$store.getters[this.bucket]
       if (!(bucket) || bucket.length === 0) {
-        // console.log(`... methods.loadNextDetails: Empty bucket... returning!`)
+        console.warn(`... methods.loadNextDetails: Empty bucket... returning!`)
         this.closeDetails()
         return
       }
