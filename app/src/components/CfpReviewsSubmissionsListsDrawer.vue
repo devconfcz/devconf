@@ -24,28 +24,10 @@
             <v-icon>keyboard_arrow_down</v-icon>
           </v-list-tile-action>
         </v-list-tile>
-        <v-list-tile v-for="submission in submissions" :key="submission.id"
+        <v-list-tile v-for="submission in filterSubmissions(type.id)" :key="submission.id"
           avatar
           @click="showDetails(submission.id)"
         >
-          <!--
-          <v-list-tile-action>
-            <v-icon v-if="hasFavorited(submission.id)"
-              class=""
-              color="amber darken-4"
-              @click.stop.prevent="setFavorited(submission.id, 0)"
-            >
-              star_border
-            </v-icon>
-            <v-icon v-else
-              class=""
-              color="grey lighten-1"
-              @click.stop.prevent="setFavorited(submission.id, 1)"
-            >
-              star_border
-            </v-icon>
-          </v-list-tile-action>
-          -->
 
           <v-list-tile-action>
             <v-icon v-if="hasVoted(submission.id) > 0"
