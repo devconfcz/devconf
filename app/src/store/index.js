@@ -21,7 +21,7 @@ export const store = new Vuex.Store({
     // formId: '1xrtWTn6mA-1zHvM6q8kRlPjoy0yLIAwOfjsv-nGhWPM', // FIXME: Shouldn't be hardcoded
     formId: '1xrtWTn6mA-1zHvM6q8kRlPjoy0yLIAwOfjsv-nGhWPM__1',
     _debug: {
-      limitToFirst: 10
+      limitToFirst: 500
     },
     _bus: new Vue(),
     _isLoading: true,
@@ -35,9 +35,16 @@ export const store = new Vuex.Store({
     _rejected: [],
     _votes: {},
     _themes: [],
-    _themesFilter: []
+    _themesFilter: [],
+    _bucketSubmissionMap: {}
   },
   getters: {
+    findBucket: (state, getters) => (submissionId) => {
+      if (!state._bucketSubmissionMap[submissionId]) {
+        return
+      }
+      return getters[state._bucketSubmissionMap[submissionId]]
+    },
     getVoted: (state) => (submissionId) => {
       let votes = state._votes[submissionId]
       let uid = state._currentUser.id
@@ -190,12 +197,6 @@ export const store = new Vuex.Store({
       }
       state._submissions = submissions
     },
-    loadSubmission (state, submission) {
-      // console.log(`Loading submission (${submission.id})`)
-      const sid = submission.id
-      Vue.set(state._submissions, sid, submission)
-      // console.log(`... loading submission (${submission.id}) complete.`)
-    },
     refreshSubmissionStatus (state) {
       if (!state._currentUser) {
         // console.log('not logged in!')
@@ -211,6 +212,7 @@ export const store = new Vuex.Store({
       let rejected = []
       for (let submission of state._submissions) {
         let sid = submission.id
+        // Track which bucket the submission is in
         let votes = submission.meta.votes
         if (votes === undefined) {
           // console.log('No votes structure found ... using default')
@@ -222,16 +224,20 @@ export const store = new Vuex.Store({
             results: {[uid]: 0}
           }
           Vue.set(state._votes, sid, votes)
+          state._bucketSubmissionMap[sid] = 'unreviewed'
           unreviewed.push(sid)
         } else {
           Vue.set(state._votes, sid, votes)
           const myVote = votes.results[uid] || 0
           if (myVote === 1) {
             approved.push(sid)
+            state._bucketSubmissionMap[sid] = 'approved'
           } else if (myVote === 0) {
             unreviewed.push(sid)
+            state._bucketSubmissionMap[sid] = 'unreviewed'
           } else if (myVote === -1) {
             rejected.push(sid)
+            state._bucketSubmissionMap[sid] = 'rejected'
           } else {
             throw new Error(`Invalid vote value for currentUser (${uid})! Must be 1, 0 or -1 data (${myVote})`)
           }

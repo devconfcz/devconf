@@ -17,7 +17,7 @@
       :types="types"
     ></cfp-reviews-submissions-lists-panel>
 
-    <cfp-reviews-submissions-details bucket="unreviewed"></cfp-reviews-submissions-details>
+    <cfp-reviews-submissions-details></cfp-reviews-submissions-details>
 
   </v-container>
 </template>

@@ -3,7 +3,6 @@
     <v-dialog v-if="isValid" v-model="active" max-width="800">
       <v-card>
         <v-toolbar color="purple darken-3" class="" dark>
-          <!--
           <v-btn flat @click="loadNextDetails(-1)">
             Previous
             <v-icon>chevron_left</v-icon>
@@ -12,47 +11,18 @@
             Next
             <v-icon>chevron_right</v-icon>
           </v-btn>
-          -->
           <v-spacer></v-spacer>
           <v-btn icon small @click="closeDetails" class="mr-3" color="white darken-4" dark>
               <v-icon color="red darken-4">clear</v-icon>
           </v-btn>
         </v-toolbar>
+
         <v-toolbar>
-          <!--
-          <v-list-tile-action>
-            <v-icon v-if="hasFavorited"
-              class="pointer"
-              color="amber darken-4"
-              @click.stop.prevent="setFavorited(0)"
-            >
-              star
-            </v-icon>
-            <v-icon v-else
-              class="pointer"
-              color="grey lighten-1"
-              @click.stop.prevent="setFavorited(1)"
-            >
-              star_border
-            </v-icon>
-          </v-list-tile-action>
-        -->
-
           <v-toolbar-title class="ml-3">{{ submission.title }}</v-toolbar-title>
-
           <v-spacer></v-spacer>
 
-          <v-list-tile-action click="">
-            <v-icon
-              class="pointer"
-              color="black"
-              @click.stop=""
-            >
-            </v-icon>
-          </v-list-tile-action>
-
           <v-list-tile-action>
-            <v-icon v-if="hasVoted() > 0"
+            <v-icon large v-if="hasVoted() > 0"
                 color="grey lighten-1"
                 disable
                 class="pointer-off"
@@ -60,7 +30,7 @@
             >
               exposure_plus_1
             </v-icon>
-            <v-icon v-else
+            <v-icon large v-else
               color="green darken-4"
               class="pointer"
               @click.stop="setVoted(1)"
@@ -70,7 +40,7 @@
           </v-list-tile-action>
 
           <v-list-tile-action>
-            <v-icon v-if="hasVoted() < 0"
+            <v-icon large v-if="hasVoted() < 0"
                 color="grey lighten-1"
                 disable
                 class="pointer-off"
@@ -78,7 +48,7 @@
             >
               exposure_minus_1
             </v-icon>
-            <v-icon v-else
+            <v-icon large v-else
               color="red darken-4"
               class="pointer"
               @click.stop="setVoted(-1)"
@@ -147,38 +117,33 @@ export default {
   data () {
     return {
       active: false,
-      masterIndex: 0
+      masterIndex: 0,
+      bucketName: '',
+      bucket: []
     }
   },
   computed: {
     isValid () {
-      let s = this.submission
-      return (s !== undefined && s !== null)
+      const s = this.submission
+      const isValid = (
+        s !== undefined &&
+        s !== null &&
+        s.id !== undefined &&
+        s.id !== null)
+      console.log('isValid:' + isValid)
+      return isValid
     },
     submission () {
       if (this.submissionId !== undefined && this.submissionId !== null) {
         const submission = this.$store.getters.getSubmission(this.submissionId)
-        if (submission.id !== undefined && submission.id !== null) {
-          // console.log(`Found submission: ${submission.id}`)
-          return submission
-        }
-      }
-      // console.log(`No (or Invalid) submission found for ${this.submissionId}`)
-      return {
-        id: null,
-        type: '',
-        abstract: '',
-        duration: '',
-        difficulty: '',
-        themes: [],
-        meta: {
-          contacts: {}
-        }
+        console.log(`Got a submission: ${submission}`)
+        return submission
       }
     },
     submissionId () {
       const submissions = this.$store.getters.submissions
-      if (submissions !== undefined && submissions !== null && submissions.length > 0) {
+      console.log('Master index: ' + this.masterIndex)
+      if (submissions.length > 0 && submissions[this.masterIndex]) {
         return submissions[this.masterIndex].id
       }
     }
@@ -187,26 +152,16 @@ export default {
     closeDetails () {
       this.active = false
     },
-    setFavorited (value) {
-      // console.log(`methods.setFavorited`)
-      this.$store.dispatch('setFavorited', {
-        submissionId: this.submissionId,
-        value: value
-      })
-    },
-    hasFavorited () {
-      // console.log(`methods.hasFavorited`) // : ${submissionId}`)
-      // console.log(this.$store.getters.getFavorited(submissionId))
-      return this.$store.getters.getFavorited(this.submissionId)
-    },
     loadNextDetails (indexIncrement) {
       // console.log(`methods.loadNextDetails`)
-      let bucket = this.$store.getters[this.bucket]
+      let bucket = this.bucket
       if (!(bucket) || bucket.length === 0) {
-        console.warn(`... methods.loadNextDetails: Empty bucket... returning!`)
+        console.warn(`... Empty / Invalid bucket!`)
         this.closeDetails()
         return
       }
+      // filter for only other submissions of same type
+      bucket = bucket.filter(s => s.type === this.submission.type)
       let bucketIx = bucket.findIndex(s => s.id === this.submissionId)
       let targetBucketIx = bucketIx + indexIncrement
       if (targetBucketIx > bucket.length - 1) {
@@ -229,24 +184,20 @@ export default {
         submissionId: this.submissionId,
         value: value
       })
-      this.active = false
+      this.loadNextDetails(1)
     },
     hasVoted () {
-      // // console.log('CfpReviewNavbarVoting.computed.voteCountPlus: ', this.submissionId)
       return this.$store.getters.getVoted(this.submissionId)
-    },
-    voteCount () {
-      return this.$store.getters.getVoteCount(this.submissionId)
     }
   },
-  props: ['bucket'],
-  components: {
-  },
+  props: [],
   created () {
     this.$store.getters.getBus.$on('showDetails', (submissionId) => {
       // console.log(`getBus.on.showDetails: ${submissionId}`)
       this.masterIndex = this.$store.getters.submissions.findIndex(s => s.id === submissionId)
+      this.bucket = this.$store.getters.findBucket(submissionId)
       this.active = true
+      // console.log(`Bucket is ${this.bucket}`)
       // console.log(`New masterIndex -> ${this.masterIndex}`)
     })
   }
