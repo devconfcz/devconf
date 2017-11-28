@@ -1,3 +1,16 @@
+/* notiications */
+
+.notification-small p {
+  text-align: center!important;
+  line-height: 50px!important;
+  font-weight: 700;
+}
+
+@media(max-width: 500px) {
+  .notification-small p {
+    font-size: 0.75em;
+  }
+}
 /* content settings */
 
 @media(min-width: 1000px) {
@@ -39,9 +52,11 @@
 }
 
 /* container settings */
+/*
 .event-container {
-  min-width: 250px;
+  min-width: 300px;
 }
+*/
 
 /* divider settings */
 .decoration-line-fade {
@@ -210,6 +225,7 @@ p strong {
 }
 
 .footer p{
+    color: #fff;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
