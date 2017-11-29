@@ -5,7 +5,7 @@
   "author": "Chris Ward <cward@redhat.com>",
   "private": true,
   "scripts": {
-    "cfp": "node cfp.js",
+    "cfp": "DEBUG=on babel-node --presets es2015 cfp.js",
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {

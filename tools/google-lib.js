@@ -114,9 +114,9 @@ function writeSheet(sheetName, data) {
   const docTmp = doc.insertSheet(sheetName, -1)
 
   // get all known fields columns keys
-  const columns = []
+  let columns = []
   for (const _fi in data) {
-    for (const _gi in data[_fi]) {
+    for (let _gi in data[_fi]) {
       _gi = _gi.trim()
       if (_gi.startsWith('__')) {  // skip private fields by default
         continue
@@ -129,10 +129,10 @@ function writeSheet(sheetName, data) {
   columns = columns.sort()
 
   // Write it out to the sheet nowl; make sure columns are aligned.
-  const _xRows = []
+  let _xRows = []
   for (const _ei in data) {
     _item = data[_ei]
-    const _xRow = []
+    let _xRow = []
     for (const _xKey in columns) {
       _xRow[columns.indexOf(columns[_xKey])] = _item[columns[_xKey]]
     }

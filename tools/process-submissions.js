@@ -34,8 +34,16 @@ const votesPath = 'votes/' + formId
 
 let db = fb.database
 
-// google.callWithAuth(buildCommitteeSheets)
-google.callWithAuth(importGoogleForm)
+/*
+let data = require('/tmp/out.json')
+const qePath = 'programs/' + '1v7r4ZgaJl97t751UnCKPPuk2SDRugsIjesBedmtSYhA__1'
+db.ref(qePath).set(data)
+console.log('DONE')
+*/
+
+
+google.callWithAuth(buildCommitteeSheets)
+// google.callWithAuth(importGoogleForm)
 
 function importGoogleForm (auth) {
   debug('Getting Spreadsheet data...')
@@ -220,15 +228,21 @@ function buildCommitteeSheets (auth) {
     let payload = rowsToDict(rows)
     let submissions = payload.submissions
     let columns = payload.columns
-    let buckets = splitIntoBuckets(submissions)
+    // let buckets = splitIntoBuckets(submissions)
     let panelMembers = getPanelMemberThemes()
-    let panelMemberSubmissions = getPanelMemberSubmissions(buckets, panelMembers)
-    let panelMemberDocs = getPanelMemberDocs(panelMemberSubmissions, columns)
+    // let panelMemberSubmissions = getPanelMemberSubmissions(buckets, panelMembers)
+    // let panelMemberDocs = getPanelMemberDocs(panelMemberSubmissions, columns)
+    let panels = getPanels()
+    console.log(panels)
+
+
+    // FIXME FIXME //
+    throw new Error('exit')
+    // FIXME FIXME //
 
     // prepare one document per panel member with
     // - one sheet with their track / theme talks
     // - one sheet with all 'other'
-
     let counter = -1
     Object.keys(panelMemberDocs).forEach(async (panelMember) => {
       let t = ++counter * 30000
@@ -402,6 +416,7 @@ function buildCommitteeSheets (auth) {
       })
     })
   })
+}
 
 
 const themes = {
@@ -597,7 +612,7 @@ function getPanelMemberEmails() {
 
 function rowsToDict(rows) {
   let columns = rows.shift(0)
-  submissions = {}
+  let submissions = {}
   let _id = 0
   rows.forEach(row => {
     let submission = {id: _id}
@@ -615,6 +630,8 @@ function rowsToDict(rows) {
 function getPanels() {
   // themes are arbitrary; each theme is linked to a track; each track has panel.
   let panels = {}
+  console.log('************************')
+  console.log(themes)
   Object.keys(themes).forEach((theme) => {
     let themeTracks = themes[theme]['tracks']
     let themePanel = {}
@@ -774,7 +791,6 @@ function writeCsv(path, rows) {
   })
 }
 
-/*
 function processPhotos(auth) {
   bucket.getFiles().then(results => {
     const files = results[0]
@@ -1095,4 +1111,3 @@ function processSubmissions(auth) {
 
   })
 }
-*/
