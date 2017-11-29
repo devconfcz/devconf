@@ -356,27 +356,26 @@ export const store = new Vuex.Store({
     },
     submissions (state) {
       // console.log('Loading data: all submissions')
-      return state._submissions
-    },
-    unreviewed (state) {
-      // console.log('Loading data: unreviewed')
+      // return state._submissions
       let submissions = state._submissions
       let themesFilter = new Set(state._themesFilter)
       return submissions.filter(val =>
           (val.themes.filter(theme =>
             themesFilter.has(theme)
-          ).length > 0) &&
-          (state._unreviewed.indexOf(val.id) > -1)
+          ).length > 0)
+        )
+    },
+    unreviewed (state) {
+      // console.log('Loading data: unreviewed')
+      let submissions = state._submissions
+      return submissions.filter(val =>
+          state._unreviewed.indexOf(val.id) > -1
         )
     },
     approved (state) {
       // console.log('Loading data: approved')
-      let themesFilter = new Set(state._themesFilter)
       return state._submissions.filter(val =>
-          (val.themes.filter(theme =>
-            themesFilter.has(theme)
-          ).length > 0) &&
-          (state._approved.indexOf(val.id) > -1)
+          state._approved.indexOf(val.id) > -1
         )
     },
     rejected (state) {
@@ -489,6 +488,7 @@ export const store = new Vuex.Store({
       state._eventDisplayed = to
     },
     updateThemesFilter (state, value) {
+      console.log('mutations.updateThemesFilter', value)
       state._themesFilter = value
     },
     loadQueue (state, submissions) {

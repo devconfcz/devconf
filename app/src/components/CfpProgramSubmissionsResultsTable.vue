@@ -1,5 +1,7 @@
 <template>
   <v-container fluid class="pt-1">
+    <cfp-reviews-submissions-lists-theme-filter></cfp-reviews-submissions-lists-theme-filter>
+    
     <v-toolbar>
       <v-icon disabled class="green--text text--darken-4 pl-2 pb-1">cloud_done</v-icon>
       <v-spacer></v-spacer>
@@ -69,10 +71,13 @@
 </template>
 
 <script>
+import CfpReviewsSubmissionsListsThemeFilter from '@/components/CfpReviewsSubmissionsListsThemeFilter.vue'
 
 export default {
   name: 'cfp-program-submissions-results-table',
-  components: {},
+  components: {
+    'cfp-reviews-submissions-lists-theme-filter': CfpReviewsSubmissionsListsThemeFilter
+  },
   data () {
     return {
       selected: [],
