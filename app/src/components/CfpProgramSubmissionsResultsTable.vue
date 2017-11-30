@@ -1,15 +1,55 @@
 <template>
   <v-container fluid class="pt-1">
     <cfp-reviews-submissions-lists-theme-filter></cfp-reviews-submissions-lists-theme-filter>
-    
+
+    <!--
+    <cfp-program-submissions-filter-tracks
+      type="tracks"
+    ></cfp-program-submissions-filter-tracks>
+  -->
+    <v-divider></v-divider>
+
+    <v-container grid-list-md fluid>
+      <v-layout row wrap>
+        <v-flex xs12>
+          <p class="text-xs-right content">Filter by track?</p>
+        </v-flex>
+        <v-flex xs12>
+          <v-container fluid>
+            <v-layout row wrap>
+              <v-flex xs2 v-for="track in tracks" :key="track.id">
+                <v-switch
+                  @click="setTrackFilter(track)"
+                  value
+                  v-model="activeTrackFilter[track.id]"
+                  :label="track.text"
+                ></v-switch>
+              </v-flex>
+            </v-layout>
+          </v-container>
+        </v-flex>
+      </v-layout>
+    </v-container>
+
+    <v-divider></v-divider>
+
     <v-toolbar>
       <v-icon disabled class="green--text text--darken-4 pl-2 pb-1">cloud_done</v-icon>
+      <v-btn class="ml-5 grey lighten-5">
+          <v-badge left color="green darken-4">
+            <span slot="badge">{{ selected.length }}</span>
+            <v-icon large color="grey lighten-1">playlist_add_check</v-icon>
+          </v-badge>
+          Accept
+      </v-btn>
       <v-spacer></v-spacer>
         <v-btn flat class="ml-2" @click="disableSelectedSubmissions()">
-            <v-icon class="red--text text--darken-4 mr-2">
-              delete_sweep
-            </v-icon>
+            <v-badge left color="red darken-4">
+              <span slot="badge">{{ selected.length }}</span>
+              <v-icon large color="grey lighten-1">delete_sweep</v-icon>
+            </v-badge>
             Remove
+
         </v-btn>
     </v-toolbar>
 
@@ -28,7 +68,22 @@
             primary
             hide-details
             v-model="props.selected"
+            label=""
           ></v-checkbox>
+        </td>
+        <td>
+          <v-select
+            :items="tracks"
+            v-model="inputTracks.text"
+            single-line
+            item-text="track"
+            item-value="text"
+            return-object
+          ></v-select>
+        </td>
+        <td>
+        </td>
+        <td>
         </td>
         <td class="text-xs-left"><p class="ellipsis">{{ props.item.title }}</p></td>
         <td class="text-xs-left">
@@ -72,16 +127,39 @@
 
 <script>
 import CfpReviewsSubmissionsListsThemeFilter from '@/components/CfpReviewsSubmissionsListsThemeFilter.vue'
+import CfpProgramSubmissionsFilter from '@/components/CfpProgramSubmissionsFilter'
 
 export default {
   name: 'cfp-program-submissions-results-table',
   components: {
-    'cfp-reviews-submissions-lists-theme-filter': CfpReviewsSubmissionsListsThemeFilter
+    'cfp-reviews-submissions-lists-theme-filter': CfpReviewsSubmissionsListsThemeFilter,
+    'cfp-program-submissions-filter-tracks': CfpProgramSubmissionsFilter
   },
   data () {
     return {
+      inputTracks: {},
+      active: null,
+      activeTrackFilter: {},
       selected: [],
       headers: [
+        {
+          text: 'Track',
+          align: 'left',
+          sortable: true,
+          value: 'track'
+        },
+        {
+          text: 'Start Time',
+          align: 'left',
+          sortable: true,
+          value: 'start_time'
+        },
+        {
+          text: 'Duration',
+          align: 'left',
+          sortable: true,
+          value: 'duration'
+        },
         {
           text: 'Title',
           align: 'left',
@@ -140,6 +218,16 @@ export default {
     }
   },
   computed: {
+    themesFilter () {
+      return this.$store.getters.themesFilter
+    },
+    themes () {
+      return this.$store.getters.themes
+    },
+    tracks () {
+      console.log('TRACKS', Object.values(this.$store.getters.eventDisplayed.program.tracks))
+      return Object.values(this.$store.getters.eventDisplayed.program.tracks)
+    },
     isWorking () {
       return this.$store.getters.getIsWorking
     },
@@ -149,6 +237,21 @@ export default {
     submissions () {
       const submissions = Object.values(this.$store.getters.submissions)
       console.log('Getting submissions!')
+      let _submissions = []
+      submissions.forEach(s => {
+        // console.log('___', s)
+        s.themes.forEach(t => {
+          // console.log('*****', t)
+          // console.log(this.tracks)
+          if (this.tracks.findIndex(tr => {
+            //  console.log('T: ', t)
+            return tr.themes.indexOf(t) > -1
+          })) {
+            _submissions.push(s)
+          }
+        })
+      })
+
       const filtered = submissions.map(s => {
         return {
           id: s.id,
@@ -163,13 +266,36 @@ export default {
           photo_url: s.meta.primary_contact.photo_url,
           display_name: s.meta.primary_contact.display_name,
           type: s.type,
-          themes: s.themes
+          themes: s.themes.map(v => v)
         }
       })
       return filtered
     }
   },
   methods: {
+    trackFilterIsSelected (track) {
+      console.log(track, '@@@@@@___________', this.activeTrackFilter === track, this.activeTrackFilter)
+      return this.activeTrackFilter[track]
+    },
+    setTrackFilter (track) {
+      console.log('methods.setTrackFilter', track)
+      if (!track) {
+        this.$store.dispatch('refreshThemesFilter')
+        return
+      }
+      console.log('@@@@@@@@@@@@@@@@@@@@@@@@@@@')
+      this.$store.dispatch('updateThemesFilter', track.themes)
+      console.log(track.id, '(((((((((((((((((((())))))))))))))))))))')
+      if (this.activeTrackFilter[track.id] !== undefined &&
+          this.activeTrackFilter[track.id] !== null &&
+          this.activeTrackFilter[track.id] !== false
+        ) {
+        this.$set(this.activeTrackFilter, track.id, false)
+      } else {
+        this.$set(this.activeTrackFilter, track.id, true)
+      }
+      console.log(this.activeTrackFilter)
+    },
     disableSelectedSubmissions () {
       const idsSelected = this.selected.map(s => s.id)
       console.log(idsSelected)
@@ -178,6 +304,7 @@ export default {
       return `${String(str).padStart(5, ' ')}`
     },
     positiveCheck (value) {
+      // console.log('methods.positiveCheck', value)
       if (value === 0) {
         return 'black--text'
       } else if (value > 0) {

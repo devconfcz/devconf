@@ -6,7 +6,7 @@ Vue.use(Vuex)
 Vue.use(firebase)
 
 const DEBUG = {
-  limitToFirst: 100,
+  limitToFirst: 10,
   domainRestriction: 'redhat.com',
   config: {
     site: {
@@ -64,201 +64,200 @@ export const store = new Vuex.Store({
             street_address: 'Address of FIT HERE',
             remote: 'https://youtube.com/STREAM_URL_HERE'
           },
+          meta: {},
           program: {
-            meta: {
-              tracks: {
-                cicd: {
-                  id: 'cicd',
-                  text: 'CI/CD',
-                  themes: [
-                    'development', 'testing', 'debugging_tracing', 'agile'
-                  ],
-                  panel: ['Ari LiVigni <alivigni@redhat.com>', 'Jeffrey Burke <jburke@redhat.com>']
-                },
-                'dotnet': {
-                  id: 'dotnet',
-                  text: '.NET',
-                  themes: [
-                    'development'
-                  ],
-                  panel: ['Deepak Bhole <dbhole@redhat.com>', 'Patrick Macdonald <patrickm@redhat.com>']
-                },
-                'java_middleware': {
-                  id: 'java_middleware',
-                  text: 'Java / Middleware',
-                  themes: [
-                    'development', 'middleware', 'web'
-                  ],
-                  panel: ['Vaclav Tunka <vtunka@redhat.com>', 'Mark Little <mlittle@redhat.com>', 'Steven Pousty <spousty@redhat.com>']
-                },
-                'devtools': {
-                  id: 'devtools',
-                  text: 'DevTools',
-                  themes: [
-                    'development', 'automation', 'workload_management', 'documentation', 'configuration_management', 'configuration_management', 'database', 'debugging_tracing'
-                  ],
-                  panel: ['Patrick Macdonald <patrickm@redhat.com>', 'Adi Sakala <asakala@redhat.com>', 'Vaclav Pavlin <vpavlin@redhat.com>']
-                },
-                'testing': {
-                  id: 'testing',
-                  text: 'Testing',
-                  themes: [
-                    'testing', 'debugging_tracing'
-                  ],
-                  panel: ['Ondrej Hudlicky <ohudlick@redhat.com>', 'Suprith Gangawar <sgangawa@redhat.com>', 'Ilya Etingof <ietingof@redhat.com>', 'Lisa Reed <lireed@redhat.com>']
-                },
-                'atomic': {
-                  id: 'atomic',
-                  text: 'Atomic',
-                  themes: [
-                    'containers', 'cloud', 'virtualization'
-                  ],
-                  panel: ['Joe Brockmeier <jzb@redhat.com>', 'Eliska Slobodova <eliska@redhat.com>', 'Josh Berkus <jberkus@redhat.com>']
-                },
-                'containers': {
-                  id: 'containers',
-                  text: 'Containers',
-                  themes: [
-                    'containers', 'virtualization'
-                  ],
-                  panel: ['Radek Vokál <rvokal@redhat.com>', 'Josh Berkus <jberkus@redhat.com>', 'Joe Brockmeier <jzb@redhat.com>', 'Eliska Slobodova <eliska@redhat.com>', 'Jan Pazdziora <jpazdziora@redhat.com>', 'Honza Horak <hhorak@redhat.com>', 'Tomas Tomecek <ttomecek@redhat.com>']
-                },
-                'openshift': {
-                  id: 'openshift',
-                  text: 'OpenShift',
-                  themes: [
-                    'containers', 'automation', 'cloud', 'virtualization'
-                  ],
-                  panel: ['Joe Brockmeier <jzb@redhat.com>', 'Eliska Slobodova <eliska@redhat.com>', 'Jan Pazdziora <jpazdziora@redhat.com>', 'Tomas Tomecek <ttomecek@redhat.com>', 'Radek Vokál <rvokal@redhat.com>', 'Josh Berkus <jberkus@redhat.com>']
-                },
-                'ansible': {
-                  id: 'ansible',
-                  text: 'Ansible',
-                  themes: [
-                    'automation', 'configuration_management'
-                  ],
-                  panel: ['Rashid Khan <rkhan@redhat.com>', 'Ondrej Vasik <ovasik@redhat.com>', 'Bill Nottingham <notting@redhat.com>', 'Josh Berkus <jberkus@redhat.com>']
-                },
-                'openstack': {
-                  id: 'openstack',
-                  text: 'Open Stack',
-                  themes: [
-                    'automation', 'workload_management', 'cloud', 'virtualization', 'networking'
-                  ],
-                  panel: ['Rashid Khan <rkhan@redhat.com>', 'Ilya Etingof <ietingof@redhat.com>']
-                },
-                'enterprise_security_identity_management': {
-                  id: 'enterprise_security_identity_management',
-                  text: 'Enterprise Security & Identity Management',
-                  themes: [
-                    'security'
-                  ],
-                  panel: ['Jan Pazdziora <jpazdziora@redhat.com>', 'Martin Kosek <mkosek@redhat.com>', 'Peter Vrabec <pvrabec@redhat.com>', 'Alexander Bokovoy <abokovoy@redhat.com>']
-                },
-                'devops': {
-                  id: 'devops',
-                  text: 'DevOps',
-                  themes: [
-                    'devops', 'agile', 'documentation'
-                  ],
-                  panel: ['Jen Krieger <jkrieger@redhat.com>', 'Josh Berkus <jberkus@redhat.com>']
-                },
-                'centos': {
-                  id: 'centos',
-                  text: 'CentOS',
-                  themes: [
-                    'platform_os'
-                  ],
-                  panel: ['Brian Exelbierd <bexelbie@redhat.com>', 'Rashid Khan <rkhan@redhat.com>', 'Ondrej Vasik <ovasik@redhat.com>', 'Jim Perrin <jperrin@redhat.com>']
-                },
-                'fedora': {
-                  id: 'devops',
-                  text: 'DevOps',
-                  themes: [
-                    'platform_os', 'community'
-                  ],
-                  panel: ['Jiri Eischmann <jeischma@redhat.com>', 'Matthew Miller <mattdm@redhat.com>', 'Brian Exelbierd <bexelbie@redhat.com>']
-                },
-                'platform_os': {
-                  id: 'devops',
-                  text: 'DevOps',
-                  themes: [
-                    'platform_os'
-                  ],
-                  panel: ['Brian Exelbierd <bexelbie@redhat.com>', 'Rashid Khan <rkhan@redhat.com>', 'Ondrej Vasik <ovasik@redhat.com>']
-                },
-                'cloud': {
-                  id: 'cloud',
-                  text: 'Cloud',
-                  themes: [
-                    'cloud'
-                  ],
-                  panel: ['Tomas Tomecek <ttomecek@redhat.com>']
-                },
-                'community': {
-                  id: 'community',
-                  text: 'Community',
-                  themes: [
-                    'community', 'documentation', 'research'
-                  ],
-                  panel: ['Brian Exelbierd <bexelbie@redhat.com>', 'Leslie Hawthorn <lhawthor@redhat.com>', 'Brian Proffitt <bproffit@redhat.com>', 'Milan Broz <mbroz@redhat.com>']
-                },
-                'virtualization': {
-                  id: 'virtualization',
-                  text: 'Virtualization',
-                  themes: [
-                    'virtualization', 'kernel', 'networking'
-                  ],
-                  panel: ['Karen Noel <knoel@redhat.com>']
-                },
-                'kernel': {
-                  id: 'kernel',
-                  text: 'Kernel',
-                  themes: [
-                    'kernel', 'hardware'
-                  ],
-                  panel: ['Stanislav Kozina <skozina@redhat.com>']
-                },
-                'networking': {
-                  id: 'networking',
-                  text: 'Networking',
-                  themes: [
-                    'networking', 'kernel'
-                  ],
-                  panel: ['Rashid Khan <rkhan@redhat.com>']
-                },
-                'desktop': {
-                  id: 'desktop',
-                  text: 'Desktop',
-                  themes: [
-                    'desktop', 'design_ux'
-                  ],
-                  panel: ['Tomas Popela <tpopela@redhat.com>']
-                },
-                'storage': {
-                  id: 'storage',
-                  text: 'Storage',
-                  themes: [
-                    'storage', 'ai_machine_learning'
-                  ],
-                  panel: ['Milan Broz <mbroz@redhat.com>']
-                },
-                'iot': {
-                  id: 'iot',
-                  text: 'IoT',
-                  themes: [
-                    'database', 'hardware', 'mobile', 'iot'
-                  ],
-                  panel: ['Peter Robinson <pbrobinson@redhat.com>', 'Ilya Etingof <ietingof@redhat.com>']
-                },
-                'agile': {
-                  id: 'agile',
-                  text: 'Agile',
-                  themes: [
-                    'agile', 'documentation'
-                  ],
-                  panel: ['Jen Krieger <jkrieger@redhat.com>']
-                }
+            tracks: {
+              'cicd': {
+                id: 'cicd',
+                text: 'CI/CD',
+                themes: [
+                  'Development', 'Testing', 'Debugging / Tracing', 'Agile'
+                ],
+                panel: ['Ari LiVigni <alivigni@redhat.com>', 'Jeffrey Burke <jburke@redhat.com>']
+              },
+              'dotnet': {
+                id: 'dotnet',
+                text: '.NET',
+                themes: [
+                  'Development'
+                ],
+                panel: ['Deepak Bhole <dbhole@redhat.com>', 'Patrick Macdonald <patrickm@redhat.com>']
+              },
+              'java_middleware': {
+                id: 'java_middleware',
+                text: 'Java / Middleware',
+                themes: [
+                  'Development', 'Middleware', 'Web'
+                ],
+                panel: ['Vaclav Tunka <vtunka@redhat.com>', 'Mark Little <mlittle@redhat.com>', 'Steven Pousty <spousty@redhat.com>']
+              },
+              'devtools': {
+                id: 'devtools',
+                text: 'DevTools',
+                themes: [
+                  'Development', 'Automation', 'Workload Management', 'documentation', 'Configuration Management', 'Database', 'Debugging / Tracing'
+                ],
+                panel: ['Patrick Macdonald <patrickm@redhat.com>', 'Adi Sakala <asakala@redhat.com>', 'Vaclav Pavlin <vpavlin@redhat.com>']
+              },
+              'testing': {
+                id: 'testing',
+                text: 'Testing',
+                themes: [
+                  'Testing', 'Debugging / Tracing'
+                ],
+                panel: ['Ondrej Hudlicky <ohudlick@redhat.com>', 'Suprith Gangawar <sgangawa@redhat.com>', 'Ilya Etingof <ietingof@redhat.com>', 'Lisa Reed <lireed@redhat.com>']
+              },
+              'atomic': {
+                id: 'atomic',
+                text: 'Atomic',
+                themes: [
+                  'Containers', 'Cloud', 'Virtualization'
+                ],
+                panel: ['Joe Brockmeier <jzb@redhat.com>', 'Eliska Slobodova <eliska@redhat.com>', 'Josh Berkus <jberkus@redhat.com>']
+              },
+              'containers': {
+                id: 'containers',
+                text: 'Containers',
+                themes: [
+                  'Containers', 'Virtualization'
+                ],
+                panel: ['Radek Vokál <rvokal@redhat.com>', 'Josh Berkus <jberkus@redhat.com>', 'Joe Brockmeier <jzb@redhat.com>', 'Eliska Slobodova <eliska@redhat.com>', 'Jan Pazdziora <jpazdziora@redhat.com>', 'Honza Horak <hhorak@redhat.com>', 'Tomas Tomecek <ttomecek@redhat.com>']
+              },
+              'openshift': {
+                id: 'openshift',
+                text: 'OpenShift',
+                themes: [
+                  'Containers', 'Automation', 'Cloud', 'Virtualization'
+                ],
+                panel: ['Joe Brockmeier <jzb@redhat.com>', 'Eliska Slobodova <eliska@redhat.com>', 'Jan Pazdziora <jpazdziora@redhat.com>', 'Tomas Tomecek <ttomecek@redhat.com>', 'Radek Vokál <rvokal@redhat.com>', 'Josh Berkus <jberkus@redhat.com>']
+              },
+              'ansible': {
+                id: 'ansible',
+                text: 'Ansible',
+                themes: [
+                  'Automation', 'Configuration Management'
+                ],
+                panel: ['Rashid Khan <rkhan@redhat.com>', 'Ondrej Vasik <ovasik@redhat.com>', 'Bill Nottingham <notting@redhat.com>', 'Josh Berkus <jberkus@redhat.com>']
+              },
+              'openstack': {
+                id: 'openstack',
+                text: 'Open Stack',
+                themes: [
+                  'Automation', 'Workload  Management', 'Cloud', 'Virtualization', 'Networking'
+                ],
+                panel: ['Rashid Khan <rkhan@redhat.com>', 'Ilya Etingof <ietingof@redhat.com>']
+              },
+              'enterprise_security_identity_management': {
+                id: 'enterprise_security_identity_management',
+                text: 'Enterprise Security & Identity Management',
+                themes: [
+                  'Security', 'Identity Management'
+                ],
+                panel: ['Jan Pazdziora <jpazdziora@redhat.com>', 'Martin Kosek <mkosek@redhat.com>', 'Peter Vrabec <pvrabec@redhat.com>', 'Alexander Bokovoy <abokovoy@redhat.com>']
+              },
+              'devops': {
+                id: 'devops',
+                text: 'DevOps',
+                themes: [
+                  'DevOps', 'Agile', 'Documentation'
+                ],
+                panel: ['Jen Krieger <jkrieger@redhat.com>', 'Josh Berkus <jberkus@redhat.com>']
+              },
+              'centos': {
+                id: 'centos',
+                text: 'CentOS',
+                themes: [
+                  'Platform / OS'
+                ],
+                panel: ['Brian Exelbierd <bexelbie@redhat.com>', 'Rashid Khan <rkhan@redhat.com>', 'Ondrej Vasik <ovasik@redhat.com>', 'Jim Perrin <jperrin@redhat.com>']
+              },
+              'fedora': {
+                id: 'devops',
+                text: 'DevOps',
+                themes: [
+                  'Platform / OS', 'Community'
+                ],
+                panel: ['Jiri Eischmann <jeischma@redhat.com>', 'Matthew Miller <mattdm@redhat.com>', 'Brian Exelbierd <bexelbie@redhat.com>']
+              },
+              'platform_os': {
+                id: 'devops',
+                text: 'DevOps',
+                themes: [
+                  'Platform / OS'
+                ],
+                panel: ['Brian Exelbierd <bexelbie@redhat.com>', 'Rashid Khan <rkhan@redhat.com>', 'Ondrej Vasik <ovasik@redhat.com>']
+              },
+              'cloud': {
+                id: 'cloud',
+                text: 'Cloud',
+                themes: [
+                  'Cloud'
+                ],
+                panel: ['Tomas Tomecek <ttomecek@redhat.com>']
+              },
+              'community': {
+                id: 'community',
+                text: 'Community',
+                themes: [
+                  'Community', 'Documentation', 'Research'
+                ],
+                panel: ['Brian Exelbierd <bexelbie@redhat.com>', 'Leslie Hawthorn <lhawthor@redhat.com>', 'Brian Proffitt <bproffit@redhat.com>', 'Milan Broz <mbroz@redhat.com>']
+              },
+              'virtualization': {
+                id: 'virtualization',
+                text: 'Virtualization',
+                themes: [
+                  'Virtualization', 'Kernel', 'Networking'
+                ],
+                panel: ['Karen Noel <knoel@redhat.com>']
+              },
+              'kernel': {
+                id: 'kernel',
+                text: 'Kernel',
+                themes: [
+                  'Kernel', 'Hardware'
+                ],
+                panel: ['Stanislav Kozina <skozina@redhat.com>']
+              },
+              'networking': {
+                id: 'networking',
+                text: 'Networking',
+                themes: [
+                  'Networking', 'Kernel'
+                ],
+                panel: ['Rashid Khan <rkhan@redhat.com>']
+              },
+              'desktop': {
+                id: 'desktop',
+                text: 'Desktop',
+                themes: [
+                  'Desktop', 'Design / UX'
+                ],
+                panel: ['Tomas Popela <tpopela@redhat.com>']
+              },
+              'storage': {
+                id: 'storage',
+                text: 'Storage',
+                themes: [
+                  'Storage', 'AI / Machine Learning'
+                ],
+                panel: ['Milan Broz <mbroz@redhat.com>']
+              },
+              'iot': {
+                id: 'iot',
+                text: 'IoT',
+                themes: [
+                  'Database', 'Hardware', 'Mobile', 'IoT'
+                ],
+                panel: ['Peter Robinson <pbrobinson@redhat.com>', 'Ilya Etingof <ietingof@redhat.com>']
+              },
+              'agile': {
+                id: 'agile',
+                text: 'Agile',
+                themes: [
+                  'Agile', 'Documentation'
+                ],
+                panel: ['Jen Krieger <jkrieger@redhat.com>']
               }
             },
             slots: [
@@ -317,6 +316,8 @@ export const store = new Vuex.Store({
     _votes: {},
     _themes: [],
     _themesFilter: [],
+    _tracks: [],
+    _tracksFilter: [],
     _bucketSubmissionMap: {}
   },
   getters: {
@@ -354,6 +355,12 @@ export const store = new Vuex.Store({
     themesFilter (state) {
       return state._themesFilter.sort()
     },
+    tracks (state) {
+      return state._tracks.sort()
+    },
+    tracksFilter (state) {
+      return state._tracksFilter
+    },
     submissions (state) {
       // console.log('Loading data: all submissions')
       // return state._submissions
@@ -389,7 +396,6 @@ export const store = new Vuex.Store({
           (state._rejected.indexOf(val.id) > -1)
         )
     },
-
     getVoteCount: (state) => (submissionId) => {
       // console.log(`getters.getVoteCount`) // : ${submissionId}`)
       try {
@@ -473,9 +479,13 @@ export const store = new Vuex.Store({
     }
   },
   mutations: {  // triggered with 'commit' and MUST BE SYNCHRONOUS
-    resetThemeFilter (state) {
-      console.log('mutations.resetThemeFilter')
+    resetThemesFilter (state) {
+      console.log('mutations.resetThemesFilter')
       state._themesFilter = []
+    },
+    refreshThemesFilter (state) {
+      console.log('mutation.refreshThemesFilter')
+      state._themesFilter = state._themes
     },
     changePage (state, to) {
       // FIXME: check it is a valid page
@@ -654,6 +664,12 @@ export const store = new Vuex.Store({
       // console.log('actions.updateThemesFilter')
       commit('updateThemesFilter', value)
     },
+    refreshThemesFilter ({ commit }) {
+      commit('refreshThemesFilter')
+    },
+    resetThemesFilter ({ commit }) {
+      commit('resetThemesFilter')
+    },
     loadSubmissions ({ commit, state, getters }) {
       console.log('actions.loadSubmissions')
       return new Promise((resolve, reject) => {
@@ -664,7 +680,7 @@ export const store = new Vuex.Store({
           .orderByChild('id')
           .once('value', (snapshot) => {
             let submissions = Object.values(snapshot.val())
-            commit('resetThemeFilter')
+            commit('resetThemesFilter')
             commit('loadQueue', submissions)
             commit('refreshSubmissionStatus')
           }).then(() => {
@@ -678,7 +694,7 @@ export const store = new Vuex.Store({
           .once('value', (snapshot) => {
             // console.('... submissions loaded')
             let submissions = Object.values(snapshot.val())
-            commit('resetThemeFilter')
+            commit('resetThemesFilter')
             commit('loadQueue', submissions)
             commit('refreshSubmissionStatus')
           }).then(() => {
