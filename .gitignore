@@ -5,8 +5,6 @@ firebase-debug.log
 
 *.ropeproject*
 
-*build
-
 *.sw[op]
 
 *.egg-info*

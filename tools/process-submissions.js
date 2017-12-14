@@ -1,6 +1,6 @@
 // Tools for processing CfP submissions and creating final program, etc.
 
-let DEBUG = true
+let DEBUG = false
 const debug = require('debug')('on')  // eg, call with DEBUG=on node cfp.js
 
 const fs = require('fs')
@@ -13,7 +13,7 @@ const json2csv = require('json2csv');
 const lib = require('./cfp-lib')
 const fb = require('./firebase-lib')
 const google = require('./google-lib')
-// const mailgun = require('./mailgun-lib')
+const mailgun = require('./mailgun-lib')
 
 // ////////////////////////////////////////////////////////////////////////////
 const NOW = new Date().toISOString()
@@ -225,30 +225,29 @@ function buildCommitteeSheets (auth) {
     if (rows.length == 0) { throw new Error ('No data found.') }
     debug(`Found ${rows.length} responses.`)
 
+
     let payload = rowsToDict(rows)
     let submissions = payload.submissions
     let columns = payload.columns
-    // let buckets = splitIntoBuckets(submissions)
-    let panelMembers = getPanelMemberThemes()
-    // let panelMemberSubmissions = getPanelMemberSubmissions(buckets, panelMembers)
-    // let panelMemberDocs = getPanelMemberDocs(panelMemberSubmissions, columns)
-    let panels = getPanels()
-    console.log(panels)
+    let buckets = splitIntoBuckets(submissions)
 
+    let panels = getPanels(buckets, columns)
+
+    // debugger
 
     // FIXME FIXME //
-    throw new Error('exit')
+    // throw new Error('exit')
     // FIXME FIXME //
 
     // prepare one document per panel member with
     // - one sheet with their track / theme talks
     // - one sheet with all 'other'
     let counter = -1
-    Object.keys(panelMemberDocs).forEach(async (panelMember) => {
-      let t = ++counter * 30000
-      debug(`SLEEPING ${t/1000/60} MINUTES before creating a new sheet for ${panelMember}...`)
+    Object.keys(panels).forEach(async (track) => {
+      let t = ++counter * 5000
+      debug(`SLEEPING ${t/1000/60} MINUTES before creating a new sheet...`)
       await lib.sleep(t)
-      let title = `DevConf.cz 2018 - ${panelMember.split(' <')[0]}`
+      let title = `DevConf.cz 2018 - Track - ${track}`
       google.sheets.spreadsheets.create({
         auth: auth,
         resource: {
@@ -263,155 +262,76 @@ function buildCommitteeSheets (auth) {
         let spreadsheetId = newDoc.spreadsheetId
         let spreadsheetUrl = newDoc.spreadsheetUrl
         let spreadsheetSheets = newDoc.sheets
-        debug(`${panelMember}: ${spreadsheetUrl}`)
+        debug(`${track}: ${spreadsheetUrl}`)
 
-        new Promise ((resolve, reject) => {
-          Object.keys(panelMemberDocs[panelMember]).reverse().forEach(async sheet => {
-              debug(`... creating sheet: ${sheet} for ${panelMember}`)
-              google.sheets.spreadsheets.batchUpdate({
-                spreadsheetId: spreadsheetId,
-                auth: auth,
-                resource: {
-                  requests: [
-                    {
-                      "addSheet": {
-                        "properties": {
-                          "title": sheet,
-                          "gridProperties": {
-                            "rowCount": 500,
-                            "columnCount": 80
-                          }
-                        }
-                      }
+        google.sheets.spreadsheets.batchUpdate({
+          spreadsheetId: spreadsheetId,
+          auth: auth,
+          resource: {
+            requests: [
+              {
+                "addSheet": {
+                  "properties": {
+                    "title": 'Track Themes',
+                    "gridProperties": {
+                      "rowCount": 500,
+                      "columnCount": 80
                     }
-                  ]
-                }
-              }, (error, response) => {
-                debug(`... updating sheet: ${sheet} for ${panelMember}`)
-                google.sheets.spreadsheets.values.append({
-                  spreadsheetId: spreadsheetId,
-                  valueInputOption: 'RAW',
-                  insertDataOption: 'INSERT_ROWS',
-                  range: sheet,
-                  resource: {
-                    values: panelMemberDocs[panelMember][sheet]
-                  },
-                  auth: auth
-                }, (error, response) => {
-                  return resolve(panelMember)
-              })
-            })
-          })
-        }).then((panelMember) => {
-          debug(`... deleting default sheet for ${panelMember}`)
-          google.sheets.spreadsheets.batchUpdate({
-            spreadsheetId: spreadsheetId,
-            auth: auth,
-            resource: {
-              requests: [
-                {
-                  "deleteSheet": {
-                    "sheetId": '0'
                   }
                 }
-              ]
-            }
-          })
-          return panelMember
-        }).then((panelMember) => {
-          debug(`... setting up permissions for ${panelMember}`)
-          let firstName = panelMember.split(' ')[0]
-          let email = panelMember.split('<')[1].replace('>', '')
-          const permission = {
-              'type': 'user',
-              'role': 'writer',
-              'emailAddress': email
+              },
+              {
+                "addSheet": {
+                  "properties": {
+                    "title": 'Other',
+                    "gridProperties": {
+                      "rowCount": 500,
+                      "columnCount": 80
+                    }
+                  }
+                }
+              }
+            ]
           }
-          google.drive.permissions.create({
-            resource: permission,
-            fileId: spreadsheetId,
-            fields: 'id',
+        }, (error, response) => {
+          debug(`... updating sheets`)
+          google.sheets.spreadsheets.values.append({
+            spreadsheetId: spreadsheetId,
+            valueInputOption: 'RAW',
+            insertDataOption: 'INSERT_ROWS',
+            range: 'Track Themes',
+            resource: {
+              values: removeEmptyColumns(panels[track].submissions)
+            },
             auth: auth
-          }, function (error, res) {
-            if (error) {
-              throw new Error (error)
-            } else {
-              console.log('Permission ID: ', res.id)
-            }
+          }, (error, response) => {
+            console.log(error)
           })
-          debug(`... sending notification email to ${panelMember}`)
-          let yourThemes = Array.from(new Set(getPanelMemberThemes(panelMember)[panelMember])).join(', ')
-          let yourTracks = getPanelMemberTracks(panelMember).join(', ')
-          const templateCommitteeNotification = `
-            Hi ${firstName},
-
-            Link: ${spreadsheetUrl}
-
-            In order to maintain my sanity trying to merge back all your feedback, I have
-            autogenerated a custom spreadsheet just for you that has two sheets "My Themes"
-            and "Other".
-
-            "My Themes" containers (errr... contains :) all submissions tagged with a
-            'theme' by the submitter that maps back to one of the following tracks
-            you have indicated you would like to review submissions for ...
-
-            Your tracks: ${yourTracks}
-            Related themes: ${yourThemes}
-
-            "Other" contains everything else, in case you might find something which was
-            incorrectly tagged or if I have misclassified themes related to your tracks.
-
-            Instructions:
-            DO NOT ...
-            ... REMOVE the id column, as this will enable me to merge back all
-                committee votes later
-            ... EXPECT any changes to the sheets to be propogated automatically back to
-                the original submission source. All changes to submissions must be made by
-                the original submitter. A link (should have been) sent to everyone after
-                submitting their proposals. As them to update, if any changes are needed.
-            DO ...
-            ... REMOVE all submission (rows) from both sheets that you do not feel are
-                worthy of consideration for the themes / tracks you are interested in.
-            ... LEAVE as many submissions (rows) in both sheets that you believe
-                should be included in the program (with ID column untouched, of course...).
-            ... RANK SORT the approved submissions (rows) in the sheet such that the
-                'must have' talks are at the top and 'good, but meh' are at the bottom.
-            ... CHANGE your gdoc filename prefix to [DONE] to indicate your "votes" are
-                final.
-            ... Send me to let me know you're done, too.
-
-            After all votes are counted, I will prepare a first draft of a strawman
-            proposal, which considers the overall ranking of all submissions that receive
-            at least one vote by committee members in your reviews. I expect tracks will
-            have approximately proportional number of sessions in each as the overall
-            count of submissions for the related topics.
-
-            Once prepared, I will share this with everyone for comment. It will be during
-            this second phase that you will be asked to comment on talks alignment across
-            tracks and conference days, etc.
-
-            Finally, a second (or fifth) draft will be shared and once there are no further
-            comments, I will consider the schedule "frozen" and ship the first round of
-            acceptance notifications.
-
-            Deadline for voting is **Dec 5**, but sooner the better, of course!
-            By **Dec 7** I hope to have the strawman program shared with committee members
-            and notify speakers by **Dec 15**.
-
-            Let me know if there are any questions.
-
-            -Chris
-            `.trim()
-          email = {
-            from: 'Chris Ward <info@devconf.cz>',
-            to: panelMember.split('<')[1].replace('>', ''),
-            subject: 'DevConf.cz 2018 - Program Committee Voting Instructions',
-            text: templateCommitteeNotification
-          }
-          mailgun.sendMail(email)
-        })
-        .catch(error => {
-          throw new Error(error)
+          google.sheets.spreadsheets.values.append({
+            spreadsheetId: spreadsheetId,
+            valueInputOption: 'RAW',
+            insertDataOption: 'INSERT_ROWS',
+            range: 'Other',
+            resource: {
+              values: removeEmptyColumns(panels[track].other)
+            },
+            auth: auth
+          }, (error, response) => {
+            debug(`... deleting default sheet`)
+            google.sheets.spreadsheets.batchUpdate({
+              spreadsheetId: spreadsheetId,
+              auth: auth,
+              resource: {
+                requests: [
+                  {
+                    "deleteSheet": {
+                      "sheetId": '0'
+                    }
+                  }
+                ]
+              }
+            })
+          })
         })
       })
     })
@@ -512,9 +432,7 @@ const themes = {
 var tracks
 if (DEBUG) {
   tracks = {
-    'IoT': ['Ilya Etingof <ietingof@redhat.com>'],
-    'OpenShift': ['Ilya Etingof <ietingof@redhat.com>'],
-    'Testing': ['Ilya Etingof <ietingof@redhat.com>']
+    'Java / Middleware': ['Jiri Pechanec <jpechane@redhat.com>']
   }
 } else {
   tracks = {
@@ -602,7 +520,7 @@ let sheetColumnMap = {
   'Third Profile GitHub URL': 'github',
   'Third Profile Website URL': 'website'}
 
-function getPanelMemberEmails() {
+function getPanelMemberEmails () {
   let emails = []
   Object.values(tracks).forEach(arr => {
     emails.push.apply(emails, arr)
@@ -627,19 +545,45 @@ function rowsToDict(rows) {
   return {submissions: submissions, columns: columns}
 }
 
-function getPanels() {
+function getPanels(buckets, columns) {
   // themes are arbitrary; each theme is linked to a track; each track has panel.
   let panels = {}
-  console.log('************************')
-  console.log(themes)
-  Object.keys(themes).forEach((theme) => {
-    let themeTracks = themes[theme]['tracks']
-    let themePanel = {}
-    themeTracks.forEach((themeTrack) => {
-      themePanel[themeTrack] = tracks[themeTrack]
-      // themePanel.push.apply(themePanel, tracks[themeTrack])
+  Object.keys(tracks).forEach((track) => {
+    if (!panels[track]) {
+      panels[track] = {
+        panel: tracks[track],
+        themes: [],
+        submissions: [columns],
+        other: [columns]
+      }
+    } else {
+      panels[track][panel].push.apply(panels[track][panel], tracks[track])
+    }
+  })
+  Object.keys(themes).forEach(theme => {
+    let themeTracks = themes[theme].tracks
+    Object.keys(panels).forEach(track => {
+      if (themeTracks.indexOf(track) > -1) {
+        panels[track].themes.push(theme)
+
+        Object.keys(buckets).forEach(bucket => {
+          Object.keys(buckets[bucket]).forEach(sid => {
+            let submission = buckets[bucket][sid]
+            if (submission['Submission Type'] !== 'Session proposal')
+              {
+                return
+              }
+            let themes = submission['Session Themes']
+            if (themes.split(', ').indexOf(theme) > -1) {
+              panels[track].submissions.push(Object.values(submission))
+              // panels[track].submissions.push(submission)
+            } else {
+              panels[track].other.push(Object.values(submission))
+            }
+          })
+        })
+      }
     })
-    panels[theme] = themePanel
   })
   return panels
 }
@@ -702,11 +646,11 @@ function splitIntoBuckets(submissions) {
 function getPanelMemberSubmissions(buckets, panelMembers) {
   let panelMemberSubmissions = {}
   Object.keys(panelMembers).forEach(panelMember => {
-    panelMemberSubmissions[panelMember] = {'My themes': {}, 'Other': {}}
+    panelMemberSubmissions[panelMember] = {'My themes': {}, 'Other': {}, 'Workshops / Discussions': {}}
     // debug(`${panelMember}: ${panelMembers[panelMember]}`)
     let panelMemberThemes = panelMembers[panelMember]
     Object.keys(buckets['talks']).forEach(submissionId => {
-      let submission = submissions[submissionId]
+      let submission = buckets['talks'][submissionId]
       panelMemberThemes.forEach(theme => {
         if (submission['Session Themes'].indexOf(theme) > -1) {
           panelMemberSubmissions[panelMember]['My themes'][submissionId] = submission
@@ -715,12 +659,26 @@ function getPanelMemberSubmissions(buckets, panelMembers) {
         }
       })
     })
+
+    Object.keys(buckets['workshops']).forEach(submissionId => {
+      let submission = buckets['talks'][submissionId]
+      panelMemberThemes.forEach(theme => {
+        panelMemberSubmissions[panelMember]['Workshops / Discussions'][submissionId] = submission
+      })
+    })
+
+    Object.keys(buckets['discussions']).forEach(submissionId => {
+      let submission = buckets['talks'][submissionId]
+      panelMemberThemes.forEach(theme => {
+        panelMemberSubmissions[panelMember]['Workshops / Discussions'][submissionId] = submission
+      })
+    })
   })
   return panelMemberSubmissions
 }
 
 function getPanelMemberDocs(panelMemberSubmissions, columns) {
-  docs = {}
+  let docs = {}
   Object.keys(panelMemberSubmissions).forEach(panelMember => {
     docs[panelMember] = {}
     let myThemeSubmissions = panelMemberSubmissions[panelMember]['My themes']
@@ -729,12 +687,22 @@ function getPanelMemberDocs(panelMemberSubmissions, columns) {
       myThemeRows.push(Object.values(submission))
     })
     docs[panelMember]['My themes'] = removeEmptyColumns(myThemeRows)
+
     let otherThemeSubmissions = panelMemberSubmissions[panelMember]['Other']
     let otherThemeRows = [columns]
     Object.values(otherThemeSubmissions).forEach(submission => {
       otherThemeRows.push(Object.values(submission))
     })
     docs[panelMember]['Other'] = removeEmptyColumns(otherThemeRows)
+
+    let miscThemeSubmissions = panelMemberSubmissions[panelMember]['Workshops / Discussions']
+    let miscThemeRows = [columns]
+    Object.values(miscThemeSubmissions).forEach(submission => {
+      if (submission) {
+        miscThemeRows.push(Object.values(submission))
+      }
+    })
+    docs[panelMember]['Workshops / Discussions'] = removeEmptyColumns(miscThemeRows)
   })
   return docs
 }

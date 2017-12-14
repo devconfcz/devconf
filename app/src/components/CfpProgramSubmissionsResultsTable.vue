@@ -14,19 +14,16 @@
         <v-flex xs12>
           <p class="text-xs-right content">Filter by track?</p>
         </v-flex>
-        <v-flex xs12>
-          <v-container fluid>
-            <v-layout row wrap>
-              <v-flex xs2 v-for="track in tracks" :key="track.id">
-                <v-switch
-                  @click="setTrackFilter(track)"
-                  value
-                  v-model="activeTrackFilter[track.id]"
-                  :label="track.text"
-                ></v-switch>
-              </v-flex>
-            </v-layout>
-          </v-container>
+      </v-layout>
+      <v-layout row wrap>
+        <v-flex xs2 v-for="track in tracks" :key="track.id">
+          <v-switch
+            @click="setTrackFilter(track)"
+            value
+            v-model="activeTrackFilter[track.id]"
+            :label="track.text"
+            class=""
+          ></v-switch>
         </v-flex>
       </v-layout>
     </v-container>
@@ -70,20 +67,6 @@
             v-model="props.selected"
             label=""
           ></v-checkbox>
-        </td>
-        <td>
-          <v-select
-            :items="tracks"
-            v-model="inputTracks.text"
-            single-line
-            item-text="track"
-            item-value="text"
-            return-object
-          ></v-select>
-        </td>
-        <td>
-        </td>
-        <td>
         </td>
         <td class="text-xs-left"><p class="ellipsis">{{ props.item.title }}</p></td>
         <td class="text-xs-left">
@@ -142,6 +125,7 @@ export default {
       activeTrackFilter: {},
       selected: [],
       headers: [
+        /*
         {
           text: 'Track',
           align: 'left',
@@ -160,6 +144,7 @@ export default {
           sortable: true,
           value: 'duration'
         },
+        */
         {
           text: 'Title',
           align: 'left',
