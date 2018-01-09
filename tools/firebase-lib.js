@@ -13,7 +13,8 @@ const config = {
 }
 
 // const app = firebase.initializeApp(config)
-const serviceAccount = require(process.env.CFP_CERT)
+console.log(process.env.CFP_FB_CERT)
+const serviceAccount = require(process.env.CFP_FB_CERT)
 
 const app = admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),

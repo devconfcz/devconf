@@ -1,11 +1,11 @@
+build/
+
 npm-debug.log
 */node_modules/*
 
 firebase-debug.log
 
 *.ropeproject*
-
-*build
 
 *.sw[op]
 

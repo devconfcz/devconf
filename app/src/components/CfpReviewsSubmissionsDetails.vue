@@ -17,7 +17,7 @@
           </v-btn>
         </v-toolbar>
 
-        <v-toolbar>
+        <v-toolbar class="amber lighten-4">
           <v-toolbar-title class="ml-3">{{ submission.title }}</v-toolbar-title>
           <v-spacer></v-spacer>
 
@@ -130,19 +130,19 @@ export default {
         s !== null &&
         s.id !== undefined &&
         s.id !== null)
-      console.log('isValid:' + isValid)
+      // console.log('isValid:' + isValid)
       return isValid
     },
     submission () {
       if (this.submissionId !== undefined && this.submissionId !== null) {
         const submission = this.$store.getters.getSubmission(this.submissionId)
-        console.log(`Got a submission: ${submission}`)
+        // console.log(`Got a submission: ${submission}`)
         return submission
       }
     },
     submissionId () {
       const submissions = this.$store.getters.submissions
-      console.log('Master index: ' + this.masterIndex)
+      // console.log('Master index: ' + this.masterIndex)
       if (submissions.length > 0 && submissions[this.masterIndex]) {
         return submissions[this.masterIndex].id
       }
