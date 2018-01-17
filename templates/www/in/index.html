@@ -5,16 +5,7 @@
 {% block nav_logo %}<img src="{{ '/images/in/devconf-in-webopt.svg'|static }}" class="navbar-brand top-branding" />{% endblock %}
 
 {% block body %}
-    <!-- Home Section -->
-    <header id="intro" class="intro-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 intro-content padding-top-md">
-            <h1 class="title">{{ _('Main Event') }}</h1>
-            <div class="intro-text">
-               <p> {{ _('COMING SOON') }} </p>
-            </div>
-          </div>
-        </div>
-    </header>
+
+  {% include 'in/2018/index.html' %}
+
 {% endblock %}

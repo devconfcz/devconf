@@ -10,13 +10,17 @@ templates: [
     'privacy-policy.html',
     'coc.html',
     'participation-agreement.html',
+    'volunteer-roles.html',
+    'volunteer-session-chairs.html',
     'cz/index.html',
     'cz/2017/index.html',
     'cz/2017/roadshow-prague.html',
     'sk/2017/roadshow-bratislava.html',
     'cz/2018/index.html',
-    'in/index.html',
     'us/index.html',
+    'us/2018/index.html',
+    'in/index.html',
+    'in/2018/index.html',
 ]
 
 locales: ['en_US', 'cs_CZ', 'sk_SK']
