@@ -1,0 +1,62 @@
+<!-- BEGIN devconfus-2018-eventpage -->
+<div class="content">
+  <div class="container event-container">
+
+    <div class="material-full-bottom">
+      <img data-original="{{ '/images/canva/devconf-us-2018-header.jpg'|url }}" class="preload-image no-bottom responsive-image" alt="img" />
+      <div class="menu-bottom-bar menu-bottom-bar-four light-menu-bar menu-bottom-bar-text flat-menu-bar no-top cfp-menu">
+        <!--
+        <a href="http://bit.ly/devconfus-18-cfp" target="_blank" class="border-blue-dark"><i class="fa fa-code"></i><em>Submit a proposal</em></a>
+        <a href="http://bit.ly/devconfus-18-cfp" target="_blank" class="border-magenta-dark selected-bottom-bar"><i class="fa fa-bullhorn"></i><em>Run a booth</em></a>
+        <a href="http://bit.ly/devconfus-18-cfp" target="_blank" class="border-orange-dark"><i class="fa fa-coffee"></i><em>Host a BoF</em></a>
+        <a href="http://bit.ly/devconfus-18-cfp" target="_blank" class="border-night-light"><i class="fa fa-leaf"></i><em>Volunteer</em></a>
+        -->
+        <a href="{{ '/devconf-error-cfp-not-open.html'|url(lang=lang) }}" target="_blank" class="border-blue-dark"><i class="fa fa-code"></i><em>Submit a proposal</em></a>
+        <a href="{{ '/devconf-error-cfp-not-open.html'|url(lang=lang) }}" target="_blank" class="border-magenta-dark selected-bottom-bar"><i class="fa fa-bullhorn"></i><em>Run a booth</em></a>
+        <a href="{{ '/devconf-error-cfp-not-open.html'|url(lang=lang) }}" target="_blank" class="border-orange-dark"><i class="fa fa-coffee"></i><em>Host a BoF</em></a>
+        <a href="{{ '/devconf-error-cfp-not-open.html'|url(lang=lang) }}" target="_blank" class="border-night-light"><i class="fa fa-leaf"></i><em>Volunteer</em></a>
+        <div class="clear"></div>
+      </div>
+  <!--
+      <div class="notification-small border-green-dark" style="margin-bottom: 5px; margin-top: 5px">
+          <strong class="bg-green-dark"><i class="fa fa-info"></i></strong>
+          <p><a class="color-green-dark" href="https://devconfcz2018.sched.com/grid-full/#2018-01-26" target="_blank">{{_('Schedule is live!') }} >></a></p>
+      </div>
+      <div class="notification-small border-red-dark">
+          <strong class="bg-red-dark"><i class="fa fa-info"></i></strong>
+          <p><a class="color-red-dark" href="http://bit.ly/devconfcz-18-registration" target="_blank">{{_('On-line registration is FULL :-/') }} >></a></p>
+      </div>
+    -->
+
+      <div class="decoration-line-fade decoration-margins"></div>
+      <div class="responsive">
+        <p>{{ _('DevConf.us 2018 is the 1st annual, free, <a href="https://redhat.com">Red Hat</a> sponsored technology conference for community project and professional contributors to Free and Open Source technologies at the Boston University in the historic city of Boston, USA.') }}</p>
+        <p><strong>{{ _('When') }}:</strong> {{ _('Friday, August 17 to Sunday, August 19, 2018') }}</p>
+        <p><strong>{{ _('Venue') }}:</strong> {{ _('Boston University (One Silber Way)') }}
+          <p>{{ _('You should consider attending this DevConf event if you are') }}:</p>
+          <ul>
+            <li>{{ _('A developer') }}</li>
+            <li>{{ _('A technology architect') }}</li>
+            <li>{{ _('An IT consultant') }}</li>
+            <li>{{ _('An IT student or a teacher from an IT university/faculty') }}</li>
+            <li>{{ _('Or simply an IT enthusiast interested in the latest trends in open source and emerging digital technologies') }}</li>
+          </ul>
+          <p>{{ _('DevConf events are free, without admission or ticket charge. On-line registration is required though.') }}</p>
+          <p>{{ _('Talks, presentations, and workshops will all be in English.') }}</p>
+          <h3>{{ ('Important dates') }}:</h3>
+          <ul>
+            <li>{{ _('CfP Opens') }}: {{ _('January 26th, 2018') }}</li>
+            <li>{{ _('Accepted speakers confirmation') }}: {{ _('TBA') }}</li>
+            <li>{{ _('Schedule published') }}: {{ _('TBA') }}</li>
+            <li>{{ _('Registration opens') }}: {{ _('TBA') }}</li>
+            <li>{{ _('Event dates') }}: {{ _('Friday, August 17 to Sunday, August 19, 2018') }}</li>
+          </ul>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+    {% include 'devconfus-2018-sponsors.html' %}
+
+  </div>
+</div>
+<!-- END devconfus-2018-eventpage -->

@@ -21,6 +21,7 @@ templates: [
     'us/2018/index.html',
     'in/index.html',
     'in/2018/index.html',
+    'devconf-error-cfp-not-open.html'
 ]
 
 locales: ['en_US', 'cs_CZ', 'sk_SK']
