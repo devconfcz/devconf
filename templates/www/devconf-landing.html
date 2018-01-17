@@ -1,5 +1,3 @@
-{% extends "base.html" %}
-
 {% block title %}DevConf | {{ _('Home') }}{% endblock %}
 
 {% block body %}
@@ -9,38 +7,40 @@
     <div id="page-content-scroll">
 
       <div class="content no-material full-page full-bottom full-top">
-        <div class="centered-page">
+        <div class="container">
+          <div class="centered-page">
 
-          <div class="home-round-slider no-material full-bottom">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                  <a href="{{ '/us/2018/index.html'|url(lang=lang) }}">
-                    <img class="home-img-2 bg-blue-light" src="images/icon/us/devconf-us-icon.png">
-                  <h3>DevConf.US - Boston <i class="fa fa-external-link" style="color: #8e83e3"></i></h3>
-                </a>
-                  <em>1st annual - August 17-19 2018</em>
-                  <em class="color-orange">COMING SOON</em>
-              </div>
-              <div class="swiper-slide">
-                <a href="{{ '/cz/2018/index.html'|url(lang=lang) }}">
-                  <img class="home-img-2 bg-night-light" src="images/icon/cz/devconf-cz-icon.png">
-                  <h3>DevConf.CZ - Brno <i class="fa fa-external-link" style="color: #8e83e3"></i></h3>
-                </a>
-                <em>10th annual, January 26-28 2018</em>
-                <b><em>On-line Registration CLOSED</em></b>
-                <b><em><a href="https://devconfcz2018.sched.com/grid-full/">Schedule</a> is LIVE</em></b>
-              </div>
-              <div class="swiper-slide">
-                <a href="{{ '/in/2018/index.html'|url(lang=lang) }}">
-                  <img class="home-img-2 bg-orange-light" src="images/icon/in/devconf-in-icon.png">
-                  <h3>DevConf.IN - Pune <i class="fa fa-external-link" style="color: #8e83e3"></i></h3>
-                </a>
-                <em>2nd annual - Summer 2018</em>
-                <em>COMING SOON</em>
+            <div class="home-round-slider no-material full-bottom">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="{{ '/us/2018/index.html'|url(lang=lang) }}">
+                      <img class="home-img-2 bg-blue-light" src="images/icon/us/devconf-us-icon.png">
+                    <h3>DevConf.US - Boston <i class="fa fa-external-link" style="color: #8e83e3"></i></h3>
+                  </a>
+                    <em>1st annual - August 17-19 2018</em>
+                    <em class="color-orange">COMING SOON</em>
+                </div>
+                <div class="swiper-slide">
+                  <a href="{{ '/cz/2018/index.html'|url(lang=lang) }}">
+                    <img class="home-img-2 bg-night-light" src="images/icon/cz/devconf-cz-icon.png">
+                    <h3>DevConf.CZ - Brno <i class="fa fa-external-link" style="color: #8e83e3"></i></h3>
+                  </a>
+                  <em>10th annual, January 26-28 2018</em>
+                  <b><em>On-line Registration CLOSED</em></b>
+                  <b><em><a href="https://devconfcz2018.sched.com/grid-full/">Schedule</a> is LIVE</em></b>
+                </div>
+                <div class="swiper-slide">
+                  <a href="{{ '/in/2018/index.html'|url(lang=lang) }}">
+                    <img class="home-img-2 bg-orange-light" src="images/icon/in/devconf-in-icon.png">
+                    <h3>DevConf.IN - Pune <i class="fa fa-external-link" style="color: #8e83e3"></i></h3>
+                  </a>
+                  <em>2nd annual - Summer 2018</em>
+                  <em>COMING SOON</em>
+                </div>
               </div>
             </div>
-          </div>
 
+          </div>
         </div>
       </div>
 
