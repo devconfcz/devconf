@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}DevConf | {{ _('Boston (August 17-19)') }}{% endblock %}
+
+{% block body %}
+<!-- START body -->
+<div id="page-content" class="header-clear-full">
+  <div id="page-content-scroll">
+
+    <div class="content no-material full-page full-bottom full-top">
+      <div class="centered-page">
+
+        <img data-original="{{ '/images/canva/devconf-us-2018-header.jpg'|url }}" class="preload-image no-bottom responsive-image" alt="img" />
+
+        <div class="notification-small border-blue-dark">
+            <strong class="bg-blue-dark"><i class="fa fa-info"></i></strong>
+            <p>More information coming soon!</p>
+        </div>
+
+      </div>
+    </div>
+
+    {% include 'devconf-footer.html' %}
+
+  </div>
+</div>
+
+<!-- END body -->
+{% endblock %}
