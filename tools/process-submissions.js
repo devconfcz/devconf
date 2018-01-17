@@ -41,10 +41,100 @@ db.ref(qePath).set(data)
 console.log('DONE')
 */
 
-
-google.callWithAuth(buildCommitteeSheets)
+// google.callWithAuth(buildCommitteeSheets)
 // google.callWithAuth(importGoogleForm)
+// google.callWithAuth(finalSheetPrep)
+google.callWithAuth(scheduleReport)
+// finalSheetPrep()
 
+function scheduleReport (auth) {
+  const formId = '1a8u3ywCgoEqyffvQ_6X1B2LNv91xVpfUtdqD4VEVYzI'
+  debug('Getting Spreadsheet data...')
+  google.sheets.spreadsheets.values.get({
+    auth: auth,
+    spreadsheetId: formId,
+    range: 'Vote Results!A:BE',
+  }, (err, response) => {
+    if (err) { throw new Error ('The API returned an error: ' + err) }
+    else { debug('... done.') }
+
+    const rows = response.values
+    if (rows.length == 0) { throw new Error ('No data found.') }
+    debug(`Found ${rows.length} responses.`)
+    let allSpeakers = {}
+    db.ref(programsSubmissionsPath).once('value', snapshot => {
+      let submissions = snapshot.val()
+      Object.values(submissions).forEach(submission => {
+        // console.log(submission.meta.contacts)
+        Object.values(submission.meta.contacts).forEach(contact => {
+          allSpeakers[contact.email] = contact
+        })
+      })
+
+      let acceptedPrimarySpeakers = []
+      rows.forEach(row => {
+        const inSched = row[1]
+        const accepted = row[2]
+        const track = row[3]
+        const id = row[4]
+        const title = row[5]
+        const primary = row[6]
+        acceptedPrimarySpeakers.push(primary)
+      })
+
+      let wearableSizes = {}
+      Object.values(acceptedPrimarySpeakers).forEach(email => {
+        let contact = allSpeakers[email]
+        if (!contact) {
+          debug(email + ', L')
+        } else {
+          wearableSizes[email] = contact.wearable_size || 'L'
+        }
+      })
+      console.log(wearableSizes)
+    })
+  })
+}
+
+function finalSheetPrep () {
+  debug('Getting data...')
+  db.ref(programsSubmissionsPath).once('value', snapshot => {
+    let submissions = snapshot.val()
+    console.log(Object.keys(submissions).length)
+    let columns = [
+      'id',
+      'title',
+      'primary_contact',
+      'type',
+      'duration',
+      'short_description',
+      'difficulty',
+      'abstract',
+      'themes',
+      'score'
+    ]
+    let rows = [columns]
+    submissions.forEach(s => {
+      console.log(s)
+      let row = [
+        s.id,
+        s.title,
+        s.email,
+        s.type,
+        `00:${s.duration}:00`,
+        s.short_description,
+        s.difficulty,
+        s.abstract,
+        s.themes,
+        s.meta.votes.vote_total
+      ]
+      rows.push(row)
+    })
+    console.log(rows.length)
+    writeCsv('/tmp/out.csv', rows)
+    console.log('DONE')
+  })
+}
 function importGoogleForm (auth) {
   debug('Getting Spreadsheet data...')
   google.sheets.spreadsheets.values.get({
@@ -210,7 +300,6 @@ function importGoogleForm (auth) {
     // lib.writeJson('/tmp/out.json', data)
   })
 }
-
 function buildCommitteeSheets (auth) {
   debug('Getting Spreadsheet data...')
   google.sheets.spreadsheets.values.get({
@@ -337,8 +426,6 @@ function buildCommitteeSheets (auth) {
     })
   })
 }
-
-
 const themes = {
   'Development': {
     tracks: ['CI/CD', 'DevTools', 'Java / Middleware', '.NET']
@@ -428,7 +515,6 @@ const themes = {
     tracks: ['Desktop']
   }
 }
-
 var tracks
 if (DEBUG) {
   tracks = {
@@ -463,7 +549,6 @@ if (DEBUG) {
     'IoT': ['Peter Robinson <pbrobinson@redhat.com>', 'Ilya Etingof <ietingof@redhat.com>']
   }
 }
-
 let sheetColumnMap = {
   'Timestamp': 'timestamp',
   'Email Address': 'email',
@@ -519,15 +604,13 @@ let sheetColumnMap = {
   'Third Profile Twitter URL': 'twitter',
   'Third Profile GitHub URL': 'github',
   'Third Profile Website URL': 'website'}
-
-function getPanelMemberEmails () {
+function getPanelMemberEmails() {
   let emails = []
   Object.values(tracks).forEach(arr => {
     emails.push.apply(emails, arr)
   })
   return Array.from(new Set(emails)).sort()
 }
-
 function rowsToDict(rows) {
   let columns = rows.shift(0)
   let submissions = {}
@@ -544,8 +627,7 @@ function rowsToDict(rows) {
   columns.unshift('id')
   return {submissions: submissions, columns: columns}
 }
-
-function getPanels(buckets, columns) {
+function getPanels() {
   // themes are arbitrary; each theme is linked to a track; each track has panel.
   let panels = {}
   Object.keys(tracks).forEach((track) => {
@@ -587,11 +669,9 @@ function getPanels(buckets, columns) {
   })
   return panels
 }
-
 function getPanelMemberTracks(filterBy) {
   return Object.keys(tracks).filter(key => tracks[key].indexOf(filterBy) > -1)
 }
-
 function getPanelMemberThemes(filterBy) {
   let panelMembers = {}
   // themes = {'THEME': ['track 1', 'track 2']}
@@ -610,7 +690,6 @@ function getPanelMemberThemes(filterBy) {
   })
   return panelMembers
 }
-
 function splitIntoBuckets(submissions) {
   let buckets = {
     meetups: {},
@@ -642,7 +721,6 @@ function splitIntoBuckets(submissions) {
   })
   return buckets
 }
-
 function getPanelMemberSubmissions(buckets, panelMembers) {
   let panelMemberSubmissions = {}
   Object.keys(panelMembers).forEach(panelMember => {
@@ -676,7 +754,6 @@ function getPanelMemberSubmissions(buckets, panelMembers) {
   })
   return panelMemberSubmissions
 }
-
 function getPanelMemberDocs(panelMemberSubmissions, columns) {
   let docs = {}
   Object.keys(panelMemberSubmissions).forEach(panelMember => {
@@ -706,7 +783,6 @@ function getPanelMemberDocs(panelMemberSubmissions, columns) {
   })
   return docs
 }
-
 function removeEmptyColumns(rows) {
   let columns = rows.shift()
   let r = 0
@@ -742,23 +818,21 @@ function removeEmptyColumns(rows) {
   updatedRows.unshift(updatedColumns)
   return updatedRows
 }
-
 function writeCsv(path, rows) {
   console.log(`writecsv: ${path}`)
   return new Promise ((resolve, reject) => {
-    csvString = ''
+    let csvString = ''
     rows.forEach(row => {
       for (let i=0, len=row.length; i<len; i++) {
-        row[i] = `"${row[i]}"`
+        row[i] = `"${row[i]}"`.replace(/\n+/g, '<br>')
       }
-      rowString = row.join(';')
+      let rowString = row.join('^')
       csvString += rowString + '\n'
     })
     fs.writeFileSync(path.replace(/[- ]/g, '_'), csvString)
     return resolve()
   })
 }
-
 function processPhotos(auth) {
   bucket.getFiles().then(results => {
     const files = results[0]
@@ -832,7 +906,6 @@ function processPhotos(auth) {
     debug(savedFiles)
   })
 }
-
 function getEmails(auth) {
   const sheets = google.sheets('v4')
   debug('Getting Spreadsheet data...')
@@ -862,7 +935,6 @@ function getEmails(auth) {
     debug (Array.from(emails).sort().join(', '))
   })
 }
-
 function processSubmissions(auth) {
   debug('Processing submissions ...')
   debug('Getting Spreadsheet data...')

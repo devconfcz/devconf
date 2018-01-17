@@ -6,7 +6,7 @@
     <cfp-program-submissions-filter-tracks
       type="tracks"
     ></cfp-program-submissions-filter-tracks>
-  -->
+    -->
     <v-divider></v-divider>
 
     <v-container grid-list-md fluid>
@@ -67,6 +67,20 @@
             v-model="props.selected"
             label=""
           ></v-checkbox>
+        </td>
+        <td>
+          <v-select
+            :items="tracks"
+            v-model="inputTracks"
+            single-line
+            item-text="track"
+            item-value="text"
+            return-object
+          ></v-select>
+        </td>
+        <td>
+        </td>
+        <td>
         </td>
         <td class="text-xs-left"><p class="ellipsis">{{ props.item.title }}</p></td>
         <td class="text-xs-left">
