@@ -345,7 +345,7 @@ function mailMeetupOrganizers(payload) {
 function sendMail(to, subject, bodyHtml) {
   Logger.log('Sending email to (' + to + ') ...'); 
   var mailgunURL="https://api.mailgun.net/v3/devconf.cz/messages";
-  var mailgunAPI="key-10ef91ab42caa750a6885d1ac8b51811";     
+  var mailgunAPI="key-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";     
   var params = {
     "from": 'info@devconf.cz <info@devconf.cz>',
     "replyto": 'info@devconf.cz <info@devconf.cz>',

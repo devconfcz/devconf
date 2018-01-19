@@ -14,19 +14,15 @@
 
 <body>
 
-  <div id="page-transitions">
-
-    <div class="page-preloader page-preloader-dark">
-        <div class="loader loader-frames"><i></i><i></i><i></i><i></i></div>
-    </div>
-
-    {% block navigation %}{% include 'navigation.html' %}{% endblock %}
-
-    {% block body %}{% endblock %}
-
-    <div class="sidebar-tap-close"></div>
-
+  <div class="page-preloader page-preloader-dark">
+      <div class="loader loader-frames"><i></i><i></i><i></i><i></i></div>
   </div>
+
+  {% block navigation %}{% include 'navigation.html' %}{% endblock %}
+
+  {% block body %}{% endblock %}
+
+  <div class="sidebar-tap-close"></div>
 
 </body>
 
