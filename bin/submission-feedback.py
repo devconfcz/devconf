@@ -11,31 +11,31 @@ import ipdb
 from comdev.lib import dumps, render_template, load_config, expand_path
 from comdev.gmail_api import Gmailer
 
-send = False
-app_name = 'devconf'
-sender = 'cward@redhat.com'
-template = 'mail/'
-subject = 'QEcamp.18 - Session feedback'
-src = pandas.read_excel('/home/cward/Downloads/session-feedback-qecamp18mainevent-2018-02-04.xlsx')
-sch = pandas.read_excel('/home/cward/Downloads/qecamp18mainevent-event-export-2018-02-04-14-39-06.xlsx')
-spk = pandas.read_excel('/home/cward/Downloads/qecamp18mainevent-speakers-directory-2018-02-04-14-39-09.xlsx')
-id_col = 'Downloaded on 2018-02-04 2:39:09 pm'
-
 #send = False
 #app_name = 'devconf'
-#sender = 'info@devconf.cz'
+#sender = 'cward@redhat.com'
 #template = 'mail/'
-#subject = 'DevConf.cz \'18 - Session feedback'
-#src = pandas.read_excel('/home/cward/Downloads/session-feedback-devconfcz2018-2018-02-04.xlsx')
-#sch = pandas.read_excel('/home/cward/Downloads/devconfcz2018-event-export-2018-02-04-13-05-53.xlsx')
-#spk = pandas.read_excel('/home/cward/Downloads/devconfcz2018-speakers-directory-2018-02-04-13-23-45.xlsx')
-#id_col = 'Downloaded on 2018-02-04 1:23:45 pm'
+#subject = 'QEcamp.18 - Session feedback'
+#src = pandas.read_excel('/home/cward/Downloads/session-feedback-qecamp18mainevent-2018-02-04.xlsx')
+#sch = pandas.read_excel('/home/cward/Downloads/qecamp18mainevent-event-export-2018-02-04-14-39-06.xlsx')
+#spk = pandas.read_excel('/home/cward/Downloads/qecamp18mainevent-speakers-directory-2018-02-04-14-39-09.xlsx')
+#id_col = 'Downloaded on 2018-02-04 2:39:09 pm'
+
+send = False
+app_name = 'devconf'
+sender = 'info@devconf.cz'
+template = 'mail/'
+subject = 'DevConf.cz \'18 - Session feedback'
+src = pandas.read_excel('/home/cward/Downloads/session-feedback-devconfcz2018-2018-02-04.xlsx')
+sch = pandas.read_excel('/home/cward/Downloads/devconfcz2018-event-export-2018-02-04-13-05-53.xlsx')
+spk = pandas.read_excel('/home/cward/Downloads/devconfcz2018-speakers-directory-2018-02-04-13-23-45.xlsx')
+id_col = 'Downloaded on 2018-02-04 1:23:45 pm'
 
 config = load_config(app_name)
 path_templates = expand_path(config['paths']['templates'].get())
 path_export = expand_path(config['paths']['export'].get())
 
-#gmailer = Gmailer(app_name, sender)
+gmailer = Gmailer(app_name, sender)
 
 env = jinja2.Environment(loader=jinja2.FileSystemLoader(path_templates))
 
@@ -85,24 +85,31 @@ for row in src.iterrows():
 for _id in d.keys():
     s = d[_id]
     content = '''
+Hi, included below is the feedback we got from attendees about your session.
+
 Title: {}
 Speakers: {}
-Score: {} from {} votes
+
+Your total feedback score was {}, from a total of {} votes. Each person voting could vote -1/0/+1
 '''.format(s['title'], s['speakers'], s['rating_sum'], s['rating_k']).strip()
 
-    content += '\nAttendee Notes:\n'
+    content += '\n\nAttendee Notes:\n'
     if s['feedback']:
         content += '\n'.join(s['feedback'])
     else:
         content += '  No additional feedback provided'
 
     for email in s['speaker_emails']:
-        # gmailer.send(sender, email, subject, txt, html)
+        #print(email)
+        #email = 'cward@redhat.com' #################################
+        txt = content
+        html = content.replace('\n', '<br />')
         subject_edited = '{} - {}'.format(subject, s['title'])
         print('Sending "{}" to {}'.format(subject_edited, email))
-        print(content)
-        print('----------------------------------------\n')
-        #sender, email, subject, txt, html)
+        gmailer.send(email, subject_edited, txt, html)
+        # ipdb.set_trace()
+        #print(content)
+        #print('----------------------------------------\n')
         #export_html = os.path.join(
         #    path_export, 'announce/rejected', speaker + '.html' )
         #dumps(html, export_html)
