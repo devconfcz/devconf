@@ -3,6 +3,7 @@ paths:
     static: './static'
     build: './build'
     locale: './i18n'
+    export: '/tmp'
 
 templates: [
     'index.html',
