@@ -270,7 +270,7 @@ p strong {
 
 @media(max-width:400px){
   .menu-bottom-bar-text em {
-    font-size: .5em!important;
+    font-size: .4em!important;
   }
 }
 
