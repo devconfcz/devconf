@@ -1,29 +1,19 @@
-{% extends "base.html" %}
+  {% extends "base.html" %}
 
-{% block title %}DevConf.in | {{ _('Summer 2018') }}{% endblock %}
+  {% block title %}DevConf.us | {{ _('August 17-19, 2018 - Boston, USA') }}{% endblock %}
 
+  {% block body %}
+  <!-- BEGIN body -->
 
-{% block body %}
-  <!-- START body -->
   <div id="page-content" class="header-clear-full">
     <div id="page-content-scroll">
+      
+    {% include 'devconfin-2018-eventpage.html' %}
 
-      <div class="content no-material full-page full-bottom full-top">
-        <div class="centered-page">
-
-          <img data-original="{{ '/images/canva/devconf-in-2018-header.jpg'|url }}" class="preload-image no-bottom responsive-image" alt="img" />
-
-          <div class="notification-small border-orange-dark">
-              <strong class="bg-orange-dark"><i class="fa fa-info"></i></strong>
-              <p>More information coming soon!</p>
-          </div>
-
-        </div>
-      </div>
-
-      {% include 'devconf-footer.html' %}
+    {% include 'devconf-footer.html' %}
 
     </div>
+
   </div>
 
   <!-- END body -->
