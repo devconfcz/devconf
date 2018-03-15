@@ -1,0 +1,72 @@
+<!-- BEGIN devconfcz-2018-eventpage -->
+<div class="content">
+  <div class="container event-container">
+    <div class="material-full-bottom">
+      <img data-original="{{ '/images/canva/devconf-cz-2019-brno-header.jpg'|url }}" class="preload-image no-bottom responsive-image" alt="img" />
+<!--
+      <div class="menu-bottom-bar menu-bottom-bar-three light-menu-bar menu-bottom-bar-text flat-menu-bar no-top cfp-menu">
+        <a href="https://devconf.cz/cfp" target="_blank" class="border-blue-dark"><i class="fa fa-code"></i><em>Submit a proposal</em></a>
+        <a href="https://devconf.cz/cfp" target="_blank" class="border-magenta-dark selected-bottom-bar"><i class="fa fa-bullhorn"></i><em>Run a booth</em></a>
+        <a href="https://devconf.cz/cfp" target="_blank" class="border-orange-dark"><i class="fa fa-coffee"></i><em>Host a meet-up</em></a>
+        <div class="clear"></div>
+      </div>
+  -->
+      <div class="notification-small border-red-dark">
+          <strong class="bg-red-dark"><i class="fa fa-info"></i></strong>
+          <p>{{_('More information COMING SOON!') }}</p>
+      </div>
+
+      <div class="center-text" style="margin-top: 30px">
+        <h1 class="color-black uppercase">{{ _('Main Event - 2019') }}</h1>
+      </div>
+      <div class="decoration-line-fade decoration-margins"></div>
+      <div class="one-half-responsive">
+        <p>{{ _('DevConf.cz 2019 is the 11th annual, free, <a href="https://redhat.com">Red Hat</a> sponsored community conference for developers, admins, DevOps engineers, testers, documentation writers and other contibutors to open source technologies
+          such as Linux, Middleware, Virtualization, Storage, Cloud and mobile where FLOSS communities sync, share, and hack on upstream projects together in the beautiful city of Brno, Czech Republic.') }}</p>
+        <p><strong>{{ _('When') }}:</strong> {{ _('Winter, 2019') }}</p>
+        <p><strong>{{ _('Venue') }}:</strong> {{ _('Faculty of Information Technology (VUT FIT - Božetěchova 2, Brno)') }}
+          <p>{{ _('You should consider attending this DevConf.cz event if you are') }}:</p>
+          <ul>
+            <li>{{ _('A developer') }}</li>
+            <li>{{ _('A technology architect') }}</li>
+            <li>{{ _('An IT consultant') }}</li>
+            <li>{{ _('An IT student or a teacher from an IT university/faculty') }}</li>
+            <li>{{ _('Or simply an IT enthusiast interested in the latest trends in open source and emerging digital technologies') }}</li>
+          </ul>
+          <p>{{ _('DevConf.cz is a free conference and there is no admission or ticket charge. Free registration is required though.') }}</p>
+          <h3>{{ _('Registration') }}:</h3>
+<!--
+          <ul>
+            <li>{{ _('Online registration opens: TBA') }}</li>
+            <li>{{ _('On-site (at venue) registration is possible between 8AM-10AM each day! Limited capacity though (~100 per day).') }}</li>
+          </ul>
+-->
+          <p>{{ _('Talks, presentations, and workshops will all be in English.') }}</p>
+          <h3>{{ ('Important dates') }}: TBA</h3>
+<!--
+          <ul>
+            <li>{{ _('CfP closes') }}: {{ _('November 17th, 2017') }}</li>
+            <li>{{ _('Accepted speakers confirmation') }}: {{ _('December 14, 2017') }}</li>
+            <li>{{ _('Schedule published') }}: {{ _('December 29, 2017') }}</li>
+            <li>{{ _('Event dates') }}: {{ _('Friday, January 26 to Sunday, January 28, 2018') }}</li>
+          </ul>
+-->
+      </div>
+      <div class="one-half-responsive last-column">
+        <h3 class="center-text full-bottom">Memories from 2018</h3>
+        <div class="gallery gallery-square no-bottom">
+          {% for f in range(1, 26) %}
+          <a class="show-gallery" href="{{ ('/images/gallery/devconf-cz-2018-event-photos/' + f|string + '.jpg')|url }}" alt="img" title="Image Caption">
+                <img class="preload-image responsive-image" data-original="{{ ('/images/gallery/devconf-cz-2018-event-photos/' + f|string + '.jpg')|url }}" alt="img">
+            </a> {% endfor %}
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+    {% include 'devconfcz-2019-sponsors.html' %}
+
+  </div>
+</div>
+<!-- END devconfcz-2018-eventpage -->

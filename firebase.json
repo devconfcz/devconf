@@ -6,6 +6,68 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "redirects": [ 
+      {
+        "source" : "/cz/chat",
+        "destination" : "https://t.me/devconfcz",
+        "type" : 301
+      },
+      {
+        "source" : "/us/chat",
+        "destination" : "https://t.me/devconfus",
+        "type" : 301
+      },
+      {
+        "source" : "/in/chat",
+        "destination" : "https://t.me/devconfin",
+        "type" : 301
+      },
+      {
+        "source" : "/cz/facebook",
+        "destination" : "https://facebook.com/DevConf.cz",
+        "type" : 301
+      },
+      {
+        "source" : "/us/facebook",
+        "destination" : "https://facebook.com/DevConf.us",
+        "type" : 301
+      },
+      {
+        "source" : "/in/facebook",
+        "destination" : "https://facebook.com/DevConf.in",
+        "type" : 301
+      },
+      {
+        "source" : "/in/twitter",
+        "destination" : "https://twitter.com/devconf_in",
+        "type" : 301
+      },
+      {
+        "source" : "/us/twitter",
+        "destination" : "https://twitter.com/devconf_us",
+        "type" : 301
+      },
+      {
+        "source" : "/cz/twitter",
+        "destination" : "https://twitter.com/devconf_cz",
+        "type" : 301
+      },
+      {
+        "source" : "/cz/cfp",
+        "destination" : "https://devconf.info/devconf-error-cfp-not-open.html",
+        "type" : 302
+      },
+      {
+        "source" : "/in/cfp",
+        "destination" : "https://bit.ly/devconfin-18-cfp",
+        "type" : 302
+      },
+      {
+        "source" : "/us/cfp",
+        "destination" : "https://bit.ly/devconfus-18-cfp",
+        "type" : 302
+      }
     ]
   }
 }
