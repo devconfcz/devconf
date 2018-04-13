@@ -7,7 +7,7 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "redirects": [ 
+    "redirects": [
       {
         "source" : "/cz/chat",
         "destination" : "https://t.me/devconfcz",
@@ -65,7 +65,7 @@
       },
       {
         "source" : "/us/cfp",
-        "destination" : "https://bit.ly/devconfus-18-cfp",
+        "destination" : "https://devconf.info/devconf-error-cfp-not-open.html",
         "type" : 302
       }
     ]
