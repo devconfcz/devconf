@@ -60,12 +60,12 @@
       },
       {
         "source" : "/in/cfp",
-        "destination" : "https://bit.ly/devconfin-18-cfp",
+        "destination" : "https://devconf.info/devconf-error-cfp-not-open.html",
         "type" : 302
       },
       {
         "source" : "/us/cfp",
-        "destination" : "https://devconf.info/devconf-error-cfp-not-open.html",
+        "destination" : "https://docs.google.com/forms/d/e/1FAIpQLSfBUSs7rin0RPXo-6A-yoUkeVnVFXlSYkt7-tnTBJjoC72OBw/viewform",
         "type" : 302
       }
     ]
