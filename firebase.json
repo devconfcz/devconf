@@ -9,6 +9,11 @@
     ],
     "redirects": [
       {
+        "source" : "/visa",
+        "destination" : "https://docs.google.com/forms/d/e/1FAIpQLSePpHAXaAYl2CSun15V56Hyiq_emJbZBqFrukqOmArxHXhSvg/viewform",
+        "type" : 302
+      },
+      {
         "source" : "/cz/chat",
         "destination" : "https://t.me/devconfcz",
         "type" : 301
