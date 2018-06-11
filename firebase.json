@@ -72,6 +72,16 @@
         "source" : "/us/cfp",
         "destination" : "https://docs.google.com/forms/d/e/1FAIpQLSfBUSs7rin0RPXo-6A-yoUkeVnVFXlSYkt7-tnTBJjoC72OBw/viewform",
         "type" : 302
+      },
+      {
+        "source": "/in/2018/registration",
+        "destination": "https://www.eventbrite.com/e/devconfin-2018-registration-43966441811",
+        "type": 301
+      },
+      {
+        "source": "/in/2018/schedule",
+        "destination": "https://devconfin2018.sched.com",
+        "type": 301
       }
     ]
   }
