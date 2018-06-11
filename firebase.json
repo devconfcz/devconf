@@ -80,7 +80,7 @@
       },
       {
         "source": "/in/2018/schedule",
-        "destination": "https://devconfin2018.sched.com",
+        "destination": "https://devconfin2018.sched.com/grid/",
         "type": 301
       }
     ]
