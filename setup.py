@@ -3,7 +3,7 @@
 
 from setuptools import setup
 
-VERSION = '0.1'
+VERSION = '0.1.2'
 
 long_description = '''Builder scripts for DevConf sites'''
 
@@ -18,10 +18,9 @@ setup_info = dict(
     # Package info
     packages=['devconf', ],
     scripts=[
-        'bin/devconf-mail',
     ],
     install_requires=[
-        'comdev',
+        'comdev==0.2.1',
     ],
 )
 
