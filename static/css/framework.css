@@ -3125,7 +3125,7 @@ ul.tabs li.current{
     color:#FFFFFF;
     z-index:999;
     pointer-events:none;
-    font-size:18px;
+    font-size:16px;
 }
 .portfolio-wide-item .responsive-image{margin-bottom:0px!important;}
 
@@ -3158,7 +3158,7 @@ ul.tabs li.current{
     color:#1f1f1f!important;
     font-weight:800;
     text-transform: uppercase;
-    font-size:20px!important;
+    font-size:16px!important;
     border-top-right-radius:5px;
     border-top-left-radius:5px;
 }
