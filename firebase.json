@@ -82,7 +82,18 @@
         "source": "/in/2018/schedule",
         "destination": "https://devconfin2018.sched.com/grid/",
         "type": 301
+      },
+      {
+        "source": "/us/2018/registration",
+        "destination": "https://www.eventbrite.com/e/devconfus-2018-tickets-43966825960",
+        "type": 301
+      },
+      {
+        "source": "/us/2018/schedule",
+        "destination": "https://devconfus2018.sched.com/grid/",
+        "type": 301
       }
+
     ]
   }
 }
