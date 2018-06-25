@@ -156,7 +156,7 @@ export default {
     }
     let events = Object.values(this.site.events)
     if (events.length > 0) {
-      this.$store.dispatch('changeEvent', events[0])  // FIXME: user profile default
+      this.$store.dispatch('changeEvent', events[0]) // FIXME: user profile default
     }
   },
   mounted () {

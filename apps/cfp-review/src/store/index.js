@@ -66,200 +66,6 @@ export const store = new Vuex.Store({
           },
           meta: {},
           program: {
-            tracks: {
-              'cicd': {
-                id: 'cicd',
-                text: 'CI/CD',
-                themes: [
-                  'Development', 'Testing', 'Debugging / Tracing', 'Agile'
-                ],
-                panel: ['Ari LiVigni <alivigni@redhat.com>', 'Jeffrey Burke <jburke@redhat.com>']
-              },
-              'dotnet': {
-                id: 'dotnet',
-                text: '.NET',
-                themes: [
-                  'Development'
-                ],
-                panel: ['Deepak Bhole <dbhole@redhat.com>', 'Patrick Macdonald <patrickm@redhat.com>']
-              },
-              'java_middleware': {
-                id: 'java_middleware',
-                text: 'Java / Middleware',
-                themes: [
-                  'Development', 'Middleware', 'Web'
-                ],
-                panel: ['Vaclav Tunka <vtunka@redhat.com>', 'Mark Little <mlittle@redhat.com>', 'Steven Pousty <spousty@redhat.com>']
-              },
-              'devtools': {
-                id: 'devtools',
-                text: 'DevTools',
-                themes: [
-                  'Development', 'Automation', 'Workload Management', 'documentation', 'Configuration Management', 'Database', 'Debugging / Tracing'
-                ],
-                panel: ['Patrick Macdonald <patrickm@redhat.com>', 'Adi Sakala <asakala@redhat.com>', 'Vaclav Pavlin <vpavlin@redhat.com>']
-              },
-              'testing': {
-                id: 'testing',
-                text: 'Testing',
-                themes: [
-                  'Testing', 'Debugging / Tracing'
-                ],
-                panel: ['Ondrej Hudlicky <ohudlick@redhat.com>', 'Suprith Gangawar <sgangawa@redhat.com>', 'Ilya Etingof <ietingof@redhat.com>', 'Lisa Reed <lireed@redhat.com>']
-              },
-              'atomic': {
-                id: 'atomic',
-                text: 'Atomic',
-                themes: [
-                  'Containers', 'Cloud', 'Virtualization'
-                ],
-                panel: ['Joe Brockmeier <jzb@redhat.com>', 'Eliska Slobodova <eliska@redhat.com>', 'Josh Berkus <jberkus@redhat.com>']
-              },
-              'containers': {
-                id: 'containers',
-                text: 'Containers',
-                themes: [
-                  'Containers', 'Virtualization'
-                ],
-                panel: ['Radek Vokál <rvokal@redhat.com>', 'Josh Berkus <jberkus@redhat.com>', 'Joe Brockmeier <jzb@redhat.com>', 'Eliska Slobodova <eliska@redhat.com>', 'Jan Pazdziora <jpazdziora@redhat.com>', 'Honza Horak <hhorak@redhat.com>', 'Tomas Tomecek <ttomecek@redhat.com>']
-              },
-              'openshift': {
-                id: 'openshift',
-                text: 'OpenShift',
-                themes: [
-                  'Containers', 'Automation', 'Cloud', 'Virtualization'
-                ],
-                panel: ['Joe Brockmeier <jzb@redhat.com>', 'Eliska Slobodova <eliska@redhat.com>', 'Jan Pazdziora <jpazdziora@redhat.com>', 'Tomas Tomecek <ttomecek@redhat.com>', 'Radek Vokál <rvokal@redhat.com>', 'Josh Berkus <jberkus@redhat.com>']
-              },
-              'ansible': {
-                id: 'ansible',
-                text: 'Ansible',
-                themes: [
-                  'Automation', 'Configuration Management'
-                ],
-                panel: ['Rashid Khan <rkhan@redhat.com>', 'Ondrej Vasik <ovasik@redhat.com>', 'Bill Nottingham <notting@redhat.com>', 'Josh Berkus <jberkus@redhat.com>']
-              },
-              'openstack': {
-                id: 'openstack',
-                text: 'Open Stack',
-                themes: [
-                  'Automation', 'Workload  Management', 'Cloud', 'Virtualization', 'Networking'
-                ],
-                panel: ['Rashid Khan <rkhan@redhat.com>', 'Ilya Etingof <ietingof@redhat.com>']
-              },
-              'enterprise_security_identity_management': {
-                id: 'enterprise_security_identity_management',
-                text: 'Enterprise Security & Identity Management',
-                themes: [
-                  'Security', 'Identity Management'
-                ],
-                panel: ['Jan Pazdziora <jpazdziora@redhat.com>', 'Martin Kosek <mkosek@redhat.com>', 'Peter Vrabec <pvrabec@redhat.com>', 'Alexander Bokovoy <abokovoy@redhat.com>']
-              },
-              'devops': {
-                id: 'devops',
-                text: 'DevOps',
-                themes: [
-                  'DevOps', 'Agile', 'Documentation'
-                ],
-                panel: ['Jen Krieger <jkrieger@redhat.com>', 'Josh Berkus <jberkus@redhat.com>']
-              },
-              'centos': {
-                id: 'centos',
-                text: 'CentOS',
-                themes: [
-                  'Platform / OS'
-                ],
-                panel: ['Brian Exelbierd <bexelbie@redhat.com>', 'Rashid Khan <rkhan@redhat.com>', 'Ondrej Vasik <ovasik@redhat.com>', 'Jim Perrin <jperrin@redhat.com>']
-              },
-              'fedora': {
-                id: 'devops',
-                text: 'DevOps',
-                themes: [
-                  'Platform / OS', 'Community'
-                ],
-                panel: ['Jiri Eischmann <jeischma@redhat.com>', 'Matthew Miller <mattdm@redhat.com>', 'Brian Exelbierd <bexelbie@redhat.com>']
-              },
-              'platform_os': {
-                id: 'devops',
-                text: 'DevOps',
-                themes: [
-                  'Platform / OS'
-                ],
-                panel: ['Brian Exelbierd <bexelbie@redhat.com>', 'Rashid Khan <rkhan@redhat.com>', 'Ondrej Vasik <ovasik@redhat.com>']
-              },
-              'cloud': {
-                id: 'cloud',
-                text: 'Cloud',
-                themes: [
-                  'Cloud'
-                ],
-                panel: ['Tomas Tomecek <ttomecek@redhat.com>']
-              },
-              'community': {
-                id: 'community',
-                text: 'Community',
-                themes: [
-                  'Community', 'Documentation', 'Research'
-                ],
-                panel: ['Brian Exelbierd <bexelbie@redhat.com>', 'Leslie Hawthorn <lhawthor@redhat.com>', 'Brian Proffitt <bproffit@redhat.com>', 'Milan Broz <mbroz@redhat.com>']
-              },
-              'virtualization': {
-                id: 'virtualization',
-                text: 'Virtualization',
-                themes: [
-                  'Virtualization', 'Kernel', 'Networking'
-                ],
-                panel: ['Karen Noel <knoel@redhat.com>']
-              },
-              'kernel': {
-                id: 'kernel',
-                text: 'Kernel',
-                themes: [
-                  'Kernel', 'Hardware'
-                ],
-                panel: ['Stanislav Kozina <skozina@redhat.com>']
-              },
-              'networking': {
-                id: 'networking',
-                text: 'Networking',
-                themes: [
-                  'Networking', 'Kernel'
-                ],
-                panel: ['Rashid Khan <rkhan@redhat.com>']
-              },
-              'desktop': {
-                id: 'desktop',
-                text: 'Desktop',
-                themes: [
-                  'Desktop', 'Design / UX'
-                ],
-                panel: ['Tomas Popela <tpopela@redhat.com>']
-              },
-              'storage': {
-                id: 'storage',
-                text: 'Storage',
-                themes: [
-                  'Storage', 'AI / Machine Learning'
-                ],
-                panel: ['Milan Broz <mbroz@redhat.com>']
-              },
-              'iot': {
-                id: 'iot',
-                text: 'IoT',
-                themes: [
-                  'Database', 'Hardware', 'Mobile', 'IoT'
-                ],
-                panel: ['Peter Robinson <pbrobinson@redhat.com>', 'Ilya Etingof <ietingof@redhat.com>']
-              },
-              'agile': {
-                id: 'agile',
-                text: 'Agile',
-                themes: [
-                  'Agile', 'Documentation'
-                ],
-                panel: ['Jen Krieger <jkrieger@redhat.com>']
-              }
-            },
             slots: [
               /*
                 This needs to be specified some how
@@ -302,7 +108,7 @@ export const store = new Vuex.Store({
     _debug: DEBUG,
     _bus: new Vue(),
     _pageDisplayed: null,
-    _eventDisplayed: null,  //
+    _eventDisplayed: null, //
     _isLoading: true,
     _isLoginError: false,
     _isWorking: false,
@@ -367,34 +173,34 @@ export const store = new Vuex.Store({
       let submissions = state._submissions
       let themesFilter = new Set(state._themesFilter)
       return submissions.filter(val =>
-          (val.themes.filter(theme =>
-            themesFilter.has(theme)
-          ).length > 0)
-        )
+        (val.themes.filter(theme =>
+          themesFilter.has(theme)
+        ).length > 0)
+      )
     },
     unreviewed (state) {
       // console.log('Loading data: unreviewed')
       let submissions = state._submissions
       return submissions.filter(val =>
-          state._unreviewed.indexOf(val.id) > -1
-        )
+        state._unreviewed.indexOf(val.id) > -1
+      )
     },
     approved (state) {
       // console.log('Loading data: approved')
       return state._submissions.filter(val =>
-          state._approved.indexOf(val.id) > -1
-        )
+        state._approved.indexOf(val.id) > -1
+      )
     },
     rejected (state) {
       // console.log('Loading data: rejected')
       let submissions = state._submissions
       let themesFilter = new Set(state._themesFilter)
       return submissions.filter(val =>
-          (val.themes.filter(theme =>
-            themesFilter.has(theme)
-          ).length > 0) &&
+        (val.themes.filter(theme =>
+          themesFilter.has(theme)
+        ).length > 0) &&
           (state._rejected.indexOf(val.id) > -1)
-        )
+      )
     },
     getVoteCount: (state) => (submissionId) => {
       // console.log(`getters.getVoteCount`) // : ${submissionId}`)
@@ -478,7 +284,7 @@ export const store = new Vuex.Store({
       return (state._debug !== undefined)
     }
   },
-  mutations: {  // triggered with 'commit' and MUST BE SYNCHRONOUS
+  mutations: { // triggered with 'commit' and MUST BE SYNCHRONOUS
     resetThemesFilter (state) {
       console.log('mutations.resetThemesFilter')
       state._themesFilter = []
@@ -677,30 +483,30 @@ export const store = new Vuex.Store({
         console.log('programs/' + event.id + '/submissions/')
         if (state._debug === undefined || state._debug === null) {
           db.ref('programs/' + event.id + '/submissions/')
-          .orderByChild('id')
-          .once('value', (snapshot) => {
-            let submissions = Object.values(snapshot.val())
-            commit('resetThemesFilter')
-            commit('loadQueue', submissions)
-            commit('refreshSubmissionStatus')
-          }).then(() => {
-            commit('toggleIsWorking', false)
-            console.log('... submissions loaded.')
-          })
+            .orderByChild('id')
+            .once('value', (snapshot) => {
+              let submissions = Object.values(snapshot.val())
+              commit('resetThemesFilter')
+              commit('loadQueue', submissions)
+              commit('refreshSubmissionStatus')
+            }).then(() => {
+              commit('toggleIsWorking', false)
+              console.log('... submissions loaded.')
+            })
         } else {
           db.ref('programs/' + event.id + '/submissions/')
-          .orderByChild('id')
-          .limitToFirst(state._debug.limitToFirst)
-          .once('value', (snapshot) => {
+            .orderByChild('id')
+            .limitToFirst(state._debug.limitToFirst)
+            .once('value', (snapshot) => {
             // console.('... submissions loaded')
-            let submissions = Object.values(snapshot.val())
-            commit('resetThemesFilter')
-            commit('loadQueue', submissions)
-            commit('refreshSubmissionStatus')
-          }).then(() => {
-            commit('toggleIsWorking', false)
-            console.log('... submissions loaded.')
-          })
+              let submissions = Object.values(snapshot.val())
+              commit('resetThemesFilter')
+              commit('loadQueue', submissions)
+              commit('refreshSubmissionStatus')
+            }).then(() => {
+              commit('toggleIsWorking', false)
+              console.log('... submissions loaded.')
+            })
         }
       })
     },

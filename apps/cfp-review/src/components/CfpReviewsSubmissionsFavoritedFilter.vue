@@ -9,6 +9,7 @@
           ></v-checkbox>
       </v-flex>
     </v-layout>
+    <v-layout>
       <v-flex xs12>
         <v-divider></v-divider>
       </v-flex>
@@ -41,6 +42,5 @@ export default {
   components: {}
 }
 </script>
-
 
 <style></style>

@@ -13,7 +13,7 @@
     </v-toolbar>
     <v-list two-line>
       <v-list-group v-for="type in types" :key="type.id" :value="type.active">
-        <v-list-tile slot="item" @click="">
+        <v-list-tile slot="item">
           <v-list-tile-action>
             <v-icon color="type.iconColor" class="type.iconClass">{{ type.icon }}</v-icon>
           </v-list-tile-action>

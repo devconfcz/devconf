@@ -59,20 +59,20 @@ export default {
         incrementValue: incrementValue
       }
       this.$store.dispatch('incrementVoteCount', payload)
-      .then(() => {
+        .then(() => {
         // console.log(`${this.submission.id} -> ${incrementValue}`)
-        this.$set(this.voted, this.submission.id, incrementValue)
-        // this.$store.dispatch('refreshSubmissionStatus')
-        let payload = {
-          incrementValue: incrementValue,
-          bucketName: this.bucketName,
-          submissionId: this.submission.id
-        }
-        this.$store.dispatch('updateSubmissionBucket', payload)
-      })
-      .catch((e) => {
-        console.log(`ERROR: ${e}`)
-      })
+          this.$set(this.voted, this.submission.id, incrementValue)
+          // this.$store.dispatch('refreshSubmissionStatus')
+          let payload = {
+            incrementValue: incrementValue,
+            bucketName: this.bucketName,
+            submissionId: this.submission.id
+          }
+          this.$store.dispatch('updateSubmissionBucket', payload)
+        })
+        .catch((e) => {
+          console.log(`ERROR: ${e}`)
+        })
     }
   },
   props: ['submission', 'bucketName']

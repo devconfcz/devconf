@@ -288,7 +288,7 @@ export default {
       if (this.activeTrackFilter[track.id] !== undefined &&
           this.activeTrackFilter[track.id] !== null &&
           this.activeTrackFilter[track.id] !== false
-        ) {
+      ) {
         this.$set(this.activeTrackFilter, track.id, false)
       } else {
         this.$set(this.activeTrackFilter, track.id, true)

@@ -6,7 +6,7 @@ import App from '@/Cfpoint'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',  // https://router.vuejs.org/en/essentials/history-mode.html
+  mode: 'history', // https://router.vuejs.org/en/essentials/history-mode.html
   routes: [
     {
       path: '/',
