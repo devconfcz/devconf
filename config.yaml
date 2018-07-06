@@ -8,7 +8,7 @@ paths:
 templates: [
     'index.html',
     'media-policy.html',
-    'privacy-policy.html',
+    'privacy-statement.html',
     'coc.html',
     'participation-agreement.html',
     'volunteer-roles.html',

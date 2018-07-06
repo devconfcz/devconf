@@ -9,6 +9,11 @@
     ],
     "redirects": [
       {
+        "source" : "/privacy-policy",
+        "destination" : "https://devconf.info/privacy-statement",
+        "type" : 302
+      },
+      {
         "source" : "/visa",
         "destination" : "https://docs.google.com/forms/d/e/1FAIpQLSePpHAXaAYl2CSun15V56Hyiq_emJbZBqFrukqOmArxHXhSvg/viewform",
         "type" : 302
@@ -86,6 +91,11 @@
       {
         "source": "/us/2018/registration",
         "destination": "https://www.eventbrite.com/e/devconfus-2018-tickets-43966825960",
+        "type": 301
+      },
+      {
+        "source": "/us/2018/registration/speaker",
+        "destination": "https://www.eventbrite.com/e/devconfus-2018-tickets-43966825960?discount=speaker_devconf_us_18",
         "type": 301
       },
       {
