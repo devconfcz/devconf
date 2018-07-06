@@ -85,7 +85,7 @@
       },
       {
         "source": "/in/2018/schedule",
-        "destination": "https://devconfin2018.sched.com/grid/",
+        "destination": "https://devconfin2018.sched.com/",
         "type": 301
       },
       {
@@ -100,7 +100,7 @@
       },
       {
         "source": "/us/2018/schedule",
-        "destination": "https://devconfus2018.sched.com/grid/",
+        "destination": "https://devconfus2018.sched.com/",
         "type": 301
       }
 
