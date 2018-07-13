@@ -75,7 +75,7 @@
       },
       {
         "source" : "/us/cfp",
-        "destination" : "https://docs.google.com/forms/d/e/1FAIpQLSfBUSs7rin0RPXo-6A-yoUkeVnVFXlSYkt7-tnTBJjoC72OBw/viewform",
+        "destination" : "https://devconf.info/devconf-error-cfp-not-open.html",
         "type" : 302
       },
       {
@@ -102,8 +102,27 @@
         "source": "/us/2018/schedule",
         "destination": "https://devconfus2018.sched.com/",
         "type": 301
+      },
+      {
+        "source": "/cz/2019/registration",
+        "destination": "https://www.eventbrite.com/e/devconfcz-19-tickets-48064847252",
+        "type": 301
+      },
+      {
+        "source": "/cz/2019/registration/speaker",
+        "destination": "https://www.eventbrite.com/e/devconfcz-19-tickets-48064847252?discount=speaker_devconf_cz_19",
+        "type": 301
+      },
+      {
+        "source": "/cz/2019/registration/redhat",
+        "destination": "https://www.eventbrite.com/e/devconfcz-19-tickets-48064847252?discount=red_hat_devconf_cz_19",
+        "type": 301
+      },
+      {
+        "source": "/us/2018/schedule",
+        "destination": "https://devconfcz19.sched.com/",
+        "type": 301
       }
-
     ]
   }
 }
