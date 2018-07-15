@@ -122,6 +122,16 @@
         "source": "/us/2018/schedule",
         "destination": "https://devconfcz19.sched.com/",
         "type": 301
+      },
+      {
+        "source": "/subscribe/announcements",
+        "destination": "http://eepurl.com/dswbmX",
+        "type": 301
+      },
+      {
+        "source": "/subscribe/profile",
+        "destination": "http://eepurl.com/dA75yr",
+        "type": 301
       }
     ]
   }
