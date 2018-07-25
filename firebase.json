@@ -64,6 +64,11 @@
         "type" : 301
       },
       {
+        "source" : "/cfp",
+        "destination" : "https://devconf.info/devconf-error-cfp-not-open.html",
+        "type" : 302
+      },
+      {
         "source" : "/cz/cfp",
         "destination" : "https://devconf.info/devconf-error-cfp-not-open.html",
         "type" : 302
