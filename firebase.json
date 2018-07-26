@@ -19,6 +19,11 @@
         "type" : 302
       },
       {
+        "source" : "/youtube",
+        "destination" : "https://www.youtube.com/channel/UCmYAQDZIQGm_kPvemBc_qwg",
+        "type" : 302
+      },
+      {
         "source" : "/cz/chat",
         "destination" : "https://t.me/devconfcz",
         "type" : 301
