@@ -72,7 +72,7 @@ export default {
     }
   },
   methods: {
-    backStepperPosition () {let promise = 
+    backStepperPosition () {
       let newPosition = this.$store.getters.stepperPosition - 1
       this.$store.commit('updateStepperPosition', newPosition)
     },
