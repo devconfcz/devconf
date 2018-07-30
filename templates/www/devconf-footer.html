@@ -1,3 +1,10 @@
+{% if not email_url %} {% set email_url = "mailto:hello@devconf.info" %} {% endif %}
+{% if not twitter_url %} {% set twitter_url = "https://twitter.com/devconf_info" %} {% endif %}
+{% if not facebook_url %} {% set facebook_url = "https://www.facebook.com/DevConf.info" %} {% endif %}
+{% if not youutube_url %} {% set youtube_url = "https://www.youtube.com/channel/UCmYAQDZIQGm_kPvemBc_qwg" %} {% endif %}
+{% if not github_url %} {% set github_url = "https://github.com/devconfcz/devconf" %} {% endif %}
+{% if not telegram_url %} {% set telegram_url = "" %} {% endif %}
+
 <!-- BEGIN footer -->
 
   <div class="menu-bottom-bar menu-bottom-bar-five menu-bottom-bar-icon light-menu-bar">
@@ -32,12 +39,12 @@
     <div class="decoration"></div>
 
     <div class="footer-socials">
-      <a href="mailto:hello@devconf.info" class="icon icon-round no-border icon-xs mail-bg"><i class="fa fa-envelope"></i></a>
-      <!-- <a href="https://t.me/devconfcz" class="icon icon-round no-border icon-xs phone-bg"><i class="fa fa-send-o"></i></a> -->
-      <a href="https://www.facebook.com/DevConf.info" class="icon icon-round no-border icon-xs facebook-bg"><i class="fa fa-facebook"></i></a>
-      <a href="https://twitter.com/devconf_info" class="icon icon-round no-border icon-xs twitter-bg"><i class="fa fa-twitter"></i></a>
-      <a href="https://www.youtube.com/channel/UCmYAQDZIQGm_kPvemBc_qwg" class="icon icon-round no-border icon-xs youtube-bg"><i class="fa fa-youtube"></i></a>
-      <a href="https://github.com/devconfcz/devconf" class="icon icon-round no-border icon-xs bg-night-light"><i class="fa fa-github"></i></a>
+      <a href="{{ email_url }}" class="icon icon-round no-border icon-xs mail-bg"><i class="fa fa-envelope"></i></a>
+      {% if telegram_url %}<a href="{{ telegram_url }}" class="icon icon-round no-border icon-xs phone-bg"><i class="fa fa-send-o"></i></a> {% endif %}
+      <a href="{{ facebook_url }}" class="icon icon-round no-border icon-xs facebook-bg"><i class="fa fa-facebook"></i></a>
+      <a href="{{ twitter_url }}" class="icon icon-round no-border icon-xs twitter-bg"><i class="fa fa-twitter"></i></a>
+      <a href="{{ youtube_url }}" class="icon icon-round no-border icon-xs youtube-bg"><i class="fa fa-youtube"></i></a>
+      <a href="{{ github_url }}" class="icon icon-round no-border icon-xs bg-night-light"><i class="fa fa-github"></i></a>
     </div>
 
     <div class="decoration"></div>

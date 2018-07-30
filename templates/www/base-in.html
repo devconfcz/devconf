@@ -1,31 +1,14 @@
-<!DOCTYPE html>
-<html lang="{{ lang }}">
-<head>
+{% set google_analytics_id = 'UA-83802563-5' %}
 
-  {% block meta %} {% include 'meta-in.html' %} {% endblock %}
+{% set email_url = "mailto:info@devconf.in" %}
+{% set twitter_url = "https://twitter.com/devconf_in" %}
+{% set facebook_url = "https://www.facebook.com/DevConf.IN" %}
+{% set telegram_url = "https://t.me/devconfin" %}
 
-  {% block styles %} {% include 'styles.html' %} {% endblock %}
+{% set page_title = "DevConf.IN | August 4-5, 2018 - Bengaluru, India" %}
 
-  <title>
-    {% block title %}{{ _('DevConf.IN - Community Contributors Conference') }}{% endblock %}
-  </title>
+{% set site_url = "https://devconf.in" %}
+{% set site_name = "DevConf.IN" %}
+{% set site_image = "https://devconf.info/images/icon/in/devconf-in-icon.svg" %}
 
-</head>
-
-<body>
-
-  <div class="page-preloader page-preloader-dark">
-      <div class="loader loader-frames"><i></i><i></i><i></i><i></i></div>
-  </div>
-
-  {% block navigation %}{% include 'navigation-in.html' %}{% endblock %}
-
-  {% block body %}{% endblock %}
-
-  <div class="sidebar-tap-close"></div>
-
-</body>
-
-  {% block scripts %} {% include 'scripts-in.html' %} {% endblock %}
-
-</html>
+{% include 'base.html' %}
