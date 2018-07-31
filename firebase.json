@@ -11,7 +11,7 @@
       {
         "source" : "/privacy-policy",
         "destination" : "https://devconf.info/privacy-statement",
-        "type" : 302
+        "type" : 301
       },
       {
         "source" : "/visa",
@@ -20,8 +20,8 @@
       },
       {
         "source" : "/youtube",
-        "destination" : "https://www.youtube.com/channel/UCmYAQDZIQGm_kPvemBc_qwg",
-        "type" : 302
+        "destination" : "https:///www.youtube.com/c/DevConf_INFO",
+        "type" : 301
       },
       {
         "source" : "/cz/chat",
