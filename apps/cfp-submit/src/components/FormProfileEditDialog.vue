@@ -20,7 +20,7 @@
       <v-card-text>
         <v-container>
           <v-layout>
-            <v-flex xs6
+            <v-flex xs4
             text-xs-center
             align-center
             justify-center
@@ -31,36 +31,37 @@
                 :size="300"
                 color="grey lighten-4"
               >
-                <img src="https://firebasestorage.googleapis.com/v0/b/cward-cfpoint-devel.appspot.com/o/profile-blank.jpg?alt=media&token=59510d6a-861c-4b46-a906-abf3f554e0e2" alt="avatar">
+                <img :src="currentUser.profile.photo_url" alt="avatar">
               </v-avatar>
-            </div>
-            <div>
-              <v-btn
-                large
-                @click.native="alert('UPLOAD')"
-              >
-                <v-icon>edit</v-icon>
-                Upload
-              </v-btn>
+              <p class="mt-3">
+                {{ currentUser.profile.email }}
+              </p>
             </div>
             </v-flex>
-            <v-flex xs6>
-              <v-form ref="form" v-model="valid" lazy-validation>
+
+            <v-flex xs8>
+              <v-form ref="form" v-model="valid">
                 <v-text-field
-                  :value="currentUser.profile.display_name"
+                  v-model="currentUser.profile.display_name"
                   :rules="nameRules"
                   :counter="30"
                   label="Full Name"
                   required
                 ></v-text-field>
                 <v-text-field
-                  :value="currentUser.profile.short_description"
+                  v-model="currentUser.profile.photo_url"
+                  :rules="avatarRules"
+                  label="Avatar URL"
+                  required
+                ></v-text-field>
+                <v-text-field
+                  v-model="currentUser.profile.short_description"
                   :rules="shortDescriptionRules"
                   label="Short description (eg, job title, role, whatever describes you in a few words)"
                   required
                 ></v-text-field>
                 <v-text-field
-                  :value="currentUser.profile.description"
+                  v-model="currentUser.profile.description"
                   :rules="biographyRules"
                   :counter="300"
                   label="Bio / About me"
@@ -68,7 +69,7 @@
                   required
                 ></v-text-field>
                 <v-select
-                  value="currentUser.profile.status || []"
+                  v-model="currentUser.profile.status"
                   :items="statusOptions"
                   :rules="statusRules"
                   label="Select one or more of the following which describes your current situation best..."
@@ -79,7 +80,7 @@
 
                 <v-btn
                   :disabled="!valid"
-                  @click.native="alert('SAVED')"
+                  @click="updateProfile()"
                 >
                   submit
                 </v-btn>
@@ -87,9 +88,6 @@
               </v-form>
             </v-flex>
 
-            <v-flex xs4 offset-xs2>
-
-            </v-flex>
           </v-layout>
         </v-container>
       </v-card-text>
@@ -106,6 +104,9 @@ export default {
       nameRules: [
         v => !!v || 'This field is required',
         v => (v && v.length <= 30) || 'Name must be less than 30 characters'
+      ],
+      avatarRules: [
+        v => !!v || 'This field is required'
       ],
       shortDescriptionRules: [
         v => !!v || 'This field is required',
@@ -161,6 +162,29 @@ export default {
   methods: {
     toggleProfileEditDialog () {
       this.$store.commit('toggleProfileEditDialog')
+    },
+    updateProfile () {
+      if (this.$refs.form.validate()) {
+        var user = {}
+        user.eid = this.currentUser.eid
+        // check that eid exists...
+        user.uid = this.currentUser.uid
+        user.display_name = this.currentUser.profile.display_name
+        // user.mobile = this.currentUser.profile.mobile
+        user.photo_url = this.currentUser.profile.photo_url
+        user.short_description = this.currentUser.profile.short_description
+        user.description = this.currentUser.profile.description
+        user.organization = this.currentUser.profile.organization
+        // user.origin_country = this.currentUser.profile.origin_country
+        // user.github_url = this.currentUser.profile.github_url
+        // user.twitter_url = this.currentUser.profile.twitter_url
+        // user.website_url = this.currentUser.profile.website_url
+        // user.newsletters_subscribe = this.currentUser.profile.newsletters_subscribe
+        // user.gdpr_consent = this.currentUser.profile.gdpr_consent
+
+        console.log('SAVED', this.currentUser.profile)
+        this.$store.dispatch('saveUpdatedProfile', user)
+      }
     }
   },
   props: ['currentUser']

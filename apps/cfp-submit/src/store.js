@@ -68,9 +68,10 @@ export default new Vuex.Store({
       return state._profileEditDialogIsOpen
     }
   },
-  mutations: {
+  mutations: { // commit
     loginFailed (state) {
       state._isLoginError = true
+      state._isLoading = false
     },
     logOutCurrentUser (state) {
       // console.log('Logged out user!')
@@ -88,8 +89,8 @@ export default new Vuex.Store({
       state._profileEditDialogIsOpen = !state._profileEditDialogIsOpen
     }
   },
-  actions: {
-    logInPopup ({ state, commit }) {
+  actions: { // dispatch
+    logInPopup ({state, commit}) {
       // console.log('actions.logInPopup')
       var provider = new firebase.auth.GoogleAuthProvider()
       provider.setCustomParameters({
@@ -98,11 +99,12 @@ export default new Vuex.Store({
       firebase.auth().signInWithPopup(provider)
       // FIXME: remove state, commit passin vars?
     },
-    logOut ({ state, commit }) {
+    logOut ({state, commit}) {
       firebase.auth().signOut()
-      // FIXME: set isloggedin false
+      commit('logOutCurrentUser')
+      commit('loginFailed')
     },
-    initAuth ({ state, commit, dispatch }) {
+    initAuth ({state, commit, dispatch}) {
       firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
           // User is signed in.
@@ -117,12 +119,23 @@ export default new Vuex.Store({
               commit('updateCurrentUser', user)
             })
         } else {
-          commit('logOutCurrentUser')
+          dispatch('logOut')
         }
       }, (error) => {
         console.log(`ERROR: ${error}`)
         commit('loginFailed')
         throw new Error(error)
+      })
+    },
+    saveUpdatedProfile ({state, commit, dispatch}, user) {
+      user._mtime = new Date()
+      var keyRef = db.ref().child('profiles').child(user.eid)
+      return keyRef.update(user, function (error) {
+        if (error) {
+          console.log('Write FAIL: ', error)
+        } else {
+          console.log('Write SUCCESS')
+        }
       })
     }
   }
