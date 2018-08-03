@@ -134,6 +134,11 @@
         "type": 301
       },
       {
+        "source": "/subscribe",
+        "destination": "http://eepurl.com/dswbmX",
+        "type": 301
+      },
+      {
         "source": "/subscribe/announcements",
         "destination": "http://eepurl.com/dswbmX",
         "type": 301
