@@ -1,11 +1,3 @@
-{% extends "base-in.html" %}
+{% set body_template = "in/2018/devconfin-2018-eventpage.html" %}
 
-{% block title %}DevConf.IN | {{ _('August 4-5, 2018 - Bengaluru, India') }}{% endblock %}
-
-{% block nav_logo %}<img src="{{ '/images/in/devconf-in-webopt.svg'|static }}" class="navbar-brand top-branding" />{% endblock %}
-
-{% block body %}
-
-  {% include 'in/2018/index.html' %}
-
-{% endblock %}
+{% include "base-in.html" %}

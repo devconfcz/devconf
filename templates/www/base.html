@@ -6,9 +6,7 @@
 
   {% block styles %} {% include 'styles.html' %} {% endblock %}
 
-  <title>
-    {% block title %}{{ _('DevConf - Community Contributors Conference') }}{% endblock %}
-  </title>
+  <title> {{ page_title }} </title>
 
 </head>
 
@@ -18,9 +16,17 @@
       <div class="loader loader-frames"><i></i><i></i><i></i><i></i></div>
   </div>
 
-  {% block navigation %}{% include 'navigation.html' %}{% endblock %}
+  {% block navigation %} {% include 'navigation.html' %} {% endblock %}
 
-  {% block body %}{% endblock %}
+  <div id="page-content" class="header-clear-full">
+    <div id="page-content-scroll">
+
+      {% block body %} {% include body_template %} {% endblock %}
+
+      {% block footer %} {% include 'devconf-footer.html' %} {% endblock %}
+
+    </div>
+  </div>
 
   <div class="sidebar-tap-close"></div>
 

@@ -1,11 +1,3 @@
-{% extends "base-us.html" %}
+{% set body_template = "us/2018/devconfus-2018-eventpage.html" %}
 
-{% block title %}DevConf.us | {{ _('August 17-19, 2018 - Boston, USA') }}{% endblock %}
-
-{% block nav_logo %}<img src="{{ '/images/us/devconf-us-webopt.svg'|static }}" class="navbar-brand top-branding" />{% endblock %}
-
-{% block body %}
-
-  {% include 'us/2018/index.html' %}
-
-{% endblock %}
+{% include "base-us.html" %}

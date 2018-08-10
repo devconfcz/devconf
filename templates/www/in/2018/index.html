@@ -1,20 +1,3 @@
-  {% extends "base-in.html" %}
+{% set body_template = "in/2018/devconfin-2018-eventpage.html" %}
 
-  {% block title %}DevConf.in | {{ _('August 4-5, 2018 - Bengaluru, India') }}{% endblock %}
-
-  {% block body %}
-  <!-- BEGIN body -->
-
-  <div id="page-content" class="header-clear-full">
-    <div id="page-content-scroll">
-
-    {% include 'in/2018/devconfin-2018-eventpage.html' %}
-
-    {% include 'devconf-footer.html' %}
-
-    </div>
-
-  </div>
-
-  <!-- END body -->
-  {% endblock %}
+{% include "base-in.html" %}

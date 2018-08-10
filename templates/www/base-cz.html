@@ -1,31 +1,14 @@
-<!DOCTYPE html>
-<html lang="{{ lang }}">
-<head>
+{% set google_analytics_id = 'UA-83802563-6' %}
 
-  {% block meta %} {% include 'meta-cz.html' %} {% endblock %}
+{% set email_url = "mailto:info@devconf.cz" %}
+{% set twitter_url = "https://twitter.com/devconf_cz" %}
+{% set facebook_url = "https://www.facebook.com/DevConf.CZ" %}
+{% set telegram_url = "https://t.me/devconfcz" %}
 
-  {% block styles %} {% include 'styles.html' %} {% endblock %}
+{% set page_title = "DevConf.cz | January 25-27 2019 - Brno, Czechia" %}
 
-  <title>
-    {% block title %}{{ _('DevConf.CZ - Community Contributors Conference') }}{% endblock %}
-  </title>
+{% set site_url = "https://devconf.cz" %}
+{% set site_name = "DevConf.CZ" %}
+{% set site_image = "https://devconf.info/images/icon/cz/devconf-cz-icon.svg" %}
 
-</head>
-
-<body>
-
-  <div class="page-preloader page-preloader-dark">
-      <div class="loader loader-frames"><i></i><i></i><i></i><i></i></div>
-  </div>
-
-  {% block navigation %}{% include 'navigation.html' %}{% endblock %}
-
-  {% block body %}{% endblock %}
-
-  <div class="sidebar-tap-close"></div>
-
-</body>
-
-  {% block scripts %} {% include 'scripts-in.html' %} {% endblock %}
-
-</html>
+{% include 'base.html' %}
