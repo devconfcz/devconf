@@ -23,6 +23,7 @@ templates: [
     'us/2018/index.html',
     'in/index.html',
     'in/2018/index.html',
+    'in/2019/index.html',
     'devconf-error-cfp-not-open.html'
 ]
 
