@@ -134,6 +134,11 @@
         "type": 301
       },
       {
+        "source": "/us/info",
+        "destination": "https://firebasestorage.googleapis.com/v0/b/devconf-info-prod.appspot.com/o/DevConfUS_2018_Boston_Attendee_Brochure.pdf?alt=media&token=ad83d10e-4bec-496f-8e6d-0f7882e99e17",
+        "type": 302
+      },
+      {
         "source": "/subscribe",
         "destination": "http://eepurl.com/dswbmX",
         "type": 301
