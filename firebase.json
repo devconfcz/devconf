@@ -109,6 +109,11 @@
         "type": 301
       },
       {
+        "source": "/us/2018/registration/walkin",
+        "destination": "https://www.eventbrite.com/e/devconfus-2018-tickets-43966825960?discount=walkin",
+        "type": 302
+      },
+      {
         "source": "/us/2018/schedule",
         "destination": "https://devconfus2018.sched.com/",
         "type": 301
