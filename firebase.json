@@ -119,6 +119,11 @@
         "type": 301
       },
       {
+        "source": "/us/2018/feedback",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSc1dIsGC3-KDA96ufymvkSO-pZKm_iRVKouaGOWGPQTIeO3xw/viewform",
+        "type": 301
+      },
+      {
         "source": "/cz/2019/registration",
         "destination": "https://www.eventbrite.com/e/devconfcz-19-tickets-48064847252",
         "type": 301
