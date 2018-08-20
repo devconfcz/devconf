@@ -70,12 +70,12 @@
       },
       {
         "source" : "/cfp",
-        "destination" : "https://devconf.info/devconf-error-cfp-not-open.html",
+        "destination" : "https://docs.google.com/forms/d/e/1FAIpQLSfa-f48nW4W0d_J_QJw5XWwpfklytcCjLLQo2M0J5vLqUmjUQ/viewform",
         "type" : 302
       },
       {
         "source" : "/cz/cfp",
-        "destination" : "https://devconf.info/devconf-error-cfp-not-open.html",
+        "destination" : "https://docs.google.com/forms/d/e/1FAIpQLSfa-f48nW4W0d_J_QJw5XWwpfklytcCjLLQo2M0J5vLqUmjUQ/viewform",
         "type" : 302
       },
       {
@@ -116,6 +116,11 @@
       {
         "source": "/us/2018/schedule",
         "destination": "https://devconfus2018.sched.com/",
+        "type": 301
+      },
+      {
+        "source": "/us/2018/feedback",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSc1dIsGC3-KDA96ufymvkSO-pZKm_iRVKouaGOWGPQTIeO3xw/viewform",
         "type": 301
       },
       {
