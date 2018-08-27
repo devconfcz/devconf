@@ -120,9 +120,10 @@
 /*-----------------------------*/
 /*----CSS Mobile Page Reset----*/
 /*-----------------------------*/
-
-::-webkit-scrollbar {
-    display: none;
+@media (max-device-width: 1000px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 * {
@@ -7218,7 +7219,9 @@ calendar*{display:block; overflow:hidden;}
 /*We've placed them here because the sidebar is VERY sensitive*/
 /*EDIT ONLY if you have the required skill!!!*/
 
-*::-webkit-scrollbar{display: none; }
+@media (max-device-width: 1000px) {
+    *::-webkit-scrollbar{display: none; }
+}
 
 html, body {overflow-x:hidden;}
 .sidebar-left, .sidebar-right{
