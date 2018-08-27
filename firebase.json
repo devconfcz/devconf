@@ -9,6 +9,11 @@
     ],
     "redirects": [
       {
+        "source" : "/index.html",
+        "destination" : "https://devconf.info/",
+        "type" : 301
+      },
+      {
         "source" : "/privacy-policy",
         "destination" : "https://devconf.info/privacy-statement",
         "type" : 301
