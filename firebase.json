@@ -1,7 +1,6 @@
 {
   "hosting": {
     "public": "./build",
-    "cleanUrls": true,
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -173,6 +172,6 @@
         "destination": "http://eepurl.com/dA75yr",
         "type": 301
       }
-    ]
+      ]
   }
 }
