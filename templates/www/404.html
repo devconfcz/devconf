@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}DevConf | Open Source Contributors Conference }}{% endblock %}
+
+{% block body %}
+<!-- BEGIN body -->
+
+<div id="page-content" class="header-clear-full">
+  <div id="page-content-scroll">
+
+      <div class="content no-material full-page full-bottom full-top">
+        <div class="container">
+          <div class="centered-page">
+
+              <img data-original="{{ '/images/404.png'|url }} " class="preload-image full-bottom responsive-image-404" alt="img" />
+              <h1 class="found-page">Whoops!</h1>
+              <h5 class="found-page">We couldn't find page you were looking for.</h5>
+              <h5 class="found-page">It seems that our crystal ball isn't working right now.</h5>
+
+            <div class="clear"></div>
+
+          </div>
+        </div>
+      </div>
+
+    {% include 'devconf-footer.html' %}
+
+  </div>
+</div>
+
+<!-- END body -->
+{% endblock %}

@@ -7,6 +7,12 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "https://devconf.info/404.html"
+      }
+    ],
     "redirects": [
       {
         "source" : "/index.html",
