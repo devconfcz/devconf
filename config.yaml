@@ -24,7 +24,8 @@ templates: [
     'in/index.html',
     'in/2018/index.html',
     'in/2019/index.html',
-    'devconf-error-cfp-not-open.html'
+    'devconf-error-cfp-not-open.html',
+    '404.html'
 ]
 
 locales: ['en_US', 'cs_CZ', 'sk_SK']
