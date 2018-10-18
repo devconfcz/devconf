@@ -140,6 +140,11 @@
         "type": 301
       },
       {
+	"source": "/poster",
+	"destination": "https://devconf.info/files/DevConfCZ_poster.pdf",
+	"type": 301
+      },	
+      {
         "source": "/cz/2019/registration/speaker",
         "destination": "https://www.eventbrite.com/e/devconfcz-19-tickets-48064847252?discount=speaker_devconf_cz_19",
         "type": 301
