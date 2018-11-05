@@ -18,6 +18,7 @@ templates: [
     'cz/2017/roadshow-prague.html',
     'cz/2018/index.html',
     'cz/2019/index.html',
+    'youth_friendly/index.html',
     'sk/2017/roadshow-bratislava.html',
     'us/index.html',
     'us/2018/index.html',
