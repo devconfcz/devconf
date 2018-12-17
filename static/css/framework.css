@@ -234,7 +234,6 @@ p {
 p > a {	display: inline;	text-decoration: none;}
 p > a:hover{text-decoration: underline;}
 p > span {display: inline;}
-p strong{font-size:15px;}
 span > a {	display: inline;}
 a > span {	display: inline;}
 a {	text-decoration: none;}

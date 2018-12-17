@@ -124,13 +124,9 @@
 /* Typeface settings */
 
 body, p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
+    font-family: "overpass", sans-serif;
+    /* font-weight: 300; */
     /* font-size: .80em; */
-}
-
-p strong {
-  font-size: 1em;
 }
 
 /* Container settings */
