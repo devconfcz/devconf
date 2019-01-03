@@ -3,6 +3,32 @@
 <!DOCTYPE html>
 <html lang="{{ lang }}">
 <head>
+  <script type="text/javascript">
+    path = "";
+    if (window.location.pathname == "" || window.location.pathname == "/") {
+      switch(window.location.hostname) {
+        case "devconf.cz":
+          path = "/cz";
+          break;
+        case "devconf.in":
+          path = "/in";
+          break;
+        case "devconf.us":
+          path = "/us";
+          break;
+      }
+    }
+    if (path) {
+      port = window.location.port;
+      if (port) {
+        //alert('http://devconf.info:' + port + path);
+        window.location.href = 'http://devconf.info:' + port + path;
+      } else { //technically not nec. but prettier
+        //alert('http://devconf.info' + path);
+        window.location.href = 'http://devconf.info' + path;
+      }
+    }
+  </script>
 
   {% block meta %} {% include 'meta.html' %} {% endblock %}
 
