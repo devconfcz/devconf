@@ -149,6 +149,10 @@ body, p {
     font-weight: 300;
 }
 
+.container ul li a {
+    display: inline !important;
+}
+
 .container img {
     margin-left:auto;
     margin-right:auto;
