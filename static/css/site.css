@@ -144,7 +144,7 @@ body, p {
 .container ul li {
     list-style:none;
     line-height: 1em;
-    margin-bottom: 3px;
+    margin-bottom: 15px;
     color: #000000;
     font-weight: 300;
 }
