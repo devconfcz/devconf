@@ -85,7 +85,7 @@ See also the list of [contributors](https://github.com/devconfcz/devconf/contrib
 
 ## Aknowledgements
 
-* ** Wikipedia ** - for multiple images and information
+* *[Wikipedia](http://wikipedia.org)* - for multiple images and information
 
 ## License
 
