@@ -188,6 +188,11 @@
         "source": "/subscribe/profile",
         "destination": "http://eepurl.com/dA75yr",
         "type": 301
+      },
+      {
+	"source": "/wifi",
+	"destination": "https://devconf.info/cz/2019/wifi.html",
+	"type": 302
       }
     ]
   }
