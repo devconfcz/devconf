@@ -2,21 +2,42 @@
 <head>
 <title>DevConf CZ 2019 Wi-Fi</title>
 <style>
+body
+{
+	font-family: Arial, sans-serif;
+}
+
 div 	
 {
 	width: 23%;
 	margin: 5% auto 2%;
 }
+
+div.slide
+{
+	width: 99%;
+	margin: 0px;
+	height: 100%;
+	position: absolute;
+	opacity: 0;
+	z-index: 1;
+}
+
+div.active
+{
+	opacity: 1;
+	z-index: 3;
+}
+
 img
 {
 	width: 100%;
 }
 
-h1, h2 
+h1, h2, p
 {
 	text-align: center;
 	font-size: 450%;
-	font-family: Arial, sans-serif;
 }
 
 h2
@@ -25,13 +46,44 @@ h2
 	margin: 0px;
 	font-weight: normal;
 }
+
+.red
+{
+	color: red;
+}
 </style>
+<script src="/js/jquery.js"></script>
+<script>
+	function slideSwitch(){
+        	var $active = $("div.slide.active");
+                if ( $active.length == 0 ) $active = $("div.slide:last");
+
+               	var $next =  $active.next().length ? $active.next() : $("div.slide:first") ;
+             	$active.addClass("last-active");
+              	$next.css({opacity: 0.0})
+                     .addClass("active")
+                     .animate({opacity: 1.0}, 2000);
+                           
+               	$active.animate({opacity: 0.0},2000).removeClass("active last-active");
+               	setTimeout( "slideSwitch()", $(".slide.active").attr("time") );
+	}
+	$(function() {
+                if($(".slide").length > 1){
+               		setTimeout( "slideSwitch()", $(".slide.active").attr("time"));
+                }
+	});
+
+</script>
 </head>
 <body>
+<div class="slide active" time="8000">
 <div><img src="/images/icon/cz/devconf-cz-icon.png"></div>
 <h1>Wi-Fi Credentials</h1>
 <h2>SSID: <strong>VUTBRNO</strong></h2>
 <h2>USER: <strong>devconfcz</strong></h2>
-<h2>PASS: <strong>Brno 2019</strong></h2>
-
+<h2>PASS: <strong>Brno2019</strong></h2>
+</div>
+<div class="slide" time="10000">
+<p>Move to the middle and use every seat. The fire code says <strong class="red">NO STANDING ALLOWED</strong>.</p>
+</div>
 </body>

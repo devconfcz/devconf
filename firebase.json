@@ -146,7 +146,7 @@
       },	
       {
 	"source": "/map",
-	"destination": "https://devconf.info/files/DevConfCZ_map.pdf",
+	"destination": "https://devconf.info/images/maps/devconf_19_map.svg",
 	"type": 301
       },
       {
