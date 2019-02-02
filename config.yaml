@@ -24,6 +24,7 @@ templates: [
     'sk/2017/roadshow-bratislava.html',
     'us/index.html',
     'us/2018/index.html',
+    'us/2019/index.html',
     'in/index.html',
     'in/2018/index.html',
     'in/2019/index.html',
