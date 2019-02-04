@@ -4,7 +4,7 @@
 <html lang="{{ lang }}">
 <head>
   <script type="text/javascript">
-    path = "";
+    path = window.location.pathname;
     if (window.location.pathname == "" || window.location.pathname == "/") {
       switch(window.location.hostname) {
         case "devconf.cz":
@@ -18,15 +18,8 @@
           break;
       }
     }
-    if (path) {
-      port = window.location.port;
-      if (port) {
-        //alert('http://devconf.info:' + port + path);
-        window.location.href = 'http://devconf.info:' + port + path;
-      } else { //technically not nec. but prettier
-        //alert('http://devconf.info' + path);
-        window.location.href = 'http://devconf.info' + path;
-      }
+    if (window.location.hostname != "devconf.info") {
+       window.location.href = 'https://devconf.info' + path; 
     }
   </script>
 
