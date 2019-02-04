@@ -3,6 +3,25 @@
 <!DOCTYPE html>
 <html lang="{{ lang }}">
 <head>
+  <script type="text/javascript">
+    path = window.location.pathname;
+    if (window.location.pathname == "" || window.location.pathname == "/") {
+      switch(window.location.hostname) {
+        case "devconf.cz":
+          path = "/cz";
+          break;
+        case "devconf.in":
+          path = "/in";
+          break;
+        case "devconf.us":
+          path = "/us";
+          break;
+      }
+    }
+    if (window.location.hostname != "devconf.info") {
+       window.location.href = 'https://devconf.info' + path; 
+    }
+  </script>
 
   {% block meta %} {% include 'meta.html' %} {% endblock %}
 
