@@ -8,7 +8,7 @@
         <a href="{{ 'http://bit.ly/devconf_us-cfp'|url(lang=lang) }}" target="_blank" class="border-blue-dark"><i class="fa fa-code"></i><em>Submit a proposal</em></a>
         <a href="{{ 'http://bit.ly/devconf_us-cfp'|url(lang=lang) }}" target="_blank" class="border-magenta-dark selected-bottom-bar"><i class="fa fa-bullhorn"></i><em>Run a booth</em></a>
         <a href="{{ 'http://bit.ly/devconf_us-cfp'|url(lang=lang) }}" target="_blank" class="border-orange-dark"><i class="fa fa-coffee"></i><em>Host a BoF</em></a>
-        <a href="{{ '/devconf-error-cfp-not-open.html'|url(lang=lang) }}" target="_blank" class="border-night-light"><i class="fa fa-leaf"></i><em>Volunteer</em></a>
+        <a href="{{ 'http://bit.ly/devconf_us-cfp'|url(lang=lang) }}" target="_blank" class="border-night-light"><i class="fa fa-leaf"></i><em>Volunteer</em></a>
         <div class="clear"></div>
       </div>
 
@@ -16,7 +16,7 @@
 
       <div class="notification-small border-green-dark" style="margin-bottom: 5px; margin-top: 5px">
           <strong class="bg-green-dark"><i class="fa fa-bell"></i></strong>
-          <p>{{_('<a href="https://devconf.info/us/2018/schedule" target="_blank">Schedule is live</a>') }}</p>
+          <p>{{_('<a href="https://devconf.info/us/2019/schedule" target="_blank">Schedule is live</a>') }}</p>
       </div>
 
       <div class="notification-small border-red-dark" style="margin-bottom: 5px; margin-top: 5px">
@@ -28,14 +28,14 @@
       <!--
       <div class="notification-small border-green-dark" style="margin-bottom: 5px; margin-top: 5px">
           <strong class="bg-green-dark"><i class="fa fa-info"></i></strong>
-          <p>{{_('<a href="https://wiki.centos.org/Events/Dojo/DevConfUS2018" target="_blank">CentOS dojo</a> side-event announced') }}</p>
+          <p>{{_('<a href="https://wiki.centos.org/Events/Dojo/DevConfUS2019" target="_blank">CentOS dojo</a> side-event announced') }}</p>
       </div>
       -->
 
       <div class="decoration-line-fade decoration-margins"></div>
       <div class="responsive">
         <p>{{ _('DevConf.US 2019 is the 2nd annual, free, <a href="https://redhat.com">Red Hat</a> sponsored technology conference for community project and professional contributors to Free and Open Source technologies at the Boston University in the historic city of Boston, USA.') }}</p>
-        <p><strong>{{ _('When') }}:</strong> {{ _('Friday, August 17 to Sunday, August 19, 2018') }}</p>
+        <p><strong>{{ _('When') }}:</strong> {{ _('Thursday, August 15 to Saturday, August 17, 2019') }}</p>
         <p><strong>{{ _('Venue') }}:</strong> <a href="https://www.openstreetmap.org/way/130209090" target="_blank">{{ _('Boston University, George Sherman Union Building') }}</a> (775 Commonwealth Avenue, Boston)
           <p>{{ _('You should consider attending this DevConf event if you are') }}:</p>
           <ul>
@@ -60,17 +60,15 @@
           <p>{{ _('DevConf events are free, without admission or ticket charge. On-line registration is required though.') }}</p>
           <p>{{ _('Talks, presentations, and workshops will all be in English.') }}</p>
 
-          <p>Join us on Thursday, August 16th, the day before the main event, for a day of <a href="https://wiki.centos.org/Events/Dojo/DevConfUS2018" target="_blank">CentOS talks and community gatherings </a></p>
+          <p>Join us on Wednesday, August 14th, the day before the main event, for a day of <a href="https://wiki.centos.org/Events/Dojo/DevConfUS2019" target="_blank">CentOS talks and community gatherings </a></p>
           <h3>{{ ('Important dates') }}:</h3>
           <ul>
-            <li>{{ _('CfP Opens') }}: <b>{{ _('January 26th, 2018') }}</b></li>
-            <li>{{ _('CfP Closes') }}: <b>{{ _('April 3, 2018') }}</b></li>
-            <li>{{ _('Accepted speakers confirmation') }}: <b>{{ _('June 1, 2018') }}</b></li>
-            <li>{{ _('Schedule published') }}: <b>{{ _('July 2, 2018') }}</b></li>
-            <li><strike>{{ _('Schedule published') }}: {{ _('June 25, 2018') }}</strike></li>
-            <li>{{ _('Registration opens') }}: <b>{{ _('July 2, 2018') }}</b></li>
-            <li><strike>{{ _('Registration opens') }}: {{ _('June 25, 2018') }}</strike></li>
-            <li>{{ _('Event dates') }}: <b>{{ _('Friday, August 17 to Sunday, August 19, 2018') }}</b></li>
+            <li>{{ _('CfP Opens') }}: <b>{{ _('January 27th, 2019') }}</b></li>
+            <li>{{ _('CfP Closes') }}: <b>{{ _('April 8, 2019') }}</b></li>
+            <li>{{ _('Accepted speakers confirmation') }}: <b>{{ _('May 16th, 2019') }}</b></li>
+            <li>{{ _('Schedule published') }}: <b>{{ _('June 18th, 2019') }}</b></li>
+            <li>{{ _('Registration opens') }}: <b>{{ _('June 18th, 2019') }}</b></li>
+            <li>{{ _('Event dates') }}: <b>{{ _('Thursday, August 15 to Saturday, August 17, 2019') }}</b></li>
           </ul>
       </div>
       <div class="clear"></div>
@@ -79,9 +77,10 @@
     {% include 'us/2019/devconfus-2019-coaching.html' %}
 
     {% include 'us/2019/devconfus-2019-inclusion.html' %}
-
-    {% include 'us/2019/devconfus-2019-travel.html' %}
-
+    <div class="responsive">
+      <p>Travel information will be launched as soon as it is finalized!</p>
+    </div>  
+    <div class="clear"></div>
     {% include 'us/2019/devconfus-2019-sponsors.html' %}
 
   </div>
