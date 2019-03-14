@@ -5,21 +5,23 @@
     <div class="material-full-bottom">
       <img data-original="{{ '/images/canva/devconf-in-2019-header.jpg'|url }}" class="preload-image no-bottom responsive-image" alt="img" />
 
-      <!--
       <div class="menu-bottom-bar menu-bottom-bar-four light-menu-bar menu-bottom-bar-text flat-menu-bar no-top cfp-menu">
-        <a href="{{ '/devconf-error-cfp-not-open.html' }}" target="_blank" class="border-blue-dark"><i class="fa fa-code"></i><em>Submit a proposal</em></a>
-        <a href="{{ '/devconf-error-cfp-not-open.html' }}" target="_blank" class="border-magenta-dark selected-bottom-bar"><i class="fa fa-bullhorn"></i><em>Run a booth</em></a>
-        <a href="{{ '/devconf-error-cfp-not-open.html' }}" target="_blank" class="border-orange-dark"><i class="fa fa-coffee"></i><em>Host a BoF</em></a>
-        <a href="{{ '/devconf-error-cfp-not-open.html' }}" target="_blank" class="border-night-light"><i class="fa fa-group"></i><em>Volunteer</em></a>
+        <a href="{{ 'http://bit.ly/devcon_in_2019_cfp' }}" target="_blank" class="border-blue-dark"><i class="fa fa-code"></i><em>Submit a proposal</em></a>
+        <a href="{{ 'http://bit.ly/devcon_in_2019_cfp' }}" target="_blank" class="border-magenta-dark selected-bottom-bar"><i class="fa fa-bullhorn"></i><em>Run a booth</em></a>
+        <a href="{{ 'http://bit.ly/devcon_in_2019_cfp' }}" target="_blank" class="border-orange-dark"><i class="fa fa-coffee"></i><em>Host a BoF</em></a>
+        <a href="{{ 'http://bit.ly/devcon_in_2019_cfp' }}" target="_blank" class="border-night-light"><i class="fa fa-group"></i><em>Volunteer</em></a>
         <div class="clear"></div>
       </div>
-    -->
 
       <div class="decoration-line-fade decoration-margins"></div>
       <div class="responsive">
         <p>{{ _('DevConf.IN 2019 is the second annual Developers&#39; Conference to be organised by <a href="https://redhat.com">Red Hat</a> in India. It is meant to provide a platform to the local FOSS community participants to come together and engage in the knowledge sharing through technical talks, workshops, panel discussions, hackathon and such activities.')}}</p>
+	<p>{{ _('There is no admission or ticket charge for DevConf.IN events. Free registration is required though. <a href="https://devconf.info/subscribe" target="_blank">Stay tuned</a> to receive updates about registration.')}}</p>
+
+	<p>{{_('We are committed to fostering an open and welcoming environment at our conference. We are setting expectations for inclusive behavior through our <a href="https://devconf.info/coc.html" target="_blank">code of conduct</a> and <a href="https://devconf.info/media-policy.html" target="_blank">media policies</a>, and are prepared to enforce these.') }}</p>
+
         <p><strong>{{ _('When') }}:</strong> {{ _('August 2-3, 2019') }}</p>
-	<p><strong>{{ _('Venue') }}:</strong> {{ _('To be announced!') }}</p>
+        <p><strong>{{ _('Venue') }}:</strong> {{ _('<a href="https://christuniversity.in/" target="_blank">Christ University</a> - Bengaluru, India') }}
           <p>{{ _('You should consider attending this DevConf event if you are') }}:</p>
           <ul>
             <li>{{ _('A developer') }}</li>
@@ -31,46 +33,41 @@
           <p>{{ _('DevConf events are free, without admission or ticket charge. On-line registration is required though.') }}</p>
           <p>{{ _('Talks, presentations, workshops (etc) will all be in English.') }}</p>
 
-          <!--
-          <p>{{ _('The primary event themes this year are') }}:</p>
+	  <p><strong>{{ _('The primary event themes this year are') }}:</strong></p>
           <ul>
-            <li>{{ _('Agile') }}</li>
-            <li>{{ _('Machine Learning and Artificial Intelligence') }}</li>
-            <li>{{ _('Cryptography / Block Chain') }}</li>
-            <li>{{ _('Networking / Security Technologies / Research') }}</li>
-            <li>{{ _('Automation / Configuration Management/ Infrastructure') }}</li>
-            <li>{{ _('Cloud / Containers / DevOps') }}</li>
-            <li>{{ _('Community building / Diversity') }}</li>
-            <li>{{ _('Database / Storage') }}</li>
-            <li>{{ _('Developer tools / Debugging / Tracing') }}</li>
-            <li>{{ _('Design / UX') }}</li>
-            <li>{{ _('Desktop') }}</li>
-            <li>{{ _('Documentation') }}</li>
-            <li>{{ _('Hardware / Kernel / OS / Platform') }}</li>
-            <li>{{ _('IoT / Mobile') }}</li>
-            <li>{{ _('Middleware') }}</li>
-            <li>{{ _('QA Testing, Performance Optimization, Web Workload') }}</li>
-            <li>{{ _('Virtualization') }}</li>
-            <li>{{ _('Workshop') }}</li>
-            <li>{{ _('Serverless computing') }}</li>
-            <li>{{ _('Customer-Use cases') }}</li>
-            <li>{{ _('Messaging queues') }}</li>
+            <li>{{ _('Trending Tech (AI/ ML/ BC/ IoT/ Mobile)') }}</li>
+            <li>{{ _('Storage and Networking (Cloud Native Storage, Software Defined Storage, Storage Management, Distributed filesystem, datastores, Big Data,  NFV/ VNF, DPDK, ODL, Software Defined Networking)') }}</li>
+            <li>{{ _('Open Hybrid Cloud ( Multi Cloud, Automation, OpenStack, Kubernetes, Serverless, Microservices, Containers, OpenShift/ PaaS, Hybrid Cloud management, Operators, CNI, Virtualization, Kernel, Service mesh)') }}</li>
+            <li>{{ _('Developer Tools (Container Tooling, CI/CD, DevOps, Code Editors Cloud native IDE, CLI, Local Development for containers, Language Runtime, Debugging/Tracing, QE)') }}</li>
+            <li>{{ _('FOSS Community and Standards (Community Trends, governance, licensing, contribution, Leadership Agile )') }}</li>
+            <li>{{ _('White Paper/ Academic Research ( Computer Science Engineering, New algorithms, Protocols, Experimental/Future networks, Data Modelling, Security, Natural Language Processing-NLP ) ') }}</li>
           </ul>
 
           <h3>{{ ('Important dates') }}:</h3>
           <ul>
-            <li>{{ _('CfP Opens') }}: <b>{{ _('March 19, 2018') }}</b></li>
-            <li>{{ _('CfP Closes') }}: <b>{{ _('May 4, 2018') }}</b></li>
-            <li>{{ _('Accepted speakers confirmation') }}: <b>{{ _('June 11, 2018') }}</b></li>
-            <li><strike>{{ _('Accepted speakers confirmation') }}: <b>{{ _('June 4, 2018') }}</b></strike></li>
-            <li>{{ _('Schedule published') }}: <b>{{ _('June 11, 2018') }}</b></li>
-            <li>{{ _('Registration opens') }}: <b>{{ _('June 11, 2018') }}</b></li>
-            <li>{{ _('Event dates') }}: <b>{{ _('Saturday, August 4 to Sunday, August 5, 2018') }}</b></li>
+            <li>{{ _('CfP Opens') }}: <b>{{ _('March 10, 2019') }}</b></li>
+            <li>{{ _('CfP Closes') }}: <b>{{ _('May 01, 2019') }}</b></li>
+            <li>{{ _('CfP Status Notifications') }}: <b>{{ _('June 1, 2019') }}</b></li>
+            <li>{{ _('Schedule Announcement') }}: <b>{{ _('July 1, 2019') }}</b></li>
+            <li>{{ _('Registration Opens') }}: <b>{{ _('July 1, 2019') }}</b></li>
+            <li>{{ _('Event dates') }}: <b>{{ _('Friday, August 2 to Saturday, August 3, 2019') }}</b></li>
           </ul>
-        -->
 
       </div>
       <div class="clear"></div>
+
+      <div class="responsive">
+        <h3 class="center-text full-bottom">Memories from 2018</h3>
+        <div class="gallery gallery-square no-bottom">
+          {% for f in range(1, 27) %}
+          <a class="show-gallery" href="{{ ('/images/gallery/devconf-in-2018-event-photos/' + f|string + '.jpg')|url }}" alt="img" title="Image Caption">
+                <img class="preload-image responsive-image" data-original="{{ ('/images/gallery/devconf-in-2018-event-photos/' + f|string + '.jpg')|url }}" alt="img">
+            </a> {% endfor %}
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="clear"></div>
+
     </div>
 
     {% include 'in/2019/devconfin-2019-sponsors.html' %}
