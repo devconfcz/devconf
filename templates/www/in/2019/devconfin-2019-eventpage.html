@@ -53,7 +53,23 @@
         <p><strong>{{ _('Last Date of Registration:') }}</strong> {{ _('31st July, 2019') }}</p>
         <p>{{_('Click <a href="https://devconf.us14.list-manage.com/subscribe?u=4405d7552dfc612aef814da21&id=9dfaafef37" target="_blank">here</a> for more updates about DevConf. ') }}</p>
 
+        <div class="devconf-registration-widget-container" id="eventbrite-widget-container-62706281175" style="height: 400px; margin-bottom: 10px;"></div>
       </div>
+      <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+      <script type="text/javascript">
+          var iframeHeight = () => {
+          }
+          window.EBWidgets.createWidget({
+              // Required
+              widgetType: 'checkout',
+              eventId: '62706281175',
+              iframeContainerId: 'eventbrite-widget-container-62706281175',
+
+              // Optional
+              iframeContainerHeight: 390,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+          });
+      </script>
       <div class="clear"></div>
 
       <div class="responsive">
