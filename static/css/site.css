@@ -368,3 +368,9 @@ body, p {
         font-size: .9em!important;
     }
 }
+
+@media(max-width: 400px) {
+    .devconf-registration-widget-container {
+        height: 530px !important;
+    }
+}
