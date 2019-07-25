@@ -8,18 +8,21 @@
     if (window.location.pathname == "" || window.location.pathname == "/") {
       switch(window.location.hostname) {
         case "devconf.cz":
+	case "www.devconf.cz":
           path = "/cz";
           break;
         case "devconf.in":
+	case "www.devconf.in":
           path = "/in";
           break;
         case "devconf.us":
+	case "www.devconf.us:
           path = "/us";
           break;
       }
     }
-    if (window.location.hostname != "devconf.info" && window.location.hostname != "localhost") {
-       window.location.href = 'https://devconf.info' + path; 
+    if (window.location.hostname != "www.devconf.info" && window.location.hostname != "localhost") {
+       window.location.href = 'https://www.devconf.info' + path; 
     }
   </script>
 
