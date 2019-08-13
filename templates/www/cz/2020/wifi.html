@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+<title>DevConf CZ 2020 Wi-Fi</title>
+<style>
+body
+{
+	font-family: Arial, sans-serif;
+}
+
+div 	
+{
+	width: 23%;
+	margin: 5% auto 2%;
+}
+
+div.slide
+{
+	width: 99%;
+	margin: 0px;
+	position: absolute;
+	opacity: 0;
+	z-index: 1;
+}
+
+div.active
+{
+	opacity: 1;
+	z-index: 3;
+}
+
+img
+{
+	width: 100%;
+}
+
+h1, h2, p
+{
+	text-align: center;
+	font-size: 450%;
+}
+
+h2
+{
+	padding: 0px;
+	margin: 0px;
+	font-weight: normal;
+}
+
+.red
+{
+	color: red;
+}
+
+.purple
+{
+	color: #8d81e3;
+}
+</style>
+<script src="/js/jquery.js"></script>
+<script>
+	function slideSwitch(){
+        	var $active = $("div.slide.active");
+                if ( $active.length == 0 ) $active = $("div.slide:last");
+
+               	var $next =  $active.next().length ? $active.next() : $("div.slide:first") ;
+             	$active.addClass("last-active");
+              	$next.css({opacity: 0.0})
+                     .addClass("active")
+                     .animate({opacity: 1.0}, 2000);
+                           
+               	$active.animate({opacity: 0.0},2000).removeClass("active last-active");
+               	setTimeout( "slideSwitch()", $(".slide.active").attr("time") );
+	}
+	$(function() {
+                if($(".slide").length > 1){
+               		setTimeout( "slideSwitch()", $(".slide.active").attr("time"));
+                }
+	});
+
+</script>
+</head>
+<body>
+<div class="slide active" time="8000">
+<div><img src="/images/icon/cz/devconf-cz-icon.png"></div>
+<h1>WiFi Connection</h1>
+<h2>SSID: <strong>VUTBRNO</strong></h2>
+<h2>USER: <strong>devconfcz</strong></h2>
+<h2>PASSWORD: <strong>Brno2020</strong></h2>
+</div>
+<div class="slide" time="10000">
+<p>Move to the middle and <strong>use every seat</strong>.</p><p>The fire code says <strong class="red">NO STANDING ALLOWED</strong>.</p>
+<p>Follow us on Twitter and Facebook!</p>
+<p>Use <strong class="purple">#DevConf2020</strong> for your posts!</p></div>
+<div class="slide" time="10000">
+<p>Come to the final session on Sunday! You can take part in our <strong>Pop Quiz and win some interesting prizes!</strong></p>
+<div><img src="/images/icon/cz/devconf-cz-icon.png"></div>
+</div>
+</body>
