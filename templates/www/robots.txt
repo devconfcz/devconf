@@ -1,5 +1,0 @@
-{% verbatim %}
-User-agent: *
-Disallow:
-
-{% endverbatim %}
