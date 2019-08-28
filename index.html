@@ -11,39 +11,43 @@
     </head>
     <body>
         <!-- Full Page Image Header with Vertically Centered Content -->
+<div class="h-100 w-100 d-flex flex-column">
 <header class="masthead">
 	<div class="container h-100">
-		<div class="row h-100 align-items-center">
-			<div class="col-sm text-center">
-				<img src="/assets/images/devconf-icon.png" alt="DevConf logo" style="width: 100%">
+		<div class="row align-items-center" style="padding: 10% 0 0 0">
+			<div class="col-sm text-center" style="padding: 10% 0 0 0">
+				<img src="/assets/images/devconf-logo-reverse.svg" alt="DevConf logo" style="width: 42vw;">
 			</div>
-			<div class="col-sm text-center">
-				<div class="row">
-					<div class="card-body">
-						<a href="/cz">DevConf.CZ, Brno</a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="card-body">
-						<a href="/in">DevConf.IN, Bangalore</a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="card-body">
-						<a href="/us">DevConf.US, Boston</a>
-					</div>
-				</div>
+		</div>
+		<div class="card-group h-25 pt-5 justify-content-md-center align-items-center landing-flags">
+			<div class="card-body text-center px-4">
+				<a href="/cz" class="d-block mx-auto pb-3"><img src="/assets/images/cz-flag.svg" alt="CZ flag"></a>
+				<a href="/cz">DevConf.CZ - Brno</a>
+			</div>
+			<div class="card-body text-center px-4">
+				<a href="/in" class="d-block mx-auto pb-3"><img src="/assets/images/in-flag.svg" alt="IN flag"></a>
+				<a href="/in">DevConf.IN - Bangalore</a>
+			</div>
+			<div class="card-body text-center px-4">
+				<a href="/us" class="d-block mx-auto pb-3"><img src="/assets/images/us-flag.svg" alt="US flag"></a>
+				<a href="/us">DevConf.US - Boston</a>
 			</div>
 		</div>
 	</div>
 </header>
 
 <!-- Page Content -->
-<section class="py-5">
+<footer class="landing-footer py-4 mx-auto w-100">
   <div class="container">
-    <h2 class="font-weight-light">Page Content</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
+	<div class="row justify-content-md-center">
+		<div class="text-center py-2 px-3 mx-auto"><a href="#">Code of conduct</a></div>
+		<div class="text-center py-2 px-3 mx-auto"><a href="#">Participation agreement</a></div>
+		<div class="text-center py-2 px-3 mx-auto"><a href="#">On-site volunteer roles</a></div>
+		<div class="text-center py-2 px-3 mx-auto"><a href="#">Media policy</a></div>
+		<div class="text-center py-2 px-3 mx-auto"><a href="#">Privacy statement</a></div>
+	</div>
   </div>
-</section>
+</footer>
+</div>
     </body>
 </html>

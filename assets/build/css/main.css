@@ -1,10 +1,32 @@
+body, html {
+  height: 100%;
+  width: 100%;
+} 
+
 .masthead {
-  height: 100vh;
-  min-height: 500px;
-  background: #8e82e4;
+  background: #8e83e4;
+  background-image: url("/assets/images/devconf-landing-background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: right;
   color: #fff;
+  flex-grow: 1;
 }
 
 .masthead a {
   color: #fff;
+}
+
+.landing-flags{
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.landing-footer, .landing-footer a, .landing-footer a:visited {
+  background: #f0f0f0;
+  color: #717579;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Montserrat;
 }
