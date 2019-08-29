@@ -1,3 +1,16 @@
+@font-face {
+  font-family: DevConfMontserrat;
+  src: url("../fonts/Montserrat-Medium.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: DevConfMontserrat;
+  src: url("../fonts/Montserrat-Bold.otf");
+  font-weight: 700;
+}
+
+
 body, html {
   height: 100%;
   width: 100%;
@@ -18,7 +31,7 @@ body, html {
 }
 
 .landing-flags{
-  font-family: Montserrat;
+  font-family: DevConfMontserrat, Montserrat, Arial, sans-serif;
   font-weight: 700;
   font-size: 20px;
 }
@@ -28,5 +41,5 @@ body, html {
   color: #717579;
   font-size: 20px;
   font-weight: 500;
-  font-family: Montserrat;
+  font-family: DevConfMontserrat, Montserrat, Arial, sans-serif;
 }
