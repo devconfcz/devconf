@@ -1,0 +1,77 @@
+@font-face {
+  font-family: DevConfMontserrat;
+  src: url("../fonts/Montserrat-Medium.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: DevConfMontserrat;
+  src: url("../fonts/Montserrat-Bold.otf");
+  font-weight: 700;
+}
+
+
+body, html {
+  min-height: 100%;
+  width: 100%;
+} 
+
+.masthead {
+  background: #8e83e4;
+  background-image: url("/assets/images/devconf-landing-background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: right;
+  color: #fff;
+  flex-grow: 1;
+}
+
+.masthead > .nav-link {
+  color: #fff;
+}
+
+.nav-item {
+  font-family: DevConfMontserrat, Montserrat, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+  
+.nav-item a:hover{
+  text-decoration: none;
+}
+
+.nav-item a:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: 0.2s ease-out all .1s;
+  transition: 0.2s ease-out all .1s;
+}
+
+.nav-item a:hover:after{
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}  
+
+a.underline, .nav-item a{
+  position: relative;
+  display: inline-block;
+} 
+
+.underline:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  left: 25%;
+  bottom: -8px;
+  background: #fff;
+}
