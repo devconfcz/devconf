@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="816px" viewBox="0 0 1440 816" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1440" height="816"></rect>
+        <linearGradient x1="0%" y1="4.85897624%" x2="75.2643039%" y2="72.1429535%" id="linearGradient-3">
+            <stop stop-color="#34495E" offset="0%"></stop>
+            <stop stop-color="#A551FF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M655,1321 C1024.06857,1853.85293 2005.46542,907.592749 1324.05145,662.025723 C642.637476,416.458698 1027.65243,5.68434189e-13 662.025723,5.68434189e-13 C296.399012,5.68434189e-13 0,296.399012 0,662.025723 C0,1027.65243 285.93143,788.147071 655,1321 Z" id="path-4"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="landing-page-cz">
+            <g id="Group-3">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Rectangle" fill="#8E83E4" xlink:href="#path-1"></use>
+                <g id="Group-2" mask="url(#mask-2)">
+                    <g transform="translate(352.000000, -297.000000)">
+                        <mask id="mask-5" fill="white">
+                            <use xlink:href="#path-4"></use>
+                        </mask>
+                        <use id="Oval" stroke="none" fill="url(#linearGradient-3)" fill-rule="evenodd" xlink:href="#path-4"></use>
+                        <text id="D" stroke="none" fill="none" opacity="0.329822359" mask="url(#mask-5)" font-family="Montserrat-Bold, Montserrat" font-size="1300" font-weight="bold" letter-spacing="0.17330625">
+                            <tspan x="0" y="1114" fill="#34495E">D</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

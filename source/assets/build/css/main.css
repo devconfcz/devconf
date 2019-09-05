@@ -1,0 +1,104 @@
+@font-face {
+  font-family: DevConfMontserrat;
+  src: url("../fonts/Montserrat-Medium.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: DevConfMontserrat;
+  src: url("../fonts/Montserrat-Bold.otf");
+  font-weight: 700;
+}
+
+
+body, html {
+  height: 100%;
+  width: 100%;
+} 
+
+.masthead {
+  background: #8e83e4;
+  background-image: url("/assets/images/devconf-landing-background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: right;
+  color: #fff;
+  flex-grow: 1;
+}
+
+.masthead a {
+  color: #fff;
+}
+
+.landing-flags{
+  font-family: DevConfMontserrat, Montserrat, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.landing-flags a:hover, .landing-footer a:hover, .e404 a:hover{
+  text-decoration: none;
+}
+
+.landing-footer, .landing-footer a, .landing-footer a:visited {
+  background: #f0f0f0;
+  color: #717579;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: DevConfMontserrat, Montserrat, Arial, sans-serif;
+}
+
+.landing-footer a:after{
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 2px;
+  bottom: -8px;
+  left: 20%;
+  background-color: #717579;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: 0.2s ease-out all .1s;
+  transition: 0.2s ease-out all .1s;
+}
+
+.e404 a:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: 0.2s ease-out all .1s;
+  transition: 0.2s ease-out all .1s;
+}
+
+.landing-footer a:hover:after, .e404 a:hover:after{
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}  
+
+a.underline, .landing-footer a, .e404 a{
+  position: relative;
+  display: inline-block;
+} 
+
+.underline:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  left: 25%;
+  bottom: -8px;
+  background: #fff;
+}
+
+.e404 {
+  font-family: DevConfMontserrat, Montserrat, Arial, sans-serif;
+}
