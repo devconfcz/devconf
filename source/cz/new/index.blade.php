@@ -35,12 +35,12 @@
 	</nav>
 	<div class="row mr-0" style="height: 85%">
 		<div class="col-lg-1 border-right text-center pr-0">
-			<a><img src="/assets/images/mail.svg" alt="mail" class="social-icon"></a>
-			<a><img src="/assets/images/facebook.svg" alt="facebook" class="social-icon"></a>
-			<a><img src="/assets/images/twitter.svg" alt="twitter" class="social-icon"></a>
-			<a><img src="/assets/images/telegram.svg" alt="telegram" class="social-icon"></a>
-			<a><img src="/assets/images/youtube.svg" alt="youtube" class="social-icon"></a>
-			<a><img src="/assets/images/github.svg" alt="github" class="social-icon"></a>
+			<a href="mailto:info@devconf.cz" target="_blank" title="Mail"><img src="/assets/images/mail.svg" alt="mail" class="social-icon"></a>
+			<a href="https://www.facebook.com/DevConf.CZ" target="_blank" title="Facebook"><img src="/assets/images/facebook.svg" alt="facebook" class="social-icon"></a>
+			<a href="https://twitter.com/devconf_cz" target="_blank" title="Twitter"><img src="/assets/images/twitter.svg" alt="twitter" class="social-icon"></a>
+			<a href="https://t.me/devconfcz" target="_blank" title="Telegram"><img src="/assets/images/telegram.svg" alt="telegram" class="social-icon"></a>
+			<a href="https://www.youtube.com/channel/UCmYAQDZIQGm_kPvemBc_qwg" target="_blank" title="YouTube"><img src="/assets/images/youtube.svg" alt="youtube" class="social-icon"></a>
+			<a href="https://github.com/devconfcz/devconf" target="_blank" title="Git Hub"><img src="/assets/images/github.svg" alt="github" class="social-icon"></a>
 		</div>
 		<div class="col-lg-10 h-100 px-0">
                 	<div style="padding: 5% 0 0 0">
@@ -201,8 +201,8 @@
 			<div class="row px-5">
 				<div class="col-lg-7">
 					<div class="h5 mont-600">This event is brought to you by</div>
-					<a href="https://redhat.com" target="_blank"><img class="sponsor-logo pr-3 py-3" src="/assets/images/sponsors/logo-redhat.svg"></a>
-					<a href="https://fit.vutbr.cz" target="_blank"><img class="sponsor-logo pr-3 py-3" src="/assets/images/sponsors/logo-fit-vut.svg"></a>
+					<a href="https://redhat.com" target="_blank"><img class="sponsor-logo pr-3 py-3" src="/assets/images/support/logo-redhat.svg"></a>
+					<a href="https://fit.vutbr.cz" target="_blank"><img class="sponsor-logo pr-3 py-3" src="/assets/images/support/logo-fit-vut.svg"></a>
 				</div>
 				<div class="col-lg-5 links">
 					<div class="h5 mont-600">Privacy &amp; Terms</div>
