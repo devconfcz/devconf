@@ -209,7 +209,7 @@ h1.underline:after, section .h1.underline:after {
   font-size: 14px;
 }
 
-.sponsor-logo, footer .links a {
+.support-logo, footer .links a {
   width: 45%;
 }
 
@@ -225,7 +225,7 @@ footer .links a:hover {
 }
 
 @media (min-width: 768px) {
-	.sponsor-logo {
+	.support-logo {
 		width: 25%;
 	}
 }
