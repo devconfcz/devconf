@@ -3,29 +3,25 @@
   src: url("../fonts/Montserrat-Medium.otf");
   font-weight: 500;
 }
-
 @font-face {
   font-family: DevConfMontserrat;
   src: url("../fonts/Montserrat-SemiBold.otf");
   font-weight: 600;
 }
-
 @font-face {
   font-family: DevConfMontserrat;
   src: url("../fonts/Montserrat-Bold.otf");
   font-weight: 700;
 }
-
 @font-face {
   font-family: DevConfOpenSans;
   src: url("../fonts/OpenSans-Regular.ttf");
   font-weight: 400;
 }
-
 body, html {
   min-height: 100%;
   width: 100%;
-} 
+}
 
 .masthead {
   background: #8e83e4;
@@ -35,6 +31,7 @@ body, html {
   background-position-x: right;
   color: #fff;
   flex-grow: 1;
+  overflow: hidden;
 }
 
 .masthead > .nav-link {
@@ -46,12 +43,12 @@ body, html {
   font-weight: 700;
   font-size: 16px;
 }
-  
-.nav-item a:hover{
+
+.nav-item a:hover {
   text-decoration: none;
 }
 
-.nav-item a:after{
+.nav-item a:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -60,25 +57,21 @@ body, html {
   left: 0;
   background-color: #fff;
   visibility: hidden;
-  -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transition: 0.2s ease-out all .1s;
-  transition: 0.2s ease-out all .1s;
+  transition: 0.2s ease-out all 0.1s;
 }
 
-.nav-item a:hover:after{
+.nav-item a:hover:after {
   visibility: visible;
-  -webkit-transform: scaleX(1);
   transform: scaleX(1);
-}  
-
+}
 
 .social-icon {
   display: inline-block;
   margin: 10px 20px;
 }
 
-.text-logo, .heading-text{
+.text-logo, .heading-text {
   width: 80vw;
   display: block;
   margin: 0px auto;
@@ -88,34 +81,30 @@ body, html {
   display: none;
 }
 
+@media (min-width: 992px) {
+  .text-logo {
+    width: 42vw;
+    display: inline;
+    padding-left: 3rem;
+  }
 
+  .heading-text {
+    width: auto;
+    display: block;
+    padding-left: 3rem;
+  }
 
-@media (min-width: 992px) { 
+  .abstract-logo {
+    width: 14vw;
+    vertical-align: baseline;
+    display: inline;
+  }
 
-	.text-logo {
-	  width: 42vw;
-	  display: inline;
-	  padding-left: 3rem;
-	}
-
-	.heading-text {
-	  width: auto;
-	  display: block;
-	  padding-left: 3rem;
-	}
-
-	.abstract-logo {
-	  width: 14vw;
-	  vertical-align: baseline;
-	  display: inline;
-	}
-
-	.social-icon {
-	  display: block;
-	  margin: 20px auto;
-	}
+  .social-icon {
+    display: block;
+    margin: 20px auto;
+  }
 }
-
 .mont-700, .mont-600, .mont-500, .mont-400 {
   font-family: DevConfMontserrat, Montserrat, Arial, sans-serif;
   font-weight: 700;
@@ -138,10 +127,10 @@ body, html {
   font-weight: 400;
 }
 
-h1.underline, a.underline, .nav-item a{
+h1.underline, a.underline, .nav-item a {
   position: relative;
   display: inline-block;
-} 
+}
 
 section a.underline {
   color: #292c33;
@@ -225,7 +214,7 @@ footer .links a:hover {
 }
 
 @media (min-width: 768px) {
-	.support-logo {
-		width: 25%;
-	}
+  .support-logo {
+    width: 25%;
+  }
 }
