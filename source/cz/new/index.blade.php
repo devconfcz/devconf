@@ -7,6 +7,9 @@
 
 @section('body')
 <header class="masthead vh-100">
+<div id="stars"></div>
+<div id="stars2"></div>
+<div id="stars3"></div>
 	<nav class="mb-1 navbar navbar-expand-lg navbar-dark">
 		<span class="nav-brand"></span>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMobile"

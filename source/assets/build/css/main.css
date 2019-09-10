@@ -89,6 +89,13 @@ a.underline, .landing-footer a, .e404 a {
   left: 25%;
   bottom: -8px;
   background: #fff;
+  transition: 0.4s ease-out all 0.1s;
+}
+
+.underline:hover:after {
+  width: 100%;
+  left: 0%;
+  transition: 0.5s ease all;
 }
 
 .e404 {

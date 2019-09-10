@@ -145,6 +145,13 @@ section a.underline {
   left: 20%;
   bottom: -8px;
   background: #8e83e4;
+  transition: 0.4s ease-out all 0.1s;
+}
+
+a.underline:hover:after {
+  width: 100%;
+  left: 0%;
+  transition: 0.5s ease all;
 }
 
 p, footer .h5 {
@@ -187,9 +194,25 @@ h1.underline:after, section .h1.underline:after {
   background: #f5f4fc;
 }
 
+a.border, .purple-href {
+  transition: 0.4s ease-out all 0.1s;
+}
+
+a.border:hover {
+  background: #fff;
+  color: #141b41 !important;
+  transition: 0.5s ease all;
+}
+
 .purple-href {
   color: #8e83e4 !important;
   border: 2px solid #8e83e4 !important;
+}
+
+.purple-href:hover {
+  background: #8e83e4;
+  color: #fff !important;
+  transition: 0.5s ease all;
 }
 
 .copyright {
