@@ -29,6 +29,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="{{ mix('css/site.css', 'assets/build') }}">
         <link rel="stylesheet" href="{{ mix('css/stars.css', 'assets/build') }}">
+	<link rel="stylesheet" href="{{ mix('css/timeline.css', 'assets/build') }}">
         <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">

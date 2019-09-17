@@ -142,17 +142,29 @@ $(document).ready(function () {
 
 /***/ }),
 
+/***/ "./source/_assets/sass/timeline.scss":
+/*!*******************************************!*\
+  !*** ./source/_assets/sass/timeline.scss ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!******************************************************************************************************************************************!*\
-  !*** multi ./source/_assets/js/main.js ./source/_assets/sass/stars.scss ./source/_assets/sass/main.scss ./source/_assets/sass/site.scss ***!
-  \******************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************************************!*\
+  !*** multi ./source/_assets/js/main.js ./source/_assets/sass/stars.scss ./source/_assets/sass/main.scss ./source/_assets/sass/site.scss ./source/_assets/sass/timeline.scss ***!
+  \******************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /home/jridky/mobile/devconf/source/_assets/js/main.js */"./source/_assets/js/main.js");
 __webpack_require__(/*! /home/jridky/mobile/devconf/source/_assets/sass/stars.scss */"./source/_assets/sass/stars.scss");
 __webpack_require__(/*! /home/jridky/mobile/devconf/source/_assets/sass/main.scss */"./source/_assets/sass/main.scss");
-module.exports = __webpack_require__(/*! /home/jridky/mobile/devconf/source/_assets/sass/site.scss */"./source/_assets/sass/site.scss");
+__webpack_require__(/*! /home/jridky/mobile/devconf/source/_assets/sass/site.scss */"./source/_assets/sass/site.scss");
+module.exports = __webpack_require__(/*! /home/jridky/mobile/devconf/source/_assets/sass/timeline.scss */"./source/_assets/sass/timeline.scss");
 
 
 /***/ })

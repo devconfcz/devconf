@@ -69,6 +69,15 @@ body, html {
 .social-icon {
   display: inline-block;
   margin: 10px 20px;
+  -webkit-filter: opacity(50%);
+          filter: opacity(50%);
+  transition: 0.2s ease-out all 0.1s;
+}
+
+.social-icon:hover {
+  -webkit-filter: opacity(100%);
+          filter: opacity(100%);
+  transition: 0.2s ease all;
 }
 
 .text-logo, .heading-text {
@@ -177,9 +186,31 @@ h1.underline:after, section .h1.underline:after {
   bottom: 0.5rem;
 }
 
+#news {
+  color: #141b41;
+}
+
+#news .h5 {
+  color: #8e83e4;
+}
+
+#news .os-400, #news .os-400 a {
+  color: #6d7278;
+}
+
+#news .os-400 a:hover {
+  color: #8e83e4;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 .card {
   border: none;
   border-radius: 0px;
+}
+
+.card-body {
+  border-radius: 15px;
 }
 
 .card-body, .card-body p {
@@ -205,12 +236,12 @@ a.border:hover {
 }
 
 .purple-href {
-  color: #8e83e4 !important;
-  border: 2px solid #8e83e4 !important;
+  color: #141b41 !important;
+  border: 2px solid #141b41 !important;
 }
 
 .purple-href:hover {
-  background: #8e83e4;
+  background: #141b41;
   color: #fff !important;
   transition: 0.5s ease all;
 }
@@ -234,6 +265,7 @@ footer .links a {
 footer .links a:hover {
   color: #8e83e4;
   text-decoration: none;
+  font-weight: 600;
 }
 
 @media (min-width: 768px) {

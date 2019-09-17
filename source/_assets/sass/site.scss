@@ -77,6 +77,15 @@ body, html {
 .social-icon {
   display: inline-block;
   margin: 10px 20px;
+  filter: opacity(50%);
+  -webkit-transition: 0.2s ease-out all .1s;
+  transition: 0.2s ease-out all .1s;
+}
+
+.social-icon:hover {
+  filter: opacity(100%);
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
 }
 
 .text-logo, .heading-text{
@@ -157,12 +166,14 @@ section a.underline {
   left: 20%;
   bottom: -8px;
   background: #8e83e4;
+  -webkit-transition: 0.4s ease-out all 0.1s;
   transition: 0.4s ease-out all 0.1s;
 }
 
 a.underline:hover:after{
   width: 100%;
   left: 0%;
+  -webkit-transition: 0.5s ease all;
   transition: 0.5s ease all;
 }
 
@@ -189,9 +200,31 @@ h1.underline:after, section .h1.underline:after {
   bottom: 0.5rem;
 }
 
+#news {
+  color: #141b41;
+}
+
+#news .h5 {
+  color: #8e83e4;
+}
+
+#news .os-400, #news .os-400 a {
+  color: #6d7278;
+}
+
+#news .os-400 a:hover {
+  color: #8e83e4;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 .card {
   border: none;
   border-radius: 0px;
+}
+
+.card-body {
+  border-radius: 15px;
 }
 
 .card-body, .card-body p {
@@ -207,23 +240,26 @@ h1.underline:after, section .h1.underline:after {
 }
 
 a.border, .purple-href {
+  -webkit-transition: 0.4s ease-out all 0.1s;
   transition: 0.4s ease-out all 0.1s;
 }
 
 a.border:hover{
   background: #fff;
   color: #141b41 !important;
+  -webkit-transition: 0.5s ease all;
   transition: 0.5s ease all;
 }
 
 .purple-href {
-  color: #8e83e4 !important;
-  border: 2px solid #8e83e4 !important;
+  color: #141b41 !important;
+  border: 2px solid #141b41 !important;
 }
 
 .purple-href:hover {
-  background: #8e83e4;
+  background: #141b41;
   color: #fff !important;
+  -webkit-transition: 0.5s ease all;
   transition: 0.5s ease all;
 }
 
@@ -246,6 +282,7 @@ footer .links a {
 footer .links a:hover {
   color: #8e83e4;
   text-decoration: none;
+  font-weight: 600;
 }
 
 @media (min-width: 768px) {
