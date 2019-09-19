@@ -26,8 +26,8 @@
 <div id="stars"></div>
 <div id="stars2"></div>
 <div id="stars3"></div>
-	<nav class="mb-1 navbar navbar-expand-lg navbar-dark">
-		<span class="nav-brand"></span>
+	<nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top">
+		<span class="nav-brand"><a class="home d-none"><img src="/assets/images/devconf-logo-cz-reverse.svg" alt="DevConf logo"></a></span>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMobile"
 		    aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
@@ -52,7 +52,7 @@
 			</ul>
 		</div>
 	</nav>
-	<div class="row mr-0" style="height: 85%">
+	<div class="row mr-0 mt-5" style="height: 85%">
 		<div class="col-lg-1 border-right text-center pr-0">
 			<a href="mailto:info@devconf.cz" target="_blank" title="Mail"><img src="/assets/images/mail.svg" alt="mail" class="social-icon"></a>
 			<a href="https://www.facebook.com/DevConf.CZ" target="_blank" title="Facebook"><img src="/assets/images/facebook.svg" alt="facebook" class="social-icon"></a>
@@ -120,17 +120,28 @@
 			<?php
 
 				$topics = array(
-						array("name"=>"Agile, DevOps & CI/CD","description"=>""),
-						array("name"=>"Blockchain","description"=>""),
-						array("name"=>"Cloud and Containers","description"=>""),
-						array("name"=>"Community","description"=>""),
-                                                array("name"=>"Immutable OS","description"=>""),
-                                                array("name"=>"Debug / Tracing","description"=>""),
-                                                array("name"=>"Desktop","description"=>""),
-                                                array("name"=>"Developer Tools","description"=>""),
-                                                array("name"=>"Documentation","description"=>""),
-                                                array("name"=>"Fedora","description"=>""),
-                                                array("name"=>"Virtualization","description"=>"")
+						array("name"=>"Agile, DevOps & CI/CD","description"=>"The Agile, DevOps & CI/CD track is intended to address the practices, methods and tooling that technical audiences need to deliver increased business value and responsiveness through rapid, high-quality delivery. Topics include engineering best practices, defining and building Agile & DevOps cultures, Open Source tools to make Developers and Operations successful, continuous integration/delivery/deployment of enterprise software, and many more."),
+						array("name"=>"Blockchain","description"=>"Blockchain related technology or use-cases leveraging the Hyperledger framework. Do not submit ICOs or pitch talks to the altcoin where you invested a lot of money."),
+						array("name"=>"Cloud and Containers","description"=>"Cloud, containers, clusters. Buildah, CRI-O, Docker, Kubernetes, Skopeo. Hybrid cloud and other buzzwords - your cloud and container topics go here. Daemons of all sizes and shapes."),
+						array("name"=>"Community","description"=>"Building open source software is more than just about coding. Learn about the many aspects of creating and maintaining healthy, robust, and diverse open source communities."),
+                                                array("name"=>"Debug / Tracing","description"=>"Developer tools for debugging and tracing your application and its enviroment.  Kernel level to userland application level."),
+                                                array("name"=>"Desktop","description"=>"Traditional and new package management tools, GUI applications, optimizations for the desktop, anything desktop-related goes here."),
+                                                array("name"=>"Developer Tools","description"=>"Developer tools for planning, creating, compiling, running, and analyzing code.  Including programming languages (Python, C/C++, Java, Ruby), frameworks and online development environments."),
+                                                array("name"=>"Documentation","description"=>"Guides, manuals, howtos, articles, and other kinds of help content. New ideas, documentation workflows, user-story focus, modularity, and automation."),
+                                                array("name"=>"Fedora","description"=>"All things Fedora!"),
+                                                array("name"=>"Frontend / UI / UX","description"=>"The Frontend/UX/UI track is intended to address user experience design, user interface design, and front end development. Topics include: processes and tools related to design and frontend development, approaches to research and collecting user feedback, and strategies towards increased transparency for design and development across teams."),
+                                                array("name"=>"Kernel","description"=>"All things Linux Kernel"),
+						array("name"=>"Immutable OS","description"=>"Everything from the previous CoreOS and Atomic operating systems to the new Fedora CoreOS, an automatically updating, minimal, monolithic, container-focused operating system, designed for clusters while also operable standalone. Server-related topics around rpm-ostree too."),
+                                                array("name"=>"IoT (Internet of Things)","description"=>"Data crunching applications, microcontrollers, protocols and embedded software. Development and testing tools. Deployment and maintenance techniques. Security challenges and interesting use cases."),
+						array("name"=>"Microservices","description"=>"Microservices architecture, design, challenges, patterns and testing. Including RHOAR based technologies(Vert.x, Spring Boot, Node.js, Thorntail, MicroProfile, Fuse) and other platforms, including development & production related topics."),
+						array("name"=>"Middleware","description"=>"Infrastructure exists to run applications, and applications are built on Middleware.  Red Hat has several runtimes and services designed to integrate with our platforms for efficient performance and rapid development."),
+						array("name"=>"ML / AI / Big Data","description"=>"Development tools for data engineering and data science, model development and deployment, interesting models to solve problems, e.g., in software engineering, system/cloud administration."),
+						array("name"=>"Networking","description"=>"What is on the horizon for the next 3-12 months for networking. What is work in progress and will land in next few months. What are the directions we would want to take things in. How can networking solve some of the existing problems for our customers, our layered products. How can networking solve the bottlenecks in layered products."),
+						array("name"=>"Platform / OS","description"=>"Anything related to GNU/Linux base operating system - when it does not better fit to other tracks ;)"),
+						array("name"=>"Quality / Testing","description"=>"Automation, STLC, QE frameworks, QE in Open Source, basically all things Quality Engineering!"),
+						array("name"=>"Security / IdM","description"=>"Secure infrastructure and identity management on Linux"),
+						array("name"=>"Storage / Ceph / Gluster","description"=>"Storage infrastructure, including topics from low-level to software-defined distributed storage systems."),
+						array("name"=>"Virtualization","description"=>"Virtualization from low level kernel support to high level management tools, and everything in between, such as userspace runtimes and libraries. Multiple architecture support for Virtualization is evolving. User level tuning and experiences with Virtualization are also great topics.")
 					  );
 
 				foreach($topics as $i=>$t){
