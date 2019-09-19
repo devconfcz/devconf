@@ -6,8 +6,8 @@
 <meta property="og:description" content="DevConf are free and open, annual, open-source community conferences for community contibutors, sponsored by Red Hat.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://devconf.info">
-<meta property="og:image" content="https://devconf.info/assets/images/devconf-icon.svg">
-<meta property="twitter:image" content="https://devconf.info/assets/images/devconf-icon.svg">
+<meta property="og:image" content="https://devconf.info/assets/images/devconf-cz-social.png">
+<meta property="twitter:image" content="https://devconf.info/assets/images/devconf-cz-social.png">
 @endsection
 
 @section('css')

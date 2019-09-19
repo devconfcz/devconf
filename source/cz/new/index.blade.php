@@ -6,8 +6,8 @@
 <meta property="og:description" content="DevConf are free and open, annual, open-source community conferences for community contibutors, sponsored by Red Hat.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://devconf.info">
-<meta property="og:image" content="https://devconf.info/assets/images/devconf-icon.svg">
-<meta property="twitter:image" content="https://devconf.info/assets/images/devconf-icon.svg">
+<meta property="og:image" content="https://devconf.info/assets/images/devconf-cz-social.png">
+<meta property="twitter:image" content="https://devconf.info/assets/images/devconf-cz-social.png">
 @endsection
 
 @section('css')
@@ -27,7 +27,7 @@
 <div id="stars2"></div>
 <div id="stars3"></div>
 	<nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top">
-		<span class="nav-brand"><a class="home d-none"><img src="/assets/images/devconf-logo-cz-reverse.svg" alt="DevConf logo"></a></span>
+		<span class="nav-brand"><a href="#" class="home d-none"><img src="/assets/images/devconf-logo-cz-reverse.svg" alt="DevConf logo"></a></span>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMobile"
 		    aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>

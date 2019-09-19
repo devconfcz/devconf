@@ -11,7 +11,7 @@ $(document).ready(function(){
 		}
 	});
 	$(window).scroll(function() {
-		if ($(this).scrollTop() >= (window.innerHeight*0.6)) {
+		if ($(this).scrollTop() >= (window.innerHeight*0.15)) {
 			$('#return-to-top').fadeIn(500);
 			$('.masthead.vh-100 .navbar.fixed-top').addClass('background-purple');
 			$('.masthead.vh-100 .nav-brand a').removeClass('d-none');
