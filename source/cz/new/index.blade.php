@@ -1,4 +1,20 @@
-@extends('_layouts.czech')
+@extends('_layouts.primary')
+
+@section('social')
+<meta property="og:title" content="DevConf.cz | Brno, Czechia">
+<meta property="og:site_name" content="DevConf.cz">
+<meta property="og:description" content="DevConf are free and open, annual, open-source community conferences for community contibutors, sponsored by Red Hat.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://devconf.info">
+<meta property="og:image" content="https://devconf.info/assets/images/devconf-icon.svg">
+<meta property="twitter:image" content="https://devconf.info/assets/images/devconf-icon.svg">
+@endsection
+
+@section('css')
+<link rel="stylesheet" href="{{ mix('css/site.css', 'assets/build') }}">
+<link rel="stylesheet" href="{{ mix('css/stars.css', 'assets/build') }}">
+<link rel="stylesheet" href="{{ mix('css/timeline.css', 'assets/build') }}">
+@endsection
 
 @section('title')
 <title>DevConf.CZ 2020</title>
@@ -141,7 +157,7 @@
 	</div>
 </section>
 
-<section id="news" class="mx-auto col-lg-11">
+<section id="news" class="mx-auto py-5 col-lg-11">
 	<div class="row">
 		<div class="h1 mx-5 mont-700">Important dates</div>
 	</div>
@@ -187,12 +203,12 @@
         </div>
 </section>
 
-<section id="schedule" class="mx-auto col-lg-12 background-gray text-center my-5 py-5">
+<section id="schedule" class="mx-auto col-lg-12 background-gray text-center mt-5 py-5">
 	<div class="h1 mont-700 py-4 mt-3">Schedule</div>
 	<a class="p-3 mont-700 mb-3 d-inline-block purple-href">SHOW SCHEDULE</a>
 </section>
 
-<section id="travel" class="mx-auto col-lg-11">
+<section id="travel" class="mx-auto py-5 col-lg-11">
 	<div class="row">
 		<div class="mont-700 h1 underline position-relative mx-5 pb-4">How to get there?</div>
 	</div>
@@ -201,10 +217,10 @@
 			<div class="row h-100 align-items-center">
 				<div class="col text-center">
 					<img src="/assets/images/travel-around.svg" class="my-4" alt="Getting around icon" style="height: 74px">
-					<h2 class="mont-700 mb-0">Getting around Brno city</h2>
+					<h2 class="mont-700 mb-0">Getting around Brno</h2>
 					<div class="card-text os-400 pt-3">Lorem ipsum dolor sit ament. Duis maximus semper maximus. Pellentesque vestibulum iaculis fermentum.</div>
 					<p class="card-text my-5">
-						<a class="border p-3 mont-700">MORE INFORMATION</a>
+						<a href="/cz/aroundbrno" class="border p-3 mont-700">MORE INFORMATION</a>
 					</p>
 				</div>
 			</div>
@@ -216,7 +232,7 @@
 					<h2 class="mont-700 pb-4">Getting to Brno</h2>
 					<div class="card-text os-400 pt-4">Lorem ipsum dolor sit ament. Duis maximus semper maximus. Pellentesque vestibulum iaculis fermentum.</div>
 					<p class="card-text my-5">
-						<a class="border p-3 mont-700">MORE INFORMATION</a>
+						<a href="/cz/tobrno" class="border p-3 mont-700">MORE INFORMATION</a>
 					</p>
 				</div>
 			</div>
@@ -228,39 +244,13 @@
 					<h2 class="mont-700 pb-4">Hotels</h2>
 					<div class="card-text os-400 pt-4">Lorem ipsum dolor sit ament. Duis maximus semper maximus. Pellentesque vestibulum iaculis fermentum.</div>
 					<p class="card-text my-5">
-						<a class="border p-3 mont-700">MORE INFORMATION</a>
+						<a href="/cz/hotels" class="border p-3 mont-700">MORE INFORMATION</a>
 					</p>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
+@include('_layouts.footercz')
 
-<footer class="background-gray">
-	<div class="row py-5 w-100 mx-auto">
-		<div class="mx-auto col-lg-11">
-			<div class="row px-5">
-				<div class="col-lg-7">
-					<div class="h5 mont-600">Sponsored by</div>
-					<a href="https://redhat.com" target="_blank"><img class="support-logo pr-3 py-3" src="/assets/images/support/logo-redhat.svg"></a>
-					<a href="https://www.fit.vutbr.cz" target="_blank"><img class="support-logo pr-3 py-3" src="/assets/images/support/logo-fit-vut.svg"></a>
-				</div>
-				<div class="col-lg-5 links">
-					<div class="row">
-					<a class="col-md-6 col-12" href="#">Code of conduct</a>
-					<a class="col-md-6 col-12" href="#">Participation agreement</a>
-					<a class="col-md-6 col-12" href="#">On-site volunteer roles</a>
-					<a class="col-md-6 col-12" href="#">Media policy</a>
-					<a class="col-md-6 col-12" href="#">Privacy statement</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="row px-5 py-3 border-top w-100 mx-auto">
-		<div class="col-lg-11 mx-auto copyright">
-			Copyleft <?php echo date("Y", time()); ?> Red Hat. Some rights reserved.
-		</div>
-	</div>
-</footer>
 @endsection
