@@ -42,7 +42,15 @@ body, html {
   color: #fff;
 }
 
-.nav-brand a img{
+.navbar .nav-brand a {
+  display: none;
+}
+
+.navbar.background-purple .nav-brand a {
+  display: inline;
+}
+
+.navbar .nav-brand a img{
   max-height: 2rem;
 }
 
@@ -76,6 +84,11 @@ body, html {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }  
+
+.navbar {
+  background: transparent;
+  transition: all 0.3s ease-out 0s;
+}
 
 .background-purple, .show, .collapsing {
   background: #8e83e4;

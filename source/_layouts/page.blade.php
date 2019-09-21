@@ -37,5 +37,30 @@
     <body>
 	<a href="#" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
         @yield('body')
+        <footer class="background-gray">
+	<div class="row py-5 w-100 mx-auto">
+		<div class="mx-auto col-lg-11">
+			<div class="row px-5">
+				<div class="col-lg-7">
+					<div class="h5 mont-600">Sponsored by</div>
+					@yield('footer')
+					</div>
+					<div class="col-lg-5 links">
+	<!--					<div class="row">
+						<a class="col-md-6 col-12" href="#">Code of conduct</a>
+						<a class="col-md-6 col-12" href="#">Participation agreement</a>
+						<a class="col-md-6 col-12" href="#">Media policy</a>
+						<a class="col-md-6 col-12" href="#">Privacy statement</a>
+						</div>
+	-->				</div>
+				</div>
+			</div>
+		</div>
+		<div class="row px-5 py-3 border-top w-100 mx-auto">
+			<div class="col-lg-11 mx-auto copyright">
+				Copyleft <?php echo date("Y", time()); ?> Red Hat. Some rights reserved.
+			</div>
+		</div>
+	</footer>
     </body>
 </html>

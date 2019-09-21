@@ -1,4 +1,4 @@
-@extends('_layouts.secondary')
+@extends('_layouts.page')
 
 @section('social')
 <meta property="og:title" content="DevConf.cz | Brno, Czechia">
@@ -15,7 +15,7 @@
 @endsection
 
 @section('title')
-<title>Getting to Brno - DevConf.CZ 2020</title>
+<title>Hotels - DevConf.CZ 2020</title>
 @endsection
 
 
@@ -49,20 +49,27 @@
 	</nav>
 </header>
 
-@include('_layouts.secondarymenucz')
-
-<section id="news" class="mx-auto py-5 col-lg-11 border-bottom">
-	<div class="row">
-		<div class="h1 mx-5 mont-700 underline position-relative">Frequently Asked Questions (FAQ)</div>
-	</div>
-	<div class="row">
+<section class="secondary-menu mt-5 py-2 mx-auto w-100">
+	@include('_layouts.policies')
 </section>
 
+<section class="mx-auto pt-5 pb-3 col-lg-11">
+	<div class="row">
+		<div class="h1 mx-5 mont-700 underline position-relative">Hotels</div>
+	</div>
+	<div class="row local-nav">
+		<div class="mx-5  mt-4 os-400">
+			<a href="#public">Public transport</a>
+			<a href="#taxi">Taxi</a>
+			<a href="#venue">Getting to the venue</a>
+		</div>
+	</div>
+</section>
+<hr>
 <section id="plane" class="mx-auto col-lg-11"></section>
 <section id="train" class="mx-auto col-lg-11"></section>
 <section id="bus" class="mx-auto col-lg-11"></section>
 <section id="car" class="mx-auto col-lg-11"></section>
-
+@endsection
 
 @include('_layouts.footercz')
-@endsection

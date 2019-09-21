@@ -85,6 +85,10 @@ body, html {
   transform: scaleX(1);
 }  
 
+.local-nav a {
+  display: block;
+}
+
 .background-purple {
   background: #8e83e4;
 }
@@ -94,7 +98,7 @@ body, html {
   font-weight: 700;
 }
 
-.mont-600 {
+.mont-600, .os-600 {
   font-weight: 600;
 }
 
@@ -140,17 +144,30 @@ a.underline:hover:after{
   transition: 0.5s ease all;
 }
 
-p, footer .h5 {
+footer .h5 {
   color: #6d7278;
 }
 
-p {
+p, ul li {
   line-height: 22px;
   font-size: 16px;
+  color: #4b5055;
 }
+
+section p a, section ul li a, .card .card-body a {
+  color: #8e83e4;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+p a:hover, ul li a:hover, .card .card-body a:hover, strong{
+  color: #141b41;
+}
+  
 
 h1.underline, section .h1, section .h2 {
   color: #141b41;
+  width: 100%;
 }
 
 h1.underline:after, section .h1.underline:after {
@@ -182,6 +199,28 @@ h1.underline:after, section .h1.underline:after {
 
 .background-gray {
   background: #f5f4fc;
+}
+
+.card-header.collapsed {
+  background: #ebebff;
+  transition: 0.2s ease-out all 0.1s;
+}
+
+.card-header:hover, .card-header {
+  background: #f3f3ff;
+  transition: 0.2s ease-out all 0.1s;
+}
+
+.card-header i {
+  float: right;
+}
+
+.card-header.collapsed .fa:before {
+  content: '\f078';
+}
+
+.card-header .fa:before {
+  content: '\f077';
 }
 
 a.border, .purple-href {
@@ -218,13 +257,13 @@ a.border:hover{
   width: 45%;
 }
 
-footer .links a {
+footer .links a, .local-nav a {
   color: #6d7278;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
-footer .links a:hover, .secondary-menu a:hover{
+footer .links a:hover, .secondary-menu a:hover, .local-nav a:hover{
   color: #8e83e4;
   text-decoration: none;
   font-weight: 600;
