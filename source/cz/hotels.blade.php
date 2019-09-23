@@ -15,7 +15,7 @@
 @endsection
 
 @section('title')
-<title>Hotels - DevConf.CZ 2020</title>
+<title>Hotels - DevConf.CZ</title>
 @endsection
 
 
@@ -53,6 +53,7 @@
 	@include('_layouts.policies')
 </section>
 
+<!--
 <section class="mx-auto pt-5 pb-3 col-lg-11">
 	<div class="row">
 		<div class="h1 mx-5 mont-700 underline position-relative">Hotels</div>
@@ -70,6 +71,15 @@
 <section id="train" class="mx-auto col-lg-11"></section>
 <section id="bus" class="mx-auto col-lg-11"></section>
 <section id="car" class="mx-auto col-lg-11"></section>
+-->
+
+	<div class="row">
+		<div class="h2 pt-3 pb-4 mx-5 mont-700">Suggested Hotels</div>
+		<div class="os-400 mx-5">
+			<strong class="d-block mb-3 os-600">We will post our suggested hotel list and discount terms around 1 December 2019.</strong>
+		</div>
+	</div>
+
 @endsection
 
 @include('_layouts.footercz')

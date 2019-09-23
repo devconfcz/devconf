@@ -99,14 +99,14 @@
 		<div class="col-lg-6 px-5">
 			<h1 class="mont-700 underline pb-4">About DevConf</h1>
 			<div class="os-400">
-				<p>DevConf.CZ 2020 is the 12th annual, free, Red Hat sponsored community conference for developers, admins, DevOps engineers, testers, 
-				documentation writers and other contributors to open source technologies such as Linux, Middleware, Virtualization, Storage, Cloud and 
-				mobile where FLOSS communities sync, share, and hack on upstream projects together in the beautiful city of Brno, Czech Republic.</p>
+                <p>DevConf.CZ 2020 is the 12th annual, free, Red Hat sponsored community conference for developers, admins, DevOps engineers, testers, documentation writers and other contributors to open source technologies.
+                   The conference includes topics on Linux, Middleware, Virtualization, Storage, Cloud and mobile.
+                   At DevConf.CZ, FLOSS communities sync, share, and hack on upstream projects together in the beautiful city of Brno, Czech Republic.</p>
 
-				<p>There is no admission or ticket charge for DevConf.CZ events. Free registration is required though. Stay tuned to receive updates about registration.</p>
+				<p>There is no admission or ticket charge for DevConf.CZ events. However, you are required to complete a free registration. Watch this site for updates about registration.</p>
 
-				<p>We are committed to fostering an open and welcoming environment at our conference. We are setting expectations for inclusive behavior 
-				through our code of conduct and media policies, and are prepared to enforce these.</p>
+                <p>We are committed to fostering an open and welcoming environment at our conference.
+                   We set expectations for inclusive behavior through our code of conduct and media policies, and are prepared to enforce these.</p>
 			</div>
 		</div>
 	</div>
@@ -179,7 +179,7 @@
 				<div class="col-4 h5 mont-700">Sep 24, 2019</div>
 				<div class="col-8">
 					<div class="row">
-						<div class="col mont-600">CfP Open</div>
+						<div class="col mont-600">CfP Opens</div>
 					</div>
 					<div class="row">
 						<div class="col os-400"><a href="https://cfp.devconf.info">Submit your proposal &rarr;</a></div>
@@ -192,7 +192,7 @@
 				<div class="col-4 h5 mont-700">Nov 1, 2019</div>
 				<div class="col-8">
 					<div class="row">
-						<div class="col mont-600">CfP Closed</div>
+						<div class="col mont-600">CfP Closes</div>
 					</div>
 				</div>
 			</div>
@@ -204,12 +204,20 @@
 				<div class="col-4 h5 mont-700">Nov 19, 2019</div>
 				<div class="col-8">
 					<div class="row">
-						<div class="col mont-600">Acceptance letters</div>
+						<div class="col mont-600">Speaker Acceptance Letters Sent</div>
 					</div>
 				</div>
 			</div>
                 </div>
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
+			<div class="row">
+				<div class="col-4 h5 mont-700">Dec 1, 2019</div>
+				<div class="col-8">
+					<div class="row">
+						<div class="col mont-600">Registration Opens and Schedule Published (subject to change)</div>
+					</div>
+				</div>
+			</div>
 		</div>
         </div>
 </section>
@@ -229,7 +237,7 @@
 				<div class="col text-center">
 					<img src="/assets/images/travel-around.svg" class="my-4" alt="Getting around icon" style="height: 74px">
 					<h2 class="mont-700 mb-0">Getting around Brno</h2>
-					<div class="card-text os-400 pt-3">Lorem ipsum dolor sit ament. Duis maximus semper maximus. Pellentesque vestibulum iaculis fermentum.</div>
+					<div class="card-text os-400 pt-3">Brno has a 24 hour public transit system and the site is accessible by car.</div>
 					<p class="card-text my-5">
 						<a href="/cz/aroundbrno" class="border p-3 mont-700">MORE INFORMATION</a>
 					</p>
@@ -241,7 +249,7 @@
 				<div class="col text-center">
 					<img src="/assets/images/way-to.svg" class="my-4" alt="Getting to icon" style="height: 74px">
 					<h2 class="mont-700 pb-4">Getting to Brno</h2>
-					<div class="card-text os-400 pt-4">Lorem ipsum dolor sit ament. Duis maximus semper maximus. Pellentesque vestibulum iaculis fermentum.</div>
+					<div class="card-text os-400 pt-4">Brno is easily accessible by car, bus, train and plane.</div>
 					<p class="card-text my-5">
 						<a href="/cz/tobrno" class="border p-3 mont-700">MORE INFORMATION</a>
 					</p>
@@ -253,7 +261,7 @@
 				<div class="col text-center">
 					<img src="/assets/images/hotel.svg" class="my-4" alt="Hotel icon" style="height: 74px">
 					<h2 class="mont-700 pb-4">Hotels</h2>
-					<div class="card-text os-400 pt-4">Lorem ipsum dolor sit ament. Duis maximus semper maximus. Pellentesque vestibulum iaculis fermentum.</div>
+					<div class="card-text os-400 pt-4">Need a place to stay? We suggest these properties.</div>
 					<p class="card-text my-5">
 						<a href="/cz/hotels" class="border p-3 mont-700">MORE INFORMATION</a>
 					</p>
