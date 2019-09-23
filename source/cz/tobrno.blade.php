@@ -93,7 +93,7 @@
                 <li>You can take the bus from the airport to Brno and book it as a single ticket with <a href="https://jizdenky.regiojet.cz/" target="_blank">Student Agency</a>.
                     This trip will include a stop and likely a change of buses at the Prague main bus station (Florenc).</li>
                 <li>You can take the train to Brno after using the Czech Railways shuttle bus from the airport to the Prague main train station.
-                    You can book a single ticket for both the shuttle bus and the train with <a href="https://cd.cz/" target="_blank">Czech Rail</a></li>
+                    You can book a single ticket for both the shuttle bus and the train with <a href="https://www.cd.cz/en/default.htm" target="_blank">Czech Rail</a></li>
                 <li>The trip from Prague airport to Brno takes at least 3.5 hours.
                     It is faster to get to Brno from Vienna International Airport.</li>
 			</ul>
