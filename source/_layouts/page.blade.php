@@ -46,13 +46,13 @@
 					@yield('footer')
 					</div>
 					<div class="col-lg-5 links">
-	<!--					<div class="row">
-						<a class="col-md-6 col-12" href="#">Code of conduct</a>
-						<a class="col-md-6 col-12" href="#">Participation agreement</a>
-						<a class="col-md-6 col-12" href="#">Media policy</a>
-						<a class="col-md-6 col-12" href="#">Privacy statement</a>
+						<div class="row">
+						<a class="col-md-6 col-12" href="https://www.devconf.info/coc">Code of conduct</a>
+						<a class="col-md-6 col-12" href="https://www.devconf.info/participation-agreement">Participation agreement</a>
+						<a class="col-md-6 col-12" href="https://www.devconf.info/media-policy">Media policy</a>
+						<a class="col-md-6 col-12" href="https://www.devconf.info/privacy-statement">Privacy statement</a>
 						</div>
-	-->				</div>
+					</div>
 				</div>
 			</div>
 		</div>
