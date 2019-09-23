@@ -30,18 +30,18 @@
 		<div class="collapse navbar-collapse" id="navbarMobile">
 			<ul class="navbar-nav ml-auto pr-5">
 				<li class="nav-item active px-3">
-					<a href="/cz/#about" class="nav-link">About & Topics</a>
+					<a href="/cz/" class="nav-link">Home</a>
 				</li>
 				<li class="nav-item active px-3">
-					<a href="/cz/#news" class="nav-link">News</a>
+					<a href="/cz/aroundbrno" class="nav-link">Getting around Brno</a>
 				</li>
 				<li class="nav-item active px-3">
-					<a href="/cz/#schedule" class="nav-link">Schedule</a>
-				</li>
-				<li class="nav-item active px-3">
-					<a href="/cz/#travel" class="nav-link">How to get here?</a>
+					<a href="/cz/tobrno" class="nav-link">Getting to Brno</a>
 				</li>
 				<li class="nav-item active underline px-3">
+					<a href="/cz/hotels" class="nav-link">Hotels</a>
+				</li>
+				<li class="nav-item active px-3">
 					<a href="/cz/faq"class="nav-link">FAQ</a>
 				</li>
 			</ul>
@@ -53,33 +53,23 @@
 	@include('_layouts.policies')
 </section>
 
-<!--
 <section class="mx-auto pt-5 pb-3 col-lg-11">
 	<div class="row">
-		<div class="h1 mx-5 mont-700 underline position-relative">Hotels</div>
+		<div class="h1 mx-5 mont-700 underline position-relative">Suggested Hotels</div>
 	</div>
 	<div class="row local-nav">
 		<div class="mx-5  mt-4 os-400">
-			<a href="#public">Public transport</a>
-			<a href="#taxi">Taxi</a>
-			<a href="#venue">Getting to the venue</a>
 		</div>
 	</div>
 </section>
 <hr>
-<section id="plane" class="mx-auto col-lg-11"></section>
-<section id="train" class="mx-auto col-lg-11"></section>
-<section id="bus" class="mx-auto col-lg-11"></section>
-<section id="car" class="mx-auto col-lg-11"></section>
--->
-
+<section class="mx-auto col-lg-11">
 	<div class="row">
-		<div class="h2 pt-3 pb-4 mx-5 mont-700">Suggested Hotels</div>
-		<div class="os-400 mx-5">
+		<div class="os-400 mx-5 text-center" style="min-height: 40vh">
 			<strong class="d-block mb-3 os-600">We will post our suggested hotel list and discount terms around 1 December 2019.</strong>
 		</div>
 	</div>
-
+</section>
 @endsection
 
 @include('_layouts.footercz')

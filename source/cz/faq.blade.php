@@ -30,16 +30,16 @@
 		<div class="collapse navbar-collapse" id="navbarMobile">
 			<ul class="navbar-nav ml-auto pr-5">
 				<li class="nav-item active px-3">
-					<a href="/cz/#about" class="nav-link">About & Topics</a>
+					<a href="/cz/" class="nav-link">Home</a>
 				</li>
 				<li class="nav-item active px-3">
-					<a href="/cz/#news" class="nav-link">News</a>
+					<a href="/cz/aroundbrno" class="nav-link">Getting around Brno</a>
 				</li>
 				<li class="nav-item active px-3">
-					<a href="/cz/#schedule" class="nav-link">Schedule</a>
+					<a href="/cz/tobrno" class="nav-link">Getting to Brno</a>
 				</li>
 				<li class="nav-item active px-3">
-					<a href="/cz/#travel" class="nav-link">How to get here?</a>
+					<a href="/cz/hotels" class="nav-link">Hotels</a>
 				</li>
 				<li class="nav-item active underline px-3">
 					<a href="/cz/faq"class="nav-link">FAQ</a>
