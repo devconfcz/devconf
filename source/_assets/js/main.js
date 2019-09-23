@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$(".nav-link, .local-nav a").click(function(event){
+	$(".nav-link.local, .local-nav a").click(function(event){
 		if(this.hash !== ""){
 			event.preventDefault();
 			var hash = this.hash;

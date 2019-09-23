@@ -35,19 +35,19 @@
 		<div class="collapse navbar-collapse" id="navbarMobile">
 			<ul class="navbar-nav ml-auto pr-5">
 				<li class="nav-item active px-3">
-					<a href="#about" class="nav-link">About & Topics</a>
+					<a href="#about" class="nav-link local">About & Topics</a>
 				</li>
 				<li class="nav-item active px-3">
-					<a href="#news" class="nav-link">News</a>
+					<a href="#news" class="nav-link local">News</a>
 				</li>
 				<li class="nav-item active px-3">
-					<a href="#schedule" class="nav-link">Schedule</a>
+					<a href="#schedule" class="nav-link local">Schedule</a>
 				</li>
 				<li class="nav-item active px-3">
-					<a href="#travel" class="nav-link">How to get here?</a>
+					<a href="#travel" class="nav-link local">How to get here?</a>
 				</li>
 				<li class="nav-item active px-3">
-					<a href="/cz/faq"class="nav-link">FAQ</a>
+					<a href="/cz/faq"class="nav-link local">FAQ</a>
 				</li>
 			</ul>
 		</div>
