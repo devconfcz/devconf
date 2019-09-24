@@ -47,7 +47,10 @@
 					<a href="#travel" class="nav-link local">How to get here?</a>
 				</li>
 				<li class="nav-item active px-3">
-					<a href="/cz/faq"class="nav-link local">FAQ</a>
+					<a href="/cz/faq" class="nav-link local">FAQ</a>
+				</li>
+				<li class="nav-item active px-3">
+					<a href="/policies" class="nav-link local" target="_blank">Policies</a>
 				</li>
 			</ul>
 		</div>

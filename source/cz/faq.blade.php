@@ -42,16 +42,15 @@
 					<a href="/cz/hotels" class="nav-link">Hotels</a>
 				</li>
 				<li class="nav-item active underline px-3">
-					<a href="/cz/faq"class="nav-link">FAQ</a>
+					<a href="/cz/faq" class="nav-link">FAQ</a>
+				</li>
+				<li class="nav-item active px-3">
+					<a href="/policies" target="_blank" class="nav-link">Policies</a>
 				</li>
 			</ul>
 		</div>
 	</nav>
 </header>
-
-<section class="secondary-menu mt-5 py-2 mx-auto w-100">
-	@include('_layouts.policies')
-</section>
 <?php
 	$questions = array(
 		array("group" => "General Questions", "id" => "general", 
@@ -103,7 +102,7 @@
 	);
 
 ?>
-<section class="mx-auto pt-5 pb-3 col-lg-11">
+<section class="mx-auto mt-5 pt-5 pb-3 col-lg-11">
 	<div class="row">
 		<div class="h1 mx-5 mont-700 underline position-relative">Frequently Asked Questions (FAQ)</div>
 	</div>

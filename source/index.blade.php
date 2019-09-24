@@ -39,7 +39,12 @@
 
 	<!-- Page Content -->
 	<footer class="landing-footer py-4 mx-auto w-100">
-		@include('_layouts.policies')
+		<div class="card-group justify-content-md-center px-5">
+			<div class="card-body text-center py-3 px-3 mx-auto"><a href="/coc">Code of conduct</a></div>
+			<div class="card-body text-center py-3 px-3 mx-auto"><a href="/participation-agreement">Participation agreement</a></div>
+			<div class="card-body text-center py-3 px-3 mx-auto"><a href="/media-policy">Media policy</a></div>
+			<div class="card-body text-center py-3 px-3 mx-auto"><a href="/privacy-statement">Privacy statement</a></div>
+		</div>
 	</footer>
 </div>
 @endsection
