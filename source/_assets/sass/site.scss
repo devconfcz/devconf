@@ -266,6 +266,9 @@ h1.underline:after, section .h1.underline:after {
 
 a.border {
   color: #fff !important;
+  border-color: #fff !important;
+  display: inline-block;
+  text-align: center;
 }
 
 a.border, .purple-href {

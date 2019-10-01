@@ -40,17 +40,17 @@
 				<li class="nav-item active px-3">
 					<a href="#news" class="nav-link local">News</a>
 				</li>
-				<li class="nav-item active px-3">
+<!--				<li class="nav-item active px-3">
 					<a href="#schedule" class="nav-link local">Schedule</a>
 				</li>
-				<li class="nav-item active px-3">
+-->				<li class="nav-item active px-3">
 					<a href="#travel" class="nav-link local">How to get here?</a>
 				</li>
 				<li class="nav-item active px-3">
 					<a href="/cz/faq" class="nav-link local">FAQ</a>
 				</li>
 				<li class="nav-item active px-3">
-					<a href="/policies" class="nav-link local" target="_blank">Policies</a>
+					<a href="/coc" class="nav-link local" target="_blank">Policies</a>
 				</li>
 			</ul>
 		</div>
@@ -78,24 +78,15 @@
 			<div class="heading-text mont-700 h4">
 				Brno, Czech Republic
 			</div>
+			<div class="heading-text pt-5 mt-5">
+				<a href="https://cfp.devconf.info" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SUBMIT YOUR PROPOSAL</a>
+			</div>
 		</div>
 	</div>
 </header>
 
 <section id="about" class="mx-auto col-lg-11">
-	<div class="card-group py-4 col-lg-8 mx-auto">
-		<div class="card-body text-center px-4">
-			<a class="underline mont-600" href="https://cfp.devconf.info" target="_blank">Submit a proposal</a>
-		</div>
-		<div class="card-body text-center px-4">
-			<a class="underline mont-600" href="https://cfp.devconf.info" target="_blank">Run a booth</a>
-		</div>
-		<div class="card-body text-center px-4">
-			<a class="underline mont-600" href="https://cfp.devconf.info" target="_blank">Host a meetup</a>
-		 </div>
-	</div>
-
-	<div class="row py-4">
+	<div class="row mt-4 py-5">
 		<div class="col-lg-4 mx-5 mb-5 text-center">
 			<img src="/assets/images/devconf-d-brno.svg" class="mw-100" alt="Brno DevConf image asset">
 		</div>
@@ -224,12 +215,12 @@
 		</div>
         </div>
 </section>
-
+<!--
 <section id="schedule" class="mx-auto col-lg-12 background-gray text-center mt-5 py-5">
 	<div class="h1 mont-700 py-4 mt-3">Schedule</div>
 	<a class="p-3 mont-700 mb-3 d-inline-block purple-href">SCHEDULE ISN'T AVAILABLE YET</a>
 </section>
-
+-->
 <section id="travel" class="mx-auto py-5 col-lg-11">
 	<div class="row">
 		<div class="mont-700 h1 underline position-relative mx-5 pb-4">How to get there?</div>

@@ -45,7 +45,7 @@
 					<a href="/cz/faq" class="nav-link">FAQ</a>
 				</li>
 				<li class="nav-item active px-3">
-					<a href="/policies" target="_blank" class="nav-link">Policies</a>
+					<a href="/coc" target="_blank" class="nav-link">Policies</a>
 				</li>
 			</ul>
 		</div>

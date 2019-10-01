@@ -29,10 +29,6 @@ body, html {
 
 .masthead {
   background: #8e83e4;
-  background-image: url("/assets/images/devconf-landing-background.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: right;
   color: #fff;
   flex-grow: 1;
   overflow: hidden;
@@ -223,6 +219,12 @@ h1.underline:after, section .h1.underline:after {
   content: '\f077';
 }
 
+a.border {
+  display: inline-block;
+  border-color: #fff !important;
+  text-align: center;
+}
+
 a.border, .purple-href {
   -webkit-transition: 0.4s ease-out all 0.1s;
   transition: 0.4s ease-out all 0.1s;
@@ -263,7 +265,7 @@ footer .links a, .local-nav a {
   padding-bottom: 0.5rem;
 }
 
-footer .links a:hover, .secondary-menu a:hover, .local-nav a:hover{
+footer .links a:hover, .secondary-menu a:hover, .local-nav a:hover, .local-nav a.active{
   color: #8e83e4;
   text-decoration: none;
   font-weight: 600;
