@@ -43,8 +43,10 @@ To be able to regenerate CSS and JS assets, you have to install all required nod
 To do so, use following command:
 
 ```
-$ nmp install
+$ npm install
 ```
+
+For more information about Jigsaw, visit Jigsaw documentation for [Templates & Partials](https://jigsaw.tighten.co/docs/content-blade/) and for [Assets](https://jigsaw.tighten.co/docs/compiling-assets/).
 
 ### Building
 
