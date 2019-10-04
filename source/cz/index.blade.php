@@ -12,7 +12,6 @@
 
 @section('css')
 <link rel="stylesheet" href="{{ mix('css/site.css', 'assets/build') }}">
-<link rel="stylesheet" href="{{ mix('css/stars.css', 'assets/build') }}">
 <link rel="stylesheet" href="{{ mix('css/timeline.css', 'assets/build') }}">
 @endsection
 
@@ -23,9 +22,6 @@
 
 @section('body')
 <header class="masthead vh-100">
-<div id="stars"></div>
-<div id="stars2"></div>
-<div id="stars3"></div>
 	<nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top">
 		<span class="nav-brand"><a href="#" class="home"><img src="/assets/images/devconf-logo-cz-reverse.svg" alt="DevConf logo"></a></span>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMobile"
