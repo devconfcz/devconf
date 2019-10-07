@@ -83,7 +83,7 @@ python3 -m pip install --index-url https://test.pypi.org/simple/ devconf
 
 See also the list of [contributors](https://github.com/devconfcz/devconf/contributors) who participated in this project.
 
-## Aknowledgements
+## Acknowledgements
 
 * *[Wikipedia](http://wikipedia.org)* - for multiple images and information
 
