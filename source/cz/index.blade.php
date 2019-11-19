@@ -74,10 +74,10 @@
 			<div class="heading-text mont-700 h4">
 				Brno, Czech Republic
 			</div>
-			<div class="heading-text pt-5 mt-5">
+<!--			<div class="heading-text pt-5 mt-5">
 				<a href="https://cfp.devconf.info" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SUBMIT YOUR PROPOSAL</a>
 			</div>
-		</div>
+-->		</div>
 	</div>
 </header>
 
@@ -171,10 +171,10 @@
 					<div class="row">
 						<div class="col mont-600">CfP Opens</div>
 					</div>
-					<div class="row">
+<!--					<div class="row">
 						<div class="col os-400"><a href="https://cfp.devconf.info">Submit your proposal &rarr;</a></div>
 					</div>
-				</div>
+-->				</div>
 			</div>
 		</div>
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
