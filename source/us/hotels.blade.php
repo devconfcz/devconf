@@ -65,7 +65,7 @@
 <section class="mx-auto col-lg-11">
 	<div class="row">
 		<div class="os-400 mx-5 text-center" style="min-height: 40vh">
-			<strong class="d-block mb-3 os-600">We will post our suggested hotel list and discount terms around 1 December 2019.</strong>
+			<strong class="d-block mb-3 os-600">We will post our suggested hotel list and discount terms in August 2020.</strong>
 		</div>
 	</div>
 </section>

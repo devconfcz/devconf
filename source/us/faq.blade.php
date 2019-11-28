@@ -52,7 +52,7 @@
 	</nav>
 </header>
 <?php
-	$questions = array(
+/*	$questions = array(
 		array("group" => "General Questions", "id" => "general", 
 			"questions" => array( 
 				array("q" => "Are the talks recorded or live-streamed?", "a" => "We intend to record and post as many of the talks as possible. Occasionally a speaker’s talk is not able to be recorded for content or technical reasons. The talks will be posted on our YouTube channel as soon as they are ready.<br><br>We are still working out whether it will be possible to live-stream talks this year."),
@@ -99,7 +99,8 @@
 				array("q"=>"What do diversity scholarships cover?", "a" => "The scholarships can cover requests of up to 1,000 USD for expenses such as travel, hotel, food, and child care. Conference registration is free and will open on December 9, 2019."),
 				array("q"=>"How do I apply for a diversity scholarship?", "a" => "Please review full eligibility criteria in the <a href='https://forms.gle/bp5PHdyW8V8zhSsW6' target='_blank'>application form</a> and submit your application by 5pm UTC on Thursday, November 21, 2019. If you proposed a session, but would like to attend the conference regardless of whether it’s accepted, you can fill out the form without waiting for the acceptance decisions. We expect to send out most acceptance decisions before November 21, but speakers whose sessions are accepted after November 21 will still have a chance to apply for diversity scholarships.")
 		))
-	);
+	);*/
+	$questions = array();
 
 ?>
 <section class="mx-auto mt-5 pt-5 pb-3 col-lg-11">
@@ -146,7 +147,13 @@ foreach($questions as $q){
 <?php
 }
 ?>
-
+<section class="mx-auto col-lg-11">
+	<div class="row">
+		<div class="os-400 mx-5 text-center" style="min-height: 40vh">
+			<strong class="d-block mb-3 os-600">We will post answers for FAQ in August 2020.</strong>
+		</div>
+	</div>
+</section>
 @endsection
 
 @include('_layouts.footerus')
