@@ -150,7 +150,7 @@ foreach($questions as $q){
 <section class="mx-auto col-lg-11">
 	<div class="row">
 		<div class="os-400 mx-5 text-center" style="min-height: 40vh">
-			<strong class="d-block mb-3 os-600">We will post our FAQ in January 2020.</strong>
+			<strong class="d-block mb-3 os-600">We will post our 'FAQ' in January 2020.</strong>
 		</div>
 	</div>
 </section>
