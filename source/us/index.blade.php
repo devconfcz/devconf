@@ -152,45 +152,22 @@
 		<!-- Keep in pairs -->
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">Jan 27, 2019</div>
+				<div class="col-4 h5 mont-700">TBD</div>
 				<div class="col-8">
 					<div class="row">
-						<div class="col mont-600">CfP Opens</div>
-					</div>
-					<div class="row">
-						<div class="col os-400"><a href="https://cfp.devconf.info">Submit your proposal &rarr;</a></div>
+						<div class="col mont-600"></div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
-			<div class="row">
-				<div class="col-4 h5 mont-700">Apr 8, 2019</div>
-				<div class="col-8">
-					<div class="row">
-						<div class="col mont-600">CfP Closes</div>
-					</div>
-				</div>
-			</div>
-                </div>
 
 		<!-- Second pair -->
-		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
-			<div class="row">
-				<div class="col-4 h5 mont-700">Jun 9, 2019</div>
-				<div class="col-8">
-					<div class="row">
-						<div class="col mont-600">Accepted speakers confirmation begins and Registration opens</div>
-					</div>
-				</div>
-			</div>
-                </div>
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">Jun 24, 2019</div>
+				<div class="col-4 h5 mont-700"></div>
 				<div class="col-8">
 					<div class="row">
-						<div class="col mont-600">Initial schedule published</div>
+						<div class="col mont-600"></div>
 					</div>
 				</div>
 			</div>
@@ -224,8 +201,8 @@
 			<div class="row h-100 align-items-center">
 				<div class="col text-center">
 					<img src="/assets/images/way-to.svg" class="my-4" alt="Getting to icon" style="height: 74px">
-					<h2 class="mont-700 pb-4">Getting to Boston</h2>
-					<div class="card-text os-400 pt-4">Boston is easily accessible by car, bus, train and plane.</div>
+					<h2 class="mont-700 mb-0">Getting to Boston</h2>
+					<div class="card-text os-400 pt-3">Boston is easily accessible by car, bus, train and plane.</div>
 					<p class="card-text my-5">
 						<a href="/us/toboston" class="border p-3 mont-700">MORE INFORMATION</a>
 					</p>
@@ -236,8 +213,8 @@
 			<div class="row h-100 align-items-center">
 				<div class="col text-center">
 					<img src="/assets/images/hotel.svg" class="my-4" alt="Hotel icon" style="height: 74px">
-					<h2 class="mont-700 pb-4">Hotels</h2>
-					<div class="card-text os-400 pt-4">Need a place to stay? We suggest these properties.</div>
+					<h2 class="mont-700 mb-0">Hotels</h2>
+					<div class="card-text os-400 pt-3">Need a place to stay in Boston? We suggest these properties.</div>
 					<p class="card-text my-5">
 						<a href="/us/hotels" class="border p-3 mont-700">MORE INFORMATION</a>
 					</p>
