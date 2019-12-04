@@ -5,6 +5,28 @@
 @endsection
 
 @section('body')
+<script type="text/javascript">
+    path = window.location.pathname;
+    if (window.location.pathname == "" || window.location.pathname == "/") {
+      switch(window.location.hostname) {
+        case "devconf.cz":
+	case "www.devconf.cz":
+          path = "/cz";
+          break;
+        case "devconf.in":
+	case "www.devconf.in":
+          path = "/in";
+          break;
+        case "devconf.us":
+	case "www.devconf.us":
+          path = "/us";
+          break;
+      }
+    }
+    if (window.location.hostname != "www.devconf.info" && window.location.hostname != "localhost") {
+       window.location.href = 'https://www.devconf.info' + path; 
+    }
+  </script>
 <!-- Full Page Image Header with Vertically Centered Content -->
 <div class="h-100 w-100 d-flex flex-column">
 	<header class="masthead">
