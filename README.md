@@ -1,91 +1,84 @@
 # DevConf
 
-This project fully contains all sources used to build https://devconf.cz and other DevConf (by Red Hat) event sites.
+This branch contains prep work for new devconf.info web design.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
-To build the static pages, python >= 3.4 is required! It's recommended to install in a python 3 virtual environment.
+You'll need to install package composer (for building and local deployment):
 
 ```
-virtualenv-3 ~/virtenvs/devconf --no-site-packages
-
-source ~/virtenvs/devconf/bin/activate
-
-python3 -m pip install devconf
+$ sudo dnf install composer
 ```
 
-To deploy static pages to Firebase, install `firebase-tools`
+And package npm (for generating css and js assets):
 
 ```
-sudo npm install -g firebase-tools
+$ sudo dnf install npm
 ```
+
+First of all, you have to clone this git repository and switch to devel branch.
+
+```
+$ git clone https://github.com/devconfcz/devconf.git
+$ cd devconf
+$ git checkout origin/devel
+```
+
+All following steps has to be done under root folder of devconf:devel repository.
+
+
+For template rendering, we are using [Jigsaw](https://jigsaw.tighten.co/) framework.
+
+To set up Jigsaw environment for devconf, use following command:
+
+```
+$ composer require tightenco/jigsaw
+```
+
+To be able to regenerate CSS and JS assets, you have to install all required node_modules.
+To do so, use following command:
+
+```
+$ npm install
+```
+
+For more information about Jigsaw, visit Jigsaw documentation for [Templates & Partials](https://jigsaw.tighten.co/docs/content-blade/) and for [Assets](https://jigsaw.tighten.co/docs/compiling-assets/).
 
 ### Building
 
-What follows is a step by step guide to help get your static pages building
-
-Open the project page and run `comdev build` with no options to prepare build using absolute url's.
+Once you have all steps from Prerequisities successfully complete, you can build the DevConf webiste by following command:
 
 ```
-cd ~/repos/devconf
-comdev devconf build
+$ vendor/bin/jigsaw build
 ```
 
-This results in a fully populated, deploy-able build being saved to `./builds`.
+Keep in mind, you have to be in root folder of devconf:devel repository
+
+If you made a chage in \_assets folder and want to have this change available in the build, you have to run following command before the build command:
+
+```
+$ npm run prod
+```
 
 ### Deployment
 
-Unless pushing to the default DevConf development Firebase project, you will need to
-run `firebase login` and update the project value in `.firebaserc`.
-
-Then, to build and deploy to firebase hosting, run
+Once you build the website successfully, you can deploy it locally by command:
 
 ```
-comdev devconf build -r
-firebase deploy build
+$ vendor/bin/jigsaw serve
 ```
 
-## Building Python packages
-
-Make sure to bump devconf package version in setup.py.
-
-The following instructions are for building and uploading updated python packages 
-for testing.
-
-Make sure setuptools, wheel and twine packages are updated and you 
-are registered over at https://test.pypi.org/account/register/.
-
-```
-python3 -m pip install --upgrade setuptools wheel
-python3 -m pip install --upgrade twine
-```
-
-Then, Build the packages and upload to the test reposity.
-
-```
-python3 setup.py sdist bdist_wheel
-twine upload --repository-url https://test.pypi.org/legacy/ dist/*
-```
-
-Finally, test installation:
-
-```
-python3 -m pip install --index-url https://test.pypi.org/simple/ devconf
-```
+The content will be available under http://localhost:8000
 
 ## Authors
 
-* **Chris Ward** - [kejbaly2](https://github.com/kejbaly2)
-
+* **Josef Ridky** - [jridky](https://github.com/jridky)
+ 
 See also the list of [contributors](https://github.com/devconfcz/devconf/contributors) who participated in this project.
-
-## Aknowledgements
-
-* *[Wikipedia](http://wikipedia.org)* - for multiple images and information
 
 ## License
 

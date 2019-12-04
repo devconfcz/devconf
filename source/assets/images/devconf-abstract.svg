@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="199px" height="166px" viewBox="0 0 199 166" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <ellipse id="path-1" cx="92.5631909" cy="87.4958511" rx="79.0352113" ry="78.2057762"></ellipse>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="landing-page-cz" transform="translate(-720.000000, -137.000000)">
+            <g id="logo" transform="translate(720.000000, 137.000000)">
+                <g id="Group-3">
+                    <rect id="Rectangle" stroke="#FFFFFF" stroke-width="3" x="1.5" y="1.5" width="55.1408451" height="59.3249097"></rect>
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Oval" fill="#E0DCFF" opacity="0.487699963" xlink:href="#path-1"></use>
+                </g>
+                <g id="Group-5-Copy-13" transform="translate(48.000000, 42.000000)" fill="#FFFFFF">
+                    <path d="M0,27.1812081 L0,0 L14.8076234,0 C22.2391063,0 28.2635135,6.08472068 28.2635135,13.590604 C28.2635135,21.0964874 22.2391063,27.1812081 14.8076234,27.1812081 L14.8076234,27.1812081 L0,27.1812081 Z" id="Combined-Shape"></path>
+                    <path d="M0,58.590604 L0,31.409396 L14.8076234,31.409396 C22.2391063,31.409396 28.2635135,37.4941167 28.2635135,45 C28.2635135,52.5058833 22.2391063,58.590604 14.8076234,58.590604 L14.8076234,58.590604 L0,58.590604 Z" id="Combined-Shape"></path>
+                    <rect id="Rectangle-Copy-14" x="31.8716216" y="0" width="27.0608108" height="27.1812081"></rect>
+                    <rect id="Rectangle-Copy-15" x="31.8716216" y="31.409396" width="27.0608108" height="27.1812081"></rect>
+                    <polygon id="Triangle-Copy-4" transform="translate(75.469595, 13.590604) rotate(180.000000) translate(-75.469595, -13.590604) " points="75.4695946 0 89 27.1812081 61.9391892 27.1812081"></polygon>
+                    <polygon id="Triangle-Copy-5" transform="translate(75.469595, 45.000000) rotate(180.000000) translate(-75.469595, -45.000000) " points="75.4695946 31.409396 89 58.590604 61.9391892 58.590604"></polygon>
+                    <path d="M0,90 L0,62.8187919 L14.8076234,62.8187919 C22.2391063,62.8187919 28.2635135,68.9035126 28.2635135,76.409396 C28.2635135,83.9152793 22.2391063,90 14.8076234,90 L14.8076234,90 L0,90 Z" id="Combined-Shape"></path>
+                    <rect id="Rectangle-Copy-18" x="31.8716216" y="62.8187919" width="27.0608108" height="27.1812081"></rect>
+                    <polygon id="Triangle-Copy-6" transform="translate(75.469595, 76.409396) rotate(180.000000) translate(-75.469595, -76.409396) " points="75.4695946 62.8187919 89 90 61.9391892 90"></polygon>
+                </g>
+                <polygon id="Triangle" stroke="#FFFFFF" stroke-width="3" points="158.5 89 196 163 121 163"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
