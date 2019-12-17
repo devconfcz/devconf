@@ -75,6 +75,7 @@
 				Brno, Czech Republic
 			</div>
 			<div class="heading-text pt-1 pt-lg-5 mt-1 mt-lg-5">
+				<strong>TICKETS ARE GONE ALREADY, BUT YOU CAN JOIN WAITLIST!</strong><br>
 				<a href="https://www.eventbrite.com/e/devconfcz-2020-tickets-83312671443" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">ATTENDEE REGISTRATION</a>
 			</div>
 		</div>
