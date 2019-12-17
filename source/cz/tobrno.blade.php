@@ -74,7 +74,7 @@
 			<strong class="d-block mb-3 os-600">Brno Airport (BRQ)</strong>
 			<ul>
                 <li>Brno airport is a small international airport near Brno.
-                    This airport is a good option if you are coming from London (Stansted - Ryanair, Luton - Wizzair).</li>
+                    This airport is a good option if you are coming from London (Stansted - Ryanair).</li>
                 <li>From the airport, city bus #76 will take you to the city center (30 minutes) and drop you off between the main train station and the Hotel Grand bus stop.
                     You can also take a taxi for approximaely 300 CZK/€12.</li>
 			</ul>
