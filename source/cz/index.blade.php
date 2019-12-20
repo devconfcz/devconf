@@ -211,6 +211,14 @@
 			</div>
 		</div>
         </div>
+	<div class="row mt-4">
+		<div class="h1 mx-5 mont-700">News</div>
+	</div>
+	<div class="row">
+		<div class="col-10 mx-auto">
+			<p class="os-400">Attendee registration for <strong>Red Hat Alumni II</strong> meetup is open <a href="https://redhat.avature.net/eventslisting/JobDetail?jobId=15409" target="_blank">here</a>.</p>
+		</div>
+	</div>
 </section>
 <section id="schedule" class="mx-auto col-lg-12 background-gray text-center mt-5 py-5">
 	<div class="h1 mont-700 py-4 mt-3">Schedule</div>

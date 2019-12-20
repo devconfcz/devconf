@@ -225,7 +225,7 @@ h1.underline:after, section .h1.underline:after {
   bottom: 0.5rem;
 }
 
-#news {
+#news, #news .os-400 {
   color: #141b41;
 }
 
@@ -233,11 +233,7 @@ h1.underline:after, section .h1.underline:after {
   color: #8e83e4;
 }
 
-#news .os-400, #news .os-400 a {
-  color: #6d7278;
-}
-
-#news .os-400 a:hover {
+#news .os-400 a, #news .os-400 a:hover {
   color: #8e83e4;
   text-decoration: none;
   font-weight: 600;
