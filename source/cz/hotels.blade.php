@@ -51,38 +51,6 @@
 		</div>
 	</nav>
 </header>
-
-<header class="masthead">
-	<nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top masthead">
-		<span class="nav-brand"><a href="/cz"><img src="/assets/images/devconf-logo-cz-reverse.svg"></a></span>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMobile"
-		    aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarMobile">
-			<ul class="navbar-nav ml-auto pr-5">
-				<li class="nav-item active px-3">
-					<a href="/cz/" class="nav-link">Home</a>
-				</li>
-				<li class="nav-item active px-3">
-					<a href="/cz/aroundbrno" class="nav-link">Getting around Brno</a>
-				</li>
-				<li class="nav-item active px-3">
-					<a href="/cz/tobrno" class="nav-link">Getting to Brno</a>
-				</li>
-				<li class="nav-item active underline px-3">
-					<a href="/cz/hotels" class="nav-link">Hotels</a>
-				</li>
-				<li class="nav-item active px-3">
-					<a href="/cz/faq" class="nav-link">FAQ</a>
-				</li>
-				<li class="nav-item active px-3">
-					<a href="/coc" target="_blank" class="nav-link">Policies</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-</header>
 <section class="mx-auto mt-5 pt-5 pb-3 col-lg-11">
 	<div class="row">
 		<div class="h1 mx-5 mont-700 underline position-relative">Hotels</div>
@@ -131,6 +99,7 @@
 
 			<div class="os-400 mx-5">
 				<p><a href="https://www.hotelavanti.cz/en/" target="_blank">https://www.hotelavanti.cz/en/</a></p>
+				<p class="alert alert-success d-inline-block">10+ classic rooms available</p>
 				<p>Single Classic room - 1.500 CZK/night<br>
 				Double Classic room - 1.700 CZK/night</p>
 				<p><strong>If you book a premium room you will be covered only up to the price of Classic room.</strong></p>
@@ -145,6 +114,7 @@
 
 			<div class="os-400 mx-5">
 				<p><a href="https://www.vista-hotel.cz/" target="_blank">https://www.vista-hotel.cz/</a></p>
+				<p class="alert alert-success d-inline-block">10+ classic rooms available</p>
 				<p>Single Classic room 1.450 CZK/night<br>
 				Double Classic room 1.650 CZK/night</p>
 				<p>The room rate is inclusive of VAT, buffet breakfast, Wi-Fi and parking.</p>
@@ -156,6 +126,7 @@
 
 			<div class="os-400 mx-5">
 				<p><a href="https://www.continentalbrno.cz/en/" target="_blank">https://www.continentalbrno.cz/en/</a></p>
+				<p class="alert alert-danger d-inline-block">No classic rooms available</p>
 				<p>Single Classic room - 1.350 CZK/night</p>
 				<p><strong>If you book a premium room you will be covered only up to the price of Classic room.</strong></p>
 				<p>Single Premium room - 1.700 CZK/night<br>
@@ -169,6 +140,7 @@
 
 			<div class="os-400 mx-5">
 				<p><a href="https://grandhotelbrno.cz/en/" target="_blank">https://grandhotelbrno.cz/en/</a></p>
+				<p class="alert alert-warning d-inline-block">Less than 10 classic rooms available</p>
 				<p>Single Classic room 1.650 CZK/night</p>
 				<p>The rate is including breakfast and all taxes.</p>
 				<p>Email for making reservations is:<br><a href="mailto:reservation@grandhotelbrno.cz">reservation@grandhotelbrno.cz</a></p>
@@ -179,6 +151,7 @@
 
 			<div class="os-400 mx-5">
 				<p><a href="http://hotelpassage.eu/" target="_blank">http://hotelpassage.eu/</a></p>
+				<p class="alert alert-success d-inline-block">10+ classic rooms available</p>
 				<p>Single Classic room 1.900 CZK/night<br>
 				Double Classic room 2.150 CZK/night</p>
 				<p>The rate is including breakfast and Wi-Fi, but is <strong>without 15% tax</strong>.</p>
@@ -190,6 +163,7 @@
 
 			<div class="os-400 mx-5">
 				<p><a href="http://www.a-sporthotel.cz/en/" target="_blank">http://www.a-sporthotel.cz/en/</a></p>
+				<p class="alert alert-success d-inline-block">10+ classic rooms available</p>
 				<p>Single Classic room 1.190 CZK/night</p>
 				<p>The rate is including breakfast and all taxes.</p>
 				<p>Email for making reservations is:<br><a href="mailto:brno@a-sporthotel.cz">brno@a-sporthotel.cz</a></p>
@@ -222,6 +196,7 @@
 
 			<div class="os-400 mx-5">
 				<p><a href="https://www.hotelavanti.cz/en/" target="_blank">https://www.hotelavanti.cz/en/</a></p>
+				<p class="alert alert-success d-inline-block">10+ classic rooms available</p>
 				<p>Single Classic room - 1.500 CZK/night<br>
 				Double Classic room - 1.700 CZK/night<br>
 				Single Premium room - 1.650 CZK/night<br>
@@ -235,6 +210,7 @@
 
 			<div class="os-400 mx-5">
 				<p><a href="https://www.vista-hotel.cz/" target="_blank">https://www.vista-hotel.cz/</a></p>
+				<p class="alert alert-success d-inline-block">10+ classic rooms available</p>
 				<p>Single Classic room 1.450 CZK/night<br>
 				Double Classic room 1.650 CZK/night</p>
 				<p>The room rate is inclusive of VAT, buffet breakfast, Wi-Fi and parking.</p>
@@ -246,6 +222,7 @@
 
 			<div class="os-400 mx-5">
 				<p><a href="https://www.continentalbrno.cz/en/" target="_blank">https://www.continentalbrno.cz/en/</a></p>
+				<p class="alert alert-danger d-inline-block">No classic rooms available</p>
 				<p>Single Classic room - 1.350 CZK/night<br>
 				Single Premium room - 1.700 CZK/night<br>
 				Double Premium room - 1.980 CZK/night</p>
@@ -258,6 +235,7 @@
 
 			<div class="os-400 mx-5">
 				<p><a href="https://grandhotelbrno.cz/en/" target="_blank">https://grandhotelbrno.cz/en/</a></p>
+				<p class="alert alert-warning d-inline-block">Less than 10 classic rooms available</p>
 				<p>Single Classic room 1.650 CZK/night</p>
 				<p>The rate is including breakfast and all taxes.</p>
 				<p>Email for making reservations is:<br><a href="mailto:reservation@grandhotelbrno.cz">reservation@grandhotelbrno.cz</a></p>
@@ -268,6 +246,7 @@
 
 			<div class="os-400 mx-5">
 				<p><a href="http://hotelpassage.eu/" target="_blank">http://hotelpassage.eu/</a></p>
+				<p class="alert alert-success d-inline-block">10+ classic rooms available</p>
 				<p>Single Classic room 1.900 CZK/night<br>
 				Double Classic room 2.150 CZK/night</p>
 				<p>The rate is including breakfast and Wi-Fi, but is <strong>without 15% tax</strong>.</p>
@@ -279,6 +258,7 @@
 
 			<div class="os-400 mx-5">
 				<p><a href="http://www.a-sporthotel.cz/en/" target="_blank">http://www.a-sporthotel.cz/en/</a></p>
+				<p class="alert alert-success d-inline-block">10+ classic rooms available</p>
 				<p>Single Classic room 1.190 CZK/night</p>
 				<p>The rate is including breakfast and all taxes.</p>
 				<p>Email for making reservations is:<br><a href="mailto:brno@a-sporthotel.cz">brno@a-sporthotel.cz</a></p>
