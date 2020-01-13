@@ -17,9 +17,24 @@
 }
 
 h1, h2, p{
-	font-size: 450%;
-	text-align: center;
+	font-size: 400%;
+	text-align: left;
+	padding-left: 10%;
+	padding-right: 2%;
 	font-family: DevConfMontserrat, Montserrat, Arial, serif;
+}
+
+p{
+	padding-top: 5%;
+}
+
+h1{
+	font-weight: 700;
+	font-size: 450%;
+}
+
+.masthead{
+	background-image: url("/assets/images/devconf-wifi-background.svg");
 }
 </style>
 @endsection
@@ -51,16 +66,21 @@ h1, h2, p{
 <div class="h-100 w-100 d-flex flex-column">
 	<header class="masthead">
 		<div class="pt-5 container active h-100" time="8000">
-			<div class="row" style="padding: 10% 0 0 0">
-				<img src="/assets/images/devconf-logo-reverse.svg" alt="DevConf logo" class="d-inline-block mx-auto" style="width: 42vw;">
+			<div class="row" style="padding: 1% 0 9% 0">
+				<img src="/assets/images/devconf-logo-cz-reverse.svg" alt="DevConf logo" class="d-inline-block" style="margin-left: 7%; width: 15vw;">
 			</div>
 			<h1>Wi-Fi Connection</h1>
-			<h2>SSID: <strong>VUTBRNO</strong></h2>
-			<h2>USER: <strong>devconfcz</strong></h2>
-			<h2>PASSWORD: <strong>Developers2020</strong></h2>
+			<h2 style="padding-top: 3%">SSID: <strong>VUTBRNO</strong></h2>
+			<h2>User: <strong>devconfcz</strong></h2>
+			<h2>Password: <strong>Developers2020</strong></h2>
 		</div>
-		<div class="pt-3 container h-100" time="10000">
-			<p>Come to the final session on Sunday! You can take part in our <strong>Pop Quiz and win some interesting prizes!</strong></p>
+		<div class="container h-100" time="10000">
+			<p style="padding-top: 8%">Move to the middle and <strong>use every seat</strong>.<br>The fire code says <strong class="red">NO STANDING ALLOWED</strong>.</p>
+			<p>Follow us on Twitter and Facebook!</p>
+			<p>Use <strong class="purple">#devconf_cz #defineFUTURE #opensource</strong> for your posts!</p>
+		</div>
+		<div class="container h-100" time="6000">
+			<p style="padding-top: 22%">Come to the final session on Sunday! You can take part in our <strong>Pop Quiz and win some interesting prizes!</strong></p>
 		</div>
 	</header>
 
