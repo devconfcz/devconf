@@ -108,9 +108,11 @@ h1{
 			<h2>User: <strong>devconfcz</strong></h2>
 			<h2>Password: <strong>Developers2020</strong></h2>
 		</div>
-		<div class="container h-100" time="10000">
-			<p style="padding-top: 8%">Move to the middle and <strong>use every seat</strong>.<br>The fire code says <strong class="red">NO STANDING ALLOWED</strong>.</p>
-			<p>Follow us on Twitter and Facebook!</p>
+		<div class="container h-100" time="6000">
+			<p style="padding-top: 22%">Move to the middle and <strong>use every seat</strong>.<br>The fire code says <strong class="red">NO STANDING ALLOWED</strong>.</p>
+		</div>
+		<div class="container h-100" time="8000">
+			<p style="padding-top: 18%">Follow us on Twitter and Facebook!</p>
 			<p>Use <strong class="purple">#devconf_cz #defineFUTURE #opensource</strong> for your posts!</p>
 		</div>
 		<div class="container h-100" time="6000">
@@ -132,9 +134,15 @@ h1{
 			active.animate({opacity: 0.0},2000).removeClass("active last-active");
 			setTimeout( "slideSwitch()", $(".container.active").attr("time") );
 		}
+
+		function refresh(){
+			window.location="https://www.devconf.info/cz/wifi";
+		}
+
 		$(function() {
 			if($(".container").length > 1){
 				setTimeout( "slideSwitch()", $(".container.active").attr("time"));
+				setTimeout( "refresh()", 420000);
 			}
 		});
 
