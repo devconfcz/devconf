@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<meta name="author" content="Josef Ridky <jridky@redhat.com>">
+	<meta name="description" content="DevConf are free and open, annual, open-source community conferences for community contibutors, sponsored by Red Hat.">
+
+	<meta property="og:title" content="DevConf.INFO">
+	<meta property="og:site_name" content="DevConf.info">
+	<meta property="og:description" content="DevConf are free and open, annual, open-source community conferences for community contibutors, sponsored by Red Hat.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://devconf.info">
+	<meta property="og:image" content="https://devconf.info/assets/images/devconf-icon.svg">
+	<meta property="twitter:image" content="https://devconf.info/assets/images/devconf-icon.svg">
+
+	<!-- YouTube Channel Linking Verification -->
+	<meta name="google-site-verification" content="IXOh3zMePCSVZkCqKQr8dZVFfpQgPG5Og-ZpULr8MJ4" />
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=296056955c4513b0816e">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#512954">
+
+	<title>DevConf Wi-Fi Connection</title>
+<style>
+.container{
+	opacity: 0;
+	z-index: 1;
+	position: absolute;
+	margin: 0px auto;
+	max-width: 99%;
+}
+
+.active{
+	opacity: 1;
+	z-index: 3;
+}
+
+h1, h2, p{
+	font-size: 450%;
+	text-align: center;
+	font-family: DevConfMontserrat, Montserrat, Arial, serif;
+}
+</style>
+    </head>
+    <body>
+        <!-- Full Page Image Header with Vertically Centered Content -->
+<script type="text/javascript">
+    path = window.location.pathname;
+    if (window.location.pathname == "" || window.location.pathname == "/") {
+      switch(window.location.hostname) {
+        case "devconf.cz":
+	case "www.devconf.cz":
+          path = "/cz";
+          break;
+        case "devconf.in":
+	case "www.devconf.in":
+          path = "/in";
+          break;
+        case "devconf.us":
+	case "www.devconf.us":
+          path = "/us";
+          break;
+      }
+    }
+    if (window.location.hostname != "www.devconf.info" && window.location.hostname != "localhost") {
+       window.location.href = 'https://www.devconf.info' + path; 
+    }
+  </script>
+<div class="h-100 w-100 d-flex flex-column">
+	<header class="masthead">
+		<div class="pt-5 container active h-100" time="8000">
+			<div class="row" style="padding: 10% 0 0 0">
+				<img src="/assets/images/devconf-logo-reverse.svg" alt="DevConf logo" class="d-inline-block mx-auto" style="width: 42vw;">
+			</div>
+			<h1>Wi-Fi Connection</h1>
+			<h2>SSID: <strong>VUTBRNO</strong></h2>
+			<h2>USER: <strong>devconfcz</strong></h2>
+			<h2>PASSWORD: <strong>Developers2020</strong></h2>
+		</div>
+		<div class="pt-3 container h-100" time="10000">
+			<p>Come to the final session on Sunday! You can take part in our <strong>Pop Quiz and win some interesting prizes!</strong></p>
+		</div>
+	</header>
+
+	<script>
+		function slideSwitch(){
+			var active = $("div.container.active");
+			if ( active.length == 0 ) active = $("div.container:last");
+
+			var next =  active.next().length ? active.next() : $("div.container:first") ;
+			active.addClass("last-active");
+			next.css({opacity: 0.0})
+			     .addClass("active")
+			     .animate({opacity: 1.0}, 2000);
+				   
+			active.animate({opacity: 0.0},2000).removeClass("active last-active");
+			setTimeout( "slideSwitch()", $(".container.active").attr("time") );
+		}
+		$(function() {
+			if($(".container").length > 1){
+				setTimeout( "slideSwitch()", $(".container.active").attr("time"));
+			}
+		});
+
+	</script>
+</div>
+    </body>
+</html>
