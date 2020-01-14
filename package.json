@@ -16,9 +16,9 @@
         "hasbin": "^1.2.3",
         "laravel-mix": "^4.0.0",
         "node-cmd": "^3.0.0",
-        "sass": "^1.15.2",
+        "sass": "^1.24.4",
         "sass-loader": "^7.1.0",
-        "vue-template-compiler": "^2.6.10",
+        "vue-template-compiler": "^2.6.11",
         "yargs": "^4.6.0"
     }
 }
