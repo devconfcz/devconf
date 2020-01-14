@@ -25,6 +25,7 @@
 	<link rel="stylesheet" href="{{ mix('css/backtop.css', 'assets/build') }}">
 	@yield('css')       
         <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
+	<link rel="stylesheet" href="{{ mix('css/cookie.css', 'assets/build') }}">
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -62,5 +63,30 @@
 			</div>
 		</div>
 	</footer>
+	<div id="cookie">
+		<div id="cookie-wrapper">
+			<div id="cookie-text">
+			 We use cookies on our websites to deliver our online services. Details about how we use cookies and how you may disable them are
+			 set in our <a href="/privacy-statement" target="_blank">Privacy Statement</a>. By using this website you agree to our use of cookies.
+			</div>
+			<div id="cookie-close">&times;</div>
+		</div>	
+	</div>
+	<script>
+		var cookie = document.cookie.split('cwa=');
+		if(1 < cookie.length){
+			$("#cookie").remove();
+		}
+
+		$("#cookie-close").click(function(){
+			var d = new Date();
+			d.setTime(d.getTime() + (364*24*60*60*1000));
+			var expires = "expires=" + d.toGMTString();
+			document.cookie = "cwa=accept;" + expires + ";path=/";
+			$("#cookie").fadeOut("slow", function (){
+				$("#cookie").remove();
+			});
+		});
+	</script>
     </body>
 </html>

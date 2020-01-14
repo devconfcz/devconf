@@ -29,6 +29,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
+        <link rel="stylesheet" href="{{ mix('css/cookie.css', 'assets/build') }}">
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -40,5 +41,31 @@
     </head>
     <body>
         @yield('body')
+
+	<div id="cookie">
+		<div id="cookie-wrapper">
+			<div id="cookie-text">
+			 We use cookies on our websites to deliver our online services. Details about how we use cookies and how you may disable them are
+			 set in our <a href="/privacy-statement" target="_blank">Privacy Statement</a>. By using this website you agree to our use of cookies.
+			</div>
+			<div id="cookie-close">&times;</div>
+		</div>	
+	</div>
+	<script>
+		var cookie = document.cookie.split('cwa=');
+		if(1 < cookie.length){
+			$("#cookie").remove();
+		}
+
+		$("#cookie-close").click(function(){
+			var d = new Date();
+			d.setTime(d.getTime() + (364*24*60*60*1000));
+			var expires = "expires=" + d.toGMTString();
+			document.cookie = "cwa=accept;" + expires + ";path=/";
+			$("#cookie").fadeOut("slow", function (){
+				$("#cookie").remove();
+			});
+		});
+	</script>
     </body>
 </html>

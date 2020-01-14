@@ -32,7 +32,8 @@
 	<link rel="stylesheet" href="/assets/build/css/site.css?id=a8099bee934a697ea554">
 <link rel="stylesheet" href="/assets/build/css/timeline.css?id=d19f7caa3f7eaf28f53d">
        
-        <script src="/assets/build/js/main.js?id=e5eb3b40f25d86321dfe"></script>
+        <script src="/assets/build/js/main.js?id=5c546a289d0bdd621d47"></script>
+	<link rel="stylesheet" href="/assets/build/css/cookie.css?id=2ab9ea47ae3b4d485920">
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -396,5 +397,30 @@
 			</div>
 		</div>
 	</footer>
+	<div id="cookie">
+		<div id="cookie-wrapper">
+			<div id="cookie-text">
+			 We use cookies on our websites to deliver our online services. Details about how we use cookies and how you may disable them are
+			 set in our <a href="/privacy-statement" target="_blank">Privacy Statement</a>. By using this website you agree to our use of cookies.
+			</div>
+			<div id="cookie-close">&times;</div>
+		</div>	
+	</div>
+	<script>
+		var cookie = document.cookie.split('cwa=');
+		if(1 < cookie.length){
+			$("#cookie").remove();
+		}
+
+		$("#cookie-close").click(function(){
+			var d = new Date();
+			d.setTime(d.getTime() + (364*24*60*60*1000));
+			var expires = "expires=" + d.toGMTString();
+			document.cookie = "cwa=accept;" + expires + ";path=/";
+			$("#cookie").fadeOut("slow", function (){
+				$("#cookie").remove();
+			});
+		});
+	</script>
     </body>
 </html>
