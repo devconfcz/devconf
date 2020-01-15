@@ -1,4 +1,4 @@
-@extends('_layouts.master')
+@extends('_layouts.noads')
 
 @section('title')
 <title>Whoops! DevConf not found.</title>

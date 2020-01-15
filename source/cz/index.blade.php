@@ -159,7 +159,7 @@
 	</div>
 </section>
 
-<section id="news" class="mx-auto py-5 col-lg-11">
+<section id="news" class="mx-auto pt-5 col-lg-11">
 	<div class="row">
 		<div class="h1 mx-5 mont-700">Important dates</div>
 	</div>
@@ -219,6 +219,71 @@
 			<p class="os-400">Attendee registration for <strong>Red Hat Alumni II</strong> meetup is open <a href="https://redhat.avature.net/eventslisting/JobDetail?jobId=15409" target="_blank">here</a>.</p>
 		</div>
 	</div>
+	<div class="row">
+		<div class="col-10 mx-auto">
+			<p class="os-400">Join <a href="https://t.me/devconfcz" target="_blank">Telegram DevConf.CZ Attendees group chat</a>! Connect with other attendees and get instant updates from the organizers!</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-10 mx-auto">
+			<p class="os-400">Conference rooms are assigned based on attendee's preferences. See <a href="#schedule">schedule</a>.</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-2 mx-auto">
+			This is the list of booths you can expect at DevConf.CZ this year. Get ready for some stickers and so much more!
+			<ul class="timeline timeline-centered pt-5">
+			<?php
+
+				$booths = array(
+						array("name"=>"Base48","description"=>""),
+						array("name"=>"Ceph","description"=>""),
+						array("name"=>"Fedora","description"=>""),
+						array("name"=>"Foreman","description"=>"Friday and Saturday only"),
+						array("name"=>"Integration Platform for Cloud-Native Application Development","description"=>"Friday and Saturday only"),
+						array("name"=>"Kubernetes OKD","description"=>""),
+						array("name"=>"Kubernetes native CI/CD with Tekton pipelines","description"=>"Friday and Saturday only"),
+						array("name"=>"Learn to make games with CircuitPython ","description"=>"Saturday only"),
+						array("name"=>"ManageIQ/Ansible","description"=>"Friday and Saturday only"),
+						array("name"=>"Mozilla.cz","description"=>"Saturday and Sunday only"),
+						array("name"=>"Prometheus","description"=>"Friday and Saturday only"),
+						array("name"=>"Pulp","description"=>""),
+						array("name"=>"Python","description"=>""),
+						array("name"=>"RDO Project","description"=>""),
+						array("name"=>"Red Hat Brno 3D print and open hardware lab ","description"=>""),
+						array("name"=>"Red Hat Neurodiversity Community","description"=>""),
+						array("name"=>"Red Hat Research","description"=>"Friday and Saturday only"),
+						array("name"=>"Red Hat Talent Acquisition","description"=>""),
+						array("name"=>"The oVirt Project","description"=>""),
+						array("name"=>"The search for usable documentation","description"=>""),
+						array("name"=>"Ubuntu","description"=>""),
+						array("name"=>"UXD/Patternfly","description"=>"Friday and Saturday only"),
+
+					  );
+
+				foreach($booths as $i=>$t){
+					if($i%2 == 0){?>
+				<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-600 timeline-title"><?php echo $t['name'];?></div>
+						<p class="timeline-description os-400"><?php echo $t['description'];?></p>
+					</div>
+					<div class="timeline-marker"></div>
+				<?php }else{ ?>
+					<div class="timeline-content-right">
+						<div class="mont-600 timeline-title"><?php echo $t['name'];?></div>
+						<p class="timeline-description os-400"><?php echo $t['description'];?></p>
+					</div>
+				</li>
+				<?php }
+				}
+				if(count($booths)%2 == 1){
+					echo "</div></li>";
+				}?>
+			</ul>
+		</div>
+	</div>
+
 </section>
 <section id="schedule" class="mx-auto col-lg-12 background-gray text-center mt-5 py-5">
 	<div class="h1 mont-700 py-4 mt-3">Schedule</div>

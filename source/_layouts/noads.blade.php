@@ -28,7 +28,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/assets/build/css/main.css?id=296056955c4513b0816e">
+        <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -36,20 +36,9 @@
 	<link rel="manifest" href="/manifest.json">
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#512954">
 
-	<title>Whoops! DevConf not found.</title>
+	@yield('title')
     </head>
     <body>
-        <!-- Full Page Image Header with Vertically Centered Content -->
-<header class="masthead h-100">
-  <div class="container h-100">
-    <div class="row h-100 align-items-center">
-      <div class="col-12 text-center e404">
-	<img src="/assets/images/404.png" alt="404 image" class="w-50 pb-5">
-        <h1 class=>Whoops, requested page is missing!</h1>
-        <p class="lead">We could't find page you were looking for. Please head back or visit our <a href="https://devconf.info" class="landing-flags">Home page</a>.</p>
-      </div>
-    </div>
-  </div>
-</header>
+        @yield('body')
     </body>
 </html>

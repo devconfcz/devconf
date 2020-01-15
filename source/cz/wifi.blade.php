@@ -1,4 +1,4 @@
-@extends('_layouts.master')
+@extends('_layouts.noads')
 
 @section('title')
 <title>DevConf Wi-Fi Connection</title>
