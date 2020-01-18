@@ -114,8 +114,7 @@
 	<div class="row">
 		<div class="h2 pt-3 pb-4 mx-5 mont-700">By train</div>
 		<div class="os-400 mx-5">
-            <p>Brno has good train connections within Europe. All international trains are currently arriving and departing at the secondary station (Brno dolní nádraží).
-               There is a shuttle bus, included in the price of your train ticket, from this station to the Main Train Station.</p>
+	        <p>Brno has good train connections within Europe. All international trains are arriving and departing at the Main Train Station.</p>
 
 			<strong class="d-block mb-3 os-600">Train Timetables</strong>
 			<ul>
