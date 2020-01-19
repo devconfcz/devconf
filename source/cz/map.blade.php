@@ -58,7 +58,7 @@
 	</div>
 	<div class="row local-nav">
 		<div class="mx-5  mt-4 os-400">
-			<a href="/assets/images/devconf-cz-map.pdf">Map</a>
+			<a href="/assets/images/devconf-cz-map.pdf">Link to the map of venue</a>
 		</div>
 	</div>
 </section>
