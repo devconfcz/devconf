@@ -77,6 +77,10 @@ h1{
 		<div class="container h-100" time="6000">
 			<p style="padding-top: 22%">Move to the middle and <strong>use every seat</strong>.<br>The fire code says <strong class="red">NO STANDING ALLOWED</strong>.</p>
 		</div>
+		<div class="container h-100" time="10000">
+			<p style="padding-top: 20%">Be kind to your fellow attendees and limit your use of the Wi-Fi to necessary communication. Please <strong>don't</strong> stream movies, download ISOs, etc
+			 as the bandwidth is shared by everyone.</p>
+		</div>
 		<div class="container h-100" time="8000">
 			<p style="padding-top: 18%">Follow us on Twitter and Facebook!</p>
 			<p>Use <strong class="purple">#devconf_cz #defineFUTURE #opensource</strong> for your posts!</p>
