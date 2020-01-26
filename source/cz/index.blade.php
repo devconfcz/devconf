@@ -75,7 +75,7 @@
 				Brno, Czech Republic
 			</div>
 			<div class="heading-text pt-1 pt-lg-5 mt-1 mt-lg-5">
-				<a href="https://devconfcz2020a.sched.com/" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SCHEDULE</a>
+				<a href="https://docs.google.com/forms/d/1tLpt0iKcWVIF1FlRiuFaUxC7n-KuJDWjoTjXYPfESNA/viewform?edit_requested=true" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">FEEDBACK FORM</a>
 			</div>
 		</div>
 	</div>
