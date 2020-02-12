@@ -69,14 +69,14 @@
 				open source community conference
 			</div>
 			<div class="heading-text mont-700 h1 pt-5">
-				August, 2020
+				September 23-25, 2020
 			</div>
 			<div class="heading-text mont-700 h4">
-				Boston, USA
+				Framingham MA, USA
 			</div>
-<!--			<div class="heading-text pt-5 mt-5">
+			<div class="heading-text pt-5 mt-5">
 				<a href="https://cfp.devconf.info" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SUBMIT YOUR PROPOSAL</a>
-			</div>-->
+			</div>
 		</div>
 	</div>
 </header>
@@ -90,7 +90,7 @@
 			<h1 class="mont-700 underline pb-4">About DevConf</h1>
 			<div class="os-400">
                 <p>DevConf.US 2020 is the 3rd annual, free, Red Hat sponsored technology conference for community project and professional contributors to Free and Open Source technologies
-		 at the Boston University in the historic city of Boston, USA.</p>
+		 at the Sheraton Framingham Hotel & Conference Center in the historic city of Framingham, USA.</p>
 
 		<p>There is no admission or ticket charge for DevConf.US events. However, you are required to complete a free registration. Watch this site for updates about registration. 
 		Talks, presentations and workshops will all be in English.</p>
@@ -152,22 +152,42 @@
 		<!-- Keep in pairs -->
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">TBD</div>
+				<div class="col-4 h5 mont-700">Feb 19, 2020</div>
 				<div class="col-8">
 					<div class="row">
-						<div class="col mont-600"></div>
+						<div class="col mont-600">CfP Opens</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
-		<!-- Second pair -->
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700"></div>
+				<div class="col-4 h5 mont-700">April 27, 2020</div>
 				<div class="col-8">
 					<div class="row">
-						<div class="col mont-600"></div>
+						<div class="col mont-600">CfP Closes</div>
+					</div>
+				</div>
+			</div>
+                </div>
+
+		<!-- Second pair -->
+		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
+			<div class="row">
+				<div class="col-4 h5 mont-700">June 8, 2020</div>
+				<div class="col-8">
+					<div class="row">
+						<div class="col mont-600">Speaker Acceptance Letters Sent</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
+			<div class="row">
+				<div class="col-4 h5 mont-700">July 3, 2020</div>
+				<div class="col-8">
+					<div class="row">
+						<div class="col mont-600">Registration Opens and Schedule Published</div>
 					</div>
 				</div>
 			</div>
@@ -189,8 +209,8 @@
 			<div class="row h-100 align-items-center">
 				<div class="col text-center">
 					<img src="/assets/images/travel-around.svg" class="my-4" alt="Getting around icon" style="height: 74px">
-					<h2 class="mont-700 mb-0">Getting around Boston</h2>
-					<div class="card-text os-400 pt-3">Boston has a 24 hour public transit system and the site is accessible by car.</div>
+					<h2 class="mont-700 mb-0">Getting around Framingham</h2>
+					<div class="card-text os-400 pt-3">Framingham has a public transit system and the site is accessible by car.</div>
 					<p class="card-text my-5">
 						<a href="/us/aroundboston" class="border p-3 mont-700">MORE INFORMATION</a>
 					</p>
@@ -201,8 +221,8 @@
 			<div class="row h-100 align-items-center">
 				<div class="col text-center">
 					<img src="/assets/images/way-to.svg" class="my-4" alt="Getting to icon" style="height: 74px">
-					<h2 class="mont-700 mb-0">Getting to Boston</h2>
-					<div class="card-text os-400 pt-3">Boston is easily accessible by car, bus, train and plane.</div>
+					<h2 class="mont-700 mb-0">Getting to Framingham</h2>
+					<div class="card-text os-400 pt-3">Framingham is easily accessible by car, bus, train and plane.</div>
 					<p class="card-text my-5">
 						<a href="/us/toboston" class="border p-3 mont-700">MORE INFORMATION</a>
 					</p>
@@ -214,7 +234,7 @@
 				<div class="col text-center">
 					<img src="/assets/images/hotel.svg" class="my-4" alt="Hotel icon" style="height: 74px">
 					<h2 class="mont-700 mb-0">Hotels</h2>
-					<div class="card-text os-400 pt-3">Need a place to stay in Boston? We suggest these properties.</div>
+					<div class="card-text os-400 pt-3">Need a place to stay in Framingham? We suggest these properties.</div>
 					<p class="card-text my-5">
 						<a href="/us/hotels" class="border p-3 mont-700">MORE INFORMATION</a>
 					</p>
