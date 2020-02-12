@@ -1,7 +1,7 @@
 @extends('_layouts.page')
 
 @section('social')
-<meta property="og:title" content="DevConf.US | Boston, USA">
+<meta property="og:title" content="DevConf.US | Framingham, USA">
 <meta property="og:site_name" content="DevConf.US">
 <meta property="og:description" content="DevConf are free and open, annual, open-source community conferences for community contibutors, sponsored by Red Hat.">
 <meta property="og:type" content="website">
@@ -33,10 +33,10 @@
 					<a href="/us/" class="nav-link">Home</a>
 				</li>
 				<li class="nav-item active px-3">
-					<a href="/us/aroundboston" class="nav-link">Getting around Boston</a>
+					<a href="/us/aroundframingham" class="nav-link">Getting around Framingham</a>
 				</li>
 				<li class="nav-item active px-3">
-					<a href="/us/toboston" class="nav-link">Getting to Boston</a>
+					<a href="/us/toframingham" class="nav-link">Getting to Framingham</a>
 				</li>
 				<li class="nav-item active underline px-3">
 					<a href="/us/hotels" class="nav-link">Hotels</a>

@@ -1,7 +1,7 @@
 @extends('_layouts.page')
 
 @section('social')
-<meta property="og:title" content="DevConf.US | Boston, USA">
+<meta property="og:title" content="DevConf.US | Framingham, USA">
 <meta property="og:site_name" content="DevConf.US">
 <meta property="og:description" content="DevConf are free and open, annual, open-source community conferences for community contibutors, sponsored by Red Hat.">
 <meta property="og:type" content="website">
@@ -212,7 +212,7 @@
 					<h2 class="mont-700 mb-0">Getting around Framingham</h2>
 					<div class="card-text os-400 pt-3">Framingham has a public transit system and the site is accessible by car.</div>
 					<p class="card-text my-5">
-						<a href="/us/aroundboston" class="border p-3 mont-700">MORE INFORMATION</a>
+						<a href="/us/aroundframingham" class="border p-3 mont-700">MORE INFORMATION</a>
 					</p>
 				</div>
 			</div>
@@ -224,7 +224,7 @@
 					<h2 class="mont-700 mb-0">Getting to Framingham</h2>
 					<div class="card-text os-400 pt-3">Framingham is easily accessible by car, bus, train and plane.</div>
 					<p class="card-text my-5">
-						<a href="/us/toboston" class="border p-3 mont-700">MORE INFORMATION</a>
+						<a href="/us/toframingham" class="border p-3 mont-700">MORE INFORMATION</a>
 					</p>
 				</div>
 			</div>
@@ -242,6 +242,9 @@
 			</div>
 		</div>
 	</div>
+</section>
+<section class="col-12 px-0" style="height: 450px;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2951.0950292770904!2d-71.48131544837175!3d42.29783767908894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e38a27a40998f7%3A0xc901f7bfb3e62eaa!2sSheraton%20Framingham%20Hotel%20%26%20Conference%20Center!5e0!3m2!1scs!2scz!4v1581493814798!5m2!1scs!2scz" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 </section>
 @endsection
 
