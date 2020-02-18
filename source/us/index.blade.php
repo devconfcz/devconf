@@ -110,14 +110,15 @@
 			<?php
 
 				$topics = array(
-						array("name"=>"Application Development & Containerization","description"=>""),
-						array("name"=>"Building and Running Clouds","description"=>""),
-						array("name"=>"Ensuring Software Quality","description"=>""),
-						array("name"=>"Machine Learning and Big Data","description"=>""),
-						array("name"=>"Open Source & Process","description"=>""),
-						array("name"=>"Serverless","description"=>""),
-						array("name"=>"Systems Engineering & Hardware","description"=>""),
-						array("name"=>"User Experience in Open Source","description"=>""),
+						array("name"=>"Application Development with Serverless & Containerization","description"=>"Application Development has gone through a number of changes in recent years with sophisticated tools, remote development environments, AI support, etc. Not to mention new deployment methods like serverless/functions, containers, and cloud-native. We are hoping to gather session submissions addressing experience with these changes. We are also happy to see sessions that focus on how to be more efficient and the new cool stuff available to do your application development with."),
+						array("name"=>"Operating at Scale","description"=>"The operations of modern cloud computing including physical bare metal machines, VMs, containers. Cloud, and clusters. podman, CRI-O, Docker/Moby, Kubernetes, Skopeo. Hybrid cloud and other buzzwords - your cloud and apps-at-scale topics go here."),
+						array("name"=>"Ensuring Software Quality","description"=>"All aspects of Quality including the documentation and development that goes into the QE/QA components, such as automated testing, CI/CD, and traditional testing."),
+						array("name"=>"Security, Privacy & Data Governance","description"=>"With all the work being done with Machine Learning and in the public cloud, privacy and managing data are becoming huge concerns. What techniques are available to keep our data secure and private? What attacks should we be watching out for?"),
+						array("name"=>"Open Source & Process","description"=>"How to Open Source, and what software development is like in the Open Source world."),
+						array("name"=>"Machine Learning & Artifical Intelligence","description"=>"Development tools for data engineering and data science, model development and deployment, interesting models to solve problems. We also want to hear about other AI hot buttons like AI Dev Support, AIOps, etc."),
+						array("name"=>"Systems Engineering & Hardware","description"=>"All the low-level work happening in Linux as well as interesting hardware challenges and solutions. "),
+						array("name"=>"User Experience in Open Source","description"=>"UX in the Open Source world, with a focus on implementing user experience design processes. We know UX is different when everything is done in public, tell us how and what to do about it."),
+						array("name"=>"Evolving Technology","description"=>"Highlighting emerging technology and academic research. In other words, 'All your awesome and crazy ideas -- backed up by science!'"),
 					  );
 
 				foreach($topics as $i=>$t){
