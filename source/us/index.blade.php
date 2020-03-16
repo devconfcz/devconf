@@ -87,6 +87,13 @@
 			<img src="/assets/images/devconf-d-framingham.png" class="mw-100" alt="Brno DevConf image asset">
 		</div>
 		<div class="col-lg-6 px-5">
+			<h1 class="mont-700 underline pb-4">COVID-19 Update</h1>
+			<div class="os-400">
+                <p>We the DevConf Crew are hoping you and your families are staying safe and healthy. Our US event is taking place in September and we are hoping that everything will
+				be back to normal by then. However, we will reassess in July or August. Please continue <a href=http://cfp.devconf.info>submitting your proposals</a>
+				even if you don't know what the plan will be. If you are selected as a speaker and cannot make it to the conference due to health or safety reasons, we will understand.
+				#KeepWashingThoseHands #StaySafe #StayHealthy</p>
+			</div>
 			<h1 class="mont-700 underline pb-4">About DevConf</h1>
 			<div class="os-400">
                 <p>DevConf.US 2020 is the 3rd annual, free, Red Hat sponsored technology conference for community project and professional contributors to Free and Open Source technologies
