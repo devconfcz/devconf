@@ -102,6 +102,9 @@
 		<p>There is no admission or ticket charge for DevConf.US events. However, you are required to complete a free registration. Watch this site for updates about registration. 
 		Talks, presentations and workshops will all be in English.</p>
 
+                <p>We encourage students and new graduates as well as professionals to <a href=http://cfp.devconf.info>submit proposals to DevConf.US</a>. See our topics below for ideas on what to submit!
+		 Please indicate if you are a student or new graduate through the checkbox on your submission.</p>
+
                 <p>We are committed to fostering an open and welcoming environment at our conference.
                    We set expectations for inclusive behavior through our code of conduct and media policies, and are prepared to enforce these.</p>
 			</div>
