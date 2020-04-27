@@ -52,7 +52,7 @@
 				<div class="card-body text-center px-4">
 					<a class="underline" href="/us">
 						<div class="d-block mx-auto pb-3"><img src="/assets/images/us-flag.svg" alt="US flag"></div>
-						DevConf.US - Framingham
+						DevConf.US - Virtual
 					</a>
 				</div>
 			</div>

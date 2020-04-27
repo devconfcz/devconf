@@ -1,7 +1,7 @@
 @extends('_layouts.page')
 
 @section('social')
-<meta property="og:title" content="DevConf.US | Framingham, USA">
+<meta property="og:title" content="DevConf.US | Virtual">
 <meta property="og:site_name" content="DevConf.US">
 <meta property="og:description" content="DevConf are free and open, annual, open-source community conferences for community contibutors, sponsored by Red Hat.">
 <meta property="og:type" content="website">
@@ -40,7 +40,7 @@
 					<a href="#schedule" class="nav-link local">Schedule</a>
 				</li>
 -->				<li class="nav-item active px-3">
-					<a href="#travel" class="nav-link local">How to get here?</a>
+					<a href="#participation" class="nav-link local">How to participate?</a>
 				</li>
 				<li class="nav-item active px-3">
 					<a href="/us/faq" class="nav-link local">FAQ</a>
@@ -69,13 +69,13 @@
 				open source community conference
 			</div>
 			<div class="heading-text mont-700 h1 pt-5">
-				September 23-25, 2020
+				September 24-25, 2020
 			</div>
 			<div class="heading-text mont-700 h4">
-				Framingham MA, USA
+				Web Browser Near You!
 			</div>
 			<div class="heading-text pt-5 mt-5">
-				<a href="https://cfp.devconf.info" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SUBMIT YOUR PROPOSAL</a>
+				<a href="#going-virtual" target="_blank" class="border nav-link local h2" style="border-width: 3px !important;">GOING VIRTUAL!</a>
 			</div>
 		</div>
 	</div>
@@ -87,22 +87,21 @@
 			<img src="/assets/images/devconf-d-framingham.png" class="mw-100" alt="Brno DevConf image asset">
 		</div>
 		<div class="col-lg-6 px-5">
-			<h1 class="mont-700 underline pb-4">COVID-19 Update</h1>
+			<h1 id="going-virtual" class="mont-700 underline pb-4">DevConf.US 2020 Goes Virtual!</h1>
 			<div class="os-400">
-                <p>Like others, we have been closely monitoring evolving coronavirus (COVID-19) developments, including guidance from the CDC, WHO, and other health authorities.
-				The safety and well-being of attendees is our top priority. At this time, DevConf.US is scheduled to be hosted in Framingham, MA from September 23-25, 2020 as planned.
-				Should the situation change, we will notify all parties involved. We continue to look forward to your <a href=http://cfp.devconf.info>submissions</a>! #KeepWashingThoseHands
-				#StaySafe #StayHealthy</p>
+                <p>In response to COVID-19, we have made the difficult decision to make DevConf.US 2020 a virtual event. While we are disappointed that we won’t be able to see you all in
+				person, the well-being of our attendees required us to make this decision. We also recognize that we are making this decision, seemingly, very early. However, in order to
+				shift to an awesome virtual event, we need a lot of lead time for the organizers, volunteers and speakers to produce an entirely different event.</p>
 			</div>
 			<h1 class="mont-700 underline pb-4">About DevConf</h1>
 			<div class="os-400">
                 <p>DevConf.US 2020 is the 3rd annual, free, Red Hat sponsored technology conference for community project and professional contributors to Free and Open Source technologies
-		 at the Sheraton Framingham Hotel & Conference Center in the historic city of Framingham, USA.</p>
+		 coming to a web browser near you!</p>
 
 		<p>There is no admission or ticket charge for DevConf.US events. However, you are required to complete a free registration. Watch this site for updates about registration. 
 		Talks, presentations and workshops will all be in English.</p>
 
-                <p>We encourage students and new graduates as well as professionals to <a href=http://cfp.devconf.info>submit proposals to DevConf.US</a>. See our topics below for ideas on what to submit!
+                <p>We encourage students and new graduates as well as professionals to submit proposals to DevConf.US. See our topics below for ideas on what to submit!
 		 Please indicate if you are a student or new graduate through the checkbox on your submission.</p>
 
                 <p>We are committed to fostering an open and welcoming environment at our conference.
@@ -157,7 +156,7 @@
 
 <section id="news" class="mx-auto py-5 col-lg-11">
 	<div class="row">
-		<div class="h1 mx-5 mont-700">Important dates</div>
+		<div class="h1 mx-5 mont-700">Important Dates</div>
 	</div>
 	<div class="row">
 		<!-- Keep in pairs -->
@@ -185,50 +184,84 @@
 		<!-- Second pair -->
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">June 8, 2020</div>
+				<div class="col-4 h5 mont-700">July 8, 2020</div>
 				<div class="col-8">
 					<div class="row">
-						<div class="col mont-600">Speaker Acceptance Letters Sent</div>
+						<div class="col mont-600">Workshop Proposals Closes</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">July 3, 2020</div>
+				<div class="col-4 h5 mont-700">July 27, 2020</div>
 				<div class="col-8">
 					<div class="row">
-						<div class="col mont-600">Registration Opens and Schedule Published</div>
+						<div class="col mont-600">Video Recordings Due</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Third pair -->
+		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
+			<div class="row">
+				<div class="col-4 h5 mont-700">August 17, 2020</div>
+				<div class="col-8">
+					<div class="row">
+						<div class="col mont-600">Schedule Published & Registration Opens</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
+			<div class="row">
+				<div class="col-4 h5 mont-700">September 23, 2020</div>
+				<div class="col-8">
+					<div class="row">
+						<div class="col mont-600">Workshop Day</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Fourth pair -->
+		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
+			<div class="row">
+				<div class="col-4 h5 mont-700">September 24, 2020</div>
+				<div class="col-8">
+					<div class="row">
+						<div class="col mont-600">Conference Day 1</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
+			<div class="row">
+				<div class="col-4 h5 mont-700">September 25, 2020</div>
+				<div class="col-8">
+					<div class="row">
+						<div class="col mont-600">Conference Day 2</div>
 					</div>
 				</div>
 			</div>
 		</div>
         </div>
 </section>
+
 <!--
 <section id="schedule" class="mx-auto col-lg-12 background-gray text-center mt-5 py-5">
 	<div class="h1 mont-700 py-4 mt-3">Schedule</div>
 	<a class="p-3 mont-700 mb-3 d-inline-block purple-href">SCHEDULE ISN'T AVAILABLE YET</a>
 </section>
 -->
-<section id="travel" class="mx-auto py-5 col-lg-11">
+<section id="participation" class="mx-auto py-5 col-lg-11">
 	<div class="row">
-		<div class="mont-700 h1 underline position-relative mx-5 pb-4">How to get there?</div>
+		<div class="mont-700 h1 underline position-relative mx-5 pb-4">How to participate?</div>
 	</div>
 	<div class="row py-4">
-		<div class="col-xl-3 container card-body my-2 ml-xl-auto mr-xl-3" style="background: #ada3ff">
-			<div class="row h-100 align-items-center">
-				<div class="col text-center">
-					<img src="/assets/images/travel-around.svg" class="my-4" alt="Getting around icon" style="height: 74px">
-					<h2 class="mont-700 mb-0">Getting around Framingham</h2>
-					<div class="card-text os-400 pt-3">Framingham has a public transit system and the site is accessible by car.</div>
-					<p class="card-text my-5">
-						<a href="/us/aroundframingham" class="border p-3 mont-700">MORE INFORMATION</a>
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-xl-3 container card-body my-2 mx-xl-3" style="background: #4a4a7e">
+		<h4 class="mont-700 mb-0 position-relative mx-5 pb-4">Watch this space!</h4>
+		<!-- <div class="col-xl-3 container card-body my-2 mx-xl-3" style="background: #4a4a7e">
 			<div class="row h-100 align-items-center">
 				<div class="col text-center">
 					<img src="/assets/images/way-to.svg" class="my-4" alt="Getting to icon" style="height: 74px">
@@ -251,12 +284,12 @@
 					</p>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
-</section>
+<!-- </section>
 <section class="col-12 px-0" style="height: 450px;">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2951.0950292770904!2d-71.48131544837175!3d42.29783767908894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e38a27a40998f7%3A0xc901f7bfb3e62eaa!2sSheraton%20Framingham%20Hotel%20%26%20Conference%20Center!5e0!3m2!1scs!2scz!4v1581493814798!5m2!1scs!2scz" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-</section>
+</section> -->
 @endsection
 
 @include('_layouts.footerus')
