@@ -75,7 +75,7 @@
 				Web Browser Near You!
 			</div>
 			<div class="heading-text pt-5 mt-5">
-				<a href="#going-virtual" target="_blank" class="border p-3 mont-700 h2" style="border-width: 3px !important;">GOING VIRTUAL!</a>
+				<a href="#going-virtual" class="border p-3 mont-700 h2 nav-link local" style="border-width: 3px !important;">GOING VIRTUAL!</a>
 			</div>
 		</div>
 	</div>
@@ -84,7 +84,7 @@
 <section id="about" class="mx-auto col-lg-11">
 	<div class="row mt-4 py-5">
 		<div class="col-lg-4 mx-5 mb-5 text-center">
-			<img src="/assets/images/devconf-d-framingham.png" class="mw-100" alt="Brno DevConf image asset">
+			<img src="/assets/images/devconf-d-wfh.png" class="mw-100" alt="Brno DevConf image asset">
 		</div>
 		<div class="col-lg-6 px-5">
 			<h1 id="going-virtual" class="mont-700 underline pb-4">DevConf.US 2020 Goes Virtual!</h1>
