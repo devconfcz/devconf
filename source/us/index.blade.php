@@ -257,10 +257,13 @@
 -->
 <section id="participation" class="mx-auto py-5 col-lg-11">
 	<div class="row">
-		<div class="mont-700 h1 underline position-relative mx-5 pb-4">How to participate?</div>
+		<div class="mont-700 h1 position-relative mx-5 pb-4">How to participate?</div>
 	</div>
 	<div class="row py-4">
-		<h4 class="mont-700 mb-0 position-relative mx-5 pb-4">Watch this space! We'll be adding information to help you produce your videos.</h4>
+		<h4 class="mont-700 mb-0 position-relative mx-5 pb-4">Watch this space. We'll be adding information to help you produce your videos.</h4>
+    </div>
+	<div class="row py-6">
+        <a href="/us/faq" class="mont-700 mb-3 position-relative mx-5 pb-4 p-4 d-inline-block purple-href">WHAT WE KNOW NOW!</a>
 		<!-- <div class="col-xl-3 container card-body my-2 mx-xl-3" style="background: #4a4a7e">
 			<div class="row h-100 align-items-center">
 				<div class="col text-center">
