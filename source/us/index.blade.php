@@ -75,7 +75,7 @@
 				Web Browser Near You!
 			</div>
 			<div class="heading-text pt-5 mt-5">
-				<a href="#going-virtual" class="border p-3 mont-700 h2 nav-link local" style="border-width: 3px !important;">GOING VIRTUAL!</a>
+				<a href="https://cfp.devconf.info" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SUBMIT YOUR PROPOSAL</a>
 			</div>
 		</div>
 	</div>
