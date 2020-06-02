@@ -78,7 +78,8 @@
 					</ul>
 
 					<p>We will do our best to not make or share photos, videos or audio recordings public which could cause harm to the individuals shown/heard on them. If you do find 
-					such pictures/videos/audio recordings on one of our sites or accounts, please write to our <a href="mailto:hello@devconf.info" target="_blank">hello@devconf.info</a> to ask for review.</p>
+					such pictures/videos/audio recordings on one of our sites or accounts, please write to our <a href="mailto:info@devconf.cz">info@devconf.cz</a>,
+                    <a href="mailto:info@devconf.in">info@devconf.in</a> or <a href="mailto:info@devconf.us">info@devconf.us</a> to ask for review.</p>
 
 					<h3 class="mont-700 mt-5">How to opt-out</h3>
 					<p>If you do not wish images of yourself to be published, you may opt out by <a href="mailto:hello@devconf.info">contacting us</a> and reasonable efforts will be done to accommodate your request.</p>
@@ -86,12 +87,13 @@
 					<p>If you are a speaker, you may opt out of having your talk being publically distributed by <a href="mailto:hello@devconf.info">contacting us</a>.</p>
 
 					<h3 class="mont-700 mt-5">How to report violations or issues</h3>
-					<p>Please report an violations or issues with recording or photography directly to the front desk at registration, or by contacting us at <a href="mailto:hello@devconf.info">hello@devconf.info</a>.</p>
+					<p>Please report an violations or issues with recording or photography directly to the front desk at registration, or by contacting us at <a href="mailto:info@devconf.cz">info@devconf.cz</a>, 
+                    <a href="mailto:info@devconf.in">info@devconf.in</a> or <a href="mailto:info@devconf.us">info@devconf.us</a>.</p>
 
 
 					<p class="mt-5 text-right"><i>Thank you to Linux Fest NorthWest, Open Source Bridge and DrupalCon, from whom this policy was heavily influenced.</a>.</i></p>
 
-					<p class="text-right"><i>Last Updated: September 1, 2017</i></p>
+					<p class="text-right"><i>Last Updated: June 2, 2020</i></p>
 				</div>
 			</div>
 		</div>

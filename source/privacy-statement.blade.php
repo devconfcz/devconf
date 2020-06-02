@@ -384,7 +384,8 @@
 
 					<h3 class="mont-700 mt-5">How to contact us</h3>
 					<p>
-					  If you have any questions about Red Hat’s privacy practices or use of your personal data, please feel free to contact us at <a href="mailto:hello@devconf.info">hello@devconf.info</a>, or by mail at:
+					  If you have any questions about Red Hat’s privacy practices or use of your personal data, please feel free to contact us at, <a href="mailto:info@devconf.cz">info@devconf.cz</a>, 
+                      <a href="mailto:info@devconf.in">info@devconf.in</a> or <a href="mailto:info@devconf.us">info@devconf.us</a> or by mail at:
 					</p>
 
 					<p>
@@ -411,7 +412,7 @@
 					  Cork, Ireland
 					</p>
 
-					<p class="text-right"><i>Last Updated: June 7, 2018</i></p>
+					<p class="text-right"><i>Last Updated: June 2, 2020</i></p>
 				</div>
 			</div>
 		</div>
