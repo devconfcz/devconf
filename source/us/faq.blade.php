@@ -56,9 +56,11 @@
 		array("group" => "General Questions", "id" => "general", 
 			"questions" => array( 
 				array("q" => "Will the talks be live-streamed or pre-recorded?", "a" => "This year, all sessions will be pre-recorded.  If your submission is chosen, you'll be asked to confirm your acceptance. Once you confirm your acceptance, you are expected to submit a video recording of your session by July 27.<br><br>We are still working out some details, but our plan is for each speaker to be available for Q&A at the end of their scheduled session time."),
-				array("q" => "Will the workshops be live-streamed or pre-recorded?", "a" => "We are planning to include a day of live, virtual workshops on 23 September 2020.  You'll notice the CfP for workshops closes earlier than sessions, on 8 July 2020.  This is to allow plenty of time to work out the logistics of the workshops."),
+				array("q" => "Will the workshops be live-streamed or pre-recorded?", "a" => "We are planning to include a day of live, virtual workshops on 23 September 2020. The CfP for workshops closes on 8 July 2020 to allow plenty of time to work out the logistics of the workshops."),
 				array("q" => "I have multiple sessions accepted.  Do I have to submit videos for all of them?", "a" => "Only confirm your acceptance for the sessions you will submit videos for.  There is a maximum of 3 videos allowed per speaker.  Once you confirm, we will expect to receive your video by July 27."),
-				array("q" => "Can I add a co-speaker to my submission?", "a" => "Yes, please indicate on the CfP submission if you'll be co-presenting.  If you'd like to add a co-speaker to a submission or an accepted session, no worries!  Please email us at <a href='mailto:info@devconf.us'>info@devconf.us</a> with your update.")
+				array("q" => "Can I add a co-speaker to my submission?", "a" => "Yes, please indicate on the CfP submission if you'll be co-presenting.  If you'd like to add a co-speaker to a submission or an accepted session, no worries!  Please email us at <a href='mailto:info@devconf.us'>info@devconf.us</a> with your update."),
+				array("q" => "How long is a pre-recorded session?", "a" => "The pre-recorded sessions should be no longer than 35 minutes. There will be 10 minutes of live Q&A after each session. The speakers are required to be present during the whole 45 minutes of their sessions to answer any questions that come up.")
+
 			)),
 
 		array("group" => "Schedule / CfP Questions", "id" => "schedule", 
@@ -77,8 +79,13 @@
 		array("group" => "Speaker Questions", "id" => "speaker", 
 			"questions" => array( 
 				array("q" => "Why does the speaker confirmation form ask you for a sched.org email address?", "a" => "We will be publishing our schedule there and having your preferred email address for that service lets us give you some editing rights for your session. Some speakers may use a different address for sched.org so we want to collect that from them. If you don’t have a preference or don’t have one already, just provide any email address you read and we will do the rest."),
-				array("q" => "What else should I know?", "a" => "We're excited for our first Virtual DevConf.US.  We hope you'll be patient with us as we work out the details, together. Please email us at <a href='mailto:info@devconf.us'>info@devconf.us</a> with any other questions and especially any ideas you have!")
-		)),
+				array("q" => "Are there any video recording guidelines?", "a" => "Yes! We have put together steps on how to record an awesome video with the open source software OBS. The steps can be found <a href='https://github.com/devconfcz/virtual-presentations/blob/master/Recording.md'>here</a>."),
+				array("q" => "What are the audio & video requirements for the pre-recorded sessions?", "a" => "These are the audio & video requirements: <br><br>Video Format: MP4 <br><br>Video Frame Rate: 30 fps <br><br>Video Frame Size: 960x540 (you can make it higher resolution if you'd like) <br><br>Video Bit Rate: 1000kbps <br><br>Audio Format: AAC <br><br>Audio Channels: 2 <br><br>Audio Sample Rate: 44100 <br><br>Audio Bit Rate: 128kbps"),
+				array("q" => "How should I submit the pre-recorded video?", "a" => "We recommend uploading the video to YouTube as unlisted. We will send out an email with instructions on how to submit the YouTube link of your video. <br><br> If you would prefer to not use YouTube, send the organizers an email at <a href='mailto:info@devconf.us'>info@devconf.us</a> and we will work with you to figure out alternate options."),
+				array("q" => "Will there be speaker coaching?", "a" => "Yes! When you confirm your session acceptance, you will be asked whether you would like to have a speaker coach and will be matched with one."),
+				array("q" => "What else should I know?", "a" => "We're excited for our first Virtual DevConf.US.  We hope you'll be patient with us as we work out the details, together. Please email us at <a href='mailto:info@devconf.us'>info@devconf.us</a> with any other questions and especially any ideas you have!"),
+
+			)),
 
 		array("group" => "Diversity & Inclusion Questions", "id" => "diversityandinclusion",
 			"questions" => array(
