@@ -260,7 +260,7 @@
 		<div class="mont-700 h1 underline position-relative mx-5 pb-4">How to participate?</div>
 	</div>
 	<div class="row">
-		<h4 class="mont-700 mb-0 position-relative mx-5 py-4">Watch this space. We'll be adding information to help you produce your videos.</h4>
+		<h4 class="mont-700 mb-0 position-relative mx-5 py-4">Check out the link below to find out more about DevConf.US and how to record your videos!</h4>
     </div>
 	<div class="row py-4">
         <a href="/us/faq" class="mont-700 position-relative mx-5 p-4 d-inline-block purple-href">WHAT WE KNOW NOW!</a>
