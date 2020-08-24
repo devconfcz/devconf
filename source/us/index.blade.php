@@ -75,7 +75,7 @@
 				Web Browser Near You!
 			</div>
 			<div class="heading-text pt-5 mt-5">
-				<a href="https://cfp.devconf.info" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SUBMIT YOUR PROPOSAL</a>
+				<a href="https://devconfus2020.sched.com" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SCHEDULE</a>
 			</div>
 		</div>
 	</div>
@@ -89,9 +89,8 @@
 		<div class="col-lg-6 px-5">
 			<h1 id="going-virtual" class="mont-700 pb-4">DevConf.US 2020 Goes Virtual!</h1>
 			<div class="os-400">
-                <p>In response to COVID-19, we have made the difficult decision to make DevConf.US 2020 a virtual event. While we are disappointed that we won’t be able to see you all in
-				person, the well-being of our attendees required us to make this decision. We also recognize that we are making this decision, seemingly, very early. However, in order to
-				shift to an awesome virtual event, we need a lot of lead time for the organizers, volunteers and speakers to produce an entirely different event.</p>
+                <p>While we are disappointed that we won’t be able to see you all in
+				person, we're shifting to an awesome virtual event.  There will be many opportunities to share and connect with the open source community.  Check out the <a href="https://devconfus2020.sched.com">schedule</a> and mark your calendars! Registration will be open in the coming days.</p>
 			</div>
 			<h1 class="mont-700 underline pb-4">About DevConf</h1>
 			<div class="os-400">
