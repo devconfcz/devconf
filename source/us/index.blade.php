@@ -36,10 +36,10 @@
 				<li class="nav-item active px-3">
 					<a href="#news" class="nav-link local">News</a>
 				</li>
-<!--				<li class="nav-item active px-3">
-					<a href="#schedule" class="nav-link local">Schedule</a>
+				<li class="nav-item active px-3">
+				<a href="https://devconfus2020.sched.com" class="nav-link local" target="_blank"">Schedule</a>
 				</li>
--->				<li class="nav-item active px-3">
+				<li class="nav-item active px-3">
 					<a href="#participation" class="nav-link local">How to participate?</a>
 				</li>
 				<li class="nav-item active px-3">
@@ -75,7 +75,7 @@
 				Web Browser Near You!
 			</div>
 			<div class="heading-text pt-5 mt-5">
-				<a href="https://devconfus2020.sched.com" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SCHEDULE</a>
+				<a href="https://hopin.to/events/devconf-us" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">GET YOUR TICKETS NOW!</a>
 			</div>
 		</div>
 	</div>
@@ -90,18 +90,18 @@
 			<h1 id="going-virtual" class="mont-700 pb-4">DevConf.US 2020 Goes Virtual!</h1>
 			<div class="os-400">
                 <p>While we are disappointed that we won’t be able to see you all in
-				person, we're shifting to an awesome virtual event.  There will be many opportunities to share and connect with the open source community.  Check out the <a href="https://devconfus2020.sched.com">schedule</a> and mark your calendars! Registration will be open in the coming days.</p>
+				person, we're shifting to an awesome virtual event.  There will be many opportunities to share and connect with the open source community.  Check out the <a href="https://devconfus2020.sched.com">schedule</a> and mark your calendars! Registration is now <a href="https://hopin.to/events/devconf-us">live!</a></p>
 			</div>
 			<h1 class="mont-700 underline pb-4">About DevConf</h1>
 			<div class="os-400">
                 <p>DevConf.US 2020 is the 3rd annual, free, Red Hat sponsored technology conference for community project and professional contributors to Free and Open Source technologies
 		 coming to a web browser near you!</p>
 
-		<p>There is no admission or ticket charge for DevConf.US events. However, you are required to complete a free registration. Watch this site for updates about registration. 
+		<p>There is no admission or ticket charge for DevConf.US events. However, you are required to complete a free registration. Registration is now live! 
 		Talks, presentations and workshops will all be in English.</p>
 
-                <p>We encourage students and new graduates as well as professionals to submit proposals to DevConf.US. See our topics below for ideas on what to submit!
-		 Please indicate if you are a student or new graduate through the checkbox on your submission.</p>
+                <p>We encourage students and new graduates as well as professionals to attend DevConf.US. We also have attendee coaching available for people who are new to attending conferences! 
+		 Please choose to either be a new attendee coach or apprentice when you register for the conference.</p>
 
                 <p>We are committed to fostering an open and welcoming environment at our conference.
                    We set expectations for inclusive behavior through our code of conduct and media policies, and are prepared to enforce these.</p>
