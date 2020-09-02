@@ -1,13 +1,13 @@
 @extends('_layouts.page')
 
 @section('social')
-<meta property="og:title" content="DevConf.US | Framingham, USA">
+<meta property="og:title" content="DevConf.US | Virtual">
 <meta property="og:site_name" content="DevConf.US">
 <meta property="og:description" content="DevConf are free and open, annual, open-source community conferences for community contibutors, sponsored by Red Hat.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://devconf.info">
-<meta property="og:image" content="https://devconf.info/assets/images/devconf-us-social.png">
-<meta property="twitter:image" content="https://devconf.info/assets/images/devconf-us-social.png">
+<meta property="og:image" content="https://devconf.info/assets/images/devconf-us-social.svg">
+<meta property="twitter:image" content="https://devconf.info/assets/images/devconf-us-social.svg">
 @endsection
 
 @section('css')
