@@ -68,14 +68,17 @@
 			<div class="heading-text mont-400 h5 pb-2 pb-lg-5">
 				open source community conference
 			</div>
+            <div class="virtual-stamp mont-700">
+                virtual event
+            </div>
 			<div class="heading-text mont-700 h1 pt-1 pt-lg-5">
-				January, 2021
+				February, 2021
 			</div>
 			<div class="heading-text mont-700 h4">
-				Brno, Czech Republic
+                <i class="fa fa-map-marker"></i> All over the world
 			</div>
 			<div class="heading-text pt-1 pt-lg-5 mt-1 mt-lg-5">
-				<a href="https://www.youtube.com/playlist?list=PLU1vS0speL2Z08BeKSwSqfxPEl3ta5UK3" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">RECORDINGS FROM 2020 ARE NOW AVAILABLE</a>
+				<a href="https://cfp.devconf.info" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SUBMIT YOUR PROPOSAL</a>
 			</div>
 		</div>
 	</div>

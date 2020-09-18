@@ -119,7 +119,16 @@ body, html {
   display: none;
 }
 
-
+.virtual-stamp {
+  background: #ff0099;
+  position: relative;
+  width: 15ex;
+  text-align: center;
+  border-radius: 200px;
+  left: 10vw;
+  font-size: 2ex;
+  box-sizing: unset;
+}
 
 @media (min-width: 992px) { 
 
@@ -148,7 +157,20 @@ body, html {
 
 	.show {
 	  background: transparent;
-        }
+    }
+
+    .virtual-stamp {
+      background: #ff0099;
+      position: absolute;
+      width: 7ex;
+      text-align: center;
+      padding: 7ex 6ex;
+      border-radius: 200px;
+      right: 15vw;
+      left: auto;
+      font-size: 2ex;
+      box-sizing: unset;
+    }
 }
 
 .mont-700, .mont-600, .mont-500, .mont-400 {
