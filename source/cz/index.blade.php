@@ -112,7 +112,7 @@
 			<?php
 
 				$topics = array(
-						array("name"=>"Agile, DevOps & CI/CD","description"=>"The Agile, DevOps & CI/CD track is intended to address the practices, methods and tooling that technical audiences need to deliver increased business value and responsiveness through rapid, high-quality delivery. Topics include engineering best practices, defining and building Agile & DevOps cultures, Open Source tools to make Developers and Operations successful, continuous integration/delivery/deployment of enterprise software, and many more."),
+						array("name"=>"Agile, DevOps","description"=>"The Agile, DevOps track is intended to address the practices, methods and tooling that technical audiences need to deliver increased business value and responsiveness through rapid, high-quality delivery. Topics include engineering best practices, defining and building Agile & DevOps cultures, Open Source tools to make Developers and Operations successful, and many more."),
 						array("name"=>"Cloud and Containers","description"=>"Cloud, containers, clusters. Buildah, CRI-O, Docker, Kubernetes, Skopeo. Hybrid cloud and other buzzwords - your cloud and container topics go here. Daemons of all sizes and shapes."),
 						array("name"=>"Community","description"=>"Building open source software is more than just about coding. Learn about the many aspects of creating and maintaining healthy, robust, and diverse open source communities."),
                         array("name"=>"Debug / Tracing","description"=>"Developer tools for debugging and tracing your application and its enviroment.  Kernel level to userland application level."),
