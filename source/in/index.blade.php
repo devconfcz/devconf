@@ -63,15 +63,18 @@
 			<div class="heading-text mont-400 h5 pb-5">
 				open source community conference
 			</div>
+			  <div class="virtual-stamp mont-700">
+                virtual event
+            </div>
 			<div class="heading-text mont-700 h1 pt-5">
-				December, 2020
+				December 17-19, 2020
 			</div>
 			<div class="heading-text mont-700 h4">
-				Bengaluru, India
+				<i class="fa fa-map-marker"></i> All over the world
 			</div>
-<!--			<div class="heading-text pt-5 mt-5">
+			<div class="heading-text pt-5 mt-5">
 				<a href="https://cfp.devconf.info" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SUBMIT YOUR PROPOSAL</a>
-			</div>-->
+			</div>
 		</div>
 	</div>
 </header>
@@ -86,7 +89,8 @@
 			<div class="os-400">
                 <p>DevConf.IN 2020 is the annual developer's conference organized by Red Hat, India. The conference provides a platform to the FOSS community participants and 
 		enthusiasts to come together and engage in knowledge sharing activities through technical talks, workshops, panel discussions, hackathons and much more.</p>
-
+		
+		<p>While we are disappointed that we won’t be able to see you all in person, we're shifting to an awesome virtual event!</p>
 		<p>There is no admission or ticket charge for DevConf.IN events. However, you are required to complete a free registration. Watch this site for updates about registration. 
 		Talks, presentations and workshops will all be in English.</p>
 
@@ -105,16 +109,14 @@
 			<?php
 
 				$topics = array(
-						array("name"=>"Trending Tech","description"=>""),
-						array("name"=>"AI / ML","description"=>""),
-						array("name"=>"Storage","description"=>""),
-						array("name"=>"Networking","description"=>""),
-						array("name"=>"Open Hybrid Cloud","description"=>""),
-						array("name"=>"Developer Tools (Devtools)","description"=>""),
-						array("name"=>"Kernel","description"=>""),
-						array("name"=>"FOSS Community & Standards", "description"=>""),
-						array("name"=>"Academic Research / White Paper", "description"=>""),
-						array("name"=>"Security", "description"=>"")
+						array("name"=>"Trending Tech","description"=>"Artificial Intelligence (AI), Machine Learning (ML), Internet of Things (IoT), Blockchain, Mobile"),
+						array("name"=>"Storage and Networking","description"=>"Cloud Native Storage, Software Defined Storage, Storage Management, Distributed File System, Datastores, Big Data,  NFV/ VNF, DPDK, ODL, Software Defined Networking."),
+						array("name"=>"Open Hybrid Cloud","description"=>"Multi-Cloud, Automation, OpenStack, Kubernetes, Serverless, Microservices, Containers, OpenShift/ PaaS, Hybrid Cloud Management, Operators, CNI, Virtualization, Kernel, Service Mesh."),
+						array("name"=>"Developer Tools","description"=>"Container Tooling, CI/CD, DevOps, Code Editors Cloud native IDE, CLI, Local Development for Containers, Language Runtime, Debugging/Tracing, QE."),
+						array("name"=>"FOSS Community & Standards", "description"=>"Community Trends, Governance, Licensing, Participation, Leadership, Agile."),
+						array("name"=>"Design","description"=>"Experience Design, Emotional Design, Design for Wearables, VUI, AR/VR, Interaction Design, Information Architecture, Design Tools and Processes, Design Thinking, Design in Open Source, User Research, Methods of Collecting User Feedback, Strategies Towards Increased Transparency/Collaboration for Design and Development Across Teams."),
+						array("name"=>"Documentaion", "description"=>"Writing for Enterprise Products, Automations Tools, Documentation Tools and Processes, Interactive Content, Content Structuring, Topic Based Authoring, Modularity, User Story Based or User Focused Documentation, UX Microcopy Documentation, Help Content, AI and Documentation, Upstream/Community Documentation, Findable Content, Documentation Workflows, Minimalism in Documentation, Information Architecture."),
+						array("name"=>"Security", "description"=>"Open Source Security.")
 					  );
 
 				foreach($topics as $i=>$t){
@@ -149,20 +151,20 @@
 		<!-- Keep in pairs -->
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">Jan 27, 2019</div>
+				<div class="col-4 h5 mont-700">Oct 16, 2020</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">CfP Opens</div>
 					</div>
-<!--					<div class="row">
+ 					<div class="row">
 						<div class="col os-400"><a href="https://cfp.devconf.info">Submit your proposal &rarr;</a></div>
 					</div>
--->				</div>
+			</div>
 			</div>
 		</div>
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">Apr 8, 2019</div>
+				<div class="col-4 h5 mont-700">Nov 15, 2020</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">CfP Closes</div>
@@ -174,25 +176,47 @@
 		<!-- Second pair -->
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">Jun 9, 2019</div>
+				<div class="col-4 h5 mont-700">Nov 16 - Dec 5, 2020</div>
 				<div class="col-8">
 					<div class="row">
-						<div class="col mont-600">Accepted speakers confirmation begins and Registration opens</div>
+						<div class="col mont-600">Paper Review</div>
 					</div>
 				</div>
 			</div>
-                </div>
+        </div>
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">Jun 24, 2019</div>
+				<div class="col-4 h5 mont-700">Dec 6, 2020</div>
 				<div class="col-8">
 					<div class="row">
-						<div class="col mont-600">Initial schedule published</div>
+						<div class="col mont-600">Communication of selected Talks</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<!-- Third pair -->
+		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
+			<div class="row">
+				<div class="col-4 h5 mont-700">Dec 10, 2020</div>
+				<div class="col-8">
+					<div class="row">
+						<div class="col mont-600">Confirmation of talks and Publish of schedule</div>
+					</div>
+				</div>
+			</div>
         </div>
+		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
+			<div class="row">
+				<div class="col-4 h5 mont-700">Dec 10, 2020</div>
+				<div class="col-8">
+					<div class="row">
+						<div class="col mont-600">Regsitration Opens</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+    </div>
 </section>
 <!--
 <section id="schedule" class="mx-auto col-lg-12 background-gray text-center mt-5 py-5">
