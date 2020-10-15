@@ -36,6 +36,9 @@
 				<li class="nav-item active px-3">
 					<a href="#news" class="nav-link local">News</a>
 				</li>
+				<li class="nav-item active px-3">
+					<a href="/in/faq" class="nav-link local">FAQ</a>
+				</li>
 <!--				<li class="nav-item active px-3">
 					<a href="#schedule" class="nav-link local">Schedule</a>
 				</li>
@@ -116,7 +119,7 @@
 						array("name"=>"FOSS Community & Standards", "description"=>"Community Trends, Governance, Licensing, Participation, Leadership, Agile."),
 						array("name"=>"Design","description"=>"Experience Design, Emotional Design, Design for Wearables, VUI, AR/VR, Interaction Design, Information Architecture, Design Tools and Processes, Design Thinking, Design in Open Source, User Research, Methods of Collecting User Feedback, Strategies Towards Increased Transparency/Collaboration for Design and Development Across Teams."),
 						array("name"=>"Documentaion", "description"=>"Writing for Enterprise Products, Automations Tools, Documentation Tools and Processes, Interactive Content, Content Structuring, Topic Based Authoring, Modularity, User Story Based or User Focused Documentation, UX Microcopy Documentation, Help Content, AI and Documentation, Upstream/Community Documentation, Findable Content, Documentation Workflows, Minimalism in Documentation, Information Architecture."),
-						array("name"=>"Security", "description"=>"Open Source Security.")
+						array("name"=>"Security and Data Privacy", "description"=>"Open Source Security.")
 					  );
 
 				foreach($topics as $i=>$t){
