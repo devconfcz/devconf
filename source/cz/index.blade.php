@@ -100,7 +100,35 @@
                 <p>We are committed to fostering an open and welcoming environment at our conference.
                    We set expectations for inclusive behavior through our code of conduct and media policies, and are prepared to enforce these.</p>
 			</div>
+            <div class="h1 mont-700">Session formats</div>
+            <p class="os-400">We are switching to a virtual format in 2021 and we want to make sure all CfP submission types are clearly defined and adjusted to the virtual environment. Have a look at the detailed descriptions and as always, we’re open to new ideas!</p>
 		</div>
+	</div>
+
+	<div class="row">
+		
+        <div class="os-400 mx-5">
+                <div class="h4 mont-700">Talk</div>
+                <p>A <b>talk</b> is where you talk using slides and demos to an audience that listens. A talk is either <b>20 or 40 minutes long</b>, make sure you reserve time at the end for Q&A. If speakers wish to continue with the <b>Q&A</b> after their time slot, there will be a dedicated place for it. Feel free to recruit your colleagues to interact with people in chat while you are talking. A talk has one primary speaker, optionally another (secondary) speaker.</p>
+                <p><b>A talk should be bite-sized and focused</b> on a certain topic. This means that you should not expect to be able to cover multiple broad areas in one talk. You can submit more than one proposal, to cover a set of topics, but we cannot guarantee their final scheduled order. Therefore, we recommend topics be structured in a way so as to minimize their interdependence so that they do not need to be presented in a specific order.</p>
+                <p>We give speakers <b>a choice to speak live or send us a pre-recorded session</b>. We understand pre-recording your session requires extra time and extra set of skills and we are currently considering ways to make it easier for you. If you choose to pre-record your session, remember it only needs to be as good as you would do live. This is not a Hollywood movie :)</p>
+
+                <div class="h4 mont-700">Discussion</div>
+                <p><b>A discussion</b> is a bit where <b>you lead/moderate a discussion with a group of knowledgeable panelists</b> where they answer prepared questions or questions from the audience as selected by you for appropriateness to your topic and session’s goal. It is more interactive than a talk because you could engage with the audience during the session. If you are willing to open the discussion to attendees, consider holding a fishbowl discussion where you start with a group of speakers and an empty “seat” which could be filled by active audience members in the course of a discussion.</p>
+                <p>A discussion is <b>40 minutes long</b>. If speakers wish to continue after the 40-minute slot, there will be a dedicated place for it. A discussion has a dedicated moderator and <b>up to 5 active speakers</b>.</p>
+                <p>Discussions are <b>delivered live</b>. We do not accept pre-recorded discussions.</p>
+
+                <div class="h4 mont-700">Workshop</div>
+                <p><b>A workshop is a hands-on demo</b> where you and other workshop leads interact among each other and with audience members on chat, sharing your knowledge and experience on a particular bite-sized topic. The goal of a workshop is to teach or practice a skill. You should not expect the audience following each step of the worksop live, however, they should have all necessary instructions if they wish to. As a result workshops should be actionable and goal oriented.</p>
+                <p>A workshop is <b>40 minutes long</b>, although we will consider exceptions. The number of attendees is not limited like it would be in an in-person event.</p>
+                <p>We allow <b>up to 3 active presenters</b> in a workshop. You must designate one of them to be the primary session leader. Feel free to recruit your colleagues to interact with people in chat while you are talking.</p>
+                <p>All workshops are <b>conducted live</b>. We do not accept pre-recorded workshops. However, you may find it <b>useful to pre-record demo components</b> of your workshop.</p>
+
+                <div class="h4 mont-700">Meetups, Booths and Contests</div>
+                <p><b>Meetups and booths</b> are open to all participants, they serve as a place for open discussions, sharing the latest project developments and interaction with contributors and attendees.</p>
+                <p>We recognize that adjusting booths and meetups to the virtual environment is very challenging and we are considering steps we can take to ensure high meetup and booth traffick. We are working on a list of suggestions for virtual booths and meetups. We are open to working together with booth staff and meetup organizers in order to find the best possible solution in the virtual environment.</p>
+                <p><b>Contests</b> are easy to set up, there should be an intro meeting for those who want to join and then they can work on their own. We will provide a chat channel to help and monitor the contest.</p>
+			</div>
 	</div>
 
 	<div class="row">
