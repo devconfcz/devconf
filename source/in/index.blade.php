@@ -213,7 +213,7 @@
 				<div class="col-4 h5 mont-700">Dec 10, 2020</div>
 				<div class="col-8">
 					<div class="row">
-						<div class="col mont-600">Regsitration Opens</div>
+						<div class="col mont-600">Registration Opens</div>
 					</div>
 				</div>
 			</div>
