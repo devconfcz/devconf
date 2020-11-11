@@ -77,9 +77,11 @@
 			<div class="heading-text mont-700 h4">
                 <i class="fa fa-map-marker"></i> All over the world
 			</div>
+<!--
 			<div class="heading-text pt-1 pt-lg-5 mt-1 mt-lg-5">
 				<a href="https://cfp.devconf.info" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SUBMIT YOUR PROPOSAL</a>
 			</div>
+-->
 		</div>
 	</div>
 </header>
@@ -200,9 +202,11 @@
 					<div class="row">
 						<div class="col mont-600">CfP Opens</div>
 					</div>
+<!--
 					<div class="row">
 						<div class="col os-400"><a href="https://cfp.devconf.info">Submit your proposal &rarr;</a></div>
 					</div>
+-->
 				</div>
 			</div>
 		</div>
