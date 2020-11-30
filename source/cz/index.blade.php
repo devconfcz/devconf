@@ -213,7 +213,6 @@
 				</div>
 			</div>
 		</div>
-        </div>
 
         <!-- Third pair -->
         <div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
