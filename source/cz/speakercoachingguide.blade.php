@@ -32,7 +32,7 @@
 				<li class="nav-item active px-3">
 					<a href="/cz/" class="nav-link">Home</a>
 				</li>
-				<li class="nav-item active px-3">
+<!--				<li class="nav-item active px-3">
 					<a href="/cz/aroundbrno" class="nav-link">Getting around Brno</a>
 				</li>
 				<li class="nav-item active px-3">
@@ -40,7 +40,7 @@
 				</li>
 				<li class="nav-item active px-3">
 					<a href="/cz/hotels" class="nav-link">Hotels</a>
-				</li>
+				</li> -->
 				<li class="nav-item active px-3">
 					<a href="/cz/faq" class="nav-link">FAQ</a>
 				</li>

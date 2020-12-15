@@ -77,9 +77,11 @@
 			<div class="heading-text mont-700 h4">
                 <i class="fa fa-map-marker"></i> All over the world
 			</div>
+<!--
 			<div class="heading-text pt-1 pt-lg-5 mt-1 mt-lg-5">
 				<a href="https://cfp.devconf.info" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SUBMIT YOUR PROPOSAL</a>
 			</div>
+-->
 		</div>
 	</div>
 </header>
@@ -100,7 +102,6 @@
                 <p>We are committed to fostering an open and welcoming environment at our conference.
                    We set expectations for inclusive behavior through our code of conduct and media policies, and are prepared to enforce these.</p>
 			</div>
-		</div>
 	</div>
 
 	<div class="row">
@@ -172,15 +173,17 @@
 					<div class="row">
 						<div class="col mont-600">CfP Opens</div>
 					</div>
+<!--
 					<div class="row">
 						<div class="col os-400"><a href="https://cfp.devconf.info">Submit your proposal &rarr;</a></div>
 					</div>
+-->
 				</div>
 			</div>
 		</div>
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">Nov 1, 2020</div>
+				<div class="col-4 h5 mont-700">Nov 6, 2020</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">CfP Closes</div>
@@ -210,6 +213,28 @@
 				</div>
 			</div>
 		</div>
+
+        <!-- Third pair -->
+        <div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
+            <div class="row">
+                <div class="col-4 h5 mont-700">Feb 18, 2020</div>
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col mont-600">start of the conference</div>
+                    </div>
+                </div>
+            </div>
+                </div>
+        <div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
+            <div class="row">
+                <div class="col-4 h5 mont-700"></div>
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col mont-600"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
 	<div class="row mt-4">
 		<div class="h1 mx-5 mont-700">News</div>

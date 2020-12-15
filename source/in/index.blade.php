@@ -86,7 +86,7 @@
 <section id="about" class="mx-auto col-lg-11">
 	<div class="row mt-4 py-5">
 		<div class="col-lg-4 mx-5 mb-5 text-center">
-			<img src="/assets/images/devconf-d-bengaluru.png" class="mw-100" alt="Brno DevConf image asset">
+			<img src="/assets/images/devconf-d-virtual.png" class="mw-100" alt="Virtual DevConf image asset">
 		</div>
 		<div class="col-lg-6 px-5">
 			<h1 class="mont-700 underline pb-4">About DevConf</h1>
@@ -96,7 +96,7 @@
 		
 		<p>While we are disappointed that we won’t be able to see you all in person, we're shifting to an awesome virtual event!</p>
 		<p>There is no admission or ticket charge for DevConf.IN events. However, you are required to complete a free registration.
-		Talks, presentations and workshops will all be in English. Registration is now <a href="https://hopin.com/events/devconf-in-2021-5cd443de-4683-46f3-9260-2c7e6cb6f618">live!</a> </p>
+		Talks, presentations and workshops will all be in English. Registration is now <a target="_blank" href="https://hopin.com/events/devconf-in-2021-5cd443de-4683-46f3-9260-2c7e6cb6f618">live!</a> </p>
 
                 <p>We are committed to fostering an open and welcoming environment at our conference.
                    We set expectations for inclusive behavior through our code of conduct and media policies, and are prepared to enforce these.</p>
@@ -119,7 +119,7 @@
 						array("name"=>"Developer Tools","description"=>"Container Tooling, CI/CD, DevOps, Code Editors Cloud native IDE, CLI, Local Development for Containers, Language Runtime, Debugging/Tracing, QE."),
 						array("name"=>"FOSS Community & Standards", "description"=>"Community Trends, Governance, Licensing, Participation, Leadership, Agile."),
 						array("name"=>"Design","description"=>"Experience Design, Emotional Design, Design for Wearables, VUI, AR/VR, Interaction Design, Information Architecture, Design Tools and Processes, Design Thinking, Design in Open Source, User Research, Methods of Collecting User Feedback, Strategies Towards Increased Transparency/Collaboration for Design and Development Across Teams."),
-						array("name"=>"Documentaion", "description"=>"Writing for Enterprise Products, Automations Tools, Documentation Tools and Processes, Interactive Content, Content Structuring, Topic Based Authoring, Modularity, User Story Based or User Focused Documentation, UX Microcopy Documentation, Help Content, AI and Documentation, Upstream/Community Documentation, Findable Content, Documentation Workflows, Minimalism in Documentation, Information Architecture."),
+						array("name"=>"Documentation", "description"=>"Writing for Enterprise Products, Automations Tools, Documentation Tools and Processes, Interactive Content, Content Structuring, Topic Based Authoring, Modularity, User Story Based or User Focused Documentation, UX Microcopy Documentation, Help Content, AI and Documentation, Upstream/Community Documentation, Findable Content, Documentation Workflows, Minimalism in Documentation, Information Architecture."),
 						array("name"=>"Security and Data Privacy", "description"=>"Open Source Security.")
 					  );
 
@@ -168,7 +168,7 @@
 		</div>
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">Nov 15, 2020</div>
+				<div class="col-4 h5 mont-700">Nov 23, 2020</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">CfP Closes</div>
@@ -214,7 +214,7 @@
 				<div class="col-4 h5 mont-700"></div>
 				<div class="col-8">
 					<div class="row">
-						<div class="col mont-600">Registration is now <a href="https://hopin.com/events/devconf-in-2021-5cd443de-4683-46f3-9260-2c7e6cb6f618">live!</a></div>
+						<div class="col mont-600">Registration is now <a target="_blank" href="https://hopin.com/events/devconf-in-2021-5cd443de-4683-46f3-9260-2c7e6cb6f618">live!</a></div>
 					</div>
 				</div>
 			</div>
