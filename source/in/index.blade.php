@@ -211,7 +211,7 @@
         </div>
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700"></div>
+				<div class="col-4 h5 mont-700">Dec 15, 2020</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">Registration is now <a target="_blank" href="https://hopin.com/events/devconf-in-2021-5cd443de-4683-46f3-9260-2c7e6cb6f618">live!</a></div>
