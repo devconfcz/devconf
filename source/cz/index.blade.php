@@ -217,20 +217,20 @@
         <!-- Third pair -->
         <div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
             <div class="row">
-                <div class="col-4 h5 mont-700">Feb 18, 2020</div>
+                <div class="col-4 h5 mont-700">Jan 15, 2021</div>
                 <div class="col-8">
                     <div class="row">
-                        <div class="col mont-600">start of the conference</div>
+                        <div class="col mont-600">deadline for session recordings</div>
                     </div>
                 </div>
             </div>
                 </div>
         <div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
             <div class="row">
-                <div class="col-4 h5 mont-700"></div>
+                <div class="col-4 h5 mont-700">Feb 18, 2021</div>
                 <div class="col-8">
                     <div class="row">
-                        <div class="col mont-600"></div>
+                        <div class="col mont-600">conference start date</div>
                     </div>
                 </div>
             </div>
