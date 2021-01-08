@@ -78,7 +78,7 @@
                 <i class="fa fa-map-marker"></i> All over the world
 			</div>
 			<div class="heading-text pt-1 pt-lg-5 mt-1 mt-lg-5">
-				<a href="#" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">REGISTRATION WILL OPEN SOON</a>
+				<a href="https://hopin.com/events/devconf-cz-2021" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">REGISTRATION IS OPEN</a>
 			</div>
 		</div>
 	</div>
