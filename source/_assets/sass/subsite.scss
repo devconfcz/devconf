@@ -144,19 +144,19 @@ footer .h5 {
   color: #6d7278;
 }
 
-p, ul li {
+p, ul li, ol li {
   line-height: 22px;
   font-size: 16px;
   color: #4b5055;
 }
 
-section p a, section ul li a, .card .card-body a {
+section p a, section ul li a, section ol li a, .card .card-body a {
   color: #8e83e4;
   font-weight: 600;
   text-decoration: underline;
 }
 
-p a:hover, ul li a:hover, .card .card-body a:hover, strong{
+p a:hover, ul li a:hover, ol li a:hover, .card .card-body a:hover, strong{
   color: #141b41;
 }
   

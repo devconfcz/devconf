@@ -67,6 +67,7 @@
 			<a href="#organization">Organization</a>
 			<a href="#performance">Speaking/Performance</a>
 			<a href="#resources">Presentation-Making and Speaking Resources</a>
+			<a href="#suggestions">Suggestions for virtual conference</a>
 		</div>
 	</div>
 </section>
@@ -151,6 +152,30 @@
 			</ul>
 		</div>
 	</div>
+</section>
+<section id="suggestions" class="mx-auto col-lg-11">
+    <div class="row">
+        <div class="h2 pt-3 pb-4 mx-5 mont-700">Suggestions for virtual conference</div>
+        <div class="os-400 mx-5">
+            <ol>
+                <li>Before making your final recording, first record yourself delivering part of your talk, including any demos or special situations, and watch the recording to see how you look and sound.
+                    <ul>
+                        <li>Avoid light sources behind you, they tend to put you in a dark shadow.</li>
+                        <li>Maintain the same distance from the microphone to avoid unexpected volume changes.</li>
+                        <li>Practice changing screens between your slides and anything else you are showing.</li>
+                    </ul>
+                </li>
+                <li>If you can, try out several mics and other input devices, to see which have the best sound.</li>
+                <li>If possible, use a wired network connection when delivering your talk, to minimize the risk of network issues.</li>
+                <li>Make sure you attend the test event with the same hardware as you plan to use at the conference.</li>
+                <li>In order to support attendee interaction, we can publish live poll questions during your talk. Think about what to ask attendees while preparing your talk and share it with the session chair before your talk.
+                    These questions can help you tailor your talk to the audience as you go and provide interactivity that keeps attendees engaged.</li>
+                <li>Think about questions you can ask during your talk that you can suggest your attendees answer in the chat. This gives you, if you pre-recorded your talk, or any assistants you have during a live talk,
+                    the opportunity to engage with your audience.</li>
+                <li>If necessary, we can pause the pre-recorded sessions and answer questions from the audience live.</li>
+            </ol>
+        </div>
+    </div>
 </section>
 @endsection
 
