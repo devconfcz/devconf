@@ -241,7 +241,7 @@
 	</div>
 	<div class="row">
 		<div class="col-10 mx-auto">
-			<p class="os-400">Join <a href="https://t.me/devconfcz" target="_blank">Telegram DevConf.CZ Attendees group chat</a>! Connect with other attendees and get instant updates from the organizers!</p>
+			<p class="os-400">Join our <a href="https://discord.gg/devconf" target="_blank">Discord server</a> or <a href="https://t.me/devconfcz" target="_blank">Telegram DevConf.CZ Attendees group chat</a>! Connect with other attendees and get instant updates from the organizers!</p>
             <p class="os-400">We're collecting your proposals for lightning talks. Checkout our <a href="https://cfp.devconf.info" target="_blank">CfP site</a>! Deadline is February 10th.</p>
 		</div>
 	</div>
