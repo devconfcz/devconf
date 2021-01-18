@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="44px"
+   height="44px"
+   viewBox="0 0 44 44"
+   version="1.1"
+   id="svg13"
+   sodipodi:docname="discord.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata19">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>telegram</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs17" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1843"
+     inkscape:window-height="953"
+     id="namedview15"
+     showgrid="false"
+     inkscape:zoom="8.6089723"
+     inkscape:cx="17.069666"
+     inkscape:cy="20.38744"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg13" />
+  <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+  <title
+     id="title2">telegram</title>
+  <desc
+     id="desc4">Created with Sketch.</desc>
+  <g
+     id="Page-1"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd"
+     style="fill:none">
+    <g
+       id="social-copy-3"
+       transform="translate(0,-201)"
+       style="fill:none">
+      <g
+         id="Group-4"
+         style="fill:none">
+        <g
+           id="telegram"
+           transform="translate(0,201)"
+           style="fill:none">
+          <rect
+             id="Rectangle-Copy-22"
+             x="0"
+             y="0"
+             width="44"
+             height="44"
+             style="fill:none" />
+          <path
+             d="m 10.870936,21.625111 4.83882,1.806 1.87292,6.02329 c 0.11984,0.38577 0.59157,0.52836 0.90468,0.272371 l 2.69724,-2.198841 c 0.28273,-0.23037 0.68544,-0.241849 0.98091,-0.02737 l 4.86486,3.53199 c 0.33495,0.24346 0.80948,0.05992 0.89348,-0.344819 l 3.56377,-17.14237 c 0.0917,-0.442121 -0.34272,-0.81095 -0.7637,-0.64813 l -19.85865,7.660869 c -0.49007,0.189 -0.4858,0.88284 0.0057,1.06701 z m 6.4099,0.844621 9.45686,-5.824491 c 0.16996,-0.104369 0.34482,0.12544 0.19887,0.26082 l -7.80465,7.2548 c -0.27433,0.25536 -0.45129,0.5971 -0.50141,0.968031 l -0.26586,1.970219 c -0.03521,0.26306 -0.40474,0.289171 -0.47733,0.03458 l -1.02249,-3.59275 c -0.11711,-0.40978 0.05355,-0.84749 0.41601,-1.071209 z"
+             id="XMLID_497_"
+             fill="#ffffff"
+             fill-rule="nonzero"
+             style="fill:none" />
+          <circle
+             id="Oval"
+             stroke="#ffffff"
+             stroke-width="2"
+             cx="22"
+             cy="22"
+             r="21"
+             style="fill:none" />
+        </g>
+      </g>
+    </g>
+  </g>
+  <style
+     id="style844">.st0{fill:#FFFFFF;}</style>
+  <g
+     id="g901"
+     transform="matrix(1.3159319,0,0,1.3159319,-299.06348,-306.52865)"
+     style="fill:#ffffff">
+    <g
+       id="comp_x5F_91-discord"
+       style="fill:#ffffff">
+      <g
+         id="g884"
+         style="fill:#ffffff">
+        <path
+           d="m 252.06377,243.8689 c -2.645,-1.98371 -5.16142,-1.92866 -5.16142,-1.92866 l -0.25715,0.29396 c 3.12258,0.95509 4.57374,2.33272 4.57374,2.33272 -4.36331,-2.39138 -9.48868,-2.39171 -13.72105,-0.53264 -0.6797,0.3122 -1.08375,0.53264 -1.08375,0.53264 0,0 1.52461,-1.45108 4.83089,-2.40617 l -0.18362,-0.22051 c 0,0 -2.5165,-0.055 -5.1615,1.92866 0,0 -2.64499,4.79408 -2.64499,10.70856 0,0 1.54301,2.66331 5.60219,2.79198 0,0 0.67969,-0.82643 1.23073,-1.52461 -2.3328,-0.69802 -3.21435,-2.16724 -3.21435,-2.16724 0.27018,0.18891 0.71575,0.4343 0.75306,0.45909 3.10031,1.73639 7.50412,2.30515 11.4617,0.64289 0.64272,-0.23875 1.35923,-0.58784 2.11228,-1.08375 0,0 -0.91844,1.50629 -3.32468,2.18582 0.5512,0.69793 1.2124,1.48771 1.2124,1.48771 4.05935,-0.12858 5.62051,-2.79197 5.62051,-2.79197 0,-5.9144 -2.64499,-10.70848 -2.64499,-10.70848 z m -11.51675,9.00041 c -1.02862,0 -1.87362,-0.91836 -1.87362,-2.03891 0,-1.12048 0.82659,-2.03884 1.87362,-2.03884 1.04694,0 1.89194,0.91836 1.87353,2.03884 0,1.12055 -0.82659,2.03891 -1.87353,2.03891 z m 6.70434,0 c -1.02854,0 -1.87353,-0.91836 -1.87353,-2.03891 0,-1.12048 0.82659,-2.03884 1.87353,-2.03884 1.04702,0 1.87362,0.91836 1.87362,2.03884 0,1.12055 -0.8266,2.03891 -1.87362,2.03891 z"
+           id="path882"
+           style="fill:#ffffff;stroke-width:0.0840375" />
+      </g>
+    </g>
+    <g
+       id="Layer_1"
+       style="fill:#ffffff" />
+  </g>
+</svg>
