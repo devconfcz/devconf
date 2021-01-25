@@ -160,6 +160,35 @@
 	</div>
 </section>
 
+<section id="about" class="mx-auto col-lg-11">
+	<div class="row mt-4 py-5">
+		
+		<div class="col-lg-6 px-5">
+			<h1 class="mont-700 underline pb-4">Doubleshot at DevConf.CZ 2021</h1>
+			<div class="os-400">
+                <p>Our attendees always tell us how important it is to grab a cup of coffee at DevConf.cz and sit down in the hall for a chat with long-time friends and new acquaintances. We can’t be in Brno this year, but we are
+                   pleased to have worked with our <a href="https://www.doubleshot.cz/en/products/devconf-sample-pack" target="_blank">friends at doubleshot</a> to put together a coffee tasting for you to 
+                   enjoy during the conference.</p>
+
+                <p>Doubleshot has picked three coffees for us and put them together in a specially priced sampler package. The package includes their Nicaragua El Poste coffee, the proceeds of which are going to support relief
+                 efforts from hurricanes Eta and Iota.</p>
+
+                <p>On Friday and Saturday, there will be live guided tastings during the conference. Those tasting sessions, as well as the third coffees session will also be on our YouTube channel.  We encourage you to join 
+                    us for a cup of coffee live and to use your third coffee to prepare for Thursday or unwind on Sunday.</p>
+
+                <p><a href="https://www.doubleshot.cz/en/products/devconf-sample-pack" target="_blank">You can order your coffee on their website</a> for 197 CZK (~7.5 EUR) plus shipping. Order deadlines vary by country, 
+                so order early.  We look forward to seeing you online.</p>
+			</div>
+	</div>
+	
+	<div class="col-lg-4 mx-5 mb-5 text-center">
+			<img src="/assets/images/devconf-d-coffee.png" class="mw-100" alt="Coffee DevConf image asset">
+		</div>
+
+	
+	</div>
+</section>
+
 <section id="news" class="mx-auto pt-5 col-lg-11">
 	<div class="row">
 		<div class="h1 underline pb-4 mx-5 position-relative mont-700">Important dates</div>
@@ -241,8 +270,14 @@
 	</div>
 	<div class="row">
 		<div class="col-10 mx-auto">
-			<p class="os-400">Join our <a href="https://discord.gg/devconf" target="_blank">Discord server</a> or <a href="https://t.me/devconfcz" target="_blank">Telegram DevConf.CZ Attendees group chat</a>! Connect with other attendees and get instant updates from the organizers!</p>
-            <p class="os-400">We're collecting your proposals for lightning talks. Checkout our <a href="https://cfp.devconf.info" target="_blank">CfP site</a>! Deadline is February 10th.</p>
+			<p class="os-400"><span class="h6 mont-700">Jan 22, 2021</span> Purchase <a href="https://www.doubleshot.cz/en/products/devconf-sample-pack" target="_blank">DevConf.CZ 2021 Coffee Pack by Doubleshot</a>
+			 and participate in the coffee tasting during the conference.</p>
+			<p class="os-400"><span class="h6 mont-700">Jan 18, 2021</span> Join our <a href="https://discord.gg/devconf" target="_blank">Discord server</a>. Connect with other attendees, speakers and organizers
+			 during the virtual event.</p>
+			<p class="os-400"><span class="h6 mont-700">Jan 15, 2021</span> We're collecting your proposals for lightning talks. Checkout our <a href="https://cfp.devconf.info" target="_blank">CfP site</a>!
+			 Deadline is February 10th.</p>
+			<p class="os-400"><span class="h6 mont-700">Jan 8, 2021</span> <a href="https://devconfcz2021.sched.com" target="_blank">Schedule</a> is published and
+			 <a href="https://devconfcz2021.sched.com" target="_blank">registration</a> opens.</p>
 		</div>
 	</div>
 <!--	<div class="row">
