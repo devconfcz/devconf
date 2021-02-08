@@ -160,7 +160,7 @@
 	</div>
 </section>
 
-<section id="about" class="mx-auto col-lg-11">
+<section id="coffee" class="mx-auto col-lg-11">
 	<div class="row mt-4 py-5">
 		
 		<div class="col-lg-6 px-5">
@@ -184,9 +184,30 @@
 	<div class="col-lg-4 mx-5 mb-5 text-center">
 			<img src="/assets/images/devconf-d-coffee.png" class="mw-100" alt="Coffee DevConf image asset">
 		</div>
-
-	
 	</div>
+</section>
+
+<section id="poll" class="mx-auto col-lg-11">
+    <div class="row mt-4 py-5">
+        <div class="col-lg-6 mx-lg-5 mb-5 text-center">
+            <iframe class="qp_iframe" src="https://www.poll-maker.com/frame3408235x2eC5E44A-104" seamless="seamless" frameborder="no" style="border:0; background:transparent; width:100%; min-height: 669px; height:100%;"></iframe><div id='qp_foot3408235' style='width:100%; padding:5px; text-align:center;'></div><STYLE>@media (max-width:320px) {.qp_iframe{min-height:883px}}@media (max-width:375px) {.qp_iframe{min-height:860px}}@media (max-width:414px) {.qp_iframe{min-height:860px}}</STYLE>
+        </div>
+        <div class="col-lg-4 px-5">
+            <h1 class="mont-700 underline pb-4">Lidi z Baru at DevConf.CZ 2021</h1>
+            <div class="os-400">
+                <p>Since we can't meet in Brno this year, we decided to transform our usual social event into the mocktail making session we put together with <a href="https://www.lidizbaru.cz/" target="_blank">Lidi z Baru</a>.
+                   It is a competition, it is a class and it is a performance! Lidi z Baru <b>has given us a list of 25 ingredients and we're choosing the top 5 picks</b> to prepare 3 different signature mocktails. 
+                   Watch 3 bartenders creating 3 different mocktails with utensils they have at home.</p>
+
+                <p><b>Vote for ingredients you like the most</b> and help us create the signature DevConf.CZ 2021 drink. Voting is open by Friday, February 12 EOD.</p>
+
+                <p>Besides the top 5 picks from the poll, you'll need a short list of basic items including salt, sugar, honey, black pepper, milk, egg, lemon and (sparkling) water. We will publish the list of ingredients 
+                you need to buy in advance.</p>
+
+                <p>We encourage you to join us at the end of Friday and make one of the mocktail options live and connect with other attendees and speakers afterwards.</p>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section id="news" class="mx-auto pt-5 col-lg-11">
@@ -264,7 +285,7 @@
                 </div>
             </div>
         </div>
-        </div>
+    </div>
 	<div class="row mt-4">
 		<div class="h1 mx-5 mont-700">News</div>
 	</div>
@@ -278,6 +299,7 @@
 			 Deadline is February 10th.</p>
 			<p class="os-400"><span class="h6 mont-700">Jan 8, 2021</span> <a href="https://devconfcz2021.sched.com" target="_blank">Schedule</a> is published and
 			 <a href="https://devconfcz2021.sched.com" target="_blank">registration</a> opens.</p>
+
 		</div>
 	</div>
 <!--	<div class="row">
