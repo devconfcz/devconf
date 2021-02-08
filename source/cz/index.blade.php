@@ -198,7 +198,7 @@
                 <p>Since we can't meet in Brno this year, we decided to transform our usual social event into the mocktail making session we put together with <a href="https://www.lidizbaru.cz/" target="_blank">Lidi z Baru</a>.
                    It is a class, a competition and  a performance!</p>
 
-                <p>Lidi z Baru has given us a list of 25 ingredients to choose from. We will choose the top 5 ingredients based on your votes, and they will go into 3 DevConf.CZ signature drinks. Three bartenders from Lidi z Baru 
+                <p>Lidi z Baru has given us a list of 24 ingredients to choose from. We will choose the top 5 ingredients based on your votes, and they will go into 3 DevConf.CZ signature drinks. Three bartenders from Lidi z Baru 
                    will each be assigned their own mocktail, and will create the drinks from their homes on camera during the session. <b>Vote for ingredients you like the most</b> and help us create the signature DevConf.CZ 2021
                    drink. Voting is open by Friday, February 12 EOD.</p>
 
