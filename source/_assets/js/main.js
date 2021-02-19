@@ -25,3 +25,20 @@ $(document).ready(function(){
 		}, 500);
 	});
 });
+
+$(window).on("load", function(){
+    var lastChild = $(".heading-text:last-child");
+    if(lastChild.length > 0){
+        var elem = lastChild[0];
+        var offset = 0;
+
+        do{
+            if( !isNaN(elem.offsetTop) ){
+                offset += elem.offsetTop;
+            }
+        } while (elem = elem.offsetParent);
+
+        var minHeight = lastChild.innerHeight() + offset;
+        $(".masthead").css("min-height", minHeight);
+    }
+});
