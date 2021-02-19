@@ -16,7 +16,7 @@
 @endsection
 
 @section('title')
-<title>DevConf.US 2020</title>
+<title>DevConf.US 2021</title>
 @endsection
 
 
@@ -36,9 +36,9 @@
 				<li class="nav-item active px-3">
 					<a href="#news" class="nav-link local">News</a>
 				</li>
-				<li class="nav-item active px-3">
+				<!-- <li class="nav-item active px-3">
 				<a href="https://devconfus2020.sched.com" class="nav-link local" target="_blank">Schedule</a>
-				</li>
+				</li> -->
 				<li class="nav-item active px-3">
 					<a href="#participation" class="nav-link local">How to participate?</a>
 				</li>
@@ -68,14 +68,20 @@
 			<div class="heading-text mont-400 h5 pb-5">
 				open source community conference
 			</div>
+			<div class="virtual-stamp mont-700">
+                virtual event
+            </div>
 			<div class="heading-text mont-700 h1 pt-5">
-				September 24-25, 2020
+				September 02-03, 2021
 			</div>
 			<div class="heading-text mont-700 h4">
-				Web Browser Near You!
+                <i class="fa fa-map-marker"></i> Web Browser Near You!
 			</div>
+			<!-- <div class="heading-text mont-700 h4">
+				Web Browser Near You!
+			</div> -->
 			<div class="heading-text pt-5 mt-5">
-				<a href="https://hopin.to/events/devconf-us" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">GET YOUR TICKETS NOW!</a>
+				<a href="https://cfp.devconf.info/" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SUBMIT PROPOSAL!</a>
 			</div>
 		</div>
 	</div>
@@ -87,17 +93,17 @@
 			<img src="/assets/images/devconf-d-virtual.png" class="mw-100" alt="Virtual DevConf image asset">
 		</div>
 		<div class="col-lg-6 px-5">
-			<h1 id="going-virtual" class="mont-700 pb-4">DevConf.US 2020 Goes Virtual!</h1>
+			<h1 id="going-virtual" class="mont-700 pb-4">DevConf.US 2021 Remains Virtual!</h1>
 			<div class="os-400">
                 <p>While we are disappointed that we won’t be able to see you all in
-				person, we're shifting to an awesome virtual event.  There will be many opportunities to share and connect with the open source community.  Check out the <a href="https://devconfus2020.sched.com">schedule</a> and mark your calendars! Registration is now <a href="https://hopin.to/events/devconf-us">live!</a></p>
+				person again, we are glad to be back as a virtual event. There will be many opportunities to share and connect with the open source community. The CfP is now <a href="https://cfp.devconf.info/">open</a>, submit all your awesome talks!</p>
 			</div>
 			<h1 class="mont-700 underline pb-4">About DevConf</h1>
 			<div class="os-400">
-                <p>DevConf.US 2020 is the 3rd annual, free, Red Hat sponsored technology conference for community project and professional contributors to Free and Open Source technologies
+                <p>DevConf.US 2021 is the 4th annual, free, Red Hat sponsored technology conference for community project and professional contributors to Free and Open Source technologies
 		 coming to a web browser near you!</p>
 
-		<p>There is no admission or ticket charge for DevConf.US events. However, you are required to complete a free registration. Registration is now live! 
+		<p>There is no admission or ticket charge for DevConf.US events. However, you are required to complete a free registration.
 		Talks, presentations and workshops will all be in English.</p>
 
                 <p>We encourage students and new graduates as well as professionals to attend DevConf.US. We also have attendee coaching available for people who are new to attending conferences! 
@@ -123,7 +129,7 @@
 						array("name"=>"Ensuring Software Quality","description"=>"All aspects of Quality including the documentation and development that goes into the QE/QA components, such as automated testing, CI/CD, and traditional testing."),
 						array("name"=>"Security, Privacy & Data Governance","description"=>"With all the work being done with Machine Learning and in the public cloud, privacy and managing data are becoming huge concerns. What techniques are available to keep our data secure and private? What attacks should we be watching out for?"),
 						array("name"=>"Open Source & Process","description"=>"How to Open Source, and what software development is like in the Open Source world."),
-						array("name"=>"Machine Learning & Artifical Intelligence","description"=>"Development tools for data engineering and data science, model development and deployment, interesting models to solve problems. We also want to hear about other AI hot buttons like AI Dev Support, AIOps, etc."),
+						array("name"=>"Machine Learning & Artificial Intelligence","description"=>"Development tools for data engineering and data science, model development and deployment, interesting models to solve problems. We also want to hear about other AI hot buttons like AI Dev Support, AIOps, etc."),
 						array("name"=>"Systems Engineering & Hardware","description"=>"All the low-level work happening in Linux as well as interesting hardware challenges and solutions. "),
 						array("name"=>"User Experience in Open Source","description"=>"UX in the Open Source world, with a focus on implementing user experience design processes. We know UX is different when everything is done in public, tell us how and what to do about it."),
 						array("name"=>"Evolving Technology","description"=>"Highlighting emerging technology and academic research. In other words, 'All your awesome and crazy ideas -- backed up by science!'"),
@@ -161,7 +167,7 @@
 		<!-- Keep in pairs -->
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">Feb 19, 2020</div>
+				<div class="col-4 h5 mont-700">Feb 19, 2021</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">CfP Opens</div>
@@ -171,7 +177,7 @@
 		</div>
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">May 30, 2020</div>
+				<div class="col-4 h5 mont-700">May 31, 2021</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">CfP Closes</div>
@@ -181,7 +187,7 @@
                 </div>
 
 		<!-- Second pair -->
-		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
+		<!-- <div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
 				<div class="col-4 h5 mont-700">July 8, 2020</div>
 				<div class="col-8">
@@ -200,10 +206,10 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- Third pair -->
-		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
+		<!-- <div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
 				<div class="col-4 h5 mont-700">August 17, 2020</div>
 				<div class="col-8">
@@ -222,10 +228,10 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- Fourth pair -->
-		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
+		<!-- <div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
 				<div class="col-4 h5 mont-700">September 24, 2020</div>
 				<div class="col-8">
@@ -245,7 +251,7 @@
 				</div>
 			</div>
 		</div>
-        </div>
+        </div> -->
 </section>
 
 <!--
