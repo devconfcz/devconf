@@ -21,7 +21,7 @@
 
 
 @section('body')
-<header class="masthead vh-100">
+<header class="masthead min-vh-100">
 	<nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top">
 		<span class="nav-brand"><a href="#" class="home"><img src="/assets/images/devconf-logo-in-reverse.svg" alt="DevConf logo"></a></span>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMobile"

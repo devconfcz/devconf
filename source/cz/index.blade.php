@@ -21,7 +21,7 @@
 
 
 @section('body')
-<header class="masthead vh-100">
+<header class="masthead min-vh-100">
 	<nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top">
 		<span class="nav-brand"><a href="#" class="home"><img src="/assets/images/devconf-logo-cz-reverse.svg" alt="DevConf logo"></a></span>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMobile"
@@ -73,17 +73,14 @@
                 virtual event
             </div>
 			<div class="heading-text mont-700 h1 pt-1 pt-lg-5">
-				February 18-20, 2021
+				See you in 2022!
 			</div>
 			<div class="heading-text mont-700 h4">
                 <i class="fa fa-map-marker"></i> All over the world
 			</div>
-			<div class="heading-text pt-1 pt-lg-5 mt-1 mt-lg-5">
-				<a href="https://hopin.com/events/devconf-cz-2021" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">REGISTRATION IS OPEN</a><br>
-			</div>
-            <div class="heading-text pt-1 mt-1">
+            <!-- <div class="heading-text pt-1 mt-1">
                 <a href="https://www.youtube.com/watch?v=7M2Pd3jBlsE&list=PLU1vS0speL2ay8C8ymOkedNfno52mOJcw&index=1" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">LIGHTNING TALKS VOTING</a><br>
-            </div>
+            </div> -->
 		</div>
 	</div>
 </header>
