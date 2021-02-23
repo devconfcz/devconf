@@ -78,9 +78,9 @@
 			<div class="heading-text mont-700 h4">
                 <i class="fa fa-map-marker"></i> All over the world
 			</div>
-            <!-- <div class="heading-text pt-1 mt-1">
-                <a href="https://www.youtube.com/watch?v=7M2Pd3jBlsE&list=PLU1vS0speL2ay8C8ymOkedNfno52mOJcw&index=1" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">LIGHTNING TALKS VOTING</a><br>
-            </div> -->
+            <div class="heading-text pt-1 mt-5">
+                <a href="https://forms.gle/z8exjUKWGyZrkGvK8" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">2021 FEEDBACK FORM</a><br>
+            </div>
 		</div>
 	</div>
 </header>
@@ -157,39 +157,6 @@
 			</ul>
 		</div>
 	</div>
-</section>
-
-<section id="coffee" class="mx-auto col-lg-11">
-	<div class="row mt-4 py-5">
-		
-		<div class="col-lg-6 px-5">
-			<h1 class="mont-700 underline pb-4">Doubleshot at DevConf.CZ 2021</h1>
-			<div class="os-400">
-                <p>Our attendees always tell us how important it is to grab a cup of coffee at DevConf.cz and sit down in the hall for a chat with long-time friends and new acquaintances. We can’t be in Brno this year, but we are
-                   pleased to have worked with our <a href="https://www.doubleshot.cz/en/products/devconf-sample-pack" target="_blank">friends at doubleshot</a> to put together a coffee tasting for you to 
-                   enjoy during the conference.</p>
-
-                <p>Doubleshot has picked three coffees for us and put them together in a specially priced sampler package. The package includes their Nicaragua El Poste coffee, the proceeds of which are going to support relief
-                 efforts from hurricanes Eta and Iota.</p>
-
-                <p>On Friday and Saturday, there will be live guided tastings during the conference. Those tasting sessions, as well as the third coffees session will also be on our YouTube channel.  We encourage you to join 
-                    us for a cup of coffee live and to use your third coffee to prepare for Thursday or unwind on Sunday.</p>
-
-                <p><a href="https://www.doubleshot.cz/en/products/devconf-sample-pack" target="_blank">You can order your coffee on their website</a> for 197 CZK (~7.5 EUR) plus shipping. Order deadlines vary by country, 
-                so order early.  We look forward to seeing you online.</p>
-			</div>
-	</div>
-	
-	<div class="col-lg-4 mx-5 mb-5 text-center">
-			<img src="/assets/images/devconf-d-coffee.png" class="mw-100" alt="Coffee DevConf image asset">
-		</div>
-	</div>
-</section>
-
-<section id="poll" class="mx-auto col-lg-11">
-    <div class="row mt-4 py-5">
-        <img src="/assets/images/results-bar.png" class="mw-100" alt="Lidi z Baru DevConf image asset">
-    </div>
 </section>
 
 <section id="news" class="mx-auto pt-5 col-lg-11">
