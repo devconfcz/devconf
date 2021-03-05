@@ -69,15 +69,15 @@
 			<div class="heading-text mont-400 h5 pb-2 pb-lg-5">
 				open source community conference
 			</div>
-            <div class="virtual-stamp mont-700">
+<!--            <div class="virtual-stamp mont-700">
                 virtual event
-            </div>
+            </div> -->
 			<div class="heading-text mont-700 h1 pt-1 pt-lg-5">
 				See you in 2022!
 			</div>
-			<div class="heading-text mont-700 h4">
+<!--			<div class="heading-text mont-700 h4">
                 <i class="fa fa-map-marker"></i> All over the world
-			</div>
+			</div> -->
             <div class="heading-text pt-1 mt-5">
                 <a href="https://forms.gle/z8exjUKWGyZrkGvK8" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">2021 FEEDBACK FORM</a><br>
             </div>

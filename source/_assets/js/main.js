@@ -13,10 +13,10 @@ $(document).ready(function(){
 	$(window).scroll(function() {
 		if ($(this).scrollTop() >= (window.innerHeight*0.15)) {
 			$('#return-to-top').fadeIn(500);
-			$('.masthead.vh-100 .navbar.fixed-top').addClass('background-purple');
+			$('.masthead.min-vh-100 .navbar.fixed-top').addClass('background-purple');
 		} else {
 			$('#return-to-top').fadeOut(300);
-			$('.masthead.vh-100 .navbar.fixed-top').removeClass('background-purple');
+			$('.masthead.min-vh-100 .navbar.fixed-top').removeClass('background-purple');
 		}
 	});
 	$('#return-to-top, .home').click(function() {
