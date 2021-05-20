@@ -66,6 +66,7 @@
 			"questions" => array( 
 				array("q" => "Where is the schedule? When will the schedule be ready?", "a" => "We hope to release the schedule by August 2021."),
 				array("q" => "When should I expect to receive an acceptance notification by?", "a" => "We receive a large number of high quality submissions. We hope to send out acceptances by the end of June 2021"),
+				array("q" => "How do I write a good proposal?", "a" => "We have put together a <a href='https://github.com/devconfcz/virtual-presentations/blob/master/DevConf.US%20CfP%20Help.pdf'>document</a> with guidelines on how to write a good proposal. You can ping us on the <b>#cfp-help</b> channel on our <a href='https://discord.gg/devconf'>discord</a> server with further questions."),
 			)),
 
 		array("group" => "Registration Questions", "id" => "registration", 
