@@ -81,7 +81,7 @@
 				Web Browser Near You!
 			</div> -->
 			<div class="heading-text pt-5 mt-5">
-				<a href="https://cfp.devconf.info/" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SUBMIT PROPOSAL!</a>
+				<a href="https://cfp.devconf.info/" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SUBMIT A PROPOSAL!</a>
 			</div>
 		</div>
 	</div>
@@ -177,14 +177,15 @@
 		</div>
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">May 31, 2021</div>
+				<div class="col-4 h5 mont-700">June 21, 2021</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">CfP Closes</div>
 					</div>
 				</div>
 			</div>
-                </div>
+		</div>
+	</div>
 
 		<!-- Second pair -->
 		<!-- <div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
@@ -252,6 +253,15 @@
 			</div>
 		</div>
         </div> -->
+	<div class="row">
+		<div class="h1 mx-5 pb-4 underline position-relative mont-700">News</div>
+	</div>
+	<div class="row">
+		<div class="col-10 mx-auto">
+            <p class="os-400"><span class="h6 mont-700">May 21, 2021</span> We have published a <a href="/assets/files/devconfUS-cfp-help.pdf" target="_blank">CfP help guide</a> to help you write an awesome proposal!</p>
+			<p class="os-400"><span class="h6 mont-700">May 25, 2021</span> Join our <a href="https://discord.gg/devconf" target="_blank">Discord server</a>. Reach out to us in the <b>#cfp-help</b> channel for any help with proposals.</p>
+		</div>
+	</div>
 </section>
 
 <!--
@@ -265,10 +275,10 @@
 		<div class="mont-700 h1 underline position-relative mx-5 pb-4">How to participate?</div>
 	</div>
 	<div class="row">
-		<h4 class="mont-700 mb-0 position-relative mx-5 py-4">Check out the link below to find out more about DevConf.US and how to record your videos!</h4>
+		<h4 class="mont-700 mb-0 position-relative mx-5 py-4">Check out the link below to find out more about DevConf.US!</h4>
     </div>
 	<div class="row py-4">
-        <a href="/us/faq" class="mont-700 position-relative mx-5 p-4 d-inline-block purple-href">WHAT WE KNOW NOW!</a>
+        <a href="/us/faq" class="mont-700 position-relative mx-5 p-4 d-inline-block purple-href">WHAT WE KNOW!</a>
 		<!-- <div class="col-xl-3 container card-body my-2 mx-xl-3" style="background: #4a4a7e">
 			<div class="row h-100 align-items-center">
 				<div class="col text-center">
