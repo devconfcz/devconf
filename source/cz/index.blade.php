@@ -16,7 +16,7 @@
 @endsection
 
 @section('title')
-<title>DevConf.CZ 2021</title>
+<title>DevConf.CZ 2022</title>
 @endsection
 
 
@@ -36,10 +36,10 @@
 				<li class="nav-item active px-3">
 					<a href="#news" class="nav-link local">News</a>
 				</li>
-				<li class="nav-item active px-3">
+<!--				<li class="nav-item active px-3">
 					<a href="#schedule" class="nav-link local">Schedule</a>
 				</li>
-<!--				<li class="nav-item active px-3">
+				<li class="nav-item active px-3">
 					<a href="#travel" class="nav-link local">How to get here?</a>
 				</li> -->
 				<li class="nav-item active px-3">
@@ -73,14 +73,14 @@
                 virtual event
             </div> -->
 			<div class="heading-text mont-700 h1 pt-1 pt-lg-5">
-				See you in 2022!
+				January 28-29, 2022
 			</div>
 <!--			<div class="heading-text mont-700 h4">
                 <i class="fa fa-map-marker"></i> All over the world
-			</div> -->
+			</div> 
             <div class="heading-text pt-1 mt-5">
                 <a href="https://forms.gle/z8exjUKWGyZrkGvK8" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">2021 FEEDBACK FORM</a><br>
-            </div>
+            </div> -->
 		</div>
 	</div>
 </header>
@@ -92,9 +92,8 @@
 		<div class="col-lg-6 px-5">
 			<h1 class="mont-700 underline pb-4">About DevConf</h1>
 			<div class="os-400">
-                <p>DevConf.CZ 2021 is the 13th annual, free, Red Hat sponsored virtual community conference for developers, admins, DevOps engineers, testers, documentation writers and other contributors to open source technologies.
-                   The conference includes topics on Linux, Middleware, Virtualization, Storage, Cloud and mobile. At DevConf.CZ, FLOSS communities sync, share, and hack on upstream projects together.</p>
-                <p>While we are disappointed that we won’t be able to see you all in person, we're shifting to an awesome virtual event in 2021!</p>
+                <p>DevConf.CZ 2022 is the 14th annual, free, Red Hat sponsored community conference for developers, admins, DevOps engineers, testers, documentation writers and other contributors to open source technologies.
+                   At DevConf.CZ, FLOSS communities sync, share, and hack on upstream projects together.</p>
 
 				<p>There is no admission or ticket charge for DevConf.CZ events. However, you are required to complete a free registration. Watch this site for updates about registration.</p>
 
@@ -103,36 +102,17 @@
 			</div>
 	</div>
 
-	<div class="row">
+	<div class="row w-100">
 		<div class="h1 mx-5 mont-700">Topics</div>
 	</div>
 	<div class="row py-4">
 		<div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-2 mx-auto">
+            <div class="os-400"><p>For DevConf.CZ 2022, we are looking for more focused tracks that would allow us to highlight trending topics. We are currently working on an updated list of conference topics.</p></div>
 			<ul class="timeline timeline-centered">
 			<?php
 
 				$topics = array(
-						array("name"=>"Agile, DevOps","description"=>"The Agile, DevOps track is intended to address the practices, methods and tooling that technical audiences need to deliver increased business value and responsiveness through rapid, high-quality delivery. Topics include engineering best practices, defining and building Agile & DevOps cultures, Open Source tools to make Developers and Operations successful, and many more."),
-						array("name"=>"Cloud and Containers","description"=>"Cloud, containers, clusters. Buildah, CRI-O, Docker, Kubernetes, Skopeo. Hybrid cloud and other buzzwords - your cloud and container topics go here. Daemons of all sizes and shapes."),
-						array("name"=>"Community","description"=>"Building open source software is more than just about coding. Learn about the many aspects of creating and maintaining healthy, robust, and diverse open source communities."),
-                        array("name"=>"Debug / Tracing","description"=>"Developer tools for debugging and tracing your application and its enviroment.  Kernel level to userland application level."),
-                        array("name"=>"Desktop","description"=>"Traditional and new package management tools, GUI applications, optimizations for the desktop, anything desktop-related goes here."),
-                        array("name"=>"Developer Tools","description"=>"Developer tools for planning, creating, compiling, running, and analyzing code. Including all programming languages, frameworks and online development environments."),
-                        array("name"=>"Documentation","description"=>"Guides, manuals, howtos, articles, and other kinds of help content. New ideas, documentation workflows, user-story focus, modularity, and automation."),
-                        array("name"=>"Fedora","description"=>"All things Fedora!"),
-                        array("name"=>"Frontend / UI / UX","description"=>"The Frontend/UX/UI track is intended to address user experience design, user interface design, and front end development. Topics include: processes and tools related to design and frontend development, approaches to research and collecting user feedback, and strategies towards increased transparency for design and development across teams."),
-                        array("name"=>"Kernel","description"=>"All things Linux Kernel"),
-						array("name"=>"Immutable OS","description"=>"Everything from the previous CoreOS and Atomic operating systems to the new Fedora CoreOS, an automatically updating, minimal, monolithic, container-focused operating system, designed for clusters while also operable standalone. Server-related topics around rpm-ostree too."),
-                        array("name"=>"IoT (Internet of Things)","description"=>"Data crunching applications, microcontrollers, protocols and embedded software. Development and testing tools. Deployment and maintenance techniques. Security challenges and interesting use cases."),
-						array("name"=>"Microservices","description"=>"Microservices architecture, design, challenges, patterns and testing. Including RHOAR based technologies (Vert.x, Spring Boot, Node.js, Thorntail, MicroProfile, Fuse) and other platforms, including development & production related topics."),
-						array("name"=>"Middleware","description"=>"Infrastructure exists to run applications, and applications are built on Middleware.  Red Hat has several runtimes and services designed to integrate with our platforms for efficient performance and rapid development."),
-						array("name"=>"ML / AI / Big Data","description"=>"Development tools for data engineering and data science, model development and deployment, interesting models to solve problems, e.g., in software engineering, system/cloud administration."),
-						array("name"=>"Networking","description"=>"What is on the horizon for the next 3-12 months for networking. What is work in progress and will land in next few months. What are the directions we would want to take things in. How can networking solve some of the existing problems for our customers, our layered products. How can networking solve the bottlenecks in layered products."),
-						array("name"=>"Platform / OS","description"=>"Anything related to GNU/Linux base operating system - when it does not better fit to other tracks ;)"),
-						array("name"=>"Quality / Testing","description"=>"Automation, STLC, QE frameworks, QE in Open Source, basically all things Quality Engineering!"),
-						array("name"=>"Security / IdM","description"=>"Secure infrastructure and identity management on Linux"),
-						array("name"=>"Storage / Ceph / Gluster","description"=>"Storage infrastructure, including topics from low-level to software-defined distributed storage systems."),
-						array("name"=>"Virtualization","description"=>"Virtualization from low level kernel support to high level management tools, and everything in between, such as userspace runtimes and libraries. Multiple architecture support for Virtualization is evolving. User level tuning and experiences with Virtualization are also great topics.")
+//						array("name"=>"Security / IdM","description"=>"Secure infrastructure and identity management on Linux"),
 					  );
 
 				foreach($topics as $i=>$t){
@@ -161,16 +141,16 @@
 
 <section id="news" class="mx-auto pt-5 col-lg-11">
 	<div class="row">
-		<div class="h1 underline pb-4 mx-5 position-relative mont-700">Important dates</div>
+		<div class="h1 pb-4 mx-5 position-relative mont-700">Important dates</div>
 	</div>
 	<div class="row">
 		<!-- Keep in pairs -->
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">Sep 24, 2020</div>
+				<div class="col-4 h5 mont-700">August, 2021</div>
 				<div class="col-8">
 					<div class="row">
-						<div class="col mont-600">CfP Opens</div>
+						<div class="col mont-600">CfP opens</div>
 					</div>
 <!--
 					<div class="row">
@@ -182,10 +162,10 @@
 		</div>
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">Nov 6, 2020</div>
+				<div class="col-4 h5 mont-700">October, 2021</div>
 				<div class="col-8">
 					<div class="row">
-						<div class="col mont-600">CfP Closes</div>
+						<div class="col mont-600">CfP closes</div>
 					</div>
 				</div>
 			</div>
@@ -194,20 +174,20 @@
 		<!-- Second pair -->
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">Nov 30, 2020</div>
+				<div class="col-4 h5 mont-700">November, 2021</div>
 				<div class="col-8">
 					<div class="row">
-						<div class="col mont-600">1st round of speaker acceptance letters</div>
+						<div class="col mont-600">First round of acceptance letters</div>
 					</div>
 				</div>
 			</div>
                 </div>
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">Jan 11, 2021</div>
+				<div class="col-4 h5 mont-700">December, 2021</div>
 				<div class="col-8">
 					<div class="row">
-						<div class="col mont-600">Registration opens</div>
+						<div class="col mont-600">Schedule published</div>
 					</div>
 				</div>
 			</div>
@@ -216,20 +196,20 @@
         <!-- Third pair -->
         <div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
             <div class="row">
-                <div class="col-4 h5 mont-700">Jan 15, 2021</div>
+                <div class="col-4 h5 mont-700">December, 2021</div>
                 <div class="col-8">
                     <div class="row">
-                        <div class="col mont-600">deadline for session recordings</div>
+                        <div class="col mont-600">Registration opens</div>
                     </div>
                 </div>
             </div>
                 </div>
         <div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
             <div class="row">
-                <div class="col-4 h5 mont-700">Feb 18, 2021</div>
+                <div class="col-4 h5 mont-700">January 28-29, 2022</div>
                 <div class="col-8">
                     <div class="row">
-                        <div class="col mont-600">conference start date</div>
+                        <div class="col mont-600">Conference dates</div>
                     </div>
                 </div>
             </div>
@@ -240,14 +220,7 @@
 	</div>
 	<div class="row">
 		<div class="col-10 mx-auto">
-            <p class="os-400"><span class="h6 mont-700">Feb 5, 2021</span> We have published <a href="https://www.devconf.info/cz/conference-guide/" target="_blank">Conference Guide</a> for all attendees and speakers</p>
-			<p class="os-400"><span class="h6 mont-700">Jan 22, 2021</span> Purchase <a href="https://www.doubleshot.cz/en/products/devconf-sample-pack" target="_blank">DevConf.CZ 2021 Coffee Pack by Doubleshot</a>
-			 and participate in the coffee tasting during the conference.</p>
-			<p class="os-400"><span class="h6 mont-700">Jan 18, 2021</span> Join our <a href="https://discord.gg/devconf" target="_blank">Discord server</a>. Connect with other attendees, speakers and organizers
-			 during the virtual event.</p>
-			<p class="os-400"><span class="h6 mont-700">Jan 8, 2021</span> <a href="https://devconfcz2021.sched.com" target="_blank">Schedule</a> is published and
-			 <a href="https://devconfcz2021.sched.com" target="_blank">registration</a> opens.</p>
-
+			<p class="os-400"><span class="h6 mont-700">Jul 21, 2021</span> Join our <a href="https://discord.gg/devconf" target="_blank">Discord server</a> to connect with other attendees, speakers and organizers before the event.</p>
 		</div>
 	</div>
 <!--	<div class="row">
@@ -306,10 +279,10 @@
 	</div>
 -->
 </section>
-<section id="schedule" class="mx-auto col-lg-12 background-gray text-center mt-5 py-5">
+<!--<section id="schedule" class="mx-auto col-lg-12 background-gray text-center mt-5 py-5">
 	<div class="h1 mont-700 position-relative py-4 mt-3">Schedule</div>
 	<a class="p-3 mont-700 mb-3 d-inline-block purple-href" target="_blank" href="https://devconfcz2021.sched.org">SCHEDULE IS LIVE</a>
-</section>
+</section>-->
 <!--<section id="travel" class="mx-auto py-5 col-lg-11">
 	<div class="row">
 		<div class="mont-700 h1 underline position-relative mx-5 pb-4">How to get there?</div>
@@ -352,12 +325,12 @@
 			</div>
 		</div>
 	</div>
-</section>
-<section class="col-12 px-0" style="height: 450px;">
+</section>-->
+<section class="col-12 px-0 mt-5" style="height: 450px;">
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5828.8794114720895!2d16.593681273902156!3d49.223568069664026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471294099dc06bbb%3A0xbfcf161b01a48b0d!2sFaculty%20of%20Information%20Technology%2C%20Brno%20University%20of%20Technology!5e0!3m2!1sen!2scz!4v1569001018524!5m2!1sen!2scz" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
-</section> -->
+</section>
 @endsection
 
 @include('_layouts.footercz')
