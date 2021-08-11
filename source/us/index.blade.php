@@ -3,7 +3,7 @@
 @section('social')
 <meta property="og:title" content="DevConf.US | Virtual">
 <meta property="og:site_name" content="DevConf.US">
-<meta property="og:description" content="DevConf are free and open, annual, open-source community conferences for community contibutors, sponsored by Red Hat.">
+<meta property="og:description" content="DevConf are free and open, annual, open-source community conferences for community contributors, sponsored by Red Hat.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://devconf.info">
 <meta property="og:image" content="https://devconf.info/assets/images/devconf-us-social.svg">
@@ -38,6 +38,9 @@
 				</li>
 				<li class="nav-item active px-3">
 				<a href="https://devconfus2021.sched.com" class="nav-link local" target="_blank">Schedule</a>
+				</li>
+				<li class="nav-item active px-3">
+					<a href="#video-tour" class="nav-link local">Video tour</a>
 				</li>
 				<li class="nav-item active px-3">
 					<a href="#participation" class="nav-link local">How to participate?</a>
@@ -188,31 +191,10 @@
 	</div>
 
 		<!-- Second pair -->
-		<!-- <div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
+	<div class="row">
+		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">July 8, 2020</div>
-				<div class="col-8">
-					<div class="row">
-						<div class="col mont-600">Live Workshop Proposals Closes</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
-			<div class="row">
-				<div class="col-4 h5 mont-700">August 24, 2020</div>
-				<div class="col-8">
-					<div class="row">
-						<div class="col mont-600">Video Recordings Due</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
-
-		<!-- Third pair -->
-		<!-- <div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
-			<div class="row">
-				<div class="col-4 h5 mont-700">August 17, 2020</div>
+				<div class="col-4 h5 mont-700">August 6, 2021</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">Schedule Published & Registration Opens</div>
@@ -222,14 +204,39 @@
 		</div>
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">September 23, 2020</div>
+				<div class="col-4 h5 mont-700">August 23, 2021</div>
 				<div class="col-8">
 					<div class="row">
-						<div class="col mont-600">Workshop Day</div>
+						<div class="col mont-600">Video Recordings Due</div>
 					</div>
 				</div>
 			</div>
-		</div> -->
+		</div>
+	</div>
+
+		<!-- Third pair -->
+	<div class="row">
+		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
+			<div class="row">
+				<div class="col-4 h5 mont-700">September 2, 2021</div>
+				<div class="col-8">
+					<div class="row">
+						<div class="col mont-600">Conference Day 1</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
+			<div class="row">
+				<div class="col-4 h5 mont-700">September 3, 2021</div>
+				<div class="col-8">
+					<div class="row">
+						<div class="col mont-600">Conference Day 2</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 		<!-- Fourth pair -->
 		<!-- <div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
@@ -253,14 +260,28 @@
 			</div>
 		</div>
         </div> -->
-	<div class="row">
-		<div class="h1 mx-5 pb-4 underline position-relative mont-700">News</div>
+
+<div class="row">
+	<div class="h1 mx-5 pb-4 underline position-relative mont-700">News</div>
+</div>
+<div class="row">
+	<div class="col-10 mx-auto">
+		<p class="os-400"><span class="h6 mont-700">May 21, 2021</span> We have published a <a href="/assets/files/devconfUS-cfp-help.pdf" target="_blank">CfP help guide</a> to help you write an awesome proposal!</p>
+		<p class="os-400"><span class="h6 mont-700">May 25, 2021</span> Join our <a href="https://discord.gg/devconf" target="_blank">Discord server</a>. Reach out to us in the <b>#cfp-help</b> channel for any help with proposals.</p>
+		<p class="os-400"><span class="h6 mont-700">August 10, 2021</span> <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZFbBiW20arjFBrgLBkWydgVXspK-1AmaxxIHnWpd2lf-VQA/viewform" target="_blank">Submit</a> a Boston tour video!</p>
+	</div>
+</div>
+</section>
+
+<section id="video-tour" class="mx-auto py-5 col-lg-11">
+<div class="row">
+		<div class="h1 mx-5 pb-4 underline position-relative mont-700">Boston Video Tour!</div>
 	</div>
 	<div class="row">
-		<div class="col-10 mx-auto">
-            <p class="os-400"><span class="h6 mont-700">May 21, 2021</span> We have published a <a href="/assets/files/devconfUS-cfp-help.pdf" target="_blank">CfP help guide</a> to help you write an awesome proposal!</p>
-			<p class="os-400"><span class="h6 mont-700">May 25, 2021</span> Join our <a href="https://discord.gg/devconf" target="_blank">Discord server</a>. Reach out to us in the <b>#cfp-help</b> channel for any help with proposals.</p>
-		</div>
+		<h4 class="mont-700 mb-0 position-relative mx-5 py-4">Want to share what you love about the Boston area? <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZFbBiW20arjFBrgLBkWydgVXspK-1AmaxxIHnWpd2lf-VQA/viewform" target="_blank">Submit</a> a video tour today and we will showcase it during the conference. Checkout the guidelines on this below!</h4>
+	</div>
+	<div class="row py-4">
+        <a href="/assets/files/video-tour.pdf" target="_blank" class="mont-700 position-relative mx-5 p-4 d-inline-block purple-href">Video Guidelines!</a>
 	</div>
 </section>
 
