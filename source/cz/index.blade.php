@@ -107,12 +107,19 @@
 	</div>
 	<div class="row py-4">
 		<div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-2 mx-auto">
-            <div class="os-400"><p>For DevConf.CZ 2022, we are looking for more focused tracks that would allow us to highlight trending topics. We are currently working on an updated list of conference topics.</p></div>
 			<ul class="timeline timeline-centered">
 			<?php
 
 				$topics = array(
-//						array("name"=>"Security / IdM","description"=>"Secure infrastructure and identity management on Linux"),
+						array("name"=>"Cloud & Hyperscale","description"=>"Topics around Kubernetes, quantum computing, high availability, *aaS, anything that powers large data centers or small private clouds, best practices for development, and operations at scale, resource efficiency, etc."),
+                        array("name"=>"Future Tech and Open Research", "description"=>"What’s next? Any topics that are currently being discussed or actively researched yet their impact is still potential. Best practices and great examples of open source research collaborations are welcome."),
+                        array("name"=>"Edge Computing", "description"=>"Modern embedded systems, microcontrollers, management of embedded systems, infrastructure for embedded systems, resource optimization, peripherals, tools, and edge in automotive are some of the topic ideas appropriate for this track."),
+                        array("name"=>"HPC, Big Data and Data Science", "description"=>"High performance systems, data storing and processing, best practices for data lakes/data mesh, and parallelism and vector computing."),
+                        array("name"=>"Open Source UX/Design", "description"=>"Open source practices for UX and UIs, Design Thinking, Service Design, UX and Customer Experience. How to get users and customers involved in software design and other best practices."),
+                        array("name"=>"Open Source Education", "description"=>"Improving how students learn—and how instructors teach— withOpen Source. Open Source tools that facilitate education, as well as the overall education community that operates in an open source way (MOOC's, free bootcamps, university relations, etc)."),
+                        array("name"=>"Modern Software Development", "description"=>"Trending topics from software development, application modernization, new trends, microservices, and distributed computing."),
+                        array("name"=>"Testing and Automation", "description"=>"Embedded intelligence in products for automation, IoB - internet of behaviours, analytics and automated remediation capabilities, risk and change analysis, AI powered orchestration, and machine learning in test automation (i.e, test failure analysis, test generation, and test selection)."),
+                        array("name"=>"Linux distribution", "description"=>"Firmware, Linux kernel, base platform for containers, desktop, Silverblue, and upgrades."),
 					  );
 
 				foreach($topics as $i=>$t){
