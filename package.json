@@ -19,6 +19,7 @@
         "sass": "^1.30.0",
         "sass-loader": "^7.1.0",
         "vue-template-compiler": "^2.6.12",
-        "yargs": "^4.6.0"
+        "yargs": "^4.6.0",
+        "highlight.js": "^10.5.0"
     }
 }

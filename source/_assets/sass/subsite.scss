@@ -52,7 +52,7 @@ body, html {
   text-decoration: none;
 }
 
-.nav-item a:after{
+.nav-item a:after, a.blog-title:after{
   content: "";
   position: absolute;
   width: 100%;
@@ -67,6 +67,11 @@ body, html {
   transition: 0.2s ease-out all .1s;
 }
 
+a.blog-title:after{
+  background-color: #8e83e4;
+  bottom: 0px;
+}
+
 .secondary-menu, .secondary-menu a, .secondary-menu a:visited {
   background: #f0f0f0;
   color: #717579;
@@ -75,7 +80,7 @@ body, html {
   font-family: DevConfMontserrat, Montserrat, Arial, sans-serif;
 }
 
-.nav-item a:hover:after, .nav-item.underline a:after{
+.nav-item a:hover:after, .nav-item.underline a:after, a.blog-title:hover:after{
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);

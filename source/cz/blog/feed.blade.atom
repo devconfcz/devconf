@@ -1,0 +1,11 @@
+---
+site_path: blog
+---
+
+@extends('_layouts.rss')
+
+@section('entries')
+    @foreach ($posts as $entry)
+        @include('_components.post-as-rss-item')
+    @endforeach
+@endsection

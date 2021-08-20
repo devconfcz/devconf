@@ -1,0 +1,27 @@
+---
+extends: _layouts.post
+section: content
+title: "DevConf.CZ 2022: Reimagining conference tracks and what we hope for"
+date: 2021-08-20
+author: Dorota Volavkova
+description: Our vision for DevConf.CZ 2022
+cover_image: /assets/images/blog/reimagining-devconf-cz.png
+featured: true
+---
+
+It feels like DevConf.CZ 2021 has just ended and we are already preparing for next year's event. For DevConf.CZ 2022, we are aiming for a hybrid conference, with both in-person and virtual presence to ensure that everyone who wishes to participate is able to do so. We will stick to our usual dates at the end of January and our usual venue, the Faculty of Information Technology at Brno University of Technology. We are currently discussing all the possibilities with the faculty and we are very excited to return to a familiar venue. We decided to remain true to January dates since the amount of daylight and temperatures outside are ideal for a hybrid event. These are the plans and we can plan all we want but we still don't know what January 2022 is going to look like. We are prepared to adapt along the way. All we know for sure is that we will organize DevConf.CZ again, we are looking for speakers, we will welcome attendees and we will celebrate volunteers that make the conference happen. It’s not going to be easy, but hey, this is DevConf, we love trying new things and experimenting!
+
+Talking about experiments, we decided to reimagine conference tracks for DevConf.CZ 2022. For several years now, DevConf.CZ has had similar conference tracks. The tracks were based on discussions with various communities, Red Hatters and other open source contributors outside the company. They were very technical and very focused on specific topics. The number of topics grew over time and we’ve started dealing with a small problem - the conference is way too broad and spread into too many directions. We’ve started thinking about the change and we’ve come up with a list of new conference tracks that are focused on current trends in the software and hardware industry. We want to focus on topics that are heavily discussed and very visible, yet most of us always feel like “I wish I knew more about this cool new thing”. At the same, we want to work on limiting the size of the conference based on the feedback from past years. It is exhausting to attend (and run) a 3-day conference with 6 to 8 parallel tracks, especially in the virtual environment. We plan to open Call for Proposals with the new set of tracks, however, we will not necessarily pick all the tracks we’ve proposed if the interest from speakers is low. We may keep some of the topics for future because we believe DevConf.CZ reached a level of maturity that will allow us to rotate the focus of the conference every year. This will hopefully help us to structure the hybrid conference more effectively and keep it focused on current and emerging trends.
+
+This is the updated list of conference tracks and what we envision would fit into them:
+- **Cloud & Hyperscale** - Topics around Kubernetes, quantum computing, high availability, *aaS, anything that powers large data centers or small private clouds, best practices for development, and operations at scale, resource efficiency, etc.
+- **Future Tech and Open Research** - What’s next? Any topics that are currently being discussed or actively researched yet their impact is still potential. Best practices and great examples of open source research collaborations are welcome.
+- **Edge Computing** - Modern embedded systems, microcontrollers, management of embedded systems, infrastructure for embedded systems, resource optimization, peripherals, tools, and edge in automotive are some of the topic ideas appropriate for this track.
+- **HPC, Big Data and Data Science** - High performance systems, data storing and processing, best practices for data lakes/data mesh, and parallelism and vector computing.
+- **Open Source UX/Design** - Open source practices for UX and UIs, Design Thinking, Service Design, UX and Customer Experience. How to get users and customers involved in software design and other best practices.
+- **Open Source Education** - Improving how students learn—and how instructors teach— withOpen Source. Open Source tools that facilitate education, as well as the overall education community that operates in an open source way (MOOC's, free bootcamps, university relations, etc).
+- **Modern Software Development** - Trending topics from software development, application modernization, new trends, microservices, and distributed computing.
+- **Testing and Automation** - Embedded intelligence in products for automation, IoB - internet of behaviours, analytics and automated remediation capabilities, risk and change analysis, AI powered orchestration, and machine learning in test automation (i.e, test failure analysis, test generation, and test selection).
+- **Linux distribution** - Firmware, Linux kernel, base platform for containers, desktop, Silverblue, and upgrades.
+
+Think about what you’d love to talk about and how it can fit into these tracks. We are always seeking technical sessions and speakers who are not afraid to dive deep into details of the area of their interest. And even if you feel like your session does not fit into any of these tracks, do not hesitate to submit a proposal and let us know why you think it is worth discussing. Who knows, it may lead to another track at another devconf!
