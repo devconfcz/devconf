@@ -31,8 +31,11 @@
 		<div class="collapse navbar-collapse" id="navbarMobile">
 			<ul class="navbar-nav ml-auto pr-5">
 				<li class="nav-item active px-3">
-					<a href="#about" class="nav-link local">About & Topics</a>
+					<a href="#about" class="nav-link local">About</a>
 				</li>
+                <li class="nav-item active px-3">
+                    <a href="#themes" class="nav-link local">Conference Themes</a>
+                </li>
 				<li class="nav-item active px-3">
 					<a href="#news" class="nav-link local">News</a>
 				</li>
@@ -69,16 +72,16 @@
 			<div class="heading-text mont-400 h5 pb-2 pb-lg-5">
 				open source community conference
 			</div>
-<!--            <div class="virtual-stamp mont-700">
-                virtual event
-            </div> -->
+            <div class="hybrid-stamp mont-700">
+                hybrid event
+            </div>
 			<div class="heading-text mont-700 h1 pt-1 pt-lg-5">
 				January 28-29, 2022
 			</div>
-<!--			<div class="heading-text mont-700 h4">
-                <i class="fa fa-map-marker"></i> All over the world
+			<div class="heading-text mont-700 h4">
+                <i class="fa fa-map-marker"></i> Brno, Czech Republic + Virtual
 			</div> 
-            <div class="heading-text pt-1 mt-5">
+<!--            <div class="heading-text pt-1 mt-5">
                 <a href="https://forms.gle/z8exjUKWGyZrkGvK8" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">2021 FEEDBACK FORM</a><br>
             </div> -->
 		</div>
@@ -100,14 +103,17 @@
                 <p>We are committed to fostering an open and welcoming environment at our conference.
                    We set expectations for inclusive behavior through our code of conduct and media policies, and are prepared to enforce these.</p>
 			</div>
-	</div>
-
-	<div class="row w-100">
-		<div class="h1 mx-5 mont-700">Topics</div>
-	</div>
-	<div class="row py-4">
-		<div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-2 mx-auto">
-			<ul class="timeline timeline-centered">
+	    </div>
+    </div>
+</section>
+<section id="themes" class="mx-auto col-lg-11">
+    <div class="row mt-4 py-5">
+    	<div class="row w-100">
+	    	<div class="h1 mx-5 mont-700">Conference Themes</div>
+    	</div>
+	    <div class="row py-4">
+		    <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-2 mx-auto">
+			    <ul class="timeline timeline-centered">
 			<?php
 
 				$topics = array(
@@ -154,7 +160,7 @@
 		<!-- Keep in pairs -->
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">August, 2021</div>
+				<div class="col-4 h5 mont-700">Aug, 2021</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">CfP opens</div>
@@ -169,7 +175,7 @@
 		</div>
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">October, 2021</div>
+				<div class="col-4 h5 mont-700">Oct, 2021</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">CfP closes</div>
@@ -181,7 +187,7 @@
 		<!-- Second pair -->
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">November, 2021</div>
+				<div class="col-4 h5 mont-700">Nov, 2021</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">First round of acceptance letters</div>
@@ -191,7 +197,7 @@
                 </div>
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">December, 2021</div>
+				<div class="col-4 h5 mont-700">Dec, 2021</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">Schedule published</div>
@@ -203,7 +209,7 @@
         <!-- Third pair -->
         <div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
             <div class="row">
-                <div class="col-4 h5 mont-700">December, 2021</div>
+                <div class="col-4 h5 mont-700">Dec, 2021</div>
                 <div class="col-8">
                     <div class="row">
                         <div class="col mont-600">Registration opens</div>
@@ -213,7 +219,7 @@
                 </div>
         <div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
             <div class="row">
-                <div class="col-4 h5 mont-700">January 28-29, 2022</div>
+                <div class="col-4 h5 mont-700">Jan 28-29, 2022</div>
                 <div class="col-8">
                     <div class="row">
                         <div class="col mont-600">Conference dates</div>
@@ -227,6 +233,7 @@
 	</div>
 	<div class="row">
 		<div class="col-10 mx-auto">
+			<p class="os-400"><span class="h6 mont-700">Aug 19, 2021</span> Conference dates announced: 28-29 Jan, 2022 in Brno and virtually.</p>
 			<p class="os-400"><span class="h6 mont-700">Jul 21, 2021</span> Join our <a href="https://discord.gg/devconf" target="_blank">Discord server</a> to connect with other attendees, speakers and organizers before the event.</p>
 		</div>
 	</div>

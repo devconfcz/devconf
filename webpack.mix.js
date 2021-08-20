@@ -12,7 +12,6 @@ mix.webpackConfig({
 });
 
 mix.js('source/_assets/js/main.js', 'js')
-    .sass('source/_assets/sass/stars.scss', 'css')
     .sass('source/_assets/sass/main.scss', 'css')
     .sass('source/_assets/sass/site.scss', 'css')
     .sass('source/_assets/sass/cookie.scss', 'css')

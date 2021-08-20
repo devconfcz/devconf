@@ -131,6 +131,18 @@ body, html {
   box-sizing: unset;
 }
 
+.hybrid-stamp {
+  background: #00adcc;
+  position: relative;
+  width: 15ex;
+  text-align: center;
+  border-radius: 200px;
+  left: 10vw;
+  font-size: 2ex;
+  box-sizing: unset;
+}
+
+
 @media (min-width: 992px) { 
 
 	.text-logo {
@@ -173,6 +185,21 @@ body, html {
       font-size: 3ex;
       box-sizing: unset;
     }
+
+    .hybrid-stamp {
+      background: #00adcc;
+      position: absolute;
+      width: 7ex;
+      text-align: center;
+      padding: 5ex 3.5ex;
+      border-radius: 200px;
+      line-height: 2ex;
+      right: 15vw;
+      left: auto;
+      font-size: 3ex;
+      box-sizing: unset;
+    }
+
 }
 
 .mont-700, .mont-600, .mont-500, .mont-400 {

@@ -1,5 +1,6 @@
 {
     "require": {
-        "tightenco/jigsaw": "^1.3"
+        "tightenco/jigsaw": "^1.3",
+        "tightenco/jigsaw-blog-template": "^1.2"
     }
 }
