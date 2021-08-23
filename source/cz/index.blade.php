@@ -45,6 +45,9 @@
 				<li class="nav-item active px-3">
 					<a href="#travel" class="nav-link local">How to get here?</a>
 				</li> -->
+                <li class="nav-item active px-3">
+                    <a href="/cz/blog" class="nav-link local">Blog</a>
+                </li>
 				<li class="nav-item active px-3">
 					<a href="/cz/faq" class="nav-link local">FAQ</a>
 				</li> 
