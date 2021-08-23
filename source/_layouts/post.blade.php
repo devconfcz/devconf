@@ -11,7 +11,7 @@
 
 @section('body')
 <section class="mx-auto mt-5 pt-5 pb-5 col-lg-6">
-	<div class="row">
+	<div class="row px-3">
     @if ($page->cover_image)
         <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="w-100 mb-2">
     @endif
