@@ -140,7 +140,7 @@ foreach($questions as $q){
 
 				<div id="collapse-<?php echo $q['id'] . $id; ?>" class="collapse" aria-labelledby="heading-<?php echo $q['id'] . $id; ?>" data-parent="#sub-<?php echo $q['id']; ?>">
 					<div class="card-body os-400">
-						<?php echo $value['a']; ?>
+						<p><?php echo $value['a']; ?></p>
 					</div>
 				</div>
 			</div>
