@@ -1,7 +1,7 @@
 ---
 extends: _layouts.post
 section: content
-title: "DevConf.CZ 2022: Reimagining conference topics and what we hope for"
+title: "DevConf.CZ 2022: Reimagining conference themes and what we hope for"
 date: 2021-08-20
 author: Dorota Volavkova, Radek Vokal
 description: Our vision for DevConf.CZ 2022

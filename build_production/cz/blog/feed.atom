@@ -3,7 +3,7 @@
     <title>DevConf.CZ Blog</title>
     <link href="/blog" />
     <link type="application/atom+xml" rel="self" href="/cz/blog/feed.atom" />
-    <updated>2021-08-31T13:25:42+00:00</updated>
+    <updated>2021-09-07T12:02:32+00:00</updated>
     <id>/cz/blog/feed.atom</id>
     <author>
         <name>Josef Ridky &lt;jridky@redhat.com&gt;</name>
@@ -11,7 +11,7 @@
                 <entry>
     <id>/cz/blog/reimagining-conference-topics-and-what-we-hope-for</id>
     <link type="text/html" rel="alternate" href="/cz/blog/reimagining-conference-topics-and-what-we-hope-for" />
-    <title>DevConf.CZ 2022: Reimagining conference topics and what we hope for</title>
+    <title>DevConf.CZ 2022: Reimagining conference themes and what we hope for</title>
     <published>2021-08-20T00:00:00+00:00</published>
     <updated>2021-08-20T00:00:00+00:00</updated>
     <author>
