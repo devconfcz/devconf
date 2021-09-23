@@ -34,7 +34,7 @@ This is the updated list of conference themes and what we envision would fit int
 - **HPC, Big Data and Data Science** - High performance systems, data storing and processing, best practices for data lakes/data mesh, and parallelism and vector computing.
 - **Open Source UX/Design** - Open source practices for UX and UIs, Design Thinking, Service Design, UX and Customer Experience. How to get users and customers involved in software design and other best practices.
 - **Open Source Education** - Improving how students learn—and how instructors teach— withOpen Source. Open Source tools that facilitate education, as well as the overall education community that operates in an open source way (MOOC's, free bootcamps, university relations, etc).
-- **Modern Software Development** - Trending topics from software development, application modernization, new trends, microservices, and distributed computing. Development of secure code, code validation and verification.
+- **Modern Software Development** - Trending topics from software development, application modernization, new trends, microservices, distributed computing and continuous improvement. Development of secure code, code validation and verification.
 - **Analysis, Testing and Automation** - Embedded intelligence in products for automation, IoB - internet of behaviours, analytics and automated remediation capabilities, risk and change analysis, AI powered orchestration, and machine learning in analysis and test automation (i.e, test failure analysis, test generation, and test selection).
 - **Linux distribution** - Firmware, Linux kernel, base platform for containers, desktop, Silverblue, and upgrades.
 
