@@ -235,10 +235,21 @@
 		<div class="h1 mx-5 mont-700">News</div>
 	</div>
 	<div class="row">
-		<div class="col-10 mx-auto">
+		<div class="col-lg-6 px-5 mx-auto">
             <p class="os-400"><span class="h6 mont-700">Aug 26, 2021</span> CfP is open! <a href="https://cfp.devconf.info" target="_blank">Submit your proposal</a> until Oct 24th, 2021.</p>
 			<p class="os-400"><span class="h6 mont-700">Aug 19, 2021</span> Conference dates announced: 28-29 Jan, 2022 in Brno and virtually.</p>
 			<p class="os-400"><span class="h6 mont-700">Jul 21, 2021</span> Join our <a href="https://discord.gg/devconf" target="_blank">Discord server</a> to connect with other attendees, speakers and organizers before the event.</p>
+		</div>
+		<div class="col-lg-4 px-5 mx-auto">
+		        <form action="https://devconf.us5.list-manage.com/subscribe/post?u=ad2f341fc41f78b232f2765e6&id=acab0ee8de" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate px-2 py-3 bordered text-center" target="_blank" novalidate>
+                    <div class="h3 mont-700">Sign up for newsletter</div>
+                    <div class="mc-field-group">
+                        <input type="email" value="" name="EMAIL" class="required email p-2" id="mce-EMAIL" placeholder="Email address">
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_25582686a9fc051afd5453557_189578c854" tabindex="-1" value=""></div>
+                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="px-4 py-2 mont-400">
+                    </div>
+                </div>
+            </form>
 		</div>
 	</div>
 <!--	<div class="row">

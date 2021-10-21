@@ -331,6 +331,28 @@ a.border:hover{
   transition: 0.5s ease all;
 }
 
+.bordered {
+  border: 4px solid #8e83e4;
+}
+
+input[type=submit]{
+    display: inline-block;
+    color: #8e83e4;
+    border: 2px solid #8e83e4;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+input[type=submit]:hover {
+    background: #8e83e4;
+    color: #fff;
+    font-weight: 700;
+}
+
 .purple-href {
   color: #141b41 !important;
   border: 2px solid #141b41 !important;
