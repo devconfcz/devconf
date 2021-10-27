@@ -36,4 +36,4 @@ Since we're a hybrid event in 2022, we made a few changes in the session types t
 
 If you still aren't 100% certain about your proposal we invite you to the DevConf.CZ 2022 CfP office hours on **Thursday, October 21 from 3 - 5 PM CEST** on our [discord channel](https://discord.com/invite/devconf). You can discuss your proposal or get some tips from session reviewers and past DevConf.CZ speakers.
 
-You can also join the [\#CfP-help](https://discord.com/channels/785879296379453491/844640981319024670) discord channel and chat with event organizers about anything related to CfP anytime.
+You can also join the [\#CfP-help](https://discord.com/channels/785879296379453491/844640981319024670) discord channel and chat with event organizers about anything related to CfP anytime or take a look at following [presentation](https://www.devconf.info/assets/files/devconf-cz-cfp-tips.pdf).
