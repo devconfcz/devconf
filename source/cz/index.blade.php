@@ -84,9 +84,10 @@
 			<div class="heading-text mont-700 h4">
                 <i class="fa fa-map-marker"></i> Brno, Czech Republic + Virtual
 			</div> 
-            <div class="heading-text pt-1 mt-5">
+<!--            <div class="heading-text pt-1 mt-5">
                 <a href="https://cfp.devconf.info" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SUBMIT YOUR PROPOSAL</a><br>
             </div> 
+-->
 		</div>
 	</div>
 </header>
@@ -163,7 +164,7 @@
 		<!-- Keep in pairs -->
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">Aug, 2021</div>
+				<div class="col-4 h5 mont-700">Aug 26, 2021</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">CfP opens</div>
@@ -178,7 +179,7 @@
 		</div>
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">Oct, 2021</div>
+				<div class="col-4 h5 mont-700">Nov 1, 2021</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">CfP closes</div>
@@ -190,7 +191,7 @@
 		<!-- Second pair -->
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">Nov, 2021</div>
+				<div class="col-4 h5 mont-700">Nov 22, 2021</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">First round of acceptance letters</div>
@@ -236,6 +237,7 @@
 	</div>
 	<div class="row">
 		<div class="col-lg-6 px-5 mx-auto">
+            <p class="os-400"><span class="h6 mont-700">Nov 1, 2021</span> CfP is closed!</p>
             <p class="os-400"><span class="h6 mont-700">Aug 26, 2021</span> CfP is open! <a href="https://cfp.devconf.info" target="_blank">Submit your proposal</a> until Oct 24th, 2021.</p>
 			<p class="os-400"><span class="h6 mont-700">Aug 19, 2021</span> Conference dates announced: 28-29 Jan, 2022 in Brno and virtually.</p>
 			<p class="os-400"><span class="h6 mont-700">Jul 21, 2021</span> Join our <a href="https://discord.gg/devconf" target="_blank">Discord server</a> to connect with other attendees, speakers and organizers before the event.</p>
