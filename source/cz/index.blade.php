@@ -164,10 +164,10 @@
 		<!-- Keep in pairs -->
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">Aug 26, 2021</div>
+				<div class="col-4 h5 mont-700">Nov 1, 2021</div>
 				<div class="col-8">
 					<div class="row">
-						<div class="col mont-600">CfP opens</div>
+						<div class="col mont-600">CfP closes</div>
 					</div>
 <!--
 					<div class="row">
@@ -179,18 +179,6 @@
 		</div>
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">Nov 1, 2021</div>
-				<div class="col-8">
-					<div class="row">
-						<div class="col mont-600">CfP closes</div>
-					</div>
-				</div>
-			</div>
-                </div>
-
-		<!-- Second pair -->
-		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
-			<div class="row">
 				<div class="col-4 h5 mont-700">Nov 22, 2021</div>
 				<div class="col-8">
 					<div class="row">
@@ -199,9 +187,11 @@
 				</div>
 			</div>
                 </div>
-		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
+
+		<!-- Second pair -->
+		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">Dec, 2021</div>
+				<div class="col-4 h5 mont-700">Dec 15, 2021</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">Schedule published</div>
@@ -210,10 +200,9 @@
 			</div>
 		</div>
 
-        <!-- Third pair -->
-        <div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
+        <div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
             <div class="row">
-                <div class="col-4 h5 mont-700">Dec, 2021</div>
+                <div class="col-4 h5 mont-700">Dec 15, 2021</div>
                 <div class="col-8">
                     <div class="row">
                         <div class="col mont-600">Registration opens</div>
@@ -221,7 +210,8 @@
                 </div>
             </div>
                 </div>
-        <div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
+        <!-- Third pair -->
+        <div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
             <div class="row">
                 <div class="col-4 h5 mont-700">Jan 28-29, 2022</div>
                 <div class="col-8">
@@ -231,6 +221,16 @@
                 </div>
             </div>
         </div>
+        <div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
+			<div class="row">
+				<div class="col-4 h5 mont-700">Dec 22, 2021</div>
+				<div class="col-8">
+					<div class="row">
+						<div class="col mont-600">Hybrid format reevaluation</div>
+					</div>
+				</div>
+			</div>
+                </div>
     </div>
 	<div class="row mt-4">
 		<div class="h1 mx-5 mont-700">News</div>

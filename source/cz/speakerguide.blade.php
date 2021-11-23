@@ -59,6 +59,7 @@
 		<p>This document is a guide to people who are going to speak at a conference, and are interested in tips and tricks for composing and delivering a successful talk.</p>
 		<p>It is intended to be relatively light-weight, focusing on the most common mistakes and useful tips. However, it’s not written in stone - any “rule” will have exceptions! 
 		Never feel forced to hammer a talk into a set of rules if you don’t think the circumstances warrant.</p>
+        <p>You can find other speaker and conference-related information in <a href="/cz/faq">FAQ</a>.</p>
 		</div>
 	</div>
 	<div class="row local-nav">
@@ -76,6 +77,9 @@
 <section id="organization" class="mx-auto col-lg-11">
     <div class="row">
         <div class="h2 pt-3 pb-4 mx-5 mont-700">Organization of Talk and Slides</div>
+        <div class="os-400 mx-5 pb-3">
+            You can use any presentation slide deck you wish. We also put together a <a href="/assets/files/devconf-cz-template.odp">DevConf.CZ slide deck template</a> for your convenience.
+        </div>
         <div class="os-400 mx-5">
             <table class="table">
                 <thead class="thead-light">
