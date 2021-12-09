@@ -40,7 +40,7 @@
 				<div class="card-body text-center px-4">
 					<a class="underline" href="/cz">
 						<div class="d-block mx-auto pb-3"><img src="/assets/images/cz-flag.svg" alt="CZ flag"></div>
-						DevConf.CZ - Hybrid
+						DevConf.CZ - Virtual
 					</a>
 				</div>
 				<div class="card-body text-center px-4">
