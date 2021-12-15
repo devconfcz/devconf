@@ -39,10 +39,10 @@
 				<li class="nav-item active px-3">
 					<a href="#news" class="nav-link local">News</a>
 				</li>
-<!--				<li class="nav-item active px-3">
+				<li class="nav-item active px-3">
 					<a href="#schedule" class="nav-link local">Schedule</a>
 				</li>
-				<li class="nav-item active px-3">
+<!--				<li class="nav-item active px-3">
 					<a href="#travel" class="nav-link local">How to get here?</a>
 				</li> -->
                 <li class="nav-item active px-3">
@@ -84,10 +84,11 @@
 			<div class="heading-text mont-700 h4">
                 <i class="fa fa-map-marker"></i> All around the world
             </div> 
-<!--            <div class="heading-text pt-1 mt-5">
-                <a href="https://cfp.devconf.info" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SUBMIT YOUR PROPOSAL</a><br>
+            <div class="heading-text pt-1 mt-5">
+                <a href="https://hopin.com/events/devconf-cz-2022" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">REGISTRATION IS OPEN</a><br>
+                <a href="https://devconfcz2022.sched.com/" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SCHEDULE IS LIVE</a><br>
             </div> 
--->
+
 		</div>
 	</div>
 </header>
@@ -237,6 +238,7 @@
 	</div>
 	<div class="row">
 		<div class="col-lg-6 px-5 mx-auto">
+            <p class="os-400"><span class="h6 mont-700">Dec 15, 2021</span> <a href="https://hopin.com/events/devconf-cz-2022" target="_blank">Registration</a> is open and <a target="_blank" href="https://devconfcz2022.sched.com/">Schedule</a> is live.</p>
             <p class="os-400"><span class="h6 mont-700">Dec 2, 2021</span> DevConf.CZ 2022 will be held virtually in light of the current situation in the country.</p>
             <p class="os-400"><span class="h6 mont-700">Nov 1, 2021</span> CfP is closed!</p>
             <p class="os-400"><span class="h6 mont-700">Aug 26, 2021</span> CfP is open! <a href="https://cfp.devconf.info" target="_blank">Submit your proposal</a> until Oct 24th, 2021.</p>
@@ -311,10 +313,10 @@
 	</div>
 -->
 </section>
-<!--<section id="schedule" class="mx-auto col-lg-12 background-gray text-center mt-5 py-5">
+<section id="schedule" class="mx-auto col-lg-12 background-gray text-center mt-5 pt-5">
 	<div class="h1 mont-700 position-relative py-4 mt-3">Schedule</div>
-	<a class="p-3 mont-700 mb-3 d-inline-block purple-href" target="_blank" href="https://devconfcz2021.sched.org">SCHEDULE IS LIVE</a>
-</section>-->
+	<a class="p-3 mont-700 mb-3 d-inline-block purple-href" target="_blank" href="https://devconfcz2022.sched.com/">SCHEDULE IS LIVE</a>
+</section>
 <!--<section id="travel" class="mx-auto py-5 col-lg-11">
 	<div class="row">
 		<div class="mont-700 h1 underline position-relative mx-5 pb-4">How to get there?</div>
@@ -357,12 +359,12 @@
 			</div>
 		</div>
 	</div>
-</section>-->
+</section>
 <section class="col-12 px-0 mt-5" style="height: 450px;">
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5828.8794114720895!2d16.593681273902156!3d49.223568069664026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471294099dc06bbb%3A0xbfcf161b01a48b0d!2sFaculty%20of%20Information%20Technology%2C%20Brno%20University%20of%20Technology!5e0!3m2!1sen!2scz!4v1569001018524!5m2!1sen!2scz" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
-</section>
+</section>-->
 @endsection
 
 @include('_layouts.footercz')
