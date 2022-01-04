@@ -87,6 +87,7 @@
             <div class="heading-text pt-1 mt-5">
                 <a href="https://hopin.com/events/devconf-cz-2022" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">REGISTRATION IS OPEN</a><br>
                 <a href="https://devconfcz2022.sched.com/" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SCHEDULE IS LIVE</a><br>
+                <a href="https://cfp.devconf.info/" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SUBMIT A LIGHTNING TALK</a><br>
             </div> 
 
 		</div>
@@ -238,6 +239,7 @@
 	</div>
 	<div class="row">
 		<div class="col-lg-6 px-5 mx-auto">
+            <p class="os-400"><span class="h6 mont-700">Jan 4, 2022</span> Call for Lightning Talks reopened. <a href="https://cfp.devconf.info" target="_blank">Submit a pre-recorded lightning talk</a> by Jan 14, 2022.</p>
             <p class="os-400"><span class="h6 mont-700">Dec 15, 2021</span> <a href="https://hopin.com/events/devconf-cz-2022" target="_blank">Registration</a> is open and <a target="_blank" href="https://devconfcz2022.sched.com/">Schedule</a> is live.</p>
             <p class="os-400"><span class="h6 mont-700">Dec 2, 2021</span> DevConf.CZ 2022 will be held virtually in light of the current situation in the country.</p>
             <p class="os-400"><span class="h6 mont-700">Nov 1, 2021</span> CfP is closed!</p>
