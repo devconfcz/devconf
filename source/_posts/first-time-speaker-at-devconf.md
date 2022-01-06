@@ -5,7 +5,7 @@ title: "First-time speaker at DevConf? 7 tips to increase confidence and calm yo
 date: 2022-01-05
 author: Radek Vokal
 description: I still remember my first time speaking at a conference. I was extremely nervous, I skipped a few things I wanted to mention and at the end of it, I wasn’t sure if the audience even got what I wanted to share. But then I was approached by my colleagues and even by random folks from the audience asking me questions about the talk. It felt great that I was heard and I got someone else interested.
-cover_image: /assets/images/blog/submit-devconf-cz-22.jpg
+cover_image: /assets/images/blog/first-time-speaker.png
 featured: true
 ---
 
