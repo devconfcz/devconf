@@ -79,7 +79,7 @@
 		<div class="h4 pt-3 pb-4 mx-5 mont-700 w-100">In preparation for the conference</div>
 
 		<div class="os-400 mx-5">
-			<p>To have the best possible experience at DevConf.CZ 2021 we have prepared the following checklist for you to prepare beforehand. Take a 
+			<p>To have the best possible experience at DevConf.CZ 2022 we have prepared the following checklist for you to prepare beforehand. Take a 
             look at the following technical requirements and things you can do to prepare before the conference so you don't need to do them during the conference.</p>
 		</div>
 	</div>
@@ -90,7 +90,7 @@
 		<div class="h4 pt-3 pb-4 mx-5 mont-700 w-100">Register</div>
 
 		<div class="os-400 mx-5">
-			<p>Be sure that you're registered for DevConf.CZ 2021 at Hopin as a speaker. If there is a message with <i>"You're in!"</i> at the beginning of the subject that means you are.
+			<p>Be sure that you're registered for DevConf.CZ 2022 at Hopin as a speaker. If there is a message with <i>"You're in!"</i> at the beginning of the subject that means you are.
 			   Take the opportunity to add the conference duration to your calendar by clicking on <i>"Add to calendar"</i>.</p>
 		</div>
 	</div>
@@ -153,7 +153,7 @@
 		<div class="h4 pt-3 pb-4 mx-5 mont-700 w-100">Select sessions</div>
 
 		<div class="os-400 mx-5">
-			<p>Browse our schedule at <a href="http://devconfcz2021.sched.com" target="_blank">devconfcz2021.sched.com</a>. After log in, you’re able to make a selection of the sessions that interest you and create your own schedule. 
+			<p>Browse our schedule at <a href="http://devconfcz2022.sched.com" target="_blank">devconfcz2022.sched.com</a>. After log in, you’re able to make a selection of the sessions that interest you and create your own schedule. 
 			At the beginning of each session at sched, you can find a round checkbox, clicking on it will add such a session to your personal schedule. Times shown for each session reflect times in your local timezone, 
 			so make sure your computer has the correct timezone configured for your location and you have a proper time zone selected at the sched.com (select box in the right column under search field).</p>
 		</div>
