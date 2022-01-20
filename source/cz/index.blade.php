@@ -87,7 +87,6 @@
             <div class="heading-text pt-1 mt-5">
                 <a href="https://hopin.com/events/devconf-cz-2022" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">REGISTRATION IS OPEN</a><br>
                 <a href="https://devconfcz2022.sched.com/" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SCHEDULE IS LIVE</a><br>
-                <a href="https://cfp.devconf.info/" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SUBMIT A LIGHTNING TALK</a><br>
             </div> 
 
 		</div>
