@@ -9,7 +9,7 @@
 <header class="h-100">
   <div class="container h-100">
     <h1>WorkAdventure FAQ</h1>
-<p>Hello and welcome to DevConf WorkAdventure map!</p>
+<p>Hello and welcome to DevConf.CZ WorkAdventure map!</p>
 
 <p>The platform is made to recreate the social experience of DevConf.CZ in a game-like environment. You can walk around and explore the place. You can meet people in the hallways and have a chat or join them by the tables in the library or the coffee rooms.</p>
 
