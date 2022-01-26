@@ -1,7 +1,7 @@
 @extends('_layouts.noads')
 
 @section('title')
-<title>Opportunities are open!</title>
+<title>WorkAdventure FAQ</title>
 @endsection
 
 @section('body')
