@@ -36,12 +36,12 @@
 				<li class="nav-item active px-3">
 					<a href="#news" class="nav-link local">News</a>
 				</li>
-				<li class="nav-item active px-3">
+				<!-- <li class="nav-item active px-3">
 				<a href="https://devconfus2021.sched.com" class="nav-link local" target="_blank">Schedule</a>
-				</li>
-				<li class="nav-item active px-3">
+				</li> -->
+				<!-- <li class="nav-item active px-3">
 					<a href="#video-tour" class="nav-link local">Video tour</a>
-				</li>
+				</li> -->
 				<li class="nav-item active px-3">
 					<a href="#participation" class="nav-link local">How to participate?</a>
 				</li>
@@ -59,6 +59,7 @@
 			<a href="mailto:info@devconf.us" target="_blank" title="Mail"><img src="/assets/images/mail.svg" alt="mail" class="social-icon"></a>
 			<a href="https://www.facebook.com/DevConf.US" target="_blank" title="Facebook"><img src="/assets/images/facebook.svg" alt="facebook" class="social-icon"></a>
 			<a href="https://twitter.com/devconf_us" target="_blank" title="Twitter"><img src="/assets/images/twitter.svg" alt="twitter" class="social-icon"></a>
+			<a href="https://discord.gg/devconf" target="_blank" title="Discord"><img src="/assets/images/discord.svg" alt="discord" class="social-icon"></a>
 			<a href="https://t.me/devconfus" target="_blank" title="Telegram"><img src="/assets/images/telegram.svg" alt="telegram" class="social-icon"></a>
 			<a href="https://www.youtube.com/channel/UCmYAQDZIQGm_kPvemBc_qwg" target="_blank" title="YouTube"><img src="/assets/images/youtube.svg" alt="youtube" class="social-icon"></a>
 			<a href="https://github.com/devconfcz/devconf" target="_blank" title="Git Hub"><img src="/assets/images/github.svg" alt="github" class="social-icon"></a>
@@ -71,20 +72,20 @@
 			<div class="heading-text mont-400 h5 pb-5">
 				open source community conference
 			</div>
-			<div class="virtual-stamp mont-700">
+			<!-- <div class="virtual-stamp mont-700">
                 virtual event
-            </div>
+            </div> -->
 			<div class="heading-text mont-700 h1 pt-5">
-				September 02-03, 2021
+				August 18-20, 2022
 			</div>
 			<div class="heading-text mont-700 h4">
-                <i class="fa fa-map-marker"></i> Web Browser Near You!
+                Boston, USA
 			</div>
 			<!-- <div class="heading-text mont-700 h4">
 				Web Browser Near You!
 			</div> -->
 			<div class="heading-text pt-5 mt-5">
-				<a href="https://www.youtube.com/watch?v=sWUxqyaE4wQ&list=PLU1vS0speL2ZbTPg-aU2Rw2s6IPsTVoCF" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">VIDEO RECORDINGS!</a>
+				<a href="https://cfp.devconf.info" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SUBMIT YOUR PROPOSAL</a>
 			</div>
 		</div>
 	</div>
@@ -93,21 +94,20 @@
 <section id="about" class="mx-auto col-lg-11">
 	<div class="row mt-4 py-5">
 		<div class="col-lg-4 mx-5 mb-5 text-center">
-			<img src="/assets/images/devconf-d-virtual.png" class="mw-100" alt="Virtual DevConf image asset">
+			<img src="/assets/images/devconf-d-boston.png" class="mw-100" alt="Boston DevConf image asset">
 		</div>
 		<div class="col-lg-6 px-5">
-			<h1 id="going-virtual" class="mont-700 pb-4">DevConf.US 2021 Remains Virtual!</h1>
-			<div class="os-400">
+			<h1 id="going-virtual" class="mont-700 pb-4">DevConf.US 2022 is Back in Person!</h1>
+			<!-- <div class="os-400">
                 <p>While we are disappointed that we won’t be able to see you all in
 				person again, we are glad to be back as a virtual event. There will be many opportunities to share and connect with the open source community. Check out the <a href="https://devconfus2021.sched.com">schedule</a> and mark your calendars!</p>
-			</div>
+			</div> -->
 			<h1 class="mont-700 underline pb-4">About DevConf</h1>
 			<div class="os-400">
-                <p>DevConf.US 2021 is the 4th annual, free, Red Hat sponsored technology conference for community project and professional contributors to Free and Open Source technologies
-		 coming to a web browser near you!</p>
+                <p>DevConf.US 2022 is the 5th annual, free, Red Hat sponsored technology conference for community project and professional contributors to Free and Open Source technologies
+		 at the Boston University in the historic city of Boston, USA.</p>
 
-        <p>There is no admission or ticket charge for DevConf.US events. However, you are required to complete a free registration.
-        Recordings from DevConf.US 2021 can be found <a href="https://www.youtube.com/watch?v=sWUxqyaE4wQ&list=PLU1vS0speL2ZbTPg-aU2Rw2s6IPsTVoCF">here!</a> Talks, presentations and workshops will all be in English.</p>
+        <p>There is no admission or ticket charge for DevConf.US events. However, you are required to complete a free registration. Talks, presentations and workshops will all be in English.</p>
 
                 <p>We encourage students and new graduates as well as professionals to attend DevConf.US. We also have attendee coaching available for people who are new to attending conferences! 
 		 Please choose to either be a new attendee coach or apprentice when you register for the conference.</p>
@@ -127,16 +127,16 @@
 			<?php
 
 				$topics = array(
-						array("name"=>"Application Development with Serverless & Containerization","description"=>"Application Development has gone through a number of changes in recent years with sophisticated tools, remote development environments, AI support, etc. Not to mention new deployment methods like serverless/functions, containers, and cloud-native. We are hoping to gather session submissions addressing experience with these changes. We are also happy to see sessions that focus on how to be more efficient and the new cool stuff available to do your application development with."),
-						array("name"=>"Operating at Scale","description"=>"The operations of modern cloud computing including physical bare metal machines, VMs, containers. Cloud, and clusters. podman, CRI-O, Docker/Moby, Kubernetes, Skopeo. Hybrid cloud and other buzzwords - your cloud and apps-at-scale topics go here."),
-						array("name"=>"Ensuring Software Quality","description"=>"All aspects of Quality including the documentation and development that goes into the QE/QA components, such as automated testing, CI/CD, and traditional testing."),
-						array("name"=>"Security, Privacy & Data Governance","description"=>"With all the work being done with Machine Learning and in the public cloud, privacy and managing data are becoming huge concerns. What techniques are available to keep our data secure and private? What attacks should we be watching out for?"),
-						array("name"=>"Open Source & Process","description"=>"How to Open Source, and what software development is like in the Open Source world."),
-						array("name"=>"Machine Learning & Artificial Intelligence","description"=>"Development tools for data engineering and data science, model development and deployment, interesting models to solve problems. We also want to hear about other AI hot buttons like AI Dev Support, AIOps, etc."),
-						array("name"=>"Systems Engineering & Hardware","description"=>"All the low-level work happening in Linux as well as interesting hardware challenges and solutions. "),
-						array("name"=>"User Experience in Open Source","description"=>"UX in the Open Source world, with a focus on implementing user experience design processes. We know UX is different when everything is done in public, tell us how and what to do about it."),
-						array("name"=>"Evolving Technology","description"=>"Highlighting emerging technology and academic research. In other words, 'All your awesome and crazy ideas -- backed up by science!'"),
-					  );
+					array("name"=>"Cloud & Hyperscale","description"=>"Topics around Kubernetes, quantum computing, high availability, *aaS, anything that powers large data centers or small private clouds, best practices for development, and operations at scale, resource efficiency, etc."),
+					array("name"=>"Future Tech and Open Research", "description"=>"What’s next? Any topics that are currently being discussed or actively researched yet their impact is still potential. Best practices and great examples of open source research collaborations are welcome."),
+					array("name"=>"Edge Computing", "description"=>"Modern embedded systems, microcontrollers, management of embedded systems, infrastructure for embedded systems, resource optimization, peripherals, tools, and edge in automotive are some of the topic ideas appropriate for this track."),
+					array("name"=>"HPC, Big Data and Data Science", "description"=>"High performance systems, data storing and processing, best practices for data lakes/data mesh, and parallelism and vector computing."),
+					array("name"=>"Open Source UX/Design", "description"=>"Open source practices for UX and UIs, Design Thinking, Service Design, UX and Customer Experience. How to get users and customers involved in software design and other best practices."),
+					array("name"=>"Open Source Education", "description"=>"Improving how students learn—and how instructors teach— withOpen Source. Open Source tools that facilitate education, as well as the overall education community that operates in an open source way (MOOC's, free bootcamps, university relations, etc)."),
+					array("name"=>"Modern Software Development", "description"=>"Trending topics from software development, application modernization, new trends, microservices, distributed computing and continuous improvement. Development of secure code, code validation and verification."),
+					array("name"=>"Analysis, Testing and Automation", "description"=>"Embedded intelligence in products for automation, IoB - internet of behaviors, analytics and automated remediation capabilities, risk and change analysis, AI powered orchestration, and machine learning in analysis and test automation (i.e, test failure analysis, test generation, and test selection)."),
+					array("name"=>"Linux distribution", "description"=>"Firmware, Linux kernel, base platform for containers, desktop, Silverblue, and upgrades."),
+				  );
 
 				foreach($topics as $i=>$t){
 					if($i%2 == 0){?>
@@ -170,7 +170,7 @@
 		<!-- Keep in pairs -->
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">Feb 19, 2021</div>
+				<div class="col-4 h5 mont-700">Jan 29, 2022</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">CfP Opens</div>
@@ -180,7 +180,7 @@
 		</div>
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">June 28, 2021</div>
+				<div class="col-4 h5 mont-700">April 15, 2022</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">CfP Closes</div>
@@ -194,7 +194,7 @@
 	<div class="row">
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">August 6, 2021</div>
+				<div class="col-4 h5 mont-700">June 15, 2022</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">Schedule Published & Registration Opens</div>
@@ -204,10 +204,10 @@
 		</div>
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">August 23, 2021</div>
+				<div class="col-4 h5 mont-700">August 18, 2022</div>
 				<div class="col-8">
 					<div class="row">
-						<div class="col mont-600">Video Recordings Due</div>
+						<div class="col mont-600">Conference Day 1</div>
 					</div>
 				</div>
 			</div>
@@ -218,20 +218,20 @@
 	<div class="row">
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">September 2, 2021</div>
+				<div class="col-4 h5 mont-700">August 19 2, 2022</div>
 				<div class="col-8">
 					<div class="row">
-						<div class="col mont-600">Conference Day 1</div>
+						<div class="col mont-600">Conference Day 2</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">September 3, 2021</div>
+				<div class="col-4 h5 mont-700">August 20, 2022</div>
 				<div class="col-8">
 					<div class="row">
-						<div class="col mont-600">Conference Day 2</div>
+						<div class="col mont-600">Conference Day 3</div>
 					</div>
 				</div>
 			</div>
@@ -266,14 +266,13 @@
 </div>
 <div class="row">
 	<div class="col-10 mx-auto">
-		<p class="os-400"><span class="h6 mont-700">May 21, 2021</span> We have published a <a href="/assets/files/devconfUS-cfp-help.pdf" target="_blank">CfP help guide</a> to help you write an awesome proposal!</p>
-		<p class="os-400"><span class="h6 mont-700">May 25, 2021</span> Join our <a href="https://discord.gg/devconf" target="_blank">Discord server</a>. Reach out to us in the <b>#cfp-help</b> channel for any help with proposals.</p>
-		<p class="os-400"><span class="h6 mont-700">August 10, 2021</span> <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZFbBiW20arjFBrgLBkWydgVXspK-1AmaxxIHnWpd2lf-VQA/viewform" target="_blank">Submit</a> a Boston tour video!</p>
+		<p class="os-400"><span class="h6 mont-700">Jan 29, 2022</span> We have published a <a href="/assets/files/devconfUS-cfp-help.pdf" target="_blank">CfP help guide</a> to help you write an awesome proposal!</p>
+		<p class="os-400"><span class="h6 mont-700">Jan 29, 2022</span> Join our <a href="https://discord.gg/devconf" target="_blank">Discord server</a>. Reach out to us in the <b>#cfp-help</b> channel for any help with proposals.</p>
 	</div>
 </div>
 </section>
 
-<section id="video-tour" class="mx-auto py-5 col-lg-11">
+<!-- <section id="video-tour" class="mx-auto py-5 col-lg-11">
 <div class="row">
 		<div class="h1 mx-5 pb-4 underline position-relative mont-700">Boston Video Tour!</div>
 	</div>
@@ -283,7 +282,7 @@
 	<div class="row py-4">
         <a href="/assets/files/video-tour.pdf" target="_blank" class="mont-700 position-relative mx-5 p-4 d-inline-block purple-href">Video Guidelines!</a>
 	</div>
-</section>
+</section> -->
 
 <!--
 <section id="schedule" class="mx-auto col-lg-12 background-gray text-center mt-5 py-5">
@@ -300,14 +299,31 @@
     </div>
 	<div class="row py-4">
         <a href="/us/faq" class="mont-700 position-relative mx-5 p-4 d-inline-block purple-href">WHAT WE KNOW!</a>
-		<!-- <div class="col-xl-3 container card-body my-2 mx-xl-3" style="background: #4a4a7e">
+		<section id="travel" class="mx-auto py-5 col-lg-11">
+	<div class="row">
+		<div class="mont-700 h1 underline position-relative mx-5 pb-4">How to get there?</div>
+	</div>
+	<div class="row py-4">
+		<div class="col-xl-3 container card-body my-2 ml-xl-auto mr-xl-3" style="background: #ada3ff">
+			<div class="row h-100 align-items-center">
+				<div class="col text-center">
+					<img src="/assets/images/travel-around.svg" class="my-4" alt="Getting around icon" style="height: 74px">
+					<h2 class="mont-700 mb-0">Getting around Boston</h2>
+					<div class="card-text os-400 pt-3">Boston has a 24 hour public transit system and the site is accessible by car.</div>
+					<p class="card-text my-5">
+						<a href="/us/aroundboston" class="border p-3 mont-700">MORE INFORMATION</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xl-3 container card-body my-2 mx-xl-3" style="background: #4a4a7e">
 			<div class="row h-100 align-items-center">
 				<div class="col text-center">
 					<img src="/assets/images/way-to.svg" class="my-4" alt="Getting to icon" style="height: 74px">
-					<h2 class="mont-700 mb-0">Getting to Framingham</h2>
-					<div class="card-text os-400 pt-3">Framingham is easily accessible by car, bus, train and plane.</div>
+					<h2 class="mont-700 mb-0">Getting to Boston</h2>
+					<div class="card-text os-400 pt-3">Boston is easily accessible by car, bus, train and plane.</div>
 					<p class="card-text my-5">
-						<a href="/us/toframingham" class="border p-3 mont-700">MORE INFORMATION</a>
+						<a href="/us/toboston" class="border p-3 mont-700">MORE INFORMATION</a>
 					</p>
 				</div>
 			</div>
@@ -317,13 +333,13 @@
 				<div class="col text-center">
 					<img src="/assets/images/hotel.svg" class="my-4" alt="Hotel icon" style="height: 74px">
 					<h2 class="mont-700 mb-0">Hotels</h2>
-					<div class="card-text os-400 pt-3">Need a place to stay in Framingham? We suggest these properties.</div>
+					<div class="card-text os-400 pt-3">Need a place to stay in Boston? We suggest these properties.</div>
 					<p class="card-text my-5">
 						<a href="/us/hotels" class="border p-3 mont-700">MORE INFORMATION</a>
 					</p>
 				</div>
 			</div>
-		</div> -->
+		</div>
 	</div>
 </section>
 <!-- <section class="col-12 px-0" style="height: 450px;">
