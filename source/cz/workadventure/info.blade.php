@@ -27,9 +27,9 @@
 
 <p><strong>Q: How can I access Fedora DevConf.CZ 2022 badge or Red Hat page?<br>A:</strong> Find the Fedora/DevConf space on the map badge on the map and <strong>claim your badge via displayed URL.</strong></p>
 
-<p><strong>Q: How can I manage settings?</strong> <strong>A: In the bottom right corner you have a small camera and microphone</strong>, use that to manage your audio/video while being on the map. <strong>In the top left corner you have a mug and a mail</strong>, the mug can be used to edit your profile, character, name and more! More about the mail icon below.</p>
+<p><strong>Q: How can I manage settings?<br>A: In the bottom right corner you have a small camera and microphone</strong>, use that to manage your audio/video while being on the map. <strong>In the top left corner you have a mug and a mail</strong>, the mug can be used to edit your profile, character, name and more! More about the mail icon below.</p>
 
-<p><strong>Q: How can I chat with others?</strong> <strong>A: In the top left corner you have a mug and a mail</strong>, the mail can be used to chat (instead of call) with someone in your close proximity. Although, it doesn’t work in Jitsi calls. The last interactive feature are emotes, when you click on your character you can post an emote for everyone to see. More about the mug icon above. </p>
+<p><strong>Q: How can I chat with others?<br>A: In the top left corner you have a mug and a mail</strong>, the mail can be used to chat (instead of call) with someone in your close proximity. Although, it doesn’t work in Jitsi calls. The last interactive feature are emotes, when you click on your character you can post an emote for everyone to see. More about the mug icon above. </p>
   </div>
 </header>
 @endsection
