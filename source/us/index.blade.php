@@ -105,9 +105,9 @@
 			<h1 class="mont-700 underline pb-4">About DevConf</h1>
 			<div class="os-400">
                 <p>DevConf.US 2022 is the 5th annual, free, Red Hat sponsored technology conference for community project and professional contributors to Free and Open Source technologies
-		 at the Boston University in the historic city of Boston, USA.</p>
+		 at <strong>Boston University</strong> in the historic city of Boston, USA.</p>
 
-        <p>There is no admission or ticket charge for DevConf.US events. However, you are required to complete a free registration. Talks, presentations and workshops will all be in English.</p>
+        <p>There is no admission or ticket charge for DevConf.US events. However, you are required to complete a free registration. Talks, presentations, and workshops will all be in English.</p>
 
                 <p>We encourage students and new graduates as well as professionals to attend DevConf.US. We also have attendee coaching available for people who are new to attending conferences! 
 		 Please choose to either be a new attendee coach or apprentice when you register for the conference.</p>
@@ -309,7 +309,7 @@
 				<div class="col text-center">
 					<img src="/assets/images/travel-around.svg" class="my-4" alt="Getting around icon" style="height: 74px">
 					<h2 class="mont-700 mb-0">Getting around Boston</h2>
-					<div class="card-text os-400 pt-3">Boston has a 24 hour public transit system and the site is accessible by car.</div>
+					<div class="card-text os-400 pt-3">Boston has a robust public transit system and the site is accessible by car.</div>
 					<p class="card-text my-5">
 						<a href="/us/aroundboston" class="border p-3 mont-700">MORE INFORMATION</a>
 					</p>
