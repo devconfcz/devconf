@@ -299,7 +299,9 @@
     </div>
 	<div class="row py-4">
         <a href="/us/faq" class="mont-700 position-relative mx-5 p-4 d-inline-block purple-href">WHAT WE KNOW!</a>
-		<section id="travel" class="mx-auto py-5 col-lg-11">
+    </div>
+</section>
+<section id="travel" class="mx-auto py-5 col-lg-11">
 	<div class="row">
 		<div class="mont-700 h1 underline position-relative mx-5 pb-4">How to get there?</div>
 	</div>
