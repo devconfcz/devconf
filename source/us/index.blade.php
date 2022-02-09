@@ -16,7 +16,7 @@
 @endsection
 
 @section('title')
-<title>DevConf.US 2021</title>
+<title>DevConf.US 2022</title>
 @endsection
 
 
@@ -37,7 +37,7 @@
 					<a href="#news" class="nav-link local">News</a>
 				</li>
 				<!-- <li class="nav-item active px-3">
-				<a href="https://devconfus2021.sched.com" class="nav-link local" target="_blank">Schedule</a>
+				<a href="https://devconfus2022.sched.com" class="nav-link local" target="_blank">Schedule</a>
 				</li> -->
 				<!-- <li class="nav-item active px-3">
 					<a href="#video-tour" class="nav-link local">Video tour</a>
@@ -100,7 +100,7 @@
 			<h1 id="going-virtual" class="mont-700 pb-4">DevConf.US 2022 is Back in Person!</h1>
 			<!-- <div class="os-400">
                 <p>While we are disappointed that we won’t be able to see you all in
-				person again, we are glad to be back as a virtual event. There will be many opportunities to share and connect with the open source community. Check out the <a href="https://devconfus2021.sched.com">schedule</a> and mark your calendars!</p>
+				person again, we are glad to be back as a virtual event. There will be many opportunities to share and connect with the open source community. Check out the <a href="https://devconfus2022.sched.com">schedule</a> and mark your calendars!</p>
 			</div> -->
 			<h1 class="mont-700 underline pb-4">About DevConf</h1>
 			<div class="os-400">
