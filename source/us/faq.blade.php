@@ -1,7 +1,7 @@
 @extends('_layouts.page')
 
 @section('social')
-<meta property="og:title" content="DevConf.US | Virtual">
+<meta property="og:title" content="DevConf.US | Boston, USA">
 <meta property="og:site_name" content="DevConf.US">
 <meta property="og:description" content="DevConf are free and open, annual, open-source community conferences for community contibutors, sponsored by Red Hat.">
 <meta property="og:type" content="website">
@@ -40,6 +40,9 @@
 				</li>
 				<li class="nav-item active px-3">
 					<a href="/us/hotels" class="nav-link">Hotels</a>
+				</li>
+				<li class="nav-item active px-3">
+					<a href="/us/healthandsafety" class="nav-link local">Health & Safety</a>
 				</li>
 				<li class="nav-item active underline px-3">
 					<a href="/us/faq" class="nav-link">FAQ</a>
