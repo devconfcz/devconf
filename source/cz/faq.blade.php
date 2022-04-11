@@ -58,15 +58,21 @@
 	$questions = array(
 		array("group" => "General Questions", "id" => "general", 
 			"questions" => array( 
+                array("q"=>"What is DevConf.cz Mini?", "a"=>"DevConf.cz Mini is a bi-annual, more focused, local, in-person version of DevConf.cz. It offers an opportunity to return to conference themes in a smaller setting and establishes a platform for the Czech Republic and EMEA based community to sync, share and hack on upstream projects together."),
+                array("q"=>"What will happen to the main event? Is it going to take place in January 2023?", "a"=>"We plan to organize the DevConf.CZ main event every year. The dates will be announced later this year."),
+                array("q"=>"Is there a Call for Proposals for DevConf.cz Mini?", "a"=>"No. We're working with the pool of speakers who were not able to present their talk at DevConf.cz main event in January."),
+                array("q"=>"When will you publish the schedule for DevConf.cz Mini?", "a"=>"We're working hard on creating a list of engaging talks. The schedule will be published in May."),
+                array("q"=>"When will you open registration for DevConf.cz Mini?", "a"=>"We plan to open registration in May."),
+                array("q"=>"Will you be streaming DevConf.cz Mini content live?", "a"=>"No, however, we will record the content and publish it on our YouTube channel afterwards."),
 /*				array("q" => "Are the talks recorded or live-streamed?", "a" => "We give speakers choice to speak live or send us a pre-recorded session. Consider what would work best for your session goals.<ul><li>Pre-recorded session and live Q&A - during the session speaker interacts with audience in chat</li><li>Pre-recorded first half, second half live with the audience interaction</li><li>Live session - speaker can recruit their colleagues to help them out with the audience interaction</li></ul>"),
                 array("q" => "What does a hybrid format mean? What is my experience going to be in-person? What about virtually?", "a" => "DevConf.CZ 2022 is going to be held on Jan 28-29, 2022 as a hybrid event with a shared in-person and virtual component during Central European Time. This way we can ensure that everyone who wishes to participate is able to do so. Obviously, this decision will continue to be evaluated as travel conditions change.</p><p>The virtual component of the conference will be hosted on our event platform: <a href=”https://hopin.com/” target=”_blank”>https://hopin.com/</a></p><p>The in-person component of the conference will be held at FIT VUT in Brno, Czech Republic: <a href=”https://www.fit.vut.cz/” target=”_blank”>https://www.fit.vut.cz/</a>."),
-                array("q" => "Will you switch to in-person only or virtual only?", "a" => "Since event and travel conditions keep changing locally, we reserve the right to cancel the in-person component of the event due to Covid-related issues. We plan to make the final reevaluation of the hybrid format on December 22. We advise against non-refundable travel purchases before this date."),
-                array("q" => "What are the in-person attendance guidelines?", "a" => "We have to comply with the appropriate government regulations in this area. You can find the latest Covid regulations here: <a href='https://covid.gov.cz/en/' target='_blank'>https://covid.gov.cz/en/</a>."),
+                array("q" => "Will you switch to in-person only or virtual only?", "a" => "Since event and travel conditions keep changing locally, we reserve the right to cancel the in-person component of the event due to Covid-related issues. We plan to make the final reevaluation of the hybrid format on December 22. We advise against non-refundable travel purchases before this date."),*/
+                array("q" => "What are the in-person attendance guidelines?", "a" => "We have to comply with the appropriate government regulations in this area. You can find the latest Covid regulations here: <a href='https://covid.gov.cz/en/' target='_blank'>https://covid.gov.cz/en/</a>."), 
                 array("q" => "Do I need proof of vaccination or a negative test in order to attend in person?", "a" => "You should be prepared to meet all appropriate government regulations for the duration of your visit to Brno."),
                 array("q" => "Will you provide masks or tests?", "a" => "No. You should be prepared to meet all appropriate government regulations for the duration of your visit to Brno."),
-                array("q" => "What if I don’t want to wear a mask or provide proof I am COVID free?", "a" => "We have to comply with the appropriate government regulations in this area and do not get to decide arbitrarily. Therefore we are unable to accommodate your request. Plan to attend virtually."),
-                array("q" => "Where can I find the latest information regarding travel conditions to the Czech Republic?", "a" => "You can find the latest Covid regulations here: <a href='https://covid.gov.cz/en/' target='_blank'>https://covid.gov.cz/en/</a>.")*/
-                array("q" => "This conference was announced as a hybrid event. Why did you switch to virtual?", "a" => "We decided to cancel the in-person component of the conference in light of the current situation in the Czech Republic. Taking into account the level of lockdowns and the new covid-19 variant, we believe it is the safest option to organize the conference.")
+//                array("q" => "What if I don’t want to wear a mask or provide proof I am COVID free?", "a" => "We have to comply with the appropriate government regulations in this area and do not get to decide arbitrarily. Therefore we are unable to accommodate your request. Plan to attend virtually."),
+                array("q" => "Where can I find the latest information regarding travel conditions to the Czech Republic?", "a" => "You can find the latest Covid regulations here: <a href='https://covid.gov.cz/en/' target='_blank'>https://covid.gov.cz/en/</a>.")
+/*                array("q" => "This conference was announced as a hybrid event. Why did you switch to virtual?", "a" => "We decided to cancel the in-person component of the conference in light of the current situation in the Czech Republic. Taking into account the level of lockdowns and the new covid-19 variant, we believe it is the safest option to organize the conference.")
 			)),
 			
 		array("group" => "Schedule / CfP Questions", "id" => "schedule", 
@@ -113,7 +119,7 @@
             "questions" => array(
                 array("q" => "How is DevConf.CZ encouraging diversity and inclusion now that the conference is virtual?", "a" => "In past years, we've offered diversity scholarships and coaching for new speakers. We'll be offering programs for our virtual event as well. We will pair coaches with new speakers to help with presentation content as well as video production. This option will be available on the acceptance notification. More details on this and other efforts will be added to our site in the near future.")
         )) */
-	);
+	)));
 
 ?>
 <section class="mx-auto mt-5 pt-5 pb-3 col-lg-11">

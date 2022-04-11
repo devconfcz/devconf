@@ -75,32 +75,48 @@
 			<div class="heading-text mont-400 h5 pb-2 pb-lg-5">
 				open source community conference
 			</div>
-            <div class="virtual-stamp mont-700">
-                virtual event
+            <div class="mini-stamp d-none d-lg-block">
+                <span class="mont-700">MINI</span><br>LOCAL<br>IN-PERSON<br>CONFERENCE
+            </div>
+            <div style="padding: 0 0 0 3rem" class="my-1 d-lg-none">
+                <div class="mini-chip">
+                    <span class="mont-700">MINI</span> LOCAL IN-PERSON CONFERENCE
+                </div>
+            </div>
+
+            <div style="padding: 0 0 0 3rem" class="my-1">
+                <div class="mini-chip">Linux Distribution</div>
+                <div class="mini-chip">Open Source Design</div>
+            </div>
+            <div style="padding: 0 0 0 3rem" class="my-1">
+                <div class="mini-chip">Modern Software Development</div>
             </div>
 			<div class="heading-text mont-700 h1 pt-1 pt-lg-5">
-				January 28-29, 2022
+				June 2, 2022
 			</div>
 			<div class="heading-text mont-700 h4">
-                <i class="fa fa-map-marker"></i> All around the world
+                <i class="fa fa-map-marker"></i> Brno, Czech Republic
             </div> 
-            <div class="heading-text pt-1 mt-5">
+<!--            <div class="heading-text pt-1 mt-5">
                 <a href="https://www.youtube.com/playlist?list=PLU1vS0speL2bf9Zfa0pHQLPBhEKbbbsua" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">WATCH THE RECORDINGS</a><br>
             </div> 
-
+-->
 		</div>
 	</div>
 </header>
 <section id="about" class="mx-auto col-lg-11">
 	<div class="row mt-4 py-5">
 		<div class="col-lg-4 mx-5 mb-5 text-center">
-			<img src="/assets/images/devconf-d-virtual.png" class="mw-100" alt="Virtual DevConf image asset">
+			<img src="/assets/images/devconf-d-brno.png" class="mw-100" alt="DevConf image asset">
 		</div>
 		<div class="col-lg-6 px-5">
 			<h1 class="mont-700 underline pb-4">About DevConf</h1>
 			<div class="os-400">
-                <p>DevConf.CZ 2022 is the 14th annual, free, Red Hat sponsored community conference for developers, admins, DevOps engineers, testers, documentation writers and other contributors to open source technologies.
+                <p><strong>DevConf.CZ</strong> is annual, free, Red Hat sponsored community conference for developers, admins, DevOps engineers, testers, documentation writers and other contributors to open source technologies.
                    At DevConf.CZ, FLOSS communities sync, share, and hack on upstream projects together.</p>
+
+                <p><strong>DevConf.cz Mini</strong> is a bi-annual, more focused, local, in-person version of DevConf.cz. It offers an opportunity to return to conference themes in a smaller setting and establishes a platform
+                   for the Czech Republic and EMEA based community to sync, share and hack on upstream projects together.</p>
 
 				<p>There is no admission or ticket charge for DevConf.CZ events. However, you are required to complete a free registration. Watch this site for updates about registration.</p>
 
@@ -156,7 +172,7 @@
 	</div>
 </section>
 
-<section id="coffee" class="mx-auto col-lg-11">
+<!--<section id="coffee" class="mx-auto col-lg-11">
 	<div class="row mt-4 py-5">
 
         <div class="col-lg-6 px-5">
@@ -180,9 +196,9 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 
     </div>
 
-</section>
+</section>-->
 
-<section id="news" class="mx-auto pt-5 col-lg-11">
+<section id="news" class="mx-auto py-5 col-lg-11">
 	<div class="row">
 		<div class="h1 pb-4 mx-5 position-relative mont-700">Important dates</div>
 	</div>
@@ -190,10 +206,10 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 		<!-- Keep in pairs -->
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">Nov 1, 2021</div>
+				<div class="col-4 h5 mont-700">Jan 28-29, 2022</div>
 				<div class="col-8">
 					<div class="row">
-						<div class="col mont-600">CfP closes</div>
+						<div class="col mont-600">DevConf.CZ</div>
 					</div>
 <!--
 					<div class="row">
@@ -205,10 +221,10 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 		</div>
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">Nov 22, 2021</div>
+				<div class="col-4 h5 mont-700">May, 2022</div>
 				<div class="col-8">
 					<div class="row">
-						<div class="col mont-600">First round of acceptance letters</div>
+						<div class="col mont-600">DevConf.cz Mini Schedule published</div>
 					</div>
 				</div>
 			</div>
@@ -217,10 +233,10 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 		<!-- Second pair -->
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">Dec 15, 2021</div>
+				<div class="col-4 h5 mont-700">May, 2022</div>
 				<div class="col-8">
 					<div class="row">
-						<div class="col mont-600">Schedule published</div>
+						<div class="col mont-600">DevConf.cz Mini Registration opens</div>
 					</div>
 				</div>
 			</div>
@@ -228,34 +244,13 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 
         <div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
             <div class="row">
-                <div class="col-4 h5 mont-700">Dec 15, 2021</div>
+                <div class="col-4 h5 mont-700">Jun 2, 2022</div>
                 <div class="col-8">
                     <div class="row">
-                        <div class="col mont-600">Registration opens</div>
+                        <div class="col mont-600">DevConf.cz Mini</div>
                     </div>
                 </div>
             </div>
-                </div>
-        <!-- Third pair -->
-        <div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
-            <div class="row">
-                <div class="col-4 h5 mont-700">Jan 28-29, 2022</div>
-                <div class="col-8">
-                    <div class="row">
-                        <div class="col mont-600">Conference dates</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
-			<div class="row">
-				<div class="col-4 h5 mont-700">Dec 2, 2021</div>
-				<div class="col-8">
-					<div class="row">
-						<div class="col mont-600">Switch to virtual only</div>
-					</div>
-				</div>
-			</div>
                 </div>
     </div>
 	<div class="row mt-4">
@@ -263,12 +258,10 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 	</div>
 	<div class="row">
 		<div class="col-lg-6 px-5 mx-auto">
+            <p class="os-400"><span class="h6 mont-700">Apr 11, 2022</span> New local, in-person version of DevConf.CZ announced: DevConf.cz Mini</p>
+            <p class="os-400"><span class="h6 mont-700">Feb 7, 2022</span> DevConf.CZ 2022 recordings are available on demand on our <a href="https://www.youtube.com/playlist?list=PLU1vS0speL2bf9Zfa0pHQLPBhEKbbbsua" target="_blank">YouTube channel</a></p>
             <p class="os-400"><span class="h6 mont-700">Jan 4, 2022</span> Call for Lightning Talks reopened. <a href="https://cfp.devconf.info" target="_blank">Submit a pre-recorded lightning talk</a> by Jan 14, 2022.</p>
             <p class="os-400"><span class="h6 mont-700">Dec 15, 2021</span> <a href="https://hopin.com/events/devconf-cz-2022" target="_blank">Registration</a> is open and <a target="_blank" href="https://devconfcz2022.sched.com/">Schedule</a> is live.</p>
-            <p class="os-400"><span class="h6 mont-700">Dec 2, 2021</span> DevConf.CZ 2022 will be held virtually in light of the current situation in the country.</p>
-            <p class="os-400"><span class="h6 mont-700">Nov 1, 2021</span> CfP is closed!</p>
-            <p class="os-400"><span class="h6 mont-700">Aug 26, 2021</span> CfP is open! <a href="https://cfp.devconf.info" target="_blank">Submit your proposal</a> until Oct 24th, 2021.</p>
-			<p class="os-400"><span class="h6 mont-700">Aug 19, 2021</span> Conference dates announced: 28-29 Jan, 2022 in Brno and virtually.</p>
 			<p class="os-400"><span class="h6 mont-700">Jul 21, 2021</span> Join our <a href="https://discord.gg/devconf" target="_blank">Discord server</a> to connect with other attendees, speakers and organizers before the event.</p>
 		</div>
 		<div class="col-lg-4 px-5 mx-auto">
@@ -337,13 +330,12 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 			</ul>
 		</div>
 	</div>
--->
 </section>
 <section id="schedule" class="mx-auto col-lg-12 background-gray text-center mt-5 pt-5">
 	<div class="h1 mont-700 position-relative py-4 mt-3">Schedule</div>
 	<a class="p-3 mont-700 mb-3 d-inline-block purple-href" target="_blank" href="https://devconfcz2022.sched.com/">SCHEDULE IS LIVE</a>
 </section>
-<!--<section id="travel" class="mx-auto py-5 col-lg-11">
+<section id="travel" class="mx-auto py-5 col-lg-11">
 	<div class="row">
 		<div class="mont-700 h1 underline position-relative mx-5 pb-4">How to get there?</div>
 	</div>
@@ -389,8 +381,8 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 <section class="col-12 px-0 mt-5" style="height: 450px;">
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5828.8794114720895!2d16.593681273902156!3d49.223568069664026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471294099dc06bbb%3A0xbfcf161b01a48b0d!2sFaculty%20of%20Information%20Technology%2C%20Brno%20University%20of%20Technology!5e0!3m2!1sen!2scz!4v1569001018524!5m2!1sen!2scz" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-
-</section>-->
+-->
+</section>
 @endsection
 
 @include('_layouts.footercz')
