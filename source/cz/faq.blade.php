@@ -58,7 +58,7 @@
 	$questions = array(
 		array("group" => "General Questions", "id" => "general", 
 			"questions" => array( 
-                array("q"=>"What is DevConf.cz Mini?", "a"=>"DevConf.cz Mini is a bi-annual, more focused, local, in-person version of DevConf.cz. It offers an opportunity to return to conference themes in a smaller setting and establishes a platform for the Czech Republic and EMEA based community to sync, share and hack on upstream projects together."),
+                array("q"=>"What is DevConf.cz Mini?", "a"=>"DevConf.cz Mini is a bi-annual, highly focused, local, in-person version of DevConf.cz. It offers an opportunity to return to our conference themes in a smaller setting and establishes a platform for the Czech Republic and EMEA based community to sync, share and hack on upstream projects together."),
                 array("q"=>"What will happen to the main event? Is it going to take place in January 2023?", "a"=>"We plan to organize the DevConf.CZ main event every year. The dates will be announced later this year."),
                 array("q"=>"Is there a Call for Proposals for DevConf.cz Mini?", "a"=>"No. We're working with the pool of speakers who were not able to present their talk at DevConf.cz main event in January."),
                 array("q"=>"When will you publish the schedule for DevConf.cz Mini?", "a"=>"We're working hard on creating a list of engaging talks. The schedule will be published in May."),
