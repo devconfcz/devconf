@@ -202,7 +202,7 @@ h1.underline:after, section .h1.underline:after {
   background: #f5f4fc;
 }
 
-.accordion > div.card-header{
+.accordion > .card > div.card-header{
     cursor: pointer;
 }
 
