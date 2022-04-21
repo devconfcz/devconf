@@ -202,6 +202,10 @@ h1.underline:after, section .h1.underline:after {
   background: #f5f4fc;
 }
 
+.accordion > div.card-header{
+    cursor: pointer;
+}
+
 .card-header.collapsed {
   background: #ebebff;
   transition: 0.2s ease-out all 0.1s;
