@@ -39,7 +39,7 @@
 
 			<div class="row">
 				<div class="mx-5  mt-4 os-400">
-					<h3 class="mont-700 mt-5">Indemnity Cluase</h3>
+					<h3 class="mont-700 mt-3">Indemnity Cluase</h3>
                     <p>While onsite, you agree to comply with all laws and rules with regard to public health including social distancing protocols and face mask requirements. You acknowledge the health risks 
                     associated with the novel coronavirus (COVID-19) outbreak, and the risk of exposure or infection by COVID-19.</p>
 
@@ -49,7 +49,7 @@
                     <p>You assume any and all risk, whatsoever, related to any DevConf or DevConf-related event, and release and discharge DevConf, their sponsors, and their agents from any liability to the fullest 
                     extent allowed by the law.</p>
 
-					<h3 class="mont-700 mt-3">Compensation</h3>
+					<h3 class="mont-700 mt-5">Compensation</h3>
 					<p>I understand that DevConf organizers are under no obligation to compensate me for my participation in DevConf events in any way!</p>
 
 					<h3 class="mont-700 mt-5">Speaker Profiles</h3>
