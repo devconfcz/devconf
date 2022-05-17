@@ -95,7 +95,9 @@
 				June 2, 2022
 			</div>
 			<div class="heading-text mont-700 h4">
-                <i class="fa fa-map-marker"></i> Brno, Czech Republic
+                <a href="#map" class="nav-link local" style="color: white; padding: 0px"><i class="fa fa-map-marker"></i> Brno, Czech Republic<br>
+                Faculty of Informatics | Masaryk University</a>
+
             </div> 
             <div class="heading-text pt-1 mt-5">
                 <a href="https://www.eventbrite.com/e/208626797367" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">REGISTRATION OPEN</a><br>
@@ -380,7 +382,7 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 		</div>
 	</div>
 </section> -->
-<section class="col-12 px-0 mt-5" style="height: 450px;">
+<section class="col-12 px-0 mt-5" style="height: 450px;" id="map">
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2256.0277944515196!2d16.598010589157468!3d49.209899867172716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712946af848abab%3A0xcbdad60137e0b956!2sFaculty%20of%20Informatics%20Masaryk%20University!5e0!3m2!1sen!2scz!4v1652788388079!5m2!1sen!2scz" loading="lazy" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 </section>
