@@ -277,6 +277,7 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
             </form>
 		</div>
 	</div>
+</section>
 <!--	<div class="row">
 		<div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-2 mx-auto">
 			This is the list of booths you can expect at DevConf.CZ this year. Get ready for some stickers and so much more!
@@ -378,11 +379,10 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 <section class="col-12 px-0 mt-5" style="height: 450px;">
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5828.8794114720895!2d16.593681273902156!3d49.223568069664026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471294099dc06bbb%3A0xbfcf161b01a48b0d!2sFaculty%20of%20Information%20Technology%2C%20Brno%20University%20of%20Technology!5e0!3m2!1sen!2scz!4v1569001018524!5m2!1sen!2scz" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
--->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2256.0277944515196!2d16.598010589157468!3d49.209899867172716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712946af848abab%3A0xcbdad60137e0b956!2sFaculty%20of%20Informatics%20Masaryk%20University!5e0!3m2!1sen!2scz!4v1652788388079!5m2!1sen!2scz" loading="lazy" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 </section>
 @endsection
 
