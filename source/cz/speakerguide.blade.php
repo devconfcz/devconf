@@ -77,7 +77,7 @@
     <div class="row">
         <div class="h2 pt-3 pb-4 mx-5 mont-700">Organization of Talk and Slides</div>
         <div class="os-400 mx-5 pb-3">
-            You can use any presentation slide deck you wish. We also put together a DevConf.CZ slide deck template in <a href="/assets/files/devconf-cz-template-16-9.odp">16:9</a> and <a href="/assets/files/devconf-cz-template-4-3.odp">(4:3)</a> format for your convenience.
+            You can use any presentation slide deck you wish. We also put together a DevConf.CZ slide deck template in <a href="/assets/files/devconf-cz-template-16-9.odp">16:9</a> and <a href="/assets/files/devconf-cz-template-4-3.odp">4:3</a> format for your convenience.
         </div>
         <div class="os-400 mx-5">
             <table class="table">
