@@ -18,7 +18,19 @@
 
     <div class="h1 mt-3 mr-5 mont-700 underline position-relative">{{ $page->title }}</div>
 
-    <p class="mont-600 mt-3 mb-4">{{ $page->author }}  •  {{ date('F j, Y', $page->date) }}</p>
+    <p class="mont-600 mt-3 mb-4">{{ $page->author }}  •  {{ date('F j, Y', $page->date) }}
+    
+    @if ($page->categories) | Categories:
+        @foreach ($page->categories as $i => $category)
+	<a href="{{ '/cz/blog/categories/' . $category }}"
+           title="View posts in {{ $category }}" class="pr-2">{{ $category }}</a>
+        @endforeach
+    @endif
+
+    | <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script><script type="IN/Share" data-url="https://www.linkedin.com"></script>
+
+    </p>
 
     <div class="os-400">
         @yield('content')

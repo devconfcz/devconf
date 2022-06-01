@@ -3,12 +3,312 @@
     <title>DevConf.CZ Blog</title>
     <link href="/blog" />
     <link type="application/atom+xml" rel="self" href="/cz/blog/feed.atom" />
-    <updated>2022-05-17T13:08:04+00:00</updated>
+    <updated>2022-06-01T07:49:59+00:00</updated>
     <id>/cz/blog/feed.atom</id>
     <author>
         <name>Josef Ridky &lt;jridky@redhat.com&gt;</name>
     </author>
                 <entry>
+    <id>/cz/blog/viktor-malik</id>
+    <link type="text/html" rel="alternate" href="/cz/blog/viktor-malik" />
+    <title>Viktor Malik: Contributing to kernel as a day-to-day job</title>
+    <published>2022-05-27T00:00:00+00:00</published>
+    <updated>2022-05-27T00:00:00+00:00</updated>
+    <author>
+        <name>DevConf.CZ Team</name>
+    </author>
+    <summary type="html">What is it like being an open source contributor as part of your day-to-day job? Viktor Malik is a software engineer at Red Hat and a contributor to the BPFtrace project along with many others, such as DiffKemp and 2LS. We asked him about his......</summary>
+    <content type="html"><![CDATA[
+        <p>What is it like being an open source contributor as part of your day-to-day job? Viktor Malik is a software engineer at Red Hat and a contributor to the BPFtrace project along with many others, such as DiffKemp and 2LS. We asked him about his experience.</p>
+
+<blockquote>
+  <h3><strong>About Viktor Malik</strong></h3>
+  
+  <p><img src="/assets/images/blog/interviews/vmalik.jpg" alt="Profile Picture" /> Viktor Malik is a software engineer at Red Hat, contributing to the <a href="https://bpftrace.org/">BPFtrace</a> project, and many other projects, including <a href="https://github.com/viktormalik/diffkemp">DiffKemp</a> and <a href="https://github.com/diffblue/2ls">2LS</a>. Originally from Slovakia, he currently lives in the Czech Republic, pursuing a PhD  at the Brno University of Technology alongside his software engineering projects. When he is not at work, you can find him doing sports, or spending time with his family. He’s an active volleyball player, currently playing in the Brno amateur league. His biggest inspiration is anything and everything - people, news, projects, articles, books. Victor says that his most recent source of inspiration came from the <a href="https://changelog.com/podcast">Changelog podcast</a>. You can find Viktor on  Twitter as <a href="https://twitter.com/ViktorMalikSK">@ViktorMalikSK</a>.</p>
+  
+  <p>Watch the recording of Viktor's DevConf.CZ 2022 talk: <a href="https://youtu.be/gSxntAO2Iys">Linux tracing made simpler with bpftrace</a>.</p>
+</blockquote>
+
+<h3>Q: How did you start contributing to BPFtrace?</h3>
+
+<p>My start was pretty simple. It was two years ago when I switched teams within Red Hat and moved into the Linux kernel team where I started working on a tool called BPFtrace. We quickly realised that when we want to improve this tool and the user experience that goes with it, the best way to do so is to contribute to the upstream project. So I started contributing to BPFtrace, started figuring out some simple bug fixes, and then got into more complicated stuff.</p>
+
+<p>Even though my contributions to this project have been purely work-related,  I find it hard to separate my free time from the time I spend at work. It’s because sometimes, when an issue  requires my attention, I have no problem working on it outside of my official working hours. But, of course, I try to not think about work on my days off ;)</p>
+
+<h3>Q: What makes BPFtrace stand out to you?</h3>
+
+<p>BPF technology is one of the coolest things about the Linux kernel these days, and that is why I am very excited to work with it. I'm also a PhD student, and in my research I focus on analysing software software, so this is somewhat related to what I'm doing, and I'm interested in this area.</p>
+
+<p>And for those of you who are not familiar with BPFtrace, BPF technology is part of the Linux kernel, which is the core of GNU/Linux operating systems. It is a fairly recent addition to the kernel, having been introduced into the kernel codebase only about eight years ago. This technology allows you to execute user code inside a running Linux kernel, which is something that wasn't possible before. Previously, if you wanted to execute your code, the simplest way you could do so was by compiling it as a kernel module and then loading the module into the kernel. Now, you can execute your own code without having to modify the kernel, load additional kernel modules, or, basically, do anything extra.</p>
+
+<p>One of the two biggest use cases for this is tracing the processes inside a running system (the other use-case is networking). Sometimes you want to know what's going on with your system while it’s running, for example, because your system is slow, or you are experiencing some network problems, etc. Tracing allows you to identify the source of these problems and  gather potentially useful information about your system (Such as, what processes are running, what files they're opening, what functions they are calling, and so on).</p>
+
+<p>BPFtrace is a tool that allows you to do this using the BPF technology in the Linux kernel in a very quick way. It provides its own high-level programming language, which allows you to write so-called probes. Basically, you write a short simple program in which you specify what you want to trace in the system. BPFtrace then compiles this code for you into the BPF subsystem of the kernel, executes it, and gives you the result.</p>
+
+<p>BPFtrace is a very convenient way of live-tracing a running kernel without the need to modify it. You can do it on your customer’s machine or on your production machines. And you can do this using a very simple syntax that is quite easy to learn. In addition, BPFtrace is very efficient, meaning that using it does not slow down your system and you can trace literally anything that's going on in it, which is very useful for system administrators and many other people around.</p>
+
+<h3>Q: What is the hardest and the easiest part of being an open-source project contributor?</h3>
+
+<p>The greatest thing about being a BPFtrace contributor, or an open-source projects contributor in general, is the community. We currently have 140 contributors on GitHub since the beginning of the project, and from those contributors, 10-20 are developers who actively participate in developing this technology. We also have probably thousands of users, some of whom are really active  and sometimes even open issues and contribute bug fixes.</p>
+
+<p>The community makes your life easier. I’m not saying that it’s easy, but it's easier than it would be without the community because it just simplifies many things. People find bugs in your software, so you don't need  a large QA team to discover them. People even fix these problems for you. If you don't know how to do something, you can ask. And someone will definitely be able to help you. If you need a feature that is specific to your needs, you just open an issue on GitHub. And someone will almost certainly  implement it in a matter of weeks, which is great.</p>
+
+<p>On the other hand, the difficult part of contributing to an open-source project is implementing new stuff within a large project. Some people don't enjoy that you have to comply with the practices that have been established within the project that you're contributing to. And if someone wants you to do something differently than the way you’d like to, that may be difficult for you to deal with. This can get frustrating especially when you open a pull request with some great cool changes and then some maintainers (such as me) will start bothering you with code formatting issues, ask you to  re-implement your contribution because they typically  do things differently, refuse to merge your PR because you are missing tests, and so on. I understand that this is something that some people may find frustrating, but consistency is one of the most important parts, and contributors just need to comply with the rules of the project that they are working on.</p>
+
+<h3>Q: What is the best way to reward open source contributions?</h3>
+
+<p>It's hard to say because I'm working on this as a part of my day-to-day job, which I'm being paid for by Red Hat. So it's easy for me to say that it's enough that my name is written somewhere, and that's it. But I think that for open source contributions in general the most appreciated thing is being publicly recognized for my work and having my name connected to the project.</p>
+
+<p>And if you ask me whether open-source project maintainers should be paid, I would say “yes”. But not in the sense that a project should pay each and every one of its contributors, because no one has the money for that, obviously. What I mean to say is that more companies should get involved in contributing to open-source projects, as part of their day-to-day development workflow. Also, more companies should make their code open, and let their developers dwork upstream, in the open-source world.</p>
+
+<p>And the developers should be paid for their work. Because it not only contributes to the overall community, but at the end of the day, it is also a great benefit for the company. I know that because I work for Red Hat, but more companies out there should start doing what we do.</p>
+
+<p>Luckily, companies are starting to embrace open source. I can give a nice example with BPF. The BPF technology in the kernel is intensively developed by guys from Facebook, whose large part of the business is commercial closed source. But they are really doing a lot of good open source stuff, too.</p>
+
+<p>When I look at the ratio of paid to non-paid project contributors on BPFtrace, the majority of people I know among those contributors work for  companies that have an interest in pushing BPFtrace forward. I already mentioned Facebook, and I know Netflix, too, has a lot of interest in working on these tools. So at least from these two companies, there’s a number of people contributing to BPFtrace. But, for example, as far as I know, the original founder of BPFtrace wasn’t part of any company when he started this project.</p>
+
+<h3>Q: How did the pandemic affect the project and your contribution?</h3>
+
+<p>I joined this team and project when the pandemic started, so I’ve never met anyone working on it in person. So  it's difficult for me to compare my experience with the pre-pandemic life. I usually work from home and communicate with people over email or issues on GitHub. I think that this isn’t much different from the way things were before because most of the people who work on BPFtrace are from other countries,anyway. We're even in different time zones, which makes it even more difficult because you sometimes have to wait for people to review your pull requests and answer your questions.</p>
+
+<p>In general, I can't complain, I think that I got along with the situation pretty nicely. Working from home and doing everything virtually is basically fine for me. Of course, I miss the office, but as far as  the actual work is concerned, I wouldn't say that the pandemic impacted me a lot.</p>
+
+<h3>Q: How did DevConf.cz impact your open source contribution?</h3>
+
+<p>What I enjoy the most about DevConf are the random conversations with people you meet in the hallways while having a coffee, or people who approach you after you give a talk and want to speak about it. Over the years that I attended DevConf, I’ve had some nice conversations that gave me ideas about my project, which I can follow.</p>
+
+<p>It is not connected with BPFtrace, but my best experience was actually when I presented my first talk in 2019 about <a href="https://www.youtube.com/watch?v=PUZSaLf9exg">Analysing differences in kernel parameters</a>, during my second time attending DevConf. The nice part about it was that I didn't expect to have a room full of people, but it was really packed to the last place. And people seemed to enjoy the talk, and showed real interest in my work because the feedback that I received was very positive. I’ve had some long discussions afterwards, especially with the kernel people, and I would say that this experience prompted my eventual move to the kernel team at Red Hat, where I am right now, working on BPFtrace.</p>
+
+<p>I was also a speaker at this year's virtual DevConf.It was different, but I enjoyed the overall experience, even though I missed the in-person interactions after my talk. I am very much looking forward to the next on-site DevConf where we’ll all have the chance to meet in Brno again.</p>
+    ]]></content>
+</entry>
+            <entry>
+    <id>/cz/blog/karolina-surma</id>
+    <link type="text/html" rel="alternate" href="/cz/blog/karolina-surma" />
+    <title>Karolina Surma: Forming PyLadies with non-code contributions</title>
+    <published>2022-05-26T00:00:00+00:00</published>
+    <updated>2022-05-26T00:00:00+00:00</updated>
+    <author>
+        <name>DevConf.CZ Team</name>
+    </author>
+    <summary type="html">From Polish philology to Czech Python community. Karolina Surma is a Software Engineer at Red Hat and a contributor to the PyLadies Community. Read on for more about the struggles and perks of volunteer-driven projects.
+
+
+  
+  
+   Karolina Surma is from......</summary>
+    <content type="html"><![CDATA[
+        <p>From Polish philology to Czech Python community. Karolina Surma is a Software Engineer at Red Hat and a contributor to the PyLadies Community. Read on for more about the struggles and perks of volunteer-driven projects.</p>
+
+<blockquote>
+  <h3><strong>About Karolina Surma</strong></h3>
+  
+  <p><img src="/assets/images/blog/interviews/ksurma.jpg" alt="Profile Picture" /> Karolina Surma is from Głogów, Poland and works as a Software Engineer in Brno. Karolina studied Polish and Czech Philology at the University of Wroclaw and then came to Brno and studied at MUNI. With her diploma, she could teach Polish, but ended up choosing a different vocation altogether. In her daily job Karolina maintains a lot of Python RPM packages in Fedora &amp; brings some of the ideas, issues or fixes upstream. The open-source project that she’s been contributing to most recently is <em>Let’s talk PyLadies</em>. She deeply admires the Czech Python community, which she finds inclusive, active, and helpful. Karolina is a passionate reader, so when she is not working, you can find her in an armchair with yet another book. A book that recently inspired her was <em>Invisible Women: Data Bias in a World Designed for Men</em> by Caroline Criado Perez. You can find Karolina also on <a href="https://www.linkedin.com/in/karolina-surma-950452b7/">LinkedIn</a>.</p>
+  
+  <p>Watch the recording of Karolina's DevConf.CZ 2022 talk: <a href="https://youtu.be/_EuNGz8-Y3M">PyLadies Community in Brno - Mutual Help to Grow</a>.</p>
+</blockquote>
+
+<h3>Q: How did you start contributing to PyLadies?</h3>
+
+<p>After a few years of working in a different field, I attended a community Python course for beginners with PyLadies. At the end, the organiser asked who wants to volunteer to organise new editions. My friend and I decided to join PyLadies and this has opened a new world of ideas to me. I had a very vague idea about open source before (I only knew Wikipedia), so learning that for example the Python programming language is an open-source project, was a complete surprise to me. Moreover, the Python course has open-source materials, and our organisational framework is open as well.</p>
+
+<h3>Q: What makes PyLadies stand out to you?</h3>
+
+<p>As I mentioned earlier, you can contribute to open source not only by writing the code. PyLadies is a community of women programming in Python, but in the Czech Republic we focus a great deal on programming courses for beginners. Typically, I take care of organising new courses, coaching them, or performing maintenance tasks like keeping the website up-to-date. I also helped create teaching materials for one of the courses. I want to help other women have the same chance to enter the world of programming as I was given.</p>
+
+<h3>Q: What is the hardest and easiest part of being an open-source project contributor?</h3>
+
+<p>I think that staying around for a long time is the hardest. Volunteer projects suffer when people drop out. They sometimes burn out, sometimes just change priorities. With us, the contributors can switch between different roles which we hope can mitigate the burnout factor from repeating the same routine.</p>
+
+<p>And as for the easiest: Python has a really welcoming community. I don't even know how it happened that from organising just one course I've got to meet Python community members from all over the country. :)</p>
+
+<h3>Q: What is the best way to reward open source contributions?</h3>
+
+<p>I think that a simple word of appreciation is generally underestimated as a contribution reward. Hearing a "thank you" from others can do wonders with your motivation :) We are also always very grateful for other kinds of organisational support, e.g. when we can use someone's meeting room. The way our community is organised, I can't really imagine introducing (even symbolic) financial rewards. However, I believe it's generally a good idea to support the maintainers of the open-source projects, especially if you rely on them in your enterprise systems.</p>
+
+<h3>Q: How did the pandemic affect the project and your contribution?</h3>
+
+<p>Our courses moved online which no one liked: neither the coaches, nor the attendees. I felt rather burnt out myself. So we paused our activities and relaunched them just now. We had our first open workshop after the lock-down in April. I’ll be happy to see more new faces in the organisational team. Covid helped us realise that - as PyLadies - we want to meet live and form a community, not a programming school.</p>
+
+<h3>Q: How did DevConf.cz impact your open source contribution?</h3>
+
+<p>We believed that during our community time, we gathered just enough insights to form an interesting and possibly a not-entirely-obvious talk. Judging by the feedback, I think we did a good job there. I also aimed to encourage more folks to join an open community of their choice, 'cause this proves to be far more adventurous than they initially think. I hope we’ll see some of those folks at our meetups, willing to share their knowledge with the Python newbies :)</p>
+    ]]></content>
+</entry>
+            <entry>
+    <id>/cz/blog/jakub-scholz</id>
+    <link type="text/html" rel="alternate" href="/cz/blog/jakub-scholz" />
+    <title>Jakub Scholz: Being part of Strimzi from the beginning</title>
+    <published>2022-05-25T00:00:00+00:00</published>
+    <updated>2022-05-25T00:00:00+00:00</updated>
+    <author>
+        <name>DevConf.CZ Team</name>
+    </author>
+    <summary type="html">Jakub Scholz, a Senior Principal Software Engineer has had a long career in IT. His journey started as a tester and developer and led him to project Strimzi and contributing to open source. Read on for more about the journey of a senior contributor and......</summary>
+    <content type="html"><![CDATA[
+        <p>Jakub Scholz, a Senior Principal Software Engineer has had a long career in IT. His journey started as a tester and developer and led him to project Strimzi and contributing to open source. Read on for more about the journey of a senior contributor and his views on open-source community governance.</p>
+
+<blockquote>
+  <h3><strong>About Jakub Scholz</strong></h3>
+  
+  <p><img src="/assets/images/blog/interviews/jscholz.jpg" alt="Profile Picture" /> Jakub Scholz is a Senior Principal Software Engineer from Olomouc, Czechia. Jakub is currently contributing to many projects, notably including Strimzi and Apache Kafka. He studied at the Czech Technical University in Prague and stayed in the “city of a hundred spires” after his studies as well. His biggest motivation is the idea of real users using his software. A book that recently inspired Jakub was Progress: Ten Reasons to Look Forward to the Future,  by Johan Norberg. You can also find Jakub on <a href="https://twitter.com/scholzj">Twitter</a> or <a href="https://cz.linkedin.com/in/scholzj">LinkedIn</a>.</p>
+  
+  <p>Watch the recording of Jakub's DevConf.CZ 2022 talk: <a href="https://youtu.be/bTxdZOWLyvI">Build your own social media analytics with Apache</a>.</p>
+</blockquote>
+
+<h3>Q: How did you start contributing to Strimzi?</h3>
+
+<p>I studied a combination of software engineering, economics, and management at the Czech Technical University in Prague. And then I worked in the financial industry for the German stock exchange for 10 years - first as a tester and developer and later as a manager and architect. We used different messaging middleware products from Red Hat, which were based on open-source projects. That was where I started my first open-source contributions. Later, I started working for Red Hat directly. And with some of my colleagues, we thought that it might be interesting to have a project that would make it easier to run Apache Kafka on Kubernetes - which is how we started Strimzi. So, I was contributing to the project from the beginning and went through all the different phases, including things such as the first release or coming up with the project name. Later, the project moved to the Cloud Native Computing Foundation (CNCF).</p>
+
+<h3>Q: What makes Strimzi stand out to you?</h3>
+
+<p>Both Apache Kafka and Kubernetes are very popular open source projects. But if you wanted to use them together, it was quite hard. With Strimzi, we make it easy to deploy and run Kafka on Kubernetes. One of the things which makes Strimzi different from most of the other projects in the Kubernetes ecosystem is that it is written in Java and not in Golang. So you can contribute if Java is your programming language.</p>
+
+<h3>Q: What is the hardest and easiest part of being an open-source project contributor?</h3>
+
+<p>I think that this is different for every contributor. For me, it's probably our users. They are a big part of my motivation to work on the project. But dealing with them can be both the best and the worst part of it. Some users are great. They give you a lot of feedback and a sense of usefulness and achievement. But there are also users who mistake the open source community for some paid support hotline, thinking that they have the right to get an answer immediately and that the community has to do all their work instead of them. Such users can suck all the positive energy from you in just a few minutes.</p>
+
+<h3>Q: What is the best way to reward open source contributions?</h3>
+
+<p>I’m lucky enough to be able to contribute to open source as part of my full time job. So I can afford to not be demanding. It is great when people say “thanks” on our Slack channel or on a resolved GitHub issue. Another great way to say “thanks” to the whole project and all its contributors is for example to add your company to the public list of Strimzi users, a logo to our website, or write some blog post or make a video about how you use Strimzi. Knowing all the different companies and projects that use your software is rewarding as well.</p>
+
+<h3>Q: How did the pandemic affect the project and your contribution?</h3>
+
+<p>I think most open source communities are distributed by default with their maintainers, users, and contributors all over the world. And since I was working remotely from my home anyway, I don’t think it really impacted my work directly. But what I definitely miss(ed) are in-person conferences. While the virtual conference platforms improved a lot during the pandemic, I still think that direct contact with other people is irreplaceable - to learn new things but also to give or get feedback or to build connections. I also often connected attending conferences with some sightseeing. Even as an attendee, I find the virtual conferences much worse. Watching from home means a lot more distractions and I often pick just one or two talks to watch live and maybe I watch a few recordings after the conference. So this is what I look forward to again - in-person conferences.</p>
+
+<h3>Q: How did DevConf.cz impact your open source contribution?</h3>
+
+<p>I think that DevConf.cz had actually quite a big impact on my professional life. When I attended it for the first time - I think it was in 2016 - it was my first public IT conference where I was not just an attendee but also a speaker. At that time, I was an open source user and occasional contributor, but my main job was still writing proprietary software. It was interesting to see from the different talks and from speaking with other attendees how the work on the open-source projects differs from work on the proprietary software, and it definitely helped me get where I’m today. I’ve attended DevConf many times since and hopefully will ‌attend next year again, be it as a speaker or as a regular attendee.</p>
+    ]]></content>
+</entry>
+            <entry>
+    <id>/cz/blog/aoife-moloney</id>
+    <link type="text/html" rel="alternate" href="/cz/blog/aoife-moloney" />
+    <title>Aoife Moloney: From office coordinator to Fedora Product Owner</title>
+    <published>2022-05-24T00:00:00+00:00</published>
+    <updated>2022-05-24T00:00:00+00:00</updated>
+    <author>
+        <name>DevConf.CZ Team</name>
+    </author>
+    <summary type="html">Aoife Moloney worked as an Office Coordinator at Red Hat, where she got to know open source and then ended up as a Product Owner in Fedora and CentOS Stream. Read about Aoife Moloney’s journey to open source.
+
+
+  
+  
+   Aoife Moloney is from Waterford......</summary>
+    <content type="html"><![CDATA[
+        <p>Aoife Moloney worked as an Office Coordinator at Red Hat, where she got to know open source and then ended up as a Product Owner in Fedora and CentOS Stream. Read about Aoife Moloney’s journey to open source.</p>
+
+<blockquote>
+  <h3><strong>About Aoife Moloney</strong></h3>
+  
+  <p><img src="/assets/images/blog/interviews/amoloney.jpg" alt="Profile Picture" /> Aoife Moloney is from Waterford in Ireland and works as a Product Owner  in the Community Platform Engineering Team for Fedora and CentOS Stream. Having studied product management in the past, Aoife has always done most of her learning ‘on the job’.</p>
+  
+  <p>In her free time, you can find her surrounded by ponies, because her son and family are heavily involved in showjumping. She has also won a national showjumping competition in Ireland. :) Her biggest inspiration is her grandmother, who was a firm believer in the importance of learning and putting your very best foot forward. She gets inspired by reading fantasy adventure books, and getting lost in the classic tale of undiscovered potential and championing the underdog, like the Wheel of Time or the Culture Map. You can find her on Twitter @aoifemoloney4.</p>
+  
+  <p>Watch the recording from Aoife's DevConf.CZ 2022 talk: <a href="https://youtu.be/7DudZsKu4MM">Code, Whiteboard, Action!</a></p>
+</blockquote>
+
+<h3>Q: How did you start contributing to Fedora and CentOS Stream?</h3>
+
+<p>I became involved in both projects when I was lucky enough to be offered the job as a Feature Driver with the Community Platform Engineering team in Red Hat. I had previously been an Office Coordinator in the Red Hat Waterford office where I ended up  learning a lot about open source through the people I met and worked with there. I also took a few part-time courses on project management. I felt that I had enough transferable skills, and I was able to relate my professional achievements to the skill set that the Product Owner role required, so I took the job!</p>
+
+<p>And I have to say it was the best decision of my career as I was able to become a certified Product Owner and studied part-time to earn a diploma in both Project Management and Training Evaluation and Delivery. Where I am now is built on learning ‘on the job’ and through ‘osmosis’, meaning I surrounded myself with people who I could continuously learn from. My background is in customer service, I have worked in front-of-house roles for about 17 years now, and the time spent in my current role is included in that figure! The way I contribute to the projects that my team is involved in is by helping them coordinate work, and being someone the community can interact with and talk to about the work our team does.</p>
+
+<h3>Q: What makes Fedora and CentOS Stream stand out to you?</h3>
+
+<p>Both projects are amazing. CentOS Stream is still building its success story but it is a wonderful distribution to use and as the upstream of the next RHEL minor release means that contributors can make a real impact on the development of RHEL. Fedora is a very well-established distribution, and as one of its users , I love how friendly and fun the community is.</p>
+
+<p>In my role I have the privilege of being involved in both communities, as the CPE team provides infrastructure and development for both projects. As the team Product Owner, I get to take part in making decisions about the work that our team undertakes for each. I oversee the coordination of work that is requested of our team that would be large enough to need multiple people over multiple weeks from launch to completion and I love the dynamic, fast paced nature of it. Our team could be running two, sometimes three projects that would each deliver a feature or an upgrade of a service for Fedora at the same time, while also developing and building CentOS Stream, and my role requires me to be both accountable for the work progressions and ensuring good communication throughout. Being the person who  reviews and actions work requests so that the projects  that need that work done can continue to thrive and succeed is the main way I contribute to open source projects.</p>
+
+<h3>Q: What is the hardest, and the easiest part of being an open-source project contributor?</h3>
+
+<p>I'm going to start with the hard part and then finish on the easy part, which is a rule I try to live by, too :)</p>
+
+<p>The hardest part for me is finding the courage to make a decision when it comes to actioning project work for my team, as I always want it to be the ‘right’ decision. Thankfully I have some highly knowledgeable people on my team that I discuss technical issues with when I receive a new work request. But it still gives me an ‘eek’ moment when a work request is actioned, the team is working on it, and either the requirements change or some newer technology comes out that puts the work under question. In those moments I tell myself that I made the best decision with the information that I had at the time, and what comes after can be dealt with when the time comes. I imagine one could sometimes feel the same about submitting a PR . You make a change to the code based on the information you have at the time, and in the future it might turn out to be wrong or troublesome, but at that moment, it was the right thing to do. Self-belief can be a tough one to deal with in open source at times!</p>
+
+<p>The easiest part, though, is the direct opposite of that. If you find yourself part of a community like  ones around Fedora and CentOS Stream, who have nothing but good intentions for both the project and the people involved, it is so easy to feel empowered to ask questions, discuss things related to the project, make a decision, or submit a PR. Finding the courage to get involved can be hard, but once you do, feeling like you have a place in that community and being empowered to contribute in whatever way you can, should, and does, become easy.</p>
+
+<h3>Q: What is the best way to reward open source contributions?</h3>
+
+<p>Recognition. We should always recognize people for the work they do, be it big or small. You never know what’s going on in their lives, so if they can still spare some time to contribute to an open source project, then they should be recognized and thanked by the community, be it in the form of a short email or a karma boost on IRC. The people who work hard to keep the lights on in both Fedora and CentOS Stream, those who help get new releases out the door, those who take the time to report bugs, and those who help fix them, they should and I'm sure do have the communities’ thanks and gratitude. Still, it is nice to be recognized publicly for the work you put in.</p>
+
+<p>The Fedora release parties do a great job of connecting project contributors  who worked on that release, and on the project, in general, and providing an opportunity to meet and thank one another for the work that they have done.</p>
+
+<h3>Q: How did the pandemic affect the project and your contribution?</h3>
+
+<p>The pandemic was an adjustment for me, for sure, because I really had to work on my work-life balance. It began when I was less than six months into my new role, where the majority of  my new team worked remotely, whereas I was more office-based. I got to meet most of them for the first time at my first DevConf.cz in 2019, and I was really looking forward to seeing them all again later that year at our face-to-face. When I had to switch to working from home, I felt a little silly rolling my eyes and commenting on how tough it is when they all have been working remotely for a long time, anyway.</p>
+
+<p>However, looking back, it was not the work, it was my environment. I had no clear boundaries on my workday. The work followed me from the  kitchen table to the sitting room, the bedroom, and the garden, and I missed the moment I should finish working. When I was working at the office, I grew so accustomed to finishing my work before I left for the day. So as I worked from home, I found myself gradually becoming tired, a little less enthusiastic about my day-to-day work, and starting to fall into bad habits.</p>
+
+<p>I have always worked at my best when surrounded by friends, and while my team’s been the most friendly group of people, at that time we were still forming connections with each other, and only meeting them  ad hoc to discuss about work stuff made getting to know my team really tricky.because of this I wanted to debunk the assumptions that ‘shop talk’ is the only acceptable kind of talk among coworkers, and that work had to be treated as a formal activity, so we injected some life back into our planning sessions by using movie posters as talking points, and having really fun, tongue-in-cheek quarterly celebrations to reflect on the work that our team has accomplished. I think that this helped the team morale a lot, and it certainly helped mine. I had fun through my work, and that made me want to continue working hard so that I had something to look forward to at the next celebration call that I could be proud of being a part of.</p>
+
+<p>Looking back, the biggest positive impact of all of that for me is that I discovered a way to connect with people virtually, and learned  how to make it a meaningful and fun activity.</p>
+
+<h3>Q: How did DevConf.cz impact your open source contribution?</h3>
+
+<p>As I mentioned earlier, I attended my first DevConf.cz in January 2019 when I was still relatively new to my team, and I remember being overwhelmed at the calibre of talks that were on offer. I liken it to being a bit like a rabbit caught in the headlights! Standing in the hallways, feeling overwhelmed from seeing and meeting people that I had only briefly interacted with or heard about online before.</p>
+
+<p>At that moment, I set myself a goal of returning to a DevConf.cz event one day as a speaker. . And this year, I finally got to do it.. As someone who was not too technical when I joined the Community Platform Engineering Team and attending a very developer-focused conference, to be able to speak at one, and share my ideas and stories with people who were interested in the topic and enjoyed what I had to say was a real moment for me. I think a lot of people suffer from ‘imposter syndrome’, and being able to say “I spoke at DevConf.cz” gives me the reassurance that yeah, I am actually good enough :)</p>
+
+<p>My speaking experience was wonderful. The people who run the conference do such an amazing job of making sure that I had enough time to prepare, that I understood how to access the Hopin platform, and that I knew how to contact them if I ran into any issues , either beforehand or on the day of my talk. I felt much at ease when delivering my talk because I knew that there were people there to support me  every step of the way.</p>
+    ]]></content>
+</entry>
+            <entry>
+    <id>/cz/blog/anita-ihuman</id>
+    <link type="text/html" rel="alternate" href="/cz/blog/anita-ihuman" />
+    <title>Anita Ihuman: Journey into open source</title>
+    <published>2022-05-23T00:00:00+00:00</published>
+    <updated>2022-05-23T00:00:00+00:00</updated>
+    <author>
+        <name>DevConf.CZ Team</name>
+    </author>
+    <summary type="html">Anita Ihuman got into open source quite recently, in 2020, and she’s already contributed to a variety of projects, like Layer5, CHAOSS, APISIX, and many more. Read on to learn more about her journey and how global lockdown made it a little bit easier......</summary>
+    <content type="html"><![CDATA[
+        <p>Anita Ihuman got into open source quite recently, in 2020, and she’s already contributed to a variety of projects, like Layer5, CHAOSS, APISIX, and many more. Read on to learn more about her journey and how global lockdown made it a little bit easier to get into open source.</p>
+
+<blockquote>
+  <h3><strong>About Anita Ihuman</strong></h3>
+  
+  <p><img src="/assets/images/blog/interviews/aihuman.jpg" alt="Profile Picture" /> Anita Ihuman is a Developer Advocate for Layer5, but she is also an active contributor in other open-source projects like CHAOSS and Apache APISIX. She studied Microbiology and in her free time, she likes to write articles, watch movies, or just snuggle up with a cat. She has consistently been inspired  by seeing  open-source contributors who have a huge positive impact on the ecosystem and the people in it. That is why she is passionate about contributing to open-source communities. Her talk at DevConf.cz 2022 was about Quality Documentation. She has recently become a big fan of the <a href="https://podcasts.apple.com/us/podcast/github-stars-stories-are-you-the-next-github-star/id1454033321?i=1000532958847">GitHub Stars Stories podcast</a>. You can find her <a href="https://twitter.com/Anita_ihuman">on Twitter (@Anita_ihuman)</a> or on <a href="https://www.linkedin.com/in/anita-ihuman/">her LinkedIn profile</a>.</p>
+  
+  <p>Watch the recording of Anita's DevConf.cz 2022 talk: <a href="https://youtu.be/WKfUfUvY7Tk">Quality Documentation: The Key to Open Source Grow</a>.</p>
+</blockquote>
+
+<h3>Q: How did you start contributing to open-source projects?</h3>
+
+<p>I got into tech quite recently, my journey started in 2020. Back in school, I often heard my more technically savvy classmates talk about the amazing events they attended, what cool stickers and other swag they got. At some point, the majority of them managed to speak at a conference about what they do. That is something I always wanted. When I was growing up, I always wanted to be a mass communicator. I ended up studying microbiology and the path to conferences is not so direct from there, so I thought: maybe if I focus on tech I can find a way to speak in public.</p>
+
+<p>The pandemic was a great opportunity for me to get in. I had free days, and there was no need to travel to school, so I used all this time to learn a new skill. Two or three months in, I heard about <a href="https://oscafrica.org/">Open Source Africa</a>, the largest open-source community event in Africa. I watched the videos from the conference, and I was really intrigued by the topics; how passionate the people were, how the community was really helpful and encouraging - that piqued my interest in open source. I was just a front end developer at the time. Then, I learned about GNOME. Obviously, I wasn't able to contribute to GNOME right away. I thought I had nothing to contribute to. There is a Diversity and Inclusion committee that helps with onboarding into <a href="https://foundation.gnome.org/">GNOME Foundation</a>, but I wasn't even able to onboard myself. Then, I heard about another contributor hackathon by <a href="https://shecodeafrica.org/">She Codes Africa</a>, where I started my first open source contribution to Layer5. It wasn't the greatest experience, it took me a week to solve one issue, and it was frustrating. I told myself to keep on going because the community itself was welcoming, so I kept showing up. It took me some time, but in the end, I loved it.</p>
+
+<h3>Q: What makes your project stand out to you?</h3>
+
+<p>First, I was helping onboard newcomers to GNOME. I didn't do so much there, but when GNOME Africa came up, I joined as a technical writer - still helping with onboarding. I wasn't consistent with that because at the same time I started contributing to Layer5, which seemed more interesting.</p>
+
+<p>In Layer5, I got to the position of the community manager, to help welcome people in the community and to answer questions on Slack, but I was also contributing code as a front end developer. I became a mesh mate, which is more like a mentor helping a person to get into the community. My friend Ruth Ikegah and I started the newcomers call in Layer5. I felt like I am an official open source contributor. I realized there are so many new contributors who had to deal with difficulties in getting into the communities, just like I once did. With the newcomers call, we were able to retain many new contributors that helped the community and the entire project.</p>
+
+<p>Then I heard about the CHAOSS Foundation, which focuses on building metrics and analytics to help define community health., and also has its own Diversity and Inclusion initiative. I joined it because I experienced so many difficulties at the beginning and I thought I can help to set things right. While contributing to Layer5, I was contributing to CHAOSS, and also making one-time contributions to other projects. I became a mentor in several mentoring programs. With CHAOSS, I started on the role of the reviewer to help check the metrics of open-source events, open-source projects, or even open-source contributors. You can apply and receive a badge for your contribution. I've been contributing to CHAOSS for a year, and so far everything is going well.</p>
+
+<p>I also started contributing to Kivano recently, towards the end of 2021, because I got offered a job there.</p>
+
+<h3>Q: What is the hardest, and the easiest part of being an open-source project contributor?</h3>
+
+<p>Of course, the journey wasn't always smooth. I spent most of my time at home and I like I had an opportunity to interact with people all over the world. My goal was to get into a dev role, not just contribute to the front end. That was challenging. I started putting myself out there and that was the difficult part. I don't like a lot of interactions, I enjoy being on my own. Another case is learning about cloud - learning Kubernetes online is very challenging.</p>
+
+<h3>Q: What is the best way to reward open source contributions?</h3>
+
+<p>Many people fear the idea of open source because they believe they would devote time without any form of incentives. That discourages a lot of people. Personally, I don't see the time I spent onboarding and learning about upstream projects as a waste because I had nothing else to do. I loved the idea of being able to be a part of a large group of people from whom I can learn. Tiny forms of appreciation definitely helped, though. It did not have to be financial support. I appreciated things like issuing badges or giving titles to people who are contributing. It made me feel relevant, rewarded, and recognized as a member of the community. It made me want to show up. Swag works well, too. It is a way of marketing for the community and I can say to people that if they want to get something similar, they should join in and contribute as well.</p>
+
+<h3>Q: How did the pandemic affect the project and your contribution?</h3>
+
+<p>I think it was easier to start the contribution during the pandemic for me. I wouldn't be able to attend any of the events, being a complete beginner. I would probably need another 2-3 years of experience and to get a job to have money for travelling. However, since everything was virtual, I could attend from the comfort of my home and with no financial support. It was a great deal for me. I wonder how it would be in person. The shift was probably more difficult for people who were used to attending in-person meetings and ways of working.</p>
+
+<h3>Q: How did DevConf.cz impact your open source contribution?</h3>
+
+<p>I learned about DevConf.cz from Twitter. This was one of the conferences where I thought I will speak one day in the future, because it was such a huge deal for me. I submitted a topic about how to start your contribution and I was surprised to see my talk accepted in 2022. It was an interesting experience because most of the topics were things I wanted to learn about. The speaker support was amazing, I was given the proper information ahead of time and I really appreciated that.</p>
+    ]]></content>
+</entry>
+            <entry>
     <id>/cz/blog/first-time-speaker-at-devconf</id>
     <link type="text/html" rel="alternate" href="/cz/blog/first-time-speaker-at-devconf" />
     <title>First-time speaker at DevConf? 7 tips to increase confidence and calm your nerves before speaking! </title>

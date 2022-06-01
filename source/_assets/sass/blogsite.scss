@@ -31,12 +31,11 @@ ol li, p, ul li {
 
 blockquote{
     border-left: 4px solid #8e83e4;
+    background: #ebebff;
     font-weight: 400;
-    font-style: italic;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    padding-left: 1.5rem;
-    font-size: 1.125rem;
+    padding: 0.1rem 1.5rem;
 }
 
 pre{
@@ -59,7 +58,19 @@ code{
 code.hljs{
     background-color: transparent;
     padding: 0;
+}
+
+img[alt="Profile Picture"]{
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 200px;
 }    
+
+.twitter-share-button, .IN-widget{
+    vertical-align: middle !important;
+}
 
 // Code syntax highlighting,
 // powered by https://highlightjs.org

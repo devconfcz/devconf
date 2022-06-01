@@ -13,19 +13,30 @@ return [
         'posts' => [
             'author' => 'DevConf.CZ Team', // Default author, if not provided in a post
             'sort' => '-date',
+            'published' => true,
             'path' => '/cz/blog/{filename}',
+            'filter' => function ($item) {
+                return $item->published;
+            }
         ],
         'categories' => [
             'path' => '/cz/blog/categories/{filename}',
-            'posts' => function ($page, $allPosts) {
-                return $allPosts->filter(function ($post) use ($page) {
-                    return $post->categories ? in_array($page->getFilename(), $post->categories, true) : false;
-                });
-            },
+            'sort' => '-date',
+//            'posts' => function ($page, $allPosts, $category) {
+//                return $allPosts->filter(function ($post) use ($category) {
+//                    return collect($post->categories)->contains($category);
+//                    return $post->categories ? in_array($category, $post->categories, true) : false;
+//                });
+//            },
         ],
     ],
 
     // helpers
+    'getPostsForCategory' => function ($page, $articles, $category) {
+        return $articles->filter(function ($article) use ($category) {
+            return collect(($article->categories ? $article->categories : [] ))->contains($category);
+        });
+    },
     'getDate' => function ($page) {
         return Datetime::createFromFormat('U', $page->date);
     },
