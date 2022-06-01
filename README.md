@@ -74,6 +74,14 @@ $ vendor/bin/jigsaw serve
 
 The content will be available under http://localhost:8000
 
+## Blog Posts
+
+For blog posts, we require to use utility `vlna` in order to add non-breaking spaceis into final text automatically. Use following command (replace {file} by actual file name).
+
+```
+$ vlna -x 266E6273703B -r -v KkSsVvZzOoUuAaIi {file}.md
+```
+
 ## Authors
 
 * **Josef Ridky** - [jridky](https://github.com/jridky)
