@@ -5,6 +5,7 @@ title: "Jakub Scholz: Being part of Strimzi from the beginning"
 description: "About Strimzi from its tester and developer"
 date: 2022-05-25
 cover_image: /assets/images/blog/interviews-devconf-cz.png
+published: false
 featured: true
 categories: [interviews]
 ---

@@ -4,6 +4,7 @@ section: content
 title: "Anita Ihuman: Journey into open source"
 date: 2022-05-23
 cover_image: /assets/images/blog/interviews-devconf-cz.png
+published: false
 featured: true
 categories: [interviews]
 ---

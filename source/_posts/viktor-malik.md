@@ -4,6 +4,7 @@ section: content
 title: "Viktor Malik: Contributing to kernel as a day-to-day job"
 date: 2022-05-27
 cover_image: /assets/images/blog/interviews-devconf-cz.png
+published: false
 featured: true
 categories: [interviews]
 ---

@@ -4,6 +4,7 @@ section: content
 title: "Karolina Surma: Forming PyLadies with non-code contributions"
 date: 2022-05-26
 cover_image: /assets/images/blog/interviews-devconf-cz.png
+published: false
 featured: true
 categories: [interviews]
 ---
