@@ -100,8 +100,7 @@
 
             </div> 
             <div class="heading-text pt-1 mt-5">
-                <a href="https://www.eventbrite.com/e/208626797367" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">REGISTRATION OPEN</a><br>
-                <a href="https://devconfczmini2022.sched.com/" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SCHEDULE</a><br>
+                <a href="https://forms.gle/oFuz3F7sbVFYvzTo8" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">WE WANT YOUR FEEDBACK</a>
             </div> 
 
 		</div>
