@@ -63,9 +63,10 @@
 <hr>
 <section class="mx-auto col-lg-11">
 	<div class="row">
-		<div class="os-400 mx-5 text-center" style="min-height: 40vh">
-			<strong class="d-block mb-3 os-600">We will post our 'Getting around Boston' in March 2022.</strong>
-		</div>
+			<div class="d-block mb-3 mont-700 h2">DevConf.US is held in the heart of Boston University.</div>
+			<div class="d-block mb-5">
+                <h5>Almost all events will be held in the George Sherman Union building. <a href="https://www.bu.edu/parentsprogram/resources/visiting-boston-hotels/">This site maintained by Boston University</a> has many relevant resources regarding hotels, maps, public transportation, and information specific to the surrounding area. This will be a valuable reference when planning your trip to DevConf.US. </h5>
+			</div>
 	</div>
 </section>
 
