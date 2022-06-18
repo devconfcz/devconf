@@ -194,7 +194,7 @@
 	<div class="row">
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">June 15, 2022</div>
+				<div class="col-4 h5 mont-700">Week of June 21, 2022</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">Schedule Published & Registration Opens</div>
@@ -202,6 +202,20 @@
 				</div>
 			</div>
 		</div>
+		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
+			<div class="row">
+				<div class="col-4 h5 mont-700">August 17, 2022</div>
+				<div class="col-8">
+					<div class="row">
+						<div class="col mont-600">Workshops and Centos Dojo Day</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<!-- Third pair -->
+	<div class="row">
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
 				<div class="col-4 h5 mont-700">August 18, 2022</div>
@@ -212,13 +226,9 @@
 				</div>
 			</div>
 		</div>
-	</div>
-
-		<!-- Third pair -->
-	<div class="row">
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">August 19 2, 2022</div>
+				<div class="col-4 h5 mont-700">August 19, 2022</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">Conference Day 2</div>
@@ -226,6 +236,10 @@
 				</div>
 			</div>
 		</div>
+	</div>
+
+		<!-- Fourth pair -->
+	<div class="row">
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
 				<div class="col-4 h5 mont-700">August 20, 2022</div>
@@ -237,8 +251,6 @@
 			</div>
 		</div>
 	</div>
-
-		<!-- Fourth pair -->
 		<!-- <div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
 				<div class="col-4 h5 mont-700">September 24, 2020</div>
