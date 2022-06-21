@@ -1,5 +1,5 @@
 ---
-title: Categories
+title: Category
 description: The list of categories for the site
 category: interviews
 pagination:

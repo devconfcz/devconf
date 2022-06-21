@@ -19,10 +19,10 @@
         class="mont-400 px-3 pagination"
     >READ</a>
     
-    @if ($post->categories && $post->categories != []) | Categories:
+    @if ($post->categories && $post->categories != []) | Category:
         @foreach ($post->categories as $i => $category)
 	<a href="{{ '/cz/blog/categories/' . $category }}"
-           title="View posts in {{ $category }}" class="d-inline-block mont-600 pagination border-0 px-2">{{ $category }}</a>
+           title="View posts in {{ $category }}" class="d-inline-block mont-600 pagination border-0 px-2">{{ ucfirst($category) }}</a>
         @endforeach
     @endif
 </div>

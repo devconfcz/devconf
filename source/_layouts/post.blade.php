@@ -20,10 +20,10 @@
 
     <p class="mont-600 mt-3 mb-4">{{ $page->author }}  •  {{ date('F j, Y', $page->date) }}
     
-    @if ($page->categories) | Categories:
+    @if ($page->categories) | Category:
         @foreach ($page->categories as $i => $category)
 	<a href="{{ '/cz/blog/categories/' . $category }}"
-           title="View posts in {{ $category }}" class="pr-2">{{ $category }}</a>
+           title="View posts in {{ $category }}" class="pr-2">{{ ucfirst($category) }}</a>
         @endforeach
     @endif
 
