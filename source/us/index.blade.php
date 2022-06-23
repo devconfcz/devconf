@@ -36,9 +36,9 @@
 				<li class="nav-item active px-3">
 					<a href="#news" class="nav-link local">News</a>
 				</li>
-				<!-- <li class="nav-item active px-3">
+				<li class="nav-item active px-3">
 				<a href="https://devconfus2022.sched.com" class="nav-link local" target="_blank">Schedule</a>
-				</li> -->
+				</li>
 				<!-- <li class="nav-item active px-3">
 					<a href="#video-tour" class="nav-link local">Video tour</a>
 				</li> -->
@@ -75,9 +75,17 @@
 			<!-- <div class="virtual-stamp mont-700">
                 virtual event
             </div> -->
-			<div class="heading-text mont-700 h1 pt-5">
-				August 18-20, 2022
-			</div>
+            <div class="heading-text pt-5 mt-5">
+            <a href="https://events.redhat.com/profile/form/index.cfm?PKformID=0x607868abcd" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">REGISTER NOW!!</a>
+            </div>
+            <div class="heading-text mont-700 h3 pb-5">
+                <div class="row">
+				    August 17, 2022 Workshops
+                </div>
+                <div class="row">
+				    August 18-20, 2022 General Sessions
+                </div>
+            </div>
 			<div class="heading-text mont-700 h4">
 			<i class="fa fa-map-marker"></i> Boston, USA
 			</div>
