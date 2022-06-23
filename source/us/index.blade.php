@@ -75,14 +75,14 @@
 			<!-- <div class="virtual-stamp mont-700">
                 virtual event
             </div> -->
-            <div class="heading-text pt-5 mt-5">
+            <div class="heading-text pt-1 mt-2">
             <a href="https://events.redhat.com/profile/form/index.cfm?PKformID=0x607868abcd" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">REGISTER NOW!!</a>
             </div>
-            <div class="heading-text mont-700 h3 pb-5">
-                <div class="row">
+            <div class="heading-text mont-700 h3 pt-1">
+                <div>
 				    August 17, 2022 Workshops
                 </div>
-                <div class="row">
+                <div>
 				    August 18-20, 2022 General Sessions
                 </div>
             </div>
