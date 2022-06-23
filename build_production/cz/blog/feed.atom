@@ -3,7 +3,7 @@
     <title>DevConf.CZ Blog</title>
     <link href="/blog" />
     <link type="application/atom+xml" rel="self" href="/cz/blog/feed.atom" />
-    <updated>2022-06-23T11:18:18+00:00</updated>
+    <updated>2022-06-23T11:43:39+00:00</updated>
     <id>/cz/blog/feed.atom</id>
     <author>
         <name>Josef Ridky &lt;jridky@redhat.com&gt;</name>
@@ -80,6 +80,8 @@
 <p>It is not connected with BPFtrace, but my best experience was actually when I&nbsp;presented my first talk in 2019 about <a href="https://www.youtube.com/watch?v=PUZSaLf9exg">Analysing differences in kernel parameters</a>, during my second time attending DevConf.cz. The nice part about it was that I&nbsp;didn't expect to have a&nbsp;room full of people, but it was really packed. And I&nbsp;knoe people enjoyed the talk and showed real interest in my work because the feedback that I&nbsp;received was very positive. I’ve had some long discussions afterwards, especially with the kernel people, and I&nbsp;would say that this experience prompted my eventual move to the kernel team at Red Hat, where I&nbsp;am right now, working on BPFtrace.</p>
 
 <p>I&nbsp;was also a&nbsp;speaker at this year's virtual DevConf.cz. It was different, but I&nbsp;enjoyed the overall experience, even though I&nbsp;missed the in-person interactions after my talk. I&nbsp;am very much looking forward to the next on-site DevConf.cz where we’ll all have the chance to meet in Brno again.</p>
+
+<p><strong>Explore other articles like this: <a href="/cz/blog/categories/interviews/">The many roads to open source</a> interview series.</strong></p>
     ]]></content>
 </entry>
             <entry>
@@ -133,6 +135,8 @@
 <h3>Q: How did DevConf.cz impact your open source contribution?</h3>
 
 <p>We believed that during our community time, we gathered just enough insights to form an interesting and possibly a&nbsp;not-entirely-obvious talk. Judging by the feedback, I&nbsp;think we did a&nbsp;good job there. I&nbsp;also aimed to encourage more folks to join an open community of their choice, because this proves to be far more adventurous than they initially think. I&nbsp;hope we’ll see some of those folks at our meetups, willing to share their knowledge with the Python newbies.</p>
+
+<p><strong>Explore other articles like this: <a href="/cz/blog/categories/interviews/">The many roads to open source</a> interview series.</strong></p>
     ]]></content>
 </entry>
             <entry>
@@ -179,6 +183,8 @@
 <h3>Q: How did DevConf.cz impact your open source contribution?</h3>
 
 <p>I&nbsp;think that DevConf.cz had actually quite a&nbsp;big impact on my professional life. When I&nbsp;attended it for the first time - I&nbsp;think it was in 2016 - it was my first public IT conference where I&nbsp;was not just an attendee, but also a&nbsp;speaker. At that time, I&nbsp;was an open source user and occasional contributor, but my main job was still writing proprietary software. It was interesting to see from the different talks and from speaking with other attendees how the work on the open source projects differs from work on the proprietary software, and it definitely helped me get where I’m today. I’ve attended DevConf many times since and hopefully will ‌attend next year again, be it as a&nbsp;speaker or as a&nbsp;regular attendee.</p>
+
+<p><strong>Explore other articles like this: <a href="/cz/blog/categories/interviews/">The many roads to open source</a> interview series.</strong></p>
     ]]></content>
 </entry>
             <entry>
@@ -252,6 +258,8 @@
 <p>At that moment, I&nbsp;set myself a&nbsp;goal of returning to a&nbsp;DevConf.cz event one day as a&nbsp;speaker. And this year, I&nbsp;finally got to do it. As someone who was not too technical when I&nbsp;joined the Community Platform Engineering Team and attended a&nbsp;very developer-focused conference, to be able to speak at one, and share my ideas and stories with people who were interested in the topic and enjoyed what I&nbsp;had to say was a&nbsp;real moment for me. I&nbsp;think a&nbsp;lot of people suffer from ‘imposter syndrome’, and being able to say “I spoke at DevConf.cz” gives me the reassurance that yeah, I&nbsp;am actually good enough.</p>
 
 <p>My speaking experience was wonderful. The people who run the conference did such an amazing job of making sure that I&nbsp;had enough time to prepare, that I&nbsp;understood how to access the Hopin platform, and that I&nbsp;knew how to contact them if I&nbsp;ran into any issues either beforehand or on the day of my talk. I&nbsp;felt at ease when delivering my talk because I&nbsp;knew that there were people there to support me every step of the way.</p>
+
+<p><strong>Explore other articles like this: <a href="/cz/blog/categories/interviews/">The many roads to open source</a> interview series.</strong></p>
     ]]></content>
 </entry>
             <entry>
@@ -306,6 +314,8 @@
 <h3>Q: How did DevConf.cz impact your open source contribution?</h3>
 
 <p>I&nbsp;learned about DevConf.cz from Twitter. This was one of the conferences where I&nbsp;thought I&nbsp;would speak one day in the future, because it was such a&nbsp;huge deal for me. I&nbsp;submitted a&nbsp;topic about how to start your contribution and I&nbsp;was surprised to see my talk accepted in 2022. It was an interesting experience because most of the topics in the conference were things I&nbsp;wanted to learn about. The speaker support was amazing; I&nbsp;was given the proper information ahead of time and I&nbsp;really appreciated that.</p>
+
+<p><strong>Explore other articles like this: <a href="/cz/blog/categories/interviews/">The many roads to open source</a> interview series.</strong></p>
     ]]></content>
 </entry>
             <entry>

@@ -41,3 +41,5 @@ Our courses moved online, which no one liked: neither the coaches, nor the atten
 ### Q: How did DevConf.cz impact your open source contribution?
 
 We believed that during our community time, we gathered just enough insights to form an interesting and possibly a&nbsp;not-entirely-obvious talk. Judging by the feedback, I&nbsp;think we did a&nbsp;good job there. I&nbsp;also aimed to encourage more folks to join an open community of their choice, because this proves to be far more adventurous than they initially think. I&nbsp;hope we’ll see some of those folks at our meetups, willing to share their knowledge with the Python newbies.
+
+**Explore other articles like this: [The many roads to open source](/cz/blog/categories/interviews/) interview series.**

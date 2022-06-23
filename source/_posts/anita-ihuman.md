@@ -48,3 +48,5 @@ I&nbsp;think it was easier to start the contribution during the pandemic for me.
 ### Q: How did DevConf.cz impact your open source contribution?
 
 I&nbsp;learned about DevConf.cz from Twitter. This was one of the conferences where I&nbsp;thought I&nbsp;would speak one day in the future, because it was such a&nbsp;huge deal for me. I&nbsp;submitted a&nbsp;topic about how to start your contribution and I&nbsp;was surprised to see my talk accepted in 2022. It was an interesting experience because most of the topics in the conference were things I&nbsp;wanted to learn about. The speaker support was amazing; I&nbsp;was given the proper information ahead of time and I&nbsp;really appreciated that.
+
+**Explore other articles like this: [The many roads to open source](/cz/blog/categories/interviews/) interview series.**

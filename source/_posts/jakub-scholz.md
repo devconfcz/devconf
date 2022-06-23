@@ -39,3 +39,5 @@ I&nbsp;think most open source communities are distributed by default with their 
 ### Q: How did DevConf.cz impact your open source contribution?
 
 I&nbsp;think that DevConf.cz had actually quite a&nbsp;big impact on my professional life. When I&nbsp;attended it for the first time - I&nbsp;think it was in 2016 - it was my first public IT conference where I&nbsp;was not just an attendee, but also a&nbsp;speaker. At that time, I&nbsp;was an open source user and occasional contributor, but my main job was still writing proprietary software. It was interesting to see from the different talks and from speaking with other attendees how the work on the open source projects differs from work on the proprietary software, and it definitely helped me get where I’m today. I’ve attended DevConf many times since and hopefully will ‌attend next year again, be it as a&nbsp;speaker or as a&nbsp;regular attendee.
+
+**Explore other articles like this: [The many roads to open source](/cz/blog/categories/interviews/) interview series.**
