@@ -4,7 +4,6 @@ section: content
 title: "Aoife Moloney: From office coordinator to Fedora Product Owner"
 date: 2022-06-20
 cover_image: /assets/images/blog/interviews-devconf-cz.png
-published: false
 featured: true
 categories: [interviews]
 ---

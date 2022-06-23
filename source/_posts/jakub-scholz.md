@@ -4,7 +4,6 @@ section: content
 title: "Jakub Scholz: Being part of Strimzi from the beginning"
 date: 2022-06-21
 cover_image: /assets/images/blog/interviews-devconf-cz.png
-published: false
 featured: true
 categories: [interviews]
 ---
