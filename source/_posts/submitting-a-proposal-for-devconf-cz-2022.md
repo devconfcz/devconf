@@ -5,7 +5,7 @@ title: "Submitting a proposal for DevConf.CZ 2022"
 date: 2021-10-19
 author: Dorota Volavkova
 description: How to submit proposal for DevConf.CZ 2022
-cover_image: /assets/images/blog/submit-devconf-cz-22.jpg
+cover_image: /assets/images/blog/submit-devconf-cz-22.png
 featured: true
 ---
 

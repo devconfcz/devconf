@@ -100,7 +100,7 @@
 
             </div> 
             <div class="heading-text pt-1 mt-5">
-                <a href="https://forms.gle/oFuz3F7sbVFYvzTo8" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">WE WANT YOUR FEEDBACK</a>
+                <a href="https://forms.gle/sYmKms6RkpUZ5qMG8" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">HELP US IMPROVE</a>
             </div> 
 
 		</div>
@@ -201,11 +201,11 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 </section>-->
 
 <section id="news" class="mx-auto py-5 col-lg-11">
-	<div class="row">
+<!--	<div class="row">
 		<div class="h1 pb-4 mx-5 position-relative mont-700">Important dates</div>
 	</div>
 	<div class="row">
-		<!-- Keep in pairs -->
+		<!-- Keep in pairs 
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
 				<div class="col-4 h5 mont-700">Jan 28-29, 2022</div>
@@ -213,11 +213,11 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 					<div class="row">
 						<div class="col mont-600">DevConf.CZ</div>
 					</div>
-<!--
+
 					<div class="row">
 						<div class="col os-400"><a href="https://cfp.devconf.info">Submit your proposal &rarr;</a></div>
 					</div>
--->
+
 				</div>
 			</div>
 		</div>
@@ -231,9 +231,9 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 				</div>
 			</div>
                 </div>
-
+-->
 		<!-- Second pair -->
-		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
+<!--		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
 				<div class="col-4 h5 mont-700">May, 2022</div>
 				<div class="col-8">
@@ -254,12 +254,13 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
                 </div>
             </div>
                 </div>
-    </div>
+    </div> -->
 	<div class="row mt-4">
 		<div class="h1 mx-5 mont-700">News</div>
 	</div>
 	<div class="row">
 		<div class="col-lg-6 px-5 mx-auto">
+            <p class="os-400"><span class="h6 mont-700">Jul 1, 2022</span> All recordings are available on our <a href="https://youtube.com/playlist?list=PLU1vS0speL2aLakeh8x2v3HA5a2Oqa_P_" target="_blank">YouTube channel</a>! If you missed the keynote or any of the sessions check them out. Photos from DevConf.cz MINI are available <a target="_blank" href="https://photos.app.goo.gl/iCC8B2wH18a32RHQA">here</a>.</p> 
             <p class="os-400"><span class="h6 mont-700">May 5, 2022</span> <a href="https://www.eventbrite.com/e/devconfcz-mini-2022-tickets-208626797367" target="_blank">Registration</a> is open and <a target="_blank" href="https://devconfczmini2022.sched.com">Schedule</a> is live.</p>
             <p class="os-400"><span class="h6 mont-700">Apr 11, 2022</span> New local, in-person version of DevConf.CZ announced: DevConf.cz Mini</p>
             <p class="os-400"><span class="h6 mont-700">Feb 7, 2022</span> DevConf.CZ 2022 recordings are available on demand on our <a href="https://www.youtube.com/playlist?list=PLU1vS0speL2bf9Zfa0pHQLPBhEKbbbsua" target="_blank">YouTube channel</a></p>

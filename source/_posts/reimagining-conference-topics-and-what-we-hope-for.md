@@ -5,7 +5,7 @@ title: "DevConf.CZ 2022: Reimagining conference themes and what we hope for"
 date: 2021-08-20
 author: Dorota Volavkova, Radek Vokal
 description: Our vision for DevConf.CZ 2022
-cover_image: /assets/images/blog/reimagining-devconf-cz.jpg
+cover_image: /assets/images/blog/reimagining-devconf-cz.png
 featured: true
 ---
 
