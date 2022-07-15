@@ -75,7 +75,7 @@
 			<div class="heading-text mont-400 h5 pb-2 pb-lg-5">
 				open source community conference
 			</div>
-            <div class="mini-stamp d-none d-lg-block">
+<!--            <div class="mini-stamp d-none d-lg-block">
                 <span class="mont-700">MINI</span><br>LOCAL<br>IN-PERSON<br>CONFERENCE
             </div>
             <div style="padding: 0 0 0 3rem" class="my-1 d-lg-none">
@@ -93,10 +93,9 @@
             </div>
 			<div class="heading-text mont-700 h1 pt-1 pt-lg-5">
 				June 2, 2022
-			</div>
+			</div> -->
 			<div class="heading-text mont-700 h4">
-                <a href="#map" class="nav-link local" style="color: white; padding: 0px"><i class="fa fa-map-marker"></i> Brno, Czech Republic<br>
-                Faculty of Informatics | Masaryk University</a>
+                <a href="#map" class="nav-link local" style="color: white; padding: 0px"><i class="fa fa-map-marker"></i> Brno, Czech Republic</a>
 
             </div> 
             <div class="heading-text pt-1 mt-5">
