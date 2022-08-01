@@ -81,7 +81,7 @@
 			<div class="d-block mb-5">
                 <h5><b>In-person attendees will be required to be fully vaccinated against the COVID-19 virus.</b> Fully vaccinated is defined as 14 full days after the final dose of a government approved vaccine. All vaccines approved for emergency or full use by the World
 				Health Organization will be accepted at the event. List of accepted vaccines can be found <a href="https://covid19.trackvaccines.org/agency/who/" target="_blank">here.</a></h5>
-				<h5>Event attendees will be required to show proof of vaccination in order to be admitted to the event. Details on how to present proof of vaccination will be added to this page by June 2022.</h5>
+				<h5>No proof of vaccination required in order to be admitted to the event.</h5>
 			</div>
 			<div class="d-block mb-3 mont-700 h2">Attendee Social Distance Comfort Levels</div>
 			<div class="d-block mb-5">
