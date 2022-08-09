@@ -164,11 +164,11 @@ body, html {
   margin: .25em 0;
 }
 
-.next-tag-big, .road-timeline-big {
+.next-tag-big, .next-tag, .road-timeline-big {
   display: none;
 }
 
-.next-tag {
+.next-tag-mobile{
   background: #8e83e4;
   display: inline-block;
   margin-right: 10px;
@@ -176,6 +176,23 @@ body, html {
   border-radius: 200px;
   color: white;
   text-transform: uppercase;
+}
+
+@media (min-width: 576px) {
+  .next-tag-mobile{
+    display: none;
+  }
+
+  .next-tag {
+    background: #8e83e4;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 2px 10px;
+    border-radius: 200px;
+    color: white;
+    text-transform: uppercase;
+  }
+
 }
 
 @media (min-width: 992px) { 
