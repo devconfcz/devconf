@@ -164,6 +164,19 @@ body, html {
   margin: .25em 0;
 }
 
+.next-tag-big, .road-timeline-big {
+  display: none;
+}
+
+.next-tag {
+  background: #8e83e4;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 2px 10px;
+  border-radius: 200px;
+  color: white;
+  text-transform: uppercase;
+}
 
 @media (min-width: 992px) { 
 
@@ -238,6 +251,34 @@ body, html {
 
 }
 
+@media(min-width: 1600px){
+
+	.roadmap-section {
+	  display: none;
+	}
+	.next-tag-big {
+	  background: #8e83e4;
+	  display: inline-block;
+	  margin-left: 10px;
+	  padding: 2px 10px;
+	  border-radius: 200px;
+	  color: white;
+	  text-transform: uppercase;
+	  position: absolute;
+	  right: 14px;
+	}
+
+	.road-timeline-big {
+	  background: white;
+	  display: inline-block;
+	  padding: 2em 5em 0px 0px;
+	  min-width: 425px;
+	  position: absolute;
+	  color: #212529;
+	  right: 0px;
+	  bottom: 0px;  
+	}
+}
 .mont-700, .mont-600, .mont-500, .mont-400 {
   font-family: DevConfMontserrat, Montserrat, Arial, sans-serif;
   font-weight: 700;

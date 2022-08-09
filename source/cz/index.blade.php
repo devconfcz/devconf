@@ -101,10 +101,90 @@
             <div class="heading-text pt-1 mt-5">
                 <a href="https://forms.gle/sYmKms6RkpUZ5qMG8" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">HELP US IMPROVE</a>
             </div> 
+            <div class="road-timeline-big">
+            <ul class="timeline timeline-centered">
+			<?php
+
+				$topics = array(
+						array("name"=>"Jan 28-29, 2022", "next"=>false),
+                        array("name"=>"DevConf.CZ 2022", "description"=>"Virtual", "next"=>false),
+                        array("name"=>"Jun 2, 2022", "next"=>false),
+                        array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>false),
+                        array("name"=>"Oct, 2022", "next"=>true),
+                        array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>true),
+                        array("name"=>"Mar/Apr, 2023", "next"=>false),
+                        array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>false),
+                        array("name"=>"Jun, 2023", "next"=>false),
+                        array("name"=>"DevConf.CZ 2023", "description"=>"Brno/Virtual", "next"=>false),
+					  );
+
+				foreach($topics as $i=>$t){
+					if($i%2 == 0){?>
+                <?=($t['next']?"<div class='next-tag-big mont-700'>next</div>":"")?>
+				<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="<?=($t['next']?"mont-700":"mont-400")?> timeline-title"><?php echo $t['name'];?></div>
+					</div>
+					<div class="timeline-marker"></div>
+				<?php }else{ ?>
+					<div class="timeline-content-right">
+						<div class="<?=($t['next']?"mont-700":"mont-400")?> timeline-title"><?php echo $t['name'];?></div>
+						<p class="timeline-description <?=($t['next']?"os-700":"os-400")?>"><?php echo $t['description'];?></p>
+					</div>
+				</li>
+				<?php }
+				}
+				if(count($topics)%2 == 1){
+					echo "</div></li>";
+				}?>
+			</ul>
+            </div>
 
 		</div>
 	</div>
 </header>
+<section class="mx-auto col-lg-11 roadmap-section">
+    <div class="row pt-5">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-2 mx-auto">
+            <ul class="timeline timeline-centered">
+			<?php
+
+				$topics = array(
+						array("name"=>"Jan 28-29, 2022", "next"=>false),
+                        array("name"=>"DevConf.CZ 2022", "description"=>"Virtual", "next"=>false),
+                        array("name"=>"Jun 2, 2022", "next"=>false),
+                        array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>false),
+                        array("name"=>"Oct, 2022", "next"=>true),
+                        array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>true),
+                        array("name"=>"Mar/Apr, 2023", "next"=>false),
+                        array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>false),
+                        array("name"=>"Jun, 2023", "next"=>false),
+                        array("name"=>"DevConf.CZ 2023", "description"=>"Brno/Virtual", "next"=>false),
+					  );
+
+				foreach($topics as $i=>$t){
+					if($i%2 == 0){?>
+                
+				<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="<?=($t['next']?"mont-700":"mont-400")?> timeline-title"><?php echo $t['name'];?></div>
+					</div>
+					<div class="timeline-marker"></div>
+				<?php }else{ ?>
+					<div class="timeline-content-right">
+						<div class="<?=($t['next']?"mont-700":"mont-400")?> timeline-title"><?=($t['next']?"<div class='next-tag mont-700'>next</div>":"")?><?php echo $t['name'];?></div>
+						<p class="timeline-description <?=($t['next']?"os-700":"os-400")?>"><?php echo $t['description'];?></p>
+					</div>
+				</li>
+				<?php }
+				}
+				if(count($topics)%2 == 1){
+					echo "</div></li>";
+				}?>
+			</ul>
+        </div>
+    </div>
+</section>
 <section id="about" class="mx-auto col-lg-11">
 	<div class="row mt-4 py-5">
 		<div class="col-lg-4 mx-5 mb-5 text-center">
