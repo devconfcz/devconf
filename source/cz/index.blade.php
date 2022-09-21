@@ -110,7 +110,7 @@
                         array("name"=>"DevConf.CZ 2022", "description"=>"Virtual", "next"=>false),
                         array("name"=>"Jun 2, 2022", "next"=>false),
                         array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>false),
-                        array("name"=>"Oct, 2022", "next"=>true),
+                        array("name"=>"Nov, 2022", "next"=>true),
                         array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>true),
                         array("name"=>"Mar/Apr, 2023", "next"=>false),
                         array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>false),
