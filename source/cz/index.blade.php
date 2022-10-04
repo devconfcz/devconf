@@ -95,7 +95,7 @@
 				November 3, 2022
 			</div>
 			<div class="heading-text mont-700 h4">
-                <a href="#map" class="nav-link local" style="color: white; padding: 0px"><i class="fa fa-map-marker"></i> Brno, Czech Republic</a>
+                <a href="#map" class="nav-link local d-inline-block" style="color: white; padding: 0px"><i class="fa fa-map-marker"></i> Brno, Czech Republic</a>
 
             </div> 
             <div class="heading-text pt-1 mt-5">
