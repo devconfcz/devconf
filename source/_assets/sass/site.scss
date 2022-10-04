@@ -232,7 +232,7 @@ body, html {
       padding: 5ex 3.5ex;
       border-radius: 200px;
       line-height: 2ex;
-      right: 15vw;
+      right: 10vw;
       left: auto;
       font-size: 3ex;
       box-sizing: unset;
@@ -246,7 +246,7 @@ body, html {
       padding: 5ex 3.5ex;
       border-radius: 200px;
       line-height: 2ex;
-      right: 15vw;
+      right: 10vw;
       left: auto;
       font-size: 3ex;
       box-sizing: unset;
@@ -260,7 +260,7 @@ body, html {
       padding: 7ex 3.5ex;
       border-radius: 200px;
       line-height: 2ex;
-      right: 15vw;
+      right: 10vw;
       left: auto;
       font-size: 3ex;
       box-sizing: unset;
@@ -295,6 +295,18 @@ body, html {
 	  right: 0px;
 	  bottom: 0px;  
 	}
+
+    .mini-stamp{
+        right: 30vw;
+    }
+
+    .hybrid-stamp{
+        right: 30vw;
+    }
+
+    .virtual-stamp{
+        right: 30vw;
+    }
 }
 .mont-700, .mont-600, .mont-500, .mont-400 {
   font-family: DevConfMontserrat, Montserrat, Arial, sans-serif;

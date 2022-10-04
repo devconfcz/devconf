@@ -75,7 +75,7 @@
 			<div class="heading-text mont-400 h5 pb-2 pb-lg-5">
 				open source community conference
 			</div>
-<!--            <div class="mini-stamp d-none d-lg-block">
+            <div class="mini-stamp d-none d-lg-block">
                 <span class="mont-700">MINI</span><br>LOCAL<br>IN-PERSON<br>CONFERENCE
             </div>
             <div style="padding: 0 0 0 3rem" class="my-1 d-lg-none">
@@ -85,21 +85,21 @@
             </div>
 
             <div style="padding: 0 0 0 3rem" class="my-1">
-                <div class="mini-chip">Linux Distribution</div>
-                <div class="mini-chip">Open Source Design</div>
+                <div class="mini-chip">Cloud & Hyperscale</div>
+                <div class="mini-chip">Edge Computing</div>
             </div>
             <div style="padding: 0 0 0 3rem" class="my-1">
-                <div class="mini-chip">Modern Software Development</div>
+                <div class="mini-chip">Future Tech & Open Research</div>
             </div>
 			<div class="heading-text mont-700 h1 pt-1 pt-lg-5">
-				June 2, 2022
-			</div> -->
+				November 3, 2022
+			</div>
 			<div class="heading-text mont-700 h4">
                 <a href="#map" class="nav-link local" style="color: white; padding: 0px"><i class="fa fa-map-marker"></i> Brno, Czech Republic</a>
 
             </div> 
             <div class="heading-text pt-1 mt-5">
-                <a href="https://forms.gle/sYmKms6RkpUZ5qMG8" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">HELP US IMPROVE</a>
+                <a href="https://www.eventbrite.com/e/devconfcz-mini-november-2022-tickets-430870755027" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">REGISTRATION IS OPEN</a>
             </div> 
             <div class="road-timeline-big">
             <ul class="timeline timeline-centered">
@@ -110,7 +110,7 @@
                         array("name"=>"DevConf.CZ 2022", "description"=>"Virtual", "next"=>false),
                         array("name"=>"Jun 2, 2022", "next"=>false),
                         array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>false),
-                        array("name"=>"Nov, 2022", "next"=>true),
+                        array("name"=>"Nov 3, 2022", "next"=>true),
                         array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>true),
                         array("name"=>"Mar/Apr, 2023", "next"=>false),
                         array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>false),
@@ -326,6 +326,7 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 	</div>
 	<div class="row">
 		<div class="col-lg-6 px-5 mx-auto">
+            <p class="os-400"><span class="h6 mont-700">Oct 4, 2022</span> <a href="https://www.eventbrite.com/e/devconfcz-mini-november-2022-tickets-430870755027" target="_blank">Registration</a> for autumn Mini event is open.</p>
             <p class="os-400"><span class="h6 mont-700">Jul 1, 2022</span> All recordings are available on our <a href="https://youtube.com/playlist?list=PLU1vS0speL2aLakeh8x2v3HA5a2Oqa_P_" target="_blank">YouTube channel</a>! If you missed the keynote or any of the sessions check them out. Photos from DevConf.cz MINI are available <a target="_blank" href="https://photos.app.goo.gl/iCC8B2wH18a32RHQA">here</a>.</p> 
             <p class="os-400"><span class="h6 mont-700">May 5, 2022</span> <a href="https://www.eventbrite.com/e/devconfcz-mini-2022-tickets-208626797367" target="_blank">Registration</a> is open and <a target="_blank" href="https://devconfczmini2022.sched.com">Schedule</a> is live.</p>
             <p class="os-400"><span class="h6 mont-700">Apr 11, 2022</span> New local, in-person version of DevConf.CZ announced: DevConf.cz Mini</p>
