@@ -100,8 +100,6 @@
             </div> 
             <div class="heading-text pt-1 mt-5">
                 <a href="https://www.eventbrite.com/e/devconfcz-mini-november-2022-tickets-430870755027" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">REGISTRATION IS OPEN</a>
-            </div> 
-            <div class="heading-text pt-1 mt-1">
                 <a href="/cz/schedule" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SCHEDULE</a>
             </div>
             <div class="road-timeline-big">
