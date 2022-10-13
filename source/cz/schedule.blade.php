@@ -68,9 +68,9 @@
                 "speakers"=>array(
                     array("name"=>"Tomáš Tomeček", "img"=>"", "socials"=>array("linkedin"=>"https://www.linkedin.com/in/tom%C3%A1%C5%A1-tome%C4%8Dek-20a30132/","github"=>"https://github.com/TomasTomecek")),
                     array("name"=>"Michael Hofmann", "img"=>"", "socials"=>array("github"=>"https://github.com/mh21")),
-                    array("name"=>"Ondřej Budaj", "img"=>"", "socials"=>array("github"=>"https://github.com/ondrejbudai")),
-                    array("name"=>"Pavel Raiskup", "img"=>"", "socials"=>array("github"=>"https://github.com/praiskup")),
-                    array("name"=>"Miroslav Vadkerti", "img"=>"", "socials"=>array("github"=>"https://github.com/thrix")),
+                    array("name"=>"Ondřej Budaj", "img"=>"", "socials"=>array("linkedin"=>"https://cz.linkedin.com/in/ondrejbudai","github"=>"https://github.com/ondrejbudai")),
+                    array("name"=>"Pavel Raiskup", "img"=>"", "socials"=>array("linkedin"=>"https://cz.linkedin.com/in/pavel-raiskup","github"=>"https://github.com/praiskup")),
+                    array("name"=>"Miroslav Vadkerti", "img"=>"", "socials"=>array("linkedin"=>"https://cz.linkedin.com/in/miroslav-vadkerti-16119120","github"=>"https://github.com/thrix")),
                 )
             )
         )),
@@ -90,10 +90,10 @@
                     array("name"=>"Rastislav Wágner", "img"=>"", "socials"=>array("linkedin"=>"https://cz.linkedin.com/in/rastislav-w%C3%A1gner-b4a1534b","github"=>"https://github.com/rawagner"))
                 )
             ),
-            array("end"=>"16:40", "length"=>100, "name"=>"Bughunting challenge", "description"=>"BugHunting is a challenge for the conference attendees, who want to try their development and debugging skills. Participants will be provided with several tasks in various programming languages, while each task consists of a broken code and a bug report.</p><p>The purpose of every task is to find the bug, and fix it in the code. Your solution is evaluated in real-time after you submit it, and you score points if your solution is correct. Some of the issues are artificial and were created only for the Challenge, while some are real-life issues. Attendees with the most points will get some price during our Wrap up and win win win session at the end of the conference.</p><p>BEFORE JOINING US<br>1. Check more info about the challenge at <a href='https://howto.bughunting.cz' target='_blank'>https://howto.bughunting.cz</a> and it's suggested to set up an environment for the challenge itself according to the steps at <a href='https://howto.bughunting.cz/env_setup.html' target='_blank'>https://howto.bughunting.cz/env_setup.html</a> prior the event, so you have more time for solving the tasks.</p><p>You can also continue solving the tasks after the event ends (we'll keep the server running). Please pick up the credentials at our booth!", "track"=>"Bughunting", "room"=>"S505",
+            array("end"=>"16:40", "length"=>100, "name"=>"Bughunting challenge", "description"=>"BugHunting is a challenge for the conference attendees, who want to try their coding and debugging skills. Participants will be provided with several tasks in various programming languages. Each task consists of broken code and a bug report.</p><p>The purpose of every task is to find the bug and fix it in the code. Your solution is evaluated immediately after you submit it (you can submit as many times as you want) and you score points if your solution is correct (gained points can never be lost). Attendees with the most points will get a prize at the end of BugHunting session.</p><p>HOW TO JOIN<br>- You can just come and we’ll lend you a laptop.<br>- You can download and run the BugHunting container on your laptop (even any time after the conference - stop by for the credentials). For that, check the environment setup in our HowTo <a href='https://howto.bughunting.cz/env_setup.html' target='_blank'>https://howto.bughunting.cz/env_setup.html</a>.</p><p>For more information, see <a href='https://howto.bughunting.cz' target='_blank'>https://howto.bughunting.cz</a>.", "track"=>"Bughunting", "room"=>"S505",
                 "speakers"=>array(
-                    array("name"=>"Pavel Valena", "img"=>"", "socials"=>array("github"=>"https://github.com/pvalena")),
-                    array("name"=>"Honza Horák", "img"=>"", "socials"=>array("github"=>"https://github.com/hhorak")),
+                    array("name"=>"Pavel Valena", "img"=>"", "socials"=>array("linkedin"=>"https://cz.linkedin.com/in/pavel-valena-154422126","github"=>"https://github.com/pvalena")),
+                    array("name"=>"Honza Horák", "img"=>"", "socials"=>array("linkedin"=>"https://cz.linkedin.com/in/honza-hor%C3%A1k-7737163b","github"=>"https://github.com/hhorak")),
                     array("name"=>"Jarek Prokop", "img"=>"", "socials"=>array("github"=>"https://github.com/jackorp")),
                 )
             ),
@@ -145,16 +145,16 @@
             ),
             array("end"=>"17:50", "length"=>20, "name"=>"QtRVSim – RISC-V Simulator for Computer Architectures Classes", "description"=>"QtRVSim (<a href='https://github.com/cvut/qtrvsim' target='_blank'>https://github.com/cvut/qtrvsim</a>) is a free and open-source RISC-V-based computer system simulator designed for teaching and learning computer systems principles. The simulator allows students to run assembly programs and observe the instruction execution on single-cycle and pipelined microarchitectures. The simulator graphically displays the major components in the datapath, including the register file, the arithmetic-logic unit, memory caches, peripherals, and the control unit with control signals. The talk will present the current capabilities of the simulator and possible usages for teaching, as well as the design of its implementation and opportunities for future development.", "track"=>"Future Tech and Open Research", "room"=>"D1",
                 "speakers"=>array(
-                    array("name"=>"Jakub Dupak", "img"=>"", "socials"=>array("github"=>"https://github.com/jdupak"))                )
+                    array("name"=>"Jakub Dupak", "img"=>"", "socials"=>array("linkedin"=>"https://cz.linkedin.com/in/jakub-dupak","github"=>"https://github.com/jdupak"))                )
             ),
             array("end"=>"17:50", "length"=>20, "name"=>"Testing IoT applications", "description"=>"", "track"=>"Future Tech and Open Research", "room"=>"D3",
                 "speakers"=>array(
-                    array("name"=>"Miroslav Jaroš", "img"=>"", "socials"=>array("github"=>"https://github.com/mijaros"))
+                    array("name"=>"Miroslav Jaroš", "img"=>"", "socials"=>array("linkedin"=>"https://cz.linkedin.com/in/mijaros","github"=>"https://github.com/mijaros"))
                 )
             ),
 		)),
 		array("start"=>"18:00", "items"=>array(
-		    array("end"=>"18:30", "length"=>30, "name"=>"Lightning talks", "description"=>"", "room"=>"D2")
+		    array("end"=>"18:30", "length"=>30, "name"=>"Lightning talks", "description"=>"Share your lightning talks with us! You will be able to submit your lighting talk proposals on the whiteboard during the whole event. You can start thinking about your 5-minute talk you want to share with the audience now (slide-less is fine, keep the topic related to the conference).", "room"=>"D2")
 		)),
 		array("start"=>"18:30", "items"=>array(
 		    array("end"=>"19:00", "length"=>30, "name"=>"Wrap up and move to the social event", "description"=>"", "room"=>"D2")
