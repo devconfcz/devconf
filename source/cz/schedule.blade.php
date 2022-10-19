@@ -117,7 +117,7 @@
             ),
         )),
         array("start"=>"17:00", "items"=>array(
-            array("end"=>"17:20", "length"=>20, "name"=>"Migration Toolkit for Virtualization", "description"=>"Get your VMs into Cloud!", "track"=>"Cloud & Hyperscale", "room"=>"D2",
+            array("end"=>"17:20", "length"=>20, "name"=>"Migration Toolkit for Virtualization", "description"=>"Get your VMs into Cloud with MTV!</p><p>We will talk about how to migrate your VMs from Red Hat Virtualization or VMware vSphere to Red Hat OpenShift with Container-native Virtualization.</p><p>Remapping your infrastructure from the virtualization environment to OpenShift.</p><p>I'll demonstrate the basic usage of the Migration Toolkit for Virtualization, where we will migrate virtual machines from Red Hat Virtualization to Red Hat OpenShift with Container-native Virtualization.</p><p>The talk is focused on administrators who want to migrate their VMs to the OpenShift.", "track"=>"Cloud & Hyperscale", "room"=>"D2",
                 "speakers"=>array(
                     array("name"=>"Martin Nečas", "img"=>"", "socials"=>array("linkedin"=>"https://www.linkedin.com/in/martin-n-17281713b/","github"=>"https://github.com/mnecas"))
                 )
