@@ -148,7 +148,7 @@
                 "speakers"=>array(
                     array("name"=>"Jakub Dupak", "img"=>"", "socials"=>array("linkedin"=>"https://cz.linkedin.com/in/jakub-dupak","github"=>"https://github.com/jdupak"))                )
             ),
-            array("end"=>"17:50", "length"=>20, "name"=>"Testing IoT applications", "description"=>"", "track"=>"Future Tech and Open Research", "room"=>"D3",
+            array("end"=>"17:50", "length"=>20, "name"=>"Integration testing in IoT", "description"=>"IoT brought many new challenges into software development and especially into the world of testing and Quality Assurance. The physical world of IoT devices creates a new plane of complex issues beginning with data transmission and ending with reliability.</p><p>In this talk, we'll dig into the common problems quality engineers face during the development of such tests and how to mitigate them with Patriot-framework.", "track"=>"Future Tech and Open Research", "room"=>"D3",
                 "speakers"=>array(
                     array("name"=>"Miroslav Jaroš", "img"=>"", "socials"=>array("linkedin"=>"https://cz.linkedin.com/in/mijaros","github"=>"https://github.com/mijaros"))
                 )
