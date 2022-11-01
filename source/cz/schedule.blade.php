@@ -59,6 +59,7 @@
 
     $bgs = array("Cloud & Hyperscale" => "table-danger", "Future Tech and Open Research" => "table-primary",
                  "Bughunting" => "table-active", "Workshop" => "table-success");
+    $streams = array("D1"=>"https://youtu.be/AgVfF-8E36c", "D2"=>"https://youtu.be/3sfVVeT-8bI", "D3"=>"https://youtu.be/oIO6Tij7IrA");
 	$schedule = array(
 	    array("start"=>"14:00", "items"=>array(
     	    array("end"=>"14:15", "length"=>15, "name"=>"Check in and welcome")
@@ -196,7 +197,11 @@ foreach($schedule as $k=>$time){
 				            <?php
 				            }
 				            echo ")";
-				        }}} ?>
+				        }}} 
+                        if(isset($it['room']) && $it['room'] != "" && isset($streams[$it['room']])){
+                        ?>
+                        <p><i class="fa fa-youtube-play"></i>&nbsp;<a class="text-decoration-none text-dark" href="<?php echo $streams[$it['room']]; ?>" target="_blank">Live stream</a></p>
+                        <?php } ?>
 						<p><i class="fa fa-clock-o"></i>&nbsp;<?php echo $it['length']; ?> minutes<?php if(isset($it['room']) && $it['room'] != "") { ?> | <i class="fa fa-map-marker"></i>&nbsp;<?php echo $it['room']; } ?>
 						<?php if(isset($it['track'])) { ?> | <i class="fa fa-tag"></i>&nbsp;<?php echo $it['track']; } 
 						if(isset($it['description']) && $it['description']!=""){?>
