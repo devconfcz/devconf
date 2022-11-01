@@ -61,14 +61,14 @@
                  "Bughunting" => "table-active", "Workshop" => "table-success");
 	$schedule = array(
 	    array("start"=>"14:00", "items"=>array(
-    	    array("end"=>"14:15", "length"=>15, "name"=>"Check-in and welcome")
+    	    array("end"=>"14:15", "length"=>15, "name"=>"Check in and welcome")
     	)),
         array("start"=>"14:15", "items"=>array(
-            array("end"=>"14:55", "length"=>40, "name"=>"Panel discussion: This is how we use hybrid cloud", "description"=>"Linux Integration Engineering teams (formerly Cyborg) will show you how we embrace hybrid cloud, Red Hat's and IBM's strategic direction. There are many projects and services in our department that deploy into multiple platforms, datacenters and public clouds. Panelists are seasoned engineers who have years of experience in development, maintenance, service architecture, scalability and security. If you are working on microservices, in DevOps or SRE, or develop a service, you cannot miss this session.", "track"=>"Cloud & Hyperscale",
+            array("end"=>"14:55", "length"=>40, "name"=>"Panel discussion: This is how we use hybrid cloud", "description"=>"Linux Integration Engineering teams (formerly Cyborg) will show you how we embrace hybrid cloud, Red Hat's and IBM's strategic direction. There are many projects and services in our department that deploy into multiple platforms, datacenters and public clouds. Panelists are seasoned engineers who have years of experience in development, maintenance, service architecture, scalability and security. If you are working on microservices, in DevOps or SRE, or develop a service, you cannot miss this session.", "track"=>"Cloud & Hyperscale", "room"=>"D2",
                 "speakers"=>array(
                     array("name"=>"Tomáš Tomeček", "img"=>"", "socials"=>array("linkedin"=>"https://www.linkedin.com/in/tom%C3%A1%C5%A1-tome%C4%8Dek-20a30132/","github"=>"https://github.com/TomasTomecek")),
                     array("name"=>"Michael Hofmann", "img"=>"", "socials"=>array("linkedin"=>"https://www.linkedin.com/in/mh21/","github"=>"https://github.com/mh21")),
-                    array("name"=>"Ondřej Budaj", "img"=>"", "socials"=>array("linkedin"=>"https://cz.linkedin.com/in/ondrejbudai","github"=>"https://github.com/ondrejbudai")),
+                    array("name"=>"Ondřej Budai", "img"=>"", "socials"=>array("linkedin"=>"https://cz.linkedin.com/in/ondrejbudai","github"=>"https://github.com/ondrejbudai")),
                     array("name"=>"Pavel Raiskup", "img"=>"", "socials"=>array("linkedin"=>"https://cz.linkedin.com/in/pavel-raiskup","github"=>"https://github.com/praiskup")),
                     array("name"=>"Miroslav Vadkerti", "img"=>"", "socials"=>array("linkedin"=>"https://cz.linkedin.com/in/miroslav-vadkerti-16119120","github"=>"https://github.com/thrix")),
                 )
