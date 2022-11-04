@@ -99,8 +99,7 @@
 
             </div> 
             <div class="heading-text pt-1 mt-5">
-                <a href="https://www.eventbrite.com/e/devconfcz-mini-november-2022-tickets-430870755027" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">REGISTRATION IS OPEN</a>
-                <a href="/cz/schedule" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SCHEDULE</a>
+                <a href="https://forms.gle/VwNZVhCZWPje8Qg9A" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">WE WANT YOUR FEEDBACK</a>
             </div>
             <div class="road-timeline-big">
             <ul class="timeline timeline-centered">
@@ -111,11 +110,11 @@
                         array("name"=>"DevConf.CZ 2022", "description"=>"Virtual", "next"=>false),
                         array("name"=>"Jun 2, 2022", "next"=>false),
                         array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>false),
-                        array("name"=>"Nov 3, 2022", "next"=>true),
-                        array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>true),
-                        array("name"=>"Mar/Apr, 2023", "next"=>false),
+                        array("name"=>"Nov 3, 2022", "next"=>false),
                         array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>false),
-                        array("name"=>"Jun, 2023", "next"=>false),
+                        array("name"=>"Mar/Apr, 2023", "next"=>false),
+                        array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>true),
+                        array("name"=>"Jun, 2023", "next"=>true),
                         array("name"=>"DevConf.CZ 2023", "description"=>"Brno/Virtual", "next"=>false),
 					  );
 
