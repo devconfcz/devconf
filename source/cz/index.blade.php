@@ -39,10 +39,10 @@
 				<li class="nav-item active px-3">
 					<a href="#news" class="nav-link local">News</a>
 				</li>
-				<li class="nav-item active px-3">
+<!---				<li class="nav-item active px-3">
 					<a href="/cz/schedule" class="nav-link local">Schedule</a>
 				</li>
-<!--				<li class="nav-item active px-3">
+				<li class="nav-item active px-3">
 					<a href="#travel" class="nav-link local">How to get here?</a>
 				</li> -->
                 <li class="nav-item active px-3">
@@ -75,7 +75,7 @@
 			<div class="heading-text mont-400 h5 pb-2 pb-lg-5">
 				open source community conference
 			</div>
-            <div class="mini-stamp d-none d-lg-block">
+<!--            <div class="mini-stamp d-none d-lg-block">
                 <span class="mont-700">MINI</span><br>LOCAL<br>IN-PERSON<br>CONFERENCE
             </div>
             <div style="padding: 0 0 0 3rem" class="my-1 d-lg-none">
@@ -90,18 +90,18 @@
             </div>
             <div style="padding: 0 0 0 3rem" class="my-1">
                 <div class="mini-chip">Future Tech & Open Research</div>
-            </div>
+            </div> -->
 			<div class="heading-text mont-700 h1 pt-1 pt-lg-5">
-				November 3, 2022
+				June 16 - 18, 2023
 			</div>
 			<div class="heading-text mont-700 h4">
                 <a href="#map" class="nav-link local d-inline-block" style="color: white; padding: 0px"><i class="fa fa-map-marker"></i> Brno, Czech Republic</a>
 
             </div> 
-            <div class="heading-text pt-1 mt-5">
+<!--            <div class="heading-text pt-1 mt-5">
                 <a href="https://forms.gle/VwNZVhCZWPje8Qg9A" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">FEEDBACK FORM</a>
                 <a href="/cz/schedule" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SCHEDULE WITH RECORDINGS</a>
-            </div>
+            </div>-->
             <div class="road-timeline-big">
             <ul class="timeline timeline-centered">
 			<?php
@@ -111,10 +111,10 @@
                         array("name"=>"DevConf.CZ 2022", "description"=>"Virtual", "next"=>false),
                         array("name"=>"Jun 2, 2022", "next"=>false),
                         array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>false),
-                        array("name"=>"Nov 3, 2022", "next"=>true),
-                        array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>true),
-                        array("name"=>"Mar/Apr, 2023", "next"=>false),
+                        array("name"=>"Nov 3, 2022", "next"=>false),
                         array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>false),
+                        array("name"=>"Mar/Apr, 2023", "next"=>true),
+                        array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>true),
                         array("name"=>"Jun, 2023", "next"=>false),
                         array("name"=>"DevConf.CZ 2023", "description"=>"Brno/Virtual", "next"=>false),
 					  );
