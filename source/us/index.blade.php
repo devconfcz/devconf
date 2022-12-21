@@ -16,7 +16,7 @@
 @endsection
 
 @section('title')
-<title>DevConf.US 2022</title>
+<title>DevConf.US 2023</title>
 @endsection
 
 
@@ -36,9 +36,9 @@
 				<li class="nav-item active px-3">
 					<a href="#news" class="nav-link local">News</a>
 				</li>
-				<li class="nav-item active px-3">
+				<!-- <li class="nav-item active px-3">
 				<a href="https://devconfus2022.sched.com" class="nav-link local" target="_blank">Schedule</a>
-				</li>
+				</li> -->
 				<!-- <li class="nav-item active px-3">
 					<a href="#video-tour" class="nav-link local">Video tour</a>
 				</li> -->
@@ -74,15 +74,15 @@
 			<!-- <div class="virtual-stamp mont-700">
                 virtual event
             </div> -->
-            <div class="heading-text pt-1 mt-2">
+            <!-- <div class="heading-text pt-1 mt-2">
             <a href="https://events.redhat.com/profile/form/index.cfm?PKformID=0x607868abcd" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">REGISTER NOW!!</a>
-            </div>
+            </div> -->
             <div class="heading-text mont-700 h3 pt-1">
                 <div>
-				    August 17, 2022 Workshops
+				    August 16, 2023 Workshops
                 </div>
                 <div>
-				    August 18-20, 2022 General Sessions
+				    August 17-19, 2023 General Sessions
                 </div>
             </div>
 			<div class="heading-text mont-700 h4">
@@ -104,14 +104,14 @@
 			<img src="/assets/images/devconf-d-boston.png" class="mw-100" alt="Boston DevConf image asset">
 		</div>
 		<div class="col-lg-6 px-5">
-			<h1 id="going-virtual" class="mont-700 pb-4">DevConf.US 2022 is Back in Person!</h1>
+			<h1 id="going-virtual" class="mont-700 pb-4">DevConf.US 2023 is Back in Person!</h1>
 			<!-- <div class="os-400">
                 <p>While we are disappointed that we won’t be able to see you all in
 				person again, we are glad to be back as a virtual event. There will be many opportunities to share and connect with the open source community. Check out the <a href="https://devconfus2022.sched.com">schedule</a> and mark your calendars!</p>
 			</div> -->
 			<h1 class="mont-700 underline pb-4">About DevConf</h1>
 			<div class="os-400">
-                <p>DevConf.US 2022 is the 5th annual, free, Red Hat sponsored technology conference for community project and professional contributors to Free and Open Source technologies
+                <p>DevConf.US 2023 is the 6th annual, free, Red Hat sponsored technology conference for community project and professional contributors to Free and Open Source technologies
 		 at <strong>Boston University</strong> in the historic city of Boston, USA.</p>
 
         <p>There is no admission or ticket charge for DevConf.US events. However, you are required to complete a free registration. Talks, presentations, and workshops will all be in English.</p>
@@ -177,7 +177,7 @@
 		<!-- Keep in pairs -->
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">Jan 29, 2022</div>
+				<div class="col-4 h5 mont-700">Jan 20, 2023</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">CfP Opens</div>
@@ -187,7 +187,7 @@
 		</div>
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">April 15, 2022</div>
+				<div class="col-4 h5 mont-700">April 03, 2023</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">CfP Closes</div>
@@ -201,7 +201,7 @@
 	<div class="row">
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">Week of June 21, 2022</div>
+				<div class="col-4 h5 mont-700">Week of June 12, 2023</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">Schedule Published & Registration Opens</div>
@@ -211,10 +211,10 @@
 		</div>
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">August 17, 2022</div>
+				<div class="col-4 h5 mont-700">August 16, 2023</div>
 				<div class="col-8">
 					<div class="row">
-						<div class="col mont-600">Workshops and Centos Dojo Day</div>
+						<div class="col mont-600">Workshops</div>
 					</div>
 				</div>
 			</div>
@@ -225,7 +225,7 @@
 	<div class="row">
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">August 18, 2022</div>
+				<div class="col-4 h5 mont-700">August 17, 2023</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">Conference Day 1</div>
@@ -235,7 +235,7 @@
 		</div>
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">August 19, 2022</div>
+				<div class="col-4 h5 mont-700">August 18, 2023</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">Conference Day 2</div>
@@ -249,7 +249,7 @@
 	<div class="row">
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">August 20, 2022</div>
+				<div class="col-4 h5 mont-700">August 19, 2023</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">Conference Day 3</div>
@@ -284,10 +284,10 @@
 </div>
 <div class="row">
 	<div class="col-10 mx-auto">
-		<p class="os-400"><span class="h6 mont-700">Jan 29, 2022</span> We have published a <a href="/assets/files/devconfUS-cfp-help.pdf" target="_blank">CfP help guide</a> to help you write an awesome proposal!</p>
-		<p class="os-400"><span class="h6 mont-700">Jan 29, 2022</span> Join our <a href="https://discord.gg/devconf" target="_blank">Discord server</a>. Reach out to us in the <b>#cfp-help</b> channel for any help with proposals.</p>
-		<p class="os-400"><span class="h6 mont-700">Jun 21, 2022</span> <a href="https://devconfus2022.sched.com" target="_blank">Schedule</a> is live!</p>
-		<p class="os-400"><span class="h6 mont-700">Jun 21, 2022</span> <a href="https://events.redhat.com/profile/form/index.cfm?PKformID=0x607868abcd" target="_blank">Registration</a> is live!</p>
+		<p class="os-400"><span class="h6 mont-700">Jan 20, 2023</span> We have published a <a href="/assets/files/devconfUS-cfp-help.pdf" target="_blank">CfP help guide</a> to help you write an awesome proposal!</p>
+		<p class="os-400"><span class="h6 mont-700">Jan 20, 2023</span> Join our <a href="https://discord.gg/devconf" target="_blank">Discord server</a>. Reach out to us in the <b>#cfp-help</b> channel for any help with proposals.</p>
+		<!-- <p class="os-400"><span class="h6 mont-700">Jun 21, 2022</span> <a href="https://devconfus2022.sched.com" target="_blank">Schedule</a> is live!</p>
+		<p class="os-400"><span class="h6 mont-700">Jun 21, 2022</span> <a href="https://events.redhat.com/profile/form/index.cfm?PKformID=0x607868abcd" target="_blank">Registration</a> is live!</p> -->
 	</div>
 </div>
 </section>
