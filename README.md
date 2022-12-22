@@ -36,7 +36,7 @@ For template rendering, we are using [Jigsaw](https://jigsaw.tighten.co/) framew
 To set up Jigsaw environment for devconf, use following command:
 
 ```
-$ composer require tightenco/jigsaw
+$ composer require tightenco/jigsaw -W
 ```
 
 To be able to regenerate CSS and JS assets, you have to install all required node_modules.
