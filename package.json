@@ -15,10 +15,10 @@
         "extra-watch-webpack-plugin": "^1.0.3",
         "hasbin": "^1.2.3",
         "highlight.js": "^10.5.0",
-        "laravel-mix": "^4.0.0",
+        "laravel-mix": "^6.0.49",
         "node-cmd": "^3.0.0",
         "sass": "^1.30.0",
-        "sass-loader": "^7.1.0",
+        "sass-loader": "^13.2.0",
         "vue-template-compiler": "^2.6.12",
         "yargs": "^4.6.0"
     },
