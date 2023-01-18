@@ -215,9 +215,9 @@
                         array("name"=>"Edge, Mobile and Automotive", "description"=>"Modern embedded systems, microcontrollers, management of embedded systems, infrastructure for embedded systems, resource optimization and resource lean appliances, peripherals, tools for specific use cases, and edge in automotive."),
                         array("name"=>"HPC, Big Data and Data Science", "description"=>"High performance systems, data storing and processing, best practices for data lakes/data mesh, and parallelism and vector computing."),
                         array("name"=>"Linux Distributions and Operating Systems", "description"=>"Firmware, Linux kernel, base platform for containers, unorchestrated containers, desktop, updates from Fedora land, Silverblue, CentOS Stream, etc.<br><br>OS building and distribution, release management topics, package manager tools, data driven package management, integrating components into the system."),
+                        array("name"=>"DevOps and Automation, Security and Compliance", "description"=>"How to define a release pipeline, how to automate developer environments, how to build developer sandboxes, how to ensure application uptime, continuous application development, agile development, SRE tools and best practices, AppOps and testing in DevOps environments.<br><br>Embedded intelligence in products for automation, IoB (internet of behaviors), analytics and automated remediation capabilities, risk and change analysis, AI powered orchestration, and machine learning in test automation (i.e, test failure analysis, test generation, and test selection)."),
                         array("name"=>"Application and Services Development", "description"=>"Build and deploy apps, modern application development, services development and challenges with running applications in cloud, application monitoring and cloud-ready apps, application modernization, single-sourcing documentation, etc."),
                         array("name"=>"Open Source Success Stories", "description"=>"Customer success stories with open source, examples of open source initiatives in public sector, open source projects in academia.<br><br>Ideas for new open source projects (includes lightning talks for pitching new ideas!)"),
-                        array("name"=>"DevOps and Automation, Security and Compliance", "description"=>"How to define a release pipeline, how to automate developer environments, how to build developer sandboxes, how to ensure application uptime, continuous application development, agile development, SRE tools and best practices, AppOps and testing in DevOps environments.<br><br>Embedded intelligence in products for automation, IoB (internet of behaviors), analytics and automated remediation capabilities, risk and change analysis, AI powered orchestration, and machine learning in test automation (i.e, test failure analysis, test generation, and test selection)."),
                         array("name"=>"Agility, Leadership and DEI", "description"=>"Agile practices, UX, design/design thinking, community management and open source in education, open management practices.<br><br>Diversity, Equity and Inclusion topics (DEI)."),
                         array("name"=>"Open track", "description"=>"Open to any other topics!<br><br>Open Source student projects, diploma and bachelor thesis presentations, ideas for new projects and any other topic that does not fit into listed themes.")
 					  );
@@ -335,12 +335,6 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
             <p class="os-400"><span class="h6 mont-700">Jan 18, 2023</span> <a href="https://cfp.devconf.info" target="_blank">CfP opens</a>, deadline to submit proposals is Mar 10, 2023.</p>
             <p class="os-400"><span class="h6 mont-700">Dec 12, 2022</span> DevConf.CZ 2023 dates announced: Jun 16-18, 2023.</p>
             <p class="os-400"><span class="h6 mont-700">Oct 4, 2022</span> <a href="https://www.eventbrite.com/e/devconfcz-mini-november-2022-tickets-430870755027" target="_blank">Registration</a> for autumn Mini event is open.</p>
-            <p class="os-400"><span class="h6 mont-700">Jul 1, 2022</span> All recordings are available on our <a href="https://youtube.com/playlist?list=PLU1vS0speL2aLakeh8x2v3HA5a2Oqa_P_" target="_blank">YouTube channel</a>! If you missed the keynote or any of the sessions check them out. Photos from DevConf.cz MINI are available <a target="_blank" href="https://photos.app.goo.gl/iCC8B2wH18a32RHQA">here</a>.</p> 
-            <p class="os-400"><span class="h6 mont-700">May 5, 2022</span> <a href="https://www.eventbrite.com/e/devconfcz-mini-2022-tickets-208626797367" target="_blank">Registration</a> is open and <a target="_blank" href="https://devconfczmini2022.sched.com">Schedule</a> is live.</p>
-            <p class="os-400"><span class="h6 mont-700">Apr 11, 2022</span> New local, in-person version of DevConf.CZ announced: DevConf.cz Mini</p>
-            <p class="os-400"><span class="h6 mont-700">Feb 7, 2022</span> DevConf.CZ 2022 recordings are available on demand on our <a href="https://www.youtube.com/playlist?list=PLU1vS0speL2bf9Zfa0pHQLPBhEKbbbsua" target="_blank">YouTube channel</a></p>
-            <p class="os-400"><span class="h6 mont-700">Jan 4, 2022</span> Call for Lightning Talks reopened. <a href="https://cfp.devconf.info" target="_blank">Submit a pre-recorded lightning talk</a> by Jan 14, 2022.</p>
-			<p class="os-400"><span class="h6 mont-700">Jul 21, 2021</span> Join our <a href="https://discord.gg/devconf" target="_blank">Discord server</a> to connect with other attendees, speakers and organizers before the event.</p>
 		</div>
 		<div class="col-lg-4 px-5 mx-auto">
 		        <form action="https://devconf.us5.list-manage.com/subscribe/post?u=ad2f341fc41f78b232f2765e6&id=acab0ee8de" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate px-2 py-3 bordered text-center" target="_blank" novalidate>
@@ -456,11 +450,11 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 			</div>
 		</div>
 	</div>
-</section> -->
+</section> 
 <section class="col-12 px-0 mt-5" style="height: 450px;" id="map">
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2256.0277944515196!2d16.598010589157468!3d49.209899867172716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712946af848abab%3A0xcbdad60137e0b956!2sFaculty%20of%20Informatics%20Masaryk%20University!5e0!3m2!1sen!2scz!4v1652788388079!5m2!1sen!2scz" loading="lazy" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-</section>
+</section>-->
 @endsection
 
 @include('_layouts.footercz')
