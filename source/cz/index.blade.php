@@ -16,7 +16,7 @@
 @endsection
 
 @section('title')
-<title>DevConf.CZ 2022</title>
+<title>DevConf.CZ 2023</title>
 @endsection
 
 
@@ -99,24 +99,28 @@
 
             </div> 
             <div class="heading-text pt-1 mt-5">
-                <a href="https://forms.gle/VwNZVhCZWPje8Qg9A" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">FEEDBACK FORM</a>
-                <a href="/cz/schedule" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SCHEDULE WITH RECORDINGS</a>
+                <a href="https://cfp.devconf.info" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">Call for Proposals is open</a>
+                <span>Deadline to submit proposals is March 10, 2023</span>                
             </div>
             <div class="road-timeline-big">
             <ul class="timeline timeline-centered">
 			<?php
 
 				$roadmap = array(
-						array("name"=>"Jan 28-29, 2022", "next"=>false),
-                        array("name"=>"DevConf.CZ 2022", "description"=>"Virtual", "next"=>false),
-                        array("name"=>"Jun 2, 2022", "next"=>false),
+                        array("name"=>"Jan 18, 2023", "next"=>false),
+                        array("name"=>"DevConf.CZ 2023 CfP opens", "description"=>"", "next"=>false),
+                        array("name"=>"Mar 10, 2023", "next"=>true),
+                        array("name"=>"DevConf.CZ 2023 CfP closes", "description"=>"", "next"=>true),
+                        array("name"=>"Mar, 2023", "next"=>true),
                         array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>false),
-                        array("name"=>"Nov 3, 2022", "next"=>true),
-                        array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>true),
-                        array("name"=>"Mar/Apr, 2023", "next"=>false),
-                        array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>false),
-                        array("name"=>"Jun, 2023", "next"=>false),
+                        array("name"=>"Apr, 2023", "next"=>false),
+                        array("name"=>"DevConf.CZ 2023 schedule published", "description"=>"", "next"=>false),
+                        array("name"=>"Apr, 2023", "next"=>true),
+                        array("name"=>"DevConf.CZ 2023 registration opens", "description"=>"", "next"=>true),
+                        array("name"=>"Jun 16-18, 2023", "next"=>false),
                         array("name"=>"DevConf.CZ 2023", "description"=>"Brno/Virtual", "next"=>false),
+                        array("name"=>"Oct/Nov, 2023", "next"=>false),
+                        array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>false),
 					  );
 
 				foreach($roadmap as $i=>$t){
@@ -206,15 +210,16 @@
 			<?php
 
 				$topics = array(
-						array("name"=>"Cloud & Hyperscale","description"=>"Topics around Kubernetes, quantum computing, high availability, *aaS, anything that powers large data centers or small private clouds, best practices for development, and operations at scale, resource efficiency, etc."),
-                        array("name"=>"Future Tech and Open Research", "description"=>"What’s next? Any topics that are currently being discussed or actively researched yet their impact is still potential. Best practices and great examples of open source research collaborations are welcome."),
-                        array("name"=>"Edge Computing", "description"=>"Modern embedded systems, microcontrollers, management of embedded systems, infrastructure for embedded systems, resource optimization, peripherals, tools, and edge in automotive are some of the topic ideas appropriate for this track."),
+						array("name"=>"Cloud, Hybrid Cloud and Hyperscale Infrastructure","description"=>"Topics around Kubernetes, high availability, anything that powers large data centers or small private clouds, best practices for infrastructure management and operations at scale, resource efficiency, setting up developer environments. Topic related to virtualization and kubernetes."),
+                        array("name"=>"Future Tech and Open Research", "description"=>"What’s next? Any topics that are discussed or actively researched yet their impact is still potential. Best practices and great examples of open source research collaborations are welcome.<br><br>Trending topics from software development, metaverse, new trends in existing areas such as microservices, distributed computing, and continuous improvement, observability, quantum computing."),
+                        array("name"=>"Edge, Mobile and Automotive", "description"=>"Modern embedded systems, microcontrollers, management of embedded systems, infrastructure for embedded systems, resource optimization and resource lean appliances, peripherals, tools for specific use cases, and edge in automotive."),
                         array("name"=>"HPC, Big Data and Data Science", "description"=>"High performance systems, data storing and processing, best practices for data lakes/data mesh, and parallelism and vector computing."),
-                        array("name"=>"Open Source UX/Design", "description"=>"Open source practices for UX and UIs, Design Thinking, Service Design, UX and Customer Experience. How to get users and customers involved in software design and other best practices."),
-                        array("name"=>"Open Source Education", "description"=>"Improving how students learn—and how instructors teach— withOpen Source. Open Source tools that facilitate education, as well as the overall education community that operates in an open source way (MOOC's, free bootcamps, university relations, etc)."),
-                        array("name"=>"Modern Software Development", "description"=>"Trending topics from software development, application modernization, new trends, microservices, distributed computing and continuous improvement. Development of secure code, code validation and verification."),
-                        array("name"=>"Analysis, Testing and Automation", "description"=>"Embedded intelligence in products for automation, IoB - internet of behaviours, analytics and automated remediation capabilities, risk and change analysis, AI powered orchestration, and machine learning in analysis and test automation (i.e, test failure analysis, test generation, and test selection)."),
-                        array("name"=>"Linux distribution", "description"=>"Firmware, Linux kernel, base platform for containers, desktop, Silverblue, and upgrades."),
+                        array("name"=>"Linux Distributions and Operating Systems", "description"=>"Firmware, Linux kernel, base platform for containers, unorchestrated containers, desktop, updates from Fedora land, Silverblue, CentOS Stream, etc.<br><br>OS building and distribution, release management topics, package manager tools, data driven package management, integrating components into the system."),
+                        array("name"=>"Application and Services Development", "description"=>"Build and deploy apps, modern application development, services development and challenges with running applications in cloud, application monitoring and cloud-ready apps, application modernization, single-sourcing documentation, etc."),
+                        array("name"=>"Open Source Success Stories", "description"=>"Customer success stories with open source, examples of open source initiatives in public sector, open source projects in academia.<br><br>Ideas for new open source projects (includes lightning talks for pitching new ideas!)"),
+                        array("name"=>"DevOps and Automation, Security and Compliance", "description"=>"How to define a release pipeline, how to automate developer environments, how to build developer sandboxes, how to ensure application uptime, continuous application development, agile development, SRE tools and best practices, AppOps and testing in DevOps environments.<br><br>Embedded intelligence in products for automation, IoB (internet of behaviors), analytics and automated remediation capabilities, risk and change analysis, AI powered orchestration, and machine learning in test automation (i.e, test failure analysis, test generation, and test selection)."),
+                        array("name"=>"Agility, Leadership and DEI", "description"=>"Agile practices, UX, design/design thinking, community management and open source in education, open management practices.<br><br>Diversity, Equity and Inclusion topics (DEI)."),
+                        array("name"=>"Open track", "description"=>"Open to any other topics!<br><br>Open Source student projects, diploma and bachelor thesis presentations, ideas for new projects and any other topic that does not fit into listed themes.")
 					  );
 
 				foreach($topics as $i=>$t){
@@ -327,6 +332,8 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 	</div>
 	<div class="row">
 		<div class="col-lg-6 px-5 mx-auto">
+            <p class="os-400"><span class="h6 mont-700">Jan 18, 2023</span> <a href="https://cfp.devconf.info" target="_blank">CfP opens</a>, deadline to submit proposals is Mar 10, 2023.</p>
+            <p class="os-400"><span class="h6 mont-700">Dec 12, 2022</span> DevConf.CZ 2023 dates announced: Jun 16-18, 2023.</p>
             <p class="os-400"><span class="h6 mont-700">Oct 4, 2022</span> <a href="https://www.eventbrite.com/e/devconfcz-mini-november-2022-tickets-430870755027" target="_blank">Registration</a> for autumn Mini event is open.</p>
             <p class="os-400"><span class="h6 mont-700">Jul 1, 2022</span> All recordings are available on our <a href="https://youtube.com/playlist?list=PLU1vS0speL2aLakeh8x2v3HA5a2Oqa_P_" target="_blank">YouTube channel</a>! If you missed the keynote or any of the sessions check them out. Photos from DevConf.cz MINI are available <a target="_blank" href="https://photos.app.goo.gl/iCC8B2wH18a32RHQA">here</a>.</p> 
             <p class="os-400"><span class="h6 mont-700">May 5, 2022</span> <a href="https://www.eventbrite.com/e/devconfcz-mini-2022-tickets-208626797367" target="_blank">Registration</a> is open and <a target="_blank" href="https://devconfczmini2022.sched.com">Schedule</a> is live.</p>
