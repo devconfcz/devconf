@@ -100,7 +100,7 @@
             </div> 
             <div class="heading-text pt-1 mt-5">
                 <a href="https://cfp.devconf.info" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">Call for Proposals is open</a>
-                <span>Deadline to submit proposals is March 10, 2023</span>                
+                <br><span>Deadline to submit proposals is March 10, 2023</span>                
             </div>
             <div class="road-timeline-big">
             <ul class="timeline timeline-centered">
@@ -109,14 +109,14 @@
 				$roadmap = array(
                         array("name"=>"Jan 18, 2023", "next"=>false),
                         array("name"=>"DevConf.CZ 2023 CfP opens", "description"=>"", "next"=>false),
-                        array("name"=>"Mar 10, 2023", "next"=>true),
-                        array("name"=>"DevConf.CZ 2023 CfP closes", "description"=>"", "next"=>true),
+                        array("name"=>"Mar 10, 2023", "next"=>false),
+                        array("name"=>"DevConf.CZ 2023 CfP closes", "description"=>"", "next"=>false),
                         array("name"=>"Mar, 2023", "next"=>true),
-                        array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>false),
+                        array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>true),
                         array("name"=>"Apr, 2023", "next"=>false),
                         array("name"=>"DevConf.CZ 2023 schedule published", "description"=>"", "next"=>false),
-                        array("name"=>"Apr, 2023", "next"=>true),
-                        array("name"=>"DevConf.CZ 2023 registration opens", "description"=>"", "next"=>true),
+                        array("name"=>"Apr, 2023", "next"=>false),
+                        array("name"=>"DevConf.CZ 2023 registration opens", "description"=>"", "next"=>false),
                         array("name"=>"Jun 16-18, 2023", "next"=>false),
                         array("name"=>"DevConf.CZ 2023", "description"=>"Brno/Virtual", "next"=>false),
                         array("name"=>"Oct/Nov, 2023", "next"=>false),
