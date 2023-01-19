@@ -3,7 +3,7 @@
     <title>DevConf.CZ Blog</title>
     <link href="/blog" />
     <link type="application/atom+xml" rel="self" href="/cz/blog/feed.atom" />
-    <updated>2023-01-18T11:06:00+00:00</updated>
+    <updated>2023-01-19T07:02:39+00:00</updated>
     <id>/cz/blog/feed.atom</id>
     <author>
         <name>Josef Ridky &lt;jridky@redhat.com&gt;</name>
@@ -27,11 +27,11 @@
 
 <h2>Make it relevant and engaging</h2>
 
-<p>DevConf.CZ 2023 is built around <a href="https://www.devconf.info/cz/#themes">a&nbsp;list of themes</a> we believe are attractive for attendees as well as speakers but we're also open to other high-quality talk suggestions. There are a&nbsp;range of questions about the speaker and content in the CfP form. The title and abstract are the most important aspects of your submission as they are the primary focus of the Reviewing Committee and they become the most prominent part that will attract attendees during the conference. In case the Reviewing Committee needs further clarification, they will reach out to you during the reviewing period (after the CfP is closed).</p>
-
-<p>We are interested in technical sessions and speakers who are not afraid to dive deep into details of the area of their interest. Sessions with a&nbsp;lot of audience interactions and demos are highly encouraged. We're not looking for an overview or high-level topics. Make sure to avoid product pitches and marketing presentations.</p>
+<p>DevConf.CZ 2023 is built around <a href="https://www.devconf.info/cz/#themes">a&nbsp;list of themes</a> we believe are attractive for attendees as well as speakers but we're also open to other high-quality talk suggestions. We are interested in technical sessions and speakers who are not afraid to dive deep into details of the area of their interest. Sessions with a&nbsp;lot of audience interactions and demos are highly encouraged. We're not looking for an overview or high-level topics. Make sure to avoid product pitches and marketing presentations.</p>
 
 <p>Those with a&nbsp;keen eye for detail might have noticed the crystal ball in DevConf.CZ logo. The motto of the conference is “<strong>&#35;define future</strong>” and the future is what we're interested in. We'd like to see emerging topics that might hit mainstream engineering in 1-2 years. Talking about new and upcoming work generally increases your chance of acceptance.</p>
+
+<p>There is a&nbsp;range of questions about the speaker and content in the CfP form. The title and abstract are the most important aspects of your submission as they are the primary focus of the Reviewing Committee and they become the most prominent part that will attract attendees during the conference. In case the Reviewing Committee needs further clarification, they will reach out to you during the reviewing period (after the CfP is closed).</p>
 
 <h2>Select the right session type</h2>
 

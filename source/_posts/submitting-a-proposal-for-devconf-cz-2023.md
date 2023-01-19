@@ -17,11 +17,11 @@ First and foremost, make sure you submit your proposal on time and sooner rather
 
 ## Make it relevant and engaging
 
-DevConf.CZ 2023 is built around [a&nbsp;list of themes](https://www.devconf.info/cz/#themes) we believe are attractive for attendees as well as speakers but we're also open to other high-quality talk suggestions. There are a&nbsp;range of questions about the speaker and content in the CfP form. The title and abstract are the most important aspects of your submission as they are the primary focus of the Reviewing Committee and they become the most prominent part that will attract attendees during the conference. In case the Reviewing Committee needs further clarification, they will reach out to you during the reviewing period (after the CfP is closed).
-
-We are interested in technical sessions and speakers who are not afraid to dive deep into details of the area of their interest. Sessions with a&nbsp;lot of audience interactions and demos are highly encouraged. We're not looking for an overview or high-level topics. Make sure to avoid product pitches and marketing presentations.
+DevConf.CZ 2023 is built around [a&nbsp;list of themes](https://www.devconf.info/cz/#themes) we believe are attractive for attendees as well as speakers but we're also open to other high-quality talk suggestions. We are interested in technical sessions and speakers who are not afraid to dive deep into details of the area of their interest. Sessions with a&nbsp;lot of audience interactions and demos are highly encouraged. We're not looking for an overview or high-level topics. Make sure to avoid product pitches and marketing presentations.
 
 Those with a&nbsp;keen eye for detail might have noticed the crystal ball in DevConf.CZ logo. The motto of the conference is “**\#define future**” and the future is what we're interested in. We'd like to see emerging topics that might hit mainstream engineering in 1-2 years. Talking about new and upcoming work generally increases your chance of acceptance.
+
+There is a&nbsp;range of questions about the speaker and content in the CfP form. The title and abstract are the most important aspects of your submission as they are the primary focus of the Reviewing Committee and they become the most prominent part that will attract attendees during the conference. In case the Reviewing Committee needs further clarification, they will reach out to you during the reviewing period (after the CfP is closed).
 
 ## Select the right session type
 
