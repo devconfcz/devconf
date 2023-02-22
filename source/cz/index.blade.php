@@ -99,7 +99,7 @@
                         <a href="#map" class="nav-link local d-inline-block" style="color: white; padding: 0px"><i class="fa fa-map-marker"></i> Brno, Czech Republic</a>
                     </div> 
                     <div style="padding: 0 0 0 3rem" class="my-1">
-                        <div class="hybrid-chip">Wide range of conference themes</div>
+                        <div class="hybrid-chip"><a href="#themes" class="nav-link local p-0" style="color: white">Wide range of conference themes</a></div>
                     </div>
                     <div class="heading-text pt-1 pt-xl-5 mt-5">
                         <a href="https://cfp.devconf.info" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">Call for Proposals is open</a>
