@@ -77,31 +77,59 @@
 			</div>
 <!--            <div class="mini-stamp d-none d-lg-block">
                 <span class="mont-700">MINI</span><br>LOCAL<br>IN-PERSON<br>CONFERENCE
-            </div>
+            </div> 
             <div style="padding: 0 0 0 3rem" class="my-1 d-lg-none">
                 <div class="mini-chip">
                     <span class="mont-700">MINI</span> LOCAL IN-PERSON CONFERENCE
                 </div>
-            </div>
+            </div>-->
 
-            <div style="padding: 0 0 0 3rem" class="my-1">
-                <div class="mini-chip">Cloud & Hyperscale</div>
-                <div class="mini-chip">Edge Computing</div>
-            </div>
-            <div style="padding: 0 0 0 3rem" class="my-1">
-                <div class="mini-chip">Future Tech & Open Research</div>
-            </div> -->
-			<div class="heading-text mont-700 h1 pt-1 pt-lg-5">
-				June 16 - 18, 2023
-			</div>
-			<div class="heading-text mont-700 h4">
-                <a href="#map" class="nav-link local d-inline-block" style="color: white; padding: 0px"><i class="fa fa-map-marker"></i> Brno, Czech Republic</a>
-
-            </div> 
-            <div class="heading-text pt-1 mt-5">
-                <a href="https://cfp.devconf.info" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">Call for Proposals is open</a>
-                <br><span>Deadline to submit proposals is March 10, 2023</span>                
-            </div>
+            
+            <div class="row pb-5">
+			    <div class="col-xl-6">
+                    <div class="heading-text mont-700 h1 pt-1 pt-lg-5">
+				        <div class="hybrid-chip">
+                            <span class="mont-700">MAIN CONFERENCE</span>
+                        </div>
+			        </div>
+			        <div class="heading-text mont-700 h1">
+				        June 16 - 18, 2023
+			        </div>
+			        <div class="heading-text mont-700 h4">
+                        <a href="#map" class="nav-link local d-inline-block" style="color: white; padding: 0px"><i class="fa fa-map-marker"></i> Brno, Czech Republic</a>
+                    </div> 
+                    <div style="padding: 0 0 0 3rem" class="my-1">
+                        <div class="hybrid-chip">Wide range of conference themes</div>
+                    </div>
+                    <div class="heading-text pt-1 pt-xl-5 mt-5">
+                        <a href="https://cfp.devconf.info" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">Call for Proposals is open</a>
+                        <br><span>Deadline to submit proposals is March 10, 2023</span>                
+                    </div>
+   		        </div>
+   		        <div class="col-xl-6">
+			        <div class="heading-text mont-700 h1 pt-1 pt-lg-5">
+        				<div class="mini-chip">
+                            <span class="mont-700">MINI</span> CONFERENCE
+                        </div>
+		        	</div>
+        			<div class="heading-text mont-700 h1">
+                        March 31, 2023
+        			</div>
+        			<div class="heading-text mont-700 h4">
+                        <a href="#map" class="nav-link local d-inline-block" style="color: white; padding: 0px"><i class="fa fa-map-marker"></i> Brno, Czech Republic</a>
+                    </div> 
+                    <div style="padding: 0 0 0 3rem" class="my-1">
+                        <div class="mini-chip">Analysis, testing and automation</div>
+                        <div class="mini-chip">HPC, big data and data science</div>
+                        <div class="mini-chip">Open source education</div>
+                    </div>
+                    <div class="heading-text pt-1 mt-5">
+                        <a href="https://cfp.devconf.info" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">Call for Proposals is open</a>
+                        <br><span>Deadline to submit proposals for Mini conference is March 10, 2023</span>                
+                    </div>
+  		        </div>
+      		    
+   		    </div>
             <div class="road-timeline-big">
             <ul class="timeline timeline-centered">
 			<?php
@@ -111,7 +139,7 @@
                         array("name"=>"DevConf.CZ 2023 CfP opens", "description"=>"", "next"=>false),
                         array("name"=>"Mar 10, 2023", "next"=>false),
                         array("name"=>"DevConf.CZ 2023 CfP closes", "description"=>"", "next"=>false),
-                        array("name"=>"Mar, 2023", "next"=>true),
+                        array("name"=>"Mar 31, 2023", "next"=>true),
                         array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>true),
                         array("name"=>"Apr, 2023", "next"=>false),
                         array("name"=>"DevConf.CZ 2023 schedule published", "description"=>"", "next"=>false),
