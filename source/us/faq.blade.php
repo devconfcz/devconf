@@ -80,6 +80,7 @@
 
 		array("group" => "Speaker Questions", "id" => "speaker", 
 			"questions" => array( 
+				array("q" => "Can I present virtually?", "a" => "All speakers are required to give their presentation in-person in Boston."),
 				array("q" => "Can I add a co-speaker to my submission?", "a" => "Yes, please indicate on the CfP submission if you'll be co-presenting.  If you'd like to add a co-speaker to a submission or an accepted session, no worries!  Please email us at <a href='mailto:info@devconf.us'>info@devconf.us</a> with your update."),
 				array("q" => "Why does the speaker confirmation form ask you for a sched.org email address?", "a" => "We will be publishing our schedule there and having your preferred email address for that service lets us give you some editing rights for your session. Some speakers may use a different address for sched.org so we want to collect that from them. If you don’t have a preference or don’t have one already, just provide any email address you read and we will do the rest."),
 				// array("q" => "Are there any video recording guidelines?", "a" => "Yes! We have put together steps on how to record an awesome video with the open source software OBS. The steps can be found <a href='https://github.com/devconfcz/virtual-presentations/blob/master/Recording-us.md'>here</a>."),
