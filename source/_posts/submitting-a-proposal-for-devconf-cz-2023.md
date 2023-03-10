@@ -13,7 +13,7 @@ DevConf.CZ has always welcomed first-time speakers as well as seasoned pros. If 
 
 ## Don't miss the deadline
 
-First and foremost, make sure you submit your proposal on time and sooner rather than later. The DevConf.CZ 2023 **Call for Proposals ends on March 10, 2023 EOD.** We always remind the date on our [social media channels](https://twitter.com/devconf_cz) and you can also make sure you have the latest information on [our website](https://www.devconf.info/cz/). 
+First and foremost, make sure you submit your proposal on time and sooner rather than later. The DevConf.CZ 2023 **Call for Proposals ends on March 17, 2023 EOD.** We always remind the date on our [social media channels](https://twitter.com/devconf_cz) and you can also make sure you have the latest information on [our website](https://www.devconf.info/cz/). 
 
 ## Make it relevant and engaging
 
