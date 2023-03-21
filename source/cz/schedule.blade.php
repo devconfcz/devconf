@@ -57,29 +57,95 @@
 </header>
 <?php
 
-    $bgs = array("Session" => "table-danger", "Session2" => "table-primary",
-                 "Bughunting" => "table-active", "Workshop" => "table-success");
+    $bgs = array("Workshop" => "table-danger", "Analysis, Testing and Automation" => "table-primary",
+                 "HPC, Big Data and Data Science" => "table-active", "Open Source Education" => "table-success");
     $streams = array("D1"=>"https://youtu.be/AgVfF-8E36c", "D2"=>"https://youtu.be/3sfVVeT-8bI", "D3"=>"https://youtu.be/oIO6Tij7IrA");
 	$schedule = array(
 	    array("start"=>"14:00", "items"=>array(
-    	    array("end"=>"14:15", "length"=>15, "name"=>"Check in and welcome")
+    	    array("end"=>"14:15", "length"=>15, "name"=>"Check in and welcome", "description"=>"")
     	)),
+        
         array("start"=>"14:15", "items"=>array(
-            array("end"=>"14:55", "length"=>40, "name"=>"Panel discussion", "description"=>"", "track"=>"Session", "room"=>"",
-                "speakers"=>array(),
+            array("end"=>"14:55", "length"=>40, "name"=>"Opening panel discussion", "description"=>"", "room"=>"",
+                "speakers"=>array(array("name"=>"Marek Haičman")),
                 ),
-            array("end"=>"14:55", "length"=>40, "name"=>"Session", "description"=>"", "track"=>"Session", "room"=>"",
-                "speakers"=>array(),
+            )
+        ),
+        
+        array("start"=>"15:00", "items"=>array(
+            array("end"=>"15:20", "length"=>20, "name"=>"Teaching technical writing fundamentals. Lesson learned.", "description"=>"Preparing and launching the technical writing course for the university. Support and collaboration with Red Hat colleagues. Improvements, takeaways, influence over 6 classes with the university students.", "track"=>"Open Source Education", "room"=>"",
+                "speakers"=>array(array("name"=>"Alexandra Nikandrova")),
                 ),
-            array("end"=>"14:55", "length"=>40, "name"=>"Workshop", "description"=>"", "track"=>"Workshop", "room"=>"",
-                "speakers"=>array(),
+            array("end"=>"15:50", "length"=>40, "name"=>"Dealing with false failures in automated tests", "description"=>"Anything above a well isolated unit test suffers from sporadic failure with no evident reason. It complicates CI systems as it breaks smooth unattended workflow, it makes test results review time consuming and frustrating yet hides real issues if \"red\" result becomes the new standard. Some common strategies exist on how to deal with this non-deterministic behavior. Identification and understanding the root causes of test instability helps to choose the best option from these strategies and apply it to mitigate the flakiness.", "track"=>"Analysis, Testing and Automation", "room"=>"",
+                "speakers"=>array(array("name"=>"Marian Ganišin")),
                 ),
-            array("end"=>"14:55", "length"=>40, "name"=>"Bughunting", "description"=>"", "track"=>"Bughunting", "room"=>"",
-                "speakers"=>array(),
+           /* array("end"=>"15:20", "length"=>20, "name"=>"Toxicity Monitoring: Assurance of Community Health", "description"=>"The difficult aspect of community management is the detection of toxic messages, as a hostile community can destroy an otherwise successful project. Improvement of workflows by employing automatic post-processing and alerting frees the hands of moderators. In this talk, we will focus on the steps we took in the development of an NLP toxicity detection system based on a pre-trained classifier and showcase containerized services for convenient improvements and enhancements. Further, we will explore how is the system implemented into the current moderation process and used for the early detection of toxic messages, in addition to how it calculates long-term values from the ratio of toxic and non-toxic messages. These long-term values are used as a benchmark for alerting, incident identification, and mitigation as well as an overall indicator of community health. The aim of this talk is to provide a better understanding of community toxicity and its impact on Open-Source project reputation", "track"=>"Analysis, Testing and Automation", "room"=>"",
+                "speakers"=>array(array("name"=>"Václav Navrátil")),
+                ),*/
+            array("end"=>"17:00", "length"=>120, "name"=>"Your Gig with SonicPi", "description"=>"Would you like to make some friends and express yourself using music and code?<br>SonicPi is an open-source toolkit for music and digital art that lets you do just that.</p><p>Our workshop is designed for anyone interested in exploring the possibilities of SonicPi, from music enthusiasts to experienced programmers. We'll start with the basics and gradually move on to more advanced techniques, such as live coding and external hardware integration. You'll have the opportunity to experiment with various SonicPi features and experiment with your colleagues.</p><p>By the end of the workshop, you'll have a good understanding of how to use SonicPi to create your own music and digital art. To participate, all you need is a laptop with SonicPi installed, and headphones for a fully immersive experience.</p><p>We look forward to helping you unlock your creativity with SonicPi.", "track"=>"Workshop", "room"=>"",
+                "speakers"=>array(array("name"=>"Julio Faerman")),
                 )
             )
         ),
         
+        array("start"=>"15:30", "items"=>array(
+            array("end"=>"15:50", "length"=>20, "name"=>"Six principles related to how you teach and learn", "description"=>"Since we were kids, we have always seen that teachers speak and students listen. As kids, we sat in our classroom chairs just looking at the teacher in front of us “teaching” about the subjects and we were there “learning”.</p><p>As adults, we can notice that not a lot has changed. The same concepts are incorporated in how people participate in training classes. The trainer is talking and we, the learners, are listening, because the trainer is the subject matter expert, they know everything and we don’t. But researchers show that 70% of people that decide to participate in a training class to learn something new and maybe apply something on the job, already know a few things about the topic being covered.</p><p>In this talk I want to share six principles that should make every training, every class a lot more interesting and fun and where actually learners will learn. The principles and concepts apply to everything, regardless of environment (virtual or F2F) or tools used (open source or not). If you are a trainer/instructor/facilitator, you will apply these principles in your next class. If you are a learner, you will know exactly when you will be in a class really learning something or not.", "track"=>"Open Source Education", "room"=>"",
+                "speakers"=>array(array("name"=>"Fernando Colleone")),
+                ),
+            array("end"=>"15:50", "length"=>20, "name"=>"Packit: Fedora releases automated", "description"=>"Do you want to automate how you build and test your RPM packages? Do you maintain any package in Fedora and want to automate the releases? Or are you just interested in CI/CD on GitHub or GitLab, Fedora and integration of upstream projects with RPM-based Linux distributions? Then make sure to come to our talk about Packit. In this session, we would like to share our recent progress and invite you to use our automation.</p><p>Packit (https://packit.dev) started connecting upstream and downstream in 2019 and has grown rapidly since then. It is a tool and a service to help you integrate your open-source projects with RPM-based operating systems. Packit also automated the Fedora release process providing Fedora packagers with an easy way to maintain their packages.</p><p>If you are interested in all the news of what we have been working on in Packit lately or what are our plans and priorities for the future, this is the right talk for you to attend!", "track"=>"Analysis, Testing and Automation", "room"=>"",
+                "speakers"=>array(array("name"=>"Matej Focko"),array("name"=>"Laura Barcziová"),array("name"=>"František Lachman")),
+                ),
+            )
+        ),  
+        
+        array("start"=>"16:00", "items"=>array(
+            array("end"=>"16:40", "length"=>40, "name"=>"Learn deeplearning while racing autonomous cars", "description"=>"I will be presenting the donkeycar framework (https://docs.donkeycar.com/). An opensource framework written to race small radio controlled sized cars autonomously and how it is a great way to dive into deeplearning. The framework is mainly written in python, we are using Tensorflow to train the deeplearning models. The framework is usable to anyone: from low to advanced programming knowledge.</p><p>- Introduction: what is donkeycar, how it started and the community behind<br>- The core of the framework, how does it work, how do we acheive autonomous driving / racing using AI/ Deeplearning<br>- Learning even without a physical car -> a simulator we developped during covid to enable racing and remote teaching while lockdown. The simulator is also a great way to get in touch with the framework and avoid physical issues (batteries discharge, crashing into walls). (https://github.com/tawnkramer/sdsandbox).<br>- A demo of autonomous driving in the simulator ; Show some cool projects from the community", "track"=>"Open Source Education", "room"=>"",
+                "speakers"=>array(array("name"=>"Maxime Ellerbach")),
+                ),
+            array("end"=>"16:40", "length"=>40, "name"=>"[in Czech] Superpočítač Karolina - minulost, současnost a budoucnost...", "description"=>"Představení superpočítače Karolina, administrace superpočítače, rozdíly oproti klasickým serverům, kompilace a použití software a specifické případy z produkce.", "track"=>"HPC, Big Data and Data Science", "room"=>"",
+                "speakers"=>array(array("name"=>"Lukáš Krupčík")),
+                ),
+            array("end"=>"16:40", "length"=>40, "name"=>"Testing Farm - Testing System as a Service", "description"=>"Testing is an essential part of the software development process. Let's look at how the Testing Farm Team provides a significant value to other teams by offloading them from the hurdles to reliably run their tests and deal with unreliable infrastructure.</p><p>Testing Farm is an open-source Testing System as a Service. It is used as a testing backend for Fedora CI, CentOS Stream CI, Packit Github app, and RHEL9 CI. Let's look closely at the currently supported use cases, testing workloads, and integrations with the service from other CI systems, services, and users. The service is capable to run the tests in public or inside Red Hat. It uses various infrastructures for test execution, including PSI Openstack, Beaker, AWS, and Azure.</p><p>At the end of the presentation, we outline the future of the service, how we envision the service to provide value to Fedora contributors.", "track"=>"Analysis, Testing and Automation", "room"=>"",
+                "speakers"=>array(array("name"=>"Miroslav Vadkerti")),
+                )
+            )
+        ),  
+        
+        array("start"=>"17:00", "items"=>array(
+            array("end"=>"17:20", "length"=>20, "name"=>"OSS & High Schools: Inside / Outside Perspective", "description"=>"The talk summarizes the experiences with promoting Open Source Software from two different angles. It offers the perspective of a former teacher of IT subjects at High School and a current Red Hat employee doing talks and workshops about Open Source and Linux for High School students. What are the expectations of High Schools about Open Source in subject instruction? Where may Open Source and Linux fit into its curriculum? What are the limitations? Are there any common misconceptions? And is there a common ground between Open Source industry and High Schools? These are the key questions the talk would like to answer.", "track"=>"Open Source Education", "room"=>"",
+                "speakers"=>array(array("name"=>"Lukáš Kotek")),
+                ),
+            array("end"=>"17:20", "length"=>20, "name"=>"Dos and Don'ts of Messing Up with Big Data", "description"=>"When it comes to developing an application for a single user to access 1GB of data, it's not much of a challenge. However, when the application must work for thousands of users accessing the 1TB database simultaneously, many challenges can be encountered. In this talk, the focus will be on the challenges of making an application big data and cloud environment ready, particularly from the perspective of how it interacts with a database.</p><p>The talk is intended to be easily understood by medium-experienced developers, and will combine a bit of theory with a few practical examples. Several generic recommendations will be provided to keep in mind when developing an application for the cloud. By the end of the talk, attendees will have a higher chance of avoiding some of the traps in developing cloud-ready applications that access bigger databases. But don't worry, you'll not loose all the fun, there are many more traps waiting to be discovered along the way.", "track"=>"HPC, Big Data and Data Science", "room"=>"",
+                "speakers"=>array(array("name"=>"Honza Horak")),
+                ),
+            array("end"=>"17:20", "length"=>20, "name"=>"Testing and Delivery of the Base Container images", "description"=>"BCI (Base Container Image) is a new Open Source Project aimed at Developers so they can ship their applications in a container that is based on base containers and programming language stack containers. The images are compatible with any Linux and Kubernetes distribution as well as with Podman, CRI-O and containerd.</p><p>This new set of container images covers vastly different use cases and needs compared to traditional enterprise distribution images and thus requires a different approach to testing and delivery.</p><p>During this session, we will discuss how we test all these container images, how we adjusted our delivery pipeline and which challenges we faced along the way. More specifically, we have developed a new pytest plugin to ease integration testing of containers and integrated it into the existing openQA CI/CD pipeline. Come and join this session to learn how you can start testing your container images with ease as well!", "track"=>"Analysis, Testing and Automation", "room"=>"",
+                "speakers"=>array(array("name"=>"Dan Čermák")),
+                )
+            )
+        ),  
+        
+        array("start"=>"17:30", "items"=>array(
+            array("end"=>"17:50", "length"=>20, "name"=>"Significant performance improvements - first steps", "description"=>"Many developers dream about performance improvements. Dream big - how about significant performance improvements? This talk will answer questions and discuss principles of how and where to start maximizing efforts to attain significant performance improvements in your project. Principles will be explained using examples existing in DNF's codebase today.", "track"=>"Open Source Education", "room"=>"",
+                "speakers"=>array(array("name"=>"Jaroslav Mráček")),
+                ),
+            /*array("end"=>"17:50", "length"=>20, "name"=>"ML pipelines for performace result classification", "description"=>"Machine learning (ML) models are used more frequently in various industries to solve complex problems. This talk will discuss ML pipelines for automating performance result classification using MLFlow and Seldon Core.</p><p>We will explain how we train models to identify performance anomalies in real time. We will then discuss integrating these models into an automated testing pipeline using MLFlow and Seldon Core.</p><p>MLFlow is an open-source platform for managing the ML life-cycle, while Seldon Core is an open-source platform for deploying machine learning models. Using these, we can automate the process of training and deploying models.</p><p>Attendees of this talk will come away with an understanding of how to leverage ML pipelines for automating performance result classification and the benefits of using MLFlow and Seldon Core in this process. We will also demonstrate the effectiveness of our approach by presenting case studies and examples of successful deployments.", "track"=>"Analysis, Testing and Automation", "room"=>"",
+                "speakers"=>array(array("name"=>"Jozef Karabelly")),
+                ),*/
+            array("end"=>"17:50", "length"=>20, "name"=>"Run CI for everyone and still sleep at night", "description"=>"I have spent most of my professional life around development tooling: continuous integration pipelines, automated testing frameworks, static analyzers and whatnot. My current team, called \"Test Platform\", develops, operates and supports OpenShift CI: system that installs thousands of OpenShift clusters each day for the purpose of running all kinds of tests against them. A life in a test platform team is never boring: most days we are developers, sometimes we are cluster operators and sometimes we are product owners, but without a product and without a business. Everything must work all the time; when it does not, developers cannot merge. Everything must be configurable to the point of accommodating that one team who really loves their Ruby and want their clusters to run on GPUs, but at the same time everything must be rock solid.</p><p>In this not-too-serious session, I would like to talk about what it means to run tooling teams, engineering services teams and platform teams of the world: especially the ones that develop the software they run. If you are a product developer, I'll tell you why we cannot implement that one super important feature for your product to be released next week, or why I really have no idea why your CI job failed, despite being the \"CI guy\". If you are a test platform developer, I will tell you why you should implement that feature and why you should try to understand why your developer users' CI job failed. Even when it is written in Ruby and runs on GPUs.", "track"=>"Analysis, Testing and Automation", "room"=>"",
+                "speakers"=>array(array("name"=>"Petr Müller ")),
+                )
+            )
+        ),  
+        
+        array("start"=>"18:00", "items"=>array(
+            array("end"=>"18:30", "length"=>30, "name"=>"Lightning talks", "description"=>"", "room"=>""),
+            )
+        ),
+        
+        array("start"=>"18:30", "items"=>array(
+            array("end"=>"19:00", "length"=>30, "name"=>"Wrap up and move to social event", "description"=>"", "room"=>""),
+            )
+        ),
 	);
 
 ?>
@@ -127,7 +193,7 @@ foreach($schedule as $k=>$time){
 						<p><i class="fa fa-clock-o"></i>&nbsp;<?php echo $it['length']; ?> minutes<?php if(isset($it['room']) && $it['room'] != "") { ?> | <i class="fa fa-map-marker"></i>&nbsp;<?php echo $it['room']; } ?>
 						<?php if(isset($it['track'])) { ?> | <i class="fa fa-tag"></i>&nbsp;<?php echo $it['track']; } 
 						if(isset($it['description']) && $it['description']!=""){?>
-						<span  data-toggle="collapse" data-target="#it<?php echo $k.$l; ?>" aria-expanded="false" aria-controls="it<?php echo $k.$l; ?>"><i class="fa fa-chevron-down"></i></span></p> <?php } ?>
+						<span class="float-right" data-toggle="collapse" style="cursor: pointer" data-target="#it<?php echo $k.$l; ?>" aria-expanded="false" aria-controls="it<?php echo $k.$l; ?>"><i class="fa fa-chevron-down"></i></span></p> <?php } ?>
 				    </div>					
 				    <div class="collapse" id="it<?php echo $k.$l; ?>">
                         <div class="card-body <?php if(isset($it['track'])){echo $bgs[$it['track']];}else{echo "table-warning";} ?>">

@@ -39,10 +39,10 @@
 				<li class="nav-item active px-3">
 					<a href="#news" class="nav-link local">News</a>
 				</li>
-<!---				<li class="nav-item active px-3">
-					<a href="/cz/schedule" class="nav-link local">Schedule</a>
-				</li>
 				<li class="nav-item active px-3">
+					<a href="/cz/schedule" class="nav-link local">Schedule for Mini</a>
+				</li>
+<!--				<li class="nav-item active px-3">
 					<a href="#travel" class="nav-link local">How to get here?</a>
 				</li> -->
                 <li class="nav-item active px-3">
