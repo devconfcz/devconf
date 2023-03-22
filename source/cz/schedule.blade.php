@@ -138,7 +138,7 @@
         ),  
         
         array("start"=>"18:00", "items"=>array(
-            array("end"=>"18:30", "length"=>30, "name"=>"Lightning talks", "description"=>"", "room"=>""),
+            array("end"=>"18:30", "length"=>30, "name"=>"Lightning talks", "description"=>"Share your lightning talks with us! You will be able to submit your lighting talk proposals on the whiteboard during the whole event. You can start thinking about your 5-minute talk you want to share with the audience now (slide-less is fine, keep the topic related to the conference).", "room"=>""),
             )
         ),
         
