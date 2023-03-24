@@ -66,7 +66,7 @@
     	)),
         
         array("start"=>"14:15", "items"=>array(
-            array("end"=>"14:55", "length"=>40, "name"=>"Opening panel discussion", "description"=>"", "room"=>"",
+            array("end"=>"14:55", "length"=>40, "name"=>"OpenSource as a venue for an education", "description"=>"In this panel, we will focus on how open source projects can support education in a meaningful way. We will dive deep into challenges and opportunities in open source project contribution, their readiness to onboard new contributors, necessary time involvement, and desired skill sets from both sides - new contributors and project maintainers.", "room"=>"",
                 "speakers"=>array(array("name"=>"Marek Haičman")),
                 ),
             )
@@ -103,7 +103,7 @@
                 "speakers"=>array(array("name"=>"Maxime Ellerbach")),
                 ),
             array("end"=>"16:40", "length"=>40, "name"=>"[in Czech] Superpočítač Karolina - minulost, současnost a budoucnost...", "description"=>"Představení superpočítače Karolina, administrace superpočítače, rozdíly oproti klasickým serverům, kompilace a použití software a specifické případy z produkce.", "track"=>"HPC, Big Data and Data Science", "room"=>"",
-                "speakers"=>array(array("name"=>"Lukáš Krupčík")),
+                "speakers"=>array(array("name"=>"Lukáš Krupčík"), array("name"=>"Jakub Kropáček")),
                 ),
             array("end"=>"16:40", "length"=>40, "name"=>"Testing Farm - Testing System as a Service", "description"=>"Testing is an essential part of the software development process. Let's look at how the Testing Farm Team provides a significant value to other teams by offloading them from the hurdles to reliably run their tests and deal with unreliable infrastructure.</p><p>Testing Farm is an open-source Testing System as a Service. It is used as a testing backend for Fedora CI, CentOS Stream CI, Packit Github app, and RHEL9 CI. Let's look closely at the currently supported use cases, testing workloads, and integrations with the service from other CI systems, services, and users. The service is capable to run the tests in public or inside Red Hat. It uses various infrastructures for test execution, including PSI Openstack, Beaker, AWS, and Azure.</p><p>At the end of the presentation, we outline the future of the service, how we envision the service to provide value to Fedora contributors.", "track"=>"Analysis, Testing and Automation", "room"=>"",
                 "speakers"=>array(array("name"=>"Miroslav Vadkerti")),
@@ -132,7 +132,7 @@
                 "speakers"=>array(array("name"=>"Jozef Karabelly")),
                 ),*/
             array("end"=>"17:50", "length"=>20, "name"=>"Run CI for everyone and still sleep at night", "description"=>"In this not-too-serious session, I would like to talk about what it means to run tooling, engineering services, and developer platform teams of the world. Especially the ones that both develop and operate their platform software. If you are a product developer, I'll tell you why the team cannot implement that one super important feature for your product to be released next week or why I really have no idea why your CI job failed, despite being the \"CI guy.\" If you are a test platform developer, I will tell you why you still should implement that feature and why you should try to understand why your developer users' CI job failed.</p><p>I have spent most of my professional life around development tooling: continuous integration pipelines, automated testing frameworks, static analyzers, and whatnot. My former team, called \"Test Platform,\" develops, operates, and supports OpenShift CI: a system that installs thousands of OpenShift clusters daily to run all kinds of tests. Life in test platform is always exciting, usually too much! Most days, they are developers, sometimes cluster operators, and sometimes product owners, but without a product and a business. Everything must always work; when it does not, developers cannot merge. Everything must be insanely configurable, but at the same time, everything must be rock solid.", "track"=>"Analysis, Testing and Automation", "room"=>"",
-                "speakers"=>array(array("name"=>"Petr Müller ")),
+                "speakers"=>array(array("name"=>"Petr Müller")),
                 )
             )
         ),  
