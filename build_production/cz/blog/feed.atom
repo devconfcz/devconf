@@ -3,7 +3,7 @@
     <title>DevConf.CZ Blog</title>
     <link href="/blog" />
     <link type="application/atom+xml" rel="self" href="/cz/blog/feed.atom" />
-    <updated>2023-03-23T10:34:07+00:00</updated>
+    <updated>2023-03-24T06:47:10+00:00</updated>
     <id>/cz/blog/feed.atom</id>
     <author>
         <name>Josef Ridky &lt;jridky@redhat.com&gt;</name>
@@ -20,23 +20,14 @@
     <summary type="html">DevConf.CZ has always welcomed first-time speakers as well as seasoned pros. If you&#039;re a&amp;nbsp;first-time speaker or just want to make sure you learn as much as possible before submitting a&amp;nbsp;proposal, you&#039;re at the right place! We&#039;re going to cover......</summary>
     <content type="html"><![CDATA[
         <p>DevConf.CZ has always welcomed first-time speakers as well as seasoned pros. If you're a&nbsp;first-time speaker or just want to make sure you learn as much as possible before submitting a&nbsp;proposal, you're at the right place! We're going to cover all you need to know to get your proposal accepted at DevConf.CZ 2023.</p>
-
 <h2>Don't miss the deadline</h2>
-
-<p>First and foremost, make sure you submit your proposal on time and sooner rather than later. The DevConf.CZ 2023 <strong>Call for Proposals ends on March 17, 2023 EOD.</strong> We always remind the date on our <a href="https://twitter.com/devconf_cz">social media channels</a> and you can also make sure you have the latest information on <a href="https://www.devconf.info/cz/">our website</a>.</p>
-
+<p>First and foremost, make sure you submit your proposal on time and sooner rather than later. The DevConf.CZ 2023 <strong>Call for Proposals ends on March 17, 2023 EOD.</strong> We always remind the date on our <a href="https://twitter.com/devconf_cz">social media channels</a> and you can also make sure you have the latest information on <a href="https://www.devconf.info/cz/">our website</a>. </p>
 <h2>Make it relevant and engaging</h2>
-
 <p>DevConf.CZ 2023 is built around <a href="https://www.devconf.info/cz/#themes">a&nbsp;list of themes</a> we believe are attractive for attendees as well as speakers but we're also open to other high-quality talk suggestions. We are interested in technical sessions and speakers who are not afraid to dive deep into details of the area of their interest. Sessions with a&nbsp;lot of audience interactions and demos are highly encouraged. We're not looking for an overview or high-level topics. Make sure to avoid product pitches and marketing presentations.</p>
-
-<p>Those with a&nbsp;keen eye for detail might have noticed the crystal ball in DevConf.CZ logo. The motto of the conference is “<strong>&#35;define future</strong>” and the future is what we're interested in. We'd like to see emerging topics that might hit mainstream engineering in 1-2 years. Talking about new and upcoming work generally increases your chance of acceptance.</p>
-
+<p>Those with a&nbsp;keen eye for detail might have noticed the crystal ball in DevConf.CZ logo. The motto of the conference is “<strong>#define future</strong>” and the future is what we're interested in. We'd like to see emerging topics that might hit mainstream engineering in 1-2 years. Talking about new and upcoming work generally increases your chance of acceptance.</p>
 <p>There is a&nbsp;range of questions about the speaker and content in the CfP form. The title and abstract are the most important aspects of your submission as they are the primary focus of the Reviewing Committee and they become the most prominent part that will attract attendees during the conference. In case the Reviewing Committee needs further clarification, they will reach out to you during the reviewing period (after the CfP is closed).</p>
-
 <h2>Select the right session type</h2>
-
 <p>While we plan DevConf.cz 2023 as a&nbsp;hybrid event, please note that <strong>all sessions will be delivered in person</strong>. We plan to stream content online and make sure in-person as well as online audiences can participate in Q&amp;A and chat. We want to make sure the content is focused, tells the whole story, and is structured in a&nbsp;way that allows engagement for both in-person and virtual audiences.</p>
-
 <ul>
 <li><strong>Talk (35 minutes)</strong> - A&nbsp;talk is where you present with slides and demos to an audience. We recommend reserving some time in the end for Q&amp;A, e.g. a&nbsp;25-minute talk and a&nbsp;10-minute Q&amp;A. Feel free to recruit your colleagues to interact with people in chat while you are talking. A&nbsp;talk has one primary speaker, optionally another (secondary) speaker. It should be bite-sized and focused on a&nbsp;certain topic. This means that you should not expect to be able to cover multiple broad areas in one talk. You can submit more than one proposal, to cover a&nbsp;set of topics, but we cannot guarantee their final scheduled order. Therefore, we recommend you submit topics that are independent and do not need to be presented in a&nbsp;specific order.</li>
 <li><strong>Discussion (35 minutes)</strong> - A&nbsp;discussion is where you lead/moderate a&nbsp;conversation with a&nbsp;group of knowledgeable panelists who answer prepared questions or questions from the audience as selected by you for appropriateness to your topic and session goal. A&nbsp;discussion has a&nbsp;dedicated moderator and up to 3 active speakers. It is an interactive session and you’re asked to engage with the audience during the session.</li>
@@ -46,13 +37,9 @@
 <li><strong>Meetups (80 minutes)</strong> - Meetups are organized as in-person meetings. They are open to all participants, and they serve as a&nbsp;place for open discussions during the dedicated time, sharing the latest project developments and interaction with contributors and attendees. We allow up to 3 active presenters in a&nbsp;meetup.</li>
 <li><strong>Booths (all day)</strong> - A&nbsp;booth is a&nbsp;staffed table at the event. Booths are open to all participants at all times, and they serve as a&nbsp;place for conversations about the project and interaction with contributors, users, and attendees. There must be at least one person at the booth at all times. Preference is given to booths that will run all three days.</li>
 </ul>
-
 <h2>Do you need help with your submission?</h2>
-
 <p>If you still aren't 100% certain about your proposal we invite you to the DevConf.CZ 2023 CfP office hours on <strong>Friday, March 3 from 2 - 3 PM CET</strong>. (<a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;dates=20230303T130000Z%2F20230303T140000Z&amp;details=Join%20the%20google%20meet%20room%3A%20meet.google.com%2Fpoz-gxuw-pnr%0A%0ACome%20and%20discuss%20your%20proposals%20for%20DevConf.cz%202023%20as%20the%20deadline%20for%20Call%20for%20Proposals%20is%20coming%20soon%20%28March%2010%2C%202023%29.%20Please%20join%20us%20if%3A%0A%0A%2Ayou%20have%20an%20idea%20for%20a%20talk%20at%20DevConf.cz%202023%20and%20need%20some%20help%20framing%20it%2C%C2%A0%0A%2Ayou%20know%20a%20topic%20and%20would%20like%20to%20get%20some%20feedback%20to%20prepare%20a%20presentation%2C%0A%2Ayou%27re%20working%20on%20something%2C%20but%20you%20are%20not%20sure%20if%20it%20can%20be%20interesting%20for%20the%20audience%20-%20come%20and%20tell%20us%20because%20what%20may%20seem%20boring%20to%20you%20can%20be%20supremely%20useful%20to%20others%2C%C2%A0%0A%2Ayou%20don%27t%20have%20a%20topic%20in%20your%20mind%2C%20but%20you%20want%20to%20see%20what%20other%20people%20are%20submitting.%0A%C2%A0%0ACfP%20Portal%3A%20https%3A%2F%2Fcfp.devconf.info%2F%C2%A0%0AConference%20website%3A%20https%3A%2F%2Fwww.devconf.info%2Fcz%2F%0ACfP%20deadline%3A%20March%2010%2C%202023%20%20%0AConference%20dates%20-%20June%2016-18%2C%202023&amp;location=meet.google.com%2Fpoz-gxuw-pnr&amp;text=Discussion%20about%20DevConf.CZ%202023%20CfP%20topics">Google</a>, <a href="https://calendar.yahoo.com/?desc=Join%20the%20google%20meet%20room%3A%20meet.google.com%2Fpoz-gxuw-pnr%0A%0ACome%20and%20discuss%20your%20proposals%20for%20DevConf.cz%202023%20as%20the%20deadline%20for%20Call%20for%20Proposals%20is%20coming%20soon%20%28March%2010%2C%202023%29.%20Please%20join%20us%20if%3A%0A%0A%2Ayou%20have%20an%20idea%20for%20a%20talk%20at%20DevConf.cz%202023%20and%20need%20some%20help%20framing%20it%2C%C2%A0%0A%2Ayou%20know%20a%20topic%20and%20would%20like%20to%20get%20some%20feedback%20to%20prepare%20a%20presentation%2C%0A%2Ayou%27re%20working%20on%20something%2C%20but%20you%20are%20not%20sure%20if%20it%20can%20be%20interesting%20for%20the%20audience%20-%20come%20and%20tell%20us%20because%20what%20may%20seem%20boring%20to%20you%20can%20be%20supremely%20useful%20to%20others%2C%C2%A0%0A%2Ayou%20don%27t%20have%20a%20topic%20in%20your%20mind%2C%20but%20you%20want%20to%20see%20what%20other%20people%20are%20submitting.%0A%C2%A0%0ACfP%20Portal%3A%20https%3A%2F%2Fcfp.devconf.info%2F%C2%A0%0AConference%20website%3A%20https%3A%2F%2Fwww.devconf.info%2Fcz%2F%0ACfP%20deadline%3A%20March%2010%2C%202023%20%20%0AConference%20dates%20-%20June%2016-18%2C%202023&amp;et=20230303T140000Z&amp;in_loc=meet.google.com%2Fpoz-gxuw-pnr&amp;st=20230303T130000Z&amp;title=Discussion%20about%20DevConf.CZ%202023%20CfP%20topics&amp;v=60">Yahoo</a>, <a href="https://outlook.live.com/calendar/0/deeplink/compose?body=Join%20the%20google%20meet%20room%3A%20meet.google.com%2Fpoz-gxuw-pnr%0A%0ACome%20and%20discuss%20your%20proposals%20for%20DevConf.cz%202023%20as%20the%20deadline%20for%20Call%20for%20Proposals%20is%20coming%20soon%20%28March%2010%2C%202023%29.%20Please%20join%20us%20if%3A%0A%0A%2Ayou%20have%20an%20idea%20for%20a%20talk%20at%20DevConf.cz%202023%20and%20need%20some%20help%20framing%20it%2C%C2%A0%0A%2Ayou%20know%20a%20topic%20and%20would%20like%20to%20get%20some%20feedback%20to%20prepare%20a%20presentation%2C%0A%2Ayou%27re%20working%20on%20something%2C%20but%20you%20are%20not%20sure%20if%20it%20can%20be%20interesting%20for%20the%20audience%20-%20come%20and%20tell%20us%20because%20what%20may%20seem%20boring%20to%20you%20can%20be%20supremely%20useful%20to%20others%2C%C2%A0%0A%2Ayou%20don%27t%20have%20a%20topic%20in%20your%20mind%2C%20but%20you%20want%20to%20see%20what%20other%20people%20are%20submitting.%0A%C2%A0%0ACfP%20Portal%3A%20https%3A%2F%2Fcfp.devconf.info%2F%C2%A0%0AConference%20website%3A%20https%3A%2F%2Fwww.devconf.info%2Fcz%2F%0ACfP%20deadline%3A%20March%2010%2C%202023%20%20%0AConference%20dates%20-%20June%2016-18%2C%202023&amp;enddt=2023-03-03T14%3A00%3A00%2B00%3A00&amp;location=meet.google.com%2Fpoz-gxuw-pnr&amp;path=%2Fcalendar%2Faction%2Fcompose&amp;rru=addevent&amp;startdt=2023-03-03T13%3A00%3A00%2B00%3A00&amp;subject=Discussion%20about%20DevConf.CZ%202023%20CfP%20topics">Outlook</a>, <a href="https://outlook.office.com/calendar/0/deeplink/compose?body=Join%20the%20google%20meet%20room%3A%20meet.google.com%2Fpoz-gxuw-pnr%0A%0ACome%20and%20discuss%20your%20proposals%20for%20DevConf.cz%202023%20as%20the%20deadline%20for%20Call%20for%20Proposals%20is%20coming%20soon%20%28March%2010%2C%202023%29.%20Please%20join%20us%20if%3A%0A%0A%2Ayou%20have%20an%20idea%20for%20a%20talk%20at%20DevConf.cz%202023%20and%20need%20some%20help%20framing%20it%2C%C2%A0%0A%2Ayou%20know%20a%20topic%20and%20would%20like%20to%20get%20some%20feedback%20to%20prepare%20a%20presentation%2C%0A%2Ayou%27re%20working%20on%20something%2C%20but%20you%20are%20not%20sure%20if%20it%20can%20be%20interesting%20for%20the%20audience%20-%20come%20and%20tell%20us%20because%20what%20may%20seem%20boring%20to%20you%20can%20be%20supremely%20useful%20to%20others%2C%C2%A0%0A%2Ayou%20don%27t%20have%20a%20topic%20in%20your%20mind%2C%20but%20you%20want%20to%20see%20what%20other%20people%20are%20submitting.%0A%C2%A0%0ACfP%20Portal%3A%20https%3A%2F%2Fcfp.devconf.info%2F%C2%A0%0AConference%20website%3A%20https%3A%2F%2Fwww.devconf.info%2Fcz%2F%0ACfP%20deadline%3A%20March%2010%2C%202023%20%20%0AConference%20dates%20-%20June%2016-18%2C%202023&amp;enddt=2023-03-03T14%3A00%3A00%2B00%3A00&amp;location=meet.google.com%2Fpoz-gxuw-pnr&amp;path=%2Fcalendar%2Faction%2Fcompose&amp;rru=addevent&amp;startdt=2023-03-03T13%3A00%3A00%2B00%3A00&amp;subject=Discussion%20about%20DevConf.CZ%202023%20CfP%20topics">Office365</a>). You can discuss your proposal or get some tips from session reviewers and past DevConf.CZ speakers.</p>
-
-<p>You can also watch the recording of DevConf.cz talk '<a href="https://youtu.be/pL3j-6S7Dn4">Let's get your conference talk accepted</a>' or take a&nbsp;look at the <a href="https://www.devconf.info/assets/files/devconf-cz-cfp-tips.pdf">slide deck containing tips on submiting proposals</a>.</p>
-    ]]></content>
+<p>You can also watch the recording of DevConf.cz talk '<a href="https://youtu.be/pL3j-6S7Dn4">Let's get your conference talk accepted</a>' or take a&nbsp;look at the <a href="https://www.devconf.info/assets/files/devconf-cz-cfp-tips.pdf">slide deck containing tips on submiting proposals</a>.</p>    ]]></content>
 </entry>
             <entry>
     <id>/cz/blog/devconf-cz-2023</id>
@@ -64,28 +51,24 @@
         <name>Radek Vokal</name>
     </author>
     <summary type="html">Hi everyone,
-
 In previous years at around this time (Christmas) we were already collecting session proposals and shaping up the schedule for our January conference. Three days at Brno University of Technology, usually in cold weather where we were all......</summary>
     <content type="html"><![CDATA[
         <p>Hi everyone,</p>
-
-<p>In previous years at around this time (Christmas) we were already collecting session proposals and shaping up the schedule for our January conference. Three days at Brno University of Technology, usually in cold weather where we were all happy to sit in warm conference rooms and to listen to some great talks, also had some disadvantages. We had years when people got sick from the weather, when travel was awful due to snow storms and when our volunteers were freezing out helping to run the conference. And then in the following years Covid changed a&nbsp;lot and we’ve realized that having people packed in a&nbsp;venue during the flu season is not what we want to do.</p>
-
-<p>In 2023, we made a&nbsp;decision to move the conference to the beginning of summer. We're excited to announce that the next DevConf.CZ will be taking place on June 16-18, 2023 in Brno, Czech Republic. We will occupy our favorite venue at the Faculty of Information Technology of Brno University of Technology. We will run the same size of conference you’re all used to and we will have the opportunity to use the outdoors of our venue as our hallway track. We will again bring a&nbsp;mix for proven speakers and first time presenters, we are looking forward to workshops and community events collocated with the event and of course, we will bring the food trucks so we can fully enjoy the outdoor part of the conference.</p>
-
-<p>There’s another change we’re also introducing. We have a&nbsp;lot of content and we can’t fit everyone and everything to a&nbsp;single event. When we’ve looked at all session proposals, we’ve realized we have enough content for additional events that could be more focused, with a&nbsp;smaller and more specific audience. We’ve created DevConf.cz Mini as a&nbsp;half a&nbsp;day event at a&nbsp;different venue (in the future maybe even different cities) and focused on specific tracks. This looks fairly promising and we will run another event like this in the spring of 2023.</p>
-
-<p>Here are some preliminary timelines for next year
-* January - March, 2023: DevConf.CZ 2023 Call for Proposals (CfP) opens
-    * Proposals will be collected for both DevConf.CZ June conference and DevConf.cz Mini 
-* March, 2023: DevConf.cz Mini conference (place and specific dates TBD)
-* April, 2023: DevConf.CZ 2023 registration and schedule for DevConf.CZ June published
-* <strong>June 16-18, 2023: DevConf.CZ 2023 is live!</strong></p>
-
-<p>DevConf.CZ is still organized by a&nbsp;large group of volunteers. As always, we’re looking for people willing to help with various pre and during the event activities. One of the most important became the ability to stream sessions and process them on the fly during the conference. Of course there are many other tasks we always welcome help with.</p>
-
-<p>So get your session proposals ready! For DevConf.CZ 2023, we will continue with a&nbsp;set of focused tracks that would allow us to highlight trending topics. We will announce a&nbsp;set of proposed tracks which are our guardrails but at the same time are not limiting us to extend the conference based on submissions we will get from you! We welcome first time speakers, students, newbies as well as open source veterans - we want to connect people and projects!</p>
-    ]]></content>
+<p>In previous years at around this time (Christmas) we were already collecting session proposals and shaping up the schedule for our January conference. Three days at Brno University of Technology, usually in cold weather where we were all happy to sit in warm conference rooms and to listen to some great talks, also had some disadvantages. We had years when people got sick from the weather, when travel was awful due to snow storms and when our volunteers were freezing out helping to run the conference. And then in the following years Covid changed a&nbsp;lot and we’ve realized that having people packed in a&nbsp;venue during the flu season is not what we want to do. </p>
+<p>In 2023, we made a&nbsp;decision to move the conference to the beginning of summer. We're excited to announce that the next DevConf.CZ will be taking place on June 16-18, 2023 in Brno, Czech Republic. We will occupy our favorite venue at the Faculty of Information Technology of Brno University of Technology. We will run the same size of conference you’re all used to and we will have the opportunity to use the outdoors of our venue as our hallway track. We will again bring a&nbsp;mix for proven speakers and first time presenters, we are looking forward to workshops and community events collocated with the event and of course, we will bring the food trucks so we can fully enjoy the outdoor part of the conference. </p>
+<p>There’s another change we’re also introducing. We have a&nbsp;lot of content and we can’t fit everyone and everything to a&nbsp;single event. When we’ve looked at all session proposals, we’ve realized we have enough content for additional events that could be more focused, with a&nbsp;smaller and more specific audience. We’ve created DevConf.cz Mini as a&nbsp;half a&nbsp;day event at a&nbsp;different venue (in the future maybe even different cities) and focused on specific tracks. This looks fairly promising and we will run another event like this in the spring of 2023. </p>
+<p>Here are some preliminary timelines for next year</p>
+<ul>
+<li>January - March, 2023: DevConf.CZ 2023 Call for Proposals (CfP) opens
+<ul>
+<li>Proposals will be collected for both DevConf.CZ June conference and DevConf.cz Mini </li>
+</ul></li>
+<li>March, 2023: DevConf.cz Mini conference (place and specific dates TBD)</li>
+<li>April, 2023: DevConf.CZ 2023 registration and schedule for DevConf.CZ June published</li>
+<li><strong>June 16-18, 2023: DevConf.CZ 2023 is live!</strong> </li>
+</ul>
+<p>DevConf.CZ is still organized by a&nbsp;large group of volunteers. As always, we’re looking for people willing to help with various pre and during the event activities. One of the most important became the ability to stream sessions and process them on the fly during the conference. Of course there are many other tasks we always welcome help with. </p>
+<p>So get your session proposals ready! For DevConf.CZ 2023, we will continue with a&nbsp;set of focused tracks that would allow us to highlight trending topics. We will announce a&nbsp;set of proposed tracks which are our guardrails but at the same time are not limiting us to extend the conference based on submissions we will get from you! We welcome first time speakers, students, newbies as well as open source veterans - we want to connect people and projects!</p>    ]]></content>
 </entry>
             <entry>
     <id>/cz/blog/viktor-malik</id>
@@ -99,69 +82,38 @@ In previous years at around this time (Christmas) we were already collecting ses
     <summary type="html">What is it like being an open source contributor as part of your day job? Viktor Malik is a&amp;nbsp;Software Engineer at Red Hat and a&amp;nbsp;contributor to the BPFtrace project along with many others, such as DiffKemp and 2LS. We asked him about his......</summary>
     <content type="html"><![CDATA[
         <p>What is it like being an open source contributor as part of your day job? Viktor Malik is a&nbsp;Software Engineer at Red Hat and a&nbsp;contributor to the BPFtrace project along with many others, such as DiffKemp and 2LS. We asked him about his experience.</p>
-
 <blockquote>
-  <h3><strong>About Viktor Malik</strong></h3>
-  
-  <p><img src="/assets/images/blog/interviews/vmalik.jpg" alt="Profile Picture" /> Viktor Malik is a&nbsp;Software Engineer at Red Hat, contributing to the <a href="https://bpftrace.org/">BPFtrace</a> project among many other, including <a href="https://github.com/viktormalik/diffkemp">DiffKemp</a> and <a href="https://github.com/diffblue/2ls">2LS</a>. Originally from Slovakia, he currently lives in the Czech Republic, pursuing a&nbsp;PhD at the Brno University of Technology alongside his software engineering projects. When he is not at work, you can find him doing sports or spending time with his family. He’s an active volleyball player, currently playing in the Brno amateur league. His biggest inspiration is anything and everything - people, news, projects, articles, books. Victor says that his most recent source of inspiration came from the <a href="https://changelog.com/podcast">Changelog podcast</a>. You can find Viktor on  Twitter as <a href="https://twitter.com/ViktorMalikSK">@ViktorMalikSK</a>.</p>
-  
-  <p>Watch the recording of Viktor's DevConf.CZ 2022 talk: <a href="https://youtu.be/gSxntAO2Iys">Linux tracing made simpler with bpftrace</a>.</p>
+<h3><strong>About Viktor Malik</strong></h3>
+<p><img src="/assets/images/blog/interviews/vmalik.jpg" alt="Profile Picture" /> Viktor Malik is a&nbsp;Software Engineer at Red Hat, contributing to the <a href="https://bpftrace.org/">BPFtrace</a> project among many other, including <a href="https://github.com/viktormalik/diffkemp">DiffKemp</a> and <a href="https://github.com/diffblue/2ls">2LS</a>. Originally from Slovakia, he currently lives in the Czech Republic, pursuing a&nbsp;PhD at the Brno University of Technology alongside his software engineering projects. When he is not at work, you can find him doing sports or spending time with his family. He’s an active volleyball player, currently playing in the Brno amateur league. His biggest inspiration is anything and everything - people, news, projects, articles, books. Victor says that his most recent source of inspiration came from the <a href="https://changelog.com/podcast">Changelog podcast</a>. You can find Viktor on  Twitter as <a href="https://twitter.com/ViktorMalikSK">@ViktorMalikSK</a>. </p>
+<p>Watch the recording of Viktor's DevConf.CZ 2022 talk: <a href="https://youtu.be/gSxntAO2Iys">Linux tracing made simpler with bpftrace</a>.</p>
 </blockquote>
-
 <h3>Q: How did you start contributing to BPFtrace?</h3>
-
 <p>My start was pretty simple. It was two years ago when I&nbsp;switched teams within Red Hat and moved into the Linux kernel team, where I&nbsp;started working on a&nbsp;tool called BPFtrace. We quickly realised that when we want to improve this tool and the user experience that goes with it, the best way to do so is to contribute to the upstream project. So I&nbsp;started contributing to BPFtrace, started figuring out some simple bug fixes, and then got into more complicated stuff.</p>
-
 <p>Even though my contributions to this project have been purely work-related,  I&nbsp;find it hard to separate my free time from the time I&nbsp;spend at work. It’s because sometimes, when an issue  requires my attention, I&nbsp;have no problem working on it outside of my official working hours. But, of course, I&nbsp;try to not think about work on my days off!</p>
-
 <h3>Q: What makes BPFtrace stand out to you?</h3>
-
 <p>BPF technology is one of the coolest things about the Linux kernel these days, and that is why I&nbsp;am very excited to work with it. I'm also a&nbsp;PhD student, and in my research I&nbsp;focus on analysing software software, so this is somewhat related to what I'm doing, and I'm interested in this area.</p>
-
 <p>And for those of you who are not familiar with BPFtrace, BPF technology is part of the Linux kernel, which is the core of GNU/Linux operating systems. It is a&nbsp;fairly recent addition to the kernel, having been introduced into the kernel codebase only about eight years ago. This technology allows you to execute user code inside a&nbsp;running Linux kernel, which is something that wasn't possible before. Previously, if you wanted to execute your code, the simplest way you could do so was by compiling it as a&nbsp;kernel module and then loading the module into the kernel. Now, you can execute your own code without having to modify the kernel, load additional kernel modules, or, basically, do anything extra.</p>
-
 <p>One of the two biggest use cases for this is tracing the processes inside a&nbsp;running system (the other use-case is networking). Sometimes you want to know what's going on with your system while it’s running, for example, because your system is slow, or you are experiencing some network problems. Tracing allows you to identify the source of these problems and  gather potentially useful information about your system (e.g., what processes are running, what files they're opening, what functions they are calling).</p>
-
 <p>BPFtrace is a&nbsp;tool that allows you to do this using the BPF technology in the Linux kernel in a&nbsp;very quick way. It provides its own high-level programming language, which allows you to write so-called probes. Basically, you write a&nbsp;short, simple program in which you specify what you want to trace in the system. BPFtrace then compiles this code for you into the BPF subsystem of the kernel, executes it, and gives you the result.</p>
-
 <p>BPFtrace is a&nbsp;very convenient way of live-tracing a&nbsp;running kernel without the need to modify it. You can do it on your customer’s machine or on your production machines. And you can do this using a&nbsp;very simple syntax that is quite easy to learn. In addition, BPFtrace is very efficient, meaning that using it does not slow down your system and you can trace literally anything that's going on in it, which is very useful for system administrators and many other people.</p>
-
 <h3>Q: What is the hardest and the easiest part of being an open source project contributor?</h3>
-
 <p>The greatest thing about being a&nbsp;BPFtrace contributor, or an open source project contributor in general, is the community. We currently have 140 contributors on GitHub and from those contributors, 10-20 are developers who actively participate in developing this technology. We also have probably thousands of users, some of whom are really active  and sometimes even open issues and contribute bug fixes.</p>
-
 <p>The community makes your life easier. I’m not saying that it’s easy, but it's easier than it would be without the community because it just simplifies many things. People find bugs in your software, so you don't need  a&nbsp;large QA team to discover them. People even fix these problems for you. If you don't know how to do something, you can ask and someone will definitely be able to help you. If you need a&nbsp;feature that is specific to your needs, you just open an issue on GitHub and someone will almost certainly  implement it in a&nbsp;matter of weeks, which is great.</p>
-
 <p>On the other hand, the difficult part of contributing to an open source project is implementing new stuff within a&nbsp;large project. Some people don't enjoy that you have to comply with the practices that have been established within the project that you're contributing to. And if someone wants you to do something differently than the way you’d like to, that may be difficult for you to deal with. This can get frustrating especially when you open a&nbsp;pull request with some great cool changes and then some maintainers (such as me) will start bothering you with code formatting issues, ask you to re-implement your contribution because they typically do things differently, refuse to merge your PR because you are missing tests, and so on. I&nbsp;understand that this is something that some people may find frustrating, but consistency is one of the most important parts of a project, and contributors just need to comply with the rules of the project that they are working on.</p>
-
 <h3>Q: What is the best way to reward open source contributions?</h3>
-
-<p>It's hard to say because I'm working on this as a&nbsp;part of my day job, which means I'm being paid by Red Hat. So it's easy for me to say that it's enough that my name is written somewhere, and that's it. But I&nbsp;think that for open source contributions in general, the most appreciated thing is being publicly recognized for my work and having my name connected to the project.</p>
-
+<p>It's hard to say because I'm working on this as a&nbsp;part of my day job, which means I'm being paid by Red Hat. So it's easy for me to say that it's enough that my name is written somewhere, and that's it. But I&nbsp;think that for open source contributions in general, the most appreciated thing is being publicly recognized for my work and having my name connected to the project. </p>
 <p>And if you ask me whether open source project maintainers should be paid, I&nbsp;would say “yes”. But not in the sense that a&nbsp;project should pay each and every one of its contributors, because no one has the money for that, obviously. What I&nbsp;mean to say is that more companies should get involved in contributing to open source projects, as part of their day-to-day development workflow. Also, more companies should make their code open and let their developers work upstream, in the open source world.</p>
-
 <p>And the developers should be paid for their work. Because it not only contributes to the overall community, but at the end of the day, it is also a&nbsp;great benefit for the company. I&nbsp;know that because I&nbsp;work for Red Hat, but more companies out there should start doing what we do.</p>
-
 <p>Luckily, companies are starting to embrace open source. I&nbsp;can give a&nbsp;nice example with BPF. The BPF technology in the kernel is intensively developed by people from Facebook, where a large part of the business is commercial closed source. But they are really doing a&nbsp;lot of good open source stuff, too.</p>
-
 <p>When I&nbsp;look at the ratio of paid to non-paid project contributors on BPFtrace, the majority of people I&nbsp;know among those contributors work for companies that have an interest in pushing BPFtrace forward. I&nbsp;already mentioned Facebook, and I&nbsp;know Netflix, too, has a&nbsp;lot of interest in working on these tools. So at least from these two companies, there’s a&nbsp;number of people contributing to BPFtrace. But, for example, as far as I&nbsp;know, the original founder of BPFtrace wasn’t part of any company when he started this project.</p>
-
 <h3>Q: How did the pandemic affect the project and your contribution?</h3>
-
 <p>I&nbsp;joined this team and project when the pandemic started, so I’ve never met anyone working on it in person. So  it's difficult for me to compare my experience with the pre-pandemic life. I&nbsp;usually work from home and communicate with people over email or issues on GitHub. I&nbsp;think that this isn’t much different from the way things were before because most of the people who work on BPFtrace are from other countries,anyway. We're even in different time zones, which makes it even more difficult because you sometimes have to wait for people to review your pull requests and answer your questions.</p>
-
 <p>In general, I&nbsp;can't complain; I&nbsp;think that I&nbsp;got along with the situation pretty nicely. Working from home and doing everything virtually is basically fine for me. Of course, I&nbsp;miss the office, but as far as the actual work is concerned, I&nbsp;wouldn't say that the pandemic impacted me a&nbsp;lot.</p>
-
 <h3>Q: How did DevConf.cz impact your open source contribution?</h3>
-
 <p>What I&nbsp;enjoy the most about DevConf.cz are the random conversations with people you meet in the hallways while having a&nbsp;coffee, or people who approach you after you give a&nbsp;talk and want to speak about it. Over the years that I&nbsp;attended DevConf.cz, I’ve had some nice conversations that gave me ideas about my project, which I&nbsp;can implement.</p>
-
 <p>It is not connected with BPFtrace, but my best experience was actually when I&nbsp;presented my first talk in 2019 about <a href="https://www.youtube.com/watch?v=PUZSaLf9exg">Analysing differences in kernel parameters</a>, during my second time attending DevConf.cz. The nice part about it was that I&nbsp;didn't expect to have a&nbsp;room full of people, but it was really packed. And I&nbsp;knoe people enjoyed the talk and showed real interest in my work because the feedback that I&nbsp;received was very positive. I’ve had some long discussions afterwards, especially with the kernel people, and I&nbsp;would say that this experience prompted my eventual move to the kernel team at Red Hat, where I&nbsp;am right now, working on BPFtrace.</p>
-
 <p>I&nbsp;was also a&nbsp;speaker at this year's virtual DevConf.cz. It was different, but I&nbsp;enjoyed the overall experience, even though I&nbsp;missed the in-person interactions after my talk. I&nbsp;am very much looking forward to the next on-site DevConf.cz where we’ll all have the chance to meet in Brno again.</p>
-
-<p><strong>Explore other articles like this: <a href="/cz/blog/categories/interviews/">The many roads to open source</a> interview series.</strong></p>
-    ]]></content>
+<p><strong>Explore other articles like this: <a href="/cz/blog/categories/interviews/">The many roads to open source</a> interview series.</strong></p>    ]]></content>
 </entry>
             <entry>
     <id>/cz/blog/karolina-surma</id>
@@ -175,48 +127,28 @@ In previous years at around this time (Christmas) we were already collecting ses
     <summary type="html">From Polish philology to Czech Python community. Karolina Surma is a&amp;nbsp;Software Engineer at Red Hat and a&amp;nbsp;contributor to the PyLadies Community. Read on for more about the struggles and perks of volunteer-driven projects.
 
 
-  
-  
-   Karolina......</summary>
+ Karolina Surma is......</summary>
     <content type="html"><![CDATA[
         <p>From Polish philology to Czech Python community. Karolina Surma is a&nbsp;Software Engineer at Red Hat and a&nbsp;contributor to the PyLadies Community. Read on for more about the struggles and perks of volunteer-driven projects.</p>
-
 <blockquote>
-  <h3><strong>About Karolina Surma</strong></h3>
-  
-  <p><img src="/assets/images/blog/interviews/ksurma.jpg" alt="Profile Picture" /> Karolina Surma is from Głogów, Poland and works as a&nbsp;Software Engineer in Brno. Karolina studied Polish and Czech Philology at the University of Wroclaw and then came to Brno and studied at MUNI. With her diploma, she could teach Polish, but ended up choosing a&nbsp;different vocation altogether. In her daily job, Karolina maintains a&nbsp;lot of Python RPM packages in Fedora and raises ideas, issues and fixes to the upstream community. The open source project that she’s been contributing to most recently is <em>Let’s talk PyLadies</em>. She deeply admires the Czech Python community, which she finds inclusive, active, and helpful. Karolina is a&nbsp;passionate reader, so when she is not working, you can find her in an armchair with yet another book. A&nbsp;book that recently inspired her was <em>Invisible Women: Data Bias in a&nbsp;World Designed for Men</em> by Caroline Criado Perez. You can find Karolina also on <a href="https://www.linkedin.com/in/karolina-surma-950452b7/">LinkedIn</a>.</p>
-  
-  <p>Watch the recording of Karolina's DevConf.CZ 2022 talk: <a href="https://youtu.be/_EuNGz8-Y3M">PyLadies Community in Brno - Mutual Help to Grow</a>.</p>
+<h3><strong>About Karolina Surma</strong></h3>
+<p><img src="/assets/images/blog/interviews/ksurma.jpg" alt="Profile Picture" /> Karolina Surma is from Głogów, Poland and works as a&nbsp;Software Engineer in Brno. Karolina studied Polish and Czech Philology at the University of Wroclaw and then came to Brno and studied at MUNI. With her diploma, she could teach Polish, but ended up choosing a&nbsp;different vocation altogether. In her daily job, Karolina maintains a&nbsp;lot of Python RPM packages in Fedora and raises ideas, issues and fixes to the upstream community. The open source project that she’s been contributing to most recently is <em>Let’s talk PyLadies</em>. She deeply admires the Czech Python community, which she finds inclusive, active, and helpful. Karolina is a&nbsp;passionate reader, so when she is not working, you can find her in an armchair with yet another book. A&nbsp;book that recently inspired her was <em>Invisible Women: Data Bias in a&nbsp;World Designed for Men</em> by Caroline Criado Perez. You can find Karolina also on <a href="https://www.linkedin.com/in/karolina-surma-950452b7/">LinkedIn</a>. </p>
+<p>Watch the recording of Karolina's DevConf.CZ 2022 talk: <a href="https://youtu.be/_EuNGz8-Y3M">PyLadies Community in Brno - Mutual Help to Grow</a>.</p>
 </blockquote>
-
 <h3>Q: How did you start contributing to PyLadies?</h3>
-
 <p>After a&nbsp;few years of working in a&nbsp;different field, I&nbsp;attended a&nbsp;community Python course for beginners with PyLadies. At the end, the organiser asked who wants to volunteer to organise new editions. My friend and I&nbsp;decided to join PyLadies, and that opened a&nbsp;new world of ideas to me. I&nbsp;had a&nbsp;very vague idea about open source before (I&nbsp;only knew Wikipedia), so learning that, for example, the Python programming language is an open source project was a&nbsp;complete surprise to me. Moreover, the Python course has open source materials, and our organisational framework is open as well.</p>
-
 <h3>Q: What makes PyLadies stand out to you?</h3>
-
 <p>As I&nbsp;mentioned earlier, you can contribute to open source not only by writing the code. PyLadies is a&nbsp;community of women programming in Python, but in the Czech Republic, we focus a&nbsp;great deal on programming courses for beginners. Typically, I&nbsp;take care of organising new courses, coaching participants, or performing maintenance tasks like keeping the website up-to-date. I&nbsp;also helped create teaching materials for one of the courses. I&nbsp;want to help other women have the same chance to enter the world of programming as I&nbsp;was given.</p>
-
 <h3>Q: What is the hardest and easiest part of being an open source project contributor?</h3>
-
 <p>I&nbsp;think that staying around for a&nbsp;long time is the hardest. Volunteer projects suffer when people drop out. They sometimes burn out, sometimes just change priorities. With us, the contributors can switch between different roles which we hope can mitigate the burnout factor from repeating the same routine.</p>
-
 <p>And as for the easiest: Python has a&nbsp;really welcoming community. I&nbsp;don't even know how it happened that from organising just one course, I've gotten to meet Python community members from all over the country.</p>
-
 <h3>Q: What is the best way to reward open source contributions?</h3>
-
-<p>I&nbsp;think that a&nbsp;simple word of appreciation is generally underestimated as a&nbsp;contribution reward. Hearing a&nbsp;"thank you" from others can do wonders with your motivation. We are also always very grateful for other kinds of organisational support, like being able to use someone's meeting room. The way our community is organised, I&nbsp;can't really imagine introducing (even symbolic) financial rewards. However, I&nbsp;believe it's generally a&nbsp;good idea to support the maintainers of the open source projects, especially if you rely on them in your enterprise systems.</p>
-
+<p>I&nbsp;think that a&nbsp;simple word of appreciation is generally underestimated as a&nbsp;contribution reward. Hearing a&nbsp;&quot;thank you&quot; from others can do wonders with your motivation. We are also always very grateful for other kinds of organisational support, like being able to use someone's meeting room. The way our community is organised, I&nbsp;can't really imagine introducing (even symbolic) financial rewards. However, I&nbsp;believe it's generally a&nbsp;good idea to support the maintainers of the open source projects, especially if you rely on them in your enterprise systems.</p>
 <h3>Q: How did the pandemic affect the project and your contribution?</h3>
-
 <p>Our courses moved online, which no one liked: neither the coaches, nor the attendees. I&nbsp;felt rather burnt out myself. So we paused our activities and relaunched them just now. We had our first open workshop after the lock-down in April 2022. I’ll be happy to see more new faces in the organisational team. COVID helped us realise that - as PyLadies - we want to meet live and form a&nbsp;community, not a&nbsp;programming school.</p>
-
 <h3>Q: How did DevConf.cz impact your open source contribution?</h3>
-
 <p>We believed that during our community time, we gathered just enough insights to form an interesting and possibly a&nbsp;not-entirely-obvious talk. Judging by the feedback, I&nbsp;think we did a&nbsp;good job there. I&nbsp;also aimed to encourage more folks to join an open community of their choice, because this proves to be far more adventurous than they initially think. I&nbsp;hope we’ll see some of those folks at our meetups, willing to share their knowledge with the Python newbies.</p>
-
-<p><strong>Explore other articles like this: <a href="/cz/blog/categories/interviews/">The many roads to open source</a> interview series.</strong></p>
-    ]]></content>
+<p><strong>Explore other articles like this: <a href="/cz/blog/categories/interviews/">The many roads to open source</a> interview series.</strong></p>    ]]></content>
 </entry>
             <entry>
     <id>/cz/blog/jakub-scholz</id>
@@ -230,41 +162,24 @@ In previous years at around this time (Christmas) we were already collecting ses
     <summary type="html">Jakub Scholz, a&amp;nbsp;Senior Principal Software Engineer has had a&amp;nbsp;long career in IT. His journey started as a&amp;nbsp;tester and developer and led him to project Strimzi and contributing to open source. Read on for more about the journey of......</summary>
     <content type="html"><![CDATA[
         <p>Jakub Scholz, a&nbsp;Senior Principal Software Engineer has had a&nbsp;long career in IT. His journey started as a&nbsp;tester and developer and led him to project Strimzi and contributing to open source. Read on for more about the journey of a&nbsp;senior contributor and his views on open-source community governance.</p>
-
 <blockquote>
-  <h3><strong>About Jakub Scholz</strong></h3>
-  
-  <p><img src="/assets/images/blog/interviews/jscholz.jpg" alt="Profile Picture" /> Jakub Scholz is a&nbsp;Senior Principal Software Engineer from Olomouc, Czechia. Jakub is currently contributing to many projects, including Strimzi and Apache Kafka. He studied at the Czech Technical University in Prague and stayed in the “city of a&nbsp;hundred spires” after his studies as well. His biggest motivation is the idea of real users using his software. A&nbsp;book that recently inspired Jakub was Progress: Ten Reasons to Look Forward to the Future by Johan Norberg. You can also find Jakub on <a href="https://twitter.com/scholzj">Twitter</a> or <a href="https://cz.linkedin.com/in/scholzj">LinkedIn</a>.</p>
-  
-  <p>Watch the recording of Jakub's DevConf.CZ 2022 talk: <a href="https://youtu.be/bTxdZOWLyvI">Build your own social media analytics with Apache</a>.</p>
+<h3><strong>About Jakub Scholz</strong></h3>
+<p><img src="/assets/images/blog/interviews/jscholz.jpg" alt="Profile Picture" /> Jakub Scholz is a&nbsp;Senior Principal Software Engineer from Olomouc, Czechia. Jakub is currently contributing to many projects, including Strimzi and Apache Kafka. He studied at the Czech Technical University in Prague and stayed in the “city of a&nbsp;hundred spires” after his studies as well. His biggest motivation is the idea of real users using his software. A&nbsp;book that recently inspired Jakub was Progress: Ten Reasons to Look Forward to the Future by Johan Norberg. You can also find Jakub on <a href="https://twitter.com/scholzj">Twitter</a> or <a href="https://cz.linkedin.com/in/scholzj">LinkedIn</a>.</p>
+<p>Watch the recording of Jakub's DevConf.CZ 2022 talk: <a href="https://youtu.be/bTxdZOWLyvI">Build your own social media analytics with Apache</a>.</p>
 </blockquote>
-
 <h3>Q: How did you start contributing to Strimzi?</h3>
-
 <p>I&nbsp;studied a&nbsp;combination of software engineering, economics, and management at the Czech Technical University in Prague. And then I&nbsp;worked in the financial industry for the German stock exchange for 10 years - first as a&nbsp;tester and developer and later as a&nbsp;manager and architect. We used different messaging middleware products from Red Hat, which were based on open source projects. That was where I&nbsp;started my first open source contributions. Later, I&nbsp;started working for Red Hat directly. And with some of my colleagues, we thought that it might be interesting to have a&nbsp;project that would make it easier to run Apache Kafka on Kubernetes - which is how we started Strimzi. So, I&nbsp;was contributing to the project from the beginning and went through all the different phases, including things such as the first release or coming up with the project name. Later, the project moved to the Cloud Native Computing Foundation (CNCF).</p>
-
 <h3>Q: What makes Strimzi stand out to you?</h3>
-
 <p>Both Apache Kafka and Kubernetes are very popular open source projects. But if you wanted to use them together, it was quite hard. With Strimzi, we make it easy to deploy and run Kafka on Kubernetes. One of the things which makes Strimzi different from most of the other projects in the Kubernetes ecosystem is that it is written in Java and not in Golang. So you can contribute if Java is your programming language.</p>
-
 <h3>Q: What is the hardest and easiest part of being an open source project contributor?</h3>
-
 <p>I&nbsp;think that this is different for every contributor. For me, it's probably our users. They are a&nbsp;big part of my motivation to work on the project. But dealing with them can be both the best and the worst part of it. Some users are great. They give you a&nbsp;lot of feedback and a&nbsp;sense of usefulness and achievement. But there are also users who mistake the open source community for some paid support hotline, thinking that they have the right to get an answer immediately and that the community has to do all their work instead of them. Such users can suck all the positive energy from you in just a&nbsp;few minutes.</p>
-
 <h3>Q: What is the best way to reward open source contributions?</h3>
-
 <p>I’m lucky enough to be able to contribute to open source as part of my full-time job. So I&nbsp;can afford to not be demanding. It is great when people say “thanks” on our Slack channel or on a&nbsp;resolved GitHub issue. Another great way to say “thanks” to the whole project and all its contributors is, for example, to add your company to the public list of Strimzi users, add a&nbsp;logo to our website, or write some blog post or make a&nbsp;video about how you use Strimzi. Knowing all the different companies and projects that use your software is rewarding as well.</p>
-
 <h3>Q: How did the pandemic affect the project and your contribution?</h3>
-
 <p>I&nbsp;think most open source communities are distributed by default with their maintainers, users, and contributors all over the world. And since I&nbsp;was working remotely from my home anyway, I&nbsp;don’t think it really impacted my work directly. But what I&nbsp;definitely miss(ed) are in-person conferences. While the virtual conference platforms improved a&nbsp;lot during the pandemic, I&nbsp;still think that direct contact with other people is irreplaceable - to learn new things, but also to give or get feedback or to build connections. I&nbsp;also often connected attending conferences with some sightseeing. Even as an attendee, I&nbsp;find the virtual conferences much worse. Watching from home means a&nbsp;lot more distractions and I&nbsp;often pick just one or two talks to watch live, and maybe I&nbsp;watch a&nbsp;few recordings after the conference. So this is what I&nbsp;look forward to again - in-person conferences.</p>
-
 <h3>Q: How did DevConf.cz impact your open source contribution?</h3>
-
 <p>I&nbsp;think that DevConf.cz had actually quite a&nbsp;big impact on my professional life. When I&nbsp;attended it for the first time - I&nbsp;think it was in 2016 - it was my first public IT conference where I&nbsp;was not just an attendee, but also a&nbsp;speaker. At that time, I&nbsp;was an open source user and occasional contributor, but my main job was still writing proprietary software. It was interesting to see from the different talks and from speaking with other attendees how the work on the open source projects differs from work on the proprietary software, and it definitely helped me get where I’m today. I’ve attended DevConf many times since and hopefully will ‌attend next year again, be it as a&nbsp;speaker or as a&nbsp;regular attendee.</p>
-
-<p><strong>Explore other articles like this: <a href="/cz/blog/categories/interviews/">The many roads to open source</a> interview series.</strong></p>
-    ]]></content>
+<p><strong>Explore other articles like this: <a href="/cz/blog/categories/interviews/">The many roads to open source</a> interview series.</strong></p>    ]]></content>
 </entry>
             <entry>
     <id>/cz/blog/aoife-moloney</id>
@@ -278,68 +193,38 @@ In previous years at around this time (Christmas) we were already collecting ses
     <summary type="html">Aoife Moloney worked as an Office Coordinator at Red Hat, where she got to know open source and then ended up as a&amp;nbsp;Product Owner in Fedora and CentOS Stream. Read about Aoife Moloney’s journey to open source.
 
 
-  
-  
-   Aoife Moloney is from......</summary>
+ Aoife Moloney is from Waterford in......</summary>
     <content type="html"><![CDATA[
         <p>Aoife Moloney worked as an Office Coordinator at Red Hat, where she got to know open source and then ended up as a&nbsp;Product Owner in Fedora and CentOS Stream. Read about Aoife Moloney’s journey to open source.</p>
-
 <blockquote>
-  <h3><strong>About Aoife Moloney</strong></h3>
-  
-  <p><img src="/assets/images/blog/interviews/amoloney.jpg" alt="Profile Picture" /> Aoife Moloney is from Waterford in Ireland and works as a&nbsp;Product Owner  in the Community Platform Engineering Team for Fedora and CentOS Stream. Having studied product management in the past, Aoife has always done most of her learning on the job.</p>
-  
-  <p>In her free time, you can find her surrounded by ponies, because her son and family are heavily involved in showjumping. She has also won a&nbsp;national showjumping competition in Ireland. Her biggest inspiration is her grandmother, who was a&nbsp;firm believer in the importance of learning and putting your very best foot forward. She gets inspired by reading fantasy adventure books, and getting lost in the classic tale of undiscovered potential and rooting for the underdog, like the Wheel of Time series or the Culture Map. You can find her on Twitter @aoifemoloney4.</p>
-  
-  <p>Watch the recording from Aoife's DevConf.CZ 2022 talk: <a href="https://youtu.be/7DudZsKu4MM">Code, Whiteboard, Action!</a></p>
+<h3><strong>About Aoife Moloney</strong></h3>
+<p><img src="/assets/images/blog/interviews/amoloney.jpg" alt="Profile Picture" /> Aoife Moloney is from Waterford in Ireland and works as a&nbsp;Product Owner  in the Community Platform Engineering Team for Fedora and CentOS Stream. Having studied product management in the past, Aoife has always done most of her learning on the job.</p>
+<p>In her free time, you can find her surrounded by ponies, because her son and family are heavily involved in showjumping. She has also won a&nbsp;national showjumping competition in Ireland. Her biggest inspiration is her grandmother, who was a&nbsp;firm believer in the importance of learning and putting your very best foot forward. She gets inspired by reading fantasy adventure books, and getting lost in the classic tale of undiscovered potential and rooting for the underdog, like the Wheel of Time series or the Culture Map. You can find her on Twitter @aoifemoloney4. </p>
+<p>Watch the recording from Aoife's DevConf.CZ 2022 talk: <a href="https://youtu.be/7DudZsKu4MM">Code, Whiteboard, Action!</a></p>
 </blockquote>
-
 <h3>Q: How did you start contributing to Fedora and CentOS Stream?</h3>
-
 <p>I&nbsp;became involved in both projects when I&nbsp;was lucky enough to be offered the job as a&nbsp;Feature Driver with the Community Platform Engineering team in Red Hat. I&nbsp;had previously been an Office Coordinator in the Red Hat Waterford office where I&nbsp;ended up  learning a&nbsp;lot about open source through the people I&nbsp;met and worked with there. I&nbsp;also took a&nbsp;few part-time courses on project management. I&nbsp;felt that I&nbsp;had enough transferable skills, and I&nbsp;was able to relate my professional achievements to the skill set that the product owner role required, so I&nbsp;took the job!</p>
-
 <p>And I&nbsp;have to say it was the best decision of my career as I&nbsp;was able to become a&nbsp;certified product owner and studied part-time to earn a&nbsp;diploma in both project management and training evaluation and delivery. Where I&nbsp;am now is built on learning on the job and through ‘osmosis’, meaning I&nbsp;surrounded myself with people who I&nbsp;could continuously learn from. My background is in customer service. I&nbsp;have worked in front-of-house roles for about 17 years now, and the time spent in my current role is included in that figure! The way I&nbsp;contribute to the projects that my team is involved in is by helping them coordinate work, and being someone the community can interact with and talk to about the work our team does.</p>
-
 <h3>Q: What makes Fedora and CentOS Stream stand out to you?</h3>
-
 <p>Both projects are amazing. CentOS Stream is still building its success story, but it is a&nbsp;wonderful distribution to use, and since it is the upstream of the next RHEL minor release, contributors can make a&nbsp;real impact on the development of RHEL. Fedora is a&nbsp;very well-established distribution, and as one of its users , I&nbsp;love how friendly and fun the community is.</p>
-
 <p>In my role, I&nbsp;have the privilege of being involved in both communities, as the CPE team provides infrastructure and development for both projects. As the team product owner, I&nbsp;get to take part in making decisions about the work that our team undertakes for each. I&nbsp;oversee the coordination of work that is requested of our team that would be large enough to need multiple people over multiple weeks from launch to completion, and I&nbsp;love the dynamic, fast-paced nature of it. Our team could be running two, sometimes three projects that would each deliver a&nbsp;feature or an upgrade of a&nbsp;service for Fedora at the same time, while also developing and building CentOS Stream, and my role requires me to be both accountable for the work progressions and ensuring good communication throughout. Being the person who  reviews and actions work requests so that the projects  that need that work done can continue to thrive and succeed is the main way I&nbsp;contribute to open source projects.</p>
-
 <h3>Q: What is the hardest and the easiest part of being an open source project contributor?</h3>
-
 <p>I'm going to start with the hard part and then finish on the easy part, which is a&nbsp;rule I&nbsp;try to live by, too!</p>
-
 <p>The hardest part for me is finding the courage to make a&nbsp;decision when it comes to actioning project work for my team, as I&nbsp;always want it to be the ‘right’ decision. Thankfully I&nbsp;have some highly knowledgeable people on my team with whom I&nbsp;discuss technical issues when I&nbsp;receive a&nbsp;new work request. But it still gives me an ‘eek’ moment when a&nbsp;work request is actioned, the team is working on it, and either the requirements change or some newer technology comes out that puts the work under question. In those moments, I&nbsp;tell myself that I&nbsp;made the best decision with the information that I&nbsp;had at the time, and what comes after can be dealt with when the time comes. I&nbsp;imagine one could sometimes feel the same about submitting a&nbsp;PR: You make a&nbsp;change to the code based on the information you have at the time, and while in the future it might turn out to be wrong or troublesome, it seemed the right thing to do at the time. Self-confidence can be a&nbsp;tough one to deal with in open source at times!</p>
-
 <p>The easiest part, though, is the direct opposite of that. If you find yourself part of a&nbsp;community like the ones around Fedora and CentOS Stream, which have nothing but good intentions for both the project and the people involved, it is so easy to feel empowered to ask questions, discuss things related to the project, make a&nbsp;decision, or submit a&nbsp;PR. Finding the courage to get involved can be hard, but once you do, feeling like you have a&nbsp;place in that community and being empowered to contribute in whatever way you can, should, and does, become easy.</p>
-
 <h3>Q: What is the best way to reward open source contributions?</h3>
-
 <p>Recognition. We should always recognize people for the work they do, be it big or small. You never know what’s going on in their lives, so if they can still spare some time to contribute to an open source project, then they should be recognized and thanked by the community, be it in the form of a&nbsp;short email or a&nbsp;karma boost on IRC. The people who work hard to keep the lights on in both Fedora and CentOS Stream, those who help get new releases out the door, those who take the time to report bugs, and those who help fix them, are fully deserving of the praise and gratitude that they receive from their communities. Still, it is nice to be recognized publicly for the work you put in.</p>
-
 <p>The Fedora release parties do a&nbsp;great job of connecting project contributors  who worked on that release, and on the project, in general, and providing an opportunity to meet and thank one another for the work that they have done.</p>
-
 <h3>Q: How did the pandemic affect the project and your contribution?</h3>
-
 <p>The pandemic was an adjustment for me, for sure, because I&nbsp;really had to work on my work-life balance. It began when I&nbsp;was less than six months into my new role, where the majority of  my new team worked remotely, whereas I&nbsp;was more office-based. I&nbsp;got to meet most of them for the first time at my first DevConf.cz in 2019, and I&nbsp;was really looking forward to seeing them all again later that year at our face-to-face. When I&nbsp;had to switch to working from home, I&nbsp;felt a&nbsp;little silly rolling my eyes and commenting on how tough it was when they all have been working remotely for a&nbsp;long time, anyway.</p>
-
 <p>However, looking back, it was not the work that was challenging, but my environment. I&nbsp;had no clear boundaries on my workday. The work followed me from the  kitchen table to the sitting room, the bedroom, and the garden, and I&nbsp;missed the moment I&nbsp;should finish working. When I&nbsp;was working at the office, I&nbsp;grew so accustomed to finishing my work before I&nbsp;left for the day. So as I&nbsp;worked from home, I&nbsp;found myself gradually becoming tired, a&nbsp;little less enthusiastic about my day-to-day work, and starting to fall into bad habits.</p>
-
 <p>I&nbsp;have always worked at my best when surrounded by friends, and while my team has been the most friendly group of people, at that time we were still forming connections with each other, and only meeting them ad hoc to discuss work stuff made getting to know my team really tricky. Because of this, I&nbsp;wanted to debunk the assumptions that ‘shop talk’ is the only acceptable kind of talk among coworkers, and that work had to be treated as a&nbsp;formal activity, so we injected some life back into our planning sessions by using movie posters as talking points, and having really fun, informal quarterly celebrations to reflect on the work that our team has accomplished. I&nbsp;think that this helped the team morale a&nbsp;lot, and it certainly helped mine. I&nbsp;had fun through my work, and that made me want to continue working hard so that I&nbsp;had something to look forward to at the next celebration call.</p>
-
 <p>Looking back, the biggest positive impact of all of that for me was that I&nbsp;discovered a&nbsp;way to connect with people virtually and learned how to make work a&nbsp;meaningful and fun activity.</p>
-
 <h3>Q: How did DevConf.cz impact your open source contribution?</h3>
-
 <p>As I&nbsp;mentioned earlier, I&nbsp;attended my first DevConf.cz in January 2019 when I&nbsp;was still relatively new to my team, and I&nbsp;remember being overwhelmed at the calibre of talks that were on offer. I&nbsp;liken it to being a&nbsp;bit like a&nbsp;rabbit caught in the headlights, standing in the hallways, feeling overwhelmed from seeing and meeting people that I&nbsp;had only briefly interacted with or heard about online before.</p>
-
 <p>At that moment, I&nbsp;set myself a&nbsp;goal of returning to a&nbsp;DevConf.cz event one day as a&nbsp;speaker. And this year, I&nbsp;finally got to do it. As someone who was not too technical when I&nbsp;joined the Community Platform Engineering Team and attended a&nbsp;very developer-focused conference, to be able to speak at one, and share my ideas and stories with people who were interested in the topic and enjoyed what I&nbsp;had to say was a&nbsp;real moment for me. I&nbsp;think a&nbsp;lot of people suffer from ‘imposter syndrome’, and being able to say “I spoke at DevConf.cz” gives me the reassurance that yeah, I&nbsp;am actually good enough.</p>
-
 <p>My speaking experience was wonderful. The people who run the conference did such an amazing job of making sure that I&nbsp;had enough time to prepare, that I&nbsp;understood how to access the Hopin platform, and that I&nbsp;knew how to contact them if I&nbsp;ran into any issues either beforehand or on the day of my talk. I&nbsp;felt at ease when delivering my talk because I&nbsp;knew that there were people there to support me every step of the way.</p>
-
-<p><strong>Explore other articles like this: <a href="/cz/blog/categories/interviews/">The many roads to open source</a> interview series.</strong></p>
-    ]]></content>
+<p><strong>Explore other articles like this: <a href="/cz/blog/categories/interviews/">The many roads to open source</a> interview series.</strong></p>    ]]></content>
 </entry>
             <entry>
     <id>/cz/blog/anita-ihuman</id>
@@ -353,49 +238,28 @@ In previous years at around this time (Christmas) we were already collecting ses
     <summary type="html">Anita Ihuman got into open source quite recently, in 2020, and she’s already contributed to a&amp;nbsp;variety of projects, like Layer5, CHAOSS, APISIX, and many more. Read on to learn more about her journey and how global lockdown made it a&amp;nbsp;little......</summary>
     <content type="html"><![CDATA[
         <p>Anita Ihuman got into open source quite recently, in 2020, and she’s already contributed to a&nbsp;variety of projects, like Layer5, CHAOSS, APISIX, and many more. Read on to learn more about her journey and how global lockdown made it a&nbsp;little bit easier to get into open source.</p>
-
 <blockquote>
-  <h3><strong>About Anita Ihuman</strong></h3>
-  
-  <p><img src="/assets/images/blog/interviews/aihuman.jpg" alt="Profile Picture" /> Anita Ihuman is a&nbsp;Developer Advocate for Layer5, but she is also an active contributor in other open source projects like CHAOSS and Apache APISIX. She studied microbiology and in her free time, she likes to write articles, watch movies, or just snuggle up with her cat. She has consistently been inspired  by seeing  open source contributors who have a&nbsp;huge positive impact on the ecosystem and the people in it. That is why she is passionate about contributing to open source communities. Her talk at DevConf.cz 2022 was about Quality Documentation. She has recently become a&nbsp;big fan of the <a href="https://podcasts.apple.com/us/podcast/github-stars-stories-are-you-the-next-github-star/id1454033321?i=1000532958847">GitHub Stars Stories podcast</a>. You can find her <a href="https://twitter.com/Anita_ihuman">on Twitter (@Anita_ihuman)</a> or on <a href="https://www.linkedin.com/in/anita-ihuman/">her LinkedIn profile</a>.</p>
-  
-  <p>Watch the recording of Anita's DevConf.cz 2022 talk: <a href="https://youtu.be/WKfUfUvY7Tk">Quality Documentation: The Key to Open Source Grow</a>.</p>
+<h3><strong>About Anita Ihuman</strong></h3>
+<p><img src="/assets/images/blog/interviews/aihuman.jpg" alt="Profile Picture" /> Anita Ihuman is a&nbsp;Developer Advocate for Layer5, but she is also an active contributor in other open source projects like CHAOSS and Apache APISIX. She studied microbiology and in her free time, she likes to write articles, watch movies, or just snuggle up with her cat. She has consistently been inspired  by seeing  open source contributors who have a&nbsp;huge positive impact on the ecosystem and the people in it. That is why she is passionate about contributing to open source communities. Her talk at DevConf.cz 2022 was about Quality Documentation. She has recently become a&nbsp;big fan of the <a href="https://podcasts.apple.com/us/podcast/github-stars-stories-are-you-the-next-github-star/id1454033321?i=1000532958847">GitHub Stars Stories podcast</a>. You can find her <a href="https://twitter.com/Anita_ihuman">on Twitter (@Anita_ihuman)</a> or on <a href="https://www.linkedin.com/in/anita-ihuman/">her LinkedIn profile</a>. </p>
+<p>Watch the recording of Anita's DevConf.cz 2022 talk: <a href="https://youtu.be/WKfUfUvY7Tk">Quality Documentation: The Key to Open Source Grow</a>.</p>
 </blockquote>
-
 <h3>Q: How did you start contributing to open source projects?</h3>
-
 <p>I&nbsp;got into tech quite recently: my journey started in 2020. Back in school, I&nbsp;often heard my more technically savvy classmates talk about the amazing events they attended, what cool stickers and other swag they got. At some point, the majority of them managed to speak at a&nbsp;conference about what they do. That is something I&nbsp;always wanted to do. When I&nbsp;was growing up, I&nbsp;always wanted to be a&nbsp;mass communicator. I&nbsp;ended up studying microbiology and the path to conferences is not so direct from there, so I&nbsp;thought: maybe if I&nbsp;focus on tech, I&nbsp;can find a&nbsp;way to speak in public.</p>
-
 <p>The pandemic was a&nbsp;great opportunity for me to get in. I&nbsp;had free days, and there was no need to travel to school, so I&nbsp;used all this time to learn a&nbsp;new skill. Two or three months in, I&nbsp;heard about <a href="https://oscafrica.org/">Open Source Africa</a>, the largest open source community event in Africa. I&nbsp;watched the videos from the conference, and I&nbsp;was really intrigued by the topics; how passionate the people were, how the community was really helpful and encouraging - that piqued my interest in open source. I&nbsp;was just a&nbsp;front-end developer at the time. Then, I&nbsp;learned about GNOME. Obviously, I&nbsp;wasn't able to contribute to GNOME right away. I&nbsp;thought I&nbsp;had nothing to contribute to. There is a&nbsp;Diversity and Inclusion committee that helps with onboarding into the <a href="https://foundation.gnome.org/">GNOME Foundation</a>, but I&nbsp;wasn't even able to onboard myself. Then, I&nbsp;heard about another contributor hackathon by <a href="https://shecodeafrica.org/">She Codes Africa</a>, where I&nbsp;started my first open source contribution to Layer5. It wasn't the greatest experience, as it took me a&nbsp;week to solve one issue, and it was frustrating. I&nbsp;told myself to keep on going because the community itself was welcoming, so I&nbsp;kept showing up. It took me some time, but in the end, I&nbsp;loved it.</p>
-
 <h3>Q: What makes your project stand out to you?</h3>
-
-<p>First, I&nbsp;was helping onboard newcomers to GNOME. I&nbsp;didn't do so much there, but when GNOME Africa came up, I&nbsp;joined as a&nbsp;technical writer - still helping with onboarding. I&nbsp;wasn't consistent with that because at the same time, I&nbsp;started contributing to Layer5, which seemed more interesting.</p>
-
-<p>In Layer5, I&nbsp;got to the position of community manager, to help welcome people in the community and to answer questions on Slack, but I&nbsp;was also contributing code as a&nbsp;front-end developer. I&nbsp;became a&nbsp;"mesh mate", which is more like a&nbsp;coach helping a&nbsp;person to get into the community. My friend Ruth Ikegah and I&nbsp;started the newcomers call in Layer5. I&nbsp;felt like I&nbsp;was an official open source contributor. I&nbsp;realized there are so many new contributors who had to deal with difficulties in getting into the communities, just like I&nbsp;once did. With the newcomers call, we were able to retain many new contributors that helped the community and the entire project.</p>
-
+<p>First, I&nbsp;was helping onboard newcomers to GNOME. I&nbsp;didn't do so much there, but when GNOME Africa came up, I&nbsp;joined as a&nbsp;technical writer - still helping with onboarding. I&nbsp;wasn't consistent with that because at the same time, I&nbsp;started contributing to Layer5, which seemed more interesting. </p>
+<p>In Layer5, I&nbsp;got to the position of community manager, to help welcome people in the community and to answer questions on Slack, but I&nbsp;was also contributing code as a&nbsp;front-end developer. I&nbsp;became a&nbsp;&quot;mesh mate&quot;, which is more like a&nbsp;coach helping a&nbsp;person to get into the community. My friend Ruth Ikegah and I&nbsp;started the newcomers call in Layer5. I&nbsp;felt like I&nbsp;was an official open source contributor. I&nbsp;realized there are so many new contributors who had to deal with difficulties in getting into the communities, just like I&nbsp;once did. With the newcomers call, we were able to retain many new contributors that helped the community and the entire project.</p>
 <p>Then I&nbsp;heard about the CHAOSS Foundation, which focuses on building metrics and analytics to help define community health., and also has its own Diversity and Inclusion initiative. I&nbsp;joined it because I&nbsp;experienced so many difficulties at the beginning and I&nbsp;thought I&nbsp;could help to set things right. While contributing to Layer5, I&nbsp;was contributing to CHAOSS, and also making one-time contributions to other projects. I&nbsp;became a&nbsp;coach in several coaching programs. With CHAOSS, I&nbsp;started in the role of the reviewer to help check the metrics of open source events, open source projects, or even open source contributors. You can apply and receive a&nbsp;badge for your contribution. I've been contributing to CHAOSS for a&nbsp;year, and so far everything is going well.</p>
-
 <p>I&nbsp;also started contributing to Kivano recently, towards the end of 2021, because I&nbsp;got offered a&nbsp;job there.</p>
-
 <h3>Q: What is the hardest part of being an open source project contributor?</h3>
-
 <p>Of course, the journey wasn't always smooth. I&nbsp;spent most of my time at home and I&nbsp;liked that I&nbsp;had an opportunity to interact with people all over the world. My goal was to get into a&nbsp;dev role, not just contribute to the front end. That was challenging. I&nbsp;started putting myself out there and that was the difficult part. I&nbsp;don't like a&nbsp;lot of interactions; I&nbsp;enjoy being on my own. Another case is learning about cloud - learning Kubernetes online is very challenging.</p>
-
 <h3>Q: What is the best way to reward open source contributions?</h3>
-
 <p>Many people fear the idea of open source because they believe they have to devote time without any form of incentives. That discourages a&nbsp;lot of people. Personally, I&nbsp;don't see the time I&nbsp;spent onboarding and learning about upstream projects as a&nbsp;waste because I&nbsp;had nothing else to do. I&nbsp;loved the idea of being able to be a&nbsp;part of a&nbsp;large group of people from whom I&nbsp;can learn. Tiny forms of appreciation definitely helped, though. It did not have to be financial support. I&nbsp;appreciated things like issuing badges or giving titles to people who are contributing. It made me feel relevant, rewarded, and recognized as a&nbsp;member of the community. It made me want to show up. Swag works well, too. It is a&nbsp;way of marketing for the community and I&nbsp;can say to people that if they want to get something similar, they should join in and contribute as well.</p>
-
 <h3>Q: How did the pandemic affect the project and your contribution?</h3>
-
 <p>I&nbsp;think it was easier to start the contribution during the pandemic for me. I&nbsp;wouldn't be able to attend any of the events, being a&nbsp;complete beginner. I&nbsp;would probably need another 2-3 years of experience and to get a&nbsp;job to have money for travelling. However, since everything was virtual, I&nbsp;could attend from the comfort of my home and with no financial support. It was a&nbsp;great deal for me. I&nbsp;wonder how it would be in person. The shift was probably more difficult for people who were used to attending in-person meetings and ways of working.</p>
-
 <h3>Q: How did DevConf.cz impact your open source contribution?</h3>
-
 <p>I&nbsp;learned about DevConf.cz from Twitter. This was one of the conferences where I&nbsp;thought I&nbsp;would speak one day in the future, because it was such a&nbsp;huge deal for me. I&nbsp;submitted a&nbsp;topic about how to start your contribution and I&nbsp;was surprised to see my talk accepted in 2022. It was an interesting experience because most of the topics in the conference were things I&nbsp;wanted to learn about. The speaker support was amazing; I&nbsp;was given the proper information ahead of time and I&nbsp;really appreciated that.</p>
-
-<p><strong>Explore other articles like this: <a href="/cz/blog/categories/interviews/">The many roads to open source</a> interview series.</strong></p>
-    ]]></content>
+<p><strong>Explore other articles like this: <a href="/cz/blog/categories/interviews/">The many roads to open source</a> interview series.</strong></p>    ]]></content>
 </entry>
             <entry>
     <id>/cz/blog/first-time-speaker-at-devconf</id>
@@ -408,44 +272,25 @@ In previous years at around this time (Christmas) we were already collecting ses
     </author>
     <summary type="html">I&amp;nbsp;still remember my first time speaking at a&amp;nbsp;conference. I&amp;nbsp;was extremely nervous, I&amp;nbsp;skipped a&amp;nbsp;few things I&amp;nbsp;wanted to mention and at the end of it, I&amp;nbsp;wasn’t sure if the audience even got what I&amp;nbsp;wanted to share.......</summary>
     <content type="html"><![CDATA[
-        <p>I&nbsp;still remember my first time speaking at a&nbsp;conference. I&nbsp;was extremely nervous, I&nbsp;skipped a&nbsp;few things I&nbsp;wanted to mention and at the end of it, I&nbsp;wasn’t sure if the audience even got what I&nbsp;wanted to share. But then I&nbsp;was approached by my colleagues and even by random folks from the audience asking me questions about the talk. It felt great that I&nbsp;was heard and I&nbsp;got someone else interested.</p>
-
-<p>Over the years, I&nbsp;spoke at many other events and conferences. I&nbsp;still feel nervous when presenting, but I&nbsp;learned a&nbsp;few techniques and habits that make me feel more confident and comfortable in speaking. Before I&nbsp;share these, there’s one important thing to mention first. Practice makes perfect and there’s no better way to gain credibility and authority in the project or your expertise than by speaking at conferences. By giving talks at various conferences, you position yourself as a&nbsp;trusted person who understands the topic, is able to research existing and new things, and adds value and his personal experience to the subject. This is the way you’ll gain trust, respect, and authority in your field of expertise.</p>
-
-<p>Well, despite these benefits of speaking at a&nbsp;conference, there’s still the main problem - the fear and uncertainty that you’ll be able to deliver a&nbsp;great talk. Speaking publicly in front of a&nbsp;large audience or even virtually makes us vulnerable. We’re on the spot, visible to a&nbsp;large number of people, some of them have better knowledge about the subject than we have, you are the center of attention but you also need to maintain that attention and make sure you don’t lose the audience. Many of us don’t present in our native language, to an audience that is international and diverse. This all adds up to a&nbsp;fear that stops from stepping up and presenting.</p>
-
-<p>Here are some of my tips that help me be prepared and less nervous.</p>
-
-<h2>&#35;1 Rehearse with a&nbsp;mirror,  record yourself</h2>
-
-<p>Most people don’t like this one. Watching yourself on video, listening to your own voice or even seeing yourself in a&nbsp;mirror while talking feels awkward. But it’s important to see how you appear in front of your audience. Your body language shows a&nbsp;lot about your confidence and often we don’t notice our bad habits until we observe ourselves. You’ll get used to the sound of your voice and you’ll experience how others hear you. You might have a&nbsp;filler word you use way too often or something in your body language that is disrupting and watching yourself will allow you to spot it and avoid it. It will help you to realize what your pace is and if you should slow down.</p>
-
-<h2>&#35;2 Rehearse in a&nbsp;smaller group, with colleagues, friends</h2>
-
-<p>The best way to practice your speaking is to rehearse with a&nbsp;smaller group. This can be your colleagues at work, friends or family, or even local Toastmasters groups. The only way to get better with your talk is to present often and preferably in an environment where you’ll be able to get a&nbsp;lot of feedback. Toastmasters are great since their main focus is on how you speak and how you use your body language. Also, you’ll be able to get feedback on the structure of your talk, its ordering and content. What helps is to have a&nbsp;script for your session and speaker notes. Do not ever read your notes while speaking! This is a&nbsp;path to disaster. Update your speaker's notes based on feedback received and review them before the session starts to remember the important points you wanted to highlight.</p>
-
-<h2>&#35;3 Know your audience and engage with them from the beginning</h2>
-
-<p>I&nbsp;have to confess that with this one I&nbsp;don’t have a&nbsp;good experience with virtual events. Getting feedback in the virtual presentation is much harder and I’ll mention it later. Knowing your audience is important to better position your talk but also it gets the audience more engaged. To connect with your audience, you should ask the room what they want to hear. Ask the audience about their background, expertise in the subject, biggest challenges, and listen to what they have to say. This will make your session more dynamic, tailored to your audience and the audience will have the bonding with you that you talk about what they want to hear. It’s absolutely fine to make adjustments to your speech based on the comments you hear. Skip slides if you have to, prepare backup slides that you can use for a&nbsp;more technical audience. This will make your presentation less disconnected and more fun.</p>
-
-<h2>&#35;4 Get comfortable with your setup</h2>
-
-<p>Especially with virtual events, it’s important to make sure your setup works - this includes microphone, camera but also an ability to switch displays if needed while screen sharing, switch from slides to your demo, etc. In the case of the live event, take advantage of things like a&nbsp;clicker and practice running your talk with it, make sure your computer works well and avoid any unfortunate surprises during the live event. Whenever possible, practice using the equipment and setup in which you’ll be giving the talk. In the case of virtual talk, record your session and check the quality of your microphone from the recording. A&nbsp;quality microphone for a&nbsp;few $$$ might be a&nbsp;significant improvement to your talk. If you decide to have your camera on (which I&nbsp;can recommend for a&nbsp;more engaging presentation), check your background (your light, your camera pointing in the right direction, and not to the ceiling, etc.). Those small changes can make a&nbsp;big difference.</p>
-
-<h2>&#35;5 Record your demos and share your slides</h2>
-
-<p>Always record your demos! I’ve been bitten many times by issues with the internet, a&nbsp;weird conference setup, or other circumstances that forced me to use my pre-recorded session.  Anything can happen and having a&nbsp;backup available can save you from unnecessary stress. Also, pre-recorded demos and slides can be shared and used for marketing purposes. Either for marketing your project in other media and channels or even when you apply for a&nbsp;talk at a&nbsp;different conference. Sharing slides and your demos also adds to your credibility and allows the audience to come back to your examples, links and other content.</p>
-
-<h2>&#35;6 Differentiate and add value</h2>
-
+        <p>I&nbsp;still remember my first time speaking at a&nbsp;conference. I&nbsp;was extremely nervous, I&nbsp;skipped a&nbsp;few things I&nbsp;wanted to mention and at the end of it, I&nbsp;wasn’t sure if the audience even got what I&nbsp;wanted to share. But then I&nbsp;was approached by my colleagues and even by random folks from the audience asking me questions about the talk. It felt great that I&nbsp;was heard and I&nbsp;got someone else interested. </p>
+<p>Over the years, I&nbsp;spoke at many other events and conferences. I&nbsp;still feel nervous when presenting, but I&nbsp;learned a&nbsp;few techniques and habits that make me feel more confident and comfortable in speaking. Before I&nbsp;share these, there’s one important thing to mention first. Practice makes perfect and there’s no better way to gain credibility and authority in the project or your expertise than by speaking at conferences. By giving talks at various conferences, you position yourself as a&nbsp;trusted person who understands the topic, is able to research existing and new things, and adds value and his personal experience to the subject. This is the way you’ll gain trust, respect, and authority in your field of expertise. </p>
+<p>Well, despite these benefits of speaking at a&nbsp;conference, there’s still the main problem - the fear and uncertainty that you’ll be able to deliver a&nbsp;great talk. Speaking publicly in front of a&nbsp;large audience or even virtually makes us vulnerable. We’re on the spot, visible to a&nbsp;large number of people, some of them have better knowledge about the subject than we have, you are the center of attention but you also need to maintain that attention and make sure you don’t lose the audience. Many of us don’t present in our native language, to an audience that is international and diverse. This all adds up to a&nbsp;fear that stops from stepping up and presenting. </p>
+<p>Here are some of my tips that help me be prepared and less nervous. </p>
+<h2>#1 Rehearse with a&nbsp;mirror,  record yourself</h2>
+<p>Most people don’t like this one. Watching yourself on video, listening to your own voice or even seeing yourself in a&nbsp;mirror while talking feels awkward. But it’s important to see how you appear in front of your audience. Your body language shows a&nbsp;lot about your confidence and often we don’t notice our bad habits until we observe ourselves. You’ll get used to the sound of your voice and you’ll experience how others hear you. You might have a&nbsp;filler word you use way too often or something in your body language that is disrupting and watching yourself will allow you to spot it and avoid it. It will help you to realize what your pace is and if you should slow down. </p>
+<h2>#2 Rehearse in a&nbsp;smaller group, with colleagues, friends</h2>
+<p>The best way to practice your speaking is to rehearse with a&nbsp;smaller group. This can be your colleagues at work, friends or family, or even local Toastmasters groups. The only way to get better with your talk is to present often and preferably in an environment where you’ll be able to get a&nbsp;lot of feedback. Toastmasters are great since their main focus is on how you speak and how you use your body language. Also, you’ll be able to get feedback on the structure of your talk, its ordering and content. What helps is to have a&nbsp;script for your session and speaker notes. Do not ever read your notes while speaking! This is a&nbsp;path to disaster. Update your speaker's notes based on feedback received and review them before the session starts to remember the important points you wanted to highlight. </p>
+<h2>#3 Know your audience and engage with them from the beginning</h2>
+<p>I&nbsp;have to confess that with this one I&nbsp;don’t have a&nbsp;good experience with virtual events. Getting feedback in the virtual presentation is much harder and I’ll mention it later. Knowing your audience is important to better position your talk but also it gets the audience more engaged. To connect with your audience, you should ask the room what they want to hear. Ask the audience about their background, expertise in the subject, biggest challenges, and listen to what they have to say. This will make your session more dynamic, tailored to your audience and the audience will have the bonding with you that you talk about what they want to hear. It’s absolutely fine to make adjustments to your speech based on the comments you hear. Skip slides if you have to, prepare backup slides that you can use for a&nbsp;more technical audience. This will make your presentation less disconnected and more fun. </p>
+<h2>#4 Get comfortable with your setup</h2>
+<p>Especially with virtual events, it’s important to make sure your setup works - this includes microphone, camera but also an ability to switch displays if needed while screen sharing, switch from slides to your demo, etc. In the case of the live event, take advantage of things like a&nbsp;clicker and practice running your talk with it, make sure your computer works well and avoid any unfortunate surprises during the live event. Whenever possible, practice using the equipment and setup in which you’ll be giving the talk. In the case of virtual talk, record your session and check the quality of your microphone from the recording. A&nbsp;quality microphone for a&nbsp;few $$$ might be a&nbsp;significant improvement to your talk. If you decide to have your camera on (which I&nbsp;can recommend for a&nbsp;more engaging presentation), check your background (your light, your camera pointing in the right direction, and not to the ceiling, etc.). Those small changes can make a&nbsp;big difference. </p>
+<h2>#5 Record your demos and share your slides</h2>
+<p>Always record your demos! I’ve been bitten many times by issues with the internet, a&nbsp;weird conference setup, or other circumstances that forced me to use my pre-recorded session.  Anything can happen and having a&nbsp;backup available can save you from unnecessary stress. Also, pre-recorded demos and slides can be shared and used for marketing purposes. Either for marketing your project in other media and channels or even when you apply for a&nbsp;talk at a&nbsp;different conference. Sharing slides and your demos also adds to your credibility and allows the audience to come back to your examples, links and other content. </p>
+<h2>#6 Differentiate and add value</h2>
 <p>You’ve seen many talks about Subject X on the internet already. Feels like everybody is talking about the same and your talk is just yet another one of the subjects? Then think about how to differentiate from others - provide examples based on your personal experience, focus on a&nbsp;specific area and topic where you’re strongest, focus on feedback you’ve received from other users, customers and colleagues. What worked for me was to give the audience content that they could use the very same day. Give the audience something they can try and see results immediately, let them experience the impact of what you’re talking about. When you do so, your audience will trust you and come back to you in the future for more since they’ve been able to reproduce easily what you’ve shown them.</p>
-
-<h2>&#35;7 Ask for questions and get feedback</h2>
-
-<p>Keep the audience engaged and either offer the audience to ask questions during your session or let them know about a&nbsp;dedicated time for questions at the end of your session. The questions part is important as it also offers your feedback on your session. Did the audience get the point of your talk? Did they understand your examples? Do they know how to follow up? With virtual conferences, you use polls. Some questions might require more time and deeper analysis, so make sure you give them a&nbsp;way to connect with you even after the conference. Offer the audience a&nbsp;way to get detailed answers (over a&nbsp;chat, in a&nbsp;booth or even by sharing your email) while keeping your response brief and very specific to the question asked. If helps to provide evidence with facts, examples to support your answers. And it’s absolutely OK to be honest when you don’t know the answer rather than to bluff. You can offer to find the answer and post it on your social media to create further engagement.</p>
-
-<p>Lot of people will never do any public speaking due to lack of confidence and fear. But like many other things, public speaking is a&nbsp;skill that can be trained, developed and eventually mastered with enough practice. My first (few) talks were very nervous and I&nbsp;can’t say I&nbsp;was proud about how I&nbsp;handled them, but I&nbsp;definitely learned from them. Over the years, I&nbsp;gained more confidence but I&nbsp;still invest a&nbsp;lot of time into getting myself prepared for the talk and do all the tips mentioned above. As you speak more, you’ll improve and your first time experience can’t stop you from getting better. Good luck with your talk, and don’t forget: Practice makes perfect!</p>
-    ]]></content>
+<h2>#7 Ask for questions and get feedback</h2>
+<p>Keep the audience engaged and either offer the audience to ask questions during your session or let them know about a&nbsp;dedicated time for questions at the end of your session. The questions part is important as it also offers your feedback on your session. Did the audience get the point of your talk? Did they understand your examples? Do they know how to follow up? With virtual conferences, you use polls. Some questions might require more time and deeper analysis, so make sure you give them a&nbsp;way to connect with you even after the conference. Offer the audience a&nbsp;way to get detailed answers (over a&nbsp;chat, in a&nbsp;booth or even by sharing your email) while keeping your response brief and very specific to the question asked. If helps to provide evidence with facts, examples to support your answers. And it’s absolutely OK to be honest when you don’t know the answer rather than to bluff. You can offer to find the answer and post it on your social media to create further engagement. </p>
+<p>Lot of people will never do any public speaking due to lack of confidence and fear. But like many other things, public speaking is a&nbsp;skill that can be trained, developed and eventually mastered with enough practice. My first (few) talks were very nervous and I&nbsp;can’t say I&nbsp;was proud about how I&nbsp;handled them, but I&nbsp;definitely learned from them. Over the years, I&nbsp;gained more confidence but I&nbsp;still invest a&nbsp;lot of time into getting myself prepared for the talk and do all the tips mentioned above. As you speak more, you’ll improve and your first time experience can’t stop you from getting better. Good luck with your talk, and don’t forget: Practice makes perfect!</p>    ]]></content>
 </entry>
             <entry>
     <id>/cz/blog/submitting-a-proposal-for-devconf-cz-2022</id>
@@ -459,21 +304,13 @@ In previous years at around this time (Christmas) we were already collecting ses
     <summary type="html">DevConf.CZ has always welcomed first-time speakers as well as seasoned pros. If you&#039;re a&amp;nbsp;first-time speaker or just want to make sure you learn as much as possible before submitting a&amp;nbsp;proposal, you&#039;re at the right place! We&#039;re going to cover......</summary>
     <content type="html"><![CDATA[
         <p>DevConf.CZ has always welcomed first-time speakers as well as seasoned pros. If you're a&nbsp;first-time speaker or just want to make sure you learn as much as possible before submitting a&nbsp;proposal, you're at the right place! We're going to cover all you need to know to get your proposal accepted at DevConf.CZ 2022.</p>
-
 <h2>Don't miss the deadline</h2>
-
-<p>First and foremost, make sure you submit your proposal on time and sooner rather than later. <strong>The DevConf.CZ 2022 Call for Proposals ends on October 24, 2021 EOD.</strong> We always remind the date on our <a href="https://twitter.com/devconf_cz">social media channels</a> and you can also make sure you have the latest information on <a href="https://www.devconf.info/cz/">our website</a>.</p>
-
+<p>First and foremost, make sure you submit your proposal on time and sooner rather than later. <strong>The DevConf.CZ 2022 Call for Proposals ends on October 24, 2021 EOD.</strong> We always remind the date on our <a href="https://twitter.com/devconf_cz">social media channels</a> and you can also make sure you have the latest information on <a href="https://www.devconf.info/cz/">our website</a>. </p>
 <h2>Make it relevant and engaging</h2>
-
 <p>DevConf.CZ 2022 is built around <a href="https://www.devconf.info/cz/#themes">a&nbsp;list of themes</a> we believe are attractive for attendees as well as speakers but we're also open to other high-quality talk suggestions. We are interested in technical sessions and speakers who are not afraid to dive deep into details of the area of their interest. Sessions with a&nbsp;lot of audience interactions and demos are highly encouraged. We're not looking for an overview or high-level topics. Make sure to avoid product pitches and marketing presentations.</p>
-
-<p>Those with a&nbsp;keen eye for detail might have noticed the crystal ball in DevConf.CZ logo. The motto of the conference is “<strong>&#35;define future</strong>” and the future is what we're interested in. We'd like to see emerging topics that might hit mainstream engineering in 1-2 years. Talking about new and upcoming work generally increases your chance of acceptance.</p>
-
+<p>Those with a&nbsp;keen eye for detail might have noticed the crystal ball in DevConf.CZ logo. The motto of the conference is “<strong>#define future</strong>” and the future is what we're interested in. We'd like to see emerging topics that might hit mainstream engineering in 1-2 years. Talking about new and upcoming work generally increases your chance of acceptance.</p>
 <h2>Select the right session type</h2>
-
 <p>Since we're a&nbsp;hybrid event in 2022, we made a&nbsp;few changes in the session types to adjust to the new format based on what we’ve learned from past conferences and virtual events. While we will stick to talks, workshops and meetups. We want to make sure the content is focused, tells the whole story, and is structured in a&nbsp;way that allows engagement for both in-person and virtual audiences.</p>
-
 <ul>
 <li><strong>Talk (25 minutes)</strong> - A&nbsp;talk is where you present with slides and demos to an audience. We recommend reserving some time in the end for Q&amp;A, e.g. a&nbsp;20-minute talk and a&nbsp;5-minute Q&amp;A. Feel free to recruit your colleagues to interact with people in chat while you are talking. A&nbsp;talk has one primary speaker, optionally another (secondary) speaker. It should be bite-sized and focused on a&nbsp;certain topic. This means that you should not expect to be able to cover multiple broad areas in one talk. You can submit more than one proposal, to cover a&nbsp;set of topics, but we cannot guarantee their final scheduled order. Therefore, we recommend you submit topics that are independent and do not need to be presented in a&nbsp;specific order.</li>
 <li><strong>Deep dive talk (50 minutes)</strong> - A&nbsp;deep dive talk is the same as a&nbsp;talk, but this is considered a&nbsp;two-part session (you will talk during two 25 minute time slots). You should consider that different audiences may join each part due to different timing of parallel talks in other rooms and tailor the content accordingly. This option is recommended for deep technical dives that include a&nbsp;demo.</li>
@@ -483,13 +320,9 @@ In previous years at around this time (Christmas) we were already collecting ses
 <li><strong>Meetups</strong> - Meetups are open to all participants, they serve as a&nbsp;place for open discussions during a&nbsp;dedicated time, sharing the latest project developments and interaction with contributors and attendees. Meetups are organized as virtual chat rooms or in-person meetings. Meetups are either 25 or 50 minutes long, although we will consider exceptions.</li>
 <li><s><strong>Booths</strong></s> - Based on our experience from last year and possible capacity limitations at the venue, we decided we will <strong>NOT</strong> have booths. We encourage everyone who would normally set up a&nbsp;booth to submit a&nbsp;meetup proposal instead.</li>
 </ul>
-
 <h2>Do you need help with your submission?</h2>
-
 <p>If you still aren't 100% certain about your proposal we invite you to the DevConf.CZ 2022 CfP office hours on <strong>Thursday, October 21 from 3 - 5 PM CEST</strong> on our <a href="https://discord.com/invite/devconf">discord channel</a>. You can discuss your proposal or get some tips from session reviewers and past DevConf.CZ speakers.</p>
-
-<p>You can also join the <a href="https://discord.com/channels/785879296379453491/844640981319024670">&#35;CfP-help</a> discord channel and chat with event organizers about anything related to CfP anytime or take a&nbsp;look at following <a href="https://www.devconf.info/assets/files/devconf-cz-cfp-tips.pdf">presentation</a>.</p>
-    ]]></content>
+<p>You can also join the <a href="https://discord.com/channels/785879296379453491/844640981319024670">#CfP-help</a> discord channel and chat with event organizers about anything related to CfP anytime or take a&nbsp;look at following <a href="https://www.devconf.info/assets/files/devconf-cz-cfp-tips.pdf">presentation</a>.</p>    ]]></content>
 </entry>
             <entry>
     <id>/cz/blog/reimagining-conference-topics-and-what-we-hope-for</id>
@@ -503,39 +336,28 @@ In previous years at around this time (Christmas) we were already collecting ses
     <summary type="html">It feels like DevConf.CZ 2021 has just ended and we are already preparing for next year&#039;s event. For DevConf.CZ 2022, we are aiming for a&amp;nbsp;hybrid conference, with both an in-person and a&amp;nbsp;virtual presence to ensure that everyone who wishes to......</summary>
     <content type="html"><![CDATA[
         <p>It feels like DevConf.CZ 2021 has just ended and we are already preparing for next year's event. For DevConf.CZ 2022, we are aiming for a&nbsp;hybrid conference, with both an in-person and a&nbsp;virtual presence to ensure that everyone who wishes to participate is able to do so.</p>
-
 <h2>What we know so far</h2>
-
 <p>We will stick to our usual dates at the end of January and our usual venue, the Faculty of Information Technology at Brno University of Technology. We are currently discussing all the possibilities with the faculty and we are very excited to return to a&nbsp;familiar venue.</p>
-
 <p>These are the plans, however we can plan all we want but we still don't know what January 2022 is going to look like. We are prepared to adapt along the way. All we know for sure is that we will organize DevConf.CZ again, we are looking for speakers, we will welcome attendees and we will celebrate volunteers that make the conference happen. It’s not going to be easy, but hey, this is DevConf, we love trying new things and experimenting!</p>
-
 <h2>Fewer themes; more focus</h2>
-
 <p>Speaking of experiments, we’ve decided to reimagine our conference themes for DevConf.CZ 2022. Over the last several years, DevConf.CZ has amassed a&nbsp;long list of conference themes, which we developed over time through discussions with various communities, Red Hatters and other open source contributors outside the company. We’ve received feedback that as the number of themes has grown, the conference has gotten way too broad and spread in too many directions. It is exhausting to attend (and run) a&nbsp;3-day conference with 12 thematic tracks, often running in parallel, especially in a&nbsp;virtual environment.</p>
-
 <p>For 2022, we’ve chosen to pare down the list of themes to better focus on current trends in the software and hardware industry. We want to focus on the sorts of topics that we all keep hearing about, but that we wish we could explore in more depth.</p>
-
 <p>We plan to open a&nbsp;Call for Proposals with the new set of themes, and include in our schedule only those that receive enough quality submissions. We may keep some of the topics for the future because we believe DevConf.CZ has reached a&nbsp;level of maturity that will allow us to rotate the focus of the conference every year. This will hopefully help us to structure the hybrid conference more effectively and keep it focused on current and emerging trends.</p>
-
 <h2>What could you present?</h2>
-
-<p>This is the updated list of conference themes and what we envision would fit into them:
-- <strong>Cloud &amp; Hyperscale</strong> - Topics around Kubernetes, quantum computing, high availability, *aaS, anything that powers large data centers or small private clouds, best practices for development, and operations at scale, resource efficiency, etc.
-- <strong>Future Tech and Open Research</strong> - What’s next? Any topics that are currently being discussed or actively researched yet their impact is still potential. Best practices and great examples of open source research collaborations are welcome.
-- <strong>Edge Computing</strong> - Modern embedded systems, microcontrollers, management of embedded systems, infrastructure for embedded systems, resource optimization, peripherals, tools, and edge in automotive are some of the topic ideas appropriate for this track.
-- <strong>HPC, Big Data and Data Science</strong> - High performance systems, data storing and processing, best practices for data lakes/data mesh, and parallelism and vector computing.
-- <strong>Open Source UX/Design</strong> - Open source practices for UX and UIs, Design Thinking, Service Design, UX and Customer Experience. How to get users and customers involved in software design and other best practices.
-- <strong>Open Source Education</strong> - Improving how students learn—and how instructors teach— withOpen Source. Open Source tools that facilitate education, as well as the overall education community that operates in an open source way (MOOC's, free bootcamps, university relations, etc).
-- <strong>Modern Software Development</strong> - Trending topics from software development, application modernization, new trends, microservices, distributed computing and continuous improvement. Development of secure code, code validation and verification.
-- <strong>Analysis, Testing and Automation</strong> - Embedded intelligence in products for automation, IoB - internet of behaviours, analytics and automated remediation capabilities, risk and change analysis, AI powered orchestration, and machine learning in analysis and test automation (i.e, test failure analysis, test generation, and test selection).
-- <strong>Linux distribution</strong> - Firmware, Linux kernel, base platform for containers, desktop, Silverblue, and upgrades.</p>
-
+<p>This is the updated list of conference themes and what we envision would fit into them:</p>
+<ul>
+<li><strong>Cloud &amp; Hyperscale</strong> - Topics around Kubernetes, quantum computing, high availability, *aaS, anything that powers large data centers or small private clouds, best practices for development, and operations at scale, resource efficiency, etc.</li>
+<li><strong>Future Tech and Open Research</strong> - What’s next? Any topics that are currently being discussed or actively researched yet their impact is still potential. Best practices and great examples of open source research collaborations are welcome.</li>
+<li><strong>Edge Computing</strong> - Modern embedded systems, microcontrollers, management of embedded systems, infrastructure for embedded systems, resource optimization, peripherals, tools, and edge in automotive are some of the topic ideas appropriate for this track.</li>
+<li><strong>HPC, Big Data and Data Science</strong> - High performance systems, data storing and processing, best practices for data lakes/data mesh, and parallelism and vector computing.</li>
+<li><strong>Open Source UX/Design</strong> - Open source practices for UX and UIs, Design Thinking, Service Design, UX and Customer Experience. How to get users and customers involved in software design and other best practices.</li>
+<li><strong>Open Source Education</strong> - Improving how students learn—and how instructors teach— withOpen Source. Open Source tools that facilitate education, as well as the overall education community that operates in an open source way (MOOC's, free bootcamps, university relations, etc).</li>
+<li><strong>Modern Software Development</strong> - Trending topics from software development, application modernization, new trends, microservices, distributed computing and continuous improvement. Development of secure code, code validation and verification.</li>
+<li><strong>Analysis, Testing and Automation</strong> - Embedded intelligence in products for automation, IoB - internet of behaviours, analytics and automated remediation capabilities, risk and change analysis, AI powered orchestration, and machine learning in analysis and test automation (i.e, test failure analysis, test generation, and test selection).</li>
+<li><strong>Linux distribution</strong> - Firmware, Linux kernel, base platform for containers, desktop, Silverblue, and upgrades.</li>
+</ul>
 <p>Think about what you’d love to talk about and how it can fit into these themes. We are always seeking technical sessions and speakers who are not afraid to dive deep into details of the area of their interest.</p>
-
 <p>If you feel like your session does not fit into any of these themes, do not hesitate to submit a&nbsp;proposal and let us know why you think it is worth discussing. We drafted the list of themes we believe are attractive for attendees as well as speakers, but we will find space for all high quality talks.</p>
-
-<p>Submit your proposals at <a href="https://cfp.devconf.info/">https://cfp.devconf.info/</a> by October 24, 2021.</p>
-    ]]></content>
+<p>Submit your proposals at <a href="https://cfp.devconf.info/">https://cfp.devconf.info/</a> by October 24, 2021.</p>    ]]></content>
 </entry>
     </feed>

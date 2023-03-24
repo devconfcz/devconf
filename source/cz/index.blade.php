@@ -125,6 +125,9 @@
                     <div class="heading-text pt-1 mt-5">
                         <a href="https://devconfcz-mini-march-2023-tickets.eventbrite.com" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">Registration is open</a>
                     </div>
+                    <div class="heading-text pt-1 mt-2">
+                        <a href="/cz/schedule/" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SCHEDULE</a>
+                    </div>
   		        </div>
       		    
    		    </div>
