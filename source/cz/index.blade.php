@@ -115,7 +115,7 @@
                         March 31, 2023
         			</div>
         			<div class="heading-text mont-700 h4">
-                        <a href="#map" class="nav-link local d-inline-block" style="color: white; padding: 0px"><i class="fa fa-map-marker"></i> Brno, Czech Republic</a>
+                        <a href="#map" class="nav-link local d-inline-block" style="color: white; padding: 0px"><i class="fa fa-map-marker"></i> FI MUNI, Botanická 68A, Brno, Czech Republic</a>
                     </div> 
                     <div style="padding: 0 0 0 3rem" class="my-1">
                         <div class="mini-chip">Analysis, testing and automation</div>
