@@ -58,10 +58,10 @@
 	</div>
 	<div class="row local-nav">
 		<div class="mx-5  mt-4 os-400">
-			<a href="#plane">Plane</a>
-			<a href="#train">Train</a>
-			<a href="#bus">Bus</a>
-			<a href="#car">Car</a>
+			<a href="#plane">By Plane</a>
+			<a href="#train">By Train</a>
+			<a href="#bus">By Bus</a>
+			<a href="#car">By Car</a>
 		</div>
 	</div>
 </section>
@@ -75,21 +75,22 @@
 			<ul>
                 <li>Brno airport is a small international airport near Brno.
                     This airport is a good option if you are coming from London (Stansted - Ryanair).</li>
-                <li>From the airport, city bus #76 will take you to the city center (30 minutes) and drop you off between the main train station and the Hotel Grand bus stop.
-                    You can also take a taxi for approximaely 300 CZK/€12.</li>
+                <li>From the airport, city bus <strong>E76</strong> will take you to the city center (20 minutes) and drop you off between the main train station and the Hotel Grand bus stop.
+                    You can also take a taxi for approximately 300 CZK/€12.</li>
 			</ul>
 			<strong class="d-block mb-3 os-600">Vienna International Airport (VIE)</strong>
 			<ul>
 				<li>Vienna International Airport is the biggest airline hub in Central Europe with flights to many destinations all over the world.</li>
-				<li>The easiest way to get from the airport to Brno is the <a href="https://jizdenky.regiojet.cz/" target="_blank">Student Agency</a> buses.
+				<li>The easiest way to get from the airport to Brno is the <a href="https://regiojet.com/" target="_blank">Student Agency</a> buses.
                     You can book the bus online from the stop Vienna Schwechat Airport to Brno.
                     The direct bus takes 2 hours.</li>
-				<li>Alternately, you can take a train from the airport to the city centre of Vienna and then take a train to Brno from there.</li>
+				<li>Alternatively, you can take a train from the airport to the city center of Vienna and then take a train to Brno from there.</li>
 			</ul>
 			<strong class="d-block mb-3 os-600">Václav Havel Airport Prague (PRG)</strong>
 			<ul>
                 <li>Václav Havel Airport Prague is the second busiest airport in the region.</li>
-                <li>You can take the bus from the airport to Brno and book it as a single ticket with <a href="https://jizdenky.regiojet.cz/" target="_blank">Student Agency</a>.
+                <li>You can take the bus from the airport to Brno and book it as a single ticket with <a href="https://regiojet.com/" target="_blank">Student Agency</a>
+                 or <a href="https://www.flixbus.com/" target="_blank">FlixBus</a>.
                     This trip will include a stop and likely a change of buses at the Prague main bus station (Florenc).</li>
                 <li>You can take the train to Brno after using the Czech Railways shuttle bus from the airport to the Prague main train station.
                     You can book a single ticket for both the shuttle bus and the train with <a href="https://www.cd.cz/en/default.htm" target="_blank">Czech Rail</a></li>
@@ -133,7 +134,8 @@
 		<div class="h2 pt-3 pb-4 mx-5 mont-700">By bus</div>
 		<div class="os-400 mx-5">
 			<p>Brno is also part of the European bus network and all connections and their prices are similar to trains.
-			   <a href="https://jizdenky.regiojet.cz/" target="_blank">Student Agency</a> and <a href="https://www.eurolines.de/en/home/" target="_blank">Eurolines</a> provide buses to many European cities. 
+			   <a href="https://regiojet.com/" target="_blank">Student Agency</a>, <a href="https://www.flixbus.com/" target="_blank">FlixBus</a> and 
+			   <a href="https://www.eurolines.de/en/home/" target="_blank">Eurolines</a> provide buses to many European cities. 
 			   Most Eurolines buses arrive at Brno-Zvonarka, Brno's main bus station. Student Agency buses arrive at a station opposite the Grand Hotel which next to the main train station.</p>
 		</div>
 	</div>
@@ -143,7 +145,7 @@
 		<div class="h2 pt-3 pb-4 mx-5 mont-700">By car</div>
 		<div class="os-400 mx-5">
             <p>Brno is well-connected to other cities by highway. You can get easily to neighboring countries by car.
-               In order to use Czech highways you have to purchase a highway sticker. 
+               In order to use Czech highways you have to purchase a <a href="https://edalnice.cz/en/index.html#/validation" target="_blank">highway sticker</a>.
                The 10 day sticker costs 350 CZK/13 € and can be purchased at every gas station.
                Travel time examples:</p>
 			<ul>
