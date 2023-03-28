@@ -63,7 +63,10 @@
 	</div>
 </section>
 <hr>
-<section id="speakers" class="mx-auto mt-5 pb-3 col-lg-11">
+<p class="col-lg-11 mx-auto my-5 os-400">
+	We are currently arranging room blocks for conference speakers and attendees. Instruction on how to book rooms in our partner hotels will be published here in the near future.
+	</p>
+<!--<section id="speakers" class="mx-auto mt-5 pb-3 col-lg-11">
 	<div class="row">
 		<div class="h2 mx-5 mont-700 pb-4">For speakers</div>
 
@@ -276,7 +279,7 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section>-->
 @endsection
 
 @include('_layouts.footercz')

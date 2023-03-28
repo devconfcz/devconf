@@ -42,9 +42,9 @@
 				<li class="nav-item active px-3">
 					<a href="/cz/schedule" class="nav-link local">Schedule for Mini</a>
 				</li>
-<!--				<li class="nav-item active px-3">
+				<li class="nav-item active px-3">
 					<a href="#travel" class="nav-link local">How to get here?</a>
-				</li> -->
+				</li>
                 <li class="nav-item active px-3">
                     <a href="/cz/blog" class="nav-link local">Blog</a>
                 </li>
@@ -441,7 +441,7 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 <section id="schedule" class="mx-auto col-lg-12 background-gray text-center mt-5 pt-5">
 	<div class="h1 mont-700 position-relative py-4 mt-3">Schedule</div>
 	<a class="p-3 mont-700 mb-3 d-inline-block purple-href" target="_blank" href="https://devconfcz2022.sched.com/">SCHEDULE IS LIVE</a>
-</section>
+</section> -->
 <section id="travel" class="mx-auto py-5 col-lg-11">
 	<div class="row">
 		<div class="mont-700 h1 underline position-relative mx-5 pb-4">How to get there?</div>
@@ -484,7 +484,7 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 			</div>
 		</div>
 	</div>
-</section> 
+</section> <!--
 <section class="col-12 px-0 mt-5" style="height: 450px;" id="map">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2256.0277944515196!2d16.598010589157468!3d49.209899867172716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712946af848abab%3A0xcbdad60137e0b956!2sFaculty%20of%20Informatics%20Masaryk%20University!5e0!3m2!1sen!2scz!4v1652788388079!5m2!1sen!2scz" loading="lazy" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 </section>-->
