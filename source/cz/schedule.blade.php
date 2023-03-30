@@ -59,7 +59,7 @@
 
     $bgs = array("Workshop" => "table-danger", "Analysis, Testing and Automation" => "table-primary",
                  "HPC, Big Data and Data Science" => "table-active", "Open Source Education" => "table-success");
-    $streams = array("D1"=>"", "D2"=>"", "D3"=>"");
+    $streams = array("D1"=>"https://youtube.com/live/OJd2hFcuaTo", "D2"=>"https://youtube.com/live/u9BatcpCUIc", "D3"=>"https://youtube.com/live/bHlaAVABLtg");
 	$schedule = array(
 	    array("start"=>"14:00", "items"=>array(
     	    array("end"=>"14:15", "length"=>15, "name"=>"Check in and welcome", "description"=>"")
