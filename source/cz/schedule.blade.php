@@ -67,14 +67,14 @@
         
         array("start"=>"14:15", "items"=>array(
             array("end"=>"14:55", "length"=>40, "name"=>"OpenSource as a venue for an education", "description"=>"In this panel, we will focus on how open source projects can support education in a meaningful way. We will dive deep into challenges and opportunities in open source project contribution, their readiness to onboard new contributors, necessary time involvement, and desired skill sets from both sides - new contributors and project maintainers.", "room"=>"D2",
-                "speakers"=>array(array("name"=>"Marek Haičman")),
+                "speakers"=>array(array("name"=>"Marek Haičman"), array("name"=>"Barbora Bühnová"), array("name"=>"Dan Čermák"), array("name"=>"Matěj Týč"), array("name"=>"Lukáš Kotek")),
                 ),
             )
         ),
         
         array("start"=>"15:00", "items"=>array(
             array("end"=>"15:20", "length"=>20, "name"=>"Teaching technical writing fundamentals. Lesson learned.", "description"=>"Preparing and launching the technical writing course for the university. Support and collaboration with Red Hat colleagues. Improvements, takeaways, influence over 6 classes with the university students.", "track"=>"Open Source Education", "room"=>"D2",
-                "speakers"=>array(array("name"=>"Alexandra Nikandrova")),
+                "speakers"=>array(array("name"=>"Alexandra Nikandrova"), array("name"=>"Šárka Jana Janderková")),
                 ),
             array("end"=>"15:50", "length"=>40, "name"=>"Dealing with false failures in automated tests", "description"=>"Anything above a well isolated unit test suffers from sporadic failure with no evident reason. It complicates CI systems as it breaks smooth unattended workflow, it makes test results review time consuming and frustrating yet hides real issues if \"red\" result becomes the new standard. Some common strategies exist on how to deal with this non-deterministic behavior. Identification and understanding the root causes of test instability helps to choose the best option from these strategies and apply it to mitigate the flakiness.", "track"=>"Analysis, Testing and Automation", "room"=>"D1",
                 "speakers"=>array(array("name"=>"Marian Ganišin")),
