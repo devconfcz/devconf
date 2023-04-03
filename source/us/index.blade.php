@@ -93,7 +93,7 @@
 			</div> -->
 			<div class="heading-text pt-5 mt-5">
 				<a href="https://cfp.devconf.info" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SUBMIT YOUR PROPOSAL</a>
-				<br><span>Deadline to submit proposals is April 3, 2023</span>
+				<br><span>Deadline to submit proposals is April 10, 2023</span>
 			</div>
 		</div>
 	</div>
@@ -188,7 +188,7 @@
 		</div>
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">April 03, 2023</div>
+				<div class="col-4 h5 mont-700">April 10, 2023</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">CfP Closes</div>
