@@ -39,10 +39,10 @@
 				<li class="nav-item active px-3">
 					<a href="#news" class="nav-link local">News</a>
 				</li>
-				<li class="nav-item active px-3">
+<!--				<li class="nav-item active px-3">
 					<a href="/cz/schedule" class="nav-link local">Schedule for Mini</a>
 				</li>
-				<li class="nav-item active px-3">
+-->				<li class="nav-item active px-3">
 					<a href="#travel" class="nav-link local">How to get here?</a>
 				</li>
                 <li class="nav-item active px-3">
@@ -85,48 +85,18 @@
             </div>-->
 
             
-            <div class="row pb-5">
+            <div class="row py-5">
 			    <div class="col-xl-6">
-                    <div class="heading-text mont-700 h1 pt-1 pt-lg-5">
-				        <div class="hybrid-chip">
-                            <span class="mont-700">MAIN CONFERENCE</span>
-                        </div>
-			        </div>
 			        <div class="heading-text mont-700 h1">
 				        June 16 - 18, 2023
 			        </div>
 			        <div class="heading-text mont-700 h4">
                         <a href="#map" class="nav-link local d-inline-block" style="color: white; padding: 0px"><i class="fa fa-map-marker"></i> Brno, Czech Republic</a>
                     </div> 
-                    <div style="padding: 0 0 0 3rem" class="my-1">
-                        <div class="hybrid-chip"><a href="#themes" class="nav-link local p-0" style="color: white">Wide range of conference themes</a></div>
-                    </div>
                     <div class="heading-text pt-1 pt-xl-5 mt-5">
                         <a href="https://cfp.devconf.info" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">Submit a lightning talk</a>           
                     </div>
-   		        </div>
-   		        <div class="col-xl-6">
-			        <div class="heading-text mont-700 h1 pt-1 pt-lg-5">
-        				<div class="mini-chip">
-                            <span class="mont-700">MINI</span> CONFERENCE
-                        </div>
-		        	</div>
-        			<div class="heading-text mont-700 h1">
-                        March 31, 2023
-        			</div>
-        			<div class="heading-text mont-700 h4">
-                        <a href="#map" class="nav-link local d-inline-block" style="color: white; padding: 0px"><i class="fa fa-map-marker"></i> FI MUNI, Botanická 68A, Brno, Czech Republic</a>
-                    </div> 
-                    <div style="padding: 0 0 0 3rem" class="my-1">
-                        <div class="mini-chip">Analysis, testing and automation</div>
-                        <div class="mini-chip">HPC, big data and data science</div>
-                        <div class="mini-chip">Open source education</div>
-                    </div>
-                    <div class="heading-text pt-1 mt-2">
-                        <a href="/cz/schedule/" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SCHEDULE</a>
-                    </div>
-  		        </div>
-      		    
+   		        </div>      		    
    		    </div>
             <div class="road-timeline-big">
             <ul class="timeline timeline-centered">
@@ -137,14 +107,14 @@
                         array("name"=>"DevConf.CZ 2023 CfP opens", "description"=>"", "next"=>false),
                         array("name"=>"Mar 17, 2023", "next"=>false),
                         array("name"=>"DevConf.CZ 2023 CfP closes", "description"=>"", "next"=>false),
-                        array("name"=>"Mar 31, 2023", "next"=>true),
-                        array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>true),
+                        array("name"=>"Mar 31, 2023", "next"=>false),
+                        array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>false),
                         array("name"=>"Apr, 2023", "next"=>false),
                         array("name"=>"DevConf.CZ 2023 schedule published", "description"=>"", "next"=>false),
                         array("name"=>"Apr, 2023", "next"=>false),
                         array("name"=>"DevConf.CZ 2023 registration opens", "description"=>"", "next"=>false),
-                        array("name"=>"Jun 16-18, 2023", "next"=>false),
-                        array("name"=>"DevConf.CZ 2023", "description"=>"Brno/Virtual", "next"=>false),
+                        array("name"=>"Jun 16-18, 2023", "next"=>true),
+                        array("name"=>"DevConf.CZ 2023", "description"=>"Brno/Virtual", "next"=>true),
                         array("name"=>"Oct/Nov, 2023", "next"=>false),
                         array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>false),
 					  );
@@ -481,10 +451,10 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 			</div>
 		</div>
 	</div>
-</section> <!--
+</section> 
 <section class="col-12 px-0 mt-5" style="height: 450px;" id="map">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2256.0277944515196!2d16.598010589157468!3d49.209899867172716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712946af848abab%3A0xcbdad60137e0b956!2sFaculty%20of%20Informatics%20Masaryk%20University!5e0!3m2!1sen!2scz!4v1652788388079!5m2!1sen!2scz" loading="lazy" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-</section>-->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5828.8794114720895!2d16.593681273902156!3d49.223568069664026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471294099dc06bbb%3A0xbfcf161b01a48b0d!2sFaculty%20of%20Information%20Technology%2C%20Brno%20University%20of%20Technology!5e0!3m2!1sen!2scz!4v1569001018524!5m2!1sen!2scz" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</section>
 <a rel="me" href="https://fosstodon.org/@devconf_cz"></a>
 @endsection
 
