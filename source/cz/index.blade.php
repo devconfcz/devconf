@@ -114,7 +114,7 @@
                         array("name"=>"Apr, 2023", "next"=>false),
                         array("name"=>"DevConf.CZ 2023 registration opens", "description"=>"", "next"=>false),
                         array("name"=>"Jun 16-18, 2023", "next"=>true),
-                        array("name"=>"DevConf.CZ 2023", "description"=>"Brno/Virtual", "next"=>true),
+                        array("name"=>"DevConf.CZ 2023", "description"=>"Brno/Hybrid", "next"=>true),
                         array("name"=>"Oct/Nov, 2023", "next"=>false),
                         array("name"=>"DevConf.cz Mini", "description"=>"Brno", "next"=>false),
 					  );
