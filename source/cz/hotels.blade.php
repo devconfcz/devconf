@@ -107,7 +107,7 @@
 			<div class="os-400 mx-5">
 				<p><a href="https://www.hotelavanti.cz/en/" target="_blank">https://www.hotelavanti.cz/en/</a></p>
 				<p class="alert alert-warning d-inline-block">Less than 10 classic rooms available</p>
-				<p>Single Standard room - 1.550 CZK/night<br>
+				<p>Single Standard room - 1.790 CZK/night<br>
 				Double Standard room - 1.990 CZK/night<br>
 				<p>The rate is including breakfast.</p>
 				<p>Email for making reservations is:<br><a href="mailto:hotel@hotelavanti.cz">hotel@hotelavanti.cz</a></p>
