@@ -118,7 +118,7 @@
 
 			<div class="os-400 mx-5">
 				<p><a href="https://www.vista-hotel.cz/" target="_blank">https://www.vista-hotel.cz/</a></p>
-				<p class="alert alert-success d-inline-block">10+ classic rooms available</p>
+				<p class="alert alert-danger d-inline-block">No rooms available</p>
 				<p>Single Standard room 1.550 CZK/night<br>
 				Double Standard room 1.750 CZK/night</p>
 				<p>The room rate includes buffet breakfast, Wi-Fi and parking.</p>
