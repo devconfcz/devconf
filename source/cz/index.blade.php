@@ -39,10 +39,10 @@
 				<li class="nav-item active px-3">
 					<a href="#news" class="nav-link local">News</a>
 				</li>
-<!--				<li class="nav-item active px-3">
-					<a href="/cz/schedule" class="nav-link local">Schedule for Mini</a>
+				<li class="nav-item active px-3">
+					<a href="https://devconfcz2023.sched.com/" target="_blank" class="nav-link local">Schedule</a>
 				</li>
--->				<li class="nav-item active px-3">
+				<li class="nav-item active px-3">
 					<a href="#travel" class="nav-link local">How to get here?</a>
 				</li>
                 <li class="nav-item active px-3">
@@ -93,10 +93,13 @@
 			        <div class="heading-text mont-700 h4">
                         <a href="#map" class="nav-link local d-inline-block" style="color: white; padding: 0px"><i class="fa fa-map-marker"></i> Brno, Czech Republic</a>
                     </div> 
-<!--                    <div class="heading-text pt-1 pt-xl-5 mt-5">
-                        <a href="https://cfp.devconf.info" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">Submit a lightning talk</a>           
+                    <div class="heading-text pt-1 pt-xl-5 mt-5">
+                        <a href="https://devconfcz2023.eventbrite.com" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">REGISTRATION</a>           
                     </div>
--->   		        </div>      		    
+                    <div class="heading-text pt-1">
+                        <a href="https://devconfcz2023.sched.com/" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SCHEDULE</a>           
+                    </div>
+  		        </div>      		    
    		    </div>
             <div class="road-timeline-big">
             <ul class="timeline timeline-centered">
@@ -328,6 +331,7 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 	</div>
 	<div class="row">
 		<div class="col-lg-6 px-5 mx-auto">
+             <p class="os-400"><span class="h6 mont-700">Apr 28, 2023</span> DevConf.cz 2023 <a href="https://devconfcz2023.sched.com/" target="_blank">schedule</a> is published and <a href="https://devconfcz2023.eventbrite.com" target="_blank">registration</a> is open.</p>
              <p class="os-400"><span class="h6 mont-700">Mar 20, 2023</span> <a href="https://cfp.devconf.info" target="_blank">CfP for lightning talks</a> remains open.</p>
              <p class="os-400"><span class="h6 mont-700">Mar 10, 2023</span> Deadline to submit session for main DevConf.CZ event is extended to March 17, 2023 EOD everywhere.</p>
              <p class="os-400"><span class="h6 mont-700">Mar 10, 2023</span> DevConf.cz Mini | March 2023 - CfP closed.</p>
