@@ -79,21 +79,21 @@
             </div> -->
             <div class="heading-text mont-700 h3 pt-1">
                 <div>
-				    August 16, 2023 Workshops
+				    Due to unforeseen circumstances, DevConf.US 2023 has been cancelled.
                 </div>
                 <div>
-				    August 17-19, 2023 General Sessions
+				    We hope to see you again next year!
                 </div>
             </div>
-			<div class="heading-text mont-700 h4">
+			<!-- <div class="heading-text mont-700 h4">
 			<i class="fa fa-map-marker"></i> Boston, USA
-			</div>
+			</div> -->
 			<!-- <div class="heading-text mont-700 h4">
 				Web Browser Near You!
 			</div> -->
 			<div class="heading-text pt-5 mt-5">
 				<!-- <a href="https://cfp.devconf.info" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SUBMIT YOUR PROPOSAL</a> -->
-				<br><span>Registration Opens Soon!</span>
+				<!-- <br><span>Registration Opens Soon!</span> -->
 			</div>
 		</div>
 	</div>
@@ -105,7 +105,7 @@
 			<img src="/assets/images/devconf-d-boston.png" class="mw-100" alt="Boston DevConf image asset">
 		</div>
 		<div class="col-lg-6 px-5">
-			<h1 id="going-virtual" class="mont-700 pb-4">DevConf.US 2023 is Back in Person!</h1>
+			<!-- <h1 id="going-virtual" class="mont-700 pb-4">DevConf.US 2023 is Back in Person!</h1> -->
 			<!-- <div class="os-400">
                 <p>While we are disappointed that we won’t be able to see you all in
 				person again, we are glad to be back as a virtual event. There will be many opportunities to share and connect with the open source community. Check out the <a href="https://devconfus2022.sched.com">schedule</a> and mark your calendars!</p>
@@ -174,8 +174,7 @@
 	<div class="row">
 		<div class="h1 mx-5 pb-4 underline position-relative mont-700">Important Dates</div>
 	</div>
-	<div class="row">
-		<!-- Keep in pairs -->
+	<!-- <div class="row">
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
 				<div class="col-4 h5 mont-700">Jan 20, 2023</div>
@@ -196,10 +195,10 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 		<!-- Second pair -->
-	<div class="row">
+	<!-- <div class="row">
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
 				<div class="col-4 h5 mont-700">Week of June 12, 2023</div>
@@ -220,10 +219,10 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 		<!-- Third pair -->
-	<div class="row">
+	<!-- <div class="row">
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
 				<div class="col-4 h5 mont-700">August 17, 2023</div>
@@ -244,10 +243,10 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 		<!-- Fourth pair -->
-	<div class="row">
+	<!-- <div class="row">
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
 				<div class="col-4 h5 mont-700">August 19, 2023</div>
@@ -257,7 +256,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- <div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
 				<div class="col-4 h5 mont-700">September 24, 2020</div>
@@ -268,7 +267,7 @@
 				</div>
 			</div>
 		</div>-->
-		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
+		<!-- <div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
 				<div class="col-4 h5 mont-700"></div>
 				<div class="col-8">
@@ -277,7 +276,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
         </div> 
 
 <div class="row">
@@ -285,8 +284,8 @@
 </div>
 <div class="row">
 	<div class="col-10 mx-auto">
-		<p class="os-400"><span class="h6 mont-700">Jan 20, 2023</span> We have published a <a href="/assets/files/devconfUS-cfp-help.pdf" target="_blank">CfP help guide</a> to help you write an awesome proposal!</p>
-		<p class="os-400"><span class="h6 mont-700">Jan 20, 2023</span> Join our <a href="https://discord.gg/devconf" target="_blank">Discord server</a>. Reach out to us in the <b>#cfp-help</b> channel for any help with proposals.</p>
+		<!-- <p class="os-400"><span class="h6 mont-700">Jan 20, 2023</span> We have published a <a href="/assets/files/devconfUS-cfp-help.pdf" target="_blank">CfP help guide</a> to help you write an awesome proposal!</p>
+		<p class="os-400"><span class="h6 mont-700">Jan 20, 2023</span> Join our <a href="https://discord.gg/devconf" target="_blank">Discord server</a>. Reach out to us in the <b>#cfp-help</b> channel for any help with proposals.</p> -->
 		<!-- <p class="os-400"><span class="h6 mont-700">Jun 21, 2022</span> <a href="https://devconfus2022.sched.com" target="_blank">Schedule</a> is live!</p>
 		<p class="os-400"><span class="h6 mont-700">Jun 21, 2022</span> <a href="https://events.redhat.com/profile/form/index.cfm?PKformID=0x607868abcd" target="_blank">Registration</a> is live!</p> -->
 	</div>
