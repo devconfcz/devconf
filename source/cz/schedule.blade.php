@@ -61,18 +61,13 @@
 	</div>
 </section>
 <hr>
-<?php
-foreach($schedule as $k=>$time){
-?>
-<section id="<?php echo $k; ?>" class="mx-auto col-lg-11 mb-5">
+
+<section class="mx-auto col-lg-11 mb-5">
 	<div class="row">
 		<p class="os-400">See current schedule for DevConf.CZ 2023 at <a href="https://devconfcz2023.sched.com/" target="_blank">Sched.com</a>.</p>
 	</div>
 </section>
-<?php
-    
-}
-?>
+
 <script>
 
     $(document).ready(function() {
