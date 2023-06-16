@@ -3,7 +3,7 @@
     <title>DevConf.CZ Blog</title>
     <link href="/blog" />
     <link type="application/atom+xml" rel="self" href="/cz/blog/feed.atom" />
-    <updated>2023-06-16T06:16:07+00:00</updated>
+    <updated>2023-06-16T15:16:06+00:00</updated>
     <id>/cz/blog/feed.atom</id>
     <author>
         <name>Josef Ridky &lt;jridky@redhat.com&gt;</name>
