@@ -72,7 +72,7 @@ h1{
 			<h1>Wi-Fi Connection</h1>
 			<h2 style="padding-top: 3%">SSID: <strong>VUTBRNO</strong></h2>
 			<h2>User: <strong>devconfcz</strong></h2>
-			<h2>Password: <strong>Developers2020</strong></h2>
+			<h2>Password: <strong>Brno2023</strong></h2>
 		</div>
 		<div class="container h-100" time="6000">
 			<p style="padding-top: 22%">Move to the middle and <strong>use every seat</strong>.<br>The fire code says <strong class="red">NO STANDING ALLOWED</strong>.</p>
@@ -82,7 +82,7 @@ h1{
 			 as the bandwidth is shared by everyone.</p>
 		</div>
 		<div class="container h-100" time="8000">
-			<p style="padding-top: 18%">Follow us on Twitter and Facebook!</p>
+			<p style="padding-top: 18%">Follow us on Twitter, Facebook or Mastodont!</p>
 			<p>Use <strong class="purple">#devconf_cz #defineFUTURE #opensource</strong> for your posts!</p>
 		</div>
 		<div class="container h-100" time="6000">
