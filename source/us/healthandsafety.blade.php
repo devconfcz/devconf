@@ -69,26 +69,26 @@
 	<div class="row">
         <div class="os-400 mx-5 text-left" style="min-height: 40vh">
 		<div class="d-block mb-5">
-                <h5>This page will be updated regularly with onsite health and safety protocols for the event. The health and safety of our attendees is our top priority as we continue to monitor the venue, local, state, CDC, and WHO guidelines to make informed decisions around onsite safety and requirements with regards to COVID-19.</h5>
+                <h5>This page will be updated regularly with onsite health and safety protocols for the event. The health and safety of our attendees is our top priority as we continue to monitor the venue, local, state, CDC, and WHO guidelines to make informed decisions around onsite safety and requirements.</h5>
 			</div>
-		    <div class="d-block mb-3 mont-700 h2">Mask Mandate</div>
+		    <!--<div class="d-block mb-3 mont-700 h2">Mask Mandate</div>
 			<div class="d-block mb-5">
                 <!-- <h5><b>Masks will be required to be worn at the event.</b> Exceptions are outdoor spaces and while consuming food and beverage indoors when socially distanced from other attendees.
 				Masks must be worn over the nose and mouth and should be made out of a tight-knit, non-permeable material. Cloth masks are acceptable, but KN95 or N95 masks are recommended. Scarfs, bandanas, and gators are not permitted to be used as masks.
-				Attendees should bring their own masks to the event. Extra masks will be available throughout the event if needed. Speakers will not be required to wear masks while presenting given that social distancing protocols are being followed.</h5> -->
+				Attendees should bring their own masks to the event. Extra masks will be available throughout the event if needed. Speakers will not be required to wear masks while presenting given that social distancing protocols are being followed.</h5>
 				<h5> We will update this section as we evaluate the situation and protocols closer to the time of the conference.</h5>
 			</div>
 			<div class="d-block mb-3 mont-700 h2">Vaccine Requirement</div>
 			<div class="d-block mb-5">
                 <!-- <h5><b>In-person attendees will be required to be fully vaccinated against the COVID-19 virus.</b> Fully vaccinated is defined as 14 full days after the final dose of a government approved vaccine. All vaccines approved for emergency or full use by the World
 				Health Organization will be accepted at the event. List of accepted vaccines can be found <a href="https://covid19.trackvaccines.org/agency/who/" target="_blank">here.</a></h5>
-				<h5>No proof of vaccination required in order to be admitted to the event.</h5> -->
+				<h5>No proof of vaccination required in order to be admitted to the event.</h5>
 				<h5> We will update this section as we evaluate the situation and protocols closer to the time of the conference.</h5>
 			</div>
 			<div class="d-block mb-3 mont-700 h2">Attendee Social Distance Comfort Levels</div>
 			<div class="d-block mb-5">
                 <h5>We will provide badge stickers in red, yellow, and green for event participants in order to indicate their preference on social distancing comfort level. Please be respectful of each other's comfort level on social distance.</h5>
-			</div>
+			</div> -->
         </div>
 	</div>
 </section>
