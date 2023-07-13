@@ -3,12 +3,46 @@
     <title>DevConf.CZ Blog</title>
     <link href="/blog" />
     <link type="application/atom+xml" rel="self" href="/cz/blog/feed.atom" />
-    <updated>2023-06-20T09:06:38+00:00</updated>
+    <updated>2023-07-13T11:49:09+00:00</updated>
     <id>/cz/blog/feed.atom</id>
     <author>
         <name>Josef Ridky &lt;jridky@redhat.com&gt;</name>
     </author>
                 <entry>
+    <id>/cz/blog/some-dev-tips-for-you</id>
+    <link type="text/html" rel="alternate" href="/cz/blog/some-dev-tips-for-you" />
+    <title>Some dev tips for you</title>
+    <published>2023-07-13T00:00:00+00:00</published>
+    <updated>2023-07-13T00:00:00+00:00</updated>
+    <author>
+        <name>Tomas Tomecek</name>
+    </author>
+    <summary type="html">Session: Inception: dev tips marketplace
+This session was a lot of fun! Instead of creating slides before and presenting them at the conference, the usual, together with the attendees, we created content during this talk. I promised I’d share the......</summary>
+    <content type="html"><![CDATA[
+        <p>Session: <a href="https://devconfcz2023.sched.com/event/1MYeN/inception-dev-tips-marketplace">Inception: dev tips marketplace</a></p>
+<p>This session was a lot of fun! Instead of creating slides before and presenting them at the conference, the usual, together with the attendees, we created content during this talk. I promised I’d share the results with you. Let’s get into it!</p>
+<p>The site that made all of this possible is <a href="http://menti.com">menti.com</a>. It's an interactive tool that helps you interact with the audience. I’d pop a question on the screen and people would answer from their phones or laptops. We would then engage in a discussion afterwards about the answers.</p>
+<p>We had five generic questions.</p>
+<p><img src="/assets/images/blog/ttomecek/q1.jpg" alt="Question 1" /></p>
+<p>We started with an intro question about programming languages. Interesting to see that it corresponds with 2022 StackOverflow’s developer survey: <a href="https://survey.stackoverflow.co/2022#section-most-loved-dreaded-and-wanted-programming-scripting-and-markup-languages">https://survey.stackoverflow.co/2022#section-most-loved-dreaded-and-wanted-programming-scripting-and-markup-languages</a>. I never heard of <a href="https://svelte.dev/">svelte</a>, so I had to find it out. Frontend technologies are moving so fast.</p>
+<p><img src="/assets/images/blog/ttomecek/q2.jpg" alt="Question 2" /></p>
+<p>Since I co-teach git together with my colleague Irina, my first big question had to be about git. Blame command being the biggest surprise for me. It’s a very useful tool to understand how some code grown over time and why. But I’m so happy to see that rebase -i (aka interactive rebase) being so big, that is my favorite git command that I think every engineer should know. Bisect process is also helpful when you are working in a bigger codebase with other developers and try to identify a commit that changed some behavior. The mention of worktree made me qustion the audience. The person who submitted it explained that he uses worktree when working on kernel and needs physical access to files from multiple branches at the same time.</p>
+<p><img src="/assets/images/blog/ttomecek/q3.jpg" alt="Question 3" /></p>
+<p>Being up to date with information is crucial. Reddit, youtube, mastodon and twitter seem to dominate the information space among devconf participants. I need to ask about concrete channels next time :)</p>
+<p><img src="/assets/images/blog/ttomecek/q4.jpg" alt="Question 4" /></p>
+<p>We, as developers, need tools to do our work. I am so pleased seeing many of them in this slide, some I use myself but many I don’t even know. </p>
+<p>During the presentation I asked about <a href="https://github.com/junegunn/fzf">fzf</a>, a command-line fuzzy finder. As the readme states “It's an interactive Unix filter for command-line that can be used with any list; files, command history, processes, hostnames, bookmarks, git commits, etc.”. Neat! </p>
+<p>Other tools from the center of the word cloud are <a href="https://github.com/akinomyoga/ble.sh">blesh</a> (line editor for bash), <a href="https://github.com/sharkdp/bat">bat</a> (cat on whale steroids), pycharm (popular python IDE), … </p>
+<p>What are your favorites?</p>
+<p><img src="/assets/images/blog/ttomecek/q5.jpg" alt="Question 5" /></p>
+<p><img src="/assets/images/blog/ttomecek/q6.jpg" alt="Question 6" /></p>
+<p>As we spend a lot of time in the command-line, using efficient aliases (shortcuts for commands) is essential. The wip alias was the MVP: print git branches that I worked on recently. Just amazing!</p>
+<h3>What's next?</h3>
+<p>Since this was the first time I ran this session, I wanna do it more! There weren't enough questions as we finished earlier. I expected we would spend more time discussing and exchanging ideas. One of the attendees (thank you and sorry I didn’t catch your name) recommended more focused questions - how to solve concrete problems that people tend to have. That would totally spark more interest.</p>
+<p>Thank you to everyone who attended and contributed and kudos to menti.com for being the platform where we could do this.</p>    ]]></content>
+</entry>
+            <entry>
     <id>/cz/blog/submitting-a-proposal-for-devconf-cz-2023</id>
     <link type="text/html" rel="alternate" href="/cz/blog/submitting-a-proposal-for-devconf-cz-2023" />
     <title>Submitting a proposal for DevConf.CZ 2023</title>
