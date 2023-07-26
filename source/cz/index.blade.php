@@ -94,10 +94,10 @@
                         <a href="#map" class="nav-link local d-inline-block" style="color: white; padding: 0px"><i class="fa fa-map-marker"></i> Brno, Czech Republic</a>
                     </div> 
                     <div class="heading-text pt-1 pt-xl-5 mt-5">
-                        <a href="https://forms.gle/cWMSUKMRPG1scB8e6" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">POST-EVENT SURVEY</a>          
+                        <a href="https://forms.gle/cWMSUKMRPG1scB8e6" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">POST-EVENT SURVEY</a>
                     </div>
                     <div class="heading-text pt-1">
-                        <a href="https://devconfcz2023.sched.com/" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SCHEDULE</a>           
+                        <a href="https://www.youtube.com/playlist?list=PLU1vS0speL2ZdGybMAqmQjVWsi0GjH7d3" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">RECORDINGS</a>
                     </div>
   		        </div>      		    
    		    </div>
