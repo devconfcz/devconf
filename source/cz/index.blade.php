@@ -88,7 +88,7 @@
             <div class="row py-5">
 			    <div class="col-xl-6">
 			        <div class="heading-text mont-700 h1">
-				        June 16 - 18, 2023
+				        See you in 2024
 			        </div>
 			        <div class="heading-text mont-700 h4">
                         <a href="#map" class="nav-link local d-inline-block" style="color: white; padding: 0px"><i class="fa fa-map-marker"></i> Brno, Czech Republic</a>
@@ -101,7 +101,7 @@
                     </div>
   		        </div>      		    
    		    </div>
-            <div class="road-timeline-big">
+<!--        <div class="road-timeline-big">
             <ul class="timeline timeline-centered">
 			<?php
 
@@ -143,11 +143,11 @@
 				}?>
 			</ul>
             </div>
-
+-->
 		</div>
 	</div>
 </header>
-<section class="mx-auto col-lg-11 roadmap-section">
+<!--<section class="mx-auto col-lg-11 roadmap-section">
     <div class="row pt-5">
         <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-2 mx-auto">
             <ul class="timeline timeline-centered">
@@ -175,7 +175,7 @@
 			</ul>
         </div>
     </div>
-</section>
+</section> -->
 <section id="about" class="mx-auto col-lg-11">
 	<div class="row mt-4 py-5">
 		<div class="col-lg-4 mx-5 mb-5 text-center">
@@ -187,8 +187,8 @@
                 <p><strong>DevConf.CZ</strong> is annual, free, Red Hat sponsored community conference for developers, admins, DevOps engineers, testers, documentation writers and other contributors to open source technologies.
                    At DevConf.CZ, FLOSS communities sync, share, and hack on upstream projects together.</p>
 
-                <p><strong>DevConf.cz Mini</strong> is a bi-annual, highly focused, local, in-person version of DevConf.cz. It offers an opportunity to return to our conference themes in a smaller setting and establishes a platform
-                   for the Czech Republic and EMEA based community to sync, share and hack on upstream projects together.</p>
+               <!-- <p><strong>DevConf.cz Mini</strong> is a bi-annual, highly focused, local, in-person version of DevConf.cz. It offers an opportunity to return to our conference themes in a smaller setting and establishes a platform
+                   for the Czech Republic and EMEA based community to sync, share and hack on upstream projects together.</p>-->
 
 				<p>There is no admission or ticket charge for DevConf.CZ events. However, you are required to complete a free registration. Watch this site for updates about registration.</p>
 
