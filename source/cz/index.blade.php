@@ -181,8 +181,7 @@
 		<div class="col-lg-6 px-5">
 			<h1 class="mont-700 underline pb-4">About DevConf</h1>
 			<div class="os-400">
-                <p><strong>DevConf.CZ</strong> is annual, free, Red Hat sponsored community conference for developers, admins, DevOps engineers, testers, documentation writers and other contributors to open source technologies.
-                   At DevConf.CZ, FLOSS communities sync, share, and hack on upstream projects together.</p>
+                <p><strong>DevConf.CZ</strong> is a community conference for developers, admins, DevOps engineers, testers, documentation writers and other contributors to open source technologies.</p>
 
                <!-- <p><strong>DevConf.cz Mini</strong> is a bi-annual, highly focused, local, in-person version of DevConf.cz. It offers an opportunity to return to our conference themes in a smaller setting and establishes a platform
                    for the Czech Republic and EMEA based community to sync, share and hack on upstream projects together.</p>-->
