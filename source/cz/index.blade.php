@@ -39,10 +39,10 @@
 				<li class="nav-item active px-3">
 					<a href="#news" class="nav-link local">News</a>
 				</li>
-				<li class="nav-item active px-3">
+<!--				<li class="nav-item active px-3">
 					<a href="https://devconfcz2023.sched.com/" target="_blank" class="nav-link local">Schedule</a>
 				</li>
-				<li class="nav-item active px-3">
+-->				<li class="nav-item active px-3">
 					<a href="#travel" class="nav-link local">How to get here?</a>
 				</li>
                 <li class="nav-item active px-3">
