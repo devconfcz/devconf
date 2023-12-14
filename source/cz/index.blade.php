@@ -94,8 +94,11 @@
                         <a href="#map" class="nav-link local d-inline-block" style="color: white; padding: 0px"><i class="fa fa-map-marker"></i> Brno, Czech Republic</a>
                     </div> 
                     <div class="heading-text pt-1 pt-xl-5 mt-5">
-                        <a href="https://cfp.devconf.info" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">CFP WILL OPEN SOON</a>
+                        <a href="https://pretalx.com/devconf-cz-2024/" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">Call for Proposals</a>
                     </div>
+                    <div class="heading-text mont-400 h5 pb-2 pb-lg-5">
+                        Submit your proposals by March 3, 2024.
+        			</div>                    
   		        </div>      		    
    		    </div>
 <!--        <div class="road-timeline-big">
@@ -327,6 +330,7 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 	</div>
 	<div class="row">
 		<div class="col-lg-6 px-5 mx-auto">
+             <p class="os-400"><span class="h6 mont-700">Dec 14, 2023</span> Call for Proposals is open, deadline to submit proposals is March 3, 2024</p>
              <p class="os-400"><span class="h6 mont-700">Nov 16, 2023</span> DevConf.cz 2024 date announced: June 13-15, 2024</p>
              <p class="os-400"><span class="h6 mont-700">Jun 9, 2023</span> Piloting Matrix on DevConf.cz 2023. Join the space: <a href="https://matrix.to/#/#2023:devconf.cz" target="_blank">https://matrix.to/#/#2023:devconf.cz</a>.</p>
              <p class="os-400"><span class="h6 mont-700">Apr 28, 2023</span> DevConf.cz 2023 <a href="https://devconfcz2023.sched.com/" target="_blank">schedule</a> is published and <a href="https://devconfcz2023.eventbrite.com" target="_blank">registration</a> is open.</p>
