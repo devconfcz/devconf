@@ -1,25 +1,25 @@
 ---
 extends: _layouts.post
 section: content
-title: "Submitting a proposal for DevConf.CZ 2024"
+title: "Submitting a proposal for DevConf.cz 2024"
 date: 2023-12-14
 author: Dorota Volavkova
-description: How to submit proposal for DevConf.CZ 2024
+description: How to submit proposal for DevConf.cz 2024
 cover_image: /assets/images/blog/submit-devconf-cz-22.png
 featured: true
 ---
 
-DevConf.CZ has always welcomed first-time speakers as well as seasoned pros. If you're a&nbsp;first-time speaker or just want to make sure you learn as much as possible before submitting a&nbsp;proposal, you're at the right place! We're going to cover all you need to know to get your proposal accepted at DevConf.CZ 2024.
+DevConf.cz has always welcomed first-time speakers as well as seasoned pros. If you're a&nbsp;first-time speaker or just want to make sure you learn as much as possible before submitting a&nbsp;proposal, you're at the right place! We're going to cover all you need to know to get your proposal accepted at DevConf.cz 2024.
 
 ## Don't miss the deadline
 
-First and foremost, make sure you submit your proposal on time and sooner rather than later. The DevConf.CZ 2024 **[Call for Proposals](https://pretalx.com/devconf-cz-2024/cfp) ends on March 3, 2024 EOD.** We always remind the date on [Mastodon](https://fosstodon.org/@devconf_cz) and [X](https://twitter.com/devconf_cz) and you can also make sure you have the latest information on [our website](https://www.devconf.info/cz/) and [Matrix server](https://matrix.to/#/#2024:devconf.cz).
+First and foremost, make sure you submit your proposal on time and sooner rather than later. The DevConf.cz 2024 **[Call for Proposals](https://pretalx.com/devconf-cz-2024/cfp) ends on March 3, 2024 EOD.** We always remind the date on [Mastodon](https://fosstodon.org/@devconf_cz) and [X](https://twitter.com/devconf_cz) and you can also make sure you have the latest information on [our website](https://www.devconf.info/cz/) and [Matrix server](https://matrix.to/#/#2024:devconf.cz).
 
 ## Make it relevant and engaging
 
-DevConf.CZ 2024 is built around [a&nbsp;list of themes](https://www.devconf.info/cz/#themes) we believe are attractive for attendees as well as speakers but we're also open to other high-quality talk suggestions. We are interested in technical sessions and speakers who are not afraid to dive deep into details of the area of their interest. Sessions with a&nbsp;lot of audience interactions and demos are highly encouraged. We're not looking for an overview or high-level topics. Make sure to avoid product pitches and marketing presentations.
+DevConf.cz 2024 is built around [a&nbsp;list of themes](https://www.devconf.info/cz/#themes) we believe are attractive for attendees as well as speakers but we're also open to other high-quality talk suggestions. We are interested in technical sessions and speakers who are not afraid to dive deep into details of the area of their interest. Sessions with a&nbsp;lot of audience interactions and demos are highly encouraged. We're not looking for an overview or high-level topics. Make sure to avoid product pitches and marketing presentations.
 
-Those with a&nbsp;keen eye for detail might have noticed the crystal ball in DevConf.CZ logo. The motto of the conference is “**\#define future**” and the future is what we're interested in. We'd like to see emerging topics that might hit mainstream engineering in 1-2 years. Talking about new and upcoming work generally increases your chance of acceptance.
+Those with a&nbsp;keen eye for detail might have noticed the crystal ball in DevConf.cz logo. The motto of the conference is “**\#define future**” and the future is what we're interested in. We'd like to see emerging topics that might hit mainstream engineering in 1-2 years. Talking about new and upcoming work generally increases your chance of acceptance.
 
 There is a&nbsp;range of questions about the speaker and content in the CfP form. The title and abstract are the most important aspects of your submission as they are the primary focus of the Reviewing Committee and they become the most prominent part that will attract attendees during the conference. In case the Reviewing Committee needs further clarification, they will reach out to you during the reviewing period (after the CfP is closed).
 
@@ -38,6 +38,6 @@ While we plan DevConf.cz 2024 as a&nbsp;hybrid event, please note that **all ses
 
 ##Do you need help with your submission?
 
-If you still aren't 100% certain about your proposal we invite you to the DevConf.CZ CfP office hours. You will be able to discuss your proposal or get some tips from session reviewers and past DevConf.cz speakers. We will announce the details of this program in February 2024.
+If you still aren't 100% certain about your proposal we invite you to the DevConf.cz CfP office hours. You will be able to discuss your proposal or get some tips from session reviewers and past DevConf.cz speakers. We will announce the details of this program in February 2024.
 
-You can also watch the recording of DevConf.cz talk '[Let's get your conference talk accepted](https://youtu.be/pL3j-6S7Dn4)' or take a&nbsp;look at the [slide deck containing tips on submiting proposals](https://www.devconf.info/assets/files/devconf-cz-cfp-tips.pdf).
+You can also watch the recording of DevConf.cz talk '[Let's get your conference talk accepted](https://youtu.be/pL3j-6S7Dn4)' or take a&nbsp;look at the [slide deck containing tips on submitting proposals](https://www.devconf.info/assets/files/devconf-cz-cfp-tips.pdf).

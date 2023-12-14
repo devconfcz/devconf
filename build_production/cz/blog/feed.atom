@@ -3,7 +3,7 @@
     <title>DevConf.CZ Blog</title>
     <link href="/blog" />
     <link type="application/atom+xml" rel="self" href="/cz/blog/feed.atom" />
-    <updated>2023-12-14T11:35:33+00:00</updated>
+    <updated>2023-12-14T12:13:56+00:00</updated>
     <id>/cz/blog/feed.atom</id>
     <author>
         <name>Josef Ridky &lt;jridky@redhat.com&gt;</name>
@@ -11,20 +11,20 @@
                 <entry>
     <id>/cz/blog/submitting-a-proposal-for-devconf-cz-2024</id>
     <link type="text/html" rel="alternate" href="/cz/blog/submitting-a-proposal-for-devconf-cz-2024" />
-    <title>Submitting a proposal for DevConf.CZ 2024</title>
+    <title>Submitting a proposal for DevConf.cz 2024</title>
     <published>2023-12-14T00:00:00+00:00</published>
     <updated>2023-12-14T00:00:00+00:00</updated>
     <author>
         <name>Dorota Volavkova</name>
     </author>
-    <summary type="html">DevConf.CZ has always welcomed first-time speakers as well as seasoned pros. If you&#039;re a&amp;nbsp;first-time speaker or just want to make sure you learn as much as possible before submitting a&amp;nbsp;proposal, you&#039;re at the right place! We&#039;re going to cover......</summary>
+    <summary type="html">DevConf.cz has always welcomed first-time speakers as well as seasoned pros. If you&#039;re a&amp;nbsp;first-time speaker or just want to make sure you learn as much as possible before submitting a&amp;nbsp;proposal, you&#039;re at the right place! We&#039;re going to cover......</summary>
     <content type="html"><![CDATA[
-        <p>DevConf.CZ has always welcomed first-time speakers as well as seasoned pros. If you're a&nbsp;first-time speaker or just want to make sure you learn as much as possible before submitting a&nbsp;proposal, you're at the right place! We're going to cover all you need to know to get your proposal accepted at DevConf.CZ 2024.</p>
+        <p>DevConf.cz has always welcomed first-time speakers as well as seasoned pros. If you're a&nbsp;first-time speaker or just want to make sure you learn as much as possible before submitting a&nbsp;proposal, you're at the right place! We're going to cover all you need to know to get your proposal accepted at DevConf.cz 2024.</p>
 <h2>Don't miss the deadline</h2>
-<p>First and foremost, make sure you submit your proposal on time and sooner rather than later. The DevConf.CZ 2024 <strong><a href="https://pretalx.com/devconf-cz-2024/cfp">Call for Proposals</a> ends on March 3, 2024 EOD.</strong> We always remind the date on <a href="https://fosstodon.org/@devconf_cz">Mastodon</a> and <a href="https://twitter.com/devconf_cz">X</a> and you can also make sure you have the latest information on <a href="https://www.devconf.info/cz/">our website</a> and <a href="https://matrix.to/#/#2024:devconf.cz">Matrix server</a>.</p>
+<p>First and foremost, make sure you submit your proposal on time and sooner rather than later. The DevConf.cz 2024 <strong><a href="https://pretalx.com/devconf-cz-2024/cfp">Call for Proposals</a> ends on March 3, 2024 EOD.</strong> We always remind the date on <a href="https://fosstodon.org/@devconf_cz">Mastodon</a> and <a href="https://twitter.com/devconf_cz">X</a> and you can also make sure you have the latest information on <a href="https://www.devconf.info/cz/">our website</a> and <a href="https://matrix.to/#/#2024:devconf.cz">Matrix server</a>.</p>
 <h2>Make it relevant and engaging</h2>
-<p>DevConf.CZ 2024 is built around <a href="https://www.devconf.info/cz/#themes">a&nbsp;list of themes</a> we believe are attractive for attendees as well as speakers but we're also open to other high-quality talk suggestions. We are interested in technical sessions and speakers who are not afraid to dive deep into details of the area of their interest. Sessions with a&nbsp;lot of audience interactions and demos are highly encouraged. We're not looking for an overview or high-level topics. Make sure to avoid product pitches and marketing presentations.</p>
-<p>Those with a&nbsp;keen eye for detail might have noticed the crystal ball in DevConf.CZ logo. The motto of the conference is “<strong>#define future</strong>” and the future is what we're interested in. We'd like to see emerging topics that might hit mainstream engineering in 1-2 years. Talking about new and upcoming work generally increases your chance of acceptance.</p>
+<p>DevConf.cz 2024 is built around <a href="https://www.devconf.info/cz/#themes">a&nbsp;list of themes</a> we believe are attractive for attendees as well as speakers but we're also open to other high-quality talk suggestions. We are interested in technical sessions and speakers who are not afraid to dive deep into details of the area of their interest. Sessions with a&nbsp;lot of audience interactions and demos are highly encouraged. We're not looking for an overview or high-level topics. Make sure to avoid product pitches and marketing presentations.</p>
+<p>Those with a&nbsp;keen eye for detail might have noticed the crystal ball in DevConf.cz logo. The motto of the conference is “<strong>#define future</strong>” and the future is what we're interested in. We'd like to see emerging topics that might hit mainstream engineering in 1-2 years. Talking about new and upcoming work generally increases your chance of acceptance.</p>
 <p>There is a&nbsp;range of questions about the speaker and content in the CfP form. The title and abstract are the most important aspects of your submission as they are the primary focus of the Reviewing Committee and they become the most prominent part that will attract attendees during the conference. In case the Reviewing Committee needs further clarification, they will reach out to you during the reviewing period (after the CfP is closed).</p>
 <h2>Select the right session type</h2>
 <p>While we plan DevConf.cz 2024 as a&nbsp;hybrid event, please note that <strong>all sessions will be delivered in person</strong>. We plan to stream content online and make sure in-person as well as online audiences can participate in Q&amp;A and chat. We want to make sure the content is focused, tells the whole story, and is structured in a&nbsp;way that allows engagement for both in-person and virtual audiences.</p>
@@ -39,8 +39,8 @@
 <li><strong>Booths (all day)</strong> - A&nbsp;booth is a&nbsp;staffed table at the event. Booths are open to all participants at all times, and they serve as a&nbsp;place for conversations about the project and interaction with contributors, users, and attendees. There must be at least one person at the booth at all times. Preference is given to booths that will run all three days.</li>
 </ul>
 <h2>Do you need help with your submission?</h2>
-<p>If you still aren't 100% certain about your proposal we invite you to the DevConf.CZ CfP office hours. You will be able to discuss your proposal or get some tips from session reviewers and past DevConf.cz speakers. We will announce the details of this program in February 2024.</p>
-<p>You can also watch the recording of DevConf.cz talk '<a href="https://youtu.be/pL3j-6S7Dn4">Let's get your conference talk accepted</a>' or take a&nbsp;look at the <a href="https://www.devconf.info/assets/files/devconf-cz-cfp-tips.pdf">slide deck containing tips on submiting proposals</a>.</p>    ]]></content>
+<p>If you still aren't 100% certain about your proposal we invite you to the DevConf.cz CfP office hours. You will be able to discuss your proposal or get some tips from session reviewers and past DevConf.cz speakers. We will announce the details of this program in February 2024.</p>
+<p>You can also watch the recording of DevConf.cz talk '<a href="https://youtu.be/pL3j-6S7Dn4">Let's get your conference talk accepted</a>' or take a&nbsp;look at the <a href="https://www.devconf.info/assets/files/devconf-cz-cfp-tips.pdf">slide deck containing tips on submitting proposals</a>.</p>    ]]></content>
 </entry>
             <entry>
     <id>/cz/blog/some-dev-tips-for-you</id>
