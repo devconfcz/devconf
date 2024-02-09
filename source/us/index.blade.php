@@ -31,7 +31,10 @@
 		<div class="collapse navbar-collapse" id="navbarMobile">
 			<ul class="navbar-nav ml-auto pr-5">
 				<li class="nav-item active px-3">
-					<a href="#about" class="nav-link local">About & Topics</a>
+					<a href="#about" class="nav-link local">About</a>
+				</li>
+				<li class="nav-item active px-3">
+					<a href="#themes" class="nav-link local">Conference Themes</a>
 				</li>
 				<li class="nav-item active px-3">
 					<a href="#news" class="nav-link local">News</a>
@@ -40,11 +43,8 @@
 				<a href="https://devconfus2022.sched.com" class="nav-link local" target="_blank">Schedule</a>
 				</li> -->
 				<!-- <li class="nav-item active px-3">
-					<a href="#video-tour" class="nav-link local">Video tour</a>
-				</li> -->
-				<li class="nav-item active px-3">
-					<a href="/us/healthandsafety" class="nav-link local">Health & Safety</a>
-				</li>
+                    <a href="/cz/blog" class="nav-link local">Blog</a>
+                </li> -->
 				<li class="nav-item active px-3">
 					<a href="/us/faq" class="nav-link local">FAQ</a>
 				</li>
@@ -77,23 +77,15 @@
             <!-- <div class="heading-text pt-1 mt-2">
             <a href="https://events.redhat.com/profile/form/index.cfm?PKformID=0x607868abcd" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">REGISTER NOW!!</a>
             </div> -->
-            <div class="heading-text mont-700 h3 pt-1">
-                <div>
-				    Due to unforeseen circumstances, DevConf.US 2023 has been cancelled.
-                </div>
-                <div>
-				    We hope to see you again next year!
-                </div>
-            </div>
-			<!-- <div class="heading-text mont-700 h4">
+            <div class="heading-text mont-700 h1">
+				        August 14-16, 2024
+			</div>
+			<div class="heading-text mont-700 h4">
 			<i class="fa fa-map-marker"></i> Boston, USA
-			</div> -->
-			<!-- <div class="heading-text mont-700 h4">
-				Web Browser Near You!
-			</div> -->
+			</div>
 			<div class="heading-text pt-5 mt-5">
-				<!-- <a href="https://cfp.devconf.info" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SUBMIT YOUR PROPOSAL</a> -->
-				<!-- <br><span>Registration Opens Soon!</span> -->
+				<a href="https://pretalx.com/devconf-us-2024/cfp" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SUBMIT YOUR PROPOSAL</a>
+				<br><span>Submit your proposals by April 8, 2024.</span>
 			</div>
 		</div>
 	</div>
@@ -105,14 +97,10 @@
 			<img src="/assets/images/devconf-d-boston.png" class="mw-100" alt="Boston DevConf image asset">
 		</div>
 		<div class="col-lg-6 px-5">
-			<!-- <h1 id="going-virtual" class="mont-700 pb-4">DevConf.US 2023 is Back in Person!</h1> -->
-			<!-- <div class="os-400">
-                <p>While we are disappointed that we won’t be able to see you all in
-				person again, we are glad to be back as a virtual event. There will be many opportunities to share and connect with the open source community. Check out the <a href="https://devconfus2022.sched.com">schedule</a> and mark your calendars!</p>
-			</div> -->
+			<h1 id="going-virtual" class="mont-700 pb-4">DevConf.US 2024 is Back in Person!</h1>
 			<h1 class="mont-700 underline pb-4">About DevConf</h1>
 			<div class="os-400">
-                <p>DevConf.US 2023 is the 6th annual, free, Red Hat sponsored technology conference for community project and professional contributors to Free and Open Source technologies
+                <p>DevConf.US 2024 is the 6th annual, free, Red Hat sponsored technology conference for community project and professional contributors to Free and Open Source technologies
 		 at <strong>Boston University</strong> in the historic city of Boston, USA.</p>
 
         <p>There is no admission or ticket charge for DevConf.US events. However, you are required to complete a free registration. Talks, presentations, and workshops will all be in English.</p>
@@ -125,9 +113,11 @@
 			</div>
 		</div>
 	</div>
+</section>
 
+<section id="themes" class="mx-auto col-lg-11">
 	<div class="row">
-		<div class="h1 mx-5 mont-700">Topics</div>
+		<div class="h1 mx-5 mont-700">Conference Themes</div>
 	</div>
 	<div class="row py-4">
 		<div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-2 mx-auto">
@@ -135,16 +125,17 @@
 			<?php
 
 				$topics = array(
-					array("name"=>"Cloud & Hyperscale","description"=>"Topics around Kubernetes, quantum computing, high availability, *aaS, anything that powers large data centers or small private clouds, best practices for development, and operations at scale, resource efficiency, etc."),
-					array("name"=>"Future Tech and Open Research", "description"=>"What’s next? Any topics that are currently being discussed or actively researched yet their impact is still potential. Best practices and great examples of open source research collaborations are welcome."),
-					array("name"=>"Edge Computing", "description"=>"Modern embedded systems, microcontrollers, management of embedded systems, infrastructure for embedded systems, resource optimization, peripherals, tools, and edge in automotive are some of the topic ideas appropriate for this track."),
-					array("name"=>"HPC, Big Data and Data Science", "description"=>"Topics around open source innovation in the data, computing and AI/ML domains including high performance systems, data storing, processing & governance, best practices for data lakes/data mesh, machine and deep learning frameworks and tools, model training, benchmarking, inference and deploying AI at scale, and parallelism and vector computing."),
-					array("name"=>"Open Source UX/Design", "description"=>"Open source practices for UX and UIs, Design Thinking, Service Design, UX and Customer Experience. How to get users and customers involved in software design and other best practices."),
-					array("name"=>"Open Source Education", "description"=>"Improving how students learn—and how instructors teach— withOpen Source. Open Source tools that facilitate education, as well as the overall education community that operates in an open source way (MOOC's, free bootcamps, university relations, etc)."),
-					array("name"=>"Modern Software Development", "description"=>"Modern software architectures, frameworks and trends encompassing microservices, distributed computing, modernization, security, testing strategies, and continuous improvement."),
-					array("name"=>"Analysis, Testing and Automation", "description"=>"Embedded intelligence in products for automation, IoB - internet of behaviors, analytics and automated remediation capabilities, risk and change analysis, AI powered orchestration, and machine learning in analysis and test automation (i.e, test failure analysis, test generation, and test selection)."),
-					array("name"=>"Linux distribution", "description"=>"Firmware, Linux kernel, base platform for containers, desktop, Silverblue, and upgrades."),
-				  );
+					array("name"=>"Cloud, Hybrid Cloud and Hyperscale Infrastructure","description"=>"Topics around Kubernetes, high availability, anything that powers large data centers or small private clouds, best practices for infrastructure management and operations at scale, resource efficiency, and setting up developer environments. Topic related to virtualization, containers, and Kubernetes."),
+					array("name"=>"Future Tech and Open Research", "description"=>"What’s next? Any topics that are discussed or actively researched yet their impact is still potential. Best practices and great examples of open source research collaborations are welcome. Trending topics from software development, metaverse, new trends in existing areas such as microservices, distributed computing, and continuous improvement, observability, quantum computing."),
+					array("name"=>"Edge, Mobile and Automotive", "description"=>"Modern embedded systems, microcontrollers, management of embedded systems, infrastructure for embedded systems, resource optimization and resource lean appliances, peripherals, tools for specific use cases, and edge in automotive."),
+					array("name"=>"Artificial Intelligence and Data Science", "description"=>"Artificial intelligence, large language models, data storing and processing, best practices for data lakes/data mesh, and parallelism and vector computing."),
+					array("name"=>"Linux Distributions and Operating Systems", "description"=>"Firmware, Linux kernel, base platform for containers, unorchestrated containers, desktop, updates from Fedora land, Silverblue, CentOS Stream and other distributions. OS building and distribution, release management topics, package manager tools, data-driven package management, integrating components into the system."),
+					array("name"=>"DevOps and Automation, Security and Compliance", "description"=>"How to define a release pipeline, how to automate developer environments, how to build developer sandboxes, how to ensure application uptime, continuous application development, agile development, SRE tools and best practices, AppOps, and testing in DevOps environments. Embedded intelligence in products for automation, IoB (Internet of Behaviors), analytics and automated remediation capabilities, risk and change analysis, AI-powered orchestration, and machine learning in test automation (e.g. test failure analysis, test generation, and test selection)."),
+					array("name"=>"Application and Services Development", "description"=>"Build and deploy apps, modern application development, services development and challenges with running applications in cloud, application monitoring and cloud-ready apps, application modernization, single-sourcing documentation, etc."),
+					array("name"=>"Open Source Success Stories", "description"=>"Customer success stories with open source, examples of open source initiatives in the public sector, open source projects in academia, from zero to a successful open source project."),
+					array("name"=>"Agility, Leadership and DEI", "description"=>"Agile practices, UX, design/design thinking, community management and open source in education, open management practices. DEI (Diversity, Equity, and Inclusion) topics."),
+					array("name"=>"Open track", "description"=>"Open to any other topics! We welcome open-source student projects, presentations of diploma and bachelor theses, proposals for new projects, and any other topic that doesn't fall under the listed themes but relates to the general open source community topics.")
+				);
 
 				foreach($topics as $i=>$t){
 					if($i%2 == 0){?>
@@ -170,10 +161,10 @@
 	</div>
 </section>
 
-<section id="news" class="mx-auto py-5 col-lg-11">
+<!-- <section id="news" class="mx-auto py-5 col-lg-11">
 	<div class="row">
 		<div class="h1 mx-5 pb-4 underline position-relative mont-700">Important Dates</div>
-	</div>
+	</div> -->
 	<!-- <div class="row">
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
@@ -277,31 +268,34 @@
 				</div>
 			</div>
 		</div> -->
-        </div> 
+        <!-- </div>  -->
 
-<div class="row">
-	<div class="h1 mx-5 pb-4 underline position-relative mont-700">News</div>
-</div>
-<div class="row">
-	<div class="col-lg-6 px-5 mx-auto">
-		<!-- <p class="os-400"><span class="h6 mont-700">Jan 20, 2023</span> We have published a <a href="/assets/files/devconfUS-cfp-help.pdf" target="_blank">CfP help guide</a> to help you write an awesome proposal!</p>
-		<p class="os-400"><span class="h6 mont-700">Jan 20, 2023</span> Join our <a href="https://discord.gg/devconf" target="_blank">Discord server</a>. Reach out to us in the <b>#cfp-help</b> channel for any help with proposals.</p> -->
-		<!-- <p class="os-400"><span class="h6 mont-700">Jun 21, 2022</span> <a href="https://devconfus2022.sched.com" target="_blank">Schedule</a> is live!</p>
-		<p class="os-400"><span class="h6 mont-700">Jun 21, 2022</span> <a href="https://events.redhat.com/profile/form/index.cfm?PKformID=0x607868abcd" target="_blank">Registration</a> is live!</p> -->
+<section id="news" class="mx-auto py-5 col-lg-11">
+	<div class="row mt-4">
+		<div class="h1 mx-5 pb-4 underline position-relative mont-700">News</div>
 	</div>
+	<div class="row">
+		<div class="col-lg-6 px-5 mx-auto">
+			<p class="os-400"><span class="h6 mont-700">February 12, 2024</span> Call for Proposals is open, deadline to submit proposals is April 8, 2024</p>
+			<p class="os-400"><span class="h6 mont-700">February 8, 2024</span> DevConf.US 2024 date announced: August 14-16, 2024</p>
+			<!-- <p class="os-400"><span class="h6 mont-700">Jan 20, 2023</span> We have published a <a href="/assets/files/devconfUS-cfp-help.pdf" target="_blank">CfP help guide</a> to help you write an awesome proposal!</p>
+			<p class="os-400"><span class="h6 mont-700">Jan 20, 2023</span> Join our <a href="https://discord.gg/devconf" target="_blank">Discord server</a>. Reach out to us in the <b>#cfp-help</b> channel for any help with proposals.</p> -->
+			<!-- <p class="os-400"><span class="h6 mont-700">Jun 21, 2022</span> <a href="https://devconfus2022.sched.com" target="_blank">Schedule</a> is live!</p>
+			<p class="os-400"><span class="h6 mont-700">Jun 21, 2022</span> <a href="https://events.redhat.com/profile/form/index.cfm?PKformID=0x607868abcd" target="_blank">Registration</a> is live!</p> -->
+		</div>
 
-	<div class="col-lg-4 px-5 mx-auto">
-		<form action="https://devconf.us5.list-manage.com/subscribe/post?u=ad2f341fc41f78b232f2765e6&amp;id=5c698e706b&amp;f_id=00b4a1ebf0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate px-2 py-3 bordered text-center" target="_blank" novalidate>
-            <div class="h3 mont-700">Sign up for newsletter</div>
-                <div class="mc-field-group">
-                    <input type="email" value="" name="EMAIL" class="required email p-2" id="mce-EMAIL" placeholder="Email address">
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_25582686a9fc051afd5453557_189578c854" tabindex="-1" value=""></div>
-                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="px-4 py-2 mont-400">
-                </div>
-            </div>
-        </form>
+		<div class="col-lg-4 px-5 mx-auto">
+			<form action="https://devconf.us5.list-manage.com/subscribe/post?u=ad2f341fc41f78b232f2765e6&amp;id=5c698e706b&amp;f_id=00b4a1ebf0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate px-2 py-3 bordered text-center" target="_blank" novalidate>
+				<div class="h3 mont-700">Sign up for newsletter</div>
+					<div class="mc-field-group">
+						<input type="email" value="" name="EMAIL" class="required email p-2" id="mce-EMAIL" placeholder="Email address">
+						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_25582686a9fc051afd5453557_189578c854" tabindex="-1" value=""></div>
+						<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="px-4 py-2 mont-400">
+					</div>
+				</div>
+			</form>
+		</div>
 	</div>
-</div>
 </section>
 
 <!-- <section id="video-tour" class="mx-auto py-5 col-lg-11">
