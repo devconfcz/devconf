@@ -60,9 +60,9 @@
 	<div class="row mr-0 mt-5" style="height: 85%">
 		<div class="col-lg-1 border-right text-center pr-0">
 			<a href="mailto:info@devconf.cz" target="_blank" title="Mail"><img src="/assets/images/mail.svg" alt="mail" class="social-icon"></a>
-			<a href="https://www.facebook.com/DevConf.CZ" target="_blank" title="Facebook"><img src="/assets/images/facebook.svg" alt="facebook" class="social-icon"></a>
+            <a href="https://fosstodon.org/@devconf_cz" target="_blank" title="Fosstodon"><img src="/assets/images/fosstodon.svg" alt="fosstodon" class="social-icon"></a>
 			<a href="https://twitter.com/devconf_cz" target="_blank" title="Twitter"><img src="/assets/images/twitter.svg" alt="twitter" class="social-icon"></a>
-			<a href="https://fosstodon.org/@devconf_cz" target="_blank" title="Fosstodon"><img src="/assets/images/fosstodon.svg" alt="fosstodon" class="social-icon"></a>
+			<a href="https://www.linkedin.com/company/102081562/admin/feed/posts/" target="_blank" title="LinkedIn"><img src="/assets/images/linkedin.svg" alt="linkedin" class="social-icon"></a>
 			<a href="https://matrix.to/#/#2024:devconf.cz" target="_blank" title=""><img src="/assets/images/matrix.svg" alt="matrix" class="social-icon"></a>
 			<a href="https://www.youtube.com/channel/UCmYAQDZIQGm_kPvemBc_qwg" target="_blank" title="YouTube"><img src="/assets/images/youtube.svg" alt="youtube" class="social-icon"></a>
 			<a href="https://github.com/devconfcz/devconf" target="_blank" title="Git Hub"><img src="/assets/images/github.svg" alt="github" class="social-icon"></a>
@@ -330,6 +330,7 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 	</div>
 	<div class="row">
 		<div class="col-lg-6 px-5 mx-auto">
+             <p class="os-400"><span class="h6 mont-700">Feb 12, 2024</span> Follow <a href="https://www.linkedin.com/company/102081562/admin/feed/posts/" target="_blank">DevConf.CZ on LinkedIn</a>.</p>
              <p class="os-400"><span class="h6 mont-700">Dec 14, 2023</span> Call for Proposals is open, deadline to submit proposals is March 3, 2024</p>
              <p class="os-400"><span class="h6 mont-700">Nov 16, 2023</span> DevConf.cz 2024 date announced: June 13-15, 2024</p>
              <p class="os-400"><span class="h6 mont-700">Jun 9, 2023</span> Piloting Matrix on DevConf.cz 2023. Join the space: <a href="https://matrix.to/#/#2023:devconf.cz" target="_blank">https://matrix.to/#/#2023:devconf.cz</a>.</p>

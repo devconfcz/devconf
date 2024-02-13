@@ -5,7 +5,7 @@
    viewBox="0 0 44 44"
    version="1.1"
    id="svg13"
-   sodipodi:docname="twitter.svg"
+   sodipodi:docname="linkedin.svg"
    inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -41,9 +41,9 @@
      inkscape:window-height="885"
      id="namedview15"
      showgrid="false"
-     inkscape:zoom="10.315482"
-     inkscape:cx="17.691853"
-     inkscape:cy="30.197328"
+     inkscape:zoom="14.588295"
+     inkscape:cx="29.235768"
+     inkscape:cy="26.014007"
      inkscape:window-x="1728"
      inkscape:window-y="32"
      inkscape:window-maximized="0"
@@ -99,15 +99,10 @@
       </g>
     </g>
   </g>
-  <g
-     id="layer1"
-     transform="matrix(0.04017388,0,0,0.04017388,-9.411555,-3.5367277)"
-     style="fill:#ffffff">&#10;	<path
-   id="path1009"
-   class="st0"
-   d="M 485.39,356.79 715.46,664.41 483.94,914.52 h 52.11 l 202.7,-218.98 163.77,218.98 h 177.32 L 836.82,589.6 1052.32,356.79 h -52.11 L 813.54,558.46 662.71,356.79 Z m 76.63,38.38 h 81.46 l 359.72,480.97 h -81.46 z"
-   style="fill:#ffffff" />
-&#10;</g>
   <style
      id="style844">.st0{fill:#FFFFFF;}</style>
+  <path
+     d="m 33.819774,24.55543 v 8.739543 h -5.065955 v -8.15564 c 0,-2.04719 -0.732818,-3.444284 -2.567248,-3.444284 -1.399473,0 -2.233935,0.94085 -2.600352,1.853339 -0.132447,0.326221 -0.167838,0.780102 -0.167838,1.233983 v 8.512602 h -5.068318 c 0,0 0.0686,-13.810224 0,-15.240407 h 5.068318 v 2.158289 l -0.03315,0.04957 h 0.03315 v -0.04727 c 0.673715,-1.040147 1.87461,-2.519979 4.567153,-2.519979 3.333169,0 5.83424,2.179561 5.83424,6.860191 z M 13.047714,10.705027 c -1.732785,0 -2.867487,1.139429 -2.867487,2.633441 0,1.46565 1.101613,2.635819 2.801294,2.635819 h 0.03315 c 1.768239,0 2.867487,-1.172532 2.867487,-2.635819 -0.03315,-1.494012 -1.099249,-2.633441 -2.834383,-2.633441 z m -2.567263,22.589946 h 5.068318 V 18.054566 h -5.068318 z"
+     id="path1"
+     style="stroke-width:2.36396;fill:#ffffff" />
 </svg>
