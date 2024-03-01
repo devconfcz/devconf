@@ -13,7 +13,7 @@ DevConf.cz has always welcomed first-time speakers as well as seasoned pros. If 
 
 ## Don't miss the deadline
 
-First and foremost, make sure you submit your proposal on time and sooner rather than later. The DevConf.cz 2024 **[Call for Proposals](https://pretalx.com/devconf-cz-2024/cfp) ends on March 3, 2024 EOD.** We always remind the date on [Mastodon](https://fosstodon.org/@devconf_cz) and [X](https://twitter.com/devconf_cz) and you can also make sure you have the latest information on [our website](https://www.devconf.info/cz/) and [Matrix server](https://matrix.to/#/#2024:devconf.cz).
+First and foremost, make sure you submit your proposal on time and sooner rather than later. The DevConf.cz 2024 **[Call for Proposals](https://pretalx.com/devconf-cz-2024/cfp) ends on March 10, 2024 EOD.** We always remind the date on [Mastodon](https://fosstodon.org/@devconf_cz) and [X](https://twitter.com/devconf_cz) and you can also make sure you have the latest information on [our website](https://www.devconf.info/cz/) and [Matrix server](https://matrix.to/#/#2024:devconf.cz).
 
 ## Make it relevant and engaging
 
