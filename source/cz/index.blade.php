@@ -94,10 +94,10 @@
                         <a href="#map" class="nav-link local d-inline-block" style="color: white; padding: 0px"><i class="fa fa-map-marker"></i> Brno, Czech Republic</a>
                     </div> 
                     <div class="heading-text pt-1 pt-xl-5 mt-5">
-                        <a href="https://pretalx.com/devconf-cz-2024/" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">Call for Proposals</a>
+                        <a href="#" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">Schedule Coming Soon</a>
                     </div>
                     <div class="heading-text mont-400 h5 pb-2 pb-lg-5">
-                        Submit your proposals by March 10, 2024.
+                        We aim to release the schedule in late April.
         			</div>                    
   		        </div>      		    
    		    </div>
@@ -330,7 +330,8 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 	</div>
 	<div class="row">
 		<div class="col-lg-6 px-5 mx-auto">
-             <p class="os-400"><span class="h6 mont-700">Mar 1, 2024</span> Deadline to submit proposals is extended to March 10, 2024</p>
+             <p class="os-400"><span class="h6 mont-700">Mar 11, 2024</span> CfP is closed. Speaker notifications will be sent between April 8-12.</p>
+             <p class="os-400"><span class="h6 mont-700">Mar 1, 2024</span> Deadline to submit proposals is extended to March 10, 2024.</p>
              <p class="os-400"><span class="h6 mont-700">Feb 12, 2024</span> Follow <a href="https://www.linkedin.com/company/102081562/admin/feed/posts/" target="_blank">DevConf.CZ on LinkedIn</a>.</p>
              <p class="os-400"><span class="h6 mont-700">Dec 14, 2023</span> Call for Proposals is open, deadline to submit proposals is March 3, 2024</p>
              <p class="os-400"><span class="h6 mont-700">Nov 16, 2023</span> DevConf.cz 2024 date announced: June 13-15, 2024</p>
