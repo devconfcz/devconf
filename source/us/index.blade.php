@@ -85,7 +85,7 @@
 			</div>
 			<div class="heading-text pt-5 mt-5">
 				<a href="https://pretalx.com/devconf-us-2024/cfp" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SUBMIT YOUR PROPOSAL</a>
-				<br><span>Submit your proposals by April 8, 2024.</span>
+				<br><span>Submit your proposals by April 22, 2024.</span>
 			</div>
 		</div>
 	</div>
@@ -275,6 +275,7 @@
 	</div>
 	<div class="row">
 		<div class="col-lg-6 px-5 mx-auto">
+			<p class="os-400"><span class="h6 mont-700">March 28, 2024</span> Call for Proposals deadline extended to April 22 2024 at 11:59pm ET</p>
 			<p class="os-400"><span class="h6 mont-700">February 12, 2024</span> Call for Proposals is open, deadline to submit proposals is April 8, 2024</p>
 			<p class="os-400"><span class="h6 mont-700">February 8, 2024</span> DevConf.US 2024 date announced: August 14-16, 2024</p>
 			<!-- <p class="os-400"><span class="h6 mont-700">Jan 20, 2023</span> We have published a <a href="/assets/files/devconfUS-cfp-help.pdf" target="_blank">CfP help guide</a> to help you write an awesome proposal!</p>
