@@ -32,9 +32,9 @@
 				<li class="nav-item active px-3">
 					<a href="/us/" class="nav-link">Home</a>
 				</li>
-				<li class="nav-item active px-3">
+				<!-- <li class="nav-item active px-3">
                     <a href="/cz/blog" class="nav-link local">Blog</a>
-                </li>
+                </li> -->
 				<li class="nav-item active px-3">
 					<a href="/us/faq" class="nav-link local">FAQ</a>
 				</li>
