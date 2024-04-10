@@ -68,7 +68,7 @@
 		<div class="h2 mx-5 mont-700 pb-4">For speakers</div>
 
 		<div class="os-400 mx-5">
-			<p>To make a reservation, please fill out the form that came by email.</p>
+			<p>After the deadline to confirm your attendance (April 16), you will receive an email with instructions on how to book from our room block.</p>
 
             <p>By filling out the form, we will auto-generate a reservation email directly to the hotel. If you wish to stay for more than three nights, or if you require a room upgrade beyond the scope of what we offer, please communicate directly with the hotel.</p>
             
