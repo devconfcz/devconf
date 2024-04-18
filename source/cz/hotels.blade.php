@@ -103,7 +103,6 @@
 				<p>Single Standard room - 1.850 CZK/night<br>
 				Double Standard room - 2.100 CZK/night<br>
 				<p>The rate is including breakfast.</p>
-				<p>Email for making reservations is:<br><a href="mailto:hotel@hotelavanti.cz">hotel@hotelavanti.cz</a></p>
 			</div>
 		</div>
 		<div class="col-lg-4">
@@ -115,7 +114,6 @@
 				<p>Single Standard room 1.650 CZK/night<br>
 				Double Standard room 1.900 CZK/night</p>
 				<p>The room rate includes buffet breakfast, Wi-Fi and parking.</p>
-				<p>Email for making reservations is:<br><a href="mailto:hotel@vista-hotel.cz">hotel@vista-hotel.cz</a></p>
 			</div>
 		</div>
 		<div class="col-lg-4">
@@ -131,7 +129,6 @@
 				Double Superior room - 2.350 CZK/night<br>
 				Double Superior room (used as single room) - 2.150 CZK/night</p>
 				<p>The rate is including breakfast.</p>
-				<p>Email for making reservations is:<br><a href="mailto:info@continentalbrno.cz">info@continentalbrno.cz</a></p>
 			</div>
 		</div>
 		<div class="col-lg-4">
@@ -142,7 +139,6 @@
 				<!-- <p class="alert alert-danger d-inline-block">No rooms available</p> -->
 				<p>Single Standard room 2.150 CZK/night</p>
 				<p>The rate is including breakfast.</p>
-				<p>Email for making reservations is:<br><a href="mailto:reservation@grandhotelbrno.cz">reservation@grandhotelbrno.cz</a></p>
 			</div>
 		</div>
 		<div class="col-lg-4">
@@ -154,7 +150,6 @@
 				<p>Single Standard room 3.100 CZK/night<br>
 				Double Classic room 3.430 CZK/night</p>
 				<p>The rate is including breakfast and Wi-Fi.</p>
-				<p>Email for making reservations is:<br><a href="mailto:Rezervace@hotelpassage.eu">Rezervace@hotelpassage.eu</a></p>
 			</div>
 		</div>
 	</div>
