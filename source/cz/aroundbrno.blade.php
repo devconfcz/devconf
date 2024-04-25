@@ -70,7 +70,7 @@
 		<div class="h2 pt-3 pb-4 mx-5 mont-700">By public transport</div>
 
 		<div class="os-400 mx-5">
-			<p>Public transportation in Brno is provided by <a href="https://old.dpmb.cz/en/novinky/all" target="_blank">DPMB</a> which maintains trams, trolley-buses and buses that criss-cross the city. 
+			<p>Public transportation in Brno is provided by <a href="https://www.dpmb.cz/en" target="_blank">DPMB</a> which maintains trams, trolley-buses and buses that criss-cross the city. 
                At night all public transportation is provided by night buses that cover almost the entire city.</p>
                
             <p>If you want to use public transportation, you must buy a ticket. There are two options:
@@ -93,7 +93,7 @@
                The code for a 75-minute ticket (CZK 29) is BRNO
                The code, BRNOD, is for an all-day ticket (CZK 99).
                After sending the message, you will receive a ticket via SMS within a few minutes.
-               You should not enter the tram, trolleybus, or bus before your receive the SMS, so plan ahead.
+               You should not enter the tram, trolleybus, or bus before you receive the SMS, so plan ahead.
                If you do not have a Czech SIM card, you can use the mobile app, Sejf, which is available in the <a href="https://apps.apple.com/us/app/sejf/id301404273" target="_blank">Apple App Store</a> 
                and <a href="https://play.google.com/store/apps/details?id=cz.edhouse.mc.android&hl=en" target="_blank">Google Play Store</a>.</p>
 			
@@ -155,12 +155,17 @@
                The building on your left hand side is the university.</p>
 
 			<strong class="d-block mb-3 os-600">From the Red Hat Offices by tram and bus</strong>
-			<p>From the Red Hat Office tram station (Červinkova for the FBC buildings or Technologický park for TPB buildings) take tram No. 12 (towards Komárov). 
+			<p>From the Red Hat Office bus station Technologický park take bus No. 72 (towards Obřany). 
+               Get off at the stop Semilasso (after approximately 10 minutes).
+               Follow the street down for 100 m and then take the street on the right, Božetěchova.
+               After approximately 400 meters you will arrive to the building of the university which is on your left side.</p>
+			
+			<p>Or from the Red Hat Office tram station Technologický park take tram No. 12 (towards Komárov). 
                Get off at the stop Skácelova (first stop after Červinkova, third from Technologický park).
                Take bus No. 30 or 84 or 72 from the bus stop at the corner diagonally opposite the tram stop you exited at.
                Get off at the stop Semilasso.
-               Follow the street for 100 m and then take the street on the right, Božetěchova.
-               After approximately 400 meters you will arrive to the building of the university.</p>
+               Follow the street down for 100 m and then take the street on the right, Božetěchova.
+               After approximately 400 meters you will arrive to the building of the university which is on your left side.</p>
 
 <!--
             <strong class="d-block mb-3 os-600">From partner hotels</strong>
