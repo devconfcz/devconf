@@ -15,7 +15,7 @@
 @endsection
 
 @section('title')
-<title>Party - DevConf.CZ</title>
+<title>Onsite information - DevConf.CZ</title>
 @endsection
 
 
