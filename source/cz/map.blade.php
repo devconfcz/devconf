@@ -58,7 +58,16 @@
 	</div>
 	<div class="row local-nav">
 		<div class="mx-5 mt-4 os-400 row">
-		    <div class="col-xl-3 container card-body my-2 ml-xl-auto mr-xl-3">
+		    <div class="col-xl-3 container card-body my-2">
+			    <div class="row h-100 align-items-center">
+				    <div class="col text-center">
+                        <a href="/assets/images/devconf-cz-map.png"><img class="w-100" src="/assets/images/devconf-cz-map.png"></a>
+					    <h4 class="mont-700 mb-0">Floor overview</h4>
+				    </div>
+			    </div>
+		    </div>
+		    
+		    <div class="col-xl-3 container card-body my-2">
 			    <div class="row h-100 align-items-center">
 				    <div class="col text-center">
                         <a href="/assets/images/devconf-cz-map-underground.png"><img class="w-100" src="/assets/images/devconf-cz-map-underground.png"></a>
@@ -67,20 +76,20 @@
 			    </div>
 		    </div>
 		    
-		    <div class="col-xl-3 container card-body my-2 mx-xl-3">
+		    <div class="col-xl-3 container card-body my-2 ">
 			    <div class="row h-100 align-items-center">
 				    <div class="col text-center">
 					    <a href="/assets/images/devconf-cz-map-street.png"><img class="w-100" src="/assets/images/devconf-cz-map-street.png"></a>
-					    <h4 class="mont-700 pb-4">Street level floor plan</h4>
+					    <h4 class="mont-700 mb-0">Street level floor plan</h4>
 				    </div>
 			    </div>
 		    </div>
 		    
-		    <div class="col-xl-3 container card-body my-2 ml-xl-3 mr-xl-auto">
+		    <div class="col-xl-3 container card-body my-2">
 			    <div class="row h-100 align-items-center">
 				    <div class="col text-center">
 					    <a href="/assets/images/devconf-cz-map-floor.png"><img class="w-100" src="/assets/images/devconf-cz-map-floor.png"></a>
-					    <h4 class="mont-700 pb-4">Upper level floor plan</h4>
+					    <h4 class="mont-700 mb-0">Upper level floor plan</h4>
 				    </div>
 			    </div>
 		    </div>
