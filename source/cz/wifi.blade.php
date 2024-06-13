@@ -82,7 +82,7 @@ h1{
 			 as the bandwidth is shared by everyone.</p>
 		</div>
 		<div class="container h-100" time="8000">
-			<p style="padding-top: 18%">Follow us on X (Twitter), Mastodon or LinkedIn!</p>
+			<p style="padding-top: 18%">Follow us on Mastodon, X (Twitter) or LinkedIn!</p>
 			<p>Use <strong class="purple">#devconf_cz #defineFUTURE #opensource</strong> for your posts!</p>
 		</div>
 		<div class="container h-100" time="6000">
