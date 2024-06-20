@@ -87,4 +87,4 @@
 
 @endsection
 
-@include('_layouts.footercz')
+@include('_layouts.footerus')
