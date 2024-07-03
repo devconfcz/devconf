@@ -15,7 +15,7 @@
 @endsection
 
 @section('title')
-<title>Getting around Boston - DevConf.US</title>
+<title>Schedule - DevConf.US</title>
 @endsection
 
 
