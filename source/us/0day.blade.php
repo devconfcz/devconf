@@ -123,7 +123,10 @@
 ?>
 <section class="mx-auto mt-5 pt-5 pb-3 col-lg-11">
 	<div class="row">
-		<div class="h1 mx-5 mont-700 underline position-relative">Schedule</div>
+		<div class="h1 mx-5 mont-700 underline position-relative">0 day Schedule</div>
+		
+		<p class="os-400 mx-5 mt-4">Conference schedule is available <a href="https://www.devconf.info/us/schedule/">here</a>.</p>
+		
 	</div>
 </section>
 <hr>
