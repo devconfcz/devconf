@@ -59,11 +59,11 @@
     $streams = array();
 	$schedule = array(
 	    array("start"=>"12:30", "items"=>array(
-    	    array("end"=>"12:40", "length"=>10, "name"=>"Welcome")
+    	    array("end"=>"12:40", "length"=>10, "name"=>"Arrival & Light Lunch & Welcome")
     	)),
     	
         array("start"=>"12:40", "items"=>array(
-            array("end"=>"1:15", "length"=>35, "name"=>"Thoughts on AI & Open Source", "description"=>"", "track"=>"Topic Intro",
+            array("end"=>"1:15", "length"=>35, "name"=>"Thoughts on AI & Open Source & State of the Union", "description"=>"", "track"=>"Topic Intro",
                 "speakers"=>array(
                     array("name"=>"Kelsey Hightower"),
                 )
@@ -71,17 +71,17 @@
         )),
         
         array("start"=>"1:15", "items"=>array(
-            array("end"=>"2:00", "length"=>45, "name"=>"Open Source AI & Transparency: Where are we at & Where do we need to go?", "description"=>"", "track"=>"Breakout Sessions")
+            array("end"=>"2:00", "length"=>45, "name"=>"Open Source AI & Transparency Breakout Sessions", "description"=>"Break into 4 smaller groups<ul><li>Each group has facilitator, scribe, and discussion leader/panelist</li><li>Where do we need to go with open source AI & transparency?</li></ul>", "track"=>"Breakout Sessions")
         )),            
         array("start"=>"2:00", "items"=>array(
-            array("end"=>"2:30", "length"=>30, "name"=>"Highlight findings", "description"=>"", "track"=>"Highlight findings")
+            array("end"=>"2:30", "length"=>30, "name"=>"Open Source AI & Transparency Panel", "description"=>"4 Discussion Leaders form a panel, moderated panel summarizes 4 rooms outcomes", "track"=>"Highlight findings")
         )),
         array("start"=>"2:30", "items"=>array(
-            array("end"=>"2:45", "length"=>15, "name"=>"Break")
+            array("end"=>"2:45", "length"=>15, "name"=>"Break", "description"=>"Coffee, Tea")
         )), 
         
 		array("start"=>"2:45", "items"=>array(
-            array("end"=>"3:00", "length"=>15, "name"=>"Democratizing AI: State of the Union", "description"=>"", "track"=>"Topic Intro",
+            array("end"=>"3:00", "length"=>15, "name"=>"State of the Union: Democratizing AI & Reducing Bias", "description"=>"", "track"=>"Topic Intro",
                 "speakers"=>array(
                     array("name"=>"Jen Krieger"),
                 )
@@ -89,14 +89,14 @@
         )),
         
         array("start"=>"3:00", "items"=>array(
-            array("end"=>"3:45", "length"=>45, "name"=>"Discuss Democratizing AI: Where are we at & Where do we need to go?", "description"=>"", "track"=>"Breakout Sessions")
+            array("end"=>"3:45", "length"=>45, "name"=>"Democratizing AI & Reducing Bias Breakout Sessions", "description"=>"Break into 4 smaller groups<ul><li>Each group has facilitator, scribe, and discussion leader/panelist</li><li>Where do we need to go with democratization of AI and reducing bias?</li></ul>", "track"=>"Breakout Sessions")
         )),            
         array("start"=>"3:45", "items"=>array(
-            array("end"=>"4:15", "length"=>30, "name"=>"Highlight findings", "description"=>"", "track"=>"Highlight findings")
+            array("end"=>"4:15", "length"=>30, "name"=>"Democratizing AI & Reducing Bias Panel", "description"=>"4 Discussion Leaders form a panel, moderated panel summarizes 4 rooms outcomes", "track"=>"Highlight findings")
         )),
 
 		array("start"=>"4:15", "items"=>array(
-            array("end"=>"4:30", "length"=>15, "name"=>"Responsible AI: State of the Union", "description"=>"", "track"=>"Topic Intro",
+            array("end"=>"4:30", "length"=>15, "name"=>"State of the Union: Responsible AI", "description"=>"", "track"=>"Topic Intro",
                 "speakers"=>array(
                     array("name"=>"Josh Boyer"),
                     array("name"=>"Heidi Lanford"),
@@ -105,14 +105,14 @@
         )),
         
         array("start"=>"4:30", "items"=>array(
-            array("end"=>"5:15", "length"=>45, "name"=>"Discuss Responsible AI: Where are we at & Where do we need to go?", "description"=>"", "track"=>"Breakout Sessions")
+            array("end"=>"5:15", "length"=>45, "name"=>"Responsible AI Breakout Sessions", "description"=>"Break into 4 smaller groups<ul><li>Each group has facilitator, scribe, and discussion leader/panelist</li><li>Where do we need to go with responsible AI?</li></ul>", "track"=>"Breakout Sessions")
         )),            
         array("start"=>"5:15", "items"=>array(
-            array("end"=>"5:45", "length"=>30, "name"=>"Highlight findings", "description"=>"", "track"=>"Highlight findings")
+            array("end"=>"5:45", "length"=>30, "name"=>"Responsible AI Panel", "description"=>"4 Discussion Leaders form a panel, moderated panel summarizes 4 rooms outcomes", "track"=>"Highlight findings")
         )),
         
         array("start"=>"5:45", "items"=>array(
-            array("end"=>"6:00", "length"=>15, "name"=>"Where do we need to go? Based on day's findings", "description"=>"", "track"=>"Closing Remarks",
+            array("end"=>"6:00", "length"=>15, "name"=>"Closing Remarks", "description"=>"",
                 "speakers"=>array(
                     array("name"=>"Chris Wright"),
                 )
