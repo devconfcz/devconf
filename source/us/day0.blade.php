@@ -83,7 +83,7 @@
 		array("start"=>"2:45", "items"=>array(
             array("end"=>"3:00", "length"=>15, "name"=>"State of the Union: Democratizing AI & Reducing Bias", "description"=>"", "track"=>"Topic Intro",
                 "speakers"=>array(
-                    array("name"=>"Jen Krieger"),
+                    //array("name"=>"Jen Krieger"),
                 )
             )
         )),
@@ -98,8 +98,8 @@
 		array("start"=>"4:15", "items"=>array(
             array("end"=>"4:30", "length"=>15, "name"=>"State of the Union: Responsible AI", "description"=>"", "track"=>"Topic Intro",
                 "speakers"=>array(
-                    array("name"=>"Josh Boyer"),
-                    array("name"=>"Heidi Lanford"),
+                   // array("name"=>"Josh Boyer"),
+                   // array("name"=>"Heidi Lanford"),
                 )
             )
         )),
@@ -123,7 +123,7 @@
 ?>
 <section class="mx-auto mt-5 pt-5 pb-3 col-lg-11">
 	<div class="row">
-		<div class="h1 mx-5 mont-700 underline position-relative">0 day Schedule</div>
+		<div class="h1 mx-5 mont-700 underline position-relative">Day 0 Schedule</div>
 		
 		<p class="os-400 mx-5 mt-4">Conference schedule is available <a href="https://www.devconf.info/us/schedule/">here</a>.</p>
 		
