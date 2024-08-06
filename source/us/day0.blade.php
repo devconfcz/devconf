@@ -58,11 +58,14 @@
                  "Highlight findings" => "table-active", "Breakout Sessions" => "table-success");
     $streams = array();
 	$schedule = array(
-	    array("start"=>"12:30", "items"=>array(
-    	    array("end"=>"12:40", "length"=>10, "name"=>"Arrival & Light Lunch & Welcome")
+	    array("start"=>"12:00 pm", "items"=>array(
+    	    array("end"=>"12:30", "length"=>30, "name"=>"Light Lunch")
+    	)),
+    	array("start"=>"12:30 pm", "items"=>array(
+    	    array("end"=>"12:40", "length"=>10, "name"=>"Welcome")
     	)),
     	
-        array("start"=>"12:40", "items"=>array(
+        array("start"=>"12:40 pm", "items"=>array(
             array("end"=>"1:15", "length"=>35, "name"=>"Thoughts on AI & Open Source & State of the Union", "description"=>"", "track"=>"Topic Intro",
                 "speakers"=>array(
                     array("name"=>"Kelsey Hightower"),
@@ -70,48 +73,47 @@
             )
         )),
         
-        array("start"=>"1:15", "items"=>array(
+        array("start"=>"1:15 pm", "items"=>array(
             array("end"=>"2:00", "length"=>45, "name"=>"Open Source AI & Transparency Breakout Sessions", "description"=>"Break into 4 smaller groups<ul><li>Each group has facilitator, scribe, and discussion leader/panelist</li><li>Where do we need to go with open source AI & transparency?</li></ul>", "track"=>"Breakout Sessions")
         )),            
-        array("start"=>"2:00", "items"=>array(
+        array("start"=>"2:00 pm", "items"=>array(
             array("end"=>"2:30", "length"=>30, "name"=>"Open Source AI & Transparency Panel", "description"=>"4 Discussion Leaders form a panel, moderated panel summarizes 4 rooms outcomes", "track"=>"Highlight findings")
         )),
-        array("start"=>"2:30", "items"=>array(
+        array("start"=>"2:30 pm", "items"=>array(
             array("end"=>"2:45", "length"=>15, "name"=>"Break", "description"=>"Coffee, Tea")
         )), 
         
-		array("start"=>"2:45", "items"=>array(
+		array("start"=>"2:45 pm", "items"=>array(
             array("end"=>"3:00", "length"=>15, "name"=>"State of the Union: Democratizing AI & Reducing Bias", "description"=>"", "track"=>"Topic Intro",
                 "speakers"=>array(
-                    //array("name"=>"Jen Krieger"),
+                    array("name"=>"Jen Krieger"),
                 )
             )
         )),
         
-        array("start"=>"3:00", "items"=>array(
+        array("start"=>"3:00 pm", "items"=>array(
             array("end"=>"3:45", "length"=>45, "name"=>"Democratizing AI & Reducing Bias Breakout Sessions", "description"=>"Break into 4 smaller groups<ul><li>Each group has facilitator, scribe, and discussion leader/panelist</li><li>Where do we need to go with democratization of AI and reducing bias?</li></ul>", "track"=>"Breakout Sessions")
         )),            
-        array("start"=>"3:45", "items"=>array(
+        array("start"=>"3:45 pm", "items"=>array(
             array("end"=>"4:15", "length"=>30, "name"=>"Democratizing AI & Reducing Bias Panel", "description"=>"4 Discussion Leaders form a panel, moderated panel summarizes 4 rooms outcomes", "track"=>"Highlight findings")
         )),
 
-		array("start"=>"4:15", "items"=>array(
+		array("start"=>"4:15 pm", "items"=>array(
             array("end"=>"4:30", "length"=>15, "name"=>"State of the Union: Responsible AI", "description"=>"", "track"=>"Topic Intro",
                 "speakers"=>array(
-                   // array("name"=>"Josh Boyer"),
-                   // array("name"=>"Heidi Lanford"),
+                   array("name"=>"Heidi Lanford"),
                 )
             )
         )),
         
-        array("start"=>"4:30", "items"=>array(
+        array("start"=>"4:30 pm", "items"=>array(
             array("end"=>"5:15", "length"=>45, "name"=>"Responsible AI Breakout Sessions", "description"=>"Break into 4 smaller groups<ul><li>Each group has facilitator, scribe, and discussion leader/panelist</li><li>Where do we need to go with responsible AI?</li></ul>", "track"=>"Breakout Sessions")
         )),            
-        array("start"=>"5:15", "items"=>array(
+        array("start"=>"5:15 pm", "items"=>array(
             array("end"=>"5:45", "length"=>30, "name"=>"Responsible AI Panel", "description"=>"4 Discussion Leaders form a panel, moderated panel summarizes 4 rooms outcomes", "track"=>"Highlight findings")
         )),
         
-        array("start"=>"5:45", "items"=>array(
+        array("start"=>"5:45 pm", "items"=>array(
             array("end"=>"6:00", "length"=>15, "name"=>"Closing Remarks", "description"=>"",
                 "speakers"=>array(
                     array("name"=>"Chris Wright"),
@@ -123,13 +125,23 @@
 ?>
 <section class="mx-auto mt-5 pt-5 pb-3 col-lg-11">
 	<div class="row">
-		<div class="h1 mx-5 mont-700 underline position-relative">Day 0 Schedule</div>
+		<div class="h1 mx-5 mont-700 underline position-relative">DevConf.US Day 0: AI Think Tank</div>
 		
-		<p class="os-400 mx-5 mt-4">Conference schedule is available <a href="https://www.devconf.info/us/schedule/">here</a>.</p>
+		<p class="os-400 mx-5 mt-4">Day 0 AI Think Tank is a DevConf.US pre-event for subject matter experts from the AI, data science, cloud native, and open source communities to identify immediate, concrete actions we can collectively take to foster and sustain an open and transparent AI development and delivery ecosystem.</p>
 		
+		<p class="os-400 mx-5 mt-4"><strong>Interested in attending?</strong> This is an invitation-only pre-event. If you are interested in joining, please reach out to <a href="mailto:info@devconf.us">info@devconf.us</a>.</p>
 	</div>
 </section>
 <hr>
+<section class="mx-auto mt-5 pb-3 col-lg-11">
+	<div class="row">
+		<div class="h2 mx-5 mont-700 position-relative">Venue and Schedule</div>
+		
+		<p class="os-400 mx-5 mt-4 col-12">Where: 43 Hawes St, Brookline, MA 02446<br>When: 12-6 pm, Aug 13, 2024</p>
+		
+		<p class="h4 mx-5 mont-700 position-relative mt-4"><strong>Day 0 Schedule:</strong></p>
+	</div>
+</section>
 <?php
 foreach($schedule as $k=>$time){
 ?>
@@ -186,6 +198,12 @@ foreach($schedule as $k=>$time){
     
 }
 ?>
+<hr>
+<section class="mx-auto mb-5 pb-3 col-lg-11">
+	<div class="row">
+		<p class="os-400 mx-5 mt-4"><strong>Find the full DevConf.US schedule and registration <a href="https://www.devconf.info/us/">here</a>.</strong></p>
+	</div>
+</section>
 <script>
 
     $(document).ready(function() {
