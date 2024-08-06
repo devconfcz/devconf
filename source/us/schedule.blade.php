@@ -32,11 +32,14 @@
 				<li class="nav-item active px-3">
 					<a href="/us/" class="nav-link">Home</a>
 				</li>
-				<li class="nav-item active underline px-3">
+				<li class="nav-item active px-3">
 					<a href="/us/aroundboston" class="nav-link">Getting around Boston</a>
 				</li>
 				<li class="nav-item active px-3">
 					<a href="/us/toboston" class="nav-link">Getting to Boston</a>
+				</li>
+				<li class="nav-item active underline px-3">
+					<a href="/us/schedule" class="nav-link local">Schedule</a>
 				</li>
 				<li class="nav-item active px-3">
 					<a href="/us/hotels" class="nav-link">Hotels</a>

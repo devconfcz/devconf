@@ -16,7 +16,7 @@
 @endsection
 
 @section('title')
-<title>Schedule - DevConf.CZ</title>
+<title>Schedule - DevConf.US Day 0</title>
 @endsection
 
 
@@ -59,14 +59,14 @@
     $streams = array();
 	$schedule = array(
 	    array("start"=>"12:00 pm", "items"=>array(
-    	    array("end"=>"12:30", "length"=>30, "name"=>"Light Lunch")
+    	    array("end"=>"12:30", "length"=>30, "name"=>"Check In & Light Lunch")
     	)),
     	array("start"=>"12:30 pm", "items"=>array(
     	    array("end"=>"12:40", "length"=>10, "name"=>"Welcome")
     	)),
     	
         array("start"=>"12:40 pm", "items"=>array(
-            array("end"=>"1:15", "length"=>35, "name"=>"Thoughts on AI & Open Source & State of the Union", "description"=>"", "track"=>"Topic Intro",
+            array("end"=>"1:15", "length"=>35, "name"=>"Thoughts on AI & Open Source", "description"=>"", "track"=>"Topic Intro",
                 "speakers"=>array(
                     array("name"=>"Kelsey Hightower"),
                 )
@@ -84,7 +84,7 @@
         )), 
         
 		array("start"=>"2:45 pm", "items"=>array(
-            array("end"=>"3:00", "length"=>15, "name"=>"State of the Union: Democratizing AI & Reducing Bias", "description"=>"", "track"=>"Topic Intro",
+            array("end"=>"3:00", "length"=>15, "name"=>"Democratizing AI", "description"=>"", "track"=>"Topic Intro",
                 "speakers"=>array(
                     array("name"=>"Jen Krieger"),
                 )
@@ -92,16 +92,17 @@
         )),
         
         array("start"=>"3:00 pm", "items"=>array(
-            array("end"=>"3:45", "length"=>45, "name"=>"Democratizing AI & Reducing Bias Breakout Sessions", "description"=>"Break into 4 smaller groups<ul><li>Each group has facilitator, scribe, and discussion leader/panelist</li><li>Where do we need to go with democratization of AI and reducing bias?</li></ul>", "track"=>"Breakout Sessions")
+            array("end"=>"3:45", "length"=>45, "name"=>"Democratizing AI Breakout Sessions", "description"=>"Break into 4 smaller groups<ul><li>Each group has facilitator, scribe, and discussion leader/panelist</li><li>Where do we need to go with democratization of AI and reducing bias?</li></ul>", "track"=>"Breakout Sessions")
         )),            
         array("start"=>"3:45 pm", "items"=>array(
-            array("end"=>"4:15", "length"=>30, "name"=>"Democratizing AI & Reducing Bias Panel", "description"=>"4 Discussion Leaders form a panel, moderated panel summarizes 4 rooms outcomes", "track"=>"Highlight findings")
+            array("end"=>"4:15", "length"=>30, "name"=>"Democratizing AI Panel", "description"=>"4 Discussion Leaders form a panel, moderated panel summarizes 4 rooms outcomes", "track"=>"Highlight findings")
         )),
 
 		array("start"=>"4:15 pm", "items"=>array(
-            array("end"=>"4:30", "length"=>15, "name"=>"State of the Union: Responsible AI", "description"=>"", "track"=>"Topic Intro",
+            array("end"=>"4:30", "length"=>15, "name"=>"Responsible AI", "description"=>"", "track"=>"Topic Intro",
                 "speakers"=>array(
                    array("name"=>"Heidi Lanford"),
+				   array("name"=>"Josh Boyer"),
                 )
             )
         )),
