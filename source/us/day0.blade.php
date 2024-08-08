@@ -62,7 +62,11 @@
     	    array("end"=>"12:30", "length"=>30, "name"=>"Check In & Light Lunch")
     	)),
     	array("start"=>"12:30 pm", "items"=>array(
-    	    array("end"=>"12:40", "length"=>10, "name"=>"Welcome")
+    	    array("end"=>"12:40", "length"=>10, "name"=>"Welcome",
+				"speakers"=>array(
+                    array("name"=>"Ruchir Puri"),
+                )
+            )
     	)),
     	
         array("start"=>"12:40 pm", "items"=>array(
@@ -86,7 +90,7 @@
 		array("start"=>"2:45 pm", "items"=>array(
             array("end"=>"3:00", "length"=>15, "name"=>"Democratizing AI", "description"=>"", "track"=>"Topic Intro",
                 "speakers"=>array(
-                    array("name"=>"Jen Krieger"),
+                    array("name"=>"Mairin Duffy"),
                 )
             )
         )),
