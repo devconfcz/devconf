@@ -87,7 +87,7 @@
 				<a href="/us/schedule/" class="border p-3 h2 mont-700" style="border-width: 3px !important;">Schedule</a>
 			</div>
 			<div class="heading-text pt-1">
-				<a href="#registration" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">Register Now!</a>
+				<a href="https://forms.gle/zLdt2G8UEpmLPqn99" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">Post-event survey</a>
 			</div>
 		</div>
 	</div>
@@ -115,7 +115,7 @@
 		</div>
 	</div>
 </section>
-
+<!--
 <section id="registration" class="mx-auto col-lg-11">
     <div class="mt-4 py-5">
     	<h1 class="mont-700 underline pb-4">Registration</h1>
@@ -132,7 +132,7 @@
 		</noscript>
     </div>
 </section>
-
+-->
 <section id="themes" class="mx-auto col-lg-11">
 	<div class="row">
 		<div class="h1 mx-5 pb-4 underline position-relative mont-700">Conference Themes</div>
