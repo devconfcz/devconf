@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="Best Practices for Open Source Project Maintainers">
+
+        <meta http-equiv="X-Frame-Options" content="DENY">        
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+    	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <meta property="og:title" content="Open Source Maintainer Meetup at DevConf.CZ 2024: Best Practices for Open Source Project Maintainers | DevConf.CZ Blog"/>
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="/cz/blog/open-source-project-maintainers-2024"/>
+        <meta property="og:description" content="Best Practices for Open Source Project Maintainers" />
+		<meta property="og:image" content="https://devconf.info/assets/images/blog/osmm-24.png">
+	<meta property="twitter:image" content="https://devconf.info/assets/images/blog/osmm-24.png">
+	
+        <title>Open Source Maintainer Meetup at DevConf.CZ 2024: Best Practices for Open Source Project Maintainers | DevConf.CZ Blog</title>
+
+        <meta name="google-site-verification" content="IXOh3zMePCSVZkCqKQr8dZVFfpQgPG5Og-ZpULr8MJ4" />
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7K9TNM6TTH"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-7K9TNM6TTH');
+        </script>
+	    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	    <link rel="stylesheet" href="/assets/build/css/backtop.css?id=7076fe4b35b5b82fda0b9717e99fc926">
+	    <link rel="stylesheet" href="/assets/build/css/subsite.css?id=8e00381415deed94794e823c3cd5777b">
+<link rel="stylesheet" href="/assets/build/css/blogsite.css?id=830a8846190b2e79b436b89253c2d131">
+       
+            <script src="/assets/build/js/main.js?id=44962707bf1542b10f4ba620769b2d88"></script>
+	    <link rel="stylesheet" href="/assets/build/css/cookie.css?id=329e24dcc9507a43549556261d29a138">
+
+	    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	    <link rel="manifest" href="/manifest.json">
+	    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#512954">
+        <link href="/cz/blog/feed.atom" type="application/atom+xml" rel="alternate" title="DevConf.CZ Blog Atom Feed">
+
+                    <!-- Insert analytics code here -->
+        
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=64c3495c1e541d4ab158472ea81fb6d6">
+    </head>
+
+    <body>
+        <a href="#" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+        <header class="masthead">
+	        <nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top masthead">
+		        <span class="nav-brand"><a href="/cz"><img src="/assets/images/devconf-logo-cz-reverse.svg"></a></span>
+		        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMobile"
+		            aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
+		            <span class="navbar-toggler-icon"></span>
+		        </button>
+		        <div class="collapse navbar-collapse" id="navbarMobile">
+			        <ul class="navbar-nav ml-auto pr-5">
+				        <li class="nav-item active px-3">
+					        <a href="/cz/" class="nav-link">Home</a>
+				        </li>
+        				<li class="nav-item underline active px-3">
+					        <a href="/cz/blog" class="nav-link">Blog</a>
+				        </li>
+				        <li class="nav-item active px-3">
+					        <a href="/cz/faq" class="nav-link">FAQ</a>
+				        </li>
+				        <li class="nav-item active px-3">
+					        <a href="/coc" target="_blank" class="nav-link">Policies</a>
+				        </li>
+			        </ul>
+		        </div>
+	        </nav>
+        </header>
+
+        <section class="mx-auto mt-5 pt-5 pb-5 col-lg-6">
+	<div class="row px-3">
+            <img src="/assets/images/blog/osmm-24.png" alt="Open Source Maintainer Meetup at DevConf.CZ 2024: Best Practices for Open Source Project Maintainers cover image" class="w-100 mb-2">
+    
+    <div class="h1 mt-3 mr-5 mont-700 underline position-relative">Open Source Maintainer Meetup at DevConf.CZ 2024: Best Practices for Open Source Project Maintainers</div>
+
+    <p class="mont-600 mt-3 mb-4">Tomas Tomecek, Lenka Bocincova | Photo: Eva Ruzickova  •  November 7, 2024
+    
+    
+    | <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script><script type="IN/Share" data-url=""></script>
+
+    </p>
+
+    <div class="os-400">
+        <p>During DevConf.CZ 2024 conference in Brno, we hosted <a href="https://pretalx.com/devconf-cz-2024/talk/PSGCSK/">a meetup for upstream maintainers</a>, bringing together roughly 25 project maintainers to share best practices and challenges in nurturing open source communities. It was heartwarming to see so many experienced maintainers from projects like OpenSSL, RPM, polkit, podman, Copr, KubeVirt and many more attend our meetup. We were quite anxious how many people would show up, especially after being the first session after the Day 1 keynote. In the end, we’ve got a great mix of experienced people from various projects. One thing that blew us away was that we didn’t need the slides and questions that we prepared. People were open to share their experience with maintaining their communities and give each other tips very naturally! </p>
+<p>In this blog post we’ll summarize key takeaways and add more resources that can help you address common roadblocks.</p>
+<h2>1. Handling contributions is crucial</h2>
+<p><strong>Balancing technical debt and compatibility:</strong> One of the maintainers from RPM highlighted that it’s important to find a balance between accepting contributions and maintaining compatibility with older systems. This might involve accepting smaller fixes while working on larger technical debt solutions in the background. Reviewing some of the contributions can take a lot of time, even trivial changes need to be tested extensively so the maintainers are sure nothing gets broken. In case you are a contributor or want to become one and you are experiencing this, be patient with maintainers, even if you feel like your change is simple and should have been merged weeks ago - the maintainers are responsible for the quality of their project. For a project maintainer it can be hard to accept certain contributions, we suggest you encourage your users to contribute differently, in the way that can help your project, for example by asking for user feedback, as one of the OpenSSL maintainers mentioned.</p>
+<p><strong>Managing large contributions by splitting it to smaller pieces:</strong> We’ve heard another story about migration from Python 2 to Python 3. If you experienced this, you can imagine how big of a task this is. What worked for the maintainer was breaking down contributions into smaller, more manageable pull requests (PRs). It streamlined the review process and made it easier for new contributors to get involved. Reviewing one humongous PR is almost impossible and with so many changes, breakages slip easily. So, having smaller contributions that are properly tested is more safe.</p>
+<h2>2. Being transparent about project plans and blockers</h2>
+<p><strong>Share your project plans:</strong> Knowing what the project is planning for the next year and which work won’t fit the team’s capacity can motivate more people to contribute or use the project. Once you share your plans, it’s no surprise to the community which features your team work on while others are postponed. It’s also very transparent to share your accomplishments at the end of the year. Not just to promote your project and the amazing work from your team and contributors, but also to get hard evidence when you feel like not much was being done. As one of the KubeVirt maintainers mentioned, they share annual reports outlining project goals and accomplishments which helps them build trust and fosters user engagement.</p>
+<p><strong>Issue-based prioritization:</strong> Be transparent also about how you prioritize bug fixes and features. One of the maintainers mentioned that they prioritize it based on the number of user-reported issues and it helps them to ensure the project focuses on what matters most to the community. Another maintainer also mentioned that they make this decision publicly during a community call, so the community can engage as well. </p>
+<h2>3. Effective Code Review</h2>
+<p><strong>Maintaining Code Quality:</strong> The importance of thorough code review was emphasized by multiple maintainers, including one of the maintainers from OpenSSL. Two reviews per pull request and attention to security implications are crucial for high-quality and secure code.</p>
+<p><strong>Providing Clear Feedback:</strong> Maintainer of polkit highlighted the importance of clear communication during code review. It can take weeks to review a contribution, expectations should be set straight and with transparent communication no one should be surprised if a review takes longer than usual. We heard a great story from Mirek who mentioned that he gained commit access after a well-done PR. This motivated him to do the same for some of his projects after a contributor submitted high quality PR.</p>
+<h2>4. Engaging your user base</h2>
+<p><strong>Your perspective vs users perspective:</strong> You may think you know your project the best because you are the lead developer and maintainer. It’s very likely true. Though the people who use your software daily know it very well as well, from a different perspective, as they use it and they rely on it. Let’s be honest, users can sometimes be very creative and easily use some features differently than was intended. Sometimes it is just “funny” but sometimes it can inspire you to improve the project. </p>
+<p><strong>Don’t be shy, ask them:</strong> Reaching out to users to understand their use case needs and pain points can provide valuable direction for project development. There is no “best answer” that would fit all the projects how to do this, as it depends on what you need help with and what channels you have in your community, but from the experience of some maintainers on our meetup, scheduling a community call or doing a community survey might be some of the things that you can try to get direct feedback on usability, concrete features, or find out what’s pissing them off. One of the maintainers also mentioned that doing a workshop rather than a talk at conferences like DevConf might be very useful for having productive discussions and soliciting user input.</p>
+<h2>5. Effective communication within your community</h2>
+<p>Choose the channels that work for your community and regularly remind people the purpose of each of them. </p>
+<p><strong>Beyond chatrooms:</strong> While chat rooms are popular for discussions, they might not be ideal for bug reporting. Yes, for people it might be easier to write about an issue they are currently struggling with and seek for help in a chat, but for a maintainer, it is difficult to keep a track of it. In Podman, they use dedicated issue trackers to streamline the bug reporting process. If an actual issue is being “submitted” in the chat, maintainers regularly ask people to go ahead and properly report it in the upstream repository instead of just letting it linger in chat. It will also help you build a connection with the user that might be potentially your new contributor. </p>
+<p><strong>Developers’ struggles with communication:</strong> Some of the maintainers admitted that they might not be natural communicators. And it is understandable, but not something that can’t be improved by trying. Spending some time on writing clear contribution guidelines and linking it in the project README or creating PR/issue templates can make the communication a bit easier  and reduce back-and-forth with contributors. And yes, we know that people usually don’t read instructions, but having them in hand and sharing it as often as needed instead of repeating yourself all the time can help a lot. </p>
+<h2>Thanks for participating!</h2>
+<p>Thanks to all who joined our meetup and shared their experience with others. Your thoughts help us put this blog post together and share the main takeaways with those that couldn’t join us. If you want to explore other community building talks that was part of DevConf, we recommend checking out the recording of Greg Sutcliffe’s talk: <a href="https://www.youtube.com/watch?v=7Vwy9GcSvgQ">&quot;Build it and they will come&quot; and other myths</a> where he also talks about how to target the right people with the tasks instead of asking “Who can help with this?” or why setting the deadlines and roadmaps, even unrealistic, can motivate you and your community members.</p>    </div>
+
+    <hr class="w-100">
+    
+    <div class="d-flex justify-content-between  w-100 mt-4">
+        <div class="d-inline-block">
+                            <a href="/cz/blog/submitting-a-proposal-for-devconf-cz-2024" title="Older Post: Submitting a proposal for DevConf.cz 2024" class="mont-400 px-3 pagination">
+                    &LeftArrow; Submitting a proposal for DevConf.cz 2024
+                </a>
+                    </div>
+
+        <div class="d-inline-block">
+                    </div>
+    </div>
+    </div>
+</section>
+
+    <footer class="background-gray">
+	    <div class="row py-5 w-100 mx-auto">
+		    <div class="mx-auto col-lg-11">
+			    <div class="row px-5">
+				    <div class="col-lg-7">
+					    <div class="h5 mont-600">Sponsored by</div>
+       					<a href="https://redhat.com" target="_blank"><img class="support-logo pr-3 py-3" src="/assets/images/support/logo-redhat.svg"></a>
+<a href="https://getfedora.org" target="_blank"><img class="support-logo pr-3 py-3" src="/assets/images/support/logo-fedora.svg"></a>
+<a href="https://www.fit.vut.cz" target="_blank"><img class="support-logo pr-3 py-3" src="/assets/images/support/logo-fit-vut.svg"></a>
+				    </div>
+				    <div class="col-lg-5 links">
+					    <div class="row">
+					        <a class="col-md-6 col-12" target="_blank" href="/coc">Code of Conduct</a>
+					        <a class="col-md-6 col-12" target="_blank" href="/participation-agreement">Participation Agreement</a>
+					        <a class="col-md-6 col-12" target="_blank" href="/media-policy">Media Policy</a>
+					        <a class="col-md-6 col-12" target="_blank" href="/privacy-statement">Privacy Statement</a>
+					    </div>
+				    </div>
+			    </div>
+		    </div>
+	    </div>
+	    <div class="row px-5 py-3 border-top w-100 mx-auto">
+		    <div class="col-lg-11 mx-auto copyright">
+			    Copyleft 2024 Red Hat. Some rights reserved.
+		    </div>
+	    </div>
+	</footer>
+	<div id="cookie">
+		<div id="cookie-wrapper">
+			<div id="cookie-text">
+			 We use cookies on our websites to deliver our online services. Details about how we use cookies and how you may disable them are
+			 set in our <a href="/privacy-statement" target="_blank">Privacy Statement</a>. By using this website you agree to our use of cookies.
+			</div>
+			<div id="cookie-close">&times;</div>
+		</div>	
+	</div>
+	<script>
+		var cookie = document.cookie.split('cwa=');
+		if(1 < cookie.length){
+			$("#cookie").remove();
+		}
+
+		$("#cookie-close").click(function(){
+			var d = new Date();
+			d.setTime(d.getTime() + (364*24*60*60*1000));
+			var expires = "expires=" + d.toGMTString();
+			document.cookie = "cwa=accept;" + expires + ";path=/";
+			$("#cookie").fadeOut("slow", function (){
+				$("#cookie").remove();
+			});
+		});
+	</script>
+    </body>
+</html>

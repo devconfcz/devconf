@@ -1,7 +1,7 @@
 @extends('_layouts.page')
 
 @section('social')
-<meta property="og:title" content="DevConf.IN | Virtual">
+<meta property="og:title" content="DevConf.IN">
 <meta property="og:site_name" content="DevConf.IN">
 <meta property="og:description" content="DevConf are free and open, annual, open-source community conferences for community contibutors, sponsored by Red Hat.">
 <meta property="og:type" content="website">
@@ -33,7 +33,7 @@
 				<li class="nav-item active px-3">
 					<a href="#about" class="nav-link local">About & Topics</a>
 				</li>
-<!--				<li class="nav-item active px-3">
+				<li class="nav-item active px-3">
 					<a href="#news" class="nav-link local">News</a>
 				</li>
 			<li class="nav-item active px-3">
@@ -53,6 +53,7 @@
 		<div class="col-lg-1 border-right text-center pr-0">
 			<a href="mailto:info@devconf.in" target="_blank" title="Mail"><img src="/assets/images/mail.svg" alt="mail" class="social-icon"></a>
 			<a href="https://twitter.com/devconf_in" target="_blank" title="Twitter"><img src="/assets/images/twitter.svg" alt="twitter" class="social-icon"></a>
+			<a href="https://www.linkedin.com/company/devconf-in/" target="_blank" title="LinkedIn"><img src="/assets/images/linkedin.svg" alt="linkedin" class="social-icon"></a>
 			<a href="https://www.youtube.com/channel/UCmYAQDZIQGm_kPvemBc_qwg" target="_blank" title="YouTube"><img src="/assets/images/youtube.svg" alt="youtube" class="social-icon"></a>
 			<a href="https://github.com/devconfcz/devconf" target="_blank" title="Git Hub"><img src="/assets/images/github.svg" alt="github" class="social-icon"></a>
 		</div>
@@ -97,7 +98,7 @@
 			</div>
 		</div>
 	</div>
-<!--
+	
 	<div class="row">
 		<div class="h1 mx-5 mont-700">Topics</div>
 	</div>
@@ -107,14 +108,12 @@
 			<?php
 
 				$topics = array(
-						array("name"=>"Trending Tech","description"=>"Artificial Intelligence (AI), Machine Learning (ML), Internet of Things (IoT), Blockchain, Mobile"),
-						array("name"=>"Storage and Networking","description"=>"Cloud Native Storage, Software Defined Storage, Storage Management, Distributed File System, Datastores, Big Data,  NFV/ VNF, DPDK, ODL, Software Defined Networking."),
-						array("name"=>"Open Hybrid Cloud","description"=>"Multi-Cloud, Automation, OpenStack, Kubernetes, Serverless, Microservices, Containers, OpenShift/ PaaS, Hybrid Cloud Management, Operators, CNI, Virtualization, Kernel, Service Mesh."),
-						array("name"=>"Developer Tools","description"=>"Container Tooling, CI/CD, DevOps, Code Editors Cloud native IDE, CLI, Local Development for Containers, Language Runtime, Debugging/Tracing, QE."),
-						array("name"=>"FOSS Community & Standards", "description"=>"Community Trends, Governance, Licensing, Participation, Leadership, Agile."),
-						array("name"=>"Design","description"=>"Experience Design, Emotional Design, Design for Wearables, VUI, AR/VR, Interaction Design, Information Architecture, Design Tools and Processes, Design Thinking, Design in Open Source, User Research, Methods of Collecting User Feedback, Strategies Towards Increased Transparency/Collaboration for Design and Development Across Teams."),
-						array("name"=>"Documentation", "description"=>"Writing for Enterprise Products, Automations Tools, Documentation Tools and Processes, Interactive Content, Content Structuring, Topic Based Authoring, Modularity, User Story Based or User Focused Documentation, UX Microcopy Documentation, Help Content, AI and Documentation, Upstream/Community Documentation, Findable Content, Documentation Workflows, Minimalism in Documentation, Information Architecture."),
-						array("name"=>"Security and Data Privacy", "description"=>"Open Source Security.")
+						array("name"=>"Cloud, Edge, and Platform Technologies","description"=>"nnovations in cloud computing, edge technologies, and platform engineering that drive scalability, efficiency, and reliability across distributed systems.<br><i>Cloud Native, Kubernetes, Edge Computing, Hybrid Cloud, OpenShift, Infrastructure as Code (IaC), Containers, DevOps, Microservices, Platform Engineering</i>"),
+						array("name"=>"AI, Data Science, and Emerging Tech","description"=>"The latest advancements in artificial intelligence, machine learning, and data science, along with cutting-edge emerging technologies shaping the future.<br><i>AI/ML, Data Science, Deep Learning, Neural Networks, Data Analytics, Natural Language Processing (NLP), Quantum Computing, Blockchain, AR/VR</i>"),
+						array("name"=>"Security and Sustainable Computing","description"=>"Cybersecurity best practices and technologies, along with sustainable computing approaches to ensure secure, energy-efficient, and resilient systems.<br><i>Cybersecurity, Zero Trust, Encryption, Vulnerability Management, Green Computing, Sustainability, Cloud Security, Privacy, Governance</i>"),
+						array("name"=>"Open Source Innovation and Leadership","description"=>"Open-source collaboration, community leadership, and contributions that drive innovation and technological advancement worldwide.<br><i>Open Source, OpenStack, Linux, Collaborative Development, Git, Community Building, Leadership, Governance, FOSS, Ecosystem Development</i>"),
+						array("name"=>"User Experience and Design Engineering", "description"=>"The intersection of user experience (UX) and design engineering, focusing on how user interface (UI) and design thinking influence product development and user-centered solutions.<br><i>UX/UI Design, Design Thinking, Human-Centered Design, Accessibility, Frontend Development, Prototyping, Interaction Design, Design Systems</i>"),
+						array("name"=>"Open Track","description"=>"A flexible track for community members to present topics beyond the listed categories. This is an opportunity to introduce diverse subjects that inspire discussion and innovation in the realm of open source.<br><i>Emerging Technologies, Experimental Projects, Cross-disciplinary Topics, Tech for Good, Diversity in Tech, Collaboration, Unique Innovations</i>")
 					  );
 
 				foreach($topics as $i=>$t){
@@ -142,11 +141,10 @@
 </section>
 
 <section id="news" class="mx-auto py-5 col-lg-11">
-	<div class="row">
-		<div class="h1 mx-5 mont-700">Important dates</div>
-	</div>
-	<div class="row">
+	
+	 <!-- <div class="row">
 		<!-- Keep in pairs - ->
+		
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
 				<div class="col-4 h5 mont-700">Oct 16, 2020</div>
@@ -212,9 +210,27 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		
-    </div>-->
+		</div>-->
+		<div class="row mt-4">
+		    <div class="h1 mx-5 mont-700">News</div>
+	    </div>
+	    <div class="row">
+		    <div class="col-lg-6 px-5 mx-auto">
+                 <p class="os-400"><span class="h6 mont-700">Nov 11, 2024</span> <a href="https://pretalx.devconf.info/devconf-in-2025/cfp" target="_blank">Call for Proposals</a> is open, deadline to submit proposals is December 15, 2024.</p>
+                 <p class="os-400"><span class="h6 mont-700">Sep 6, 2024</span> DevConf.IN is now on <a href="https://www.linkedin.com/company/devconf-in/" target="_blank">LinkedIn</a>.</p>
+                 <p class="os-400"><span class="h6 mont-700">Aug 16, 2024</span> DevConf.IN dates announced: February 28 - March 1, 2025</p>                 
+		    </div>
+		    <div class="col-lg-4 px-5 mx-auto">
+	            <form action="https://devconf.us5.list-manage.com/subscribe/post?u=ad2f341fc41f78b232f2765e6&amp;id=1892c1125f&amp;f_id=003c41edf0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate px-2 py-3 bordered text-center" target="_blank" novalidate>
+                    <div class="h3 mont-700">Sign up for newsletter</div>
+                    <div class="mc-field-group">
+                        <input type="email" value="" name="EMAIL" class="required email p-2" id="mce-EMAIL" placeholder="Email address">
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ad2f341fc41f78b232f2765e6_1892c1125f" tabindex="-1" value=""></div>
+                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="px-4 py-2 mont-400">
+                    </div>
+                </div>
+                </form>
+		    </div>
 </section>
 
 <section class="col-12 px-0 mt-5" style="height: 450px;" id="map">
