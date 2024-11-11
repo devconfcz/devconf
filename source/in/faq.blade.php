@@ -71,7 +71,7 @@
 	<div class="row">
 		<div class="h1 mx-5 mont-700 underline position-relative">Frequently Asked Questions (FAQ)</div>
 	</div>
-    <div class="row">
+    <div class="row mt-2">
        <div class="h3 mx-5 mont-700 position-relative">We are excited to bring the DevConf India chapter back, this time in Pune!</div>
     </div>
 	<div class="row local-nav">
