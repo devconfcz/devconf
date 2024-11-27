@@ -39,11 +39,11 @@
 				<li class="nav-item active px-3">
 					<a href="#news" class="nav-link local">News</a>
 				</li>
-				<li class="nav-item active px-3">
+				<!--li class="nav-item active px-3">
 					<a href="/cz/schedule" class="nav-link local">Schedule</a>
-				</li>
+				</li>-->
 				<li class="nav-item active px-3">
-					<a href="#travel" class="nav-link local">How to get here?</a>
+					<a href="/cz/tobrno" class="nav-link local">Getting to Brno</a>
 				</li>
                 <li class="nav-item active px-3">
                     <a href="/cz/blog" class="nav-link local">Blog</a>
@@ -227,16 +227,16 @@
 			<?php
 
 				$topics = array(
-						array("name"=>"Cloud, Hybrid Cloud and Hyperscale Infrastructure","description"=>"Topics around Kubernetes, high availability, anything that powers large data centers or small private clouds, best practices for infrastructure management and operations at scale, resource efficiency, and setting up developer environments. Topic related to virtualization, containers, and Kubernetes."),
-                        array("name"=>"Future Tech and Open Research", "description"=>"What’s next? Any topics that are discussed or actively researched yet their impact is still potential. Best practices and great examples of open source research collaborations are welcome. Trending topics from software development, metaverse, new trends in existing areas such as microservices, distributed computing, and continuous improvement, observability, quantum computing."),
-                        array("name"=>"Edge, Mobile and Automotive", "description"=>"Modern embedded systems, microcontrollers, management of embedded systems, infrastructure for embedded systems, resource optimization and resource lean appliances, peripherals, tools for specific use cases, and edge in automotive."),
-                        array("name"=>"Artificial Intelligence and Data Science", "description"=>"Artificial intelligence, large language models, data storing and processing, best practices for data lakes/data mesh, and parallelism and vector computing."),
-                        array("name"=>"Linux Distributions and Operating Systems", "description"=>"Firmware, Linux kernel, base platform for containers, unorchestrated containers, desktop, updates from Fedora land, Silverblue, CentOS Stream and other distributions. OS building and distribution, release management topics, package manager tools, data-driven package management, integrating components into the system."),
-                        array("name"=>"DevOps and Automation, Security and Compliance", "description"=>"How to define a release pipeline, how to automate developer environments, how to build developer sandboxes, how to ensure application uptime, continuous application development, agile development, SRE tools and best practices, AppOps, and testing in DevOps environments. Embedded intelligence in products for automation, IoB (Internet of Behaviors), analytics and automated remediation capabilities, risk and change analysis, AI-powered orchestration, and machine learning in test automation (e.g. test failure analysis, test generation, and test selection)."),
-                        array("name"=>"Application and Services Development", "description"=>"Build and deploy apps, modern application development, services development and challenges with running applications in cloud, application monitoring and cloud-ready apps, application modernization, single-sourcing documentation, etc."),
-                        array("name"=>"Open Source Success Stories", "description"=>"Customer success stories with open source, examples of open source initiatives in the public sector, open source projects in academia, from zero to a successful open source project."),
-                        array("name"=>"Agility, Leadership and DEI", "description"=>"Agile practices, UX, design/design thinking, community management and open source in education, open management practices. DEI (Diversity, Equity, and Inclusion) topics."),
-                        array("name"=>"Open track", "description"=>"Open to any other topics! We welcome open-source student projects, presentations of diploma and bachelor theses, proposals for new projects, and any other topic that doesn't fall under the listed themes but relates to the general open source community topics.")
+						array("name"=>"Cloud, Hybrid Cloud and Hyperscale Infrastructure","description"=>""),
+                        array("name"=>"Future Tech and Open Research", "description"=>""),
+                        array("name"=>"Artificial Intelligence and Data Science", "description"=>""),
+                        array("name"=>"Linux Distributions, Operating Systems, and Edge", "description"=>""),
+                        array("name"=>"Application and Services Development", "description"=>""),
+                        array("name"=>"DevOps and Automation", "description"=>""),
+                        array("name"=>"Security and Compliance", "description"=>""),
+                        array("name"=>"Agility, Leadership, and DEI", "description"=>""),
+                        array("name"=>"UX and Design", "description"=>""),
+                        array("name"=>"Open Track", "description"=>"")
 					  );
 
 				foreach($topics as $i=>$t){
@@ -349,23 +349,7 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 	</div>
 	<div class="row">
 		<div class="col-lg-6 px-5 mx-auto">
-             <p class="os-400"><span class="h6 mont-700">Apr 25, 2024</span> Schedule is live.</p>
-             <p class="os-400"><span class="h6 mont-700">Apr 25, 2024</span> Registration is open.</p>
-             <p class="os-400"><span class="h6 mont-700">Mar 11, 2024</span> CfP is closed. Speaker notifications will be sent between April 8-12.</p>
-             <p class="os-400"><span class="h6 mont-700">Mar 1, 2024</span> Deadline to submit proposals is extended to March 10, 2024.</p>
-             <p class="os-400"><span class="h6 mont-700">Feb 12, 2024</span> Follow <a href="https://www.linkedin.com/company/102081562/admin/feed/posts/" target="_blank">DevConf.CZ on LinkedIn</a>.</p>
-             <p class="os-400"><span class="h6 mont-700">Dec 14, 2023</span> Call for Proposals is open, deadline to submit proposals is March 3, 2024</p>
-             <p class="os-400"><span class="h6 mont-700">Nov 16, 2023</span> DevConf.cz 2024 date announced: June 13-15, 2024</p>
-             <p class="os-400"><span class="h6 mont-700">Jun 9, 2023</span> Piloting Matrix on DevConf.cz 2023. Join the space: <a href="https://matrix.to/#/#2023:devconf.cz" target="_blank">https://matrix.to/#/#2023:devconf.cz</a>.</p>
-             <p class="os-400"><span class="h6 mont-700">Apr 28, 2023</span> DevConf.cz 2023 <a href="https://devconfcz2023.sched.com/" target="_blank">schedule</a> is published and <a href="https://devconfcz2023.eventbrite.com" target="_blank">registration</a> is open.</p>
-             <p class="os-400"><span class="h6 mont-700">Mar 20, 2023</span> <a href="https://cfp.devconf.info" target="_blank">CfP for lightning talks</a> remains open.</p>
-<!--             <p class="os-400"><span class="h6 mont-700">Mar 10, 2023</span> Deadline to submit session for main DevConf.CZ event is extended to March 17, 2023 EOD everywhere.</p>
-             <p class="os-400"><span class="h6 mont-700">Mar 10, 2023</span> DevConf.cz Mini | March 2023 - CfP closed.</p>
-             <p class="os-400"><span class="h6 mont-700">Mar 8, 2023</span> You can follow us at <a href="https://fosstodon.org/@devconf_cz" target="_blank">Fosstodon</a>.</p>
-             <p class="os-400"><span class="h6 mont-700">Mar 3, 2023</span> Online CfP office hours on Friday, from 2 - 3 PM CET (<a href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20230303T130000Z%2F20230303T140000Z&details=Join%20the%20google%20meet%20room%3A%20meet.google.com%2Fpoz-gxuw-pnr%0A%0ACome%20and%20discuss%20your%20proposals%20for%20DevConf.cz%202023%20as%20the%20deadline%20for%20Call%20for%20Proposals%20is%20coming%20soon%20%28March%2010%2C%202023%29.%20Please%20join%20us%20if%3A%0A%0A%2Ayou%20have%20an%20idea%20for%20a%20talk%20at%20DevConf.cz%202023%20and%20need%20some%20help%20framing%20it%2C%C2%A0%0A%2Ayou%20know%20a%20topic%20and%20would%20like%20to%20get%20some%20feedback%20to%20prepare%20a%20presentation%2C%0A%2Ayou%27re%20working%20on%20something%2C%20but%20you%20are%20not%20sure%20if%20it%20can%20be%20interesting%20for%20the%20audience%20-%20come%20and%20tell%20us%20because%20what%20may%20seem%20boring%20to%20you%20can%20be%20supremely%20useful%20to%20others%2C%C2%A0%0A%2Ayou%20don%27t%20have%20a%20topic%20in%20your%20mind%2C%20but%20you%20want%20to%20see%20what%20other%20people%20are%20submitting.%0A%C2%A0%0ACfP%20Portal%3A%20https%3A%2F%2Fcfp.devconf.info%2F%C2%A0%0AConference%20website%3A%20https%3A%2F%2Fwww.devconf.info%2Fcz%2F%0ACfP%20deadline%3A%20March%2010%2C%202023%20%20%0AConference%20dates%20-%20June%2016-18%2C%202023&location=meet.google.com%2Fpoz-gxuw-pnr&text=Discussion%20about%20DevConf.CZ%202023%20CfP%20topics" target="_blank">Google</a>, <a href="https://calendar.yahoo.com/?desc=Join%20the%20google%20meet%20room%3A%20meet.google.com%2Fpoz-gxuw-pnr%0A%0ACome%20and%20discuss%20your%20proposals%20for%20DevConf.cz%202023%20as%20the%20deadline%20for%20Call%20for%20Proposals%20is%20coming%20soon%20%28March%2010%2C%202023%29.%20Please%20join%20us%20if%3A%0A%0A%2Ayou%20have%20an%20idea%20for%20a%20talk%20at%20DevConf.cz%202023%20and%20need%20some%20help%20framing%20it%2C%C2%A0%0A%2Ayou%20know%20a%20topic%20and%20would%20like%20to%20get%20some%20feedback%20to%20prepare%20a%20presentation%2C%0A%2Ayou%27re%20working%20on%20something%2C%20but%20you%20are%20not%20sure%20if%20it%20can%20be%20interesting%20for%20the%20audience%20-%20come%20and%20tell%20us%20because%20what%20may%20seem%20boring%20to%20you%20can%20be%20supremely%20useful%20to%20others%2C%C2%A0%0A%2Ayou%20don%27t%20have%20a%20topic%20in%20your%20mind%2C%20but%20you%20want%20to%20see%20what%20other%20people%20are%20submitting.%0A%C2%A0%0ACfP%20Portal%3A%20https%3A%2F%2Fcfp.devconf.info%2F%C2%A0%0AConference%20website%3A%20https%3A%2F%2Fwww.devconf.info%2Fcz%2F%0ACfP%20deadline%3A%20March%2010%2C%202023%20%20%0AConference%20dates%20-%20June%2016-18%2C%202023&et=20230303T140000Z&in_loc=meet.google.com%2Fpoz-gxuw-pnr&st=20230303T130000Z&title=Discussion%20about%20DevConf.CZ%202023%20CfP%20topics&v=60" target="_blank">Yahoo</a>, <a href="https://outlook.live.com/calendar/0/deeplink/compose?body=Join%20the%20google%20meet%20room%3A%20meet.google.com%2Fpoz-gxuw-pnr%0A%0ACome%20and%20discuss%20your%20proposals%20for%20DevConf.cz%202023%20as%20the%20deadline%20for%20Call%20for%20Proposals%20is%20coming%20soon%20%28March%2010%2C%202023%29.%20Please%20join%20us%20if%3A%0A%0A%2Ayou%20have%20an%20idea%20for%20a%20talk%20at%20DevConf.cz%202023%20and%20need%20some%20help%20framing%20it%2C%C2%A0%0A%2Ayou%20know%20a%20topic%20and%20would%20like%20to%20get%20some%20feedback%20to%20prepare%20a%20presentation%2C%0A%2Ayou%27re%20working%20on%20something%2C%20but%20you%20are%20not%20sure%20if%20it%20can%20be%20interesting%20for%20the%20audience%20-%20come%20and%20tell%20us%20because%20what%20may%20seem%20boring%20to%20you%20can%20be%20supremely%20useful%20to%20others%2C%C2%A0%0A%2Ayou%20don%27t%20have%20a%20topic%20in%20your%20mind%2C%20but%20you%20want%20to%20see%20what%20other%20people%20are%20submitting.%0A%C2%A0%0ACfP%20Portal%3A%20https%3A%2F%2Fcfp.devconf.info%2F%C2%A0%0AConference%20website%3A%20https%3A%2F%2Fwww.devconf.info%2Fcz%2F%0ACfP%20deadline%3A%20March%2010%2C%202023%20%20%0AConference%20dates%20-%20June%2016-18%2C%202023&enddt=2023-03-03T14%3A00%3A00%2B00%3A00&location=meet.google.com%2Fpoz-gxuw-pnr&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2023-03-03T13%3A00%3A00%2B00%3A00&subject=Discussion%20about%20DevConf.CZ%202023%20CfP%20topics" target="_blank">Outlook</a>, <a href="https://outlook.office.com/calendar/0/deeplink/compose?body=Join%20the%20google%20meet%20room%3A%20meet.google.com%2Fpoz-gxuw-pnr%0A%0ACome%20and%20discuss%20your%20proposals%20for%20DevConf.cz%202023%20as%20the%20deadline%20for%20Call%20for%20Proposals%20is%20coming%20soon%20%28March%2010%2C%202023%29.%20Please%20join%20us%20if%3A%0A%0A%2Ayou%20have%20an%20idea%20for%20a%20talk%20at%20DevConf.cz%202023%20and%20need%20some%20help%20framing%20it%2C%C2%A0%0A%2Ayou%20know%20a%20topic%20and%20would%20like%20to%20get%20some%20feedback%20to%20prepare%20a%20presentation%2C%0A%2Ayou%27re%20working%20on%20something%2C%20but%20you%20are%20not%20sure%20if%20it%20can%20be%20interesting%20for%20the%20audience%20-%20come%20and%20tell%20us%20because%20what%20may%20seem%20boring%20to%20you%20can%20be%20supremely%20useful%20to%20others%2C%C2%A0%0A%2Ayou%20don%27t%20have%20a%20topic%20in%20your%20mind%2C%20but%20you%20want%20to%20see%20what%20other%20people%20are%20submitting.%0A%C2%A0%0ACfP%20Portal%3A%20https%3A%2F%2Fcfp.devconf.info%2F%C2%A0%0AConference%20website%3A%20https%3A%2F%2Fwww.devconf.info%2Fcz%2F%0ACfP%20deadline%3A%20March%2010%2C%202023%20%20%0AConference%20dates%20-%20June%2016-18%2C%202023&enddt=2023-03-03T14%3A00%3A00%2B00%3A00&location=meet.google.com%2Fpoz-gxuw-pnr&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2023-03-03T13%3A00%3A00%2B00%3A00&subject=Discussion%20about%20DevConf.CZ%202023%20CfP%20topics" target="_blank">Office365</a>)</p>
-            <p class="os-400"><span class="h6 mont-700">Jan 18, 2023</span> <a href="https://cfp.devconf.info" target="_blank">CfP opens</a>, deadline to submit proposals is Mar 10, 2023.</p>
-            <p class="os-400"><span class="h6 mont-700">Dec 12, 2022</span> DevConf.CZ 2023 dates announced: Jun 16-18, 2023.</p>
-            <p class="os-400"><span class="h6 mont-700">Oct 4, 2022</span> <a href="https://www.eventbrite.com/e/devconfcz-mini-november-2022-tickets-430870755027" target="_blank">Registration</a> for autumn Mini event is open.</p>-->
+             <p class="os-400"><span class="h6 mont-700">Nov 28, 2024</span> DevConf.CZ 2025 date announced: June 12-14, 2025</p>
 		</div>
 		<div class="col-lg-4 px-5 mx-auto">
 		        <form action="https://devconf.us5.list-manage.com/subscribe/post?u=ad2f341fc41f78b232f2765e6&id=acab0ee8de" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate px-2 py-3 bordered text-center" target="_blank" novalidate>
@@ -438,7 +422,7 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 <section id="schedule" class="mx-auto col-lg-12 background-gray text-center mt-5 pt-5">
 	<div class="h1 mont-700 position-relative py-4 mt-3">Schedule</div>
 	<a class="p-3 mont-700 mb-3 d-inline-block purple-href" target="_blank" href="https://devconfcz2022.sched.com/">SCHEDULE IS LIVE</a>
-</section> -->
+</section> 
 <section id="travel" class="mx-auto py-5 col-lg-11">
 	<div class="row">
 		<div class="mont-700 h1 underline position-relative mx-5 pb-4">How to get there?</div>
@@ -481,7 +465,7 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 			</div>
 		</div>
 	</div>
-</section> 
+</section> -->
 <section class="col-12 px-0 mt-5" style="height: 450px;" id="map">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5828.8794114720895!2d16.593681273902156!3d49.223568069664026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471294099dc06bbb%3A0xbfcf161b01a48b0d!2sFaculty%20of%20Information%20Technology%2C%20Brno%20University%20of%20Technology!5e0!3m2!1sen!2scz!4v1569001018524!5m2!1sen!2scz" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 </section>
