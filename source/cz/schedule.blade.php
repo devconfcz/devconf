@@ -81,7 +81,6 @@
 
     $(document).ready(function() {
         // matchHeight the contents of each .card-pf and then the .card-pf itself
-        window.location="https://www.devconf.info/us/schedule";
         $(".row > [class*='col'] > .card .card-title").matchHeight({property: 'min-height'});
         $(".row > [class*='col'] > .card > .card-body").matchHeight({property: 'min-height'});
         $(".row > [class*='col'] > .card > .card-footer").matchHeight({property: 'min-height'});
