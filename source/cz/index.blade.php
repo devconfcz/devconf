@@ -16,7 +16,7 @@
 @endsection
 
 @section('title')
-<title>DevConf.CZ 2024</title>
+<title>DevConf.CZ 2025</title>
 @endsection
 
 
