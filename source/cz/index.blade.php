@@ -95,13 +95,13 @@
                     </div> 
 <!--                <div class="heading-text pt-1 pt-xl-3 mt-3">
                         <a href="/cz/schedule/" class="border p-3 h2 mont-700" style="border-width: 3px !important;">Schedule</a>
-                    </div>
+                    </div>-->
                     <div class="heading-text pt-1">
-                        <a href="https://fedoraproject.limequery.com/282622?lang=en" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">Post-event survey</a>
+                        <a href="https://pretalx.devconf.info/devconf-cz-2025/cfp" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">Call for Proposals</a>
                     </div>
                      <div class="heading-text mont-400 h5 pb-2 pb-lg-5">
-                        We aim to release the schedule in late April.
-        			</div>        -->             
+                        Submit your proposals by March 2, 2025.
+        			</div>        
   		        </div>      		    
    		    </div>
 <!--        <div class="road-timeline-big">
@@ -227,16 +227,16 @@
 			<?php
 
 				$topics = array(
-						array("name"=>"Cloud, Hybrid Cloud and Hyperscale Infrastructure","description"=>""),
-                        array("name"=>"Future Tech and Open Research", "description"=>""),
-                        array("name"=>"Artificial Intelligence and Data Science", "description"=>""),
-                        array("name"=>"Linux Distributions, Operating Systems, and Edge", "description"=>""),
-                        array("name"=>"Application and Services Development", "description"=>""),
-                        array("name"=>"DevOps and Automation", "description"=>""),
-                        array("name"=>"Security and Compliance", "description"=>""),
-                        array("name"=>"Agility, Leadership, and DEI", "description"=>""),
-                        array("name"=>"UX and Design", "description"=>""),
-                        array("name"=>"Open Track", "description"=>"")
+						array("name"=>"Cloud, Hybrid Cloud and Hyperscale Infrastructure","description"=>"Topics around Kubernetes, high availability, anything that powers large data centers or small private clouds, best practices for infrastructure management, operations at scale, and resource efficiency. Topics related to virtualization, containers, and Kubernetes.<br><br><i>Containers, OpenShift, Kubernetes, KVM, OpenStack, Cloud Native, Scalability, Availability, Data Center, Private Clouds, Virtualization</i>"),
+                        array("name"=>"Future Tech and Open Research", "description"=>"What’s next? Any topics that are being discussed or actively researched, yet whose impact is still potential. Best practices and great examples of open source research collaborations are welcome. Trending topics from software development, new trends in existing areas such as microservices, distributed computing, sustainable computing, Web3, or quantum computing.<br><br><i>Emerging Technologies, Research, Sustainable Computing, Web3, Quantum Computing</i>"),
+                        array("name"=>"Artificial Intelligence and Data Science", "description"=>"Topic for artificial intelligence, statistics and machine learning, both theory and practice. Do you have an AI application to demonstrate, novel architecture, performance comparison, red teaming report or a data processing pipeline you are really proud of? This is the track for you. The only requirement is that artificial intelligence must be central to it.<br><br><i>InstructLab, Open Data Hub, LLM, PyTorch, llama.cpp, vLLM, KServe, Kubeflow</i>"),
+                        array("name"=>"Linux Distributions, Operating Systems, and Edge", "description"=>"Everything related to Linux-based operating systems with a focus on Fedora Linux, CentOS Stream, RHEL, CoreOS, and Silverblue. Topics can include the operating system or new technologies and features such as bootc, immutable systems, dnf5, Konflux, edge, and automotive. All levels are welcome, from kernel and hardware, through operating system components and desktop news. Tools and processes for building distributions are also a great fit<br><br><i>Operating Systems, Kernel, Edge, Automotive, Linux, dnf5, RPM, bootc, Konflux</i>"),
+                        array("name"=>"Application and Services Development", "description"=>"Topics around building and deploying apps, modern application development, services development, application monitoring and observability, cloud-native apps, application modernization, and single-sourcing documentation.<br><br><i>Application, Application Development, Application Services, Cloud-native, Monitoring, Observability, Programming Languages, Application Testing, Documentation</i>"),
+                        array("name"=>"DevOps and Automation", "description"=>"Topics related to defining a release pipeline, automating developer environments, and building environments from developer sandboxes to production. This track covers ensuring application uptime, continuous application development, and agile development practices. It also includes discussions on Site Reliability Engineering (SRE) tools and best practices, AppOps, and testing strategies in DevOps environments. Additional focus areas include embedded intelligence in products for automation and the role of AI in test failure analysis, test generation, and test selection.<br><br><i>Automation, DevOps, Ansible, AIOps, CI/CD, Tekton, ArgoCD</i>"),
+                        array("name"=>"Security and Compliance", "description"=>"This track focuses on integrating security into development processes, shifting compliance left, and managing compliance in deployments. It explores areas such as the zero-trust security model, Post Quantum Cryptography (PQC) as well as the use of machine learning in security automation and risk management. This track also covers the evolution of legislation and mandates in terms of security compliance.<br><br><i>Remote Attestation, Policy as Code, PQC, Identity Management, MFA, Zero Trust, Data Governance, DORA, NIS2, Confidential Computing, SBOM, SSML, Vulnerability Management, Configuration Compliance, FIPS, Auditing</i>"),
+                        array("name"=>"Agility, Leadership, and DEI", "description"=>"This track explores the intersection of agility, leadership, and DEI (diversity, equity, and inclusion), offering strategies to build inclusive cultures, foster psychological safety, and lead diverse teams effectively. Learn how to align agile practices with DEI principles to drive innovation and unlock your team’s potential.<br><br><i>Agile Transformation, Business Agility, Lean Principles, Continuous Improvement, Agile Leadership, Scaling Agile, Agile Coaching, Culture, Collaboration, Facilitation, Mentorship, Product Ownership, Change Management, Decision Making, Strategic Thinking, Customer Feedback, Talent Development, Diversity, Accessibility, Representation, Allyship, Intersectionality</i>"),
+                        array("name"=>"UX and Design", "description"=>"This track focuses on the issues related to User Experience Design (UX), including Interface Design (UI), research, design thinking, design methods, and other aspects of UX. It is dedicated to sharing knowledge on how to create seamless, intuitive, and impactful user experiences, including but not limited to interfaces. By exploring the intersection of human-centered design and emerging technologies like AI, this track provides insights into transformative digital strategies that shape the future of user interactions.<br><br><i>Patternfly, UX, UI, Design, Design Thinking, AI, Interfaces, Prototyping, Wireframe, Creative, Experience, User Engagement, Human-centered Design, Workflow, Use Cases, Outcomes, Ideation, Testing</i>"),
+                        array("name"=>"Open Track", "description"=>"Open to any other topics! We welcome open source student projects, presentations of diploma and bachelor theses, proposals for new projects, and any other topic that doesn’t fall under the listed themes but relates to general open source community topics. This includes customer success stories with open source, examples of open source initiatives in the public sector, and open source projects in academia - from zero to a successful open source project.<br><br><i>Student Projects, Diploma Theses, Bachelor Theses, New Project Proposals, Open Source Community, Project Development, Customer Success Stories, Academic Open Source, Public Sector Open Source, Open Source in Education, From Concept to Success</i>")
 					  );
 
 				foreach($topics as $i=>$t){
@@ -349,6 +349,7 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 	</div>
 	<div class="row">
 		<div class="col-lg-6 px-5 mx-auto">
+             <p class="os-400"><span class="h6 mont-700">Dec 9, 2024</span> Call for Proposals (CfP) is open, submit your  proposals by March 2, 2025</p>
              <p class="os-400"><span class="h6 mont-700">Nov 28, 2024</span> DevConf.CZ 2025 date announced: June 12-14, 2025</p>
 		</div>
 		<div class="col-lg-4 px-5 mx-auto">
