@@ -36,8 +36,11 @@
 				<li class="nav-item active px-3">
 					<a href="#news" class="nav-link local">News</a>
 				</li>
-			<li class="nav-item active px-3">
+			    <li class="nav-item active px-3">
 					<a href="/in/faq" class="nav-link local">FAQ</a>
+				</li>
+				<li class="nav-item active px-3">
+					<a href="#hotels" class="nav-link local">Hotels</a>
 				</li>
 <!--				<li class="nav-item active px-3">
 					<a href="#schedule" class="nav-link local">Schedule</a>
@@ -76,7 +79,7 @@
                         <a href="https://pretalx.devconf.info/devconf-in-2025/cfp" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">CALL FOR PROPOSALS</a>
                     </div>
                      <div class="heading-text mont-400 h5 pb-2 pb-lg-5">
-                       Submit your proposals by December 15, 2024.
+                       Submit your proposals by December 22, 2024.
         			</div>
 			</div>
 		</div>
@@ -220,6 +223,7 @@
 	    </div>
 	    <div class="row">
 		    <div class="col-lg-6 px-5 mx-auto">
+                 <p class="os-400"><span class="h6 mont-700">Dec 13, 2024</span> Deadline to submit proposals is December 22, 2024.</p>
                  <p class="os-400"><span class="h6 mont-700">Nov 11, 2024</span> <a href="https://pretalx.devconf.info/devconf-in-2025/cfp" target="_blank">Call for Proposals</a> is open, deadline to submit proposals is December 15, 2024.</p>
                  <p class="os-400"><span class="h6 mont-700">Sep 6, 2024</span> DevConf.IN is now on <a href="https://www.linkedin.com/company/devconf-in/" target="_blank">LinkedIn</a>.</p>
                  <p class="os-400"><span class="h6 mont-700">Aug 16, 2024</span> DevConf.IN dates announced: February 28 - March 1, 2025</p>                 
@@ -234,6 +238,22 @@
                     </div>
                 </div>
                 </form>
+		    </div>
+</section>
+
+<section id="hotels" class="mx-auto py-5 col-lg-11">
+		<div class="row mt-4">
+		    <div class="h1 mx-5 mont-700">Recommended places to stay</div>
+	    </div>
+	    <div class="row">
+		    <div class="col-lg-12 px-5 mx-auto">
+                 <p class="os-400">Prices may depend on the hotels</p>
+                 <p class="os-400">JW Marriott<br><a href="https://www.marriott.com/en-us/hotels/pnqmc-jw-marriott-hotel-pune/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0" target="_blank">website</a> | <a href="https://maps.app.goo.gl/RUsTpjDtBbxgwWHv9" target="_blank">location</a> | INR 16k-18k per night | 6 km (20 min) from venue</p>
+                 <p class="os-400">The Pride Hotel<br><a href="https://www.pridehotel.com/pride-hotel-pune/" target="_blank">website</a> | <a href="https://maps.app.goo.gl/EPHfLKXyX8iSY2Nc9" target="_blank">location</a> | INR 12k-14k per night | 7 km (25 min) from venue</p>
+                 <p class="os-400">Ramee Grand<br><a href="https://rameehotels.com/ramee-grand-hotel-and-spa-pune/" target="_blank">website</a> | <a href="https://maps.app.goo.gl/3LAfNvZLwR3QmGg66" target="_blank">location</a> | INR 7k-8k per night | 5 km (20 min) from venue</p>
+                 <p class="os-400">Hotel Centro<br><a href="https://centrohotels.in/" target="_blank">website</a> | <a href="https://maps.app.goo.gl/U4eqd7jJ7MyjNukNA" target="_blank">location</a> | INR 5k-6k per night | 6.5 km (25 min) from venue</p>
+                 <p class="os-400">Tarawade Clarks Inn<br><a href="https://www.theclarkshotels.com/tarawade-clarks-inn-pune/" target="_blank">website</a> | <a href="https://maps.app.goo.gl/n5ZPkSWMzrxH7X8LA" target="_blank">location</a> | INR 4k-5k per night | 5 km (20 min) from venue</p>
+                 
 		    </div>
 </section>
 
