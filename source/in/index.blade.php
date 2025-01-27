@@ -278,6 +278,8 @@
                  <p class="os-400">Ramee Grand<br><a href="https://rameehotels.com/ramee-grand-hotel-and-spa-pune/" target="_blank">website</a> | <a href="https://maps.app.goo.gl/3LAfNvZLwR3QmGg66" target="_blank">location</a> | INR 7k-8k per night | 5 km (20 min) from venue</p>
                  <p class="os-400">Hotel Centro<br><a href="https://centrohotels.in/" target="_blank">website</a> | <a href="https://maps.app.goo.gl/U4eqd7jJ7MyjNukNA" target="_blank">location</a> | INR 5k-6k per night | 6.5 km (25 min) from venue</p>
                  <p class="os-400">Tarawade Clarks Inn<br><a href="https://www.theclarkshotels.com/tarawade-clarks-inn-pune/" target="_blank">website</a> | <a href="https://maps.app.goo.gl/n5ZPkSWMzrxH7X8LA" target="_blank">location</a> | INR 4k-5k per night | 5 km (20 min) from venue</p>
+                 <p class="os-400">Sharman Suites<br><a href="https://sharmansuites.com/" target="_blank">website</a> | <a href="https://maps.app.goo.gl/KBhmstJLEih9ndT1A" target="_blank">location</a> | Distance: 4 km (~15 min from venue)</p>
+                 <p class="os-400">Hotel Royalty<br><a href="http://www.hotel-royalty.com/contactus.html" target="_blank">website</a> | <a href="https://maps.app.goo.gl/1eFXugZyG2NqGZGd6" target="_blank">location</a> | Distance: 4 km (~15 min from venue)</p>
                  
 		    </div>
 </section>
