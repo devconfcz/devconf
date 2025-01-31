@@ -48,10 +48,9 @@
 				<li class="nav-item active px-3">
 					<a href="#hotels" class="nav-link local">Hotels</a>
 				</li>
-<!--				<li class="nav-item active px-3">
-					<a href="#schedule" class="nav-link local">Schedule</a>
+    			<li class="nav-item active px-3">
+					<a href="/in/schedule" class="nav-link local">Schedule</a>
 				</li>
--->
 				<li class="nav-item active px-3">
 					<a href="/coc" class="nav-link local" target="_blank">Policies</a>
 				</li>
@@ -84,9 +83,12 @@
 			<div class="heading-text pt-5 mt-5">
                         <a href="#registration" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">FREE REGISTRATION</a>
                     </div>
-                     <div class="heading-text mont-400 h5 pb-2 pb-lg-5">
+            <div class="heading-text pt-3">
+                        <a href="/in/schedule" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">SCHEDULE</a>
+                    </div>
+                     <!--<div class="heading-text mont-400 h5 pb-2 pb-lg-5">
                        We are currently working on the schedule and aim to publish it by the end of January at the latest.
-        			</div>
+        			</div>-->
 			</div>
 		</div>
 	</div>
