@@ -81,4 +81,4 @@
 
 @endsection
 
-@include('_layouts.footerus')
+@include('_layouts.footerin')
