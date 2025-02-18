@@ -60,7 +60,7 @@
 	<div class="row mr-0 mt-5" style="height: 85%">
 		<div class="col-lg-1 border-right text-center pr-0">
 			<a href="mailto:info@devconf.in" target="_blank" title="Mail"><img src="/assets/images/mail.svg" alt="mail" class="social-icon"></a>
-			<a href="https://twitter.com/devconf_in" target="_blank" title="Twitter"><img src="/assets/images/twitter.svg" alt="twitter" class="social-icon"></a>
+            <a href="https://www.instagram.com/devconfindia/" target="_blank" title="Instagram"><img src="/assets/images/instagram.svg" alt="instagram" class="social-icon"></a>
 			<a href="https://www.linkedin.com/company/devconf-in/" target="_blank" title="LinkedIn"><img src="/assets/images/linkedin.svg" alt="linkedin" class="social-icon"></a>
 			<a href="https://matrix.to/#/#2025.in:devconf.cz" target="_blank" title=""><img src="/assets/images/matrix.svg" alt="matrix" class="social-icon"></a>
 			<a href="https://www.youtube.com/channel/UCmYAQDZIQGm_kPvemBc_qwg" target="_blank" title="YouTube"><img src="/assets/images/youtube.svg" alt="youtube" class="social-icon"></a>
@@ -74,16 +74,20 @@
 			<div class="heading-text mont-400 h5 pb-5">
 				open source community conference
 			</div>
-			<div class="heading-text mont-700 h1 pt-5">
+			<div class="heading-text mont-700 h1 pt-3">
 				February 28 - March 1, 2025
 			</div>
 			<div class="heading-text mont-700 h4">
 				<i class="fa fa-map-marker"></i> MIT World Peace University (MIT WPU), Pune
 			</div>
-			<div class="heading-text pt-5 mt-5">
-                        <a href="#registration" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">FREE REGISTRATION</a>
-                    </div>
-            <div class="heading-text pt-3">
+			<div class="heading-text pt-5 mt-2">
+                <a href="#registration" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">FREE REGISTRATION</a>
+            </div>
+            <div class="heading-text mont-400 h5 pb-2 pb-lg-2">
+                 Registration closes Feb 21, 2025 EOD.<br>
+                 NOTE: To ensure a smooth experience for all attendees, we won’t be extending the deadline or allowing late entries. Please make sure to register on time and bring your badge for entry. 
+            </div>
+            <div class="heading-text py-2">
                         <a href="/in/schedule" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">SCHEDULE</a>
                     </div>
                      <!--<div class="heading-text mont-400 h5 pb-2 pb-lg-5">
@@ -140,7 +144,7 @@
 			<?php
 
 				$topics = array(
-						array("name"=>"Cloud, Edge, and Platform Technologies","description"=>"nnovations in cloud computing, edge technologies, and platform engineering that drive scalability, efficiency, and reliability across distributed systems.<br><i>Cloud Native, Kubernetes, Edge Computing, Hybrid Cloud, OpenShift, Infrastructure as Code (IaC), Containers, DevOps, Microservices, Platform Engineering</i>"),
+						array("name"=>"Cloud, Edge, and Platform Technologies","description"=>"Innovations in cloud computing, edge technologies, and platform engineering that drive scalability, efficiency, and reliability across distributed systems.<br><i>Cloud Native, Kubernetes, Edge Computing, Hybrid Cloud, OpenShift, Infrastructure as Code (IaC), Containers, DevOps, Microservices, Platform Engineering</i>"),
 						array("name"=>"AI, Data Science, and Emerging Tech","description"=>"The latest advancements in artificial intelligence, machine learning, and data science, along with cutting-edge emerging technologies shaping the future.<br><i>AI/ML, Data Science, Deep Learning, Neural Networks, Data Analytics, Natural Language Processing (NLP), Quantum Computing, Blockchain, AR/VR</i>"),
 						array("name"=>"Security and Sustainable Computing","description"=>"Cybersecurity best practices and technologies, along with sustainable computing approaches to ensure secure, energy-efficient, and resilient systems.<br><i>Cybersecurity, Zero Trust, Encryption, Vulnerability Management, Green Computing, Sustainability, Cloud Security, Privacy, Governance</i>"),
 						array("name"=>"Open Source Innovation and Leadership","description"=>"Open-source collaboration, community leadership, and contributions that drive innovation and technological advancement worldwide.<br><i>Open Source, OpenStack, Linux, Collaborative Development, Git, Community Building, Leadership, Governance, FOSS, Ecosystem Development</i>"),
