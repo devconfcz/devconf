@@ -100,7 +100,7 @@
                         <a href="https://pretalx.devconf.info/devconf-cz-2025/cfp" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">Call for Proposals</a>
                     </div>
                      <div class="heading-text mont-400 h5 pb-2 pb-lg-5">
-                        Submit your proposals by March 9, 2025.
+                        Submit your proposals by March 2, 2025.
         			</div>        
   		        </div>      		    
    		    </div>
@@ -349,7 +349,7 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 	</div>
 	<div class="row">
 		<div class="col-lg-6 px-5 mx-auto">
-             <p class="os-400"><span class="h6 mont-700">Dec 9, 2024</span> Call for Proposals (CfP) is open, submit your  proposals by March 9, 2025</p>
+             <p class="os-400"><span class="h6 mont-700">Dec 9, 2024</span> Call for Proposals (CfP) is open, submit your  proposals by March 2, 2025</p>
              <p class="os-400"><span class="h6 mont-700">Nov 28, 2024</span> DevConf.CZ 2025 date announced: June 12-14, 2025</p>
 		</div>
 		<div class="col-lg-4 px-5 mx-auto">
