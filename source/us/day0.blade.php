@@ -59,10 +59,10 @@
     $streams = array();
 	$schedule = array(
 	    array("start"=>"12:00 pm", "items"=>array(
-    	    array("end"=>"12:30", "length"=>30, "name"=>"Check In & Light Lunch")
+    	    array("end"=>"12:30", "length"=>30, "name"=>"Check In & Light Lunch", "description"=>"")
     	)),
     	array("start"=>"12:30 pm", "items"=>array(
-    	    array("end"=>"12:40", "length"=>10, "name"=>"Welcome",
+    	    array("end"=>"12:40", "length"=>10, "name"=>"Welcome", "description"=>"",
 				"speakers"=>array(
                     array("name"=>"Ruchir Puri"),
                 )

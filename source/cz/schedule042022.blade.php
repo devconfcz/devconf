@@ -62,7 +62,7 @@
     $streams = array("D1"=>"https://youtu.be/AgVfF-8E36c", "D2"=>"https://youtu.be/3sfVVeT-8bI", "D3"=>"https://youtu.be/oIO6Tij7IrA");
 	$schedule = array(
 	    array("start"=>"14:00", "items"=>array(
-    	    array("end"=>"14:15", "length"=>15, "name"=>"Check in and welcome")
+    	    array("end"=>"14:15", "length"=>15, "name"=>"Check in and welcome", "description"=>"")
     	)),
         array("start"=>"14:15", "items"=>array(
             array("end"=>"14:55", "length"=>40, "name"=>"Panel discussion: This is how we use hybrid cloud", "description"=>"Linux Integration Engineering teams (formerly Cyborg) will show you how we embrace hybrid cloud, Red Hat's and IBM's strategic direction. There are many projects and services in our department that deploy into multiple platforms, datacenters and public clouds. Panelists are seasoned engineers who have years of experience in development, maintenance, service architecture, scalability and security. If you are working on microservices, in DevOps or SRE, or develop a service, you cannot miss this session.", "track"=>"Cloud & Hyperscale", "room"=>"D2",
