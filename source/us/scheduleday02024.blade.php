@@ -135,48 +135,81 @@ foreach($schedule as $k=>$time){
 		<div class="h2 mx-5 my-4 mont-700"><?php echo $time['start']; ?></div>
 
 
-		<?php foreach( $time['items'] as $l=>$it ){ ?>
-		<div class="col-xs-12 col-sm-6 col-md-3 px-2">
-			<div class="card mb-2">
-				<div class="card-body <?php if(isset($it['track'])){echo $bgs[$it['track']];}else{echo "table-warning";} ?>">
-				    <div class="card-title">
-				        <strong><?php echo $it["name"]; ?></strong>
-				    </div>
-				    <div class="card-text">
-				        <p><?php if(isset($it['speakers'])){foreach($it['speakers'] as $si=>$s){ if($si>0){echo ", ";} else { ?><i class="fa fa-user"></i> <?php } echo $s['name']; if(isset($s['socials'])){
-                            echo " (";
-                            $add = false;
-				            foreach($s['socials'] as $sk=>$sv){
-				            if($add){ echo " | ";
-				            }else{ $add = true;
-				            }?>
-				            <a href="<?php echo $sv;?>" target="_blank"><i class="fa fa-<?php echo $sk;?> text-dark"></i></a>
-				            <?php
-				            }
-				            echo ")";
-				        }}} 
-                        if(isset($it['room']) && $it['room'] != "" && isset($streams[$it['room']])){
+        <?php foreach ($time['items'] as $l => $it) { ?>
+    <div class="col-xs-12 col-sm-6 col-md-3 px-2">
+        <div class="card mb-2">
+            <div class="card-body <?php echo isset($it['track']) && isset($bgs[$it['track']]) ? $bgs[$it['track']] : "table-warning"; ?>">
+                <div class="card-title">
+                    <strong><?php echo isset($it["name"]) ? $it["name"] : "Unnamed Event"; ?></strong>
+                </div>
+                <div class="card-text">
+                    <p>
+                        <?php 
+                        if (isset($it['speakers'])) {
+                            foreach ($it['speakers'] as $si => $s) { 
+                                if ($si > 0) { echo ", "; } 
+                                else { ?><i class="fa fa-user"></i> <?php } 
+                                
+                                echo $s['name']; 
+                                if (isset($s['socials'])) {
+                                    echo " (";
+                                    $add = false;
+                                    foreach ($s['socials'] as $sk => $sv) {
+                                        if ($add) { echo " | "; } else { $add = true; }
+                                        ?>
+                                        <a href="<?php echo $sv; ?>" target="_blank"><i class="fa fa-<?php echo $sk;?> text-dark"></i></a>
+                                        <?php
+                                    }
+                                    echo ")";
+                                }
+                            }
+                        }
+
+                        if (isset($it['room']) && $it['room'] != "" && isset($streams[$it['room']])) {
                         ?>
-                        <p><i class="fa fa-youtube-play"></i>&nbsp;<a class="text-decoration-none text-dark" href="<?php echo $streams[$it['room']]; ?>" target="_blank">Live stream</a></p>
+                            <p><i class="fa fa-youtube-play"></i>&nbsp;
+                                <a class="text-decoration-none text-dark" href="<?php echo $streams[$it['room']]; ?>" target="_blank">Live stream</a>
+                            </p>
                         <?php } 
-                        if(isset($it['files'])){ foreach($it['files'] as $fi=>$f){ if($fi>0){echo ", "; } else { ?><p><i class="fa fa-files-o"></i>&nbsp; <?php } ?>
-                        <a class="text-decoration-none text-dark" href="<?php echo $f['path']; ?>" target="_blank"><?php echo $f['name']; ?></a>
-                        <?php } echo "</p>"; } ?>
-						<p><i class="fa fa-clock-o"></i>&nbsp;<?php echo $it['length']; ?> minutes<?php if(isset($it['room']) && $it['room'] != "") { ?> | <i class="fa fa-map-marker"></i>&nbsp;<?php echo $it['room']; } ?>
-						<?php if(isset($it['track'])) { ?> | <i class="fa fa-tag"></i>&nbsp;<?php echo $it['track']; } 
-						if(isset($it['description']) && $it['description']!=""){?>
-						<span  data-toggle="collapse" data-target="#it<?php echo $k.$l; ?>" aria-expanded="false" aria-controls="it<?php echo $k.$l; ?>"><i class="fa fa-chevron-down"></i></span></p> <?php } ?>
-				    </div>					
-				    <div class="collapse" id="it<?php echo $k.$l; ?>">
-                        <div class="card-body <?php if(isset($it['track'])){echo $bgs[$it['track']];}else{echo "table-warning";} ?>">
-                            <p><?php echo $it['description']; ?></p>
-                        </div>
+
+                        if (isset($it['files'])) { 
+                            foreach ($it['files'] as $fi => $f) { 
+                                if ($fi > 0) { echo ", "; } 
+                                else { ?><p><i class="fa fa-files-o"></i>&nbsp; <?php } ?>
+                                <a class="text-decoration-none text-dark" href="<?php echo $f['path']; ?>" target="_blank"><?php echo $f['name']; ?></a>
+                            <?php } echo "</p>"; 
+                        } 
+                        ?>
+                        
+                        <p><i class="fa fa-clock-o"></i>&nbsp;
+                        <?php echo isset($it['length']) ? $it['length'] . " minutes" : "Duration unknown"; ?>
+
+                        <?php if (isset($it['room']) && $it['room'] != "") { ?> 
+                            | <i class="fa fa-map-marker"></i>&nbsp;<?php echo $it['room']; } ?>
+
+                        <?php if (isset($it['track'])) { ?> 
+                            | <i class="fa fa-tag"></i>&nbsp;<?php echo $it['track']; } ?>
+
+                        <?php if (isset($it['description']) && $it['description'] != "") { ?>
+                            <span data-toggle="collapse" data-target="#it<?php echo $k . $l; ?>" aria-expanded="false" aria-controls="it<?php echo $k . $l; ?>">
+                                <i class="fa fa-chevron-down"></i>
+                            </span>
+                        </p>
+                        <?php } ?>
+                </div>					
+
+                <?php if (isset($it['description']) && $it['description'] != "") { ?>
+                <div class="collapse" id="it<?php echo $k . $l; ?>">
+                    <div class="card-body <?php echo isset($it['track']) && isset($bgs[$it['track']]) ? $bgs[$it['track']] : "table-warning"; ?>">
+                        <p><?php echo $it['description']; ?></p>
                     </div>
-				</div>
-			</div>
-		</div>
-		
-		<?php } ?>
+                </div>
+                <?php } ?>
+            </div>
+        </div>
+    </div>
+<?php } ?>
+
 	</div>
 </section>
 <?php
