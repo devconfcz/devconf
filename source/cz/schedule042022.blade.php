@@ -212,7 +212,7 @@ foreach($schedule as $k=>$time){
 				    </div>					
 				    <div class="collapse" id="it<?php echo $k.$l; ?>">
                         <div class="card-body <?php if(isset($it['track'])){echo $bgs[$it['track']];}else{echo "table-warning";} ?>">
-                            <p><?php echo $it['description']; ?></p>
+                            <p><?php echo (isset($it['description'])?$it['description']:""); ?></p>
                         </div>
                     </div>
 				</div>
