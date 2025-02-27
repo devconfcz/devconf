@@ -16,7 +16,7 @@
 @endsection
 
 @section('title')
-<title>DevConf.US 2024</title>
+<title>DevConf.US 2025</title>
 @endsection
 
 
@@ -39,9 +39,9 @@
 				<li class="nav-item active px-3">
 					<a href="#news" class="nav-link local">News</a>
 				</li>
-				<li class="nav-item active px-3">
+				<!-- <li class="nav-item active px-3">
 					<a href="/us/schedule" class="nav-link local">Schedule</a>
-				</li>
+				</li> -->
 				<!-- <li class="nav-item active px-3">
                     <a href="/cz/blog" class="nav-link local">Blog</a>
                 </li> -->
@@ -75,20 +75,26 @@
                 virtual event
             </div> -->
             <!-- <div class="heading-text pt-1 mt-2">
-            <a href="https://events.redhat.com/profile/form/index.cfm?PKformID=0x607868abcd" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">REGISTER NOW!!</a>
+            <a href="https://events.redhat.com/profile/form/index.cfm?PKformID=0x607868abcd" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">Call for Proposals</a>
             </div> -->
             <div class="heading-text mont-700 h1">
-				        August 14-16, 2024
+				        September 19-20, 2025
 			</div>
 			<div class="heading-text mont-700 h4">
 			<i class="fa fa-map-marker"></i> Boston, USA
 			</div>
-			<div class="heading-text pt-1 pt-xl-3 mt-3">
-				<a href="/us/schedule/" class="border p-3 h2 mont-700" style="border-width: 3px !important;">Schedule</a>
-			</div>
 			<div class="heading-text pt-1">
-				<a href="https://forms.gle/zLdt2G8UEpmLPqn99" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">Post-event survey</a>
+				<a href="https://pretalx.devconf.info/devconf-us-2025/cfp" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">SUBMIT YOUR PROPOSAL</a>
 			</div>
+			<div class="heading-text mont-400 h5 pb-2 pb-lg-5">
+				Submit your proposals by April 28, 2025.
+			</div>  
+			<!-- <div class="heading-text pt-1 pt-xl-3 mt-3">
+				<a href="/us/schedule/" class="border p-3 h2 mont-700" style="border-width: 3px !important;">Schedule</a>
+			</div> -->
+			<!-- <div class="heading-text pt-1">
+				<a href="https://forms.gle/zLdt2G8UEpmLPqn99" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">Post-event survey</a>
+			</div> -->
 		</div>
 	</div>
 </header>
@@ -101,7 +107,7 @@
 		<div class="col-lg-6 px-5">
 			<h1 class="mont-700 underline pb-4">About DevConf</h1>
 			<div class="os-400">
-                <p>DevConf.US 2024 is the 6th annual, free, Red Hat sponsored technology conference for community project and professional contributors to Free and Open Source technologies
+                <p>DevConf.US 2025 is the 7th annual, free, Red Hat sponsored technology conference for community project and professional contributors to Free and Open Source technologies
 		 at <strong>Boston University</strong> in the historic city of Boston, USA.</p>
 
         <p>There is no admission or ticket charge for DevConf.US events. However, you are required to complete a free registration. Talks, presentations, and workshops will all be in English.</p>
@@ -143,16 +149,13 @@
 			<?php
 
 				$topics = array(
-					array("name"=>"Cloud, Hybrid Cloud and Hyperscale Infrastructure","description"=>"Topics around Kubernetes, high availability, anything that powers large data centers or small private clouds, best practices for infrastructure management and operations at scale, resource efficiency, and setting up developer environments. Topic related to virtualization, containers, and Kubernetes."),
-					array("name"=>"Future Tech and Open Research", "description"=>"What’s next? Any topics that are discussed or actively researched yet their impact is still potential. Best practices and great examples of open source research collaborations are welcome. Trending topics from software development, metaverse, new trends in existing areas such as microservices, distributed computing, and continuous improvement, observability, quantum computing."),
-					array("name"=>"Edge, Mobile and Automotive", "description"=>"Computing in edge environments, embedded systems, microcontrollers, mobile devices and app development, management of edge devices, infrastructure for edge devices, resource optimization and resource lean appliances, automotive computing, and tooling to support edge use cases."),
-					array("name"=>"Artificial Intelligence and Data Science", "description"=>"Artificial intelligence, large language models, data storing and processing, best practices for data lakes/data mesh, and parallelism and vector computing."),
-					array("name"=>"Linux Distributions and Operating Systems", "description"=>"Firmware, Linux kernel, base platform for containers, unorchestrated containers, desktop, updates from Fedora land, Silverblue, CentOS Stream and other distributions. OS building and distribution, release management topics, package manager tools, data-driven package management, integrating components into the system."),
-					array("name"=>"DevOps and Automation, Security and Compliance", "description"=>"How to define a release pipeline, how to automate developer environments, how to build developer sandboxes, how to ensure application uptime, continuous application development, agile development, SRE tools and best practices, AppOps, and testing in DevOps environments. Embedded intelligence in products for automation, IoB (Internet of Behaviors), analytics and automated remediation capabilities, risk and change analysis, AI-powered orchestration, and machine learning in test automation (e.g. test failure analysis, test generation, and test selection)."),
-					array("name"=>"Application and Services Development", "description"=>"Developing, building and deploying applications, their frameworks, and the challenges involved with running on premise, in the cloud, and at the edge. Considerations for application modernization, application monitoring, day-2 management, and self-service enablement."),
-					array("name"=>"Open Source Success Stories", "description"=>"Customer success stories with open source, examples of open source initiatives in the public sector, open source projects in academia, from zero to a successful open source project."),
-					array("name"=>"Agility, Leadership and DEI", "description"=>"Agile practices, UX, design/design thinking, community management and open source in education, open management practices. DEI (Diversity, Equity, and Inclusion) topics."),
-					array("name"=>"Open track", "description"=>"Open to any other topics! We welcome open-source student projects, presentations of diploma and bachelor theses, proposals for new projects, and any other topic that doesn't fall under the listed themes but relates to the general open source community topics.")
+					array("name"=>"Cloud, Hybrid Cloud and Hyperscale Infrastructure","description"=>"Topics around Kubernetes, high availability, anything that powers large data centers or small private clouds, best practices for infrastructure management, operations at scale, and resource efficiency. Topics related to virtualization, containers, and Kubernetes.<br><br><i>Containers, OpenShift, Kubernetes, KVM, OpenStack, Cloud Native, Scalability, Availability, Data Center, Private Clouds, Virtualization</i>"),
+                        array("name"=>"Artificial Intelligence and Data Science", "description"=>"Topic for artificial intelligence, statistics and machine learning, both theory and practice. Do you have an AI application to demonstrate, novel architecture, performance comparison, red teaming report or a data processing pipeline you are really proud of? This is the track for you. The only requirement is that artificial intelligence must be central to it.<br><br><i>InstructLab, Open Data Hub, LLM, PyTorch, llama.cpp, vLLM, KServe, Kubeflow</i>"),
+                        array("name"=>"Application and Services Development", "description"=>"Topics around building and deploying apps, modern application development, services development, application monitoring and observability, cloud-native apps, application modernization, and single-sourcing documentation.<br><br><i>Application, Application Development, Application Services, Cloud-native, Monitoring, Observability, Programming Languages, Application Testing, Documentation</i>"),
+                        array("name"=>"DevOps and Automation", "description"=>"Topics related to defining a release pipeline, automating developer environments, and building environments from developer sandboxes to production. This track covers ensuring application uptime, continuous application development, and agile development practices. It also includes discussions on Site Reliability Engineering (SRE) tools and best practices, AppOps, and testing strategies in DevOps environments. Additional focus areas include embedded intelligence in products for automation and the role of AI in test failure analysis, test generation, and test selection.<br><br><i>Automation, DevOps, Ansible, AIOps, CI/CD, Tekton, ArgoCD</i>"),
+                        array("name"=>"Security and Compliance", "description"=>"This track focuses on integrating security into development processes, shifting compliance left, and managing compliance in deployments. It explores areas such as the zero-trust security model, Post Quantum Cryptography (PQC) as well as the use of machine learning in security automation and risk management. This track also covers the evolution of legislation and mandates in terms of security compliance.<br><br><i>Remote Attestation, Policy as Code, PQC, Identity Management, MFA, Zero Trust, Data Governance, DORA, NIS2, Confidential Computing, SBOM, SSML, Vulnerability Management, Configuration Compliance, FIPS, Auditing</i>"),
+                        array("name"=>"UX and Design", "description"=>"This track focuses on the issues related to User Experience Design (UX), including Interface Design (UI), research, design thinking, design methods, and other aspects of UX. It is dedicated to sharing knowledge on how to create seamless, intuitive, and impactful user experiences, including but not limited to interfaces. By exploring the intersection of human-centered design and emerging technologies like AI, this track provides insights into transformative digital strategies that shape the future of user interactions.<br><br><i>Patternfly, UX, UI, Design, Design Thinking, AI, Interfaces, Prototyping, Wireframe, Creative, Experience, User Engagement, Human-centered Design, Workflow, Use Cases, Outcomes, Ideation, Testing</i>"),
+                        array("name"=>"Open Track", "description"=>"Open to any other topics! We welcome open source student projects, presentations of diploma and bachelor theses, proposals for new projects, and any other topic that doesn’t fall under the listed themes but relates to general open source community topics. This includes customer success stories with open source, examples of open source initiatives in the public sector, and open source projects in academia - from zero to a successful open source project.<br><br><i>Student Projects, New Project Proposals, Open Source Community, Customer Success Stories, Open Source in Education, Operating Systems, Kernel, Edge, Automotive, Linux, dnf5, RPM, bootc, Konflux, Emerging Technologies, Research, Sustainable Computing, Web3, Quantum Computing, MOC, Agile Transformation, Continuous Improvement, Agile Leadership, Culture, Collaboration, Mentorship, Decision Making, Strategic Thinking, Customer Feedback, Talent Development, Diversity, Accessibility, Representation, Allyship</i>")
 				);
 
 				foreach($topics as $i=>$t){
@@ -179,14 +182,14 @@
 	</div>
 </section>
 
-<!-- <section id="news" class="mx-auto py-5 col-lg-11">
+<section id="news" class="mx-auto py-5 col-lg-11">
 	<div class="row">
 		<div class="h1 mx-5 pb-4 underline position-relative mont-700">Important Dates</div>
-	</div> -->
-	<!-- <div class="row">
+	</div>
+	<div class="row">
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">Jan 20, 2023</div>
+				<div class="col-4 h5 mont-700">Feb 28, 2025</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">CfP Opens</div>
@@ -196,7 +199,7 @@
 		</div>
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">April 10, 2023</div>
+				<div class="col-4 h5 mont-700">April 28, 2025</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">CfP Closes</div>
@@ -204,7 +207,7 @@
 				</div>
 			</div>
 		</div>
-	</div> -->
+	</div>
 
 		<!-- Second pair -->
 	<!-- <div class="row">
@@ -294,11 +297,11 @@
 	</div>
 	<div class="row">
 		<div class="col-lg-6 px-5 mx-auto">
-			<p class="os-400"><span class="h6 mont-700">May 31, 2024</span> Schedule is live!</p>
+			<!-- <p class="os-400"><span class="h6 mont-700">May 31, 2024</span> Schedule is live!</p>
 			<p class="os-400"><span class="h6 mont-700">May 31, 2024</span> Registration is open!</p>
-			<p class="os-400"><span class="h6 mont-700">March 28, 2024</span> Call for Proposals deadline extended to April 22 2024 at 11:59pm ET</p>
-			<p class="os-400"><span class="h6 mont-700">February 12, 2024</span> Call for Proposals is open, deadline to submit proposals is April 8, 2024</p>
-			<p class="os-400"><span class="h6 mont-700">February 8, 2024</span> DevConf.US 2024 date announced: August 14-16, 2024</p>
+			<p class="os-400"><span class="h6 mont-700">March 28, 2024</span> Call for Proposals deadline extended to April 22 2024 at 11:59pm ET</p> -->
+			<p class="os-400"><span class="h6 mont-700">February 28, 2025</span> Call for Proposals is open, deadline to submit proposals is April 28, 2025</p>
+			<p class="os-400"><span class="h6 mont-700">February 28, 2025</span> DevConf.US 2025 date announced: September 19-20, 2025</p>
 			<!-- <p class="os-400"><span class="h6 mont-700">Jan 20, 2023</span> We have published a <a href="/assets/files/devconfUS-cfp-help.pdf" target="_blank">CfP help guide</a> to help you write an awesome proposal!</p>
 			<p class="os-400"><span class="h6 mont-700">Jan 20, 2023</span> Join our <a href="https://discord.gg/devconf" target="_blank">Discord server</a>. Reach out to us in the <b>#cfp-help</b> channel for any help with proposals.</p> -->
 			<!-- <p class="os-400"><span class="h6 mont-700">Jun 21, 2022</span> <a href="https://devconfus2022.sched.com" target="_blank">Schedule</a> is live!</p>
