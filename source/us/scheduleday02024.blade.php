@@ -55,7 +55,7 @@
 <?php
 
     $bgs = array("Topic Intro" => "table-danger", "Keynote" => "table-primary",
-                 "Highlight findings" => "table-active", "Breakout Sessions" => "table-success");
+                 "Highlight findings" => "table-active", "Breakout Sessions" => "table-success", "Closing Remarks" => "table-warning");
     $streams = array();
 	$schedule = array(
 	    array("start"=>"12:30", "items"=>array(
