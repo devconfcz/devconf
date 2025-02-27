@@ -64,9 +64,9 @@
 			<div class="d-block mb-5">
                 <h5><a href="https://www.bostonusa.com/plan/transportation/getting-here/">Check out this comprehensive site</a> with information regarding air, bus, car, and train travel to and from Boston.</h5>
 			</div>
-			<div class="d-block mb-3 mont-700 h2">DevConf.US is held in the heart of Boston University.</div>
+			<div class="d-block mb-3 mont-700 h2">DevConf.US is held at 43 Hawes Street in Boston University.</div>
 			<div class="d-block mb-5">
-                <h5>Almost all events will be held in the George Sherman Union building. <a href="https://www.bu.edu/parentsprogram/resources/visiting-boston-hotels/">This site maintained by Boston University</a> has many relevant resources regarding hotels, maps, public transportation, and information specific to the surrounding area. This will be a valuable reference when planning your trip to DevConf.US. </h5>
+                <h5>All events will be held in the 43 Hawes Street building. <a href="https://www.bu.edu/parentsprogram/resources/visiting-boston-hotels/">This site maintained by Boston University</a> has many relevant resources regarding hotels, maps, public transportation, and information specific to the surrounding area. This will be a valuable reference when planning your trip to DevConf.US. </h5>
 			</div>
 	</div>
 </section>
