@@ -81,19 +81,15 @@
 				<i class="fa fa-map-marker"></i> MIT World Peace University (MIT WPU), Pune
 			</div>
 			<div class="heading-text pt-5 mt-2">
-                <a href="#registration" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">FREE REGISTRATION</a>
+                <a href="https://forms.gle/WABPpxDMEBQCLtW47" target="_blank" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">2025 FEEDBACK FORM</a>
+            </div>
+            <div class="heading-text mt-2">
+                <a href="https://photos.app.goo.gl/me2XZqLYQ3LGKgTDA" target="_blank" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">2025 PHOTOS</a>
             </div>
             <div class="heading-text mont-400 h5 pb-2 pb-lg-2">
-                 Registration closes Feb 21, 2025 EOD.<br>
-                 NOTE: To ensure a smooth experience for all attendees, we won’t be extending the deadline or allowing late entries. Please make sure to register on time and bring your badge for entry. 
+                 Thank you for being part of DevConf.IN 2025! We look forward to the next event. 
             </div>
-            <div class="heading-text py-2">
-                        <a href="/in/schedule" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">SCHEDULE</a>
-                    </div>
-                     <!--<div class="heading-text mont-400 h5 pb-2 pb-lg-5">
-                       We are currently working on the schedule and aim to publish it by the end of January at the latest.
-        			</div>-->
-			</div>
+           
 		</div>
 	</div>
 </header>
