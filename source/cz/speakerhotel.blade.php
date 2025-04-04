@@ -59,10 +59,11 @@
 <section id="speakers" class="mx-auto mt-5 pb-3 col-lg-11">
 	<div class="row">
 		<div class="os-400 mx-5">
-			<p>This year the accommodation is <strong>not sponsored</strong>, it means that each participant pays for his/her own accommodation at the reception.</p>
-			<p>How to proceed with your reservation - to reserve a room at the conference rate, please select the hotel of your preference and contact the hotel directly with <strong>DEVCONF-25S</strong>
-			in the subject line. Only this way the hotel will assign you to our reservation and you will receive the agreed conference rate.</p>
-			<p>Do not forget to include your name, email, date of arrival and departure, or your other requirements. You can also use an email template below.</p>
+			<p>DevConf does not cover travel expenses for speakers. DevConf events remain free and we are securing a number of discounted rooms for both attendees and speakers. All participants are responsible for booking and covering their own accommodation at one of the partner hotels listed below.</p>
+			<p><strong>Instructions to reserve a hotel room:</strong>
+			<ol><li>Select a hotel from the list below and contact them directly using the provided email address.</li>
+			<li>Use the discount code <strong>DEVCONF-25S in the subject line.</strong></li>
+			<li>Include your name, arrival and departure dates, and any other requirements in your email.</li></ol>
 			<div class="accordion w-100 pb-3" id="template">
     			<div class="card">
 	    			<div class="card-header collapsed mont-600" id="template-heading" data-toggle="collapse" 
@@ -87,17 +88,16 @@
     		</div>
 			<p><strong>Please make your reservation as soon as possible, as space is limited.</strong></p>
 			<p>If you have any questions or concerns, please contact us at <a href="mailto:speakers@devconf.cz">speakers@devconf.cz</a>.</p>
+			
+			<p><strong>Bookings through third-party sites (e.g. booking.com), even if they are for one of our partner hotels, will not have the same price.</strong></p>
+            <p>All prices are <strong>per one night!</strong> The final price for accommodation depends on the partner hotel (accommodation taxes are usually charged on the spot).
+            Contact the partner hotel directly to save your spot and for additional information.</p>
 		</div>
 	</div>
 </section>
 <hr>
 <section class="mx-auto col-lg-11">
-    <div class="os-400 mx-5">
-        <p><strong>Bookings through third-party sites (e.g. booking.com), even if they are for one of our partner hotels, will not have the same price.</strong></p>
-        <p>All prices are <strong>per one night!</strong> The final price for accommodation depends on the partner hotel (accommodation taxes are usually charged on the spot).
-        Contact the partner hotel directly to save your spot and for additional information.</p>
-    </div>
-	<div class="row">
+   <div class="row">
 	    
 		<div class="col-lg-4">
 			<div class="h2 pt-3 pb-4 mx-5 mont-700">Avanti</div>
