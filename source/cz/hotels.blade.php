@@ -135,7 +135,7 @@
 			</div>
 		</div>
 		<div class="col-lg-4">
-			<div class="h2 pt-3 pb-4 mx-5 mont-700">Grand Hotel (just a few rooms left)</div>
+			<div class="h2 pt-3 pb-4 mx-5 mont-700"><s>Grand Hotel</s><br>(fully booked - no rooms left)</div>
 
 			<div class="os-400 mx-5">
 				<p><a href="https://grandhotelbrno.cz/en/" target="_blank">https://grandhotelbrno.cz/en/</a></p>
