@@ -28,9 +28,10 @@
 	<div class="row">
 		<div class="col-lg-3 col-xl-2 mt-5 local-nav os-400 mx-5 mx-lg-0">
 			<a href="/coc" class="active">Code of Conduct</a>
-                        <a href="/media-policy">Media Policy</a>
-                        <a href="/participation-agreement">Participation Agreement</a>
-                        <a href="/privacy-statement">Privacy Statement</a>
+            <a href="/media-policy">Media Policy</a>
+            <a href="/participation-agreement">Participation Agreement</a>
+            <a href="/privacy-statement">Privacy Statement</a>
+            <a target="_blank" href="/assets/files/devconf-brand-guidelines-v1.pdf">Brand Guidelines</a>
 		</div>
 		<div class="col-lg-9 col-xl-10">
 			<div class="row">

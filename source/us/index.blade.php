@@ -290,7 +290,7 @@
 			</div>
 		</div> -->
         <!-- </div>  -->
-
+</section>
 <section id="news" class="mx-auto py-5 col-lg-11">
 	<div class="row mt-4">
 		<div class="h1 mx-5 pb-4 underline position-relative mont-700">News</div>
