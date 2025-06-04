@@ -1,0 +1,50 @@
+---
+name: Build production
+
+on:
+  pull_request:
+  push:
+    paths-ignore:
+      - "**/README.md"
+  merge_group:
+  workflow_dispatch:
+
+jobs:
+  composer:
+    name: Build jigsaw templates
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - uses: "shivammathur/setup-php@v2"
+        with:
+          php-version: "latest"
+
+      - name: Install PHP dependencies
+        uses: "ramsey/composer-install@v3"
+
+      - name: Run jigsaw
+        run: ./vendor/bin/jigsaw build production
+  npm:
+    name: Run NPM production
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: "npm"
+
+      - name: Install packages from package.lock
+        run: npm ci
+
+      - name: Build production
+        run: npm production
