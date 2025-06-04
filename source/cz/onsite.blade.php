@@ -61,10 +61,10 @@
 		    <div class="h4 mont-700 text-xl-center">Schedule and venue</div>
 		    <p>Schedule: <a href="/cz/schedule/">https://www.devconf.info/cz/schedule/</a><br>
             Venue map: <a href="/cz/map/">https://www.devconf.info/cz/map/</a><br>
-            Virtual component: <a href="https://matrix.to/#/#2024:devconf.cz">https://matrix.to/#/#2024:devconf.cz</a><br>
+            Virtual component: <a href="https://matrix.to/#/#2025:devconf.cz">https://matrix.to/#/#2024:devconf.cz</a><br>
             FAQ: <a href="/cz/faq/">https://www.devconf.info/cz/faq/</a></p>
         </div>
-		
+
 		<div class="col-xl-4 container card-body my-2 ml-xl-auto">
 		    <div class="h4 mont-700 text-xl-center">Help from staff and code of conduct contact</div>
 		    <p>Dorka Volavkova<br>
@@ -74,7 +74,7 @@
                <a href="mailto:coc@devconf.cz">coc@devconf.cz</a>
             </p>
         </div>
-		
+
 		<div class="col-xl-4 container card-body my-2 ml-xl-auto">
 		    <div class="h4 mont-700 text-xl-center">Communication preference stickers</div>
 		    <p>Green - <span class="sticker d-inline-block bg-success align-bottom" style="height: 20px; width: 20px"></span> - Open to communicate<br>
@@ -82,20 +82,20 @@
                Red - <span class="sticker d-inline-block bg-danger align-bottom" style="height: 20px; width: 20px"></span> - Not interested at the time
             </p>
         </div>
-		
+
 		<div class="col-xl-4 container card-body my-2 ml-xl-auto">
 		    <div class="h4 mont-700 text-xl-center">Lanyard colors</div>
 		    <p>Black - <span class="sticker d-inline-block bg-dark align-bottom" style="height: 20px; width: 20px"></span> - OK to photograph<br>
                Red - <span class="sticker d-inline-block bg-danger align-bottom" style="height: 20px; width: 20px"></span> - Do NOT photograph</p>
 		</div>
-		
+
 		<div class="col-xl-4 container card-body my-2 ml-xl-auto">
 		    <div class="h4 mont-700 text-xl-center">WiFi</div>
 		    <p>SSID: vutbrno<br>
                login: devconfcz<br>
                password: Brno2024</p>
 		</div>
-		
+
 		<div class="col-xl-4 container card-body my-2 ml-xl-auto">
 		    <div class="h4 mont-700 text-xl-center">Social media</div>
 		    <p>Mastodon: <a href="https://fosstodon.org/@devconf_cz">@devconf_cz@fosstodon.org</a><br>
