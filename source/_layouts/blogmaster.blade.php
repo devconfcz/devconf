@@ -9,7 +9,7 @@
         <meta http-equiv="X-Frame-Options" content="DENY">
         <meta name="apple-mobile-web-app-capable" content="yes" />
     	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-
+        <meta name="fediverse:creator" content="@devconf_cz@fosstodon.org">
         <meta property="og:title" content="{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->siteName }}"/>
         <meta property="og:type" content="{{ $page->type ?? 'website' }}" />
         <meta property="og:url" content="{{ $page->getUrl() }}"/>
