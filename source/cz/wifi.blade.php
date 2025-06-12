@@ -70,8 +70,8 @@ h1{
 				<img src="/assets/images/devconf-logo-cz-reverse.svg" alt="DevConf logo" class="d-inline-block" style="margin-left: 7%; width: 15vw;">
 			</div>
 			<h1>Wi-Fi Connection</h1>
-			<h2 style="padding-top: 3%">SSID: <strong>VUTBRNO</strong></h2>
-			<h2>User: <strong>devconfcz</strong></h2>
+			<h2 style="padding-top: 3%">SSID: <strong>vut.cz</strong></h2>
+			<h2>User: <strong>devconfcz@vut.cz</strong></h2>
 			<h2>Password: <strong>Brno2025</strong></h2>
 		</div>
 		<div class="container h-100" time="6000">
