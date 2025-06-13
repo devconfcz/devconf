@@ -71,7 +71,8 @@ h1{
 			</div>
 			<h1>Wi-Fi Connection</h1>
 			<h2 style="padding-top: 3%">SSID: <strong>vut.cz</strong></h2>
-			<h2>User: <strong>devconfcz@vut.cz</strong></h2>
+			<h2>User: <strong>devconfcz@vutbr.cz</strong></h2>
+			<h2><i>Anonymous User: <strong>devconfcz@vutbr.cz</strong></i></h2>
 			<h2>Password: <strong>Brno2025</strong></h2>
 		</div>
 		<div class="container h-100" time="6000">

@@ -136,18 +136,33 @@
 <script>
     // Define an array of YouTube video URLs
     const videoUrls = [
-        'https://www.youtube.com/watch?v=QTNCw9srUpM',
-        'https://www.youtube.com/watch?v=QFC1-MNHe-g',
-        'https://www.youtube.com/watch?v=FfT38q_meLs',
-        'https://www.youtube.com/watch?v=nIDHYXkeaB8',
-        'https://www.youtube.com/watch?v=62CaWYi0TRQ',
-        'https://www.youtube.com/watch?v=UUuorawVSgM',
-        'https://www.youtube.com/watch?v=V30nFAIoGvc',
-        'https://www.youtube.com/watch?v=m9YBXT_xMuE',
+        'https://www.youtube.com/watch?v=58xLF-yGrL4',
+        'https://www.youtube.com/watch?v=rYSdbDckpT4',
+        'https://www.youtube.com/watch?v=VufluZ17Xns',
+        'https://www.youtube.com/watch?v=0i49CFr95N8',
+        'https://www.youtube.com/watch?v=r0weB9J-pWY',
+        'https://www.youtube.com/watch?v=BBwN-fzEtAs',
+        'https://www.youtube.com/watch?v=mgHF65jP2no',
+        'https://www.youtube.com/watch?v=kAyT_3pqFw4',
     ];
 
     // Array to store the player instances
     let players = [];
+    
+    // Get the video title based on the index
+    function getVideoTitle(index) {
+        const titles = [
+            'D105',
+            'D0206',
+            'D0207',
+            'E112',
+            'E104',
+            'E105',
+            'A112',
+            'A113',
+        ];
+        return titles[index];
+    }
 
     // Initialize the YouTube Player API
     function onYouTubeIframeAPIReady() {
@@ -213,21 +228,6 @@
             return match[1];
         }
         return null;
-    }
-
-    // Get the video title based on the index
-    function getVideoTitle(index) {
-        const titles = [
-            'D105',
-            'D0206',
-            'D0207',
-            'E112',
-            'E104',
-            'E105',
-            'A112',
-            'A113',
-        ];
-        return titles[index];
     }
 
     // Populate the text overlay with the specified title
