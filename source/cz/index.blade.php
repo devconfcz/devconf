@@ -94,14 +94,14 @@
                         <a href="#map" class="nav-link local d-inline-block" style="color: white; padding: 0px"><i class="fa fa-map-marker"></i> Brno, Czech Republic</a>
                     </div> 
                     <div class="heading-text mt-3 pt-1">
-                      <!--  <a href="#registration" class="border nav-link local p-3 h2 mont-700" style="border-width: 3px !important;">Free Registration</a>
+                      <a href="/cz/schedule" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">SCHEDULE</a>
                     </div>
-                    <div class="heading-text pt-1"> -->
-                        <a href="/cz/schedule" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">SCHEDULE</a>
+                    <div class="heading-text pt-1">
+                        <a href="https://fedoraproject.limequery.com/772439?lang=en" class="border nav-link p-3 h2 mont-700" target="_blank" style="border-width: 3px !important;">FEEDBACK FORM</a>
                     </div>
-                     <div class="heading-text mont-400 h5 pb-2 pb-lg-5">
+                    <!-- <div class="heading-text mont-400 h5 pb-2 pb-lg-5">
                         Advance tickets have ended. At-the-door tickets will be available at the venue beginning Thursday, June 12 from 8:00 AM.
-        			</div>        
+        			</div>-->        
   		        </div>      		    
    		    </div>
 <!--        <div class="road-timeline-big">
