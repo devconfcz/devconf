@@ -62,19 +62,19 @@
 	<div class="row">
 			<div class="d-block mb-3 mont-700 h2">DevConf.US is held in the heart of Boston University.</div>
 			<div class="d-block mb-5">
-                <h5>Almost all events will be held in the George Sherman Union building. <a href="https://www.bu.edu/parentsprogram/resources/visiting-boston-hotels/">This site maintained by Boston University</a> has many relevant resources regarding hotels, maps, public transportation, and information specific to the surrounding area. This will be a valuable reference when planning your trip to DevConf.US. </h5>
+                <h5>Almost all events will be held at 43 Hawes Street. <a href="https://www.bu.edu/parentsprogram/resources/visiting-boston-hotels/">This site maintained by Boston University</a> has many relevant resources regarding hotels, maps, public transportation, and information specific to the surrounding area. This will be a valuable reference when planning your trip to DevConf.US. </h5>
 			</div>
             <div class="d-block mb-5 mont-700 h2">Hotels Near Campus</div>
 			<div class="d-block mb-5">
-                <h5><a href="https://www.hotelcommonwealth.com/?_vsrefdom=commonwealth-ppc&amp;gclid=Cj0KCQiA-K2MBhC-ARIsAMtLKRuGc7MUVmJ6t8RIX0MtI6m_jzGYJSIdaxDdc39ya7-pBLqyMqQrTGIaAhrOEALw_wcB&amp;gclsrc=aw.ds">Hotel Commonwealth</a>, 0.5 miles (easily accessible by T)</h5>
-                <h5><a href="https://www.reservations.com/hotel/howard-johnson-inn-fenway-park?rmcid=tophotels&amp;utm_source=googleads&amp;gclid=Cj0KCQiA-K2MBhC-ARIsAMtLKRudTil3C7M2g4uAg7j17ffUbyMpLAOVRL9D9ZnuadAj9VHPNiqQINYaAuAQEALw_wcB">The Verb Hotel</a>, 0.6 miles</h5>
-                <h5><a href="https://www.hilton.com/en/book/reservation/deeplink/?&amp;ctyhocn=BOSBBGI&amp;corporateCode=6384738&amp;flexibleDates=true">Hilton Garden Inn Boston/Brookline</a>, 1.3 miles</h5>
-                <h5><a href="https://www.marriott.com/hotels/travel/bosfn-residence-inn-boston-back-bay-fenway/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2&amp;y_source=1_MjgxODg3OC03MTUtbG9jYXRpb24uZ29vZ2xlX3dlYnNpdGVfb3ZlcnJpZGU%3D/">Residence Inn by Mariott</a>, 0.4 miles</h5>
-                <h5><a href="https://beaconinn.com/">Beacon Inn</a>, 0.5 miles</h5>
-                <h5><a href="https://www.hotels.com/ho749515008/?q-check-in=2021-11-10&amp;q-check-out=2021-11-11&amp;q-rooms=1&amp;q-room-0-adults=2&amp;q-room-0-children=0">Fenway Luxury Suites by Sonder</a>, 0.5 miles</h5>
-                <h5><a href="https://www.eliothotel.com/">The Elliot Hotel</a>, 0.9 miles (easily accessible by T)</h5>
-                <h5><a href="https://www.hilton.com/en/hotels/bosbhhh-hilton-boston-back-bay/">Hilton Boston Backbay</a>, 1.1 Miles (easily accessible by T)</h5>
-                <h5><a href="https://www.marriott.com/hotels/travel/bosbo-sheraton-boston-hotel/">Sheraton Boston Hotel</a>, 1.1 miles (easily accessible by T)</h5>
+                <h5><a href="https://www.hotelcommonwealth.com/?_vsrefdom=commonwealth-ppc&amp;gclid=Cj0KCQiA-K2MBhC-ARIsAMtLKRuGc7MUVmJ6t8RIX0MtI6m_jzGYJSIdaxDdc39ya7-pBLqyMqQrTGIaAhrOEALw_wcB&amp;gclsrc=aw.ds">Hotel Commonwealth</a></h5>
+                <h5><a href="https://www.reservations.com/hotel/howard-johnson-inn-fenway-park?rmcid=tophotels&amp;utm_source=googleads&amp;gclid=Cj0KCQiA-K2MBhC-ARIsAMtLKRudTil3C7M2g4uAg7j17ffUbyMpLAOVRL9D9ZnuadAj9VHPNiqQINYaAuAQEALw_wcB">The Verb Hotel</a></h5>
+                <h5><a href="https://www.hilton.com/en/book/reservation/deeplink/?&amp;ctyhocn=BOSBBGI&amp;corporateCode=6384738&amp;flexibleDates=true">Hilton Garden Inn Boston/Brookline</a></h5>
+                <h5><a href="https://www.marriott.com/hotels/travel/bosfn-residence-inn-boston-back-bay-fenway/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2&amp;y_source=1_MjgxODg3OC03MTUtbG9jYXRpb24uZ29vZ2xlX3dlYnNpdGVfb3ZlcnJpZGU%3D/">Residence Inn by Mariott</a></h5>
+                <h5><a href="https://beaconinn.com/">Beacon Inn</a></h5>
+                <h5><a href="https://www.hotels.com/ho749515008/?q-check-in=2021-11-10&amp;q-check-out=2021-11-11&amp;q-rooms=1&amp;q-room-0-adults=2&amp;q-room-0-children=0">Fenway Luxury Suites by Sonder</a></h5>
+                <h5><a href="https://www.eliothotel.com/">The Elliot Hotel</a></h5>
+                <h5><a href="https://www.hilton.com/en/hotels/bosbhhh-hilton-boston-back-bay/">Hilton Boston Backbay</a></h5>
+                <h5><a href="https://www.marriott.com/hotels/travel/bosbo-sheraton-boston-hotel/">Sheraton Boston Hotel</a></h5>
 			</div>
 	</div>
 </section>
