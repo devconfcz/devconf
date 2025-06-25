@@ -86,12 +86,12 @@
 			<div class="heading-text pt-1">
 				<a href="https://pretix.eu/devconf/devconf-us-2025/" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">REGISTER NOW!</a>
 			</div>
-			<div class="heading-text mont-400 h5 pb-2 pb-lg-5">
+			<!-- <div class="heading-text mont-400 h5 pb-2 pb-lg-5">
 				Schedule coming by end of June 2025!
-			</div>  
-			<!-- <div class="heading-text pt-1 pt-xl-3 mt-3">
-				<a href="/us/schedule/" class="border p-3 h2 mont-700" style="border-width: 3px !important;">Schedule</a>
-			</div> -->
+			</div>   -->
+			<div class="heading-text pt-1 pt-xl-3 mt-3">
+				<a href="/us/schedule/" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SCHEDULE</a>
+			</div>
 			<!-- <div class="heading-text pt-1">
 				<a href="https://forms.gle/zLdt2G8UEpmLPqn99" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">Post-event survey</a>
 			</div> -->
