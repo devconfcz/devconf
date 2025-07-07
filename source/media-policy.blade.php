@@ -65,7 +65,7 @@
 
 					<h3 class="mont-700 mt-5">Staff and attendee photography</h3>
 					<p>When you register to participate in DevConf events, you consent to be photographed by our official conference photographer, and to have those photographs 
-					published under a Creative Commons license and possibly used in various promotional material.</p>
+					published under a <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank">Creative Commons Attribution-Sharealike 4.0 license</a> (or CC-BY-SA 4.0) and possibly used in various promotional material.</p>
 
 					<p>Additionally, We encourage attendees to take and share their own photographs. Thus, you also consent to allow attendees to take and share their own photographs, as long as the rules below are followed.</p>
 					<ul>
