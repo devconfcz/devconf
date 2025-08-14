@@ -16,7 +16,7 @@
 @endsection
 
 @section('title')
-<title>DevConf.CZ 2025</title>
+<title>DevConf.CZ 2026</title>
 @endsection
 
 
@@ -42,9 +42,9 @@
 				<li class="nav-item active px-3">
 					<a href="/cz/schedule" class="nav-link local">Schedule</a>
 				</li>
-				<li class="nav-item active px-3">
+				<!--<li class="nav-item active px-3">
 					<a href="#travel" class="nav-link local">Getting to Brno</a>
-				</li>
+				</li>-->
                 <li class="nav-item active px-3">
                     <a href="/cz/blog" class="nav-link local">Blog</a>
                 </li>
@@ -63,7 +63,7 @@
             <a href="https://fosstodon.org/@devconf_cz" target="_blank" title="Fosstodon"><img src="/assets/images/fosstodon.svg" alt="fosstodon" class="social-icon"></a>
 			<a href="https://twitter.com/devconf_cz" target="_blank" title="Twitter"><img src="/assets/images/twitter.svg" alt="twitter" class="social-icon"></a>
 			<a href="https://www.linkedin.com/company/102081562/admin/feed/posts/" target="_blank" title="LinkedIn"><img src="/assets/images/linkedin.svg" alt="linkedin" class="social-icon"></a>
-			<a href="https://matrix.to/#/#2025:devconf.cz" target="_blank" title=""><img src="/assets/images/matrix.svg" alt="matrix" class="social-icon"></a>
+			<a href="https://matrix.to/#/#2026:devconf.cz" target="_blank" title=""><img src="/assets/images/matrix.svg" alt="matrix" class="social-icon"></a>
 			<a href="https://www.youtube.com/channel/UCmYAQDZIQGm_kPvemBc_qwg" target="_blank" title="YouTube"><img src="/assets/images/youtube.svg" alt="youtube" class="social-icon"></a>
 			<a href="https://github.com/devconfcz/devconf" target="_blank" title="Git Hub"><img src="/assets/images/github.svg" alt="github" class="social-icon"></a>
 		</div>
@@ -88,20 +88,20 @@
             <div class="row py-5">
 			    <div class="col-xl-6">
 			        <div class="heading-text mont-700 h1">
-				        June 12-14, 2025
+				        June, 2026
 			        </div>
 			        <div class="heading-text mont-700 h4">
                         <a href="#map" class="nav-link local d-inline-block" style="color: white; padding: 0px"><i class="fa fa-map-marker"></i> Brno, Czech Republic</a>
                     </div> 
-                    <div class="heading-text mt-3 pt-1">
+                    <!--<div class="heading-text mt-3 pt-1">
                       <a href="/cz/schedule" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">SCHEDULE</a>
                     </div>
                     <div class="heading-text pt-1">
                         <a href="https://fedoraproject.limequery.com/772439?lang=en" class="border nav-link p-3 h2 mont-700" target="_blank" style="border-width: 3px !important;">FEEDBACK FORM</a>
-                    </div>
-                    <!-- <div class="heading-text mont-400 h5 pb-2 pb-lg-5">
-                        Advance tickets have ended. At-the-door tickets will be available at the venue beginning Thursday, June 12 from 8:00 AM.
-        			</div>-->        
+                    </div>-->
+                     <div class="heading-text mont-400 h5 pb-2 pb-lg-5">
+                         Thank you for being part of DevConf.CZ 2025! We look forward to the next event in June 2026.
+        			</div>        
   		        </div>      		    
    		    </div>
 <!--        <div class="road-timeline-big">
@@ -200,6 +200,7 @@
 	    </div>
     </div>
 </section>
+<!--
 <section id="registration" class="mx-auto col-lg-11">
     <div class="mt-4 py-5">
     	<h1 class="mont-700 underline pb-4">Registration</h1>
@@ -215,7 +216,7 @@
            </div>
         </noscript>
     </div>
-</section>
+</section>-->
 <section id="themes" class="mx-auto col-lg-11">
     <div class="row mt-4 py-5">
     	<div class="row w-100">
@@ -349,6 +350,8 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 	</div>
 	<div class="row">
 		<div class="col-lg-6 px-5 mx-auto">
+             <p class="os-400"><span class="h6 mont-700">Jun 26, 2025</span> Session recordings are published.</p>
+             <p class="os-400"><span class="h6 mont-700">Apr 29, 2025</span> Schedule is published.</p>
              <p class="os-400"><span class="h6 mont-700">Apr 15, 2025</span> Registration is open.</p>
              <p class="os-400"><span class="h6 mont-700">Mar 9, 2025</span> Call for Proposals (CfP) has been closed.</p>
              <p class="os-400"><span class="h6 mont-700">Feb 28, 2025</span> Call for Proposals (CfP) deadline is extended to March 9, 2025</p>
@@ -422,7 +425,7 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 			</ul>
 		</div>
 	</div>
-</section> -->
+</section> 
 <section id="travel" class="mx-auto py-5 col-lg-11">
 	<div class="row">
 		<div class="mont-700 h1 underline position-relative mx-5 pb-4">How to get there?</div>
@@ -465,7 +468,7 @@ We couldn't meet in Brno last year so we worked with our <a href="https://www.do
 			</div>
 		</div>
 	</div>
-</section>
+</section>-->
 <section class="col-12 px-0 mt-5" style="height: 450px;" id="map">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5828.8794114720895!2d16.593681273902156!3d49.223568069664026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471294099dc06bbb%3A0xbfcf161b01a48b0d!2sFaculty%20of%20Information%20Technology%2C%20Brno%20University%20of%20Technology!5e0!3m2!1sen!2scz!4v1569001018524!5m2!1sen!2scz" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 </section>
