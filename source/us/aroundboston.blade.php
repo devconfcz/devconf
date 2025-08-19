@@ -58,30 +58,13 @@
 	</div>
 </section>
 <hr>
-
-<section class="mx-auto col-lg-11">
-	<div class="row">
-			<div class="d-block mb-3 mont-700 h2">Venue Map</div>
-			<!-- <div class="d-block mb-5">
-				<img src="/assets/images/gsu-map.png" alt="Venue Map" style="width:900px;height:1000px;">
-			</div> -->
-	</div>
-</section>
-
-<section class="mx-auto col-lg-11">
-	<div class="row">
-			<div class="d-block mb-3 mont-700 h2">Nearby Food & Attractions</div>
-			<!-- <div class="d-block mb-5">
-				<img src="/assets/images/surroundings-map.png" alt="Nearby food & attractions" style="width:1200px;height:900px;">
-			</div> -->
-	</div>
-</section>
-
 <section class="mx-auto col-lg-11">
 	<div class="row">
 			<div class="d-block mb-3 mont-700 h2">DevConf.US is held at 43 Hawes Street in Boston University.</div>
 			<div class="d-block mb-5">
-                <h5>All events will be held in the 43 Hawes Street building. <a href="https://www.bu.edu/parentsprogram/resources/visiting-boston-hotels/">This site maintained by Boston University</a> has many relevant resources regarding hotels, maps, public transportation, and information specific to the surrounding area. This will be a valuable reference when planning your trip to DevConf.US. </h5>
+                <p>All events will be held in the 43 Hawes Street building. <a href="https://www.bu.edu/parentsprogram/resources/visiting-boston-hotels/">This site maintained by Boston University</a> has many relevant resources regarding hotels, maps, public transportation, and information specific to the surrounding area. This will be a valuable reference when planning your trip to DevConf.US. </p>
+                
+                <p>We do not offer any parking at the venue. We highly recommend using public transportation instead of arriving by car. If you arrive by car, you can use various street parking or Longwood Towers Garage at 20 Chapel Street.</p>
 			</div>
 	</div>
 </section>

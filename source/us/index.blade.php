@@ -39,9 +39,9 @@
 				<li class="nav-item active px-3">
 					<a href="#news" class="nav-link local">News</a>
 				</li>
-				<!-- <li class="nav-item active px-3">
+				<li class="nav-item active px-3">
 					<a href="/us/schedule" class="nav-link local">Schedule</a>
-				</li> -->
+				</li>
 				<!-- <li class="nav-item active px-3">
                     <a href="/cz/blog" class="nav-link local">Blog</a>
                 </li> -->
@@ -84,7 +84,7 @@
 			<i class="fa fa-map-marker"></i> Boston, USA
 			</div>
 			<div class="heading-text pt-1">
-				<a href="https://pretix.eu/devconf/devconf-us-2025/" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">REGISTER NOW!</a>
+				<a href="#registration" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">REGISTER NOW!</a>
 			</div>
 			<!-- <div class="heading-text mont-400 h5 pb-2 pb-lg-5">
 				Schedule coming by end of June 2025!
@@ -121,24 +121,23 @@
 		</div>
 	</div>
 </section>
-<!--
 <section id="registration" class="mx-auto col-lg-11">
     <div class="mt-4 py-5">
     	<h1 class="mont-700 underline pb-4">Registration</h1>
-        <link rel="stylesheet" type="text/css" href="https://pretix.eu/devconf/devconfus2024/widget/v1.css" crossorigin>
-		<script type="text/javascript" src="https://pretix.eu/widget/v1.en.js" async crossorigin></script>
+        <link rel="stylesheet" type="text/css" href="https://pretix.eu/devconf/devconf-us-2025/widget/v2.css" crossorigin>
+		<script type="text/javascript" src="https://pretix.eu/widget/v2.en.js" async crossorigin></script>
 
-        <div class="pretix-widget-compat" event="https://pretix.eu/devconf/devconfus2024/" single-item-select="button"></div>
+        <div class="pretix-widget-compat" event="https://pretix.eu/devconf/devconf-us-2025/" single-item-select="button"></div>
 		<noscript>
 		<div class="pretix-widget">
 			<div class="pretix-widget-info-message">
-					JavaScript is disabled in your browser. To access our ticket shop without JavaScript, please <a target="_blank" rel="noopener" href="https://pretix.eu/devconf/devconfus2024/">click here</a>.
+					JavaScript is disabled in your browser. To access our ticket shop without JavaScript, please <a target="_blank" rel="noopener" href="https://pretix.eu/devconf/devconf-us-2025/">click here</a>.
 			</div>
 		</div>
 		</noscript>
     </div>
 </section>
--->
+
 <section id="themes" class="mx-auto col-lg-11">
 	<div class="row">
 		<div class="h1 mx-5 pb-4 underline position-relative mont-700">Conference Themes</div>
