@@ -1,7 +1,7 @@
 @extends('_layouts.page')
 
 @section('social')
-<meta property="og:title" content="DevConf.US | Boston MA">
+<meta property="og:title" content="DevConf.US Day 0 | Boston, USA">
 <meta property="og:site_name" content="DevConf.US">
 <meta property="og:description" content="DevConf are free and open, annual, open-source community conferences for community contibutors, sponsored by Red Hat.">
 <meta property="og:type" content="website">
@@ -12,11 +12,10 @@
 
 @section('css')
 <link rel="stylesheet" href="{{ mix('css/subsite.css', 'assets/build') }}">
-<script src="/assets/build/js/matchHeight.js"></script>
 @endsection
 
 @section('title')
-<title>Schedule - DevConf.US Day 0</title>
+<title>Day 0 - DevConf.US</title>
 @endsection
 
 
@@ -40,6 +39,12 @@
 					<a href="/us/toboston" class="nav-link">Getting to Boston</a>
 				</li>
 				<li class="nav-item active px-3">
+					<a href="/us/schedule" class="nav-link">Schedule</a>
+				</li>
+				<li class="nav-item active underline px-3">
+					<a href="/us/day0" class="nav-link local">Day 0</a>
+				</li>
+				<li class="nav-item active px-3">
 					<a href="/us/hotels" class="nav-link">Hotels</a>
 				</li>
 				<li class="nav-item active px-3">
@@ -52,163 +57,48 @@
 		</div>
 	</nav>
 </header>
-<?php
-
-    $bgs = array("Topic Intro" => "table-danger", "Keynote" => "table-primary",
-                 "Highlight findings" => "table-active", "Breakout Sessions" => "table-success");
-    $streams = array();
-	$schedule = array(
-	    array("start"=>"12:00 pm", "items"=>array(
-    	    array("end"=>"12:30", "length"=>30, "name"=>"Check In & Light Lunch", "description"=>"")
-    	)),
-    	array("start"=>"12:30 pm", "items"=>array(
-    	    array("end"=>"12:40", "length"=>10, "name"=>"Welcome", "description"=>"",
-				"speakers"=>array(
-                    array("name"=>"Ruchir Puri"),
-                )
-            )
-    	)),
-    	
-        array("start"=>"12:40 pm", "items"=>array(
-            array("end"=>"1:15", "length"=>35, "name"=>"Thoughts on AI & Open Source", "description"=>"", "track"=>"Topic Intro",
-                "speakers"=>array(
-                    array("name"=>"Kelsey Hightower"),
-                )
-            )
-        )),
-        
-        array("start"=>"1:15 pm", "items"=>array(
-            array("end"=>"2:00", "length"=>45, "name"=>"Open Source AI & Transparency Breakout Sessions", "description"=>"Break into 4 smaller groups<ul><li>Each group has facilitator, scribe, and discussion leader/panelist</li><li>Where do we need to go with open source AI & transparency?</li></ul>", "track"=>"Breakout Sessions")
-        )),            
-        array("start"=>"2:00 pm", "items"=>array(
-            array("end"=>"2:30", "length"=>30, "name"=>"Open Source AI & Transparency Panel", "description"=>"4 Discussion Leaders form a panel, moderated panel summarizes 4 rooms outcomes", "track"=>"Highlight findings")
-        )),
-        array("start"=>"2:30 pm", "items"=>array(
-            array("end"=>"2:45", "length"=>15, "name"=>"Break", "description"=>"Coffee, Tea")
-        )), 
-        
-		array("start"=>"2:45 pm", "items"=>array(
-            array("end"=>"3:00", "length"=>15, "name"=>"Democratizing AI", "description"=>"", "track"=>"Topic Intro",
-                "speakers"=>array(
-                    array("name"=>"Mairin Duffy"),
-                )
-            )
-        )),
-        
-        array("start"=>"3:00 pm", "items"=>array(
-            array("end"=>"3:45", "length"=>45, "name"=>"Democratizing AI Breakout Sessions", "description"=>"Break into 4 smaller groups<ul><li>Each group has facilitator, scribe, and discussion leader/panelist</li><li>Where do we need to go with democratization of AI and reducing bias?</li></ul>", "track"=>"Breakout Sessions")
-        )),            
-        array("start"=>"3:45 pm", "items"=>array(
-            array("end"=>"4:15", "length"=>30, "name"=>"Democratizing AI Panel", "description"=>"4 Discussion Leaders form a panel, moderated panel summarizes 4 rooms outcomes", "track"=>"Highlight findings")
-        )),
-
-		array("start"=>"4:15 pm", "items"=>array(
-            array("end"=>"4:30", "length"=>15, "name"=>"Responsible AI", "description"=>"", "track"=>"Topic Intro",
-                "speakers"=>array(
-                   array("name"=>"Heidi Lanford"),
-				   array("name"=>"Josh Boyer"),
-                )
-            )
-        )),
-        
-        array("start"=>"4:30 pm", "items"=>array(
-            array("end"=>"5:15", "length"=>45, "name"=>"Responsible AI Breakout Sessions", "description"=>"Break into 4 smaller groups<ul><li>Each group has facilitator, scribe, and discussion leader/panelist</li><li>Where do we need to go with responsible AI?</li></ul>", "track"=>"Breakout Sessions")
-        )),            
-        array("start"=>"5:15 pm", "items"=>array(
-            array("end"=>"5:45", "length"=>30, "name"=>"Responsible AI Panel", "description"=>"4 Discussion Leaders form a panel, moderated panel summarizes 4 rooms outcomes", "track"=>"Highlight findings")
-        )),
-        
-        array("start"=>"5:45 pm", "items"=>array(
-            array("end"=>"6:00", "length"=>15, "name"=>"Closing Remarks", "description"=>"",
-                "speakers"=>array(
-                    array("name"=>"Chris Wright"),
-                )
-            )
-        )),        
-	);
-
-?>
 <section class="mx-auto mt-5 pt-5 pb-3 col-lg-11">
 	<div class="row">
-		<div class="h1 mx-5 mont-700 underline position-relative">DevConf.US Day 0: AI Think Tank</div>
+		<div class="h1 mx-5 mont-700 underline position-relative">Day 0: Boston vLLM Meetup</div>
 		
-		<p class="os-400 mx-5 mt-4">Day 0 AI Think Tank is a DevConf.US pre-event for subject matter experts from the AI, data science, cloud native, and open source communities to identify immediate, concrete actions we can collectively take to foster and sustain an open and transparent AI development and delivery ecosystem.</p>
-		
-		<p class="os-400 mx-5 mt-4"><strong>Interested in attending?</strong> This is an invitation-only pre-event. If you are interested in joining, please reach out to <a href="mailto:info@devconf.us">info@devconf.us</a>.</p>
-	</div>
-</section>
-<hr>
-<section class="mx-auto mt-5 pb-3 col-lg-11">
-	<div class="row">
-		<div class="h2 mx-5 mont-700 position-relative">Venue and Schedule</div>
-		
-		<p class="os-400 mx-5 mt-4 col-12">Where: 43 Hawes St, Brookline, MA 02446<br>When: 12-6 pm, Aug 13, 2024</p>
-		
-		<p class="h4 mx-5 mont-700 position-relative mt-4"><strong>Day 0 Schedule:</strong></p>
-	</div>
-</section>
-<?php
-foreach($schedule as $k=>$time){
-?>
-<section id="<?php echo $k; ?>" class="mx-auto col-lg-11 mb-5">
-	<div class="row">
-		<div class="h2 mx-5 my-4 mont-700"><?php echo $time['start']; ?></div>
-
-
-		<?php foreach( $time['items'] as $l=>$it ){ ?>
-		<div class="col-xs-12 col-sm-6 col-md-3 px-2">
-			<div class="card mb-2">
-				<div class="card-body <?php if(isset($it['track'])){echo $bgs[$it['track']];}else{echo "table-warning";} ?>">
-				    <div class="card-title">
-				        <strong><?php echo $it["name"]; ?></strong>
-				    </div>
-				    <div class="card-text">
-				        <p><?php if(isset($it['speakers'])){foreach($it['speakers'] as $si=>$s){ if($si>0){echo ", ";} else { ?><i class="fa fa-user"></i> <?php } echo $s['name']; if(isset($s['socials'])){
-                            echo " (";
-                            $add = false;
-				            foreach($s['socials'] as $sk=>$sv){
-				            if($add){ echo " | ";
-				            }else{ $add = true;
-				            }?>
-				            <a href="<?php echo $sv;?>" target="_blank"><i class="fa fa-<?php echo $sk;?> text-dark"></i></a>
-				            <?php
-				            }
-				            echo ")";
-				        }}} 
-                        if(isset($it['room']) && $it['room'] != "" && isset($streams[$it['room']])){
-                        ?>
-                        <p><i class="fa fa-youtube-play"></i>&nbsp;<a class="text-decoration-none text-dark" href="<?php echo $streams[$it['room']]; ?>" target="_blank">Live stream</a></p>
-                        <?php } 
-                        if(isset($it['files'])){ foreach($it['files'] as $fi=>$f){ if($fi>0){echo ", "; } else { ?><p><i class="fa fa-files-o"></i>&nbsp; <?php } ?>
-                        <a class="text-decoration-none text-dark" href="<?php echo $f['path']; ?>" target="_blank"><?php echo $f['name']; ?></a>
-                        <?php } echo "</p>"; } ?>
-						<p><i class="fa fa-clock-o"></i>&nbsp;<?php echo $it['length']; ?> minutes<?php if(isset($it['room']) && $it['room'] != "") { ?> | <i class="fa fa-map-marker"></i>&nbsp;<?php echo $it['room']; } ?>
-						<?php if(isset($it['track'])) { ?> | <i class="fa fa-tag"></i>&nbsp;<?php echo $it['track']; } 
-						if(isset($it['description']) && $it['description']!=""){?>
-						<span  data-toggle="collapse" data-target="#it<?php echo $k.$l; ?>" aria-expanded="false" aria-controls="it<?php echo $k.$l; ?>"><i class="fa fa-chevron-down"></i></span></p> <?php } ?>
-				    </div>					
-				    <div class="collapse" id="it<?php echo $k.$l; ?>">
-                        <div class="card-body <?php if(isset($it['track'])){echo $bgs[$it['track']];}else{echo "table-warning";} ?>">
-                            <p><?php echo (isset($it['description'])?$it['description']:""); ?></p>
-                        </div>
-                    </div>
-				</div>
+		<div class="col-12 mx-5 mt-4">
+			<p class="os-400">We're excited to invite you to the Boston vLLM meetup, hosted by Red Hat and Venture Guides on September 18th at Venture Guides' office space in Boston, located by TD Garden/North Station.</p>
+			
+			<p class="os-400 mt-3">This meetup brings together vLLM users, developers, maintainers, and engineers to explore the latest in optimized inference. Expect deep technical talks, practical demos, and plenty of time to connect with the community.</p>
+			
+			<div class="mt-4">
+				<h3 class="mont-600">Agenda</h3>
+				<ul class="os-400 mt-3" style="line-height: 1.6;">
+					<li>5:00pm – Doors Open & Meet the vLLM Team</li>
+					<li>5:30pm – Opening Remarks</li>
+					<li>5:40pm – Intro to vLLM and Project Update</li>
+					<li>6:10pm – Model Optimization with LLM Compressor and Speculators</li>
+					<li>6:40pm – Demo (vLLM and LLM Compressor)</li>
+					<li>6:55pm – Distributed Inference with llm-d</li>
+					<li>7:25pm – Q&A and Discussion</li>
+					<li>7:40pm-8:30pm – Pizza, Refreshments, and Networking 🍕 🤝</li>
+				</ul>
 			</div>
+			
+			<p class="os-400 mt-3">Please register today to attend!</p>
 		</div>
-		
-		<?php } ?>
 	</div>
 </section>
-<?php
-    
-}
-?>
 <hr>
-<section class="mx-auto mb-5 pb-3 col-lg-11">
-	<div class="row">
-		<p class="os-400 mx-5 mt-4"><strong>Find the full DevConf.US schedule and registration <a href="https://www.devconf.info/us/">here</a>.</strong></p>
-	</div>
+
+<section class="mx-auto mb-5 text-center">
+	<iframe
+	  src="https://lu.ma/embed/event/evt-ISkHIkZXVadnYES/simple"
+	  width="800"
+	  height="600"
+	  frameborder="0"
+	  style="border: 1px solid #bfcbda88; border-radius: 4px;"
+	  allow="fullscreen; payment"
+	  aria-hidden="false"
+	  tabindex="0"
+	></iframe>
 </section>
+
 <script>
 
     $(document).ready(function() {
