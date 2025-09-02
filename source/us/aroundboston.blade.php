@@ -65,6 +65,8 @@
                 <p>All events will be held in the 43 Hawes Street building. <a href="https://www.bu.edu/parentsprogram/resources/visiting-boston-hotels/">This site maintained by Boston University</a> has many relevant resources regarding hotels, maps, public transportation, and information specific to the surrounding area. This will be a valuable reference when planning your trip to DevConf.US. </p>
                 
                 <p>We do not offer any parking at the venue. We highly recommend using public transportation instead of arriving by car. If you arrive by car, you can use various street parking or Longwood Towers Garage at 20 Chapel Street.</p>
+
+				<p>The best way to get to the venue via public transportation is by the Green Line. There are two stops close to the venue: <a href="https://maps.app.goo.gl/7pwcFuhcgjn5WNk37"> Hawes St on the C Line</a> and <a href="https://maps.app.goo.gl/1p2yCydMW9HVnDd3A">Longwood on the D Line</a>.</p>
 			</div>
 	</div>
 </section>
