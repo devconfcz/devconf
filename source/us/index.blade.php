@@ -77,32 +77,32 @@
             <!-- <div class="heading-text pt-1 mt-2">
             <a href="https://events.redhat.com/profile/form/index.cfm?PKformID=0x607868abcd" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">Call for Proposals</a>
             </div> -->
-            <div class="heading-text mont-700 h1">
+            <div class="heading-text mont-700 h1 mt-5">
 				        September 19-20, 2025
 			</div>
-			<div class="heading-text mont-700 h4">
+			<div class="heading-text mont-700 h4 mt-4">
 			<i class="fa fa-map-marker"></i> Boston, USA at <a href="https://maps.app.goo.gl/yFk3mhLy66paoQXs6" target="_blank" style="color: white; text-decoration: underline;">43 Hawes Street</a>
 			</div>
-			<div class="heading-text pt-1">
+			<!-- <div class="heading-text pt-1">
 				<a href="#registration" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">REGISTER FOR WAITING LIST</a>
-			</div>
-			<div class="heading-text mont-400 h5" style="color: white">
-				<p style="color: white !important;">Tickets are sold out. We maintain a waiting list and release tickets to the waiting list as they become available due to cancellations and other methods.</p>
+			</div> --->
+			<div class="heading-text mont-400 h5 mt-5 mb-4" style="color: white">
+				<p class="h3 mont-700" style="color: white !important;">Tickets are sold out.</p>
 
 				<p style="color: white !important;">We do at-the-door admissions at the conference but everything depends on the capacity of the venue and the number of registered attendees onsite at that time. While we will post to social media when we have at-the-door availability, the situation changes rapidly. Therefore, the best way to find out whether we are releasing at-the-door tickets is by coming to the venue.</p>
-			</div> 
-			<div class="heading-text">
+			</div>
+			<div class="heading-text mt-4">
 				<a href="/us/schedule/" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SCHEDULE</a>
 			</div>
-			<div class="heading-text mont-700 h1 pt-4">
+			<!-- <div class="heading-text mont-700 h1 pt-4">
 				        September 18, 2025
-			</div>
-			<div class="heading-text mont-700 h4">
+			</div> -->
+			<!-- <div class="heading-text mont-700 h4">
 			Day 0: Boston vLLM Meetup 
 			</div>
 			<div class="heading-text pt-1">
 				<a href="/us/day0" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">REGISTER FOR DAY 0!</a>
-			</div>
+			</div> -->
 			<!-- <div class="heading-text pt-1">
 				<a href="https://forms.gle/zLdt2G8UEpmLPqn99" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">Post-event survey</a>
 			</div> -->
@@ -133,23 +133,19 @@
 	</div>
 </section>
 <section id="registration" class="mx-auto col-lg-11">
-    <div class="mt-4 py-5">
-    	<h1 class="mont-700 underline pb-4">Registration</h1>
-        <link rel="stylesheet" type="text/css" href="https://pretix.eu/devconf/devconf-us-2025/widget/v2.css" crossorigin>
-		<script type="text/javascript" src="https://pretix.eu/widget/v2.en.js" async crossorigin></script>
-
-        <div class="pretix-widget-compat" event="https://pretix.eu/devconf/devconf-us-2025/" single-item-select="button"></div>
-		<noscript>
-		<div class="pretix-widget">
-			<div class="pretix-widget-info-message">
-					JavaScript is disabled in your browser. To access our ticket shop without JavaScript, please <a target="_blank" rel="noopener" href="https://pretix.eu/devconf/devconf-us-2025/">click here</a>.
+	<div class="row">
+		<div class="h1 mx-5 pb-4 underline position-relative mont-700">Registration</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-6 px-5">
+			<div class="os-400"><strong>Ticket sales are closed.</strong><br>
+			We do at-the-door admissions at the conference but everything depends on the capacity of the venue and the number of registered attendees onsite at that time. While we will post to social media when we have at-the-door availability, the situation changes rapidly. Therefore, the best way to find out whether we are releasing at-the-door tickets is by coming to the venue.
 			</div>
 		</div>
-		</noscript>
-    </div>
+	</div>
 </section>
 
-<section id="themes" class="mx-auto col-lg-11">
+<section id="themes" class="mx-auto col-lg-11 mt-5">
 	<div class="row">
 		<div class="h1 mx-5 pb-4 underline position-relative mont-700">Conference Themes</div>
 	</div>
