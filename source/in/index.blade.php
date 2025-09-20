@@ -16,7 +16,7 @@
 @endsection
 
 @section('title')
-<title>DevConf.IN 2025</title>
+<title>DevConf.IN 2026</title>
 @endsection
 
 
@@ -62,7 +62,7 @@
 			<a href="mailto:info@devconf.in" target="_blank" title="Mail"><img src="/assets/images/mail.svg" alt="mail" class="social-icon"></a>
             <a href="https://www.instagram.com/devconfindia/" target="_blank" title="Instagram"><img src="/assets/images/instagram.svg" alt="instagram" class="social-icon"></a>
 			<a href="https://www.linkedin.com/company/devconf-in/" target="_blank" title="LinkedIn"><img src="/assets/images/linkedin.svg" alt="linkedin" class="social-icon"></a>
-			<a href="https://matrix.to/#/#2025.in:devconf.cz" target="_blank" title=""><img src="/assets/images/matrix.svg" alt="matrix" class="social-icon"></a>
+			<a href="https://matrix.to/#/#2026.in:devconf.cz" target="_blank" title=""><img src="/assets/images/matrix.svg" alt="matrix" class="social-icon"></a>
 			<a href="https://www.youtube.com/channel/UCmYAQDZIQGm_kPvemBc_qwg" target="_blank" title="YouTube"><img src="/assets/images/youtube.svg" alt="youtube" class="social-icon"></a>
 			<a href="https://github.com/devconfcz/devconf" target="_blank" title="Git Hub"><img src="/assets/images/github.svg" alt="github" class="social-icon"></a>
 		</div>
@@ -75,12 +75,12 @@
 				open source community conference
 			</div>
 			<div class="heading-text mont-700 h1 pt-3">
-				February 28 - March 1, 2025
+				February 13 - 14, 2026
 			</div>
 			<div class="heading-text mont-700 h4">
 				<i class="fa fa-map-marker"></i> MIT World Peace University (MIT WPU), Pune
 			</div>
-			<div class="heading-text pt-5 mt-2">
+			<!--<div class="heading-text pt-5 mt-2">
                 <a href="https://forms.gle/WABPpxDMEBQCLtW47" target="_blank" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">2025 FEEDBACK FORM</a>
             </div>
             <div class="heading-text mt-2">
@@ -88,7 +88,7 @@
             </div>
             <div class="heading-text mont-400 h5 pb-2 pb-lg-2">
                  Thank you for being part of DevConf.IN 2025! We look forward to the next event. 
-            </div>
+            </div>-->
            
 		</div>
 	</div>
@@ -102,7 +102,7 @@
 		<div class="col-lg-6 px-5">
 			<h1 class="mont-700 underline pb-4">About DevConf</h1>
 			<div class="os-400">
-                <p>DevConf.IN 2025 is the annual developer's conference organized by Red Hat. The conference provides a platform to the FOSS community participants and 
+                <p>DevConf.IN is the annual developer's conference organized by Red Hat. The conference provides a platform to the FOSS community participants and 
 		enthusiasts to come together and engage in knowledge sharing activities through technical talks, workshops, panel discussions, hackathons and much more.</p>
 		
 		<p>There is no admission or ticket charge for DevConf events. However, you are required to complete a free registration.
@@ -116,9 +116,8 @@
 </section>
 <section id="registration" class="mx-auto col-lg-11">
     <div class="mt-4 py-5">
-    	<h1 class="mont-700 underline pb-4">Registration</h1>
-        <div class="os-400"><strong>Ticket sales are closed.</strong><br>
-        We will have a limited number of on-site tickets available on a first come first served basis for attendees who missed the registration deadline. Please arrive early and follow the appropriate queue for on-site registration.
+    	<h1 class="mont-700 underline pb-4">Registration</h1><br>
+        There is no admission or ticket charge for DevConf events. However, you are required to complete a free registration that will be open closer to the event. Conference sessions will all be in English.
         </div>
     </div>
 </section>
@@ -240,12 +239,10 @@
 	    </div>
 	    <div class="row">
 		    <div class="col-lg-6 px-5 mx-auto">
+                 <p class="os-400"><span class="h6 mont-700">Sep 20, 2025</span> DevConf.IN 2026 dates announced: February 12-13, 2026.</p>
+                 <p class="os-400"><span class="h6 mont-700">Feb 28 - Mar 1, 2025</span> DevConf.IN 2025 (<a href="https://photos.app.goo.gl/me2XZqLYQ3LGKgTDA" target="_blank">Conference Photos</a>, <a href="https://youtube.com/playlist?list=PLU1vS0speL2ZvQRS0Hg0xIgTPOyxUmBK4&si=fuIO-ciVlj_7ySdN" target="_blank">Session Recordings</a>)</p>
                  <p class="os-400"><span class="h6 mont-700">Jan 15, 2025</span> <a href="#registration" class="local">Registration</a> is open.</p>
-                 <p class="os-400"><span class="h6 mont-700">Dec 22, 2024</span> CfP is closed. Speaker notifications will be sent in January.</p>
-                 <p class="os-400"><span class="h6 mont-700">Dec 13, 2024</span> Deadline to submit proposals is December 22, 2024.</p>
-                 <p class="os-400"><span class="h6 mont-700">Nov 11, 2024</span> <a href="https://pretalx.devconf.info/devconf-in-2025/cfp" target="_blank">Call for Proposals</a> is open, deadline to submit proposals is December 15, 2024.</p>
-                 <p class="os-400"><span class="h6 mont-700">Sep 6, 2024</span> DevConf.IN is now on <a href="https://www.linkedin.com/company/devconf-in/" target="_blank">LinkedIn</a>.</p>
-                 <p class="os-400"><span class="h6 mont-700">Aug 16, 2024</span> DevConf.IN dates announced: February 28 - March 1, 2025</p>                 
+                 
 		    </div>
 		    <div class="col-lg-4 px-5 mx-auto">
 	            <form action="https://devconf.us5.list-manage.com/subscribe/post?u=ad2f341fc41f78b232f2765e6&amp;id=1892c1125f&amp;f_id=003c41edf0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate px-2 py-3 bordered text-center" target="_blank" novalidate>
