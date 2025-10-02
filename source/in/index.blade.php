@@ -80,15 +80,15 @@
 			<div class="heading-text mont-700 h4">
 				<i class="fa fa-map-marker"></i> MIT World Peace University (MIT WPU), Pune
 			</div>
-			<!--<div class="heading-text pt-5 mt-2">
-                <a href="https://forms.gle/WABPpxDMEBQCLtW47" target="_blank" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">2025 FEEDBACK FORM</a>
+			<div class="heading-text pt-5 mt-2">
+                <a href="https://pretalx.devconf.info/devconf-in-2026/cfp" target="_blank" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">Call for Proposals</a>
             </div>
-            <div class="heading-text mt-2">
+            <!--<div class="heading-text mt-2">
                 <a href="https://photos.app.goo.gl/me2XZqLYQ3LGKgTDA" target="_blank" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">2025 PHOTOS</a>
-            </div>
-            <div class="heading-text mont-400 h5 pb-2 pb-lg-2">
-                 Thank you for being part of DevConf.IN 2025! We look forward to the next event. 
             </div>-->
+            <div class="heading-text mont-400 h5 pb-2 pb-lg-2">
+                 Submit your proposals by November 21, 2025. 
+            </div>
            
 		</div>
 	</div>
@@ -238,6 +238,7 @@
 	    </div>
 	    <div class="row">
 		    <div class="col-lg-6 px-5 mx-auto">
+                 <p class="os-400"><span class="h6 mont-700">Oct 3, 2025</span> Call for Proposals (CfP) is open, submit your  proposals by November 21, 2025.</p>
                  <p class="os-400"><span class="h6 mont-700">Sep 20, 2025</span> DevConf.IN 2026 dates announced: February 12-13, 2026.</p>
                  <p class="os-400"><span class="h6 mont-700">Feb 28 - Mar 1, 2025</span> DevConf.IN 2025 (<a href="https://photos.app.goo.gl/me2XZqLYQ3LGKgTDA" target="_blank">Conference Photos</a>, <a href="https://youtube.com/playlist?list=PLU1vS0speL2ZvQRS0Hg0xIgTPOyxUmBK4&si=fuIO-ciVlj_7ySdN" target="_blank">Session Recordings</a>)</p>
                  <p class="os-400"><span class="h6 mont-700">Jan 15, 2025</span> <a href="#registration" class="local">Registration</a> is open.</p>
