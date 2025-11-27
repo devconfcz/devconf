@@ -39,10 +39,10 @@
 				<li class="nav-item active px-3">
 					<a href="#news" class="nav-link local">News</a>
 				</li>
-				<li class="nav-item active px-3">
+				<!--<li class="nav-item active px-3">
 					<a href="/cz/schedule" class="nav-link local">Schedule</a>
 				</li>
-				<!--<li class="nav-item active px-3">
+				<li class="nav-item active px-3">
 					<a href="#travel" class="nav-link local">Getting to Brno</a>
 				</li>-->
                 <li class="nav-item active px-3">
@@ -100,7 +100,7 @@
                         <a href="https://fedoraproject.limequery.com/772439?lang=en" class="border nav-link p-3 h2 mont-700" target="_blank" style="border-width: 3px !important;">FEEDBACK FORM</a>
                     </div>-->
                      <div class="heading-text mont-400 h5 pb-2 pb-lg-5">
-                         Thank you for being part of DevConf.CZ 2025! We look forward to the next event in June 2026.
+                         We are aiming to publish the schedule in April.
         			</div>        
   		        </div>      		    
    		    </div>
