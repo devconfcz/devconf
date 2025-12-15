@@ -3,12 +3,92 @@
     <title>DevConf.CZ Blog</title>
     <link href="/blog" />
     <link type="application/atom+xml" rel="self" href="/cz/blog/feed.atom" />
-    <updated>2025-11-27T11:08:38+00:00</updated>
+    <updated>2025-12-15T14:15:39+00:00</updated>
     <id>/cz/blog/feed.atom</id>
     <author>
         <name>Josef Ridky &lt;jridky@redhat.com&gt;</name>
     </author>
                 <entry>
+    <id>/cz/blog/submitting-a-proposal-for-devconf-cz-2026</id>
+    <link type="text/html" rel="alternate" href="/cz/blog/submitting-a-proposal-for-devconf-cz-2026" />
+    <title>Submitting a Proposal for DevConf.CZ 2026</title>
+    <published>2025-12-15T00:00:00+00:00</published>
+    <updated>2025-12-15T00:00:00+00:00</updated>
+    <author>
+        <name>Dorota Volavkova</name>
+    </author>
+    <summary type="html">DevConf.CZ 2026 welcomes proposals from first-time speakers as well as seasoned presenters. This post outlines all the essential information you need to know about the event, the Call for Proposals (CfP) process, and how to maximize your proposal’s......</summary>
+    <content type="html"><![CDATA[
+        <p>DevConf.CZ 2026 welcomes proposals from first-time speakers as well as seasoned presenters. This post outlines all the essential information you need to know about the event, the <a href="https://pretalx.devconf.info/devconf-cz-2026/cfp">Call for Proposals</a> (CfP) process, and how to maximize your proposal’s chance of acceptance.</p>
+<h2>Don't miss the deadline</h2>
+<ul>
+<li><strong>CfP opens:</strong> mid-December, 2025</li>
+<li><strong>CfP closes:</strong> March 1, 2026</li>
+<li><strong>CfP notifications:</strong> March 30 - April 3, 2026</li>
+<li><strong>Schedule and registration:</strong> April 20 - 24, 2026</li>
+<li><strong>Event dates:</strong> June 18 - 20, 2026</li>
+</ul>
+<h2>Plan your attendance and accommodation</h2>
+<p>The event will be held at the <a href="https://www.fit.vut.cz/">Faculty of Information Technology at Brno University of Technology</a> in the Czech Republic. All talks, presentations, and workshops will be conducted in English.</p>
+<p>There is no admission or ticket fee for DevConf.CZ, but all attendees and speakers must complete a free registration to attend. We expect all speakers to present in person at the venue, and we do not cover any speaker expenses, including accommodation or travel.</p>
+<p><strong>Please note regarding accommodation:</strong>
+The DevConf.CZ 2026 event dates coincide with a major sporting event in the region, <a href="https://www.motogp.com/en/calendar/2026/event/czeck-republiky/c2018c5e-fb82-4058-b359-1b7d9769e703?tab=overview">MotoGP Czechia</a> (held on June 19 - 21). Due to the strict academic schedule of our venue, we were unable to select an alternative date, meaning our hands are tied regarding the timing. </p>
+<p><strong>We strongly recommend all potential attendees and speakers book their accommodation well in advance.</strong> Hotels in the area will be less available due to this conflict, and prices are expected to be approximately 100% higher than normal due to MotoGP. Some of the hotels are expected to open their booking windows in early spring 2026.</p>
+<p>We are actively working to secure a limited number of rooms in different hotels, but we will need to prioritize our accepted speakers over attendees.</p>
+<h2>Make your submission relevant and engaging</h2>
+<p>DevConf.CZ is interested in technical sessions and speakers who dive deep into details. We are not looking for overviews or high-level topics. Please review the <a href="https://www.devconf.info/cz/#themes">conference themes</a> carefully and ensure your deep-dive content is categorized under the most appropriate track.</p>
+<p><strong>Conference Themes</strong></p>
+<ul>
+<li>Cloud, Hybrid Cloud, and Hyperscale Infrastructure</li>
+<li>Future Tech and Open Research</li>
+<li>Artificial Intelligence and Data Science</li>
+<li>Linux Distributions, Operating Systems, and Edge</li>
+<li>Programming and Application Development</li>
+<li>DevOps, CI/CD, and Automation</li>
+<li>Security and Compliance</li>
+<li>Agility and Leading Principles</li>
+<li>Open Track</li>
+</ul>
+<p><strong>When developing your proposal, consider the following key points:</strong></p>
+<ul>
+<li><strong>Focus on technical, community, and project-oriented content:</strong> Avoid overview sessions. Talks with audience interaction and demos are highly encouraged.</li>
+<li><strong>Avoid marketing and sales pitches:</strong> Product pitches are generally received poorly. If your session focuses on a product, it must be about the technical aspects.</li>
+<li><strong>Define the future:</strong> We favor submissions on new/planned work and emerging topics that might hit engineering in 1 - 2 years. Talking about new and upcoming work generally increases your chance of acceptance.</li>
+<li>*<em>Presentation details:</em> All material should be presented in English. You can edit your proposal(s) after submission, but only until the CfP closes (this also includes your co-speaker information), and submissions do not need to include completed slides.</li>
+</ul>
+<p>Before you submit, ask yourself: <em>Does the content match the level of difficulty and the duration? Would I feel excited to attend this talk? What would the audience gain from my talk?</em></p>
+<h2>Know submission rules and limits</h2>
+<p>To ensure a high-quality schedule, please adhere to the following limitations:</p>
+<ul>
+<li><strong>Three-proposal limit:</strong> Each individual is limited to submitting up to three proposals in total. This limit includes all session types (talks, lightning talks, workshops, meetups, activities). If you are listed as a co-speaker, it counts toward your individual limit.</li>
+<li><strong>Two-speaker limit:</strong> We are setting a limit of two speakers per submission for all session types. Exceptions for panel discussions or other collaborative formats may be considered; if you require more than two speakers, please provide the reason in the &quot;Notes&quot; section of your proposal. For Booths, you can list up to two contact people in your proposal, but a larger number of staffers is allowed and expected onsite.</li>
+<li><strong>Generative AI use:</strong> The use of AI tools (like ChatGPT or similar LLMs) to assist with grammar, polishing, or refining human-authored text is permissible. However, submissions that are fully generated by AI will be rejected. The core idea, content, and expertise must originate from the speaker.</li>
+</ul>
+<h2>Select the right session type</h2>
+<p>Below are the available session types, along with their duration and core focus:</p>
+<ul>
+<li><strong>Talk (35 minutes - 25 min talk + 10 min Q&amp;A recommended):</strong> A presentation, usually with slides and demos. It should be bite-sized and focused on a certain topic. Do not expect to cover multiple broad areas in one talk.</li>
+<li><strong>Lightning Talk (15 minutes):</strong> A short presentation focused on getting people interested in something new. The goal is to convey key information in a clear and concise manner.</li>
+<li><strong>Workshop (80 minutes):</strong> A hands-on demo where you interact with the audience to share knowledge and experience on a particular bite-sized topic. Workshops should be actionable and goal-oriented, teaching or practicing a skill.</li>
+<li><strong>Meetup (80 minutes):</strong> An in-person meeting open to everyone to discuss the latest project developments and interact with contributors and attendees.</li>
+<li><strong>Activity (80 minutes):</strong> A non-technical meetup centered around various hobbies and interests, such as a candy swap or coffee lovers meetup.</li>
+<li><strong>Booth (All three days, minimum two days):</strong> A staffed table for conversations about the project and interaction with contributors, users, and attendees. Preference is given to booths that run all three days. All booths are technology-focused and require CfP review; we do not accept financial sponsorships for booths.</li>
+</ul>
+<h2>Understand the CfP review process</h2>
+<p>The review process is thorough and multi-phased to ensure fair and balanced evaluation:</p>
+<ol>
+<li><strong>Blind review:</strong> Reviewers assess anonymized proposals based solely on content quality and alignment with track themes.</li>
+<li><strong>Full-view review:</strong> Speaker details are revealed to ensure diversity and track balance.</li>
+<li><strong>Captain review:</strong> Track captains prioritize talks, ensuring a mix of topics and experience levels.</li>
+<li><strong>Final selection:</strong> The CfP Committee makes the final decisions holistically and prepares speaker notifications.</li>
+</ol>
+<p>Decisions are based on content quality, alignment, and diversity in difficulty. Given the global organization of DevConf events, we prioritize speakers from the same region as the event, which for DevConf.CZ includes Europe, the Middle East, and Africa.</p>
+<p>Please be aware that track captains may contact you to suggest changing the session format or combining talks, and they may move your session to another track without prior notification. Note that the acceptance rate for talks is around 25%, with a limit of one 35-minute talk per speaker. However, speakers may have other session formats accepted, and in some cases, we may fill last-minute gaps with additional talks from speakers who are already present.</p>
+<h2>Do you need help with your submission?</h2>
+<p>If you still aren't 100% certain about your proposal we invite you to the DevConf.CZ CfP office hours. You will be able to discuss your proposal or get some tips from session reviewers and past DevConf.CZ speakers. We will announce the details of this program in February 2026.</p>
+<p>You can also watch the recording of DevConf.CZ talk '<a href="https://youtu.be/pL3j-6S7Dn4">Let's get your conference talk accepted</a>' or take a&nbsp;look at the <a href="https://www.devconf.info/assets/files/devconf-cz-cfp-tips.pdf">slide deck containing tips on submitting proposals</a>.</p>    ]]></content>
+</entry>
+            <entry>
     <id>/cz/blog/quick-look-at-devconf-cz-2025-keynotes</id>
     <link type="text/html" rel="alternate" href="/cz/blog/quick-look-at-devconf-cz-2025-keynotes" />
     <title>Quick look at DevConf.cz 2025 Keynotes</title>

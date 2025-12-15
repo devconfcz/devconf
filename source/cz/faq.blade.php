@@ -116,7 +116,17 @@ Allow attendees to actively participate in Q&A by submitting and upvoting questi
                 array("q" => "What Matrix client(s) can I use?", "a" => "In theory, any client should allow you to join the devconf.cz rooms. However, not all clients support all features, #2025:devconf.cz for example takes advantage of “spaces”, “threads” or “pinned events”. If your client does not support these features, you may not have the optimal experience. We recommend using <a href='https://element.io/download' target='_blank'>Element</a>, because it supports all features we use."),
                 array("q" => "I can't see any rooms.", "a" => "When using the <a href='https://element.io/download' target='_blank'>Element</a> client to access #2025:devconf.cz, you should see three sub-spaces: ‘General', ‘Sessions' and ‘Workshops & Meetups'. If your client does not display the spaces correctly, you should still be able to see the “Main Chat” room and all the “Sessions” and “Workshops & Meetups“ rooms when using the ‘explore’ feature. If you still can’t find any DevConf room, make sure you’re searching within the devconf.cz server."),
                 array("q" => "How can I access the streamed content on Matrix?", "a" => "We plan to stream sessions such as talks, discussions, and lightning talks on Matrix. However, please note that workshops and meetups will not be streamed as they are not suitable for virtual viewing.</p><p>For the session rooms, we will provide widgets with YouTube streams. You will be able to join the session room and watch the live stream directly from the platform.</p><p>It's important to remember that workshop rooms will primarily serve as spaces for attendees and workshop organizers to communicate and share important information during the workshop. Streaming will not be available in workshop rooms."),
-			))
+			)),
+			
+			array("group" => "MotoGP Czechia 2026 Colocation", "id" => "motogp", 
+			"questions" => array( 
+				array("q" => "Will the MotoGP event impact my attendance or experience at DevConf.CZ 2026?", "a" => "Yes, primarily regarding accommodation. The MotoGP Czechia event (June 19 - 21) coincides with our conference dates. While the events are in different locations, you should anticipate significantly reduced hotel availability and increased pricing in the Brno area during the conference week."),
+				array("q" => "How much higher should I expect accommodation prices to be?", "a" => "We strongly advise budgeting for higher costs. Prices are expected to be approximately 100% higher than normal rates for the area due to the large influx of MotoGP visitors. We recommend booking your accommodation as soon as possible."),
+				array("q" => "When should I book my hotel room?", "a" => "We highly recommend booking your accommodation immediately upon confirming your attendance. While some hotels may open their booking windows later (expected in early Spring 2026), booking early is the only way to secure a room at a potentially better rate."),
+				array("q" => "Is DevConf.CZ securing rooms for attendees?", "a" => "We are actively working to secure a limited number of room blocks in different hotels. However, we must prioritize these rooms for our accepted speakers over general attendees. We encourage all attendees to book their own lodging as soon as possible."),
+				array("q" => "Why was the event scheduled during the MotoGP weekend?", "a" => "Due to the strict academic schedule and venue availability at the Faculty of Information Technology at Brno University of Technology, we were unable to select an alternative date. Our hands were tied regarding the timing of the conference."),
+			)),
+
 	);
 
 ?>
