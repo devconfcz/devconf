@@ -52,14 +52,16 @@
 	</nav>
 </header>
 <section class="mx-auto mt-5 pt-5 pb-3 col-lg-11">
-	<div class="row">
+<!--	<div class="row">
 		<div class="h1 mx-5 mont-700 underline position-relative">Hotels for attendees</div>
 	</div>
 </section>
 <hr>
-<section id="attendees" class="mx-auto mt-5 pb-3 col-lg-11">
+<section id="attendees" class="mx-auto mt-5 pb-3 col-lg-11">-->
 	<div class="row">
 		<div class="os-400 mx-5">
+            We are actively working to secure a limited number of room blocks in different hotels. However, we must prioritize these rooms for our accepted speakers over general attendees. We will update this page in early spring 2026 with details we learn from available hotels.
+<!--
 			<p>We are securing a number of discounted rooms for both attendees and speakers. All participants are responsible for booking and covering their own accommodation at one of the partner hotels listed below.</p>
 			<p><strong>Instructions to reserve a hotel room:</strong>
 			<ol><li>Select a hotel from the list below and contact them directly using the provided email address.</li>
@@ -153,7 +155,7 @@
 				Double Standard room 3.300 CZK/night</p>
 				<p>The rate includes breakfast and Wi-Fi.</p>
 				<p>Email for making reservations is:<br><a href="mailto:rezervace@hotelpassage.eu">rezervace@hotelpassage.eu</a></p>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </section>
