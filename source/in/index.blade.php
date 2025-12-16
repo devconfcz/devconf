@@ -116,9 +116,18 @@
 </section>
 <section id="registration" class="mx-auto col-lg-11">
     <div class="mt-4 py-5">
-    	<h1 class="mont-700 underline pb-4">Registration</h1><br>
-        There is no admission or ticket charge for DevConf events. However, you are required to complete a free registration that will be open closer to the event. Conference sessions will all be in English.
-        </div>
+    	<h1 class="mont-700 underline pb-4">Registration</h1>
+        <link rel="stylesheet" type="text/css" href="https://pretix.eu/devconf/devconfin2026/widget/v2.css">
+        <script type="text/javascript" src="https://pretix.eu/widget/v2.en.js" async></script>
+
+        <div class="pretix-widget-compat" event="https://pretix.eu/devconf/devconfin2026/" single-item-select="button"></div>
+        <noscript>
+           <div class="pretix-widget">
+               <div class="pretix-widget-info-message">
+                    JavaScript is disabled in your browser. To access our ticket shop without JavaScript, please <a target="_blank" rel="noopener" href="https://pretix.eu/devconf/devconfin2026/">click here</a>.
+                </div>
+           </div>
+        </noscript>
     </div>
 </section>
 <section id="topics" class="mx-auto col-lg-11">	
@@ -238,6 +247,7 @@
 	    </div>
 	    <div class="row">
 		    <div class="col-lg-6 px-5 mx-auto">
+                 <p class="os-400"><span class="h6 mont-700">Dec 16, 2025</span> Registration is open.</p>
                  <p class="os-400"><span class="h6 mont-700">Oct 3, 2025</span> Call for Proposals (CfP) is open, submit your  proposals by November 21, 2025.</p>
                  <p class="os-400"><span class="h6 mont-700">Sep 20, 2025</span> DevConf.IN 2026 dates announced: February 12-13, 2026.</p>
                  <p class="os-400"><span class="h6 mont-700">Feb 28 - Mar 1, 2025</span> DevConf.IN 2025 (<a href="https://photos.app.goo.gl/me2XZqLYQ3LGKgTDA" target="_blank">Conference Photos</a>, <a href="https://youtube.com/playlist?list=PLU1vS0speL2ZvQRS0Hg0xIgTPOyxUmBK4&si=fuIO-ciVlj_7ySdN" target="_blank">Session Recordings</a>)</p>
