@@ -80,15 +80,15 @@
 			<div class="heading-text mont-700 h4">
 				<i class="fa fa-map-marker"></i> MIT World Peace University (MIT WPU), Pune
 			</div>
-			<div class="heading-text pt-5 mt-2">
+			<!--<div class="heading-text pt-5 mt-2">
                 <a href="https://pretalx.devconf.info/devconf-in-2026/cfp" target="_blank" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">Call for Proposals</a>
             </div>
-            <!--<div class="heading-text mt-2">
+            <div class="heading-text mt-2">
                 <a href="https://photos.app.goo.gl/me2XZqLYQ3LGKgTDA" target="_blank" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">2025 PHOTOS</a>
-            </div>-->
+            </div>
             <div class="heading-text mont-400 h5 pb-2 pb-lg-2">
                  Submit your proposals by November 21, 2025. 
-            </div>
+            </div>-->
            
 		</div>
 	</div>
