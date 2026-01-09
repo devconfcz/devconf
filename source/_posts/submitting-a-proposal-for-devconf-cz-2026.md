@@ -2,7 +2,7 @@
 extends: _layouts.post
 section: content
 title: "Submitting a Proposal for DevConf.CZ 2026"
-date: 2025-12-15
+date: 2026-01-09
 author: Dorota Volavkova
 description: How to submit proposal for DevConf.CZ 2026
 cover_image: /assets/images/blog/submit-devconf-cz-22.png
@@ -17,7 +17,7 @@ DevConf.CZ 2026 welcomes proposals from first-time speakers as well as seasoned 
 * **CfP closes:** March 1, 2026
 * **CfP notifications:** March 30 - April 3, 2026
 * **Schedule and registration:** April 20 - 24, 2026
-* **Event dates:** June 18 - 20, 2026
+* **Event dates:** June 18 - 19, 2026
 
 ## Plan your attendance and accommodation
 

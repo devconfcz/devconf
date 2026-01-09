@@ -3,7 +3,7 @@
     <title>DevConf.CZ Blog</title>
     <link href="/blog" />
     <link type="application/atom+xml" rel="self" href="/cz/blog/feed.atom" />
-    <updated>2026-01-05T09:19:36+00:00</updated>
+    <updated>2026-01-09T13:07:54+00:00</updated>
     <id>/cz/blog/feed.atom</id>
     <author>
         <name>Josef Ridky &lt;jridky@redhat.com&gt;</name>
@@ -12,8 +12,8 @@
     <id>/cz/blog/submitting-a-proposal-for-devconf-cz-2026</id>
     <link type="text/html" rel="alternate" href="/cz/blog/submitting-a-proposal-for-devconf-cz-2026" />
     <title>Submitting a Proposal for DevConf.CZ 2026</title>
-    <published>2025-12-15T00:00:00+00:00</published>
-    <updated>2025-12-15T00:00:00+00:00</updated>
+    <published>2026-01-09T00:00:00+00:00</published>
+    <updated>2026-01-09T00:00:00+00:00</updated>
     <author>
         <name>Dorota Volavkova</name>
     </author>
@@ -26,7 +26,7 @@
 <li><strong>CfP closes:</strong> March 1, 2026</li>
 <li><strong>CfP notifications:</strong> March 30 - April 3, 2026</li>
 <li><strong>Schedule and registration:</strong> April 20 - 24, 2026</li>
-<li><strong>Event dates:</strong> June 18 - 20, 2026</li>
+<li><strong>Event dates:</strong> June 18 - 19, 2026</li>
 </ul>
 <h2>Plan your attendance and accommodation</h2>
 <p>The event will be held at the <a href="https://www.fit.vut.cz/">Faculty of Information Technology at Brno University of Technology</a> in the Czech Republic. All talks, presentations, and workshops will be conducted in English.</p>
