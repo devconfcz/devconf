@@ -80,10 +80,10 @@
 			<div class="heading-text mont-700 h4">
 				<i class="fa fa-map-marker"></i> MIT World Peace University (MIT WPU), Pune
 			</div>
-			<!--<div class="heading-text pt-5 mt-2">
-                <a href="https://pretalx.devconf.info/devconf-in-2026/cfp" target="_blank" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">Call for Proposals</a>
+			<div class="heading-text pt-5 mt-2">
+                <a href="/in/schedule" target="_blank" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">SCHEDULE</a>
             </div>
-            <div class="heading-text mt-2">
+            <!--<div class="heading-text mt-2">
                 <a href="https://photos.app.goo.gl/me2XZqLYQ3LGKgTDA" target="_blank" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">2025 PHOTOS</a>
             </div>
             <div class="heading-text mont-400 h5 pb-2 pb-lg-2">
@@ -247,6 +247,7 @@
 	    </div>
 	    <div class="row">
 		    <div class="col-lg-6 px-5 mx-auto">
+                 <p class="os-400"><span class="h6 mont-700">Jan 15, 2026</span> Schedule is published <a href="/in/schedule" target="_blank">here</a>.</p>
                  <p class="os-400"><span class="h6 mont-700">Dec 16, 2025</span> Registration is open.</p>
                  <p class="os-400"><span class="h6 mont-700">Oct 3, 2025</span> Call for Proposals (CfP) is open, submit your  proposals by November 21, 2025.</p>
                  <p class="os-400"><span class="h6 mont-700">Sep 20, 2025</span> DevConf.IN 2026 dates announced: February 12-13, 2026.</p>
