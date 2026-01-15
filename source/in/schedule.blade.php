@@ -55,7 +55,7 @@
 <section class="mx-auto mb-5">
 
 		<script type="text/javascript" src="https://pretalx.devconf.info/devconf-in-2026/widgets/schedule.js"></script>
-        <pretalx-schedule event-url="https://pretalx.devconf.info/devconf-in-2026/schedule/" locale="en" format="grid" style="--pretalx-clr-primary: #8E83E4"></pretalx-schedule>
+        <pretalx-schedule event-url="https://pretalx.devconf.info/devconf-in-2026/" locale="en" format="grid" style="--pretalx-clr-primary: #8E83E4"></pretalx-schedule>
 		<noscript>
 		<div class="pretalx-widget">
 			<div class="pretalx-widget-info-message">
