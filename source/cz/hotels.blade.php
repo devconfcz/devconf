@@ -134,6 +134,18 @@
 				<p>Email for making reservations is:<br><a href="mailto:rezervace@hotelpassage.eu">rezervace@hotelpassage.eu</a></p>
 			</div>
 		</div>
+		<div class="col-lg-4">
+			<div class="h2 pt-3 pb-4 mx-5 mont-700">Avanti - Mandatory departure on Friday, June 19</div>
+
+			<div class="os-400 mx-5">
+				<p><a href="https://www.hotelavanti.cz/en/" target="_blank">https://www.hotelavanti.cz/en/</a></p>
+                <p>Code: <strong>DEVCONF</strong></p>
+				<p>Single Standard room 4.000 CZK/night<br>
+				Double Standard room 4.500 CZK/night</p>
+				<p>The rate includes breakfast.</p>
+				<p>Email for making reservations is:<br><a href="mailto:hotel@hotelavanti.cz">hotel@hotelavanti.cz</a></p>
+			</div>
+		</div>
 	</div>
 </section>
 @endsection
