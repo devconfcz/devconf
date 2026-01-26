@@ -194,6 +194,9 @@
 		    <div class="col-lg-2 col-6 px-3 mx-auto align-content-center text-center">
 		        <img src="/assets/images/partners/gdg.png" class="w-75">
 		    </div>
+            <div class="col-lg-2 col-6 px-3 mx-auto align-content-center text-center">
+                <img src="/assets/images/partners/gdgcp.png" class="w-75">
+            </div>
 		    <div class="col-lg-2 col-6 px-3 mx-auto align-content-center text-center">
 		        <img src="/assets/images/partners/gdgp.png" class="w-75">
 		    </div>
