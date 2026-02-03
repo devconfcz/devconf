@@ -7,3 +7,5 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d 
 #Rewrite the request to index.php
 RewriteRule ^(.*)$ $1.html [L]
+RewriteCond %{HTTP_HOST} ^(www\.)?devconf\.info$ [NC]
+RewriteRule ^in/matrix/?$ https://matrix.to/#/#2026.in:devconf.cz [L,R=301]
