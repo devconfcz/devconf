@@ -63,8 +63,12 @@
 <hr>
 
 <section class="mx-auto mb-5">
-
-        <script type="text/javascript" src="https://pretalx.devconf.info/devconf-cz-2025/widgets/schedule.js"></script>
+    <div class="row">
+        <div class="mx-5 px-5 os-400">
+            DevConf.CZ 2026 schedule coming soon.
+        </div>
+    </div>
+<!--        <script type="text/javascript" src="https://pretalx.devconf.info/devconf-cz-2025/widgets/schedule.js"></script>
         <pretalx-schedule event-url="https://pretalx.devconf.info/devconf-cz-2025/" locale="en" format="grid" style="--pretalx-clr-primary: #8E83E4"></pretalx-schedule>
         <noscript>
            <div class="pretalx-widget">
@@ -73,7 +77,7 @@
                     please <a target="_blank" href="https://pretalx.devconf.info/devconf-cz-2025/schedule/">click here</a>.
                 </div>
             </div>
-        </noscript>
+        </noscript>-->
 
 </section>
 
