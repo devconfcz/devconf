@@ -50,9 +50,13 @@
 	<div class="row">
 		<div class="h1 mx-5 mont-700 underline position-relative">Map</div>
 	</div>
-	<div class="row mx-5">
+	<div class="row mx-5 d-block">
+        <div class="my-3 os-400">
+            Venue: DevConf.IN takes place in the Vyas Building at MIT-WPU.<br><br>
+            Address: Shilpa Housing Society, Rambaug Colony, Kothrud, Pune, Maharashtra 411038, India
+        </div>
 		<div class="d-block my-3">
-			<a href="/assets/images/devconf-in-map.jpg"><img class="w-100" src="/assets/images/devconf-in-map.jpg"></a>
+			<a href="/assets/images/devconf-in-map.jpg"><img class="" src="/assets/images/devconf-in-map.jpg"></a>
 		</div>
 	</div>
 </section>
