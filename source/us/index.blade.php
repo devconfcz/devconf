@@ -16,7 +16,7 @@
 @endsection
 
 @section('title')
-<title>DevConf.US 2025</title>
+<title>DevConf.US 2026</title>
 @endsection
 
 
@@ -39,9 +39,9 @@
 				<li class="nav-item active px-3">
 					<a href="#news" class="nav-link local">News</a>
 				</li>
-				<li class="nav-item active px-3">
+				<!-- <li class="nav-item active px-3">
 					<a href="/us/schedule" class="nav-link local">Schedule</a>
-				</li>
+				</li> -->
 				<!-- <li class="nav-item active px-3">
                     <a href="/cz/blog" class="nav-link local">Blog</a>
                 </li> -->
@@ -71,21 +71,21 @@
 			<div class="heading-text mont-400 h5 pb-5">
 				open source community conference
 			</div>
-            <!-- <div class="heading-text pt-1 mt-2">
-            <a href="https://forms.gle/kiBdDK3ZXmEC5EEP9" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">FEEDBACK FORM</a>
-            </div> -->
             <div class="heading-text mont-700 h1 mt-5">
-				        September 2026
+				        September 24-25 2026
 			</div>
 			<div class="heading-text mont-700 h4 mt-4">
 			<i class="fa fa-map-marker"></i> Boston, USA
 			</div>
-			<div class="heading-text mont-400 h5 pb-2 pb-lg-5">
+			<!-- <div class="heading-text mont-400 h5 pb-2 pb-lg-5">
                          Thank you for being part of DevConf.US 2025! We look forward to the next event in September 2026.
-        	</div>
+        	</div> -->
 			<div class="heading-text pt-1 mt-2">
-            <a href="https://forms.gle/kiBdDK3ZXmEC5EEP9" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">FEEDBACK FORM</a>
+            <a href="https://pretalx.devconf.info/devconf-us-2026/cfp" target="_blank" class="border p-3 h2 mont-700" style="border-width: 3px !important;">Call For Proposals!</a>
             </div>
+			<div class="heading-text mont-400 h5 pb-2 pb-lg-5">
+                         Submit your proposals by April 1st, 2026
+        	</div>
 			<!-- <div class="heading-text mt-4">
 				<a href="/us/schedule/" class="border p-3 h2 mont-700" style="border-width: 3px !important;">SCHEDULE</a>
 			</div> -->
@@ -178,7 +178,7 @@
 	<div class="row">
 		<div class="col-10 col-md-5 mr-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">Feb 28, 2025</div>
+				<div class="col-4 h5 mont-700">Feb 13, 2026</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">CfP Opens</div>
@@ -188,7 +188,7 @@
 		</div>
 		<div class="col-10 col-md-5 ml-md-0 mx-auto py-3 border-bottom">
 			<div class="row">
-				<div class="col-4 h5 mont-700">May 5, 2025</div>
+				<div class="col-4 h5 mont-700">April 1, 2026</div>
 				<div class="col-8">
 					<div class="row">
 						<div class="col mont-600">CfP Closes</div>
@@ -286,11 +286,11 @@
 	</div>
 	<div class="row">
 		<div class="col-lg-6 px-5 mx-auto">
-			<p class="os-400"><span class="h6 mont-700">September 19-20, 2025</span> DevConf.US 2025!</p>
+			<!-- <p class="os-400"><span class="h6 mont-700">September 19-20, 2025</span> DevConf.US 2025!</p>
 			<p class="os-400"><span class="h6 mont-700">June 2, 2025</span> Registration is open!</p>
-			<p class="os-400"><span class="h6 mont-700">April 28, 2025</span> Call for Proposals deadline extended to May 5, 2025 at 11:59pm ET</p>
-			<p class="os-400"><span class="h6 mont-700">February 28, 2025</span> Call for Proposals is open, deadline to submit proposals is April 28, 2025</p>
-			<p class="os-400"><span class="h6 mont-700">February 28, 2025</span> DevConf.US 2025 date announced: September 19-20, 2025</p>
+			<p class="os-400"><span class="h6 mont-700">April 28, 2025</span> Call for Proposals deadline extended to May 5, 2025 at 11:59pm ET</p> -->
+			<p class="os-400"><span class="h6 mont-700">February 13, 2026</span> Call for Proposals is open, deadline to submit proposals is April 1, 2026</p>
+			<p class="os-400"><span class="h6 mont-700">February 13, 2026</span> DevConf.US 2026 date announced: September 24-25, 2026</p>
 			<!-- <p class="os-400"><span class="h6 mont-700">Jan 20, 2023</span> We have published a <a href="/assets/files/devconfUS-cfp-help.pdf" target="_blank">CfP help guide</a> to help you write an awesome proposal!</p>
 			<p class="os-400"><span class="h6 mont-700">Jan 20, 2023</span> Join our <a href="https://discord.gg/devconf" target="_blank">Discord server</a>. Reach out to us in the <b>#cfp-help</b> channel for any help with proposals.</p> -->
 			<!-- <p class="os-400"><span class="h6 mont-700">Jun 21, 2022</span> <a href="https://devconfus2022.sched.com" target="_blank">Schedule</a> is live!</p>
