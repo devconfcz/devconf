@@ -117,6 +117,11 @@
 <section id="registration" class="mx-auto col-lg-11">
     <div class="mt-4 py-5">
     	<h1 class="mont-700 underline pb-4">Registration</h1>
+        <div class="os-400">
+            Regular tickets are sold out. You can still join the waitlist. If a spot opens, you’ll have 24 hours to redeem your invite via email.<br><br>
+
+A valid ticket is required for entry. If you don't have one, please note that we may release at-the-door tickets on the day of the event depending on venue capacity. We will announce availability on social media. Please do not arrive before 10:30 AM to allow us time to assess attendance.
+        </div>
         <link rel="stylesheet" type="text/css" href="https://pretix.eu/devconf/devconfin2026/widget/v2.css">
         <script type="text/javascript" src="https://pretix.eu/widget/v2.en.js" async></script>
 
