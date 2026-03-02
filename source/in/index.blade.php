@@ -33,9 +33,9 @@
 				<li class="nav-item active px-3">
 					<a href="#about" class="nav-link local">About</a>
 				</li>
-				<li class="nav-item active px-3">
+				<!--<li class="nav-item active px-3">
                     <a href="#registration" class="nav-link local">Registration</a>
-                </li>
+                </li>-->
                 <li class="nav-item active px-3">
                     <a href="#topics" class="nav-link local">Topics</a>
                 </li>
@@ -45,12 +45,12 @@
 			    <li class="nav-item active px-3">
 					<a href="/in/faq" class="nav-link local">FAQ</a>
 				</li>
-				<li class="nav-item active px-3">
+				<!--<li class="nav-item active px-3">
 					<a href="#hotels" class="nav-link local">Hotels</a>
 				</li>
     			<li class="nav-item active px-3">
 					<a href="/in/schedule" class="nav-link local">Schedule</a>
-				</li>
+				</li>-->
 				<li class="nav-item active px-3">
 					<a href="/coc" class="nav-link local" target="_blank">Policies</a>
 				</li>
@@ -74,21 +74,23 @@
 			<div class="heading-text mont-400 h5 pb-5">
 				open source community conference
 			</div>
-			<div class="heading-text mont-700 h1 pt-3">
+			<!--<div class="heading-text mont-700 h1 pt-3">
 				February 13 - 14, 2026
-			</div>
+			</div> -->
 			<div class="heading-text mont-700 h4">
 				<i class="fa fa-map-marker"></i> MIT World Peace University (MIT WPU), Pune
 			</div>
-			<div class="heading-text pt-5 mt-2">
+			<!--<div class="heading-text pt-5 mt-2">
                 <a href="/in/schedule" target="_blank" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">SCHEDULE</a>
             </div>
-            <!--<div class="heading-text mt-2">
+            <div class="heading-text mt-2">
                 <a href="https://photos.app.goo.gl/me2XZqLYQ3LGKgTDA" target="_blank" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">2025 PHOTOS</a>
-            </div>
-            <div class="heading-text mont-400 h5 pb-2 pb-lg-2">
-                 Submit your proposals by November 21, 2025. 
             </div>-->
+            <div class="heading-text mont-400 h5 pb-2 pb-lg-2">
+                 Thank you for joining us at DevConf.IN 2026!<br>
+                 You can now watch the <a target="_blank" style="color: white; text-decoration: underline;" href="https://www.youtube.com/playlist?list=PLU1vS0speL2Z6ye8yTW9lWG-GlairkWA0">session recordings</a>, browse the <a target="_blank" style="color: white; text-decoration: underline;" href="https://pretalx.devconf.info/devconf-in-2026/schedule/">event schedule</a> and <a target="_blank" style="color: white; text-decoration: underline;" href="https://photos.google.com/share/AF1QipMtlpwkyo5cSjd7EObD6PiETPAW5_VXFcy-POYdCX3F4an6F_XpBO0Kq_btNEoU5g?key=VUZ5MEVPQU5JM3Z4S2pHZlRkV2cyZXViSk1WSzZn">event photo album</a>.<br>
+                 We look forward to seeing you again in 2027!
+            </div>
            
 		</div>
 	</div>
@@ -114,7 +116,7 @@
 		</div>
 	</div>
 </section>
-<section id="registration" class="mx-auto col-lg-11">
+<!--<section id="registration" class="mx-auto col-lg-11">
     <div class="mt-4 py-5">
     	<h1 class="mont-700 underline pb-4">Registration</h1>
         <div class="os-400">
@@ -122,7 +124,7 @@
 
 A valid ticket is required for entry. If you don't have one, please note that we may release at-the-door tickets on the day of the event depending on venue capacity. We will announce availability on social media. Please do not arrive before 10:30 AM to allow us time to assess attendance.
         </div>
-        <!--<link rel="stylesheet" type="text/css" href="https://pretix.eu/devconf/devconfin2026/widget/v2.css">
+        <link rel="stylesheet" type="text/css" href="https://pretix.eu/devconf/devconfin2026/widget/v2.css">
         <script type="text/javascript" src="https://pretix.eu/widget/v2.en.js" async></script>
 
         <div class="pretix-widget-compat" event="https://pretix.eu/devconf/devconfin2026/" single-item-select="button"></div>
@@ -132,9 +134,9 @@ A valid ticket is required for entry. If you don't have one, please note that we
                     JavaScript is disabled in your browser. To access our ticket shop without JavaScript, please <a target="_blank" rel="noopener" href="https://pretix.eu/devconf/devconfin2026/">click here</a>.
                 </div>
            </div>
-        </noscript> -->
+        </noscript> 
     </div>
-</section>
+</section>-->
 <section id="topics" class="mx-auto col-lg-11">	
 	<div class="row">
 		<div class="h1 mx-5 mont-700">Topics</div>
@@ -175,7 +177,7 @@ A valid ticket is required for entry. If you don't have one, please note that we
 		</div>
 	</div>
 </section>
-
+<!--
 <section id="partners" class="mx-auto py-5 col-lg-11">
 		<div class="row mt-4">
 		    <div class="h1 mx-5 mont-700">Community partners</div>
@@ -236,7 +238,7 @@ A valid ticket is required for entry. If you don't have one, please note that we
 		        <img src="/assets/images/partners/tac.png" class="w-75">
 		    </div>
 	    </div>
-</section>
+</section>-->
 
 <section id="news" class="mx-auto py-5 col-lg-11">
 		<div class="row mt-4">
@@ -244,12 +246,11 @@ A valid ticket is required for entry. If you don't have one, please note that we
 	    </div>
 	    <div class="row">
 		    <div class="col-lg-6 px-5 mx-auto">
-                 <p class="os-400"><span class="h6 mont-700">Jan 15, 2026</span> Schedule is published <a href="/in/schedule" target="_blank">here</a>.</p>
+                 <p class="os-400"><span class="h6 mont-700">Feb 13 - 14, 20256</span> DevConf.IN 2026 (<a href="https://www.youtube.com/playlist?list=PLU1vS0speL2Z6ye8yTW9lWG-GlairkWA0" target="_blank">Session Recordings</a>, <a href="https://pretalx.devconf.info/devconf-in-2026/schedule/" target="_blank">Schedule</a>, <a href="https://photos.google.com/share/AF1QipMtlpwkyo5cSjd7EObD6PiETPAW5_VXFcy-POYdCX3F4an6F_XpBO0Kq_btNEoU5g?key=VUZ5MEVPQU5JM3Z4S2pHZlRkV2cyZXViSk1WSzZn" target="_blank">Conference Photos</a>)</p><p class="os-400"><span class="h6 mont-700">Jan 15, 2026</span> Schedule is published <a href="/in/schedule" target="_blank">here</a>.</p>
                  <p class="os-400"><span class="h6 mont-700">Dec 16, 2025</span> Registration is open.</p>
                  <p class="os-400"><span class="h6 mont-700">Oct 3, 2025</span> Call for Proposals (CfP) is open, submit your  proposals by November 21, 2025.</p>
                  <p class="os-400"><span class="h6 mont-700">Sep 20, 2025</span> DevConf.IN 2026 dates announced: February 12-13, 2026.</p>
-                 <p class="os-400"><span class="h6 mont-700">Feb 28 - Mar 1, 2025</span> DevConf.IN 2025 (<a href="https://photos.app.goo.gl/me2XZqLYQ3LGKgTDA" target="_blank">Conference Photos</a>, <a href="https://youtube.com/playlist?list=PLU1vS0speL2ZvQRS0Hg0xIgTPOyxUmBK4&si=fuIO-ciVlj_7ySdN" target="_blank">Session Recordings</a>)</p>
-                 <p class="os-400"><span class="h6 mont-700">Jan 15, 2025</span> <a href="#registration" class="local">Registration</a> is open.</p>
+                 
                  
 		    </div>
 		    <div class="col-lg-4 px-5 mx-auto">
@@ -265,7 +266,7 @@ A valid ticket is required for entry. If you don't have one, please note that we
 		    </div>
 </section>
 
-<section id="hotels" class="mx-auto py-5 col-lg-11">
+<!--<section id="hotels" class="mx-auto py-5 col-lg-11">
 		<div class="row mt-4">
 		    <div class="h1 mx-5 mont-700">Recommended places to stay</div>
 	    </div>
@@ -281,7 +282,7 @@ A valid ticket is required for entry. If you don't have one, please note that we
                  <p class="os-400">Hotel Royalty<br><a href="http://www.hotel-royalty.com/contactus.html" target="_blank">website</a> | <a href="https://maps.app.goo.gl/1eFXugZyG2NqGZGd6" target="_blank">location</a> | Distance: 4 km (~15 min from venue)</p>
                  
 		    </div>
-</section>
+</section>-->
 
 <section class="col-12 px-0 mt-5" style="height: 450px;" id="map">
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7566.493161954868!2d73.815111!3d18.517756000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf0036344f9d%3A0x1441cedfd4298760!2sVyas%20Building!5e0!3m2!1sen!2sus!4v1769180837743!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
