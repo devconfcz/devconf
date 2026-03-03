@@ -97,7 +97,7 @@
                       <a href="https://pretalx.devconf.info/devconf-cz-2026/cfp" class="nav-link border p-3 h2 mont-700" style="border-width: 3px !important;">Call for Proposals</a>
                     </div>
                     <div class="heading-text mont-400 h5 pb-3">
-                         Submit your proposals by March 1, 2026.<br>We are aiming to publish the schedule in April.
+                         Submit your proposals by March 8, 2026.<br>We are aiming to publish the schedule in April.
         			</div> 
         		</div>
         		<div class="col-xl-6">
@@ -274,6 +274,7 @@
 	</div>
 	<div class="row">
 		<div class="col-lg-6 px-5 mx-auto">
+             <p class="os-400"><span class="h6 mont-700">Mar 1, 2026</span> Deadline to submit proposals is extended to March 8, 2026</p>
              <p class="os-400"><span class="h6 mont-700">Dec 15, 2025</span> Call for Proposals (CfP) is open, submit your proposals by March 1, 2026</p>
              <p class="os-400"><span class="h6 mont-700">Dec 15, 2025</span> DevConf.CZ 2026 date announced: June 18-19, 2026</p>
              <p class="os-400"><span class="h6 mont-700">Jun 26, 2025</span> Session recordings are published.</p>

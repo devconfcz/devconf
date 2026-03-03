@@ -14,7 +14,7 @@ DevConf.CZ 2026 welcomes proposals from first-time speakers as well as seasoned 
 ## Don't miss the deadline
 
 * **CfP opens:** mid-December, 2025
-* **CfP closes:** March 1, 2026
+* **CfP closes:** March 8, 2026
 * **CfP notifications:** March 30 - April 3, 2026
 * **Schedule and registration:** April 20 - 24, 2026
 * **Event dates:** June 18 - 19, 2026
