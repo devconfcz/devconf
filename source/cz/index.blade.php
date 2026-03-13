@@ -93,11 +93,11 @@
 			        <div class="heading-text mont-700 h4">
                         <a href="#map" class="nav-link local d-inline-block" style="color: white; padding: 0px"><i class="fa fa-map-marker"></i> Brno, Czech Republic</a>
                     </div> 
-                    <div class="heading-text mt-3 pt-1">
+               <!--     <div class="heading-text mt-3 pt-1">
                       <a href="https://pretalx.devconf.info/devconf-cz-2026/cfp" class="nav-link border p-3 h2 mont-700" style="border-width: 3px !important;">Call for Proposals</a>
-                    </div>
+                    </div> -->
                     <div class="heading-text mont-400 h5 pb-3">
-                         Submit your proposals by March 8, 2026.<br>We are aiming to publish the schedule in April.
+                         The CfP is now closed. We are hard at work reviewing the submissions and look forward to announcing the final schedule this April.
         			</div> 
         		</div>
         		<div class="col-xl-6">
