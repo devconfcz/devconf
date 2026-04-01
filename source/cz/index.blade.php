@@ -97,7 +97,8 @@
                       <a href="https://pretalx.devconf.info/devconf-cz-2026/cfp" class="nav-link border p-3 h2 mont-700" style="border-width: 3px !important;">Call for Proposals</a>
                     </div> -->
                     <div class="heading-text mont-400 h5 pb-3">
-                         The CfP is now closed. We are hard at work reviewing the submissions and look forward to announcing the final schedule this April.
+                         <strong>Call for Proposals:</strong> The CfP is now closed. We are hard at work reviewing the submissions and look forward to announcing the final schedule this April.<br><br>
+                         <strong>Registration:</strong> In-person attendee ticket sales will be launched by mid-April. There is no admission or ticket charge for DevConf.CZ events. However, you are required to complete a free registration.
         			</div> 
         		</div>
         		<div class="col-xl-6">

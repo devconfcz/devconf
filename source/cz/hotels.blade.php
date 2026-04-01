@@ -123,6 +123,18 @@
 			</div>
 		</div>
 		<div class="col-lg-4">
+			<div class="h2 pt-3 pb-4 mx-5 mont-700">Hotel Continental - For speakers only! (Speakers list is shared with hotel)</div>
+
+			<div class="os-400 mx-5">
+			    <p>Code: <strong>DEVCONF26</strong></p>
+				<p><a href="https://www.continentalbrno.cz/en/" target="_blank">https://www.continentalbrno.cz/en/</a></p>
+				<p>Single Design room - 4.200 CZK/night<br>
+				Single Superior room - 4.200 CZK/night</p>
+				<p>The rate includes breakfast.</p>
+				<p>Email for making reservations is:<br><a href="mailto:info@continentalbrno.cz">info@continentalbrno.cz</a></p>
+			</div>
+		</div>
+		<div class="col-lg-4">
 			<div class="h2 pt-3 pb-4 mx-5 mont-700">Hotel Vista - Mandatory departure on Friday, June 19</div>
 
 			<div class="os-400 mx-5">
