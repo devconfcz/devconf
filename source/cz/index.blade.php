@@ -96,12 +96,11 @@
 			        <div class="heading-text mont-700 h4">
                         <a href="#map" class="nav-link local d-inline-block" style="color: white; padding: 0px"><i class="fa fa-map-marker"></i> Brno, Czech Republic</a>
                     </div> 
-               <!--     <div class="heading-text mt-3 pt-1">
-                      <a href="https://pretalx.devconf.info/devconf-cz-2026/cfp" class="nav-link border p-3 h2 mont-700" style="border-width: 3px !important;">Call for Proposals</a>
-                    </div> -->
+                    <div class="heading-text mt-3 pt-1">
+                      <a href="#registration" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">Free Registration</a>
+                    </div>
                     <div class="heading-text mont-400 h5 pb-3">
-                         <br><strong>Call for Proposals:</strong> The CfP is now closed. We are hard at work reviewing the submissions and look forward to announcing the final schedule this April.<br><br>
-                         <strong>Registration:</strong> In-person attendee ticket sales will be launched by mid-April. There is no admission or ticket charge for DevConf.CZ events. However, you are required to complete a free registration.
+                         <br><strong>Call for Proposals:</strong> The CfP is now closed. We are hard at work reviewing the submissions and look forward to announcing the final schedule this April.
         			</div> 
         		</div>
         		<div class="col-xl-6">
@@ -209,23 +208,24 @@
 	    </div>
     </div>
 </section>
-<!--
+
 <section id="registration" class="mx-auto col-lg-11">
     <div class="mt-4 py-5">
     	<h1 class="mont-700 underline pb-4">Registration</h1>
-        <link rel="stylesheet" type="text/css" href="https://pretix.eu/devconf/devconfcz2025/widget/v1.css">
-        <script type="text/javascript" src="https://pretix.eu/widget/v1.en.js" async></script>
+        <link rel="stylesheet" type="text/css" href="https://pretix.eu/devconf/devconfcz2026/widget/v2.css" crossorigin>
+        <script type="text/javascript" src="https://pretix.eu/widget/v2.en.js" async crossorigin></script>
 
-        <div class="pretix-widget-compat" event="https://pretix.eu/devconf/devconfcz2025/" single-item-select="button"></div>
+        <pretix-widget event="https://pretix.eu/devconf/devconfcz2026/"></pretix-widget>
         <noscript>
            <div class="pretix-widget">
                <div class="pretix-widget-info-message">
-                    JavaScript is disabled in your browser. To access our ticket shop without JavaScript, please <a target="_blank" rel="noopener" href="https://pretix.eu/devconf/devconfcz2025/">click here</a>.
+                    JavaScript is disabled in your browser. To access our ticket shop without JavaScript, please <a target="_blank" rel="noopener" href="https://pretix.eu/devconf/devconfcz2026/">click here</a>.
                 </div>
            </div>
         </noscript>
     </div>
-</section>-->
+</section>
+
 <section id="themes" class="mx-auto col-lg-11">
     <div class="row mt-4 py-5">
     	<div class="row w-100">
@@ -278,6 +278,7 @@
 	</div>
 	<div class="row">
 		<div class="col-lg-6 px-5 mx-auto">
+             <p class="os-400"><span class="h6 mont-700">Apr 15, 2026</span> Registration is open.</p>
              <p class="os-400"><span class="h6 mont-700">Mar 1, 2026</span> Deadline to submit proposals is extended to March 8, 2026</p>
              <p class="os-400"><span class="h6 mont-700">Dec 15, 2025</span> Call for Proposals (CfP) is open, submit your proposals by March 1, 2026</p>
              <p class="os-400"><span class="h6 mont-700">Dec 15, 2025</span> DevConf.CZ 2026 date announced: June 18-19, 2026</p>
