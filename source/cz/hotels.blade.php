@@ -132,6 +132,11 @@
 				Single Superior room - 4.200 CZK/night</p>
 				<p>The rate includes breakfast.</p>
 				<p>Email for making reservations is:<br><a href="mailto:info@continentalbrno.cz">info@continentalbrno.cz</a></p>
+				<p><strong>Note:</strong><ul>
+				<li>guarantee in the form of sending credit card details (payment on site) or</li>
+				<li>payment in advance by proforma invoice/bank transfer or card via payment link</li>
+				<li>final confirmation of reservation 10 days before arrival, after this date the hotel charge 100% of the room/stay price in case of change, cancellation or no-show</li>
+				</ul></p>
 			</div>
 		</div>
 		<div class="col-lg-4">
