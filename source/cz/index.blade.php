@@ -39,9 +39,9 @@
 				<li class="nav-item active px-3">
 					<a href="#news" class="nav-link local">News</a>
 				</li>
-				<!--<li class="nav-item active px-3">
+				<li class="nav-item active px-3">
 					<a href="/cz/schedule" class="nav-link local">Schedule</a>
-				</li>-->
+				</li>
 				<li class="nav-item active px-3">
 					<a href="#travel" class="nav-link local">Getting to Brno</a>
 				</li>
@@ -98,6 +98,9 @@
                     </div> 
                     <div class="heading-text mt-3 pt-1">
                       <a href="#registration" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">Free Registration</a>
+                    </div>
+                    <div class="heading-text mt-1 pt-1">
+                      <a href="/cz/schedule" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">Schedule</a>
                     </div>
                     <div class="heading-text mont-400 h5 pb-3">
                          <br><strong>Call for Proposals:</strong> The CfP is now closed. We are hard at work reviewing the submissions and look forward to announcing the final schedule this April.
