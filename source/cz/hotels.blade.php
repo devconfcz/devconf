@@ -55,7 +55,7 @@
 	<div class="row">
 		<div class="os-400 mx-5">
 		<div class="h1 mont-700 mb-5 underline position-relative">Hotels for speakers and attendees</div>
-        <div class="h4 mont-700">We are out of our reserved capacity. None of the prices bellow are valid from now on.</div>
+        <div class="alert alert-danger mont-700 h4 p-4" role="alert">We are out of our reserved capacity. None of the prices below are valid from now on.</div>
 		<div class="h4 mont-700">Important Notice: Accommodation & MotoGP Conflict</div>
         <p>Due to the MotoGP event taking place in Brno at the same time, hotel availability is extremely limited. Please note that our partner hotels will only hold rooms for a limited period. If you plan to attend DevConf.CZ, we strongly recommend booking in advance.</p>
 
