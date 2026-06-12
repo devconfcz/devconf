@@ -115,7 +115,7 @@
 				array("code"=>"E08", "name"=>"FreeIPA", "link"=>"https://pretalx.devconf.info/devconf-cz-2026/talk/review/HPUEAFBY3NFGNT8JS7W9WJNHSYFJEDTZ"),
 				array("code"=>"E09", "name"=>"FSFE", "link"=>"https://pretalx.devconf.info/devconf-cz-2026/talk/review/LPZWFK9EC9ZQXPC7NFMSKV8AJDX9JGFF"),
 				array("code"=>"E10", "name"=>"Tolgee", "link"=>"https://pretalx.devconf.info/devconf-cz-2026/talk/review/EEY8AE7MTSRL3M7U8WVRTQ3AYJGFSLXW"),
-				array("code"=>"E11", "name"=>"CCAT", "link"=>"https://pretalx.devconf.info/devconf-cz-2026/talk/review/HUHL7ENAELRSM9VMGMB7ZVCFPH7BBCQD"),
+				array("code"=>"E11", "name"=>"Hands-on cyber security", "link"=>"https://pretalx.devconf.info/devconf-cz-2026/talk/review/HUHL7ENAELRSM9VMGMB7ZVCFPH7BBCQD"),
 				array("code"=>"E12", "name"=>"INDUSTRA", "link"=>"https://pretalx.devconf.info/devconf-cz-2026/talk/review/HG9JPENYDCNR7PPSBVFBUN8MSETXYWRA"),
 			);
 
