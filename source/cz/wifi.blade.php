@@ -71,9 +71,8 @@ h1{
 			</div>
 			<h1>Wi-Fi Connection</h1>
 			<h2 style="padding-top: 3%">SSID: <strong>vut.cz</strong></h2>
-			<h2>User: <strong>devconfcz@vutbr.cz</strong></h2>
-			<h2><i>Anonymous User: <strong>devconfcz@vutbr.cz</strong></i></h2>
-			<h2>Password: <strong>Brno2025</strong></h2>
+			<h2>User: <strong>devconfcz@vut.cz</strong></h2>
+			<h2>Password: <strong>Brno2026</strong></h2>
 		</div>
 		<div class="container h-100" time="6000">
 			<p style="padding-top: 22%">Move to the middle and <strong>use every seat</strong>.<br>The fire code says <strong class="red">NO STANDING ALLOWED</strong>.</p>
@@ -87,7 +86,7 @@ h1{
 			<p>Use <strong class="purple">#devconf_cz #defineFUTURE #opensource</strong> for your posts!</p>
 		</div>
 		<div class="container h-100" time="6000">
-			<p style="padding-top: 22%">Come to the final session on Saturday! You can take part in our <strong>Pop Quiz and win some interesting prizes!</strong></p>
+			<p style="padding-top: 22%">Come to the final session on Friday! You can take part in our <strong>Pop Quiz and win some interesting prizes!</strong></p>
 		</div>
 	</header>
 
