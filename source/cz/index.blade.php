@@ -94,16 +94,13 @@
 				        June 18-19, 2026
 			        </div>
 			        <div class="heading-text mont-700 h4">
-                        <a href="#map" class="nav-link local d-inline-block" style="color: white; padding: 0px"><i class="fa fa-map-marker"></i> Brno, Czech Republic</a>
+                        <a href="#map" class="nav-link local d-inline-block" style="color: white; padding: 0px"><i class="fa fa-map-marker"></i> FIT BUT | Brno, Czech Republic</a>
                     </div> 
                     <div class="heading-text mt-3 pt-1">
-                      <a href="#registration" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">Free Registration</a>
-                    </div>
-                    <div class="heading-text mt-1 pt-1">
                       <a href="/cz/schedule" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">Schedule</a>
                     </div>
                     <div class="heading-text mont-400 h5 pb-3">
-                         <br><strong>Call for Proposals:</strong> The CfP is now closed. We are hard at work reviewing the submissions and look forward to announcing the final schedule this April.
+                         <br>Online registration is now closed. You can still register directly onsite at the venue.
         			</div> 
         		</div>
         		<div class="col-xl-6">
@@ -212,9 +209,10 @@
     </div>
 </section>
 
-<section id="registration" class="mx-auto col-lg-11">
+<!--<section id="registration" class="mx-auto col-lg-11">
     <div class="mt-4 py-5">
     	<h1 class="mont-700 underline pb-4">Registration</h1>
+        
         <link rel="stylesheet" type="text/css" href="https://pretix.eu/devconf/devconfcz2026/widget/v2.css" crossorigin>
         <script type="text/javascript" src="https://pretix.eu/widget/v2.en.js" async crossorigin></script>
 
@@ -227,7 +225,7 @@
            </div>
         </noscript>
     </div>
-</section>
+</section> -->
 
 <section id="themes" class="mx-auto col-lg-11">
     <div class="row mt-4 py-5">
