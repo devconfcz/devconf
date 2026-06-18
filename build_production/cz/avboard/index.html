@@ -118,10 +118,6 @@
             <div class="overlay">A113</div>
         </div>
         <div class="grid-item">
-            <div id="player8" class="youtube-player"></div>
-            <div class="overlay">A113</div>
-        </div>
-        <div class="grid-item">
             <div class="overlay" id="clock"></div>
             <div class="settings">
                 <label for="delay">Delay in seconds</label>
@@ -136,13 +132,13 @@
 <script>
     // Define an array of YouTube video URLs
     const videoUrls = [
-        'https://www.youtube.com/watch?v=7P43MiWrJEE',
-        'https://www.youtube.com/watch?v=mpKHRrEoHGs',
-        'https://www.youtube.com/watch?v=OzYVtcL_-9s',
-        'https://www.youtube.com/watch?v=kcvmN2CQdg0',
-        'https://www.youtube.com/watch?v=f4U1lWfA1mA',
-        'https://www.youtube.com/watch?v=yOROHXcmimM',
-        'https://www.youtube.com/watch?v=bPndQSbefwE',
+        'https://www.youtube.com/watch?v=6aopok6iDxQ',
+        'https://www.youtube.com/watch?v=fuvnJkJ_LtA',
+        'https://www.youtube.com/watch?v=tz9P4B6Y8fU',
+        'https://www.youtube.com/watch?v=zmMKt8-XM-g',
+        'https://www.youtube.com/watch?v=jQkzbB8RccU',
+        'https://www.youtube.com/watch?v=bna6avBohZw',
+        'https://www.youtube.com/watch?v=v-V5YrfIfzE',
     ];
 
     // Array to store the player instances
