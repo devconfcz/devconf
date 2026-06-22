@@ -97,20 +97,12 @@
                         <a href="#map" class="nav-link local d-inline-block" style="color: white; padding: 0px"><i class="fa fa-map-marker"></i> FIT BUT | Brno, Czech Republic</a>
                     </div> 
                     <div class="heading-text mt-3 pt-1">
-                      <a href="/cz/schedule" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">Schedule</a>
+                      <a href="https://fedoraproject.limequery.com/413562?lang=en" class="nav-link local border p-3 h2 mont-700" target="_blank" style="border-width: 3px !important;">Feedback form</a>
                     </div>
                     <div class="heading-text mont-400 h5 pb-3">
-                         <br>Online registration is now closed. You can still register directly onsite at the venue.
+                         <br>Thank you for being part of DevConf.CZ 2026! We look forward to the next event in 2027.
         			</div> 
-        		</div>
-        		<div class="col-xl-6">
-                    <div class="heading-text pt-1 h2 mont-700">
-                       DevConf.CZ 2026 & MotoGP Czechia
-                    </div>
-                     <div class="heading-text mont-400 h5">
-                         The 2026 event dates coincide with a major sporting event in the region, MotoGP Czechia (held on June 19 - 21). We strongly recommend all potential attendees and speakers book their accommodation well in advance. Read more in the <strong><a href="/cz/faq#motogp" style="color: white; text-decoration: underline;">FAQ</a></strong>.
-        			</div>        
-  		        </div>      		    
+        		</div>	    
    		    </div>
 <!--        <div class="road-timeline-big">
             <ul class="timeline timeline-centered">
