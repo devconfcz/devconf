@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta http-equiv="X-Frame-Options" content="DENY">
+	
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<meta name="author" content="Josef Ridky <jridky@redhat.com>">
+	<meta name="description" content="DevConf are free and open, annual, open-source community conferences for community contibutors, sponsored by Red Hat.">
+
+        <meta property="og:title" content="DevConf.CZ | Brno, Czechia">
+<meta property="og:site_name" content="DevConf.CZ">
+<meta property="og:description" content="DevConf are free and open, annual, open-source community conferences for community contibutors, sponsored by Red Hat.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://devconf.info">
+<meta property="og:image" content="https://devconf.info/assets/images/devconf-cz-social.png">
+<meta property="twitter:image" content="https://devconf.info/assets/images/devconf-cz-social.png">
+
+	<!-- YouTube Channel Linking Verification -->
+	<meta name="google-site-verification" content="IXOh3zMePCSVZkCqKQr8dZVFfpQgPG5Og-ZpULr8MJ4" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7K9TNM6TTH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7K9TNM6TTH');
+    </script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="/assets/build/css/backtop.css?id=7076fe4b35b5b82fda0b9717e99fc926">
+	<link rel="stylesheet" href="/assets/build/css/site.css?id=5f26ee1b527aa009f098956dae48e52f">
+<link rel="stylesheet" href="/assets/build/css/timeline.css?id=ae833f0a5b62bc974eda32206252ceb6">
+       
+        <script src="/assets/build/js/main.js?id=44962707bf1542b10f4ba620769b2d88"></script>
+	<link rel="stylesheet" href="/assets/build/css/cookie.css?id=329e24dcc9507a43549556261d29a138">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#512954">
+
+	<title>DevConf.CZ 2026</title>
+    </head>
+    <body>
+	<a href="#" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+        <header class="masthead min-vh-100">
+	<nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top">
+		<span class="nav-brand"><a href="#" class="home"><img src="/assets/images/devconf-logo-cz-reverse.svg" alt="DevConf logo"></a></span>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMobile"
+		    aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarMobile">
+			<ul class="navbar-nav ml-auto pr-5">
+				<li class="nav-item active px-3">
+					<a href="#about" class="nav-link local">About</a>
+				</li>
+                <li class="nav-item active px-3">
+                    <a href="#themes" class="nav-link local">Conference Themes</a>
+                </li>
+				<li class="nav-item active px-3">
+					<a href="#news" class="nav-link local">News</a>
+				</li>
+				<li class="nav-item active px-3">
+					<a href="/cz/schedule" class="nav-link local">Schedule</a>
+				</li>
+				<li class="nav-item active px-3">
+					<a href="#travel" class="nav-link local">Getting to Brno</a>
+				</li>
+				<li class="nav-item active px-3">
+					<a href="/cz/hotels" class="nav-link local">Hotels</a>
+				</li>
+                <li class="nav-item active px-3">
+                    <a href="/cz/blog" class="nav-link local">Blog</a>
+                </li>
+				<li class="nav-item active px-3">
+					<a href="/cz/faq" class="nav-link local">FAQ</a>
+				</li> 
+				<li class="nav-item active px-3">
+					<a href="/coc" class="nav-link local" target="_blank">Policies</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="row mr-0 mt-5" style="height: 85%">
+		<div class="col-lg-1 border-right text-center pr-0">
+			<a href="mailto:info@devconf.cz" target="_blank" title="Mail"><img src="/assets/images/mail.svg" alt="mail" class="social-icon"></a>
+            <a href="https://fosstodon.org/@devconf_cz" target="_blank" title="Fosstodon"><img src="/assets/images/fosstodon.svg" alt="fosstodon" class="social-icon"></a>
+			<a href="https://twitter.com/devconf_cz" target="_blank" title="Twitter"><img src="/assets/images/twitter.svg" alt="twitter" class="social-icon"></a>
+			<a href="https://www.linkedin.com/company/102081562/admin/feed/posts/" target="_blank" title="LinkedIn"><img src="/assets/images/linkedin.svg" alt="linkedin" class="social-icon"></a>
+			<a href="https://matrix.to/#/#2026:devconf.cz" target="_blank" title=""><img src="/assets/images/matrix.svg" alt="matrix" class="social-icon"></a>
+			<a href="https://www.youtube.com/channel/UCmYAQDZIQGm_kPvemBc_qwg" target="_blank" title="YouTube"><img src="/assets/images/youtube.svg" alt="youtube" class="social-icon"></a>
+			<a href="https://github.com/devconfcz/devconf" target="_blank" title="Git Hub"><img src="/assets/images/github.svg" alt="github" class="social-icon"></a>
+		</div>
+		<div class="col-lg-10 h-100 px-0">
+                	<div style="padding: 5% 0 0 0">
+                        	<img src="/assets/images/devconf-logo-cz-reverse.svg" alt="DevConf logo" class="text-logo">
+                        	<img src="/assets/images/devconf-abstract.svg" alt="DevConf abstract logo" class="abstract-logo">
+                        </div>
+			<div class="heading-text mont-400 h5 pb-2 pb-lg-5">
+				open source community conference
+			</div>
+<!--            <div class="mini-stamp d-none d-lg-block">
+                <span class="mont-700">MINI</span><br>LOCAL<br>IN-PERSON<br>CONFERENCE
+            </div> 
+            <div style="padding: 0 0 0 3rem" class="my-1 d-lg-none">
+                <div class="mini-chip">
+                    <span class="mont-700">MINI</span> LOCAL IN-PERSON CONFERENCE
+                </div>
+            </div>-->
+
+            
+            <div class="row py-5">
+			    <div class="col-xl-6">
+			        <div class="heading-text mont-700 h1">
+				        June 18-19, 2026
+			        </div>
+			        <div class="heading-text mont-700 h4">
+                        <a href="#map" class="nav-link local d-inline-block" style="color: white; padding: 0px"><i class="fa fa-map-marker"></i> FIT BUT | Brno, Czech Republic</a>
+                    </div> 
+                    <div class="heading-text mt-3 pt-1">
+                      <a href="https://fedoraproject.limequery.com/413562?lang=en" class="nav-link local border p-3 h2 mont-700" target="_blank" style="border-width: 3px !important;">Feedback form</a>
+                    </div>
+                    <div class="heading-text mont-400 h5 pb-3">
+                         <br>Thank you for being part of DevConf.CZ 2026! We look forward to the next event in 2027.
+        			</div> 
+        		</div>	    
+   		    </div>
+<!--        <div class="road-timeline-big">
+            <ul class="timeline timeline-centered">
+			                				<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-400 timeline-title">Jan 18, 2023</div>
+					</div>
+					<div class="timeline-marker"></div>
+									<div class="timeline-content-right">
+						<div class="mont-400 timeline-title">DevConf.CZ 2023 CfP opens</div>
+						<p class="timeline-description os-400"></p>
+					</div>
+				</li>
+				                				<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-400 timeline-title">Mar 17, 2023</div>
+					</div>
+					<div class="timeline-marker"></div>
+									<div class="timeline-content-right">
+						<div class="mont-400 timeline-title">DevConf.CZ 2023 CfP closes</div>
+						<p class="timeline-description os-400"></p>
+					</div>
+				</li>
+				                				<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-400 timeline-title">Mar 31, 2023</div>
+					</div>
+					<div class="timeline-marker"></div>
+									<div class="timeline-content-right">
+						<div class="mont-400 timeline-title">DevConf.cz Mini</div>
+						<p class="timeline-description os-400">Brno</p>
+					</div>
+				</li>
+				                				<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-400 timeline-title">Apr, 2023</div>
+					</div>
+					<div class="timeline-marker"></div>
+									<div class="timeline-content-right">
+						<div class="mont-400 timeline-title">DevConf.CZ 2023 schedule published</div>
+						<p class="timeline-description os-400"></p>
+					</div>
+				</li>
+				                				<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-400 timeline-title">Apr, 2023</div>
+					</div>
+					<div class="timeline-marker"></div>
+									<div class="timeline-content-right">
+						<div class="mont-400 timeline-title">DevConf.CZ 2023 registration opens</div>
+						<p class="timeline-description os-400"></p>
+					</div>
+				</li>
+				                <div class='next-tag-big mont-700'>next</div>				<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-700 timeline-title">Jun 16-18, 2023</div>
+					</div>
+					<div class="timeline-marker"></div>
+									<div class="timeline-content-right">
+						<div class="mont-700 timeline-title">DevConf.CZ 2023</div>
+						<p class="timeline-description os-700">Brno/Hybrid</p>
+					</div>
+				</li>
+				                				<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-400 timeline-title">Oct/Nov, 2023</div>
+					</div>
+					<div class="timeline-marker"></div>
+									<div class="timeline-content-right">
+						<div class="mont-400 timeline-title">DevConf.cz Mini</div>
+						<p class="timeline-description os-400">Brno</p>
+					</div>
+				</li>
+							</ul>
+            </div>
+-->
+		</div>
+	</div>
+</header>
+<!--<section class="mx-auto col-lg-11 roadmap-section">
+    <div class="row pt-5">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-2 mx-auto">
+            <ul class="timeline timeline-centered">
+			                
+				<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-400 timeline-title">Jan 18, 2023</div>
+					</div>
+					<div class="timeline-marker"></div>
+									<div class="timeline-content-right">
+						<div class="mont-400 timeline-title">DevConf.CZ 2023 CfP opens</div>
+						<p class="timeline-description os-400"></p>
+					</div>
+				</li>
+				                
+				<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-400 timeline-title">Mar 17, 2023</div>
+					</div>
+					<div class="timeline-marker"></div>
+									<div class="timeline-content-right">
+						<div class="mont-400 timeline-title">DevConf.CZ 2023 CfP closes</div>
+						<p class="timeline-description os-400"></p>
+					</div>
+				</li>
+				                
+				<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-400 timeline-title">Mar 31, 2023</div>
+					</div>
+					<div class="timeline-marker"></div>
+									<div class="timeline-content-right">
+						<div class="mont-400 timeline-title">DevConf.cz Mini</div>
+						<p class="timeline-description os-400">Brno</p>
+					</div>
+				</li>
+				                
+				<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-400 timeline-title">Apr, 2023</div>
+					</div>
+					<div class="timeline-marker"></div>
+									<div class="timeline-content-right">
+						<div class="mont-400 timeline-title">DevConf.CZ 2023 schedule published</div>
+						<p class="timeline-description os-400"></p>
+					</div>
+				</li>
+				                
+				<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-400 timeline-title">Apr, 2023</div>
+					</div>
+					<div class="timeline-marker"></div>
+									<div class="timeline-content-right">
+						<div class="mont-400 timeline-title">DevConf.CZ 2023 registration opens</div>
+						<p class="timeline-description os-400"></p>
+					</div>
+				</li>
+				                
+				<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-700 timeline-title"><div class='next-tag-mobile mont-700'>next</div>Jun 16-18, 2023</div>
+					</div>
+					<div class="timeline-marker"></div>
+									<div class="timeline-content-right">
+						<div class="mont-700 timeline-title"><div class='next-tag mont-700'>next</div>DevConf.CZ 2023</div>
+						<p class="timeline-description os-700">Brno/Hybrid</p>
+					</div>
+				</li>
+				                
+				<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-400 timeline-title">Oct/Nov, 2023</div>
+					</div>
+					<div class="timeline-marker"></div>
+									<div class="timeline-content-right">
+						<div class="mont-400 timeline-title">DevConf.cz Mini</div>
+						<p class="timeline-description os-400">Brno</p>
+					</div>
+				</li>
+							</ul>
+        </div>
+    </div>
+</section> -->
+<section id="about" class="mx-auto col-lg-11">
+	<div class="row mt-4 py-5">
+		<div class="col-lg-4 mx-5 mb-5 text-center">
+			<img src="/assets/images/devconf-d-brno.png" class="mw-100" alt="DevConf image asset">
+		</div>
+		<div class="col-lg-6 px-5">
+			<h1 class="mont-700 underline pb-4">About DevConf</h1>
+			<div class="os-400">
+                <p><strong>DevConf.CZ</strong> is an annual, free, Red Hat-sponsored technology conference for users, operators, administrators, and contributors to Free and Open Source technologies.</p>
+
+               <!-- <p><strong>DevConf.cz Mini</strong> is a bi-annual, highly focused, local, in-person version of DevConf.cz. It offers an opportunity to return to our conference themes in a smaller setting and establishes a platform
+                   for the Czech Republic and EMEA based community to sync, share and hack on upstream projects together.</p>-->
+
+				<p>There is no admission or ticket charge for DevConf.CZ events. However, you are required to complete a free registration. Watch this site for updates about registration.</p>
+
+                <p>We are committed to fostering an open and welcoming environment at our conference.
+                   We set expectations for inclusive behavior through our code of conduct and media policies, and are prepared to enforce these.</p>
+			</div>
+	    </div>
+    </div>
+</section>
+
+<!--<section id="registration" class="mx-auto col-lg-11">
+    <div class="mt-4 py-5">
+    	<h1 class="mont-700 underline pb-4">Registration</h1>
+        
+        <link rel="stylesheet" type="text/css" href="https://pretix.eu/devconf/devconfcz2026/widget/v2.css" crossorigin>
+        <script type="text/javascript" src="https://pretix.eu/widget/v2.en.js" async crossorigin></script>
+
+        <pretix-widget event="https://pretix.eu/devconf/devconfcz2026/"></pretix-widget>
+        <noscript>
+           <div class="pretix-widget">
+               <div class="pretix-widget-info-message">
+                    JavaScript is disabled in your browser. To access our ticket shop without JavaScript, please <a target="_blank" rel="noopener" href="https://pretix.eu/devconf/devconfcz2026/">click here</a>.
+                </div>
+           </div>
+        </noscript>
+    </div>
+</section> -->
+
+<section id="themes" class="mx-auto col-lg-11">
+    <div class="row mt-4 py-5">
+    	<div class="row w-100">
+	    	<div class="h1 mx-5 mont-700">Conference Themes</div>
+    	</div>
+	    <div class="row py-4">
+		    <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-2 mx-auto">
+			    <ul class="timeline timeline-centered">
+							<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-600 timeline-title">Cloud, Hybrid Cloud, and Hyperscale Infrastructure</div>
+						<p class="timeline-description os-400">Topics around Kubernetes, containers, and virtualization that power anything from small private clouds to large data centers. It should focus on best practices for infrastructure management, operations at scale, high availability, and resource efficiency. Proposals are welcome on networking, storage, and security in multi-cloud and distributed environments.<br><br>Key words: <i>Containers, Kubernetes, KubeVirt, KVM, OpenStack, Cloud Native, Scalability, Availability, Data Center, Private Clouds, Public Cloud, Hybrid Cloud, Virtualization</i></p>
+					</div>
+					<div class="timeline-marker"></div>
+									<div class="timeline-content-right">
+						<div class="mont-600 timeline-title">Future Tech and Open Research</div>
+						<p class="timeline-description os-400">Track for all topics with the potential to be the next big thing. Novel solutions and technologies actively discussed, research still a few years from production. Showcasing your own original research as well as collaborations between the industry and academia are welcome. Novel topics in AI/ML, hybrid cloud, software development, productivity, networking, edge, sustainability, security, reliability and other areas.<br><br>Key words: <i>Emerging Technologies, Applied Research, Prototypes, Proof of Concepts, User Studies, Data Insights</i></p>
+					</div>
+				</li>
+								<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-600 timeline-title">Artificial Intelligence and Data Science</div>
+						<p class="timeline-description os-400">Topic for artificial intelligence, statistics and machine learning, both theory and practice. Do you have an AI application to demonstrate, novel architecture, performance comparison or a data processing pipeline you are really proud of? How about deep diving into model training and inference, integrating with agentic AI frameworks, and scaling workflows with MLOps? This is the track for you. The only requirement is that artificial intelligence must be central to it.<br><br>Key words: <i>Open Data Hub, LLM, PyTorch, llama.cpp, vLLM, llm-d, KServe, Kubeflow</i></p>
+					</div>
+					<div class="timeline-marker"></div>
+									<div class="timeline-content-right">
+						<div class="mont-600 timeline-title">Linux Distributions, Operating Systems, and Edge</div>
+						<p class="timeline-description os-400">Everything related to Linux-based operating systems with a focus on Fedora Linux, CentOS Stream, CoreOS, and Silverblue. Topics can include the operating system or new technologies and features such as bootc, immutable systems, dnf5, Konflux, edge, and automotive. All levels are welcome, from kernel and hardware, through operating system components and desktop news. Tools and processes for building distributions are also a great fit.<br><br>Key words: <i>Operating Systems, Kernel, Edge, Automotive/SDV (software defined vehicle), Linux, dnf5, RPM, bootc, Project Hummingbird, Konflux, RISC-V</i></p>
+					</div>
+				</li>
+								<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-600 timeline-title">Programming and Application Development</div>
+						<p class="timeline-description os-400">Topics around programming, programming languages and language development, programming tools, libraries and application services, and development platforms. Also covers porting applications between platforms or architectures.<br><br>Key words: <i>Programming, Python, Java, JavaScript, TypeScript, Rust, Golang, IDE, Cursor, App Development, Web App, Mobile, Developer Tools, Porting, AI-assisted Coding</i></p>
+					</div>
+					<div class="timeline-marker"></div>
+									<div class="timeline-content-right">
+						<div class="mont-600 timeline-title">DevOps, CI/CD, and Automation</div>
+						<p class="timeline-description os-400">Topics related to DevOps culture and CALMS (Communication/Culture/Collaboration, Automation, Lean, Measurement/Metrics, Sharing); adding continuous integration, continuous delivery, and continuous deployment (CI/CD) into workflows; defining a release pipeline; automating developer environments; and building environments from developer sandboxes to production. This track covers ensuring application uptime, continuous application development, and agile development practices. It also includes discussions on Site Reliability Engineering (SRE) tools and best practices, chaos experiments, and testing strategies in integrated environments. Additional focus areas include embedded intelligence in products for automation and the role of AI in test failure analysis, test generation, and test selection.<br><br>Key words: <i>CALMS, Automation, DevOps, Ansible, AIOps, CI/CD, Tekton, ArgoCD, SRE, Chaos Engineering, Monitoring, Observability</i></p>
+					</div>
+				</li>
+								<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-600 timeline-title">Security and Compliance</div>
+						<p class="timeline-description os-400">This track focuses on the critical intersection of security, compliance, and the open source ecosystem. We explore the integration of security into the entire software development lifecycle, integrating "Shift Everywhere" principles, securing the software supply chain, and managing compliance in complex deployments. We’re happy to consider variety of security topics, but we specifically invite proposals that address implementation challenges of the Zero-Trust, Post-Quantum Cryptography (PQC), Confidential Computing, and the dual role of AI/ML in both security automation and new threat vectors. Beyond the code, this track examines the governance of open source security - including the role of OSPOs, security education, and community advocacy - as well as the impact of evolving global legislation affecting the open source ecosystem.<br><br>Key words: <i>Remote Attestation, Policy as Code, PQC, Identity Management, MFA, Zero Trust, Data Governance, CRA, DORA, NIS2, Confidential Computing, SBOM, SDLC, Vulnerability Management, Configuration Compliance, FIPS, Auditing, Supply Chain Security, OSPOs, AI Trust and AI Safety, Open Source Security Advocacy, Licensing</i></p>
+					</div>
+					<div class="timeline-marker"></div>
+									<div class="timeline-content-right">
+						<div class="mont-600 timeline-title">Agility and Leading Principles</div>
+						<p class="timeline-description os-400">This track explores how agility is driven by influence and effective approaches at every level. We invite contributors bringing best practices that support resilient team cultures, foster psychological safety, and build effective high-performing teams. Learn how to align lean and agile practices with strategic thinking to drive innovation and unlock your team’s full potential.<br><br>Key words: <i>Agile Transformation, Business Agility, Lean Principles, Continuous Improvement, Agile Leadership, Scaling Agile, Agile Coaching, Culture, Collaboration, Facilitation, Mentorship, Product Ownership, Change Management, Decision Making, Strategic Thinking, Customer Feedback, Talent Development</i></p>
+					</div>
+				</li>
+								<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-600 timeline-title">Open Track</div>
+						<p class="timeline-description os-400">Open to any other topics that don't fall under the listed themes but relate to open source and communities! We welcome open source student projects, presentations of diploma and bachelor degree theses, and ideas for new projects. We would also like to see topics that relate to open source community leadership, examples of open source initiatives in the public sector, and topics on the journey from zero to a successful open source project. Other topics can include UX and design topics, and open hardware.<br><br>Key words: <i>Student Projects, Diploma Theses, Bachelor Theses, New Project Proposals, Open Source Community, Community Building, Contributor Experience, Open Source Governance, Project Health, Academic Open Source, Public Sector Open Source, Open Source in Education, UX, UI, Design, Design Thinking, Hacking</i></p>
+					</div>
+					<div class="timeline-marker"></div>
+				</div></li>			</ul>
+		</div>
+	</div>
+</section>
+
+<section id="news" class="mx-auto py-5 col-lg-11">
+	<div class="row mt-4">
+		<div class="h1 mx-5 mont-700">News</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-6 px-5 mx-auto">
+             <p class="os-400"><span class="h6 mont-700">Apr 15, 2026</span> Registration is open.</p>
+             <p class="os-400"><span class="h6 mont-700">Mar 1, 2026</span> Deadline to submit proposals is extended to March 8, 2026</p>
+             <p class="os-400"><span class="h6 mont-700">Dec 15, 2025</span> Call for Proposals (CfP) is open, submit your proposals by March 1, 2026</p>
+             <p class="os-400"><span class="h6 mont-700">Dec 15, 2025</span> DevConf.CZ 2026 date announced: June 18-19, 2026</p>
+             <p class="os-400"><span class="h6 mont-700">Jun 26, 2025</span> Session recordings are published.</p>
+
+		</div>
+		<div class="col-lg-4 px-5 mx-auto">
+		        <form action="https://devconf.us5.list-manage.com/subscribe/post?u=ad2f341fc41f78b232f2765e6&id=acab0ee8de" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate px-2 py-3 bordered text-center" target="_blank" novalidate>
+                    <div class="h3 mont-700">Sign up for newsletter</div>
+                    <div class="mc-field-group">
+                        <input type="email" value="" name="EMAIL" class="required email p-2" id="mce-EMAIL" placeholder="Email address">
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_25582686a9fc051afd5453557_189578c854" tabindex="-1" value=""></div>
+                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="px-4 py-2 mont-400">
+                    </div>
+                </div>
+            </form>
+		</div>
+	</div>
+</section>
+<!--	<div class="row">
+		<div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-2 mx-auto">
+			This is the list of booths you can expect at DevConf.CZ this year. Get ready for some stickers and so much more!
+			<ul class="timeline timeline-centered pt-5">
+							<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-600 timeline-title">Base48</div>
+						<p class="timeline-description os-400"></p>
+					</div>
+					<div class="timeline-marker"></div>
+									<div class="timeline-content-right">
+						<div class="mont-600 timeline-title">Ceph</div>
+						<p class="timeline-description os-400"></p>
+					</div>
+				</li>
+								<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-600 timeline-title">Fedora</div>
+						<p class="timeline-description os-400"></p>
+					</div>
+					<div class="timeline-marker"></div>
+									<div class="timeline-content-right">
+						<div class="mont-600 timeline-title">Foreman</div>
+						<p class="timeline-description os-400">Friday and Saturday only</p>
+					</div>
+				</li>
+								<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-600 timeline-title">Integration Platform for Cloud-Native Application Development</div>
+						<p class="timeline-description os-400">Friday and Saturday only</p>
+					</div>
+					<div class="timeline-marker"></div>
+									<div class="timeline-content-right">
+						<div class="mont-600 timeline-title">Kubernetes OKD</div>
+						<p class="timeline-description os-400"></p>
+					</div>
+				</li>
+								<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-600 timeline-title">Kubernetes native CI/CD with Tekton pipelines</div>
+						<p class="timeline-description os-400">Friday and Saturday only</p>
+					</div>
+					<div class="timeline-marker"></div>
+									<div class="timeline-content-right">
+						<div class="mont-600 timeline-title">Learn to make games with CircuitPython </div>
+						<p class="timeline-description os-400">Saturday only</p>
+					</div>
+				</li>
+								<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-600 timeline-title">ManageIQ/Ansible</div>
+						<p class="timeline-description os-400">Friday and Saturday only</p>
+					</div>
+					<div class="timeline-marker"></div>
+									<div class="timeline-content-right">
+						<div class="mont-600 timeline-title">Mozilla.cz</div>
+						<p class="timeline-description os-400">Saturday and Sunday only</p>
+					</div>
+				</li>
+								<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-600 timeline-title">Prometheus</div>
+						<p class="timeline-description os-400">Friday and Saturday only</p>
+					</div>
+					<div class="timeline-marker"></div>
+									<div class="timeline-content-right">
+						<div class="mont-600 timeline-title">Pulp</div>
+						<p class="timeline-description os-400"></p>
+					</div>
+				</li>
+								<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-600 timeline-title">Python</div>
+						<p class="timeline-description os-400"></p>
+					</div>
+					<div class="timeline-marker"></div>
+									<div class="timeline-content-right">
+						<div class="mont-600 timeline-title">RDO Project</div>
+						<p class="timeline-description os-400"></p>
+					</div>
+				</li>
+								<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-600 timeline-title">Red Hat Brno 3D print and open hardware lab </div>
+						<p class="timeline-description os-400"></p>
+					</div>
+					<div class="timeline-marker"></div>
+									<div class="timeline-content-right">
+						<div class="mont-600 timeline-title">Red Hat Neurodiversity Community</div>
+						<p class="timeline-description os-400"></p>
+					</div>
+				</li>
+								<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-600 timeline-title">Red Hat Research</div>
+						<p class="timeline-description os-400">Friday and Saturday only</p>
+					</div>
+					<div class="timeline-marker"></div>
+									<div class="timeline-content-right">
+						<div class="mont-600 timeline-title">Red Hat Talent Acquisition</div>
+						<p class="timeline-description os-400"></p>
+					</div>
+				</li>
+								<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-600 timeline-title">The oVirt Project</div>
+						<p class="timeline-description os-400"></p>
+					</div>
+					<div class="timeline-marker"></div>
+									<div class="timeline-content-right">
+						<div class="mont-600 timeline-title">The search for usable documentation</div>
+						<p class="timeline-description os-400"></p>
+					</div>
+				</li>
+								<li class="timeline-item">
+					<div class="timeline-content-left">
+						<div class="mont-600 timeline-title">Ubuntu</div>
+						<p class="timeline-description os-400"></p>
+					</div>
+					<div class="timeline-marker"></div>
+									<div class="timeline-content-right">
+						<div class="mont-600 timeline-title">UXD/Patternfly</div>
+						<p class="timeline-description os-400">Friday and Saturday only</p>
+					</div>
+				</li>
+							</ul>
+		</div>
+	</div>
+</section> -->
+<section id="travel" class="mx-auto py-5 col-lg-11">
+	<div class="row">
+		<div class="mont-700 h1 underline position-relative mx-5 pb-4">How to get there?</div>
+	</div>
+	<div class="row py-4">
+		<div class="col-xl-3 container card-body my-2 ml-xl-auto mr-xl-3" style="background: #ada3ff">
+			<div class="row h-100 align-items-center">
+				<div class="col text-center">
+					<img src="/assets/images/travel-around.svg" class="my-4" alt="Getting around icon" style="height: 74px">
+					<h2 class="mont-700 mb-0">Getting around Brno</h2>
+					<div class="card-text os-400 pt-3">Brno has a 24 hour public transit system and the site is accessible by car.</div>
+					<p class="card-text my-5">
+						<a href="/cz/aroundbrno" class="border p-3 mont-700">MORE INFORMATION</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xl-3 container card-body my-2 mx-xl-3" style="background: #4a4a7e">
+			<div class="row h-100 align-items-center">
+				<div class="col text-center">
+					<img src="/assets/images/way-to.svg" class="my-4" alt="Getting to icon" style="height: 74px">
+					<h2 class="mont-700 pb-4">Getting to Brno</h2>
+					<div class="card-text os-400 pt-4">Brno is easily accessible by car, bus, train and plane.</div>
+					<p class="card-text my-5">
+						<a href="/cz/tobrno" class="border p-3 mont-700">MORE INFORMATION</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xl-3 container card-body my-2 ml-xl-3 mr-xl-auto" style="background: #8e83e4">
+			<div class="row h-100 align-items-center">
+				<div class="col text-center">
+					<img src="/assets/images/hotel.svg" class="my-4" alt="Hotel icon" style="height: 74px">
+					<h2 class="mont-700 pb-4">Hotels</h2>
+					<div class="card-text os-400 pt-4">Need a place to stay? We suggest these properties.</div>
+					<p class="card-text my-5">
+						<a href="/cz/hotels" class="border p-3 mont-700">MORE INFORMATION</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="col-12 px-0 mt-5" style="height: 450px;" id="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5828.8794114720895!2d16.593681273902156!3d49.223568069664026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471294099dc06bbb%3A0xbfcf161b01a48b0d!2sFaculty%20of%20Information%20Technology%2C%20Brno%20University%20of%20Technology!5e0!3m2!1sen!2scz!4v1569001018524!5m2!1sen!2scz" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</section>
+<a rel="me" href="https://fosstodon.org/@devconf_cz"></a>
+        <footer class="background-gray">
+	<div class="row py-5 w-100 mx-auto">
+		<div class="mx-auto col-lg-11">
+			<div class="row px-5">
+				<div class="col-lg-7">
+					<div class="h5 mont-600">Sponsored by</div>
+					<a href="https://redhat.com" target="_blank"><img class="support-logo pr-3 py-3" src="/assets/images/support/logo-redhat.svg"></a>
+<a href="https://getfedora.org" target="_blank"><img class="support-logo pr-3 py-3" src="/assets/images/support/logo-fedora.svg"></a>
+<a href="https://www.fit.vut.cz" target="_blank"><img class="support-logo pr-3 py-3" src="/assets/images/support/logo-fit-vut.svg"></a>
+					</div>
+					<div class="col-lg-5 links">
+						<div class="row">
+						<a class="col-md-6 col-12" target="_blank" href="/coc">Code of Conduct</a>
+						<a class="col-md-6 col-12" target="_blank" href="/participation-agreement">Participation Agreement</a>
+						<a class="col-md-6 col-12" target="_blank" href="/media-policy">Media Policy</a>
+						<a class="col-md-6 col-12" target="_blank" href="/privacy-statement">Privacy Statement</a>
+						<a class="col-md-6 col-12" target="_blank" href="/assets/files/devconf-brand-guidelines-v1.pdf">Brand Guidelines</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row px-5 py-3 border-top w-100 mx-auto">
+			<div class="col-lg-11 mx-auto copyright">
+				Copyleft 2026 Red Hat. Some rights reserved.
+			</div>
+		</div>
+	</footer>
+	<div id="cookie">
+		<div id="cookie-wrapper">
+			<div id="cookie-text">
+			 We use cookies on our websites to deliver our online services. Details about how we use cookies and how you may disable them are
+			 set in our <a href="/privacy-statement" target="_blank">Privacy Statement</a>. By using this website you agree to our use of cookies.
+			</div>
+			<div id="cookie-close">&times;</div>
+		</div>	
+	</div>
+	<script>
+		var cookie = document.cookie.split('cwa=');
+		if(1 < cookie.length){
+			$("#cookie").remove();
+		}
+
+		$("#cookie-close").click(function(){
+			var d = new Date();
+			d.setTime(d.getTime() + (364*24*60*60*1000));
+			var expires = "expires=" + d.toGMTString();
+			document.cookie = "cwa=accept;" + expires + ";path=/";
+			$("#cookie").fadeOut("slow", function (){
+				$("#cookie").remove();
+			});
+		});
+	</script>
+    </body>
+</html>

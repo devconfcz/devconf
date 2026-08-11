@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="816px" viewBox="0 0 1440 816" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>background</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1440" height="816"></rect>
+        <linearGradient x1="0%" y1="4.85897624%" x2="75.2643039%" y2="72.1429535%" id="linearGradient-3">
+            <stop stop-color="#34495E" offset="0%"></stop>
+            <stop stop-color="#A551FF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M655,1321 C1024.06857,1853.85293 2005.46542,907.592749 1324.05145,662.025723 C642.637476,416.458698 1027.65243,5.68434189e-13 662.025723,5.68434189e-13 C296.399012,5.68434189e-13 0,296.399012 0,662.025723 C0,1027.65243 285.93143,788.147071 655,1321 Z" id="path-4"></path>
+    </defs>
+    <g id="background" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="1440" height="816"></rect>
+        <g id="Group-3">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Rectangle" fill="#8E83E4" xlink:href="#path-1"></use>
+            <g id="Group-2" mask="url(#mask-2)">
+                <g transform="translate(352.000000, -297.000000)">
+                    <mask id="mask-5" fill="white">
+                        <use xlink:href="#path-4"></use>
+                    </mask>
+                    <use id="Oval" stroke="none" fill="url(#linearGradient-3)" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    <path d="M521.3,204 C620.100494,204 707.416287,222.849811 783.25,260.55 C859.083713,298.250188 918.016457,351.332991 960.05,419.8 C1002.08354,488.267009 1023.1,567.999545 1023.1,659 C1023.1,750.000455 1002.08354,829.732991 960.05,898.2 C918.016457,966.667009 859.083713,1019.74981 783.25,1057.45 C707.416287,1095.15019 620.100494,1114 521.3,1114 L107.9,1114 L107.9,204 L521.3,204 Z M510.9,376.9 L318.5,376.9 L318.5,941.1 L510.9,941.1 C601.900455,941.1 674.483062,915.750253 728.65,865.05 C782.816937,814.349747 809.9,745.6671 809.9,659 C809.9,572.3329 782.816937,503.650253 728.65,452.95 C674.483062,402.249747 601.900455,376.9 510.9,376.9 L510.9,376.9 Z" id="D" stroke="none" fill="#34495E" fill-rule="nonzero" opacity="0.329822359" mask="url(#mask-5)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

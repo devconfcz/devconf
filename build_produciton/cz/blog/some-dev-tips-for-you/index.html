@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="">
+
+        <meta http-equiv="X-Frame-Options" content="DENY">        
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+    	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="fediverse:creator" content="@devconf_cz@fosstodon.org">
+        <meta property="og:title" content="Some dev tips for you | DevConf.CZ Blog"/>
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="/cz/blog/some-dev-tips-for-you"/>
+        <meta property="og:description" content="" />
+		<meta property="og:image" content="https://devconf.info/assets/images/blog/interviews-devconf-cz.png">
+	<meta property="twitter:image" content="https://devconf.info/assets/images/blog/interviews-devconf-cz.png">
+	
+        <title>Some dev tips for you | DevConf.CZ Blog</title>
+
+        <meta name="google-site-verification" content="IXOh3zMePCSVZkCqKQr8dZVFfpQgPG5Og-ZpULr8MJ4" />
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7K9TNM6TTH"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-7K9TNM6TTH');
+        </script>
+	    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	    <link rel="stylesheet" href="/assets/build/css/backtop.css?id=7076fe4b35b5b82fda0b9717e99fc926">
+	    <link rel="stylesheet" href="/assets/build/css/subsite.css?id=8e00381415deed94794e823c3cd5777b">
+<link rel="stylesheet" href="/assets/build/css/blogsite.css?id=830a8846190b2e79b436b89253c2d131">
+       
+            <script src="/assets/build/js/main.js?id=44962707bf1542b10f4ba620769b2d88"></script>
+	    <link rel="stylesheet" href="/assets/build/css/cookie.css?id=329e24dcc9507a43549556261d29a138">
+
+	    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	    <link rel="manifest" href="/manifest.json">
+	    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#512954">
+        <link href="/cz/blog/feed.atom" type="application/atom+xml" rel="alternate" title="DevConf.CZ Blog Atom Feed">
+
+                    <!-- Insert analytics code here -->
+        
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=64c3495c1e541d4ab158472ea81fb6d6">
+    </head>
+
+    <body>
+        <a href="#" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+        <header class="masthead">
+	        <nav class="mb-1 navbar navbar-expand-lg navbar-dark fixed-top masthead">
+		        <span class="nav-brand"><a href="/cz"><img src="/assets/images/devconf-logo-cz-reverse.svg"></a></span>
+		        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMobile"
+		            aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
+		            <span class="navbar-toggler-icon"></span>
+		        </button>
+		        <div class="collapse navbar-collapse" id="navbarMobile">
+			        <ul class="navbar-nav ml-auto pr-5">
+				        <li class="nav-item active px-3">
+					        <a href="/cz/" class="nav-link">Home</a>
+				        </li>
+        				<li class="nav-item underline active px-3">
+					        <a href="/cz/blog" class="nav-link">Blog</a>
+				        </li>
+				        <li class="nav-item active px-3">
+					        <a href="/cz/faq" class="nav-link">FAQ</a>
+				        </li>
+				        <li class="nav-item active px-3">
+					        <a href="/coc" target="_blank" class="nav-link">Policies</a>
+				        </li>
+			        </ul>
+		        </div>
+	        </nav>
+        </header>
+
+        <section class="mx-auto mt-5 pt-5 pb-5 col-lg-6">
+	<div class="row px-3">
+            <img src="/assets/images/blog/interviews-devconf-cz.png" alt="Some dev tips for you cover image" class="w-100 mb-2">
+    
+    <div class="h1 mt-3 mr-5 mont-700 underline position-relative">Some dev tips for you</div>
+
+    <p class="mont-600 mt-3 mb-4">Tomas Tomecek  •  July 13, 2023
+    
+    
+    | <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script><script type="IN/Share" data-url=""></script>
+
+    </p>
+
+    <div class="os-400">
+        <p>Session: <a href="https://devconfcz2023.sched.com/event/1MYeN/inception-dev-tips-marketplace">Inception: dev tips marketplace</a></p>
+<p>This session was a lot of fun! Instead of creating slides before and presenting them at the conference, the usual, together with the attendees, we created content during this talk. I promised I’d share the results with you. Let’s get into it!</p>
+<p>The site that made all of this possible is <a href="http://menti.com">menti.com</a>. It's an interactive tool that helps you interact with the audience. I’d pop a question on the screen and people would answer from their phones or laptops. We would then engage in a discussion afterwards about the answers.</p>
+<p>We had five generic questions.</p>
+<p><img src="/assets/images/blog/ttomecek/q1.jpg" alt="Question 1" /></p>
+<p>We started with an intro question about programming languages. Interesting to see that it corresponds with 2022 StackOverflow’s developer survey: <a href="https://survey.stackoverflow.co/2022#section-most-loved-dreaded-and-wanted-programming-scripting-and-markup-languages">https://survey.stackoverflow.co/2022#section-most-loved-dreaded-and-wanted-programming-scripting-and-markup-languages</a>. I never heard of <a href="https://svelte.dev/">svelte</a>, so I had to find it out. Frontend technologies are moving so fast.</p>
+<p><img src="/assets/images/blog/ttomecek/q2.jpg" alt="Question 2" /></p>
+<p>Since I co-teach git together with my colleague Irina, my first big question had to be about git. Blame command being the biggest surprise for me. It’s a very useful tool to understand how some code grown over time and why. But I’m so happy to see that rebase -i (aka interactive rebase) being so big, that is my favorite git command that I think every engineer should know. Bisect process is also helpful when you are working in a bigger codebase with other developers and try to identify a commit that changed some behavior. The mention of worktree made me qustion the audience. The person who submitted it explained that he uses worktree when working on kernel and needs physical access to files from multiple branches at the same time.</p>
+<p><img src="/assets/images/blog/ttomecek/q3.jpg" alt="Question 3" /></p>
+<p>Being up to date with information is crucial. Reddit, youtube, mastodon and twitter seem to dominate the information space among devconf participants. I need to ask about concrete channels next time :)</p>
+<p><img src="/assets/images/blog/ttomecek/q4.jpg" alt="Question 4" /></p>
+<p>We, as developers, need tools to do our work. I am so pleased seeing many of them in this slide, some I use myself but many I don’t even know. </p>
+<p>During the presentation I asked about <a href="https://github.com/junegunn/fzf">fzf</a>, a command-line fuzzy finder. As the readme states “It's an interactive Unix filter for command-line that can be used with any list; files, command history, processes, hostnames, bookmarks, git commits, etc.”. Neat! </p>
+<p>Other tools from the center of the word cloud are <a href="https://github.com/akinomyoga/ble.sh">blesh</a> (line editor for bash), <a href="https://github.com/sharkdp/bat">bat</a> (cat on whale steroids), pycharm (popular python IDE), … </p>
+<p>What are your favorites?</p>
+<p><img src="/assets/images/blog/ttomecek/q5.jpg" alt="Question 5" /></p>
+<p><img src="/assets/images/blog/ttomecek/q6.jpg" alt="Question 6" /></p>
+<p>As we spend a lot of time in the command-line, using efficient aliases (shortcuts for commands) is essential. The wip alias was the MVP: print git branches that I worked on recently. Just amazing!</p>
+<h3>What's next?</h3>
+<p>Since this was the first time I ran this session, I wanna do it more! There weren't enough questions as we finished earlier. I expected we would spend more time discussing and exchanging ideas. One of the attendees (thank you and sorry I didn’t catch your name) recommended more focused questions - how to solve concrete problems that people tend to have. That would totally spark more interest.</p>
+<p>Thank you to everyone who attended and contributed and kudos to menti.com for being the platform where we could do this.</p>    </div>
+
+    <hr class="w-100">
+    
+    <div class="d-flex justify-content-between  w-100 mt-4">
+        <div class="d-inline-block">
+                            <a href="/cz/blog/submitting-a-proposal-for-devconf-cz-2023" title="Older Post: Submitting a proposal for DevConf.CZ 2023" class="mont-400 px-3 pagination">
+                    &LeftArrow; Submitting a proposal for DevConf.CZ 2023
+                </a>
+                    </div>
+
+        <div class="d-inline-block">
+                            <a href="/cz/blog/submitting-a-proposal-for-devconf-cz-2024" title="Newer Post: Submitting a proposal for DevConf.cz 2024" class="mont-400 px-3 pagination">
+                    Submitting a proposal for DevConf.cz 2024 &RightArrow;
+                </a>
+                    </div>
+    </div>
+    </div>
+</section>
+
+    <footer class="background-gray">
+	    <div class="row py-5 w-100 mx-auto">
+		    <div class="mx-auto col-lg-11">
+			    <div class="row px-5">
+				    <div class="col-lg-7">
+					    <div class="h5 mont-600">Sponsored by</div>
+       					<a href="https://redhat.com" target="_blank"><img class="support-logo pr-3 py-3" src="/assets/images/support/logo-redhat.svg"></a>
+<a href="https://getfedora.org" target="_blank"><img class="support-logo pr-3 py-3" src="/assets/images/support/logo-fedora.svg"></a>
+<a href="https://www.fit.vut.cz" target="_blank"><img class="support-logo pr-3 py-3" src="/assets/images/support/logo-fit-vut.svg"></a>
+				    </div>
+				    <div class="col-lg-5 links">
+					    <div class="row">
+					        <a class="col-md-6 col-12" target="_blank" href="/coc">Code of Conduct</a>
+					        <a class="col-md-6 col-12" target="_blank" href="/participation-agreement">Participation Agreement</a>
+					        <a class="col-md-6 col-12" target="_blank" href="/media-policy">Media Policy</a>
+					        <a class="col-md-6 col-12" target="_blank" href="/privacy-statement">Privacy Statement</a>
+					        <a class="col-md-6 col-12" target="_blank" href="/assets/files/devconf-brand-guidelines-v1.pdf">Brand Guidelines</a>
+					    </div>
+				    </div>
+			    </div>
+		    </div>
+	    </div>
+	    <div class="row px-5 py-3 border-top w-100 mx-auto">
+		    <div class="col-lg-11 mx-auto copyright">
+			    Copyleft 2026 Red Hat. Some rights reserved.
+		    </div>
+	    </div>
+	</footer>
+	<div id="cookie">
+		<div id="cookie-wrapper">
+			<div id="cookie-text">
+			 We use cookies on our websites to deliver our online services. Details about how we use cookies and how you may disable them are
+			 set in our <a href="/privacy-statement" target="_blank">Privacy Statement</a>. By using this website you agree to our use of cookies.
+			</div>
+			<div id="cookie-close">&times;</div>
+		</div>	
+	</div>
+	<script>
+		var cookie = document.cookie.split('cwa=');
+		if(1 < cookie.length){
+			$("#cookie").remove();
+		}
+
+		$("#cookie-close").click(function(){
+			var d = new Date();
+			d.setTime(d.getTime() + (364*24*60*60*1000));
+			var expires = "expires=" + d.toGMTString();
+			document.cookie = "cwa=accept;" + expires + ";path=/";
+			$("#cookie").fadeOut("slow", function (){
+				$("#cookie").remove();
+			});
+		});
+	</script>
+    </body>
+</html>

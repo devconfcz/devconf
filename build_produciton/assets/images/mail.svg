@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>mail</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="social-copy-3" transform="translate(0.000000, -335.000000)">
+            <g id="Group-4">
+                <g id="mail" transform="translate(0.000000, 335.000000)">
+                    <rect id="Rectangle-Copy-23" x="0" y="0" width="44" height="44"></rect>
+                    <circle id="Oval" stroke="#FFFFFF" stroke-width="2" cx="22" cy="22" r="21"></circle>
+                    <g id="black-envelope" transform="translate(11.500000, 14.500000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <path d="M1.65225,0.99825 L9.17775,6.95925 C9.519,7.22925 9.98925,7.34925 10.446,7.32675 C10.902,7.34925 11.37225,7.23 11.7135,6.95925 L19.239,0.99825 C19.842,0.5235 19.7055,0.13425 18.9405,0.13425 L10.44675,0.13425 L1.953,0.13425 C1.18725,0.13425 1.05075,0.5235 1.65225,0.99825 Z" id="Path"></path>
+                        <path d="M19.78275,2.571 L11.559,8.81475 C11.2515,9.04575 10.84875,9.15825 10.4475,9.153 C10.0455,9.15825 9.64275,9.045 9.33525,8.81475 L1.11,2.571 C0.4995,2.10825 0,2.3565 0,3.12225 L0,13.3665 C0,14.13225 0.627,14.75925 1.39275,14.75925 L10.446,14.75925 L19.5,14.75925 C20.26575,14.75925 20.89275,14.13225 20.89275,13.3665 L20.89275,3.12225 C20.89275,2.3565 20.39325,2.10825 19.78275,2.571 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
