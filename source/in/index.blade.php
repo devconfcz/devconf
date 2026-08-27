@@ -74,9 +74,9 @@
 			<div class="heading-text mont-400 h5 pb-5">
 				open source community conference
 			</div>
-			<!--<div class="heading-text mont-700 h1 pt-3">
-				February 13 - 14, 2026
-			</div> -->
+			<div class="heading-text mont-700 h1 pt-3">
+				February 26 - 27, 2027
+			</div>
 			<div class="heading-text mont-700 h4">
 				<i class="fa fa-map-marker"></i> MIT World Peace University (MIT WPU), Pune
 			</div>
@@ -85,12 +85,12 @@
             </div>
             <div class="heading-text mt-2">
                 <a href="https://photos.app.goo.gl/me2XZqLYQ3LGKgTDA" target="_blank" class="nav-link local border p-3 h2 mont-700" style="border-width: 3px !important;">2025 PHOTOS</a>
-            </div>-->
+            </div>
             <div class="heading-text mont-400 h5 pb-2 pb-lg-2">
                  Thank you for joining us at DevConf.IN 2026!<br>
                  You can now watch the <a target="_blank" style="color: white; text-decoration: underline;" href="https://www.youtube.com/playlist?list=PLU1vS0speL2Z6ye8yTW9lWG-GlairkWA0">session recordings</a>, browse the <a target="_blank" style="color: white; text-decoration: underline;" href="https://pretalx.devconf.info/devconf-in-2026/schedule/">event schedule</a> and <a target="_blank" style="color: white; text-decoration: underline;" href="https://photos.google.com/share/AF1QipMtlpwkyo5cSjd7EObD6PiETPAW5_VXFcy-POYdCX3F4an6F_XpBO0Kq_btNEoU5g?key=VUZ5MEVPQU5JM3Z4S2pHZlRkV2cyZXViSk1WSzZn">event photo album</a>.<br>
                  We look forward to seeing you again in 2027!
-            </div>
+            </div>-->
            
 		</div>
 	</div>
@@ -147,11 +147,13 @@ A valid ticket is required for entry. If you don't have one, please note that we
 			<?php
 
 				$topics = array(
-						array("name"=>"AI, Data Science, and Emerging Tech","description"=>"The latest advancements in artificial intelligence, machine learning, and data science, along with cutting-edge emerging technologies shaping the future.<br><i>AI/ML, Data Science, Deep Learning, Neural Networks, Data Analytics, Natural Language Processing (NLP), Quantum Computing, Blockchain, AR/VR, Emerging Technologies</i>"),
-						array("name"=>"Cloud, Edge, and Sustainable Computing","description"=>"Innovations in cloud computing, edge technologies, and platform engineering that drive scalability, efficiency, and sustainability across distributed systems.<br><i>Cloud Native, Kubernetes, Edge Computing, Hybrid Cloud, OpenShift, Infrastructure as Code (IaC), Containers, DevOps, Microservices, Platform Engineering, Green Computing, Sustainability</i>"),
-						array("name"=>"Cybersecurity and Compliance","description"=>"Best practices and technologies for ensuring secure, resilient, and compliant systems, with a focus on data sovereignty.<br><i>Cybersecurity, Zero Trust, Encryption, Vulnerability Management, Cloud Security, Privacy, Governance, Compliance, Data Sovereignty, Threat Modeling</i>"),
-						array("name"=>"User Experience and Design Engineering", "description"=>"The intersection of user experience (UX) and design engineering, focusing on how user interface (UI) and design thinking influence product development and user-centered solutions.<br><i>UX/UI Design, Design Thinking, Human-Centered Design, Accessibility, Frontend Development, Prototyping, Interaction Design, Design Systems</i>"),
-						array("name"=>"Open Track","description"=>"A flexible track for community members to present topics beyond the listed categories. This is an opportunity to introduce diverse subjects that drive open source innovation, collaboration, leadership, and technological advancement.<br><i>Open Source, OpenStack, Linux, Collaborative Development, Git, Community Building, Leadership, Governance, FOSS, Ecosystem Development, Experimental Projects, Cross-disciplinary Topics, Tech for Good, Unique Innovations</i>")
+						array("name"=>"Enterprise AI and MLOps","description"=>"Advancements in open-weight AI models, agentic workflows, model serving, and enterprise MLOps platforms shaping the future of artificial intelligence, machine learning, and data science.<br><i>AI/ML, Data Science, MLOps, LLM Inference, vLLM, Generative AI, OpenShift AI, RHEL AI, Kubeflow, Neural Networks, Agentic Workflows, Model Lifecycle Management, Feature Stores, llm-d, MLFlow, PyTorch, Kubernetes</i>"),
+						array("name"=>"Software Supply Chain Security & Agentic AppSec","description"=>"Best practices and technologies for securing software pipelines, agentic vulnerability remediation, dependency management at AI speed, encryption, xBOMs, non-human identities, and zero-trust architectures.<br><i>Software Supply Chain Security, Vulnerability Management, Lightwell, SBOM, Zero Trust, Cloud Security, Encryption, Privacy, Compliance, Threat Modeling, DevSecOps Pipelines</i>"),
+						array("name"=>"Data Sovereignty and Sovereign AI","description"=>"Technologies and frameworks focused on localized data residency, privacy compliance, data governance, and secure local execution of AI models and enterprise workloads.<br><i>Data Sovereignty, Sovereign AI, Sovereign Cloud, Confidential Computing, Data Residency, Data Governance, Privacy, Compliance, Local Model Deployment, Data Security</i>"),
+						array("name"=>"Engineering Operations & IT Automation", "description"=>"Intelligent, AI-driven IT operations, systems management, and automation across the ecosystem, integrating SRE, IT operations, observability, monitoring, and security across distributed environments.<br><i>Engineering Operations, IT Operations, AIOps, Ansible, Automation, SRE, DevOps, DevSecOps, Testing and Quality Assurance, Observability, Telemetry, Tracing, IT Infrastructure Monitoring, Incident Automation, Infrastructure as Code (IaC), Configuration Management</i>"),
+						array("name"=>"Modern Infrastructure, Edge & Virtualization","description"=>"Building, operating, and scaling hybrid cloud systems across container orchestration, edge fleet management, infrastructure modernization, and virtualization migration strategies.<br><i>Containers, Kubernetes, Edge Computing, Hybrid Cloud Systems, OpenShift, OpenShift Virtualization, KubeVirt, Infrastructure Modernization, Sustainable Computing, Green IT, Virtualization Migration, Microservices, Image-based Operating Systems, New Linux distribution techniques</i>"),
+						array("name"=>"Platform Engineering and Developer Experience","description"=>"Innovations in building internal developer platforms, modern CI/CD, developer tooling, and user experience (UX) engineering to streamline product development and developer workflows.<br><i>Platform Engineering, Developer Experience (DevEx), Developer Tooling, Internal Developer Platforms (IDP), UX/UI Design, Design Thinking, Prototyping, Accessibility</i>"),
+						array("name"=>"Open Track","description"=>"A flexible track for community members to introduce diverse subjects driving open-source innovation, low-level systems engineering, upstream collaboration, and unique technological advancements.<br><i>Open Source, Open Hardware, Linux, Systems Programming, Programming Languages, Rust, Upstream Governance, FOSS, Collaborative Development, Community Building, Tech for Good, Unique Innovations, Academic Projects</i>")
 					  );
 
 				foreach($topics as $i=>$t){
@@ -246,10 +248,9 @@ A valid ticket is required for entry. If you don't have one, please note that we
 	    </div>
 	    <div class="row">
 		    <div class="col-lg-6 px-5 mx-auto">
-                 <p class="os-400"><span class="h6 mont-700">Feb 13 - 14, 20256</span> DevConf.IN 2026 (<a href="https://www.youtube.com/playlist?list=PLU1vS0speL2Z6ye8yTW9lWG-GlairkWA0" target="_blank">Session Recordings</a>, <a href="https://pretalx.devconf.info/devconf-in-2026/schedule/" target="_blank">Schedule</a>, <a href="https://photos.google.com/share/AF1QipMtlpwkyo5cSjd7EObD6PiETPAW5_VXFcy-POYdCX3F4an6F_XpBO0Kq_btNEoU5g?key=VUZ5MEVPQU5JM3Z4S2pHZlRkV2cyZXViSk1WSzZn" target="_blank">Conference Photos</a>)</p><p class="os-400"><span class="h6 mont-700">Jan 15, 2026</span> Schedule is published <a href="/in/schedule" target="_blank">here</a>.</p>
-                 <p class="os-400"><span class="h6 mont-700">Dec 16, 2025</span> Registration is open.</p>
-                 <p class="os-400"><span class="h6 mont-700">Oct 3, 2025</span> Call for Proposals (CfP) is open, submit your  proposals by November 21, 2025.</p>
-                 <p class="os-400"><span class="h6 mont-700">Sep 20, 2025</span> DevConf.IN 2026 dates announced: February 12-13, 2026.</p>
+                 <p class="os-400"><span class="h6 mont-700">Aug 27, 2026</span> DevConf.IN 2027 dates announced: February 26-27, 2027.</p>
+                 <p class="os-400"><span class="h6 mont-700">Feb 13 - 14, 2026</span> DevConf.IN 2026 (<a href="https://www.youtube.com/playlist?list=PLU1vS0speL2Z6ye8yTW9lWG-GlairkWA0" target="_blank">Session Recordings</a>, <a href="https://pretalx.devconf.info/devconf-in-2026/schedule/" target="_blank">Schedule</a>, <a href="https://photos.google.com/share/AF1QipMtlpwkyo5cSjd7EObD6PiETPAW5_VXFcy-POYdCX3F4an6F_XpBO0Kq_btNEoU5g?key=VUZ5MEVPQU5JM3Z4S2pHZlRkV2cyZXViSk1WSzZn" target="_blank">Conference Photos</a>)</p>
+                 
                  
                  
 		    </div>
