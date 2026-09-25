@@ -120,10 +120,10 @@
 <script>
     // Define an array of YouTube video URLs
     const videoUrls = [
-        'https://www.youtube.com/watch?v=4yRIGcU6LkQ',
-        'https://www.youtube.com/watch?v=UTBbXB-XajA',
-        'https://www.youtube.com/watch?v=Sx4r3zmezrE',
-        'https://www.youtube.com/watch?v=wBda6wMuLaQ',
+        'https://www.youtube.com/watch?v=EBbewMrrSjo',
+        'https://www.youtube.com/watch?v=KuEqfmalQLM',
+        'https://www.youtube.com/watch?v=pPUI3h26l_k',
+        'https://www.youtube.com/watch?v=cIO61dc0r58',
     ];
 
     // Array to store the player instances
