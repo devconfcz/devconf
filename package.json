@@ -20,7 +20,7 @@
         "sass": "^1.30.0",
         "sass-loader": "^7.1.0",
         "vue-template-compiler": "^2.6.12",
-        "webpack": "^5.75.0",
+        "webpack": "^5.104.1",
         "yargs": "^17.7.1"
     },
     "dependencies": {
