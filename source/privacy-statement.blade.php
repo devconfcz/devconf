@@ -42,7 +42,7 @@
 				<div class="mx-5  mt-4 os-400">
 					<h3 class="mont-700 mt-3">Scope of this Privacy Statement</h3>
 		     		        <p>
-					 Red Hat, Inc. and its affiliated companies and subsidiaries involved in organizing DevConf.info
+					 Red Hat, LLC. and its affiliated companies and subsidiaries involved in organizing DevConf.info
 					 events globally (collectively, “Red Hat”) respect your privacy. This Privacy Statement applies
 					 to personal data collected by Red Hat through the devconf.info website, and other websites
 					 which we operate and on which we post a direct link to this Privacy Statement. For some websites
@@ -390,7 +390,7 @@
 					</p>
 
 					<p>
-					  Red Hat, Inc.
+					  Red Hat, LLC
 					  <br />
 					  Corporate Legal Group
 					  <br />
@@ -413,7 +413,7 @@
 					  Cork, Ireland
 					</p>
 
-					<p class="text-right"><i>Last Updated: June 2, 2020</i></p>
+					<p class="text-right"><i>Last Updated: October 18, 2026</i></p>
 				</div>
 			</div>
 		</div>
