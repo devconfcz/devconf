@@ -40,9 +40,9 @@
 
 			<div class="row">
 				<div class="mx-5  mt-4 os-400">
-					<h3 class="mont-700 mt-3">Indemnity Clause</h3>
+					<!--<h3 class="mont-700 mt-3">Indemnity Clause</h3>
                     <p>DevConf is committed to the health and safety of our speakers, volunteers and attendees. All attendees will be expected to follow DevConf, 
-                    venue and local guidelines regarding health and safety. Please note that all protocols are subject to change.</p>
+                    venue and local guidelines regarding health and safety. Please note that all protocols are subject to change.</p>-->
 
 					<h3 class="mont-700 mt-5">Compensation</h3>
 					<p>I understand that DevConf organizers are under no obligation to compensate me for my participation in DevConf events in any way!</p>
@@ -81,9 +81,9 @@
                     <h3 class="mont-700 mt-5">Session Recording</h3>
 					<p>I have read our Media Policy and understand that my session will be recorded and made publicly available following the conference unless otherwise agreed to with the event organizers, in advance.</p>
 
-					<p class="mt-5 text-right"><i>Thank you to Linux Fest NorthWest, Open Source Bridge and DrupalCon, from whom this policy was heavily influenced.</a>.</i></p>
+					<p class="mt-5 text-right"><i>Thank you to Linux Fest NorthWest, Open Source Bridge and DrupalCon, from whom this policy was heavily influenced.</i></p>
 
-					<p class="text-right"><i>Last Updated: March 2, 2026</i></p>
+					<p class="text-right"><i>Last Updated: November 16, 2026</i></p>
 				</div>
 			</div>
 		</div>

@@ -16,7 +16,7 @@
 @endsection
 
 @section('title')
-<title>DevConf.CZ 2026</title>
+<title>DevConf.CZ 2027</title>
 @endsection
 
 
@@ -66,7 +66,7 @@
             <a href="https://fosstodon.org/@devconf_cz" target="_blank" title="Fosstodon"><img src="/assets/images/fosstodon.svg" alt="fosstodon" class="social-icon"></a>
 			<a href="https://twitter.com/devconf_cz" target="_blank" title="Twitter"><img src="/assets/images/twitter.svg" alt="twitter" class="social-icon"></a>
 			<a href="https://www.linkedin.com/company/102081562/admin/feed/posts/" target="_blank" title="LinkedIn"><img src="/assets/images/linkedin.svg" alt="linkedin" class="social-icon"></a>
-			<a href="https://matrix.to/#/#2026:devconf.cz" target="_blank" title=""><img src="/assets/images/matrix.svg" alt="matrix" class="social-icon"></a>
+			<a href="https://matrix.to/#/#2027:devconf.cz" target="_blank" title=""><img src="/assets/images/matrix.svg" alt="matrix" class="social-icon"></a>
 			<a href="https://www.youtube.com/channel/UCmYAQDZIQGm_kPvemBc_qwg" target="_blank" title="YouTube"><img src="/assets/images/youtube.svg" alt="youtube" class="social-icon"></a>
 			<a href="https://github.com/devconfcz/devconf" target="_blank" title="Git Hub"><img src="/assets/images/github.svg" alt="github" class="social-icon"></a>
 		</div>
@@ -91,16 +91,16 @@
             <div class="row py-5">
 			    <div class="col-xl-6">
 			        <div class="heading-text mont-700 h1">
-				        June 18-19, 2026
+				        June 17-18, 2027
 			        </div>
 			        <div class="heading-text mont-700 h4">
                         <a href="#map" class="nav-link local d-inline-block" style="color: white; padding: 0px"><i class="fa fa-map-marker"></i> FIT BUT | Brno, Czech Republic</a>
                     </div> 
                     <div class="heading-text mt-3 pt-1">
-                      <a href="https://fedoraproject.limequery.com/413562?lang=en" class="nav-link local border p-3 h2 mont-700" target="_blank" style="border-width: 3px !important;">Feedback form</a>
+                      <!--<a href="https://fedoraproject.limequery.com/413562?lang=en" class="nav-link local border p-3 h2 mont-700" target="_blank" style="border-width: 3px !important;">Feedback form</a>
                     </div>
                     <div class="heading-text mont-400 h5 pb-3">
-                         <br>Thank you for being part of DevConf.CZ 2026! We look forward to the next event in 2027.
+                         <br>-->Call for proposals opens in early December 2026.
         			</div> 
         		</div>	    
    		    </div>
@@ -271,11 +271,8 @@
 	</div>
 	<div class="row">
 		<div class="col-lg-6 px-5 mx-auto">
-             <p class="os-400"><span class="h6 mont-700">Apr 15, 2026</span> Registration is open.</p>
-             <p class="os-400"><span class="h6 mont-700">Mar 1, 2026</span> Deadline to submit proposals is extended to March 8, 2026</p>
-             <p class="os-400"><span class="h6 mont-700">Dec 15, 2025</span> Call for Proposals (CfP) is open, submit your proposals by March 1, 2026</p>
-             <p class="os-400"><span class="h6 mont-700">Dec 15, 2025</span> DevConf.CZ 2026 date announced: June 18-19, 2026</p>
-             <p class="os-400"><span class="h6 mont-700">Jun 26, 2025</span> Session recordings are published.</p>
+             <p class="os-400"><span class="h6 mont-700">Nov 16, 2026</span> DevConf.CZ 2027 date announced: June 17-18, 2027</p>
+             <p class="os-400"><span class="h6 mont-700">Jun 18-19, 2026</span> DevConf.CZ 2026</p>
 
 		</div>
 		<div class="col-lg-4 px-5 mx-auto">
